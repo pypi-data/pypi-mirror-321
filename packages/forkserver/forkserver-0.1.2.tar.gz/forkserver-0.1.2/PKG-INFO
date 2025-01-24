@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: forkserver
+Version: 0.1.2
+Summary: A pytest plugin for forkserver functionality.
+Classifier: Framework :: Pytest
+Requires-Python: >=3.9
+Requires-Dist: watchdog
+Description-Content-Type: text/markdown
+
+Experiment to demonstrate application preloading with Python.
+
