@@ -1,0 +1,213 @@
+Metadata-Version: 2.4
+Name: rundpo
+Version: 0.1.20
+Summary: A modern, async-first Python client for the Rundpo API
+Project-URL: Homepage, https://github.com/rundpo/rundpo-python
+Project-URL: Bug Tracker, https://github.com/rundpo/rundpo-python/issues
+Author-email: Rundpo Team <team@rundpo.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: tqdm>=4.65.0
+Description-Content-Type: text/markdown
+
+# Rundpo Python Client
+
+A modern, async-first Python client for the Rundpo API. This client provides a convenient way to interact with the Rundpo API for running DPO (Direct Preference Optimization) training.
+
+## Installation
+
+```bash
+pip install rundpo
+```
+
+## Usage
+
+The client provides both async and sync interfaces. Here's how to use them:
+
+### Async Usage
+
+```python
+import os
+import asyncio
+from rundpo import AsyncRundpoClient, DPOConfig, RunConfig, RunStatus, download_and_extract_async
+
+async def main():
+    # Initialize the client
+    async with AsyncRundpoClient() as client:
+        # Check credits
+        credits = await client.get_credits()
+        print(f"Remaining credits: {credits}")
+
+        # Configure DPO run with a pre-uploaded file
+        config = DPOConfig(
+            file_id="jbHmETTPUDygNUPBeQYoViNwaZndRQLN",  # Your file ID here
+            run_config=RunConfig(
+                model_name="meta-llama/Llama-3.1-8B-Instruct",
+                num_gpus=2,
+                num_epochs=5
+            )
+        )
+        
+        # Start DPO training
+        run_id = await client.run_dpo(config)
+        print(f"Started DPO run with ID: {run_id}")
+        
+        # Poll for completion
+        while True:
+            result = await client.get_status(run_id)
+            status = result["status"]
+            print(f"Run status: {status}")
+            
+            if status == RunStatus.COMPLETED:
+                print("✓ Run completed successfully!")
+                # Download and extract the model
+                if result.get("download_url"):
+                    print("Downloading and extracting model...")
+                    model_path = await download_and_extract_async(result["download_url"], run_id)
+                    print(f"Model downloaded and extracted to: {model_path}")
+                break
+            elif status == RunStatus.FAILED:
+                print("✗ Run failed!")
+                break
+                
+            # Wait 30 seconds before checking again
+            await asyncio.sleep(30)
+
+asyncio.run(main())
+```
+
+### Sync Usage
+
+```python
+from rundpo import RundpoClient, DPOConfig, RunConfig, RunStatus, download_and_extract
+import time
+
+# Initialize the client
+client = RundpoClient()
+
+# Check credits
+credits = client.get_credits()
+print(f"Remaining credits: {credits}")
+
+# Configure DPO run with a pre-uploaded file
+config = DPOConfig(
+    file_id="jbHmETTPUDygNUPBeQYoViNwaZndRQLN",  # Your file ID here
+    run_config=RunConfig(
+        model_name="meta-llama/Llama-3.1-8B-Instruct",
+        num_gpus=2,
+        num_epochs=5
+    )
+)
+
+# Start DPO training
+run_id = client.run_dpo(config)
+print(f"Started DPO run with ID: {run_id}")
+
+# Poll for completion
+while True:
+    result = client.get_status(run_id)
+    status = result["status"]
+    print(f"Run status: {status}")
+    
+    if status == RunStatus.COMPLETED:
+        print("✓ Run completed successfully!")
+        # Download and extract the model
+        if result.get("download_url"):
+            print("Downloading and extracting model...")
+            model_path = download_and_extract(result["download_url"], run_id)
+            print(f"Model downloaded and extracted to: {model_path}")
+        break
+    elif status == RunStatus.FAILED:
+        print("✗ Run failed!")
+        break
+        
+    # Wait 30 seconds before checking again
+    time.sleep(30)
+```
+
+### File Upload Example
+
+If you need to upload a file first:
+
+```python
+# Upload a file
+file_upload = await client.upload_file("path/to/your/data.jsonl")
+print(f"File uploaded successfully! ID: {file_upload.file_id}")
+
+# Use the file ID in your config
+config = DPOConfig(
+    file_id=file_upload.file_id,
+    run_config=RunConfig(
+        model_name="meta-llama/Llama-3.1-8B-Instruct",
+        num_gpus=2,
+        num_epochs=5
+    )
+)
+```
+
+### Using HuggingFace Datasets
+
+You can also use HuggingFace datasets directly:
+
+```python
+config = DPOConfig(
+    hf_sft_dataset_name="your-sft-dataset",
+    hf_dpo_dataset_name="your-dpo-dataset",
+    run_config=RunConfig(
+        model_name="meta-llama/Llama-3.1-8B-Instruct",
+        num_gpus=2,
+        num_epochs=5
+    )
+)
+```
+
+## Model Downloads
+
+By default, downloaded models are stored in `~/.cache/rundpo/adapters`. You can customize this location by setting the `RD_HOME` environment variable:
+
+```bash
+export RD_HOME="/path/to/your/preferred/cache"
+```
+
+## API Reference
+
+### Clients
+
+- `AsyncRundpoClient`: Async-first client for modern Python applications
+- `RundpoClient`: Synchronous client for simpler use cases
+
+### Data Classes
+
+- `RunConfig`: Configuration for training runs
+- `DPOConfig`: Configuration specific to DPO training
+- `FileUpload`: Represents an uploaded file
+- `RunStatus`: Enum of possible run statuses:
+  - `PENDING`: Initial state
+  - `PROVISIONING`: Setting up GPUs
+  - `LAUNCHING_SFT`: Starting SFT training
+  - `TRAINING_SFT`: Running SFT training
+  - `PREPARING_DPO`: Preparing for DPO training
+  - `LAUNCHING_DPO`: Starting DPO training
+  - `TRAINING_DPO`: Running DPO training
+  - `SAVING_MODEL`: Saving the trained model
+  - `FREEING_GPUS`: Cleaning up resources
+  - `COMPLETED`: Run completed successfully
+  - `FAILED`: Run failed
+
+### Utility Functions
+
+- `download_and_extract_async`: Download and extract a model asynchronously
+- `download_and_extract`: Download and extract a model synchronously
+- `get_cache_dir`: Get the current cache directory path
+
+## License
+
+MIT
