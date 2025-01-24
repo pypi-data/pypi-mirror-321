@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+securepasskeygen/__init__.py
+securepasskeygen/generator.py
+securepasskeygen.egg-info/PKG-INFO
+securepasskeygen.egg-info/SOURCES.txt
+securepasskeygen.egg-info/dependency_links.txt
+securepasskeygen.egg-info/top_level.txt
+tests/test_generator.py
