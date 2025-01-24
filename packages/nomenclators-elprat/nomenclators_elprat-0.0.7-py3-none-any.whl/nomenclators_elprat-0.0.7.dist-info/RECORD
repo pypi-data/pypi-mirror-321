@@ -1,0 +1,10 @@
+nomenclators_archetype/infrastructure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/infrastructure/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/infrastructure/db/builders.py,sha256=qgisJlLWwWSFLl_YbTfOfsra7LFwcFz0SsAUGW7B5_0,5076
+nomenclators_archetype/infrastructure/db/commons.py,sha256=VrGvnot8s6BU7NQs0dwyADPph5gwrvsh_naRHM0fA_I,2873
+nomenclators_archetype/infrastructure/db/repository.py,sha256=N5lwwKIzWzzC5J-SsvsrkRK4zhKOKkAY92x7I1unGBg,2139
+nomenclators_elprat-0.0.7.dist-info/LICENSE,sha256=l5UiZG8djUWVo_AKkdeZj4yC3eIF63U8rfzDyxHOwy8,1120
+nomenclators_elprat-0.0.7.dist-info/METADATA,sha256=4dVUf4yvoV7yd8ejJVl8upvKjjPyaoM9YcsP-tnFDEI,3125
+nomenclators_elprat-0.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nomenclators_elprat-0.0.7.dist-info/top_level.txt,sha256=Q47R56b9Bk0yX0xdj0OvRoaVdPzKK496A_QYpMO_h3Y,23
+nomenclators_elprat-0.0.7.dist-info/RECORD,,
