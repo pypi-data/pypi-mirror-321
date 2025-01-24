@@ -1,0 +1,3 @@
+[poetry.plugin]
+pepperpy=pepperpy_poetry.plugin:SharedConfigPlugin
+
