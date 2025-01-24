@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: web_python_builder
+Version: 0.1
+Summary: A simple library for generating HTML files with Python
+Author: Basel
+License-File: LICENSE.txt
+
