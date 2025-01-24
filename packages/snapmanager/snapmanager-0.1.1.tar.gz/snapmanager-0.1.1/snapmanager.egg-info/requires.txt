@@ -1,0 +1,4 @@
+google-cloud-compute>=1.23.0
+rich>=10.0.0
+pywinrm>=0.4.3
+click>=8.0.0
