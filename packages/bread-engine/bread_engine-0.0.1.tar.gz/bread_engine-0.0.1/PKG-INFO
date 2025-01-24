@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: bread_engine
+Version: 0.0.1
+Summary: A python game engine using PyGame
+Project-URL: Homepage, https://github.com/maghje13/bread_engine
+Author-email: maghje13 <13maghje@gmail.com>
+License-Expression: MIT
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Bread Engine
+The bread engine is a basic "game engine" made using PyGame.
+The engine allows you to create games much easier and is fully compatible with PyGame.
+
+## Example usage:
+```python
+import bread_engine
+
+engine = bread_engine.Engine()
+
+engine.run()
+```
