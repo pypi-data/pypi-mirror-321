@@ -1,0 +1,9 @@
+databrief/__init__.py,sha256=s_59YSHUrM1UEL5j9OQB0ucM5LkZgLBiDGWBEMdq1so,33
+databrief/databrief.py,sha256=lkheyPNN9myRzh0AtZI1azD-YNSEvtNRdeFV-3q6g5I,2549
+databrief/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databrief/tests/test_databrief.py,sha256=w4Q_a2bnzHkrGr_s4pSaeBn8w9G0wg7ySdy0ALpx-Jc,2301
+databrief-0.0.1.dev0.dist-info/LICENSE,sha256=tL_fUfNF0L6DRDU58e02LyaNI6dvhCoGn4c1232BHGA,1099
+databrief-0.0.1.dev0.dist-info/METADATA,sha256=6HHmUOzE5EJZ53QCW9rBWw9eZQm0OostQlgPsdJ3o0w,2765
+databrief-0.0.1.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+databrief-0.0.1.dev0.dist-info/top_level.txt,sha256=a1HVpBHdYFI_3l4UVobvqu5IxhyuYeyJqI5ONFwM31Q,10
+databrief-0.0.1.dev0.dist-info/RECORD,,
