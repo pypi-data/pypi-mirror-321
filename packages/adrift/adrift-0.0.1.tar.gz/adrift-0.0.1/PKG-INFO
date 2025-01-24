@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: adrift
+Version: 0.0.1
+Summary: Adrift package
+Author: Yasas Senarath
+Author-email: 12231659+ysenarath@users.noreply.github.com
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: repository, https://github.com/ysenarath/adrift
+Description-Content-Type: text/markdown
+
+# Adrift
+
+A Python package for adrift functionality.
+
+## Installation
+
+```bash
+pip install adrift
+```
+
+## Usage
+
+```python
+from adrift import __version__
+
+print(f"Adrift version: {__version__}")
+

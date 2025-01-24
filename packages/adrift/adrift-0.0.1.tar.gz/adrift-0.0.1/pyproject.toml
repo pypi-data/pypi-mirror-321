@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adrift"
+version = "0.0.1"
+description = "Adrift package"
+authors = [
+    "Yasas Senarath <12231659+ysenarath@users.noreply.github.com>"
+]
+readme = "README.md"
+packages = [{ include = "adrift", from = "src" }]
+
+[tool.poetry.urls]
+repository = "https://github.com/ysenarath/adrift"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
