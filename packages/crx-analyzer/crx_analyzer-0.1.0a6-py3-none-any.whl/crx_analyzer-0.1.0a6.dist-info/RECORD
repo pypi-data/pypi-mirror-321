@@ -1,0 +1,10 @@
+crx_analyzer/__init__.py,sha256=gjuf9Zya7GwEQjMyM32p8ZZF1BZDQdxjxxTd-CzZoSY,69
+crx_analyzer/cli.py,sha256=1or0QQ6U94rFyE_UDsmV7w-I3fNYyZ4H6Qrt5X2YqqA,3928
+crx_analyzer/download.py,sha256=lvNY0a_inzu902YhJ5-nKOyrkk2UrRLcGiqKBBwY1oI,1460
+crx_analyzer/extension.py,sha256=1EUiMZFE8iompPVlHLtQ5bXsjaJlXRxv4DlcFoCroUQ,4805
+crx_analyzer/models.py,sha256=DVH44MeeTw5HvGZAsW31thzxbpctZYdca9kxEZPxgSE,8013
+crx_analyzer/risk.py,sha256=twMKA7ZKC4H3HjnspK6DVfEXAU9vFv3Yet5X1Vu8oxs,4011
+crx_analyzer-0.1.0a6.dist-info/METADATA,sha256=YpptPWTyHpeJTCSFzXIJV8jrZ71MmiODkqiP2cEcFJ0,2168
+crx_analyzer-0.1.0a6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+crx_analyzer-0.1.0a6.dist-info/entry_points.txt,sha256=SiSndQiM3QxDQclnUscPFn9KJ8tSzkTIwILDQWWYYTg,54
+crx_analyzer-0.1.0a6.dist-info/RECORD,,
