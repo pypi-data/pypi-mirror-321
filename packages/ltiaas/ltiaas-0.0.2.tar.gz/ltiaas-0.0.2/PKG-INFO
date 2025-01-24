@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ltiaas
+Version: 0.0.2
+Summary: The official LTIAAS client library.
+License: MIT
+Author: Cvm
+Author-email: cvmcosta@ltiaas.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# LTIAAS SDK
+
+```python
+from ltiaas import LTIAASLaunch, LineItem
+
+client = LTIAASLaunch(
+    domain="admin-us.ltiaas.com",
+    api_key="-------------------",
+    ltik="----------------------",
+)
+
+print(client.get_id_token())
+
+print(client.get_memberhips())
+
+print(client.get_line_items())
+
+lineitem = LineItem(label="Created with the SDK", score_maximum=100, tag="sdk")
+print(client.create_line_item(lineitem=lineitem))
+```

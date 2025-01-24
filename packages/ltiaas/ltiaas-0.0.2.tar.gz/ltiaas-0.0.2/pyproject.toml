@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ltiaas"
+version = "0.0.2"
+description = "The official LTIAAS client library."
+authors = ["Cvm <cvmcosta@ltiaas.com>"]
+readme = "README.md"
+license = "MIT"
+
+[project.urls]
+Homepage = "https://ltiaas.com"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
