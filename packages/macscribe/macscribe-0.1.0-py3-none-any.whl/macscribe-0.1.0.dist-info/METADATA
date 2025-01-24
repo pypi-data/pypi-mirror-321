@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: macscribe
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Kasper Junge <kasperjuunge@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: mlx-whisper>=0.4.1
+Requires-Dist: typer>=0.15.1
+Requires-Dist: yt-dlp>=2025.1.12
