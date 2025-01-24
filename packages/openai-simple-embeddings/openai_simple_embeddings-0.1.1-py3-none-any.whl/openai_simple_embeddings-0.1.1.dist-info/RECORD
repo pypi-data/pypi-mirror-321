@@ -1,0 +1,10 @@
+openai_simple_embeddings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_simple_embeddings/base.py,sha256=hdAJm3B85vOk9itnanwB57AOOnV2_Vq7VFoam-hobJk,1836
+openai_simple_embeddings/exceptions.py,sha256=rRwd0wcuAtBgG7-ce4u1MA0S9EM-f2y6qd3afTQ5aIE,267
+openai_simple_embeddings/langchain_embeddings.py,sha256=CkFxDn7wTkOWtHI2x_XP6IQhV249Q-adVSlFubY2MLE,3489
+openai_simple_embeddings/settings.py,sha256=XIU7ttzzNjIn2zjI9FZb0-BpD9UbBn0UIHloz3xoD-8,1078
+openai_simple_embeddings-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openai_simple_embeddings-0.1.1.dist-info/METADATA,sha256=8LYGP_ycIicq_2IKWd3zV42H_7-f0XsT9uFBR9hwbMM,3257
+openai_simple_embeddings-0.1.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+openai_simple_embeddings-0.1.1.dist-info/top_level.txt,sha256=OLkhhwJVAPwmHcDxHnqj6NFJRibWjTzqaCUHweaqnOU,25
+openai_simple_embeddings-0.1.1.dist-info/RECORD,,
