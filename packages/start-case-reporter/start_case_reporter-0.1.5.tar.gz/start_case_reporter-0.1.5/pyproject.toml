@@ -1,0 +1,19 @@
+[project]
+name = "start-case-reporter"
+version = "0.1.5"
+description = ""
+authors = [{ name = "6vi7ms", email = "6vi7ms@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["pyqt6 (>=6.8.0,<7.0.0)", "pyarmor (>=9.0.7,<10.0.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{ include = "src" }]
+
+[tool.poetry.scripts]
+start-case-reporter = "dist.start_case_reporter.main:main"
