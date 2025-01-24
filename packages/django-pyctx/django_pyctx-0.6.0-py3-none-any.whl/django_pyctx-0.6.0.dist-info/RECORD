@@ -1,0 +1,15 @@
+django_pyctx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx/apps.py,sha256=3e2jQyYmEhY-7zFaJt_-nyIYOKTyZiSM1Qz0zi_A07w,98
+django_pyctx/helpers.py,sha256=kzBLCSmlP6x67yT_0al-RCfMy09zQ-NZQakAWVS0gck,3039
+django_pyctx/middlewares.py,sha256=4ITDViFbpakiLCDIQ2_vHtLrMoRmQ4ga5yeMoSkUYUA,1468
+django_pyctx/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx/query_timer.py,sha256=clfqW0-xPLYO6zCm573yfEqIfZag0n7MLoASSZO5aSE,698
+django_pyctx/settings.py,sha256=BL4h0DBPmji12DR9AmZR-0Bl9LIxHFKfRDcylOyIRt8,600
+django_pyctx/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyctx-0.6.0.dist-info/METADATA,sha256=GNVVu1mdDvSCAwC2u4-DAQmvZIstHYvYIOw1e7bJdKk,4795
+django_pyctx-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_pyctx-0.6.0.dist-info/licenses/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+django_pyctx-0.6.0.dist-info/RECORD,,
