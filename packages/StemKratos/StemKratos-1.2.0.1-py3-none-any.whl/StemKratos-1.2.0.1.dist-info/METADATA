@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: StemKratos
+Version: 1.2.0.1
+Summary: KratosMultiphysics for STEM
+Author: attr: StemKratos.__author__
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Requires-Dist: pytest>=7.2; extra == "testing"
+Requires-Dist: pytest-cov>=4.0; extra == "testing"
+Requires-Dist: tox>=4.4; extra == "testing"
