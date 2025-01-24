@@ -1,0 +1,6 @@
+python-binance
+tabulate
+keyboard
+psycopg2
+setuptools
+supabase
