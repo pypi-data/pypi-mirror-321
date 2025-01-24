@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "wagtail-spa-integration"
+version = "3.2.0"
+description = "Tools for using Wagtail API with JavaScript single page apps"
+authors = ["thelab <thelabdev@thelab.co>"]
+license = "ISC"
+classifiers=[
+    "Development Status :: 5 - Production/Stable",
+    'Environment :: Web Environment',
+    'Framework :: Django',
+    'Framework :: Wagtail',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Intended Audience :: Developers',
+    "License :: OSI Approved :: Apache Software License",
+]
+packages = [
+    { include = "wagtail_spa_integration", from = "src" }
+]
+
+[tool.poetry.urls]
+"homepage" = "https://gitlab.com/thelabnyc/wagtail-spa-integration"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+wagtail = ">=5.2.5,<6.4"
+Django = ">=4.2"
+wagtail-headless-preview = "^0.8"
+django-filter = "^23.3"
+
+[tool.poetry.dev-dependencies]
+django-cors-headers = "^4.6.0"
+flake8 = ">=7.1.1"
+tox = ">=4.23.2"
+
+[build-system]
+requires = [ "poetry-core>=2.0.1",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+annotated_tag = true
+gpg_sign = true
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_merge_prerelease = true
+version_provider = "poetry"
+version_scheme = "pep440"
+version_files = [
+    "pyproject.toml:version",
+]
+pre_bump_hooks = [
+    "pre-commit run --all-files || true",
+]
+post_bump_hooks = [
+    "git push origin master $CZ_POST_CURRENT_TAG_VERSION"
+]
