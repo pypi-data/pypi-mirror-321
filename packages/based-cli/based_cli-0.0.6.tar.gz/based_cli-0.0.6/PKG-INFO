@@ -1,0 +1,105 @@
+Metadata-Version: 2.4
+Name: based-cli
+Version: 0.0.6
+Summary: A powerful CLI tool for interacting with various AI models
+Project-URL: Homepage, https://github.com/yourusername/based
+Project-URL: Documentation, https://github.com/yourusername/based#readme
+Project-URL: Repository, https://github.com/yourusername/based.git
+Project-URL: Issues, https://github.com/yourusername/based/issues
+Author-email: Your Name <your.email@example.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: ai,anthropic,chatbot,cli,groq,huggingface,mistral,openai
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.9
+Requires-Dist: anthropic>=0.30.0
+Requires-Dist: groq>=0.4.2
+Requires-Dist: huggingface-hub>=0.26.5
+Requires-Dist: langchain-anthropic>=0.2.0
+Requires-Dist: langchain-core>=0.3.29
+Requires-Dist: langchain-groq>=0.2.3
+Requires-Dist: langchain-huggingface>=0.1.2
+Requires-Dist: langchain-mistralai>=0.2.4
+Requires-Dist: langchain-openai>=0.3.0
+Requires-Dist: mistralai>=0.0.12
+Requires-Dist: openai<2.0.0,>=1.58.1
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: questionary>=2.1.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# Based CLI
+
+A powerful CLI tool for interacting with various AI models including OpenAI, Anthropic, Mistral, Groq, and Hugging Face.
+
+## Features
+
+- Multiple AI providers support
+- Customizable system prompts
+- Chat history management
+- Interactive configuration
+- Beautiful terminal UI
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd based-cli
+```
+
+2. Install the package:
+```bash
+pip install -e .
+```
+
+## Usage
+
+1. Login and configure:
+```bash
+based login
+```
+
+2. Start chatting:
+```bash
+based
+```
+
+3. Other commands:
+```bash
+based config  # Edit configuration
+based list    # List saved chats
+based delete  # Delete a chat
+based clear   # Clear all chats
+```
+
+## Available Models
+
+- OpenAI: GPT-4, GPT-4 Turbo
+- Anthropic: Claude 3 Sonnet, Claude 3 Opus
+- Mistral: Mistral Large, CodeStraal
+- Groq: Llama2 70B, Mixtral 8x7B
+- Hugging Face: CodeRQween, StarCoder2, CodeLlama
+
+## System Prompts
+
+- Default: General software development assistant
+- Code Assistant: Expert programming helper
+- Terminal Expert: Command-line specialist
+- Debugging Expert: Troubleshooting guide
+
+## Requirements
+
+- Python 3.9 or higher
+- API keys for the providers you want to use 
