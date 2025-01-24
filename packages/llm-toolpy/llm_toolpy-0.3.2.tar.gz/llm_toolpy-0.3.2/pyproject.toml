@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.2", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-toolpy"
+authors = [{name = "EltonCN", email = "elton.nascimento@students.ic.unicamp.br"}]
+description = "ToolPy is a Python module made to facilitate the creation of tools using LLMs."
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+]
+dynamic = ["version"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/EltonCN/toolpy"
+"Bug Tracker" = "https://github.com/EltonCN/toolpy/issues"
+# Documentation =
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools_scm]
