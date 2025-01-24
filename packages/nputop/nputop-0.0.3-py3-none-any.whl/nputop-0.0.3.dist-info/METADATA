@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nputop
+Version: 0.0.3
+Summary: NPU monitoring tool with TUI interface
+Home-page: https://github.com/Rvelamen/nputop
+Author: Rvelamen
+Author-email: your.email@example.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: textual
+Requires-Dist: psutil
+Requires-Dist: rich
+
+# nputop
+An interactive ASCEND-NPU process viewer and beyond, the one-stop solution for NPU process management. 
+
+![](https://github.com/Rvelamen/nputop/blob/main/docs/home.png?raw=true)
+
+### Quick Start
+
+Install nputop by using pip as follows. 
+
+```bash
+pip install nputop
+```
+
+To start a instance of nputop, run the following command:
+
+```bash
+$ nputop
+```
