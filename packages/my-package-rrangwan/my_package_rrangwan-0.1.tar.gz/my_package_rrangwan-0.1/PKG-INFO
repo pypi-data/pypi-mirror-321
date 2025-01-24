@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: my_package_rrangwan
+Version: 0.1
+Summary: A simple greeting package
+Home-page: UNKNOWN
+Author: Raj Rangwani
+Author-email: rrangwan@student.42abudhabi.ae
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+This package provides a simple greeting function.
+
