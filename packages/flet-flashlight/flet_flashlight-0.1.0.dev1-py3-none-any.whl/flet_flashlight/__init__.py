@@ -1,0 +1,1 @@
+from flet_flashlight.flashlight import Flashlight

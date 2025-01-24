@@ -1,0 +1,15 @@
+flet_flashlight/__init__.py,sha256=NB82_chdvRsclbuSiFwd7nzDBYcrjrZ37jrdN-4JwGs,50
+flet_flashlight/flashlight.py,sha256=d1Oz2xNZIIlz8PZd3lP_CAbNX2dnEAV5_YAn1vkgDCw,2443
+flutter/flet_flashlight/CHANGELOG.md,sha256=66sWepPaeTc9_lzcYIGU55AlxSU5Z1XVtknXpzd_-p8,40
+flutter/flet_flashlight/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+flutter/flet_flashlight/README.md,sha256=OCxLYGKGbpyTQOxMCbVoxLjrY1pdVVGGxtp0OBx23IA,70
+flutter/flet_flashlight/analysis_options.yaml,sha256=tNXU6s4EJ4KmXROObwPetH5vkzRTVG4AH4gpMw85_EY,154
+flutter/flet_flashlight/pubspec.lock,sha256=TXATaGTHNGWJZkRGgLhHqFKGLO3Wrx2iU9H8nKVDqLs,21506
+flutter/flet_flashlight/pubspec.yaml,sha256=LyHIPpy1xTbwrF86Ag5HAm46UbL3lvAgT-oU-270Lvo,421
+flutter/flet_flashlight/lib/flet_flashlight.dart,sha256=TENZR82J0KTDG33lRtxgXAtUZdxjIG327F9nyFYl1As,98
+flutter/flet_flashlight/lib/src/create_control.dart,sha256=6WACpHcFGCgbXV3Ml9Eabs0wkgqL-PRmBUAeLAGhs9Q,442
+flutter/flet_flashlight/lib/src/flashlight.dart,sha256=aW70EmA74k-qb65CIHvisWfeFW_kqOimswZ0UKMMn3A,1714
+flet_flashlight-0.1.0.dev1.dist-info/METADATA,sha256=7tbfqwryC7Uw62WS27ST5yA7ju9aeVa0FCIp0LPjAP0,1003
+flet_flashlight-0.1.0.dev1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flet_flashlight-0.1.0.dev1.dist-info/top_level.txt,sha256=C3-VxFNdp8KnPIGb_CRsg2BPEtDQN0NEcbotjs3cUv4,24
+flet_flashlight-0.1.0.dev1.dist-info/RECORD,,
