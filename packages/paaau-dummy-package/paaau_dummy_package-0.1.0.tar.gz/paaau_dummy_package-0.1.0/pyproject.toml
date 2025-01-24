@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paaau_dummy_package"
+version = "0.1.0"
+description = "package description"
+authors = [
+    {name = "lipau", email = "lilin.pau@moneyforward.co.jp"},
+]
+readme = "README.md"
+requires-python = ">=3.7"

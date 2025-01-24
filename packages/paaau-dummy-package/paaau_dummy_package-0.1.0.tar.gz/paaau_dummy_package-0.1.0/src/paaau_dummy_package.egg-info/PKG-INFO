@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: paaau_dummy_package
+Version: 0.1.0
+Summary: package description
+Author-email: lipau <lilin.pau@moneyforward.co.jp>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+A brief description of what your package does.

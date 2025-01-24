@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/dummy_package/__init__.py
+src/dummy_package/core.py
+src/paaau_dummy_package.egg-info/PKG-INFO
+src/paaau_dummy_package.egg-info/SOURCES.txt
+src/paaau_dummy_package.egg-info/dependency_links.txt
+src/paaau_dummy_package.egg-info/top_level.txt
