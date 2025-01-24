@@ -1,0 +1,13 @@
+*.pyc
+__pycache__
+
+dist
+
+.ipynb_checkpoints
+.venv
+
+.ruff_cache
+.pytest_cache
+.coverage
+
+.vscode
