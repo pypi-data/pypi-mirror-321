@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: pygfdrivers
+Version: 3.1.1
+Summary: General Fusion Python package to provide abstract layer for various hardware control.
+Requires-Python: >=3.11
+Requires-Dist: acq400-hapi>=2.9.4
+Requires-Dist: annotated-types>=0.7.0
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: fuzzywuzzy>=0.18.0
+Requires-Dist: numpy>=2.1.2
+Requires-Dist: orjson>=3.10.7
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: paramiko>=3.4.0
+Requires-Dist: pillow>=10.4.0
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: pymongo>=4.10.1
+Requires-Dist: PySerial>=3.5
+Requires-Dist: PyUSB>=1.2.1
+Requires-Dist: PyVISA>=1.14.1
+Requires-Dist: PyVISA-py>=0.7.2
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: python-Levenshtein>=0.25.1
+Requires-Dist: setuptools>=75.2.0
+Dynamic: requires-python
