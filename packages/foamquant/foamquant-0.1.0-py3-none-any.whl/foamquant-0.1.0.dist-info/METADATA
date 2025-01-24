@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: foamquant
+Version: 0.1.0
+Summary: 3D quantification of cellular material structure and dynamics
+Home-page: https://www.lth.se
+Author: Scientific Data, MAX IV Laboratory, Lund University
+Author-email: florian_schott@outlook.fr
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: porespy
+Requires-Dist: spam
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
