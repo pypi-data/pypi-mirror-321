@@ -1,0 +1,10 @@
+natten_version_manager/__init__.py,sha256=Je9F8WA9QmdT4RmpS4836SNVPm13w2dMwnPPyfegOeY,333
+natten_version_manager/natten_installer.py,sha256=ZWGKJkPvgEprgFeio5687f1Al0g4_lQD-3lvYqlHL84,4786
+natten_version_manager/pypi.py,sha256=99OmqYkOhAxykOhp7zaHkvkvjzy2gXycKDw2OMlnUtc,1593
+natten_version_manager/running/__init__.py,sha256=Kg3P8htkcAve4JB8KGXdxcfsa5ukKCWDvuLkTAeLFC4,23
+natten_version_manager/running/core.py,sha256=2LTLayeAcUb2JtJ-moBGQlTsELc4UiVpqprwkB1IrII,1094
+natten_version_manager-0.0.1b4.dist-info/LICENSE,sha256=xnrvFoFYFhthj37FxqHydHzaokghgOuUHQwztxU_E7s,1065
+natten_version_manager-0.0.1b4.dist-info/METADATA,sha256=6u6_vqXPUNfVZeoyzoG6lpYQtCYahx_ExPAXALX3QVc,576
+natten_version_manager-0.0.1b4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+natten_version_manager-0.0.1b4.dist-info/top_level.txt,sha256=fAxI_ETPjB_0tspKn35KdgxmbBqWk0qgD5CxYuT-paw,23
+natten_version_manager-0.0.1b4.dist-info/RECORD,,
