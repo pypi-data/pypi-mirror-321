@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: utilitiez
+Version: 0.2.1
+Summary: Miscellaneous python utilities
+Author-email: David Zwicker <david.zwicker@ds.mpg.de>
+License: MIT
+Keywords: tools,utils
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib >=3.10
+Requires-Dist: numpy >=1.22
+
+# utilitiez
+Collection of useful python tools.
+
+So far, the only tool is the `densityplot` function, which provides a convenient way to
+produced density plots from simulated data, optionally involving logarithmically scaled
+axes.
