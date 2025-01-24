@@ -1,0 +1,12 @@
+djicot/__init__.py,sha256=hEID0pd1g8RQqp8r0Bvp-uDWaGEe7mRcZRH6hZr43ag,1386
+djicot/classes.py,sha256=8955r9OPTDB36gftJhu7CtplPt9xnxSomgbBCteWGPQ,4016
+djicot/commands.py,sha256=nFK1mXOPrbEvxX3qbfrSgtSqd38Yi2CSs2h6tECn1rM,870
+djicot/constants.py,sha256=9A4g4cZQVJjYBsF6FsCqWQ32RyTWpcy8Fp22_Grn_is,1558
+djicot/dji_functions.py,sha256=pk1Jaw4fHYYniDYPk6q3PNZyEYVYzyYQf1dmH6gI-0M,3731
+djicot/functions.py,sha256=fLdzpfZ3UGa4-SeRqCdPO24l9Lfs8LmAMCD7NYWghEA,11749
+djicot-1.0.2.dist-info/LICENSE,sha256=Fg7NiAFl3kbvpJhypzmICgURUP8aBhsbHgNmZuUUWA0,10256
+djicot-1.0.2.dist-info/METADATA,sha256=FOhMuuHR6UxiP953Y0ax0vyc3XPz_x3nXpkKWCaKbdg,3312
+djicot-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+djicot-1.0.2.dist-info/entry_points.txt,sha256=GublUvMWoCe3XWz1QnGfbO2dtNx4zjDvHsfO1FUbPmg,48
+djicot-1.0.2.dist-info/top_level.txt,sha256=5FYFcG-Ryaqso-cT625XO60AL0NthJCiai2u2Xi23Kg,7
+djicot-1.0.2.dist-info/RECORD,,
