@@ -1,0 +1,12 @@
+quadraturerules/__init__.py,sha256=3wCNxAoIxYOROTle4N2Hlbm_YN4YpISRxv0UmlATzI8,991
+quadraturerules/domain.py,sha256=5twaT-dciuhtyQOsRkv8hI9hRezQACQQRlrZy-Hx-Zg,159
+quadraturerules/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quadraturerules/rules/__init__.py,sha256=Q7mBvXDIZmU9KlBj2eCAt9HKVt14JqT1xcomPhKBaIo,246
+quadraturerules/rules/gauss_legendre.py,sha256=0wZ1MqzZ_gtBT7OqBT9CfkvEJuv-L_1Bis8G1m0m4O4,32222
+quadraturerules/rules/gauss_lobatto_legendre.py,sha256=fq7TZYc6x8YYZ-yEgac38VqDGCZ5XXneHyaIZx-XToQ,34268
+quadraturerules/rules/xiao_gimbutas.py,sha256=Mw1YD19X2zYL4us1IyyF_kX_R-2GnIS9tc554PiHVWw,607947
+quadraturerules-0.3.4.dist-info/LICENSE,sha256=ocK-q4BSzGumQ4RSPLR57rjV3E3dgs4g6Cl3G-rvuuQ,1116
+quadraturerules-0.3.4.dist-info/METADATA,sha256=2XBxhQ2z-cesg6gd7LkGfnpYNwuRMv0Zzdug5Phq_34,2942
+quadraturerules-0.3.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quadraturerules-0.3.4.dist-info/top_level.txt,sha256=TSMFzRXLjUrA8zQcH7f6XB1Dcn45udQNIXiNaCH2Qkw,16
+quadraturerules-0.3.4.dist-info/RECORD,,
