@@ -1,0 +1,16 @@
+types_boto3_lex_runtime/__init__.py,sha256=N4qL8M47a0zVBrrSt97YOXcs0p5uuF3WRrPCslPFQzg,468
+types_boto3_lex_runtime/__init__.pyi,sha256=2cKWZPeQ2-xSRYN0lNOGuKRG4E_2hDDQAtUwZqgqrp4,467
+types_boto3_lex_runtime/__main__.py,sha256=4mKqRa3Srog9YgQLyDuuT_IgRRLT5efjGuqoBWJf2ww,1009
+types_boto3_lex_runtime/client.py,sha256=YJnLpddDykk7B3apOqeJMGdvh0-pvalfTCGxp7FGMl0,6081
+types_boto3_lex_runtime/client.pyi,sha256=AhlttKY-G7eF4Crd-h0xyQYvDJHgl94oIFNTrE16niM,6078
+types_boto3_lex_runtime/literals.py,sha256=sOfbE-fJDUe-Ips0t7ViPRgNHehO3nFDQnXz3-ue9R4,9652
+types_boto3_lex_runtime/literals.pyi,sha256=Gslv7iEVXLFwD8_tbWBsr3LY2Z1pUj4WeSP71TKZBVU,9650
+types_boto3_lex_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_boto3_lex_runtime/type_defs.py,sha256=NJHdrdnsPzHDEzDn3rBq6vSHOG41Z8MnnWwqgWSfUR4,8302
+types_boto3_lex_runtime/type_defs.pyi,sha256=eGlifEiOccWfTKIFqSXbN7pOk3yQznOgjcSqw03Dbgw,8275
+types_boto3_lex_runtime/version.py,sha256=XqBLww9Ajk9GRr5oc1Ak2757Fsir4zxoRCWswSKh8Ro,92
+types_boto3_lex_runtime-1.36.0.dist-info/LICENSE,sha256=4jNgB8jJbXtUVJkeygwhUQi--6lAG8DIisfE-h_RiUU,1070
+types_boto3_lex_runtime-1.36.0.dist-info/METADATA,sha256=t4jAxSQUkr_MrDFyfCgv2iG4HwKMezvjkYt4mZWW5Lc,14456
+types_boto3_lex_runtime-1.36.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+types_boto3_lex_runtime-1.36.0.dist-info/top_level.txt,sha256=lm775gzjaUSM0Y70gdhMgAmMz7zBqI1mpEiQZcf3fuk,24
+types_boto3_lex_runtime-1.36.0.dist-info/RECORD,,
