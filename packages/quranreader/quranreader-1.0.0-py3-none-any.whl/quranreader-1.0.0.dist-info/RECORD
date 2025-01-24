@@ -1,0 +1,12 @@
+quranreader/__init__.py,sha256=bADY_CvP6SLqYLdUnpVJYJ1YqFnpIWP76jqJwzVBbgw,3116
+quranreader/config.py,sha256=-V5q7xa9UbhEvM_Wiu2kIIh-WX6brZ6gsM9AEcD3RlM,353
+quranreader/handle_exception.py,sha256=Q5z98-uffulfA2ii5FPt-z6LtyNHa2QMCT2p3EIlZVY,432
+quranreader/interface.py,sha256=1ooAw7KRv3LJOfmJvQtiw8dVtzvD5MpEyaVwAEZb8Zc,11173
+quranreader/parser_quranreader.py,sha256=vOACICqMwrj0HcYFCLMa3oZZb2b_9o63O5eloNYRMvs,737
+quranreader/quranreader.py,sha256=qSKlNK6ccnMeHe6OWJdzdnSQKFnCGPt_Ute-BQzIMwY,18872
+quranreader/service.py,sha256=3AsHMUFbqAF0cxnsbksgfGdu92vpzPxStpXGweiUphs,2168
+quranreader/utils.py,sha256=FPSMlwWqjBY_JOW2xX8f66vOqlWp6gXSt3eK6GSmYuU,1664
+quranreader-1.0.0.dist-info/METADATA,sha256=pYlgR9aGzifj_Xyswxidc98GY6nzxnzaOlOxe3pZTro,4514
+quranreader-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quranreader-1.0.0.dist-info/top_level.txt,sha256=-wSfpZtLECFBzI429b5fDLJr9I0J47fB2PXYOm4fnZI,12
+quranreader-1.0.0.dist-info/RECORD,,
