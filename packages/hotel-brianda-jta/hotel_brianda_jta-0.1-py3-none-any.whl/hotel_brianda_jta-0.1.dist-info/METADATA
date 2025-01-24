@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: hotel_brianda_jta
+Version: 0.1
+Summary: Aplicación para la gestión hotelera del hotel Brianda.
+Author: Jasmine Trillo Álvarez
+Author-email: jasslevelup@gmail.com
+Requires-Dist: mysql-connector-python
+Requires-Dist: PySide6
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary

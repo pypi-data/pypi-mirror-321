@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file>brianda.png</file>
+	<file>refresh.png</file>
+	<file>volver.png</file>
+	<file>icon.png</file>
+	<file>reserva.png</file>
+    </qresource>
+</RCC>
