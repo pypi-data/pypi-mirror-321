@@ -1,0 +1,11 @@
+coordinates2country/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+coordinates2country/coordinates2country.py,sha256=y3EFVGm9MjClgPRBwTwnQ0Ob_QCLDZ52NpH5xZdnd_4,4553
+coordinates2country/resources/countries-8bitgray.png,sha256=H9LKSPPC8vk_dSBOHKpKYymgEE5YwQTV1yx4QOI3yiA,74313
+coordinates2country/resources/countries.csv,sha256=GXkrM4hILT6YHQ50VVJP4iMBa6LXoPYtsSPjWoohwPA,2169
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_coordinates2country.py,sha256=uMrNsVa7wLdNHrrY3KjqOq7XKk2_unXdwshrbT2vjeQ,461
+coordinates2country-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+coordinates2country-1.0.8.dist-info/METADATA,sha256=inB_e7z8HnH7683pEGBuRNdmeruXm6s9rFGXiP-U33A,1702
+coordinates2country-1.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+coordinates2country-1.0.8.dist-info/top_level.txt,sha256=IZYuFBrIuUzvFYu8m68jW4Un8xO5S52k18BRZ1UgfpI,26
+coordinates2country-1.0.8.dist-info/RECORD,,
