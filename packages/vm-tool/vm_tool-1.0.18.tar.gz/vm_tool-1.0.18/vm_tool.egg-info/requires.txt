@@ -1,0 +1,9 @@
+ansible
+ansible-runner
+paramiko
+pydantic
+
+[dev]
+pytest
+flake8
+bump2version
