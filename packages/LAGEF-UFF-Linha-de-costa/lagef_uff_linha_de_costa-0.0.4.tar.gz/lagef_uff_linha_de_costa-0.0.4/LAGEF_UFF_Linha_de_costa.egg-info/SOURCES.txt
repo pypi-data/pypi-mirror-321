@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+LAGEF_UFF/LAGEF_UFF_linha_de_costa.py
+LAGEF_UFF/__init__.py
+LAGEF_UFF_Linha_de_costa.egg-info/PKG-INFO
+LAGEF_UFF_Linha_de_costa.egg-info/SOURCES.txt
+LAGEF_UFF_Linha_de_costa.egg-info/dependency_links.txt
+LAGEF_UFF_Linha_de_costa.egg-info/requires.txt
+LAGEF_UFF_Linha_de_costa.egg-info/top_level.txt
