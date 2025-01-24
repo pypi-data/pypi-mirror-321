@@ -1,0 +1,11 @@
+simple_ans-0.2.2.dist-info/RECORD,,
+simple_ans-0.2.2.dist-info/METADATA,sha256=AyYIxIEx3yC9pBbG7dJobsSO-sNW2z7ZmIvDp1ZiAhc,2246
+simple_ans-0.2.2.dist-info/WHEEL,sha256=XkKe8MDLpOpHmivrlt1O1u6IN655NT5nAq1Jmqh_T3o,113
+simple_ans-0.2.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+include/simple_ans/simple_ans.hpp,sha256=iXeZMl0W8z4do7xVcuTcSi-xF3cwdiy6Q0nMJqjLFRg,8555
+simple_ans.libs/libgcc_s-1257a076.so.1,sha256=wbXWo2Qh33OuE7spB8-mVbZoEiUkvZu6ZH78pUNr9X8,168321
+simple_ans.libs/libstdc++-0530927c.so.6.0.32,sha256=h2p2et0WB0CYcMcUEViWjYXOe8uir-_tHJJZui-6GRc,3537509
+lib/_simple_ans.cpython-38-i386-linux-gnu.so,sha256=jkH1s-x8mimpK95oTJ1cH9PjCwFtbh2ZEXTgaDdgsSg,251513
+simple_ans/__init__.py,sha256=q7iFEFCbXx819zv2g6XWVM8cQWRIrhgLqsdeQwrUQPI,10353
+simple_ans/cpp/simple_ans.cpp,sha256=hw1UwCo-lske2XWRyJ4y-LStypNZYVXI4Vjbquku9as,3041
+simple_ans/cpp/simple_ans.hpp,sha256=iXeZMl0W8z4do7xVcuTcSi-xF3cwdiy6Q0nMJqjLFRg,8555
