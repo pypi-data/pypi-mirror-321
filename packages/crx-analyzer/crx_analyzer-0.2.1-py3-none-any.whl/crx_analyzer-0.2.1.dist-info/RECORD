@@ -1,0 +1,10 @@
+crx_analyzer/__init__.py,sha256=gjuf9Zya7GwEQjMyM32p8ZZF1BZDQdxjxxTd-CzZoSY,69
+crx_analyzer/cli.py,sha256=xGUIvfV9QKr5vxcjCj6sP-Bkuq6siA296VKoBy65TGw,4099
+crx_analyzer/download.py,sha256=lvNY0a_inzu902YhJ5-nKOyrkk2UrRLcGiqKBBwY1oI,1460
+crx_analyzer/extension.py,sha256=aaYXi8yDkb2nc7dy7Nq9SbV1djSIiHEVCuDz8YbLKes,4943
+crx_analyzer/models.py,sha256=Tr6s9HQeQvOZXmHuGLVm4SSnRmGqgLAnA4TPpug3EdM,8018
+crx_analyzer/risk.py,sha256=twMKA7ZKC4H3HjnspK6DVfEXAU9vFv3Yet5X1Vu8oxs,4011
+crx_analyzer-0.2.1.dist-info/METADATA,sha256=QhZozR1RV1HqYeh658WUQlqd4g2SCM8uIPA52_HkDpQ,5149
+crx_analyzer-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+crx_analyzer-0.2.1.dist-info/entry_points.txt,sha256=SiSndQiM3QxDQclnUscPFn9KJ8tSzkTIwILDQWWYYTg,54
+crx_analyzer-0.2.1.dist-info/RECORD,,
