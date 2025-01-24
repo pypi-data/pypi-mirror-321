@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-unrest
+Version: 0.1.11
+Summary: A collection of tools for django
+Home-page: https://github.com/chriscauley/django-unrest
+Author: Chris Cauley
+Author-email: chris@lablackey.com
+License: MIT
+Keywords: utils,django
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.26.0
+Requires-Dist: social-auth-app-django>=4.0.0
+Requires-Dist: social-auth-core>=3.3.3
