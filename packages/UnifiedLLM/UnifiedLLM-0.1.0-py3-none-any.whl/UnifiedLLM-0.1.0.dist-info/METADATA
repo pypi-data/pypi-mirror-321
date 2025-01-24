@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: UnifiedLLM
+Version: 0.1.0
+Summary: A library to utilize multiple Large Language Models asynchronously.
+Home-page: https://github.com/PhanindraParashar/UnifiedLLM
+Author: Phanindra Parashar
+Author-email: phanindraparashar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anthropic==0.43.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: json_repair==0.18.0
+Requires-Dist: openai==1.59.7
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# UnifiedLLM
+A library to utilize multiple Large Language Models asynchronously. Integrates OpenAI, Anthropic, Perplexity, and Deepseekcoder, returning responses in a unified format. Simplify your application development with concurrent LLM requests and consistent data handling.
