@@ -1,0 +1,50 @@
+Metadata-Version: 2.2
+Name: Topsis-Khwaish-102217010
+Version: 1.0.1
+Summary: A Python package to perform TOPSIS analysis
+Home-page: https://github.com/khwaishagarwal/Topsis-Khwaish-102217010
+Download-URL: https://github.com/khwaishagarwal/Topsis-Khwaish-102217010/archive/refs/tags/v1.0.1.tar.gz
+Author: Khwaish Agarwal
+Author-email: khwaishagarwal22@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Khwaish-102217010 - A Python Package for Decision Analysis
+
+Topsis-Khwaish-102217010 is a Python package that implements the **Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS)**. This method helps in multi-criteria decision-making, enabling users to rank alternatives based on given criteria, weights, and impacts.
+
+---
+
+## **Overview**
+
+The Topsis package offers:
+- **Ease of Use**: A command-line interface for quick results.
+- **Customizable Inputs**: Allows users to define weights and impacts for each criterion.
+- **Automated Ranking**: Generates TOPSIS scores and ranks alternatives.
+
+---
+
+## **Installation**
+
+You can install the package directly from [PyPI](https://pypi.org/) using `pip`:
+
+```sh
+pip install Topsis-Khwaish-102217010
