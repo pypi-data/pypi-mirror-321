@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: collective.hardening
+Version: 0.0.1
+Summary: An addon for hardening Plone
+Home-page: https://github.com/collective/collective.hardening
+Author: ale-rt
+Author-email: alessandro.pisa@gmail.com
+License: GPL version 2
+Project-URL: PyPI, https://pypi.org/project/collective.hardening/
+Project-URL: Source, https://github.com/collective/collective.hardening
+Project-URL: Tracker, https://github.com/collective/collective.hardening/issues
+Keywords: Python Plone CMS Hardening
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 6.0
+Classifier: Framework :: Plone :: 6.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.GPL
+License-File: LICENSE.md
+Requires-Dist: AccessControl
+Requires-Dist: plone.api
+Requires-Dist: plone.app.registry
+Requires-Dist: plone.dexterity
+Requires-Dist: plone.formwidget.namedfile
+Requires-Dist: plone.memoize
+Requires-Dist: plone.namedfile
+Requires-Dist: plone.registry
+Requires-Dist: plone.rfc822
+Requires-Dist: plone.z3cform
+Requires-Dist: Products.CMFPlone
+Requires-Dist: Products.GenericSetup
+Requires-Dist: setuptools
+Requires-Dist: z3c.form
+Requires-Dist: zExceptions
+Requires-Dist: zope.component
+Requires-Dist: zope.globalrequest
+Requires-Dist: zope.i18nmessageid
+Requires-Dist: zope.interface
+Requires-Dist: zope.lifecycleevent
+Requires-Dist: zope.publisher
+Requires-Dist: zope.schema
+Provides-Extra: test
+Requires-Dist: plone.base; extra == "test"
+Requires-Dist: plone.browserlayer; extra == "test"
+Requires-Dist: plone.app.testing; extra == "test"
+Requires-Dist: plone.app.contenttypes[test]; extra == "test"
+
+[![image](https://github.com/collective/collective.hardening/actions/workflows/plone-package.yml/badge.svg)](https://github.com/collective/collective.hardening/actions/workflows/meta.yml)
+[![Coveralls](https://coveralls.io/repos/github/collective/collective.hardening/badge.svg?branch=main)](https://coveralls.io/github/collective/collective.hardening?branch=main)
+[![image](https://codecov.io/gh/collective/collective.hardening/branch/master/graph/badge.svg)](https://codecov.io/gh/collective/collective.hardening)
+[![Latest Version](https://img.shields.io/pypi/v/collective.hardening.svg)](https://pypi.python.org/pypi/collective.hardening/)
+[![Egg Status](https://img.shields.io/pypi/status/collective.hardening.svg)](https://pypi.python.org/pypi/collective.hardening)
+![image](https://img.shields.io/pypi/pyversions/collective.hardening.svg?style=plastic%20%20%20:alt:%20Supported%20-%20Python%20Versions)
+[![License](https://img.shields.io/pypi/l/collective.hardening.svg)](https://pypi.python.org/pypi/collective.hardening/)
+
+# collective.hardening
+
+**collective.hardening** is an add-on designed to enhance Plone security by adding configurable features that help safeguard your site.
+
+## Features
+
+- **Dedicated Control Panel** Easily configure security-related settings from one central location.
+
+- **File Type Restrictions** Control which file types (by extension or MIME type) can be uploaded to your site.
+
+- **Additional Improvements (TDB)** Further enhancements are planned for upcoming releases.
+
+### Control Panel
+
+A new control panel, accessible at `/@@hardening-controlpanel`, allows you to fine-tune the add-on's security settings.
+Through this interface, you can define which file types are permissible and ensure that only safe files are uploaded to your Plone site.
+You can access the control panel under the **Security** section of the main Plone control panel.
+
+### File Type Restrictions
+
+Using the control panel, you can specify disallowed MIME types or file extensions. This flexibility helps prevent the upload of potentially harmful files, bolstering your site's security.
+
+The implementation is based on:
+
+1. Event subscribers active on created or modified objects.
+2. A widget validator that checks the file type on upload.
+
+## Installation
+
+To install **collective.hardening**, add it to your buildout configuration as follows:
+
+```ini
+[instance]
+eggs +=
+    collective.hardening
+```
+
+After updating the configuration, run buildout:
+
+```bash
+bin/buildout
+```
+
+And restart your Plone instance.
+
+## Authors
+
+The [Syslab.com](https://www.syslab.com) team.
+
+## Contributors
+
+Put your name here, you deserve it!
+
+- Alessandro Pisa, [Syslab.com](https://www.syslab.com)
+
+## Contribute
+
+- Issue Tracker: <https://github.com/collective/collective.hardening/issues>
+- Source Code: <https://github.com/collective/collective.hardening>
+
+## Support
+
+If you are having issues, please let us know in the [issue tracker](https://github.com/collective/collective.hardening/issues).
+
+## License
+
+The project is licensed under the GPLv2.
+
+
+# Contributors
+
+
+- ale-rt, alessandro.pisa@gmail.com
+
+
+# Changelog
+
+## 0.0.1 (2025-01-15)
+
+- Initial release.
+  [ale-rt]
