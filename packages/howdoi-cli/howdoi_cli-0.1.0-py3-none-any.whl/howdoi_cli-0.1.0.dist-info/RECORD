@@ -1,0 +1,14 @@
+howdoi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+howdoi/cli.py,sha256=Ufn06YIu9Q4JamDjVFe8Uy1uKlsqWSSssxTsbIessxk,1048
+howdoi/config.py,sha256=IqGulhMDuYZbQ05jqn2N3D1Y7WA9ldwQA2FkB3Cqg7w,1514
+howdoi/shell_utils.py,sha256=xn2Q3pnWDGE04qA6hPZ5XI1NBjBQpy9b7nJlH-v5Dhg,192
+howdoi/providers/__init__.py,sha256=LSjR-YHWcrnyqGCY9a8qZsH0l28xcLJjvZliuFGuxqI,458
+howdoi/providers/anthropic.py,sha256=DWp-j7zXjhD3BQ6ZiDCBCAjiXURmdSAFY-GQFFRtr0U,1058
+howdoi/providers/base.py,sha256=wu91QvMaw3v0V3BCs3bN1t2Zs6SkfSg6W2nCirjC5KU,157
+howdoi/providers/openai.py,sha256=CvWFZmi1co9IjhaaZCJhtbSxQp0XW-r45ON9P6hBJGY,1049
+howdoi_cli-0.1.0.dist-info/LICENSE,sha256=DJDYbHKq6uanb2IubORRgygUqN_gKbXQB7aHAbd0AZA,1071
+howdoi_cli-0.1.0.dist-info/METADATA,sha256=ey2uRgwg4j6hA2PlKx5uia4LQoR-aS2-f6RSDvmwxrM,2803
+howdoi_cli-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+howdoi_cli-0.1.0.dist-info/entry_points.txt,sha256=WqkmGCoHeWAFosGySYSl79kJv9TjmlAvuJ0tZ4H_p5g,40
+howdoi_cli-0.1.0.dist-info/top_level.txt,sha256=2PmtEA2ihN4bJw-nlic3N_jeXZrkF8wRe8NvYq8xbxc,7
+howdoi_cli-0.1.0.dist-info/RECORD,,
