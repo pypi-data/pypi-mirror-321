@@ -1,0 +1,8 @@
+signal_noise_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signal_noise_generator/noise_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signal_noise_generator/noise_generator/noises.py,sha256=5z5CUlxUYQzkHva-LWaFXET19OuBK22tDbIOnHtOdCI,1159
+signal_noise_generator/signal_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signal_noise_generator/signal_generator/signals.py,sha256=WgtalznQiyDuf2oBawSkbjmzSrQ8O6dgV3RTkI2DoqI,5689
+signal_noise_generator-0.1.0.dist-info/METADATA,sha256=zJU-uNCFpPonPDVbPUIKNB0pTL2-eFdeOE9XfFGLFFs,563
+signal_noise_generator-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+signal_noise_generator-0.1.0.dist-info/RECORD,,
