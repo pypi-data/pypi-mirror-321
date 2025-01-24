@@ -1,0 +1,9 @@
+SELECT
+  id,
+  user_id,
+  created_at,
+  updated_at,
+  platform,
+  useragent,
+FROM
+  `moz-fx-data-shared-prod.mozilla_vpn_external.devices_v1`

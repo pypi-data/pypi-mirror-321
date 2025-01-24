@@ -1,0 +1,24 @@
+friendly_name: Newtab Interactions
+description: |-
+  Interactions on the newtab page, roughly one row per newtab "visit" per-day
+  (identified by the visit id).
+owners:
+  - cbeck@mozilla.com
+  - mbowerman@mozilla.com
+labels:
+  application: firefox
+  incremental: true
+  schedule: daily
+  owner1: mbowerman
+scheduling:
+  dag_name: bqetl_newtab
+bigquery:
+  time_partitioning:
+    type: day
+    field: submission_date
+    require_partition_filter: true
+    expiration_days: null
+  clustering:
+    fields:
+      - channel
+      - country_code
