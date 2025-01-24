@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: commonutil-fileio-checksum
+Version: 3.1.0
+Summary: Caculate checksum for file at given path
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# commonutil-fileio-checksum
+
+Helper routine to generate checksum from path of file.
