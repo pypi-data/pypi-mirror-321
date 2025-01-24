@@ -1,0 +1,16 @@
+faster_whisper/__init__.py,sha256=U5bDoCWnsM-BJG_NaAwLt-OE4uWHzC4Y-VGM70wm1Ww,430
+faster_whisper/audio.py,sha256=mdrf9H9PiKbvYQ5gvyiUbU1bGPbDQV_ClN18jAnMhEw,3763
+faster_whisper/feature_extractor.py,sha256=ARQ9UF55fHpUFRMgGbcRDNsDvJVQwDS4cAYDHDO3pN4,3954
+faster_whisper/tokenizer.py,sha256=FM9aD5F7aa1ezZzKRo8jXL-BqKINP9W1Wv3yp9qiVoM,8247
+faster_whisper/transcribe.py,sha256=n0zj03kyKQSy2yXjWoqiZqyibV02aq0cxx7LtcdIk0o,89468
+faster_whisper/utils.py,sha256=ArwKiU5fGgJxHjiVELvFJPkXkZBFmiN89QSyX75Hzds,5020
+faster_whisper/vad.py,sha256=dszdkqI3cZa-MhkMR2BsY3h0KTA34QuLshsZc8uvGPA,13055
+faster_whisper/version.py,sha256=qbWcgPQwjHi5KX1CZA5ZEH5OSGTbKrkF8GOLcOxZ_tU,50
+faster_whisper/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faster_whisper/assets/silero_decoder_v5.onnx,sha256=jCA0T1CYRqB8zYWCfohXAX-uZ_q9WGib7Br3nh1Igwc,532505
+faster_whisper/assets/silero_encoder_v5.onnx,sha256=Dp_I9WQHaT0oP5kEX7lcK5D9yjQzzl-D4sEh-05hUHU,713415
+unhallucinated_faster_whisper-1.0.3.dist-info/LICENSE,sha256=r2eYE15yn4qmyFOTbQN9_epElzTSa46mqJgF_KdYwNU,1064
+unhallucinated_faster_whisper-1.0.3.dist-info/METADATA,sha256=eabgpj4Cg7vXn_TBpwWiN3x7B8y-Y2dsLET38iOBm_k,16915
+unhallucinated_faster_whisper-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+unhallucinated_faster_whisper-1.0.3.dist-info/top_level.txt,sha256=Y2hl8jzfIFjT23e2bW1_jUFU6YlPz3cAN037hHt2sYg,15
+unhallucinated_faster_whisper-1.0.3.dist-info/RECORD,,
