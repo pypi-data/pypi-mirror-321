@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ebuild/__init__.py
+ebuild/main_cli.py
+ebuild/version.py
+ebuild.egg-info/PKG-INFO
+ebuild.egg-info/SOURCES.txt
+ebuild.egg-info/dependency_links.txt
+ebuild.egg-info/entry_points.txt
+ebuild.egg-info/top_level.txt

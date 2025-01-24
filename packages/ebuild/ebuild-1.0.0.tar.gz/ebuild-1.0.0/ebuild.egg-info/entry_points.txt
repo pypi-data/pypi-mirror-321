@@ -1,0 +1,2 @@
+[console_scripts]
+ebuild = ebuild.main_cli:main
