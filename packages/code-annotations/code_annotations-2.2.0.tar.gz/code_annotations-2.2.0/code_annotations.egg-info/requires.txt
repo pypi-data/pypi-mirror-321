@@ -1,0 +1,8 @@
+pyyaml
+click
+Jinja2
+stevedore
+python-slugify
+
+[django]
+Django>=4.2
