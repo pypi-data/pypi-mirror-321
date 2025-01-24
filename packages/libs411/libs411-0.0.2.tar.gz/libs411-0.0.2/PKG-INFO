@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: libs411
+Version: 0.0.2
+Summary: a project for development
+Author-Email: fulei <fulei@411.com>
+Requires-Dist: meson-python
+
