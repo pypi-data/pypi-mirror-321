@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+shangshan/__init__.py
+shangshan/download.py
+shangshan/utils.py
+shangshanAI.egg-info/PKG-INFO
+shangshanAI.egg-info/SOURCES.txt
+shangshanAI.egg-info/dependency_links.txt
+shangshanAI.egg-info/requires.txt
+shangshanAI.egg-info/top_level.txt
+tests/test_download.py
