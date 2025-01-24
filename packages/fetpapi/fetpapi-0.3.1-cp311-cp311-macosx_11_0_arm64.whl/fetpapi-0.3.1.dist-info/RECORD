@@ -1,0 +1,10 @@
+fetpapi/__init__.py,sha256=0YFeL_LM8FOBO_PQ4X9HgaNwJwMtCg2JfjC0e9arp_4,519004
+fetpapi/_fetpapi.cpython-311-darwin.so,sha256=h1AQqdxT762z6TMKDmGHOin4IWMDcVNeol2L1pbITQA,7788304
+fetpapi/.dylibs/libFesapiCpp.2.12.1.0.dylib,sha256=bWjoVMbUEeA8h6QbcqX8A6lAJHjRo5Erk6uyXjQJE9Q,26252400
+fetpapi/.dylibs/libssl.3.dylib,sha256=GwrGedCS8QmiKuRdGee2c13ErnuxdzfgQmBOX6iKPuo,969696
+fetpapi/.dylibs/libcrypto.3.dylib,sha256=x8zjnhTusk0DTyNjwvhE80XZzDNfXavpHRf6fIAyLeQ,4550288
+fetpapi/.dylibs/libFetpapi.0.3.1.0.dylib,sha256=OGHEdiIRkrJ-y77A2u3amWI2_EKnow46mJVWtIPTQvc,7502416
+fetpapi-0.3.1.dist-info/RECORD,,
+fetpapi-0.3.1.dist-info/WHEEL,sha256=NW1RskY9zow1Y68W-gXg0oZyBRAugI1JHywIzAIai5o,109
+fetpapi-0.3.1.dist-info/top_level.txt,sha256=3sRSSdQsvMMCn_M_6pP6F71I1IL7LgDZmbY61fkAtI0,8
+fetpapi-0.3.1.dist-info/METADATA,sha256=MtZTQudye6SjuwFFDtd3L_-6shk17DEeJOi0_p40SJ8,1941
