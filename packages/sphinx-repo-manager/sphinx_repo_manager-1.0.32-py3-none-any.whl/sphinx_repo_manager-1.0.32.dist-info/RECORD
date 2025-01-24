@@ -1,0 +1,9 @@
+sphinx_repo_manager/__init__.py,sha256=m9_e_WSGAA-eOOUUJZ-SS9uB2bB9FoWoEIJzHqsGd78,7767
+sphinx_repo_manager/api_reference.py,sha256=SvHomW67kffWupVUrbcVaFr5Y-ptNyA03nFh7-b32zo,2601
+sphinx_repo_manager/git_helper.py,sha256=EjNmgxaGH0enr1z0YC1grTX7McJkEAzOc08PyhZLB7Q,33632
+sphinx_repo_manager/log_styles.py,sha256=J5569qVYbLHiKAXS-WQl_kx2dK8Z7xWpQvas8OyHbG4,1353
+sphinx_repo_manager/sphinx_repo_manager.py,sha256=GF-yKe4rXu9_JA_aOPtSovoGyoodfWDLuteeMuS2hr0,51465
+sphinx_repo_manager-1.0.32.dist-info/LICENSE,sha256=Iw5vzOxpyVvO6J7U0HXQi6k3-bMQKWzxEDmZyfRIZBo,1094
+sphinx_repo_manager-1.0.32.dist-info/METADATA,sha256=J9_Kq469EiMuvPA1IT3X2CWTITPAuB0ff9_gLM_N0aM,5900
+sphinx_repo_manager-1.0.32.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+sphinx_repo_manager-1.0.32.dist-info/RECORD,,
