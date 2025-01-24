@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de754d56-2e26-4a28-81ae-218610f1ede1" name="Default Changelist" comment="Bump version 0.8.2.dev0">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/publish.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="add-lowest-resolution-strategy" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="JupyterTrust" id="9e668b2c-5545-4e32-93be-46ab1a69e2a8" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="1WaupXvE8o2Gn6Xhy25NyGIeDNh" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python tests.Doctest alpha">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="fast-krippendorff" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="fast-krippendorff" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctest alpha" type="tests" factoryName="Doctests" nameIsGenerated="true">
+      <module name="fast-krippendorff" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/krippendorff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/krippendorff/krippendorff.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="alpha" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de754d56-2e26-4a28-81ae-218610f1ede1" name="Default Changelist" comment="" />
+      <created>1579400209722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579400209722</updated>
+      <workItem from="1579400210922" duration="917000" />
+      <workItem from="1579568132046" duration="2560000" />
+      <workItem from="1580090909316" duration="15000" />
+      <workItem from="1580090931412" duration="4999000" />
+      <workItem from="1580226376488" duration="9000" />
+      <workItem from="1602029320698" duration="2970000" />
+      <workItem from="1602515814370" duration="278000" />
+      <workItem from="1602516102752" duration="10339000" />
+      <workItem from="1602606581504" duration="9783000" />
+      <workItem from="1605916661604" duration="1272000" />
+      <workItem from="1605979172872" duration="1291000" />
+      <workItem from="1605985855996" duration="66000" />
+      <workItem from="1638765833605" duration="6001000" />
+      <workItem from="1641830723660" duration="108000" />
+      <workItem from="1679960526672" duration="9317000" />
+      <workItem from="1680061604136" duration="931000" />
+      <workItem from="1680570125271" duration="33000" />
+      <workItem from="1680570171028" duration="10000" />
+      <workItem from="1736865368645" duration="5707000" />
+      <workItem from="1736915133987" duration="1461000" />
+      <workItem from="1736916605595" duration="361000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add support for Python 3.9 and remove support for Python 3.5">
+      <created>1602030043024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602030043024</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add support for Python 3.9 and remove support for Python 3.5">
+      <created>1602030087872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602030087872</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add support for Python 3.9 and remove support for Python 3.5">
+      <created>1602030174326</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602030174326</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add typing">
+      <created>1602031502953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602031502953</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add typing">
+      <created>1602031723910</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602031723910</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bump version 0.3.3">
+      <created>1602031814013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602031814013</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix publish GH action">
+      <created>1602032103355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602032103355</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Simplify the publish gh action">
+      <created>1602032272935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602032272935</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Replace some explicit for-loops for numpy ops">
+      <created>1602518786963</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602518786963</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add an example with strings">
+      <created>1602520982646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602520982646</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove all for loops in favor of NumPy SIMD">
+      <created>1602526629517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602526629517</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bump version 0.4.0">
+      <created>1602526757724</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602526757724</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Bump version 0.4.1-dev">
+      <created>1602526958650</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602526958650</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix missing poetry installation in the publish GH action">
+      <created>1602527018537</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602527018537</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix missing build in the publish GH action">
+      <created>1602527349816</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602527349816</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Use dtype in more places, and avoid passing unnecessary args for aux func">
+      <created>1602613777248</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602613777248</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add some missing dtype conversions and a value domain assert">
+      <created>1602620330882</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602620330882</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Use double quotes for consistency">
+      <created>1638815126037</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1638815126037</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bump version 0.5.1">
+      <created>1638816627977</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1638816627977</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bump version 0.5.2-dev">
+      <created>1638816668550</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1638816668550</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Use `DTypeLike` for `dtype` type in functions">
+      <created>1679961156989</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679961156989</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Use `numpy.typing` as `npt`">
+      <created>1679961251647</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679961251647</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fix import order in `sample.py`">
+      <created>1679961874130</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679961874130</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Set the default dtype in a constant">
+      <created>1679962019057</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679962019057</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Use `|` for type unions">
+      <created>1679962190474</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679962190474</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Define a type of the level of measurement">
+      <created>1679962587684</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1679962587684</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Use new Poetry format for dependency groups">
+      <created>1679964192452</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964192452</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fix `LevelOfMeasurement` type to be compatible with Python 3.8 and 3.9">
+      <created>1679964210517</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964210517</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Make comments use Markdown syntax">
+      <created>1679964339813</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964339813</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Use `npt.ArrayLike`">
+      <created>1679964794243</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964794243</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Rename variable: `found_value_domain` to `computed_value_domain`">
+      <created>1679964816822</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964816822</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Avoid using asserts in favor of `ValueError`s&#10;&#10;See https://stackoverflow.com/a/945135/1165181.">
+      <created>1679964837733</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1679964837733</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Return an error if a single coder is provided&#10;&#10;Fix #26.">
+      <created>1679974471216</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1679974471216</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Update env setup in publish.yml to match ci.yml for GitHub Actions">
+      <created>1679983654510</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1679983654510</updated>
+    </task>
+    <task id="LOCAL-00035" summary="WIP">
+      <created>1679984067407</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1679984067407</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Use a more standard pyproject.toml file format and use uv for the GitHub actions">
+      <option name="closed" value="true" />
+      <created>1736869182638</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1736869182638</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Disable the cache in the CI">
+      <option name="closed" value="true" />
+      <created>1736869597218</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1736869597218</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add a test to the CI to test the min dependency versions">
+      <option name="closed" value="true" />
+      <created>1736916298260</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1736916298260</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Set a max NumPy version">
+      <option name="closed" value="true" />
+      <created>1736916454028</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1736916454028</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Bump version 0.8.1">
+      <option name="closed" value="true" />
+      <created>1736916629527</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1736916629527</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Bump version 0.8.2.dev0">
+      <option name="closed" value="true" />
+      <created>1736916773869</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1736916773869</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add some missing dtype conversions and a value domain assert" />
+    <MESSAGE value="Use double quotes for consistency" />
+    <MESSAGE value="Bump version 0.5.1" />
+    <MESSAGE value="Bump version 0.5.2-dev" />
+    <MESSAGE value="Use `DTypeLike` for `dtype` type in functions" />
+    <MESSAGE value="Use `numpy.typing` as `npt`" />
+    <MESSAGE value="Fix import order in `sample.py`" />
+    <MESSAGE value="Set the default dtype in a constant" />
+    <MESSAGE value="Use `|` for type unions" />
+    <MESSAGE value="Define a type of the level of measurement" />
+    <MESSAGE value="Use new Poetry format for dependency groups" />
+    <MESSAGE value="Fix `LevelOfMeasurement` type to be compatible with Python 3.8 and 3.9" />
+    <MESSAGE value="Make comments use Markdown syntax" />
+    <MESSAGE value="Use `npt.ArrayLike`" />
+    <MESSAGE value="Rename variable: `found_value_domain` to `computed_value_domain`" />
+    <MESSAGE value="Avoid using asserts in favor of `ValueError`s&#10;&#10;See https://stackoverflow.com/a/945135/1165181." />
+    <MESSAGE value="Return an error if a single coder is provided&#10;&#10;Fix #26." />
+    <MESSAGE value="Update env setup in publish.yml to match ci.yml for GitHub Actions" />
+    <MESSAGE value="WIP" />
+    <MESSAGE value="Use a more standard pyproject.toml file format and use uv for the GitHub actions" />
+    <MESSAGE value="Disable the cache in the CI" />
+    <MESSAGE value="Add a test to the CI to test the min dependency versions" />
+    <MESSAGE value="Set a max NumPy version" />
+    <MESSAGE value="Bump version 0.8.1" />
+    <MESSAGE value="Bump version 0.8.2.dev0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump version 0.8.2.dev0" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fast_krippendorff$sample.coverage" NAME="sample Coverage Results" MODIFIED="1605979247006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fast_krippendorff$Doctest_alpha.coverage" NAME="Doctest alpha Coverage Results" MODIFIED="1679974428730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/krippendorff" />
+  </component>
+</project>
