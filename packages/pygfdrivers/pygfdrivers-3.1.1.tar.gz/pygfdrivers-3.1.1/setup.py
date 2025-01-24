@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='pygfdrivers',
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
+    description='General Fusion Python package to provide abstract layer for various hardware control.',
+    packages=find_packages(),
+    python_requires='>=3.11',
+    package_dir={'pygfdrivers': 'pygfdrivers'},
+    install_requires=[
+        'acq400_hapi>=2.9.4',
+        'annotated-types>=0.7.0',
+        'colorama>=0.4.6',
+        'fuzzywuzzy>=0.18.0',
+        'numpy>=2.1.2',
+        'orjson>=3.10.7',
+        'pandas>=2.2.2',
+        'paramiko>=3.4.0',
+        'pillow>=10.4.0',
+        'pydantic>=2.9.2',
+        'pymongo>=4.10.1',
+        'PySerial>=3.5',
+        'PyUSB>=1.2.1',
+        'PyVISA>=1.14.1',
+        'PyVISA-py>=0.7.2',
+        'PyYAML>=6.0.1',
+        'python-Levenshtein>=0.25.1',
+        'setuptools>=75.2.0',
+    ],
+)
