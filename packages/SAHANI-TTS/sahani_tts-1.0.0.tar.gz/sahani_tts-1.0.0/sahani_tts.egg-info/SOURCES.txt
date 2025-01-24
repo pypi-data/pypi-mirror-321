@@ -1,0 +1,6 @@
+setup.py
+package/__init__.py
+sahani_tts.egg-info/PKG-INFO
+sahani_tts.egg-info/SOURCES.txt
+sahani_tts.egg-info/dependency_links.txt
+sahani_tts.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: sahani_tts
+Version: 1.0.0
+Summary: A simple TTS package
+Author: Sahani
+Author-email: sahaniaryan321@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
