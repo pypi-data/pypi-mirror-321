@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+scraper/__init__.py
+tijori.egg-info/PKG-INFO
+tijori.egg-info/SOURCES.txt
+tijori.egg-info/dependency_links.txt
+tijori.egg-info/requires.txt
+tijori.egg-info/top_level.txt
