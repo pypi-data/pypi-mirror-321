@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpocketr"
+version = "1.2.0"
+authors = [
+  { name="Seth D. Veenbaas", email="sdveenbaas@gmail.com" },
+]
+description = "Find, characterize, and visualize drug-like pockets in RNA structures."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE.txt" }
+
+[project.urls]
+Homepage = "https://github.com/Weeks-UNC/fpocketR"
+Issues = "https://github.com/Weeks-UNC/fpocketR/issues"
+
+[tool.setuptools]
+packages = ["fpocketr", "fpocketr.rnavigate", "fpocketr.rnavigate.data", "fpocketr.rnavigate.plots", "fpocketr.rnavigate.plots.functions"]
