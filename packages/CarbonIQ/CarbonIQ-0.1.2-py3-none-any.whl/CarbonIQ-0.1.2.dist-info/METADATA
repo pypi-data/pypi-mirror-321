@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: CarbonIQ
+Version: 0.1.2
+Summary: A Python package to track carbon emissions for scripts and applications.
+Home-page: https://github.com/ashikrafi/CarbonIQ
+Author: Md Ashikur Rahman
+Author-email: mdashikur.rafi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pynvml
+Requires-Dist: psutil
+
+# CarbonIQ
+
+**CarbonIQ** is a Python package to monitor and track carbon emissions of scripts and applications, including CPU, memory, disk I/O, and GPU usage.
+
+## Features
+
+- CPU and memory energy usage tracking
+- GPU resource tracking using NVML
+- Real-time emission factor support
+- Detailed execution summaries with gamification
+
+## Installation
+
+```bash
+pip install CarbonIQ
