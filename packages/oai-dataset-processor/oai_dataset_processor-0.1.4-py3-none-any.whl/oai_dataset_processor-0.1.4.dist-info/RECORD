@@ -1,0 +1,11 @@
+oai_dataset_processor/__init__.py,sha256=KqIyC76eSa_sZkzaluSxIRmjcNCygNICGqzdjQGbjD4,119
+oai_dataset_processor/models/sample_types.py,sha256=vWGhE4Ta4qieW5R2-xv-EeA-Y43cGX2AE3Mhez38Jow,1604
+oai_dataset_processor/processors/openai_processor.py,sha256=3oVH2ElU1umMRgyT2gcibnuop6Bw3ey0oAaiRtK9uew,6570
+oai_dataset_processor/relational_db/orm_layout.py,sha256=hLhVlSBFsEAhRKOOjb8wFd485PY7CwS2vWEm2zfJ5PE,1843
+oai_dataset_processor/relational_db/storage_handler.py,sha256=OqhREOBJBFu726lJu6zJEZUe8e42xpIJJY22p6pLXwg,4492
+oai_dataset_processor/utils/sample_creation.py,sha256=7FvTfbSwh-iWZ-3AG9m2aX28P98S9O4bQXq08NUouEc,1260
+oai_dataset_processor-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+oai_dataset_processor-0.1.4.dist-info/METADATA,sha256=nhoLLmkR44ii1DHRG0FDfW72RuLZqpD7riZMBlStNEE,3181
+oai_dataset_processor-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+oai_dataset_processor-0.1.4.dist-info/top_level.txt,sha256=f4pL26_GlERhvymBSRSQQkz4UVXxrLlM6Qk4hHH7d2s,22
+oai_dataset_processor-0.1.4.dist-info/RECORD,,
