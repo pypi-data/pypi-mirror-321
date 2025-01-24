@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: 102203836_topsis
+Version: 1.0.0
+Summary: Calculate TOPSIS score and rank alternatives.
+Home-page: https://github.com/ParasJain19/102203836_topsis
+Download-URL: https://github.com/ParasJain19/102203836_topsis/archive/v1.0.0.tar.gz
+Author: Paras Jain
+Author-email: pjain3_be22@thapar.edu
+License: MIT
+Keywords: Topsis,Ranking,Decision Making,MCDM
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# TOPSIS
+
+This script calculates the **TOPSIS** (Technique for Order Preference by Similarity to Ideal Solution) score and ranks alternatives based on the provided decision matrix, weights, and impacts. It uses the weights and impacts to determine the ideal best and worst values, then calculates the distance of each alternative from these values to derive the final score and ranking.
+
+## Installation
+
+There are no external dependencies, but you need to have **Python** and **pandas** installed to run the script.
+
+```pip install 102203836_topsis```
+
+## How to use it?
+### Step 1: Prepare the Data
+The input data should be a CSV file containing the following columns:
+
+The first column should contain the fund names.
+The remaining columns should contain the criteria values for each alternative (row).
+Example CSV format:
+
+Fund Name,P1,P2,P3,P4,P5
+M1,0.67,0.45,6.3,38.2,11.41
+M2,0.81,0.66,6,42.4,12.47
+M3,0.68,0.46,3,60.2,16.09
+
+### Step 2: Run the Script
+To run the script, use the following command in the terminal:
+
+python <your-script-name>.py <input-file> <weights> <impacts> <output-file>
+Example:
+python topsis.py data.csv "1,1,1,2,1" "+,+,-,+,-" results.csv
+Where:
+<your-script-name>.py is the name of the script file (e.g., topsis.py).
+<input-file> is your input CSV file (e.g., data.csv).
+<weights> is a comma-separated string of weights for each criterion (e.g., "1,1,1,2,1").
+<impacts> is a comma-separated string of impacts for each criterion (e.g., "+,+,-,+,-").
+<output-file> is the file where the results will be saved (e.g., results.csv).
+
+### Step 3: Output
+The output will be a CSV file with the calculated TOPSIS scores and ranks for each alternative.
+...
