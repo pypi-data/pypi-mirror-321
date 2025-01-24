@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: autobex
+Version: 0.1.46
+Summary: An enhanced OpenStreetMap search utility
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: geopy>=2.3.0
