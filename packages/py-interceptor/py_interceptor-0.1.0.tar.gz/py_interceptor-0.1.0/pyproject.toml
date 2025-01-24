@@ -1,0 +1,36 @@
+[project]
+name = "py-interceptor"
+version = "0.1.0"
+description = 'A library for intercepting and processing Python method calls.'
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["mocking", "testing"]
+authors = [
+    { name = "RustyTuna", email = "prototype4711@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Documentation = "https://github.com/RustyTunaDev/py-interceptor#readme"
+Issues = "https://github.com/RustyTunaDev/py-interceptor#readme/-/issues"
+Source = "https://github.com/RustyTunaDev/py-interceptor#readme/src"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "build"
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]

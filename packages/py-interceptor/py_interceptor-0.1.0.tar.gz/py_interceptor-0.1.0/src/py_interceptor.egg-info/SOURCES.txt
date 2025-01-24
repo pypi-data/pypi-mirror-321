@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/interceptor/__init__.py
+src/interceptor/interceptor.py
+src/py_interceptor.egg-info/PKG-INFO
+src/py_interceptor.egg-info/SOURCES.txt
+src/py_interceptor.egg-info/dependency_links.txt
+src/py_interceptor.egg-info/requires.txt
+src/py_interceptor.egg-info/top_level.txt
+tests/test_interception_functions.py
