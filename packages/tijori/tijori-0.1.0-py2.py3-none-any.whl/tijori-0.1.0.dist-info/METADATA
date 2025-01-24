@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: tijori
+Version: 0.1.0
+Summary: A Python library to scrape financial data from Tijori Finance for analysis with LLMs.
+Home-page: https://github.com/yourusername/phanindraparashar-tijori
+Author: Phanindra Parashar
+Author-email: phanindraparashar@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: pandas==1.5.3
+Requires-Dist: selenium==4.27.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# tijori
+Tijori is a Python library that scrapes financial data from Tijori Finance and formats it for seamless analysis with large language models (LLMs). It enables users to efficiently extract, process, and utilize financial information to support data-driven insights and decision-making.
