@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+chris_testing_versioning_stuff.egg-info/PKG-INFO
+chris_testing_versioning_stuff.egg-info/SOURCES.txt
+chris_testing_versioning_stuff.egg-info/dependency_links.txt
+chris_testing_versioning_stuff.egg-info/top_level.txt
+src/hello/__init__.py
+src/hello/hello.py
