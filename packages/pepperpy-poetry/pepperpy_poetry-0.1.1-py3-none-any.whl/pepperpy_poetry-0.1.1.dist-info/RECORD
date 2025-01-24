@@ -1,0 +1,10 @@
+pepperpy_poetry/commands.py,sha256=q29cpdlTFluw0cBSgbGW44IKbk3fMUdWYXW-R-T30-I,7288
+pepperpy_poetry/config.py,sha256=OIQyo1kAmr03eNGU3D7ASv5XffIAUkQ4iY1crHNCyjM,7582
+pepperpy_poetry/dependency.py,sha256=gznwZ4f4DLgwB2Vyh77LkoEizbRIRTgfrD82iNIPvIs,3066
+pepperpy_poetry/generators.py,sha256=ar6ZJtrRriw8NTvs9677NBaJMJi0VCgtoCW_7HYjSk4,8868
+pepperpy_poetry/plugin.py,sha256=FGITQ7WcMouHAx4EqzsH3xwSH5Q9KSzh4x4wEOM5USQ,8724
+pepperpy_poetry-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pepperpy_poetry-0.1.1.dist-info/METADATA,sha256=T21IsFUYEc6ZnAaEo57M4S_M1s2YE669Azbs3urRNp4,4646
+pepperpy_poetry-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pepperpy_poetry-0.1.1.dist-info/entry_points.txt,sha256=471_wd8ANrRKRz5XplBSZ_kKvcT648lc42wl0VA4AoA,68
+pepperpy_poetry-0.1.1.dist-info/RECORD,,
