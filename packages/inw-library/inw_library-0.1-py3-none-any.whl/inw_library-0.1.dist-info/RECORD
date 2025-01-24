@@ -1,0 +1,11 @@
+inw_library/__init__.py,sha256=zV8fJCygjmq3R3ocUS2LDU-EURC5uJX_pMJHuevWnnY,418
+inw_library/fncDataFrame.py,sha256=HRZunpI2vrQWYhJV2fRkPfeTIFPRfIrnwHekZC_Tgnk,2765
+inw_library/fncFile_folder.py,sha256=qYeQfIEnyhCfIAtfN_ofJgKTYCo0EeNy_3364UWl7aA,3950
+inw_library/fncPostgres.py,sha256=q-OxEp9Gfigj5515aWwVGkW52b1GE10KXDLqxNG5mJg,3416
+inw_library/fncSqlServer.py,sha256=mZrz2Q1h0FQi1TKOBpw9NR-eckW7MN1TVKdh1kJf4PU,7109
+inw_library/fncString.py,sha256=R-c0vadCuN-7w8OaurkEePgvalR48cDmkAHtHoHaKXw,599
+inw_library/testFnc.py,sha256=toncLJXzZuxxasB_V50rfZyYwzuLjcZsD4lJbGywKOQ,74
+inw_library-0.1.dist-info/METADATA,sha256=m1YAucoraBd5lBW3RXRiaVWW5d58b33PP-KiPwTjxLg,158
+inw_library-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+inw_library-0.1.dist-info/top_level.txt,sha256=BmlfsISZRWaOB1CQZFZ1UojWgfDzisBb-QwKr8SlBQg,12
+inw_library-0.1.dist-info/RECORD,,
