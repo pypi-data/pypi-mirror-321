@@ -1,0 +1,59 @@
+Metadata-Version: 2.2
+Name: better_crud
+Version: 0.0.3
+Summary: A better CRUD library for FastAPI.
+Home-page: https://github.com/bigrivi/better_crud
+Author: bigrivi
+Author-email: sunjianghong@gmail.com
+License: Apache License 2.0
+Project-URL: Source Code, https://github.com/bigrivi/better_crud
+Keywords: fastapi,crud,async,sqlalchemy,pydantic
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: FastAPI
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.111.0
+Requires-Dist: sqlalchemy>=2.0.30
+Requires-Dist: fastapi_pagination>=0.12.24
+Requires-Dist: pydantic>=2.7.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# better_crud
+<p align="center" markdown=1>
+  <i>A better CRUD library for FastAPI.</i>
+</p>
+<p align="center" markdown=1>
+<a href="https://github.com/bigrivi/better_crud/actions/workflows/pytest.yml">
+  <img src="https://github.com/bigrivi/better_crud/actions/workflows/pytest.yml/badge.svg" alt="Tests"/>
+</a>
+<a href="https://pypi.org/project/better_crud/">
+  <img src="https://img.shields.io/pypi/v/better_crud?color=%2334D058&label=pypi%20package" alt="PyPi Version"/>
+</a>
+<a href="https://pypi.org/project/better_crud/">
+  <img src="https://img.shields.io/pypi/pyversions/better_crud.svg?color=%2334D058" alt="Supported Python Versions"/>
+</a>
+<a href="https://codecov.io/github/bigrivi/better_crud" >
+ <img src="https://codecov.io/github/bigrivi/better_crud/graph/badge.svg?token=MEMUT1FH4K"/>
+ </a>
+</p>
