@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "log-configurator"
+version = "0.0.3"
+description = "simple tool to facilitate logging - made for my personal use"
+authors = ["rlipperts <rlipperts@techfak.uni-bielefeld.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.test.dependencies]
+ruff = "^0.9"
+pytest = "^8.3"
+pyright = "^1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# linting ---------------------------------------------------------------------
+
+[tool.ruff]
+# Enable all rules.
+target-version = "py312"
+# Ignores:
+# - D100: Allow modules without docstring for cleaner single-class modules
+# - D105: Allow magic methods without docstring
+# - ANN101, ANN102: No Typehints for self and cls
+# - FIX002: Generally allow todo comments, if formatted correctly
+# Ignore __init__.py files and sphinx code
+exclude = ["*/__init__.py", "doc/"]
+
+[tool.ruff.lint]
+ignore = ["D100", "D105", "FIX002"]
+select = ["ALL"]
+typing-modules = ["numpy.typing"]
+unfixable = ["ERA001"]
+# Allow omitting type annotation for __init__ return value
+flake8-annotations.mypy-init-return = true
+pydocstyle.convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+# Ignores for tests:
+# - D100, D103: Don't require docstrings for tests
+# - S101: Allow asserts in tests
+# - ANN001, ANN201, ANN202: Don't require type annotations for tests
+# - INP001: No __init__.py files in test directory
+# - PLR0913: Allow many arguments in function calls
+# - SLF001: Allow accessing private members in tests
+"tests/*" = ["D100", "D101", "D102", "D103", "S101", "ANN001", "ANN201", "ANN202", "INP001", "PLR0913", "SLF001"]
+"scripts/*" = ["SLF001", "D103"]
+
+[tool.pyright]
+include = ["src"]
+# strict = ["src"]
+exclude = []
+reportMissingImports = true
+reportMissingTypeStubs = false
+# this requires python 3.12
+# reportImplicitOverride = true
+pythonVersion = "3.12"
+pythonPlatform = "Linux"
