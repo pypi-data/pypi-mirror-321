@@ -1,0 +1,24 @@
+[project]
+name = "domain-collector"
+version = "0.1.4"
+description = "Collect domains with ease"
+readme = "README.md"
+authors = [
+    { name = "Maxim (neiromaster) Gavrilenko", email = "parrysh@mail.ru" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "playwright>=1.49.1",
+]
+
+[project.scripts]
+domain-collector = "domain_collector.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.1",
+]
