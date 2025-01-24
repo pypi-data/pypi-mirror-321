@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+copycode/__init__.py
+copycode/main.py
+copycode.egg-info/PKG-INFO
+copycode.egg-info/SOURCES.txt
+copycode.egg-info/dependency_links.txt
+copycode.egg-info/entry_points.txt
+copycode.egg-info/requires.txt
+copycode.egg-info/top_level.txt
