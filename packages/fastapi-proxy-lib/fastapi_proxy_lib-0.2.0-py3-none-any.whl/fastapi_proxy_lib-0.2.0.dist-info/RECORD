@@ -1,0 +1,15 @@
+fastapi_proxy_lib/__init__.py,sha256=t3RpiHAr8OXTJdQOb1a-aoHAmnNR7z-AM5JaswEEUjQ,187
+fastapi_proxy_lib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_proxy_lib/core/__init__.py,sha256=lQ_39iFpt6efdsZMyYF_IzN2ojzMdaNHGGpic4qjWsU,26
+fastapi_proxy_lib/core/_model.py,sha256=II2sSRxB_F28mh8kcVw2-BfB4-cLqUp4tsV-sjrDqlk,2534
+fastapi_proxy_lib/core/_tool.py,sha256=h3xN-bKQvypYL2EQTpQxMzXjqyKwPzwhKb__WvEqT2I,14641
+fastapi_proxy_lib/core/http.py,sha256=c1rAZRA5ZM9mksNZkp8sqPMzItCuA3_43upOOoONgag,22117
+fastapi_proxy_lib/core/tool.py,sha256=nKV6X8mPWEr6GDzEmjzFLs4L8j5Q28lh5CEhCBM9LfM,149
+fastapi_proxy_lib/core/websocket.py,sha256=8pf5-tUPEo9aBZWwM5jWdR2UkdmxvxFspNMX2l1PuXU,34368
+fastapi_proxy_lib/fastapi/__init__.py,sha256=X7R2ZfRf6GYSa2BZIQSeovu3iU1yCkiXdDyFVIyFe-4,583
+fastapi_proxy_lib/fastapi/app.py,sha256=3u_JPnR1kAfC23UwTHQyyniqvDqqZalVgUbkAgzZUFE,4945
+fastapi_proxy_lib/fastapi/router.py,sha256=TmASN4dh5zmXM3voFbPqBz7vBk4IknH4W5rCqYTwEGU,9723
+fastapi_proxy_lib-0.2.0.dist-info/METADATA,sha256=Lqx5HJ_40AcPd7lTxTPVM8k8FnnPVhV53NUyzmSAEs0,22034
+fastapi_proxy_lib-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastapi_proxy_lib-0.2.0.dist-info/licenses/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+fastapi_proxy_lib-0.2.0.dist-info/RECORD,,
