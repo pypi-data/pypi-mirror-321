@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: pyrcon4squad
+Version: 0.1.0
+Summary: A simple python rcon package for squad
+Author: guyuemochen
+License: MIT
+Dynamic: author
+Dynamic: license
+Dynamic: summary
