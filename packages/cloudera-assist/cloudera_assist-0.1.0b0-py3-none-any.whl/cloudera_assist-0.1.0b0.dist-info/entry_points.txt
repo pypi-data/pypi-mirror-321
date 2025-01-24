@@ -1,0 +1,2 @@
+[console_scripts]
+cldr-assist = cloudera_assist.cli:main
