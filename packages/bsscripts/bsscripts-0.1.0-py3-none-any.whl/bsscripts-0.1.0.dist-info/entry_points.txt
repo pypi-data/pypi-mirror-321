@@ -1,0 +1,2 @@
+[console_scripts]
+bsscripts = bsscripts.app:main
