@@ -1,0 +1,13 @@
+drugbank_schemas/__init__.py,sha256=gWYcLVSaslLiZvyq1TNQZAxYptTRfa1UJo48_BFmtrM,15
+drugbank_schemas/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drugbank_schemas/models/drugbank_latest.py,sha256=EafeQpfBNJGH9vlxLl0gEhhstgl6Em5Jwc7UgIH9GAk,79391
+drugbank_schemas/models/drugbank_v3_0.py,sha256=Lkz4U7dMeyNv8E1uVL5ASvSVudv4k82VbY76amD9_nk,35761
+drugbank_schemas/models/drugbank_v4_1.py,sha256=C79Ura_7eQIY6qJV-9guk-iaLxCr70_KoYNUUKPorfE,64581
+drugbank_schemas/models/drugbank_v4_2.py,sha256=GXTb_NMiC70SSbQzZICPTV7hi3tbARYVKtpgXqSCrnU,67309
+drugbank_schemas/models/drugbank_v4_3.py,sha256=m5wz9gE5X7s0bhF5eZc5Ydqy2jceJDX8mCFkPJX5208,69878
+drugbank_schemas/models/drugbank_v4_6.py,sha256=5DheeOo3VSOghj_4ru2t_q0SDeuq6K8h3AJ942EZELo,69912
+drugbank_schemas/models/drugbank_v5_0.py,sha256=lxkF70eYnJ2e7NQv11kuHBJ_tMSmwqC_v3npt8cKlYw,78563
+drugbank_schemas-0.1.1.dist-info/METADATA,sha256=Vy53n39feTlOqaumCk4LPd3jKcwni-nKLBna7B6JUjI,2490
+drugbank_schemas-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+drugbank_schemas-0.1.1.dist-info/licenses/LICENSE,sha256=Q_4QfqwlMrSdk56lWxKmDcCcUvj4ps0woz38ZioUoeo,1074
+drugbank_schemas-0.1.1.dist-info/RECORD,,

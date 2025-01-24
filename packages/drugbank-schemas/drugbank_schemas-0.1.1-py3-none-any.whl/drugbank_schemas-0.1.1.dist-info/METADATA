@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: drugbank-schemas
+Version: 0.1.1
+Summary: Drugbank Schemas Pydantic Models
+Project-URL: Repository, https://github.com/ndonyapour/drugbank_schemas
+Author-email: Nazanin Donyapour <nazanin.donyapour@nih.gov>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Text Processing :: Markup :: XML
+Requires-Python: >=3.9
+Requires-Dist: bump-my-version>=0.29.0
+Requires-Dist: coverage-badge==1.1.0
+Requires-Dist: mypy>=1.14.1
+Requires-Dist: nox==2023.4.22
+Requires-Dist: pre-commit==3.3.2
+Requires-Dist: pytest-cov==4.1.0
+Requires-Dist: pytest-xdist==3.3.1
+Requires-Dist: pytest==7.4
+Requires-Dist: requests==2.31.0
+Requires-Dist: ruff>=0.9.1
+Requires-Dist: xsdata-pydantic[cli,lxml,soap]>=24.5
+Description-Content-Type: text/markdown
+
+# drugbank_schemas (v0.1.0)
+
+<p align="center">
+    <img src="https://img.shields.io/pypi/dm/rxiv-types?style=flat-square" />
+    <img src="https://img.shields.io/pypi/l/rxiv-types?style=flat-square"/>
+    <img src="https://img.shields.io/pypi/v/rxiv-types?style=flat-square"/>
+    <a href="https://github.com/tefra/xsdata-pydantic">
+        <img alt="Built with: xsdata-pydantic" src="https://img.shields.io/badge/Built%20with-xsdata--pydantic-blue">
+    </a>
+    <a href="https://github.com/dbrgn/coverage-badge">
+        <img src="./images/coverage.svg">
+    </a>
+</p>
+
+## Introduction
+
+The purpose of this package is to provide Pydantic models for Drugbank schema files (XSD). 
+It generates Pydantic classes that help parse Drugbank XML Data files.
+`xsdata-pydantic` tool. 
+
+## How to install it?
+pip install drugbank-schemas
+
+## How do I use it?
+You can import the generated Pydantic models for drunbank schema files and use them 
+to parse your drugbank XML files.
+
+```python
+from xsdata_pydantic.bindings import XmlParser
+from xsdata.formats.dataclass.context import XmlContext
+
+from drugbank_schemas.models.drugbank_latest import Drugbank
+
+parser = XmlParser(context=XmlContext())
+drugbank = parser.parse("drugbank_5.1.10.xml", Drugbank)
+```
