@@ -1,0 +1,16 @@
+melpy/LinearRegression.py,sha256=jOoFqZHoGh2tWkDao9Es16OCciRMfzM4j47BnCiBE_g,2988
+melpy/NeuralNetworks.py,sha256=EFGjuVijHoM7wjKMY802llw0U6NFLQ2ly6cAzxR4hx4,42665
+melpy/__init__.py,sha256=ZnpRTiMZ77125fukA_NgcPH6jEIodSTfVdV7uOZzDPc,239
+melpy/callbacks.py,sha256=Wheso7HhlQVTGs_AvotEoV-WVfDvbDpgm0BIlIH_weI,14067
+melpy/im2col.py,sha256=zle_ND19LvRvl2GYQnAmk-F0ThXSv_vcr-Zx9B3VvFo,2872
+melpy/layers.py,sha256=4IGvEAdmQVeKWI3BmNTwaSHTUOgY903aMsW_DwzHUd8,54563
+melpy/losses.py,sha256=deaXYOlEJ9tqJ1M2nsGQmXiQDflrHhfIE0S06tSnhGs,7097
+melpy/metrics.py,sha256=EfTCGUv3AQFTczrU-y79JYoF_xuNNDbWf9Z7GBpbWik,1821
+melpy/optimizers.py,sha256=dfZG-mZMeaPLCqZ_spLRuFbdJVli-IOE18CL_W8rh6I,8410
+melpy/preprocessing.py,sha256=OsipphN0iQ6-wpGC96oAFyTNyy_TGOCUsJmIfWDJLV0,11757
+melpy/tensor.py,sha256=YMKUJR_xTU-cwf7TOhBTH_iqx3SerzFTJJZwHfBrjTk,21465
+melpy-1.2.0.0.dist-info/LICENSE,sha256=ounzK01UAqW-s-UExuBcvLO6QeLTXNmX0wh9Dbf8stY,1069
+melpy-1.2.0.0.dist-info/METADATA,sha256=iH2Tj5vHfwhXwvgp54bDOalImzADGK_MKDYQenOBlzU,13797
+melpy-1.2.0.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+melpy-1.2.0.0.dist-info/top_level.txt,sha256=FSnBNoKvUx3_i29DnZ6AKmFcNUO1x9oEH4O0URT7usQ,6
+melpy-1.2.0.0.dist-info/RECORD,,
