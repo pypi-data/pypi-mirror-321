@@ -1,0 +1,17 @@
+telegram_framework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/apps.py,sha256=hMOF8zsJ6ChpkEn2CRFotOYRfTk221qrfYiDfnrb47o,167
+telegram_framework/info.py,sha256=m1XW92n_geim3LRNPy_gfBBAIXQX567Fzc0i8Irs23o,194
+telegram_framework/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/package.py,sha256=kmOz8EJ2U6mDXtZzWg9HCXxsRaRBgbDdsLCBrroMtxE,95
+telegram_framework/tests.py,sha256=mH5Z22-RzfX6i1YfwcNPLXphHXW6Gew0Z5WhSDsLEAw,940
+telegram_framework/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_framework/management/commands/package_info.py,sha256=Y6fk_eRIeYbFmXZnjyoY6jVAe6LRp8dGCQzYBJwkALM,322
+telegram_framework/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_telegram_framework-0.0.2.dist-info/LICENSE,sha256=erm8W4mvaIZXkLIrevoOfb5DqcwAor83NgEmX44ZmhQ,1803
+django_telegram_framework-0.0.2.dist-info/METADATA,sha256=Ru542SPv-vqRN540bIF_T2RipskaUxtS4UIGElYAzLU,12711
+django_telegram_framework-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_telegram_framework-0.0.2.dist-info/top_level.txt,sha256=dJkVDY2vUWI0niX6RsxWXwGANDMt_gwGkBymy7tNl1s,19
+django_telegram_framework-0.0.2.dist-info/RECORD,,
