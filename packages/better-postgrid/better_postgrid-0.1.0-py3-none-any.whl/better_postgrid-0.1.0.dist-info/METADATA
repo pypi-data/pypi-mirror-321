@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: better-postgrid
+Version: 0.1.0
+Summary: Add your description here
+Author-email: Justin Chapman <commonmodestudio@gmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# better-postgrid
+
+## overview
+
+## codegen
+```sh
+uv run scripts/codegen
+```
