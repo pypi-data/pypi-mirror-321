@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: uwu-python
+Version: 0.1.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: The fastest text uwuifier ever made, made in rust and bound using maturin for use in python projects
+
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Information
+installation does required rust and cargo to be installed inorder to use this package
+
+# Usage
+```python
+from uwu_python import uwu
+text = "whats up baby"
+return uwu(text)
+```
+
