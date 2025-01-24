@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: uwu-python
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: The fastest text uwuifier ever made, made in rust and bound using maturin for use in python projects
+
+Requires-Python: >=3.8
