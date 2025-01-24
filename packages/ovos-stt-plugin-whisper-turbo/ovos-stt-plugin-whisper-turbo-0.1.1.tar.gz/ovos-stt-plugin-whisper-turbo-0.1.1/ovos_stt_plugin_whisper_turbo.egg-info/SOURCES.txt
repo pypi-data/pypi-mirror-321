@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+ovos_stt_plugin_whisper_turbo/__init__.py
+ovos_stt_plugin_whisper_turbo/version.py
+ovos_stt_plugin_whisper_turbo.egg-info/PKG-INFO
+ovos_stt_plugin_whisper_turbo.egg-info/SOURCES.txt
+ovos_stt_plugin_whisper_turbo.egg-info/dependency_links.txt
+ovos_stt_plugin_whisper_turbo.egg-info/entry_points.txt
+ovos_stt_plugin_whisper_turbo.egg-info/requires.txt
+ovos_stt_plugin_whisper_turbo.egg-info/top_level.txt
+ovos_stt_plugin_whisper_turbo.egg-info/zip-safe
