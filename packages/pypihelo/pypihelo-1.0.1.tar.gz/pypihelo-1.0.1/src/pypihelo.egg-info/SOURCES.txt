@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pypihelo/__init__.py
+src/pypihelo/example.py
+src/pypihelo.egg-info/PKG-INFO
+src/pypihelo.egg-info/SOURCES.txt
+src/pypihelo.egg-info/dependency_links.txt
+src/pypihelo.egg-info/top_level.txt
