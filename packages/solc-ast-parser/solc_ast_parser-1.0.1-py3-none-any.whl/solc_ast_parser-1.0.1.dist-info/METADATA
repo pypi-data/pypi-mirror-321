@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: solc-ast-parser
+Version: 1.0.1
+Summary: Solidity smart-contract parser to AST and back to source code
+Home-page: https://github.com/ReinforcedAIAudits/solc-ast
+Author: ReinforcedAI
+Author-email: info@reinforced.app
+License: MIT
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: idna==3.10
+Requires-Dist: packaging==23.2
+Requires-Dist: py-solc-x==2.0.3
+Requires-Dist: pydantic==2.10.5
+Requires-Dist: pydantic-core==2.27.2
+Requires-Dist: requests==2.32.3
+Requires-Dist: typing-extensions==4.12.2
+Requires-Dist: urllib3==2.3.0
+
+# SOLC-AST
