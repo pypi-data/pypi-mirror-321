@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "md_summarizer"
+version = "0.1.66"
+description = "AI-powered Markdown summarizer that preserves structure and code blocks"
+authors = [
+    { name = "Celtiberi" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["markdown", "summarizer", "ai", "nlp"]
+dependencies = [
+    "pydantic-ai>=0.0.18",
+    "python-dotenv>=1.0.0",
+    "tiktoken>=0.5.0",    
+    "pydantic-settings>=2.0.0",
+    "blinker>=1.7.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/celtiberi/md-summarizer"
+"Bug Tracker" = "https://github.com/celtiberi/md-summarizer/issues"
+Source = "https://github.com/celtiberi/md-summarizer"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-watch>=4.2.0"
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "asyncio: mark a test as an async test",
+]

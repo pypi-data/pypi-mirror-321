@@ -1,0 +1,40 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+.pypirc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# System files
+.DS_Store
+.cursorrules
+
+# PyPI credentials
+.pypirc
+~/.pypirc 
+
+tests/example_doc_out.md 
