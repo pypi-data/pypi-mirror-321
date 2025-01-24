@@ -1,0 +1,14 @@
+forkserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forkserver/__main__.py,sha256=3fYVc0FMZgrIb5TVj8t12u5AMGr5xMYW2VJStBe9NMc,1114
+forkserver/lib/checkpoint.py,sha256=niqBs8sD5p2_9Bv7be7kxT3sTtvp4_yWiHTrAP6iRFA,2574
+forkserver/lib/context.py,sha256=IVq_w5AxdVdCjWJ034CBXCFlrVBRFKA6UX2MKodpEK4,66
+forkserver/lib/events.py,sha256=fDhxhf9X0Q5KKffqxECVlNFpJ-zoL87sg5kErhTGYvY,351
+forkserver/lib/filename_to_module.py,sha256=Z1u-DblZj3uVr06iXsshMrPhMkl-p85-4klDprvqUx8,788
+forkserver/servers/coordinator.py,sha256=C1ivOZKmEw3J_F4NW9zHUvn4W_G7DXX6p7pVtuXBk9Y,1872
+forkserver/servers/forkserver.py,sha256=YvWaHz_VZ1_T39z1JvHOp6A9yttks5yboift8L5wHWw,4502
+forkserver/servers/http.py,sha256=_wcvFQNBnGtoIjawidrRGu461h_-uMfAI8Dk7o252a8,1186
+forkserver/servers/watcher.py,sha256=lxCv_MiBdeELQZnPx8T4PeZChwOVJ0PVtZ8D3wVq8Kg,1380
+forkserver-0.1.2.dist-info/METADATA,sha256=umlYtSwLpzAxvZlkRYLTe6-UsZJh4K2Lg9ihrIdFJTU,292
+forkserver-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+forkserver-0.1.2.dist-info/entry_points.txt,sha256=A_HK95QAnLDB37d-iMIdo_N0UL8s7jckX14_Q41zN64,56
+forkserver-0.1.2.dist-info/RECORD,,
