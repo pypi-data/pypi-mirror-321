@@ -1,0 +1,6 @@
+jinja2
+portalocker
+setuptools>=41
+numpy
+wheel
+pip>=21
