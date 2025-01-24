@@ -1,0 +1,10 @@
+vsigma_component/__init__.py,sha256=GjymIeaaav-4lnsHahu4ZFPAb5WOKqc1PPjtGr8BvnE,1212
+vsigma_component/example.py,sha256=DyKNXpmZ3Fyc9vzeGnHij0ahjlMfBwDPZb5gCmtx3Ww,5372
+vsigma_component/vue_sigma/dist/index.html,sha256=05qHH4yrVD9naPjh1-YKZWsnrPOGijku9EBmmaOkaS4,578
+vsigma_component/vue_sigma/dist/assets/index-Dj3byKnx.js,sha256=Prb9weuXqmZrkZerdZG5CeNRMmiL9yAJ-MQe-pqnvFE,438384
+vsigma_component/vue_sigma/dist/assets/index-aMPmwKRy.css,sha256=guZN3hJ5JjRpGv2wMJRbIzRre69_M9jTTu0DQFB8JUc,804
+streamlit_sigmajs_component-0.0.2.dist-info/LICENSE,sha256=2w4t6_QETG570y2nLTg8hor5P7F8t7l9IKBllGvkdSo,1081
+streamlit_sigmajs_component-0.0.2.dist-info/METADATA,sha256=JWYHGHLb4ftdIkfpot_Mze1v1GIRLSeitp5DtFFH1Xs,4265
+streamlit_sigmajs_component-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+streamlit_sigmajs_component-0.0.2.dist-info/top_level.txt,sha256=e-Al6fwqxRcxrsvU0LOiH1bTSifBpxIFe8yXi-fTGmA,17
+streamlit_sigmajs_component-0.0.2.dist-info/RECORD,,
