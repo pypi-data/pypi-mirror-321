@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tap-deputy
+Version: 1.1.2
+Summary: Singer.io tap for extracting data from the Deputy API
+Home-page: https://www.deputy.com
+Author: Deputy
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5.3
+Provides-Extra: dev
