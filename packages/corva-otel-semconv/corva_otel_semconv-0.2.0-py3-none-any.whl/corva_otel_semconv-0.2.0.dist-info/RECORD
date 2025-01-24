@@ -1,0 +1,8 @@
+corva_otel/semconv/__init__.py,sha256=RMTZFwK0PmWkASSarpbKnfuN1VybdXXuQcBLanO6YOQ,106
+corva_otel/semconv/attributes.py,sha256=jiSHxu1fRDw34Pnw56sa5nNJKQW_e20fknHDNNcHS6A,165
+corva_otel/semconv/corva_semattrs.py,sha256=Rv-77huM7U_-RIYeT5IRbqXDRb1PkNzNb45HEeVS1Ss,5104
+corva_otel/semconv/corva_streamx_semattrs.py,sha256=f0RJnGnorMB52bb6YgPCknAU9tbmjNxd6ljmpBUhTCU,5625
+corva_otel/semconv/streamx.py,sha256=5KRD0mDjSWqGzJ6oCuXZKeqwy52zLS9D7I4hsQ9yYz8,181
+corva_otel_semconv-0.2.0.dist-info/METADATA,sha256=XnN9ZjDm_z8_ka25ARFWMhimDmkFpfuSe1nf1PRs89w,435
+corva_otel_semconv-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+corva_otel_semconv-0.2.0.dist-info/RECORD,,
