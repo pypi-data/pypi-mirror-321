@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pxx-font-decrypt"
+version = "1.0.0"
+description = "PXX Font Decrypt (By Coordinates)"
+authors = ["martianbugs <zwliang98@163.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "PxxFontDecrypt", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+fonttools = "4.55.3"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

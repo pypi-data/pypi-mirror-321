@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pxx-font-decrypt
+Version: 1.0.0
+Summary: PXX Font Decrypt (By Coordinates)
+License: MIT
+Author: martianbugs
+Author-email: zwliang98@163.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fonttools (==4.55.3)
+Description-Content-Type: text/markdown
+
+## 概述
+![Version](https://img.shields.io/badge/Version-v1.0.0-green)
+![Python Version](https://img.shields.io/badge/Python-%E2%89%A53.9-blue)
+
+`pxx-font-decrypt` 适用于 PXX 的页面字体解密, 例如商品明细等页面。
+
+## 安装使用
+```bash
+pip install pxx-font-decrypt
+```
