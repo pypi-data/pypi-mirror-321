@@ -1,0 +1,14 @@
+python_vali.libs/libavutil-5e71f3e8.so.59.55.100,sha256=Clv8yrCg8GLPPgvh_dJ_fPuG-74x_dzl7Gvvec7o4AU,7553489
+python_vali.libs/libswresample-19f145c4.so.5.4.100,sha256=Q7z4R6OdL1hARQktMDL6TbBkl7SIW1quG-dHFSurSns,443825
+python_vali.libs/libavformat-43820b5b.so.61.9.106,sha256=FHmqDm1zMQPsYC0DpQ9XapWUKYb4jHYf7QxwMIJv7Xg,21875369
+python_vali.libs/libavcodec-818536f1.so.61.31.101,sha256=TydzYAE9DGrZBbBF-3lLjDm_O6PeyeE9vyCAYFgzbx8,68023529
+python_vali.libs/libswscale-2763497b.so.8.13.100,sha256=1lBGZOBTVnbAgDlnANahPU-KKVP7pQlnF-fN8j0_gUU,751481
+python_vali/__init__.py,sha256=gHNGD0LSD4_wcoBEqnYFxo34OFE_2fQlwsyaFPFeovA,1065
+python_vali/_python_vali.cpython-311-x86_64-linux-gnu.so,sha256=Al5OAKuzpfkBtI1Uw94a8XMV6nmGG1g4N0NZb4wUQfw,1371201
+python_vali/__init__.pyi,sha256=4wEoL8VIJdYrGSAgeuSZPzzDndCh5zurr-FIv6vQF1M,19376
+python_vali-4.2.5.post0.dist-info/METADATA,sha256=OJ_c2fnspKlCPAuLSNqDHk3Svc4--vh1Ai-yneH2Vs8,6539
+python_vali-4.2.5.post0.dist-info/RECORD,,
+python_vali-4.2.5.post0.dist-info/top_level.txt,sha256=AobLCNFfH2LUio07Wb8emBER0sOe2fAOTtMYRgeCMh4,12
+python_vali-4.2.5.post0.dist-info/WHEEL,sha256=V2Q6mQKbouIadCxoRjt9FQ9oKfi45-uZUcoc77zzs0M,108
+python_vali-4.2.5.post0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_vali-4.2.5.post0.dist-info/dependency_links.txt,sha256=9v2VEoz2EAZlACBLIAutEcltzzTUEh1PLtrunVLNydI,28
