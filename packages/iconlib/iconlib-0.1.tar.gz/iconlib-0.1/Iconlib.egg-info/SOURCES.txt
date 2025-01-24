@@ -1,0 +1,7 @@
+setup.py
+Iconlib/Iconlib.py
+Iconlib/__init__.py
+Iconlib.egg-info/PKG-INFO
+Iconlib.egg-info/SOURCES.txt
+Iconlib.egg-info/dependency_links.txt
+Iconlib.egg-info/top_level.txt

@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: Iconlib
+Version: 0.1
+Summary: A Python library for exploring the Constitution of India.
+Author: Vikhram S
+Author-email: Vikhrams@saveetha.ac.in
+License: Apache 2.0
+Project-URL: Source Repository, https://github.com/Vikhram-S/Iconlib
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: project-url
+Dynamic: summary
+
+# Iconlib  
+**Iconlib** stands for **Indian Constitution Library** â€” a Python library for exploring and analyzing the Constitution of India.
+
+## Features  
+
+- **Efficient Information Retrieval**: Query and search articles and amendments effortlessly.  
+- **Simplified Access**: Easily access constitutional content and explanations.  
+- **User-Friendly CLI**: Supports command-line operations for quick lookups.  
+
+## Installation  
+
+To install Iconlib, run:  
+
+```bash  
+pip install iconlib  
+```
