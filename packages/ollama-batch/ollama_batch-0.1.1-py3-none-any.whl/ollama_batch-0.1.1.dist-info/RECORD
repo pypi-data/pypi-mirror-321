@@ -1,0 +1,8 @@
+ollama_batch-0.1.1.dist-info/METADATA,sha256=hcGq-RnBIzzOzSweqxQS-tttZ-1-YTx3AdkLxwrjI58,3050
+ollama_batch-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+ollama_batch-0.1.1.dist-info/entry_points.txt,sha256=6HFeaI8JSkXPDB84h84MxF9_msUtp4z73JmWPnmnLFA,80
+ollama_batch-0.1.1.dist-info/licenses/LICENSE.md,sha256=fydH54YV1bhhc-bVWmixCzHEhBIV-i6egGgFF7ACLPU,1063
+ollama_batch/__init__.py,sha256=cjewDVEp9hX9IW0qSuGTwQmlu2-p2DJUOxAnNK7Qin8,73
+ollama_batch/__version__.py,sha256=ls6frZwhlNhfTRDDgQxkrwJdxeDlFO2pJAqsd1ebLvQ,44
+ollama_batch/ollama_batch.py,sha256=_818IIuksdqPQS0uE9-ZRJZKvQMTMRlGXZEKfpY3pAg,4438
+ollama_batch-0.1.1.dist-info/RECORD,,
