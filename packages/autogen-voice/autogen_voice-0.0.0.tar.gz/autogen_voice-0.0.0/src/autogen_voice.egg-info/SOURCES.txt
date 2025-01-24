@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/autogen_voice.egg-info/PKG-INFO
+src/autogen_voice.egg-info/SOURCES.txt
+src/autogen_voice.egg-info/dependency_links.txt
+src/autogen_voice.egg-info/top_level.txt
