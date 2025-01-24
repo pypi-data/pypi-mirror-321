@@ -1,0 +1,13 @@
+ttstokenizer/__init__.py,sha256=xbjOz9NQtrKLvY8H-LC2YXi_S4NTzUc1Exmk1cZ-9do,50
+ttstokenizer/checkpoint20.npz,sha256=uK815FltjdWDbf0_6bK6T5e5wxHv6IeVRMvPy9Vm2MY,3342298
+ttstokenizer/cmudict.dict,sha256=XNAC3BQqmwY_b-2afatawrmFxhvXpWTTv-x7ihoMw1g,3620480
+ttstokenizer/custom.dict,sha256=uuNxWRo3pVIQM5_Jxy3y-m7kkgt4vKDfNkTgP5aIfI0,276
+ttstokenizer/expand.py,sha256=sx-fIXMoD0R53hJy1XVAOC1kSWZi7xJ89NBa9aSdcNs,2492
+ttstokenizer/g2p.py,sha256=gAunbpViQ4xV7Hk0mvckYx4c8Kgg1sK3-Q0qgFVMH6Y,7673
+ttstokenizer/homographs.en,sha256=9ZrpAysCSkyvw_bCRRXkmc7_ObC9W2h09Vdmzf0tjWI,18732
+ttstokenizer/tokenizer.py,sha256=bsyw8dWgvE-WHtoXNl24KSDIBVaTEceX5k27pApZYis,11390
+ttstokenizer-1.1.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ttstokenizer-1.1.0.dist-info/METADATA,sha256=7p8LZRYvHiVvKvO5UkDePPemoX5JeZagy1o2wjBtRqk,3817
+ttstokenizer-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ttstokenizer-1.1.0.dist-info/top_level.txt,sha256=zNgVZxV2M3wixvQD8XMCNQ6VZ03g1uSGSXrnHTottk0,13
+ttstokenizer-1.1.0.dist-info/RECORD,,
