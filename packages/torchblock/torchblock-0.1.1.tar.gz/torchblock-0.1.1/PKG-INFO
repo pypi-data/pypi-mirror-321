@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: torchblock
+Version: 0.1.1
+Summary: torchblock package
+Author: aesthetics-of-record
+Author-email: aaaapple123@naver.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: cpu
+Provides-Extra: cu118
+Provides-Extra: cu121
+Provides-Extra: cu124
+Requires-Dist: torch (>=2.5.1) ; extra == "cpu"
+Requires-Dist: torch (>=2.5.1) ; extra == "cu118"
+Requires-Dist: torch (>=2.5.1) ; extra == "cu121"
+Requires-Dist: torch (>=2.5.1) ; extra == "cu124"
+Description-Content-Type: text/markdown
+
+현재는 우분투 전용 라이브러리 입니다.
+윈도우 의존성은 나중에 추가 할 예정입니다.
+
