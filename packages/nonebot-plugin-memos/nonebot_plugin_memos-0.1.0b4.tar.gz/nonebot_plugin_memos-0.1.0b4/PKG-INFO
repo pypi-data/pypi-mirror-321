@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: nonebot-plugin-memos
+Version: 0.1.0b4
+Summary: nonebot2 plugin for memos
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: nonebot-plugin-alconna>=0.54.2
+Requires-Dist: nonebot-plugin-orm>=0.7.6
+Requires-Dist: nonebot-plugin-session>=0.3.2
+Requires-Dist: nonebot-plugin-session-orm>=0.2.2
+Requires-Dist: nonebot2[httpx]>=2.4.1
