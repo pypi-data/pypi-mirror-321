@@ -1,0 +1,10 @@
+real_llama_cpp_python-0.1.3.dist-info/.ipynb_checkpoints/requires-checkpoint.txt,sha256=fZlDw0w_x08Z6SYls0xvToJ8x64yKJ4FYSDDcaIsFss,24
+real_llamacpp/__init__.py,sha256=6ZRhmf5lvFom7P8AM-lrFPkxao-lFTpcCHuZ_fcGHuo,64
+real_llamacpp/_utils.py,sha256=kVAIA0r2Jf6CbxAGA_9G5KLVtB035vACVtWtLpFX-Ss,151
+real_llamacpp/model.py,sha256=O3esddHDG0HdJnn0yQ7yHbeYPyODoCxTH41erwmhZk8,10832
+real_llamacpp/test.py,sha256=-FGbgXEo5QcJv4plzNn48CC6feoITDKx5lu0lSqQe7I,806
+real_llama_cpp_python-0.1.3.dist-info/LICENSE,sha256=Ut3duJK7QvMaW4fsCu6oWsN--NH-jIpz5p_pXAWDvCc,1066
+real_llama_cpp_python-0.1.3.dist-info/METADATA,sha256=6hrlr-ZuK87VQ5IYaMAHU62dUM9UUHCwlZmcNn8pcVQ,3614
+real_llama_cpp_python-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+real_llama_cpp_python-0.1.3.dist-info/top_level.txt,sha256=UGAQBp0djWnUbZrWdj5LDnuzI-XNQ1hMxLBJtt3Crqw,14
+real_llama_cpp_python-0.1.3.dist-info/RECORD,,
