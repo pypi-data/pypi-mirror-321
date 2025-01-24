@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: olas
+Version: 0.3.0
+Summary: Library with wave tools like ESTELA
+Author-email: Jorge Perez <j.perez@metocean.co.nz>
+License: MIT
+Project-URL: homepage, https://github.com/jorgeperezg/olas
+Project-URL: repository, https://github.com/jorgeperezg/olas
+Project-URL: documentation, https://jorgeperezg.github.io/olas/estela.html
+Keywords: waves,xarray,ESTELA
+Requires-Python: <3.14,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xarray>=2023.1.0
+Requires-Dist: dask[dataframe,diagnostics,distributed]>=2023.3.1
+Requires-Dist: scipy>=1.10.1
+Requires-Dist: numpy>=1.24.2
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: netcdf4>=1.6.3
+Requires-Dist: cartopy
+Provides-Extra: dev
+Requires-Dist: pytest>=7.2.2; extra == "dev"
+Requires-Dist: ipython>=8.11.0; extra == "dev"
+Requires-Dist: mkdocs-material>=9; extra == "dev"
+
+# olas
+
+[![pypi package
+version](https://img.shields.io/pypi/v/olas.svg)](https://pypi.python.org/pypi/olas)
+[![conda-forge
+version](https://img.shields.io/conda/vn/conda-forge/olas.svg)](https://anaconda.org/conda-forge/olas)
+[![python supported
+shield](https://img.shields.io/pypi/pyversions/olas.svg)](https://pypi.python.org/pypi/olas)
+
+Library with wave tools. At the moment it only includes a prototype of ESTELA.
+
+Documentation: <https://jorgeperezg.github.io/olas>
+
+## Installation
+
+Installation with pip (or similar tools) is straightforward:
+```
+pip install olas
+```
+
+It can also be installed with conda from conda-forge:
+```
+conda install -c conda-forge olas
+```
+
+## Basic usage
+Calculate and plot ESTELA maps from the sample netcdf files.
+
+Using the command line interface:
+```sh
+# estela -h to check additional options
+estela "./tests/sample_files/test20180101T??.nc" 44 -4 --outdir "."
+```
+
+Or python functions:
+```python
+from olas.estela import calc, plot
+estelas = calc("./tests/sample_files/test20180101T??.nc", 44, -4)
+plot(estelas, outdir=".")
+plot(estelas, outdir=".")  # gainloss=True for plotting GL maps
+```
