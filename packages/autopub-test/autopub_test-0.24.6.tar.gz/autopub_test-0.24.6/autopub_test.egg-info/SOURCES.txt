@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+autopub_test.egg-info/PKG-INFO
+autopub_test.egg-info/SOURCES.txt
+autopub_test.egg-info/dependency_links.txt
+autopub_test.egg-info/top_level.txt
