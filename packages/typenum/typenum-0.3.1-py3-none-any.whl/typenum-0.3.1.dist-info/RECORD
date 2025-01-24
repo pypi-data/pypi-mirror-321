@@ -1,0 +1,14 @@
+typenum/__init__.py,sha256=A86d1aEfS0fG3JqrRu24bInosh85kKLtGgtfAp4596U,225
+typenum/core.py,sha256=lF1wDX6ISZZMUQcyhxCOxfYw8zwhIO3AM2Ey9Jgre7I,4381
+typenum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typenum/pydantic/__init__.py,sha256=6BEk1WIR4CpPqemzEvYZuz2-eD5U4pGQsiHgW4MRNP0,293
+typenum/pydantic/core.py,sha256=caoSMa0GmaZn9Ljcn0tQWUcS-6O2xbR7aW34pYPrgf4,5674
+typenum/pydantic/serialization/__init__.py,sha256=FUwxRUX4p-5kXceRn1DXDk24US81AqZdtg83FgMwru4,210
+typenum/pydantic/serialization/adjacently.py,sha256=eZiPOCZmh2YUuZtKiADIVXXSl7QysYNdBhi98XSCxgo,4473
+typenum/pydantic/serialization/externally.py,sha256=MSJ1SYidOzFj_dRJaqOiwkEbblH4HzNPVVnjyAoGWYE,4171
+typenum/pydantic/serialization/internally.py,sha256=h_LsTU09fBFKBJGjq6IMsNlSfs-snxQTlBApXDMA1Yc,5412
+typenum/pydantic/serialization/tagged.py,sha256=VTZibCnRvvL9HN2c2S98rg3oOWftpwiSTui0HSGQSF0,1224
+typenum-0.3.1.dist-info/LICENSE,sha256=puA__lPegsALCuAsYmfAqrLQzreBusiNoJBEWSwxKGE,1128
+typenum-0.3.1.dist-info/METADATA,sha256=4uUt0Lfn27VlQQ4KMsPR9uNPLnLXfzYoXjMuj1vEhC4,6485
+typenum-0.3.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+typenum-0.3.1.dist-info/RECORD,,
