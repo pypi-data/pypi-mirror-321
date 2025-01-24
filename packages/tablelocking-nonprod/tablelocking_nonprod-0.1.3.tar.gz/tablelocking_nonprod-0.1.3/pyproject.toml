@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tablelocking_nonprod"  # the name will be define in GitLab CI/CD
+version = "0.1.3"
+description = "Custom library to support table locking"
+authors = [{name = "Javad Javadzade", email = "JavadJavadzade@LiveNation.com"}]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["tablelocking_nonprod", "tablelocking_preprod", "tablelocking_prod"]
