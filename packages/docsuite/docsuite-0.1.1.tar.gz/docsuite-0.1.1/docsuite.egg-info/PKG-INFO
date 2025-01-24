@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: docsuite
+Version: 0.1.1
+Summary: A unified library to load any document type effortlessly into LangChain for generative AI.
+Home-page: https://github.com/Pro-Sifat-Hasan/docsuite
+Author: Sifat Hasan
+Author-email: sihabhossan633@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Unified Document Loader
+
+A Python library that automatically detects file types and loads documents using LangChain's powerful document loaders.
+
+## Installation
+```bash
+pip install docsuite
+```
+
+#Usage
+
+```python
+from docsuite import UnifiedDocumentLoader
+
+file_path = 'example.pdf'  # Replace with your file path
+loader = UnifiedDocumentLoader(file_path)
+
+try:
+    documents = loader.load()
+    print(documents)
+except UnsupportedFileTypeError as e:
+    print(e)
+```
+
+#Features
+
+-Automatically detects document types (e.g., TXT, PDF, CSV).
+-Leverages LangChain's robust document loaders.
+-Easy-to-use and extensible.
+
+#License
+
+docsuite is released under the MIT License. You are free to use, modify, and distribute the code for both commercial and non-commercial purposes.
+

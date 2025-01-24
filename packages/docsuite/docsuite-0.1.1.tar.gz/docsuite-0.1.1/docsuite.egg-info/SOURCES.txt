@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+docsuite/__init__.py
+docsuite/loader.py
+docsuite.egg-info/PKG-INFO
+docsuite.egg-info/SOURCES.txt
+docsuite.egg-info/dependency_links.txt
+docsuite.egg-info/requires.txt
+docsuite.egg-info/top_level.txt
+test/test.py
+test/test_loader.py
