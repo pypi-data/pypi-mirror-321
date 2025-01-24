@@ -1,0 +1,8 @@
+README.md
+setup.py
+pymadoc.egg-info/PKG-INFO
+pymadoc.egg-info/SOURCES.txt
+pymadoc.egg-info/dependency_links.txt
+pymadoc.egg-info/entry_points.txt
+pymadoc.egg-info/requires.txt
+pymadoc.egg-info/top_level.txt
