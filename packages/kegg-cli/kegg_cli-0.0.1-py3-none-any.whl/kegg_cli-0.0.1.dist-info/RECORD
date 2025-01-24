@@ -1,0 +1,13 @@
+kegg_cli/__about__.py,sha256=PWkD2pPIKnURI3xQoKRAmPPfz2U77L97BVlPrDATkHQ,136
+kegg_cli/__init__.py,sha256=ZkYuxc1pXLlT8kHbjZ3V6E0YBp5bhkPG90DKTC0W1YE,114
+kegg_cli/_utils.py,sha256=Fcnto5ChmkSRiEDWa_m0mT6gkXUV6LetNqNwz0NWvXI,3958
+kegg_cli/arg_enums.py,sha256=SXnmMMMgpzRozGhyRqqhJUab2q-PKo65K7OEIjtDVIk,941
+kegg_cli/conventional_cmds.py,sha256=GpmP_4fgUnhLSU625up7gPh3uQ7EWzGg0Q7CuQYd2-s,2957
+kegg_cli/get_seq.py,sha256=U1K88YTFUZBDcidcxHYQ4XFpfdUcrNJbI7RGILexw7Q,4365
+kegg_cli/kegg_conv.py,sha256=Xlm2_Fho5igI8BUvEveaPume7h38V_iHupY_CDZ-V_Y,1892
+kegg_cli/main.py,sha256=f22bCzKZlutRelHQFajAHTYwlw2Klb2pks_JVxDoGIM,352
+kegg_cli-0.0.1.dist-info/METADATA,sha256=YZsPzM1yBI-P8_LUV2K5epsW6cEWkFTxfB6JIVCx5RY,6291
+kegg_cli-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kegg_cli-0.0.1.dist-info/entry_points.txt,sha256=qAcUx9sNCYnKP0TgQ2PObee_YaJ2zsk-7u8xd7nUYnw,48
+kegg_cli-0.0.1.dist-info/licenses/LICENSE.txt,sha256=qPULL2QpWHolawaFQBa0xzxVHoSAMD4ZkXli6EPeWb8,1106
+kegg_cli-0.0.1.dist-info/RECORD,,
