@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+MYSMALLSITE/__init__.py
+MYSMALLSITE/fixer.py
+MYSMALLSITE/gener.py
+MYSMALLSITE/psite.py
+MySmallSite_temp.egg-info/PKG-INFO
+MySmallSite_temp.egg-info/SOURCES.txt
+MySmallSite_temp.egg-info/dependency_links.txt
+MySmallSite_temp.egg-info/not-zip-safe
+MySmallSite_temp.egg-info/top_level.txt
