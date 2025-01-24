@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: KPZConfigurerView
+Version: 0.3.0
+Summary: Interface for client_meter_dlms
+Author-email: Sergey Sergievskiy <Sergievskiysm@gmail.com>, Sergei Vasilev <vasilsv@ite-ng.ru>
+Keywords: gui,tkinter,View,interface
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow>=10.4.0
+Requires-Dist: DLMS-SPODES<0.82,>=0.81.4
+Requires-Dist: DLMS-SPODES-client<0.14,>=0.13.12
+Requires-Dist: ConfigurerControl>=0.5.0
+Requires-Dist: TKot>=0.7.3

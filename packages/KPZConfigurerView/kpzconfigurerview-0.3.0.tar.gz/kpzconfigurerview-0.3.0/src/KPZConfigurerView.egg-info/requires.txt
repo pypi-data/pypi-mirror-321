@@ -1,0 +1,5 @@
+Pillow>=10.4.0
+DLMS-SPODES<0.82,>=0.81.4
+DLMS-SPODES-client<0.14,>=0.13.12
+ConfigurerControl>=0.5.0
+TKot>=0.7.3
