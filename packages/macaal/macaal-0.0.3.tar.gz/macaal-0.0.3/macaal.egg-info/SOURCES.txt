@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+macaal.egg-info/PKG-INFO
+macaal.egg-info/SOURCES.txt
+macaal.egg-info/dependency_links.txt
+macaal.egg-info/entry_points.txt
+macaal.egg-info/top_level.txt
+src/__init__.py
+src/aal.py
