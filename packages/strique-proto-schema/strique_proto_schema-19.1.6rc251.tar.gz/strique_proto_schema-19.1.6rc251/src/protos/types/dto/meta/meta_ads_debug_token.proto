@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package strique.types.dto.meta;
+
+option java_outer_classname = "MetaAdsDebugTokenProto";
+option java_package = "com.strique.types.dto.meta";
+
+// Next Id: 3
+// A protobuf to store mea ads debug token object.
+message MetaAdsDebugToken {
+  bool is_valid = 1 [json_name = "is_valid"];
+  repeated string scopes = 2 [json_name = "scopes"];
+}
