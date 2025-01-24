@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: pdfslides
+Version: 1.0.1
+Summary: A tool to convert PDF files into PowerPoint presentations.
+Author-email: Jia Sun <sun1011jacobi@gmail.com>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pymupdf
+Requires-Dist: python-pptx
+
+# PDF to PPTX Converter
+
+## Installation
+
+```bash
+pip install pdfslides
+```
+
+## Usage
+
+Run the script using the command-line interface:
+
+```bash
+pdfslides --pdf input.pdf --output output.pptx --dpi 300
+```
+
+### Arguments
+- `--pdf` (required): Path to the input PDF file.
+- `--output` (required): Path to save the generated PPTX file.
+- `--dpi` (optional): Resolution for rendering PDF pages (default: 300).
+
+### Example
+Convert a file named `example.pdf` to `example.pptx` with a DPI of 200:
+```bash
+pdfslides --pdf example.pdf --output example.pptx --dpi 200
+```
+
