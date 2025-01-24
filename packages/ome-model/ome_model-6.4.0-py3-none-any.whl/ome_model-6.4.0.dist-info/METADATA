@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: ome-model
+Version: 6.4.0
+Summary: Core OME model library (deprecated)
+Home-page: https://github.com/ome/ome-model/
+Download-URL: https://github.com/ome/ome-model//v6.4.0.tar.gz
+Author: The Open Microscopy Team
+Author-email: ome-devel@lists.openmicroscopy.org.uk
+License: GPL-2.0+
+Keywords: OME,Model
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+License-File: LICENSE.md
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+This project has been deprecated. To create companion OME files using Python, you can use other libraries such as https://pypi.org/project/ome-types/ to create and validate OME model objects and convert them into OME-XML.
