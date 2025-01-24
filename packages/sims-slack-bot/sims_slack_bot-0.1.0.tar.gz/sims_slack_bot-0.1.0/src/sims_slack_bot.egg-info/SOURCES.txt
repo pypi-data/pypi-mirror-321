@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sims_slack_bot/__init__.py
+src/sims_slack_bot/_bot.py
+src/sims_slack_bot.egg-info/PKG-INFO
+src/sims_slack_bot.egg-info/SOURCES.txt
+src/sims_slack_bot.egg-info/dependency_links.txt
+src/sims_slack_bot.egg-info/requires.txt
+src/sims_slack_bot.egg-info/top_level.txt
