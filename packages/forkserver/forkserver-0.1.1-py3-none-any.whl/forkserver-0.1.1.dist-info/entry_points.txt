@@ -1,0 +1,2 @@
+[console_scripts]
+forkserver = forkserver.__main__:main
