@@ -1,0 +1,14 @@
+upb_lib/__init__.py,sha256=sSMhjTZeTTszqd9GAT7Zu0QalTKJCiq3TeVWxydzSzk,55
+upb_lib/const.py,sha256=JHh1zoZUiDv4v0gykDY-wqwgsp0JNB7rtdTi79zL7L8,5148
+upb_lib/devices.py,sha256=1jWCQXThzmk0G53Y1dkY6oUaJHRahqKgPs8nDS2Ht9w,5706
+upb_lib/elements.py,sha256=Ev1dr-3EOv1hADHF1bKdn0t5IJLIF4uI5EVSRcMpVek,3669
+upb_lib/links.py,sha256=OaSzk1R_YvZWSkGgb78tZvnKJ_wySmBgn77n0u2EXD8,5111
+upb_lib/message.py,sha256=N4hPfvWLuMkMj4olE7NURw43D4pCfv009Pm-iumOBkw,5179
+upb_lib/parse_upstart.py,sha256=zYKa36c3RBh9O2lvySdsFomYKcdOJTURunSAI10VxCs,3290
+upb_lib/proto.py,sha256=yfHeNzIh8VYU21Yi5H5lU2oUmMC62pa8_Kbr9DHEqMo,7652
+upb_lib/upb.py,sha256=p6Zdel1lYw321Bcb69dZLLS08StjJhQK9i1jKOQ3uc0,8344
+upb_lib/util.py,sha256=GMTl_kPV8E3zugi1rrVYZyCxFOz_fT_PeGFI8s9FIBQ,2005
+upb_lib-0.5.10.dist-info/METADATA,sha256=6qZgo6oa7mtaZkuGlf8e-EEvVYC3bBPulYVB9x9h8qU,8630
+upb_lib-0.5.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+upb_lib-0.5.10.dist-info/licenses/LICENCE,sha256=AcbNls6OjD80NfTNrfSjXxMMElZx5czlNsjRuoglhIY,1069
+upb_lib-0.5.10.dist-info/RECORD,,
