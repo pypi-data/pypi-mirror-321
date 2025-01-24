@@ -1,0 +1,89 @@
+
+[tool.poetry]
+name = "diwrappers"
+description = "A lightweight, intuitive dependency injection library for Python that makes testing and dependency management a breeze."
+version = "0.5.0"
+authors = ["Rui Campos <mail@ruicampos.org>"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
+repository = "https://github.com/ruifilipecampos/diwrappers"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+poethepoet = "^0.32.0"
+basedpyright = "^1.23.2"
+pytest-asyncio = "^0.25.2"
+bandit = "^1.8.0"
+ruff = "^0.9.1"
+actionlint-py = "^1.7.6.22"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poe.tasks]
+all = ["sec","test", "static_check"]
+test = ["doctest", "unit_test"]
+static_check = ["lint", "format", "type"]
+lint = "ruff check diwrappers/**/*.py"
+format = "ruff format diwrappers/**/*.py"
+type = "basedpyright diwrappers/**/*.py --level warning"
+sec = "bandit -r ./diwrappers --configfile ./bandit.yml"
+gha = "actionlint"
+doctest = "pytest --doctest-modules diwrappers/**/*.py -vvvv"
+examples = "python -m examples"
+
+
+[tool.poe.tasks.cov]
+cmd = "pytest diwrappers/**/*.py --cov=diwrappers --cov-report=term-missing --cov-report=html"
+env = { DIWRAPPERS_TEST="true" }
+
+[tool.poe.tasks.unit_test]
+cmd = "pytest diwrappers/**/*.py -vvvvv"
+env = { DIWRAPPERS_TEST="true" }
+
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+select = ['ALL']
+ignore = [
+    'S311', # pRNG is only used for testing purposes
+    'S101',
+    'ANN202',
+    "D212",
+    "D203",
+    "COM812"
+]
+
+[tool.pyright]
+pythonVersion = "3.10"
+typeCheckingMode = "strict"
+
+
+[tool.coverage.run]
+branch = true
+source = ["diwrappers"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "if d.is_test_env():",
+    "# SECTION tests",
+]
+fail_under = 90
+show_missing = true
