@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pollution_checker/__init__.py
+pollution_checker/pollution_checker.py
+pollution_checker.egg-info/PKG-INFO
+pollution_checker.egg-info/SOURCES.txt
+pollution_checker.egg-info/dependency_links.txt
+pollution_checker.egg-info/top_level.txt
