@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: konichiha
+Version: 0.5.0
+Summary: A Python project named konichiha
+Requires-Python: >=3.9.0
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
