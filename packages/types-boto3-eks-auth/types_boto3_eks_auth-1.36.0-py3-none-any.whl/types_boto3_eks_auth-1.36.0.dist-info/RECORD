@@ -1,0 +1,16 @@
+types_boto3_eks_auth/__init__.py,sha256=sd13_jfR5n4iI-JnwZl-gg2TaeKirED555-CTP5LSvg,409
+types_boto3_eks_auth/__init__.pyi,sha256=iZPa0MX6VZLfI5u1_cRSF4_IgcMlgCU5bAcuOzSYPLk,408
+types_boto3_eks_auth/__main__.py,sha256=s1on4HxU1n8Ye4LL0nhFA-ZT0DNOqqK1tBvHcjvK67E,983
+types_boto3_eks_auth/client.py,sha256=CFa3DvmrhxvS787isXkYg-aDHZqoRjTze32dwUdnYI8,3816
+types_boto3_eks_auth/client.pyi,sha256=e5S1tZOiiGvvCC0lJcZ8qpi5tPShtxuRD7L68EJSego,3813
+types_boto3_eks_auth/literals.py,sha256=tI7si8G0xyy_OACU-ylAOzFMznUvzHFb4LLStHFsxTs,9375
+types_boto3_eks_auth/literals.pyi,sha256=5eOpRW6dslXuHPM8t_v3iH8l0ZGv-UzTnwL_HvAsOmU,9373
+types_boto3_eks_auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_boto3_eks_auth/type_defs.py,sha256=uAacGkWN3loMUl7s7MvHz_ZBIQwOvdqo5noaa0PxJS0,1909
+types_boto3_eks_auth/type_defs.pyi,sha256=nObOSLvvvDMqLC3QsJgIdMZwgTUWcnMyCtE8e_GwXtk,1901
+types_boto3_eks_auth/version.py,sha256=XqBLww9Ajk9GRr5oc1Ak2757Fsir4zxoRCWswSKh8Ro,92
+types_boto3_eks_auth-1.36.0.dist-info/LICENSE,sha256=4jNgB8jJbXtUVJkeygwhUQi--6lAG8DIisfE-h_RiUU,1070
+types_boto3_eks_auth-1.36.0.dist-info/METADATA,sha256=6hLCcWhtOS64g99Rgy7y5OqVtPm9J0ZviwVxn6Vebw8,14249
+types_boto3_eks_auth-1.36.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+types_boto3_eks_auth-1.36.0.dist-info/top_level.txt,sha256=SwKd7U5EWfMgcXFHseoDcmW9rjAJJ6VBW89Hlnz5M8I,21
+types_boto3_eks_auth-1.36.0.dist-info/RECORD,,
