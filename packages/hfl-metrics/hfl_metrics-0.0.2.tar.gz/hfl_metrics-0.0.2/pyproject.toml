@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hfl-metrics"
+version = "0.0.2"
+description = "Send metrics to dedicated endpoint"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["requests", "fastapi"]
