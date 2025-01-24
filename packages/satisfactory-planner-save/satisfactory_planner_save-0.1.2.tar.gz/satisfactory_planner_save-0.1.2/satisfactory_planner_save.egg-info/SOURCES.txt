@@ -1,0 +1,11 @@
+LICENSE
+README.md
+planner_save.py
+pyproject.toml
+requirements.txt
+satisfactory_planner_save.egg-info/PKG-INFO
+satisfactory_planner_save.egg-info/SOURCES.txt
+satisfactory_planner_save.egg-info/dependency_links.txt
+satisfactory_planner_save.egg-info/entry_points.txt
+satisfactory_planner_save.egg-info/requires.txt
+satisfactory_planner_save.egg-info/top_level.txt
