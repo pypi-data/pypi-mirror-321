@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aiousbwatcher/__init__.py
+src/aiousbwatcher/impl.py
+src/aiousbwatcher/py.typed
+src/aiousbwatcher.egg-info/PKG-INFO
+src/aiousbwatcher.egg-info/SOURCES.txt
+src/aiousbwatcher.egg-info/dependency_links.txt
+src/aiousbwatcher.egg-info/requires.txt
+src/aiousbwatcher.egg-info/top_level.txt
+tests/test_impl.py
