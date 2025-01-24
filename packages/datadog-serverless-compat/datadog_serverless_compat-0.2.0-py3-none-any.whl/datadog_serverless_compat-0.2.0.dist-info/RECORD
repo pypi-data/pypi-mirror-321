@@ -1,0 +1,10 @@
+datadog_serverless_compat/__init__.py,sha256=MObapsGvipoHkEqnFT83X-veYvezSuSyo_8KupB82fQ,163
+datadog_serverless_compat/bin/linux-amd64/datadog-serverless-compat,sha256=fk5dvhvZGMwBnbV46VGryLG0lEacCiHF4I9Nupd37eA,2609672
+datadog_serverless_compat/bin/windows-amd64/datadog-serverless-compat.exe,sha256=WVZl2aUj6bgZlAz8VdJQufq-SD4I3QGZvyuLi_5wGds,2034176
+datadog_serverless_compat/logger.py,sha256=6odVGcKtOYCur2p1amn8mBqJi2MJ4fL-XoqBc9Kgn98,774
+datadog_serverless_compat/main.py,sha256=zvpqI3faMPuB2-gDbiCO-QvLpiSeJeKoURq_b6061F4,2834
+datadog_serverless_compat-0.2.0.dist-info/LICENSE,sha256=YuQx-3SPo8c61wNF9puyGkY1egMRgoSg7awlYNDy0kA,11343
+datadog_serverless_compat-0.2.0.dist-info/METADATA,sha256=84peETrIMrpwDfC27gvERNUByPArn4O8NgzFqtjRfDo,3317
+datadog_serverless_compat-0.2.0.dist-info/NOTICE,sha256=Qp6uV4wd1qw3auLdxSCALr5ssa5c3A2amz9ui44lBt8,149
+datadog_serverless_compat-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+datadog_serverless_compat-0.2.0.dist-info/RECORD,,
