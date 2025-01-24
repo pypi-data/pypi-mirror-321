@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: ptcgp
+Version: 0.1.0
+Summary: Pokémon TCG Pocket Explorer App
+Home-page: https://github.com/fredericojordan/ptcgp.git
+Author: Frederico Jordan
+Author-email: fredericojordan@gmail.com
+Requires-Dist: beautifulsoup4
+Requires-Dist: dash
+Requires-Dist: dash_mantine_components
+Requires-Dist: pydantic
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
