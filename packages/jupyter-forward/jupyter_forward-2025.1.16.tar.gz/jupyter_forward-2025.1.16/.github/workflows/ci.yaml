@@ -1,0 +1,74 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *" # Daily “At 00:00”
+  workflow_dispatch: # allows you to trigger manually
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  JUPYTER_FORWARD_ENABLE_SSH_TESTS: true
+  JUPYTER_FORWARD_SSH_TEST_USER: runner
+  JUPYTER_FORWARD_SSH_TEST_HOSTNAME: localhost.local
+  JUPYTER_FORWARD_TEST_SHELLS: '["bash", "tcsh", "zsh", null]'
+
+jobs:
+  build:
+    name: python-${{ matrix.python-version }}
+    if: github.repository == 'ncar-xdev/jupyter-forward'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configure SSH key for localhost
+        run: |
+          .github/scripts/ssh_setup.sh
+
+      - name: Install missing shells e.g. zsh and tcsh
+        run: |
+          sudo apt-get update
+          sudo apt-get install zsh tcsh
+          cat /etc/shells
+
+      - name: Install Conda environment from environment.yml
+        uses: mamba-org/setup-micromamba@v2
+        id: conda
+        with:
+          # environment-file is not assumed anymore
+          environment-file: ci/environment.yml
+          create-args: >-
+            python=${{ matrix.python-version }}
+          # now called cache-environment
+          cache-environment: true
+
+      - name: Install jupyter-forward
+        run: |
+          python -m pip install -e . --no-deps --force-reinstall
+          conda list
+
+      - name: Run Tests
+        run: |
+          python -m pytest
+
+      - name: Upload code coverage to Codecov
+        uses: codecov/codecov-action@v5.1.2
+        with:
+          file: ./coverage.xml
+          flags: unittests
+          env_vars: OS,PYTHON
+          name: codecov-umbrella
+          fail_ci_if_error: false
