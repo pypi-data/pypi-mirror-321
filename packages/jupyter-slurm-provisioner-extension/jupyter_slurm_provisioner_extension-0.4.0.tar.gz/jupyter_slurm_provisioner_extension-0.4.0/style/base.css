@@ -1,0 +1,113 @@
+.slurm-wrapper-panel {
+  color: var(--jp-ui-font-color1);
+  background: var(--jp-layout-color1);
+}
+
+.slurm-wrapper-panel h2 {
+  border-bottom: var(--jp-border-width) solid var(--jp-border-color2);
+  font-size: var(--jp-ui-font-size0);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+button.slurm-btn {
+  border: 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: white;
+  font-size: var(--jp-ui-font-size1);
+  height: 28px;
+}
+
+button.slurm-config-btn {
+  background-color: var(--md-blue-500);
+  width: 100%;
+}
+
+button.slurm-kill-btn {
+  background-color: var(--md-red-500);
+  margin-bottom: 2px;
+}
+
+input.slurmel-input {
+  margin: 2px 0 2px 20px;
+  max-width: 100px;
+  background-color: var(--jp-layout-color2);
+  border-radius: 5px;
+  font-size: unset;
+}
+
+input.slurmel-input.disabled {
+  background-color: #f4f4f6;
+  border-radius: 5px;
+  border-color: #c4c4cc;
+}
+
+label.slurm-input-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+span.slurm-config-span {
+  align-self: center;
+  flex: 8 1 0;
+  color: var(--jp-ui-font-color0);
+}
+
+select.slurmel-select {
+  flex: 1 1 auto;
+  height: 32px;
+  font-size: var(--jp-ui-font-size2);
+  color: var(--jp-ui-font-color0);
+  background: var(--jp-layout-color2);
+  border-color: var(--jp-border-color2);
+  border-radius: var(--jp-border-radius);
+  padding: 0 25px 0 8px;
+  margin-right: 5px;
+}
+
+/* stylelint-disable */
+
+.Collapsible {
+  display: flex;
+  flex-direction: column;
+}
+
+.Collapsible__trigger {
+  background: var(--jp-layout-color2);
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid var(--jp-border-color2);
+  padding: 10px;
+}
+
+.Collapsible__trigger::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' viewBox='0 0 18 18' data-icon='ui-components:caret-down' data-icon-id='f5537fa8-1a9a-4a78-8ef2-89c5dc9c297d'%3E%3Cg class='jp-icon3' fill='%23616161' shape-rendering='geometricPrecision'%3E%3Cpath d='M5.2,7.5L9,11.2l3.8-3.8H5.2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: transform 300ms;
+  color: var(--jp-content-font-color2);
+}
+
+.Collapsible__trigger.is-open::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' viewBox='0 0 18 18' data-icon='ui-components:caret-up' data-icon-id='56e43b00-063a-408d-8271-54b7f13cb275'%3E%3Cg class='jp-icon3' fill='%23616161' shape-rendering='geometricPrecision'%3E%3Cpath d='M5.2,10.5L9,6.8l3.8,3.8H5.2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid var(--jp-border-color2);
+  border-top: 0;
+}
+
+/* stylelint-enable */
+
+.kernel-alloc-div {
+  display: flex;
+  align-items: center;
+}
