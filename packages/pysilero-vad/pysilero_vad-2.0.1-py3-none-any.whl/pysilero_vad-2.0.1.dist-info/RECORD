@@ -1,0 +1,9 @@
+pysilero_vad/__init__.py,sha256=_QtP_z0JjpOkSHMaqRFuSI9Bf0oL-k8IJE0hmZdZDLk,3433
+pysilero_vad/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysilero_vad/models/silero_vad.onnx,sha256=a5nL_Tkka2cG-Y7BPHxQxrKZGB8kdPoFy8gEaswnQ5Y,2313101
+pysilero_vad-2.0.1.dist-info/LICENSE.md,sha256=E3RtUJ105V6iJl--8gS7fNv4SoMVsCB-mIMmy1Q4cCg,1071
+pysilero_vad-2.0.1.dist-info/METADATA,sha256=l2Xc-Dw2iaRvnXJ0e9lb69cUGn4LJAamNx138UAQh_A,1410
+pysilero_vad-2.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pysilero_vad-2.0.1.dist-info/top_level.txt,sha256=QQlOVbq_uDMukkVxjBFRi8eOwSrzJDrbP8YY1MCeMIs,13
+pysilero_vad-2.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pysilero_vad-2.0.1.dist-info/RECORD,,
