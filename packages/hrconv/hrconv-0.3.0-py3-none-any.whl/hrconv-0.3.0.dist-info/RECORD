@@ -1,0 +1,10 @@
+hrconv/__init__.py,sha256=7mmQm9oL4rHLZ113F1KQy0jFO3vB2D23UHj187RCDok,246
+hrconv/hrc.py,sha256=jF6x5bzNUGJmgci11lhV_JgkHGW6h1bayRd7MNh3l7Y,11278
+hrconv/observer.py,sha256=EZorzVScWnQUo8xq5bvPUvW73qeKdB3z5xXLayg3lrU,11599
+tests/__init__.py,sha256=JZeYmXGq-9ZdDSCYZ5CB7qbbo7HItDzzp8hK-CpNjAY,41
+tests/test_batch.py,sha256=ZOVkFZ-OeqUyInkibOfqQMrGx-uR-h8r51qP1i5gMKw,10367
+hrconv-0.3.0.dist-info/LICENSE,sha256=9q40BPw0pGYJhh-FOh_wgwBDvINLqMZNH3MX0qCZJvE,1071
+hrconv-0.3.0.dist-info/METADATA,sha256=jlVlURPTEww2U1zDsiYzyusz2BP0Hrn9ElkFxG8X5Jg,686
+hrconv-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+hrconv-0.3.0.dist-info/top_level.txt,sha256=DPdVVvhYkzassqkfrWjaxt3I2TrUYLd8ORt_0Cq4rko,13
+hrconv-0.3.0.dist-info/RECORD,,
