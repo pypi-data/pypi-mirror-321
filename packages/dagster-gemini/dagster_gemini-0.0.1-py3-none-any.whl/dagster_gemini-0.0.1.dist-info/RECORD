@@ -1,0 +1,6 @@
+dagster_gemini/__init__.py,sha256=9OlT15meFgKvihOt2Q5mt-OqedbMS8Tv3op1zbBh8ik,69
+dagster_gemini/resource.py,sha256=ou4gHmVaGKhmVYdcUI5DhF8sgEPQP6d_yE5JCTD-T9I,13202
+dagster_gemini-0.0.1.dist-info/METADATA,sha256=tsqtT5_O4xWzxxAwF3JtiFpltZr0MhwvmchUwciyIOg,1904
+dagster_gemini-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dagster_gemini-0.0.1.dist-info/top_level.txt,sha256=-B5VODichR3UNvDRehfSbSdVII-w8aeufiU7wj-S_r4,15
+dagster_gemini-0.0.1.dist-info/RECORD,,
