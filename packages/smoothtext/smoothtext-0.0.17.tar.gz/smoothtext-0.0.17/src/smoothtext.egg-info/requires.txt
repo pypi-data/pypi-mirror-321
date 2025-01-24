@@ -1,0 +1,6 @@
+
+[nltk]
+nltk>=3.9.1
+
+[stanza]
+stanza>=1.10.1
