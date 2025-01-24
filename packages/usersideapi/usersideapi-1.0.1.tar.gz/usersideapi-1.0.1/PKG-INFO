@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: usersideapi
+Version: 1.0.1
+Summary: API ERP UserSide/WorkNet
+Home-page: https://github.com/BusyBeaver54/usersideapi
+Author: Andrey Litvinov
+Author-email: busybeaver.bb@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/BusyBeaver54/usersideapi?tab=readme-ov-file
+Description: Р‘РёР±Р»РёРѕС‚РµРєР° РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ API Р·Р°РїСЂРѕСЃР°РјРё ERP UserSide/WorkNet
+Keywords: userside worknet api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
