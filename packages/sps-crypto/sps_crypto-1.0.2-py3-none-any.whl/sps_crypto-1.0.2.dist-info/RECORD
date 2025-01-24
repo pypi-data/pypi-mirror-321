@@ -1,0 +1,10 @@
+des/DES.py,sha256=XVsJhBkc7Hu1YtLBKkPzrFfDoVGp8MXaDREa127ob9Y,4698
+des/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sps_crypto/DES.py,sha256=uVbL2JX5wSk-mUfaxu7AGY4tBAg780k57m8kMzjgtEs,4717
+sps_crypto/__init__.py,sha256=tCOVTTcLiOJqDleWKPBiCdc9f647ZTvCh_T1YWu4_Ik,152
+sps_crypto/ciphers.py,sha256=zpLEF6GwvrOuo438s77vjllmqi9TrmabTf7x9EsfDyw,3647
+sps_crypto-1.0.2.dist-info/LICENSE,sha256=ah2b2KK6FZ1_Qf4cjkaWNG1DJsDCnKXKONlsm8ZygNw,1073
+sps_crypto-1.0.2.dist-info/METADATA,sha256=w_7X3R-GOiM25ABb36j-WK5CfPbzBzQZRu_fNRifSJU,732
+sps_crypto-1.0.2.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+sps_crypto-1.0.2.dist-info/top_level.txt,sha256=LlM2QmYnfSPHyalHY5_zS6YcjCv8FlQx_XXRSmsLs4M,11
+sps_crypto-1.0.2.dist-info/RECORD,,
