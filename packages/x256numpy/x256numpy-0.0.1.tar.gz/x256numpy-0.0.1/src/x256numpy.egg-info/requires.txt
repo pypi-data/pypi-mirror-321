@@ -1,0 +1,4 @@
+numpy
+
+[dev]
+x256offline>=0.0.4

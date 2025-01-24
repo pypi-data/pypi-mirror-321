@@ -1,0 +1,37 @@
+[project]
+name = "x256numpy"
+version = "0.0.1"
+description = "Quickly find the nearest xterm 256 color index of an RGB (NumPy Version)"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = ["x256", "xterm", "color"]
+
+authors = [
+  {name = "userElaina", email = "userelaina@pm.me" }
+]
+maintainers = [
+  {name = "userElaina", email = "userelaina@pm.me" }
+]
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3"
+]
+
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["x256offline >= 0.0.4"]
+
+[project.urls]
+"Homepage" = "https://github.com/userElaina/python-x256-numpy"
+"Bug Reports" = "https://github.com/userElaina/python-x256-numpy/issues"
+"Source" = "https://github.com/userElaina/python-x256-numpy"
+
+[tool.setuptools]
+package-data = {"x256numpy" = ["x256.npz"]}
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

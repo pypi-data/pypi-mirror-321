@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: x256numpy
+Version: 0.0.1
+Summary: Quickly find the nearest xterm 256 color index of an RGB (NumPy Version)
+Author-email: userElaina <userelaina@pm.me>
+Maintainer-email: userElaina <userelaina@pm.me>
+License: MIT License
+        
+        Copyright (c) 2024 Elaina
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/userElaina/python-x256-numpy
+Project-URL: Bug Reports, https://github.com/userElaina/python-x256-numpy/issues
+Project-URL: Source, https://github.com/userElaina/python-x256-numpy
+Keywords: x256,xterm,color
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: x256offline>=0.0.4; extra == "dev"
+
+python-x256-numpy
+=================
+
+Quickly find the nearest xterm 256 color index of an RGB.
+
+NumPy version of
+`python-x256-offline <https://pypi.org/project/x256offline/>`__.
+
+Installation
+------------
+
+.. code:: shell
+
+   python -m pip install x256numpy
+
+Simple Example
+--------------
+
+.. code:: python
+
+   import x256numpy as x256
+
+   c0 = 0x297331
+   b, g, r = c0 & 0xff, (c0 >> 8) & 0xff, (c0 >> 16) & 0xff
+   x0e = x256.from_rgb(r, g, b, weighted=False, n_color=232)
+   x0w = x256.from_rgb(r, g, b, weighted=True, n_color=232)
+   x1e = x256.from_rgb(r, g, b, weighted=False, n_color=256)
+   x1w = x256.from_rgb(r, g, b, weighted=True, n_color=256)
+
+   print('%06x %d %06x %d %06x %d %06x %d %06x' % (
+       c0,
+       x0e, x256.to_rgb(x0e),
+       x0w, x256.to_rgb(x0w),
+       x1e, x256.to_rgb(x1e),
+       x1w, x256.to_rgb(x1w)
+   ))
+   # 297331 23 005f5f 2 008000 238 444444 239 4e4e4e
