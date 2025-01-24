@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: fx_shared_models
+Version: 0.1
+Summary: Shared models for FX Backend
+Home-page: https://github.com/fxbackend/fx_shared_models
+Author: FX Backend
+Author-email: fxbackend@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Requires-Python: >=3.8
+Requires-Dist: Django>=3.0
+Requires-Dist: django-environ>=0.10.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Shared models package containing Customer and System Settings models for FX Backend
