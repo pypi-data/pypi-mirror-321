@@ -1,0 +1,13 @@
+cffi
+sniffio
+
+[dev]
+pytest
+pytest-asyncio
+pytest-trio
+trio
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-trio
