@@ -1,0 +1,12 @@
+fastcore
+python_dotenv
+envyaml
+pandas
+black
+pydantic
+requests
+uvicorn
+fastapi
+httpx
+
+[dev]
