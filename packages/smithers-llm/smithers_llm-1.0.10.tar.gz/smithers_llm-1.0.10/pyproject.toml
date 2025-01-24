@@ -1,0 +1,31 @@
+[project]
+name = "smithers-llm"
+version = "1.0.10"
+description = "An LLM-powered CLI that simulates job interviews based on your resume."
+readme = "docs/PyPI-README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.3.13",
+    "langchain>=0.3.13",
+    "langchain-core>=0.3.28",
+    "langchain-ollama>=0.2.2",
+    "langgraph>=0.2.60",
+    "pypdf>=5.1.0",
+    "ipykernel>=6.29.5",
+    "python-dotenv>=1.0.1",
+    "click>=8.1.8",
+    "setuptools>=75.8.0",
+    "httpx>=0.27.2",
+    "halo>=0.0.31",
+    "build>=1.2.2.post1",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+smithers = "smithers:interview"
+
+[project.urls]
+GitHub = "https://github.com/Wenceslauu/smithers"
