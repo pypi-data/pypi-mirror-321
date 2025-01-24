@@ -1,0 +1,2 @@
+[console_scripts]
+ctpy = ctpy.cli:cli
