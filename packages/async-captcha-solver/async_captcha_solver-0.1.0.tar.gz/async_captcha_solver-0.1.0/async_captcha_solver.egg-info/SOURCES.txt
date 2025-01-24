@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+async_captcha_solver.egg-info/PKG-INFO
+async_captcha_solver.egg-info/SOURCES.txt
+async_captcha_solver.egg-info/dependency_links.txt
+async_captcha_solver.egg-info/requires.txt
+async_captcha_solver.egg-info/top_level.txt
+captcha_solver/__init__.py
+captcha_solver/abc.py
+captcha_solver/captcha_methods_mixin.py
+captcha_solver/captcha_services.py
+captcha_solver/http_client/abc.py
+captcha_solver/http_client/aiohttp_client.py
