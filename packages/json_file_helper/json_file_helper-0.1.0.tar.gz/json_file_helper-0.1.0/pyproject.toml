@@ -1,0 +1,22 @@
+[project]
+name = "json_file_helper"
+version = "0.1.0"
+description = "Classes for easier file usage, currently only json is implemented."
+authors = [
+    {name = "TheBiemGamer",email = "47662596+TheBiemGamer@users.noreply.github.com"}
+]
+license = "MIT"
+repository = "https://github.com/TheBiemGamer/json-lib"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema (>=4.23.0,<5.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
