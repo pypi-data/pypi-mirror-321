@@ -1,0 +1,8 @@
+gmsh==4.11
+numpy>=1.24
+
+[testing]
+pytest>=7.2
+pytest-cov>=4.0
+tox>=4.4
+mypy>=1.1

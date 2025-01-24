@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gmsh_utils/__init__.py
+gmsh_utils/__version__.py
+gmsh_utils/globals.py
+gmsh_utils/gmsh_IO.py
+gmsh_utils/math_utils.py
+gmsh_utils.egg-info/PKG-INFO
+gmsh_utils.egg-info/SOURCES.txt
+gmsh_utils.egg-info/dependency_links.txt
+gmsh_utils.egg-info/requires.txt
+gmsh_utils.egg-info/top_level.txt
+tests/test_gmsh_IO.py
+tests/test_math_utils.py
