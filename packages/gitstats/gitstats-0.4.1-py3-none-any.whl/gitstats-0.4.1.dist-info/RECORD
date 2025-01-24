@@ -1,0 +1,15 @@
+gitstats/__init__.py,sha256=w8RgGlqvOmuYIkAxjJeK11EpQoir8RNwo0MS9LTU2_4,1842
+gitstats/arrow-down.gif,sha256=eaQ_Pcfp0KYOV5fqwT_OpqGC5w-qL7mUsgcpvqAaeyI,73
+gitstats/arrow-none.gif,sha256=rjzPvZm8AyADz572_pLXzeGbZtYzUhH4eWNiQQaXaOg,71
+gitstats/arrow-up.gif,sha256=LPROqqlbBqyP_bA1iU2Z1K4R1DHKh3YrfsTd5CJ9IyE,73
+gitstats/gitstats.css,sha256=o6sqNT8NxWgrhglAnJqT1Yyyd_mKknu6nJ0xRbY6TPM,1648
+gitstats/main.py,sha256=5s1xClfrxNT95OK3M376Xc2QrgQQko6tZceZUyeRWRo,30418
+gitstats/report_creator.py,sha256=xSlBZ6xmuc_F1vt0CFtvLrds57xCI76mtwOLp5Wgh1U,31081
+gitstats/sortable.js,sha256=ELeNqjNRWcNscjTnF2ksGxRdnTa3rSv_QtLXp1gb99Q,9533
+gitstats/utils.py,sha256=2bX2PPk6S9HNQCGqS-1AWVKF-u3Nv-paVLC7YlrqbbY,1895
+gitstats-0.4.1.dist-info/LICENSE,sha256=sqqST1ugjTj6ZzCbb14j0i0zB_sG-Ob-yvglfJBs8HE,245
+gitstats-0.4.1.dist-info/METADATA,sha256=nO33xN4foAYGIFPfYVW7jqJCTHL7sy7wFAhBIL0Q8v4,7409
+gitstats-0.4.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gitstats-0.4.1.dist-info/entry_points.txt,sha256=E2q5lStI2Y5Eag99AqDFq6olJeMUstVqC0L5jP4GNOY,48
+gitstats-0.4.1.dist-info/top_level.txt,sha256=IMwkwJsDEGOg62cY_m2FUEfffDPd6il046i3Dj6xP1c,9
+gitstats-0.4.1.dist-info/RECORD,,
