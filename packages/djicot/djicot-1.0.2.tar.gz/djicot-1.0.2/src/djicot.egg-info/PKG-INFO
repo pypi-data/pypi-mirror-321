@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: djicot
+Version: 1.0.2
+Summary: Geolocate, detect, track & identify DJI Drone sUAS data with TAK.
+Home-page: https://github.com/snstac/djicot
+Maintainer: Greg Albrecht <oss@undef.net>
+Maintainer-email: oss@undef.net
+License: Apache 2.0
+Project-URL: CI: GitHub Actions, https://github.com/snstac/djicot/actions
+Project-URL: GitHub: issues, https://github.com/snstac/djicot/issues
+Project-URL: GitHub: repo, https://github.com/snstac/djicot
+Keywords: Cursor on Target,CoT,ATAK,TAK,WinTAK,TAK,TAK Server,DJI,UAS,UAV,Drones,Drone ID,OcuSync
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytak>=5.4.0
+Provides-Extra: with-takproto
+Requires-Dist: takproto>=2.0.0; extra == "with-takproto"
+Provides-Extra: test
+Requires-Dist: pytest-asyncio; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pylint; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: black; extra == "test"
+Requires-Dist: pytak; extra == "test"
+
+# DJI Drone Detection, Tracking & Identification with TAK
+
+![DJICOT Screenshot in ATAK showing a DJI Mini 3 Pro UAS, Home & Operator (GCS)](https://djicot.readthedocs.io/en/latest/media/screenshot_1737061493_642.png)
+
+## Overview
+
+DJICOT is a tool for monitoring and analyzing DJI OcuSync Drone ID sUAS data within the 
+Team Awareness Kit (TAK) ecosystem. It enables geolocating, detection, tracking, and 
+identification of drones using commercial off-the-shelf (COTS) equipment. DJICOT 
+supports rapid deployment into a C-UAS processing chain and integrates seamlessly into 
+existing common operating picture and situational awareness systems.
+
+[Read the full documentation here.](https://djicot.rtfd.io)
+
+## Features
+
+- Real-time drone geolocation, detection and tracking.
+- DJI drone identification via OcuSync Drone ID.
+- TAK ecosystem integration.
+- Uses COTS equipment.
+- Rapid C-UAS deployment.
+- Integrates with situational awareness systems.
+- Displays drone, operator, and home positions.
+- Shows flight vectors: position, speed, heading, altitude.
+- Displays drone serial number.
+- Decodes DJI OcuSync UAV to GCS C2 channel.
+- Supports 2.4 GHz and 5.8 GHz frequencies.
+- Employs passive RF ESM.
+- Detection range of > 2 miles.
+
+## Copyright & License
+
+Copyright Sensors & Signals LLC https://www.snstac.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

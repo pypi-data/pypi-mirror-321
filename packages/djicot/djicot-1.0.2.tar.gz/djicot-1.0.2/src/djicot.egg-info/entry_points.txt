@@ -1,0 +1,2 @@
+[console_scripts]
+djicot = djicot.commands:main
