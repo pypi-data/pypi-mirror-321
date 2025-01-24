@@ -1,0 +1,9 @@
+
+[dev]
+pytest
+build
+twine
+
+[sql]
+PyMySQL==1.1.1
+SQLAlchemy==2.0.37
