@@ -1,0 +1,10 @@
+source_paypal_transaction/__init__.py,sha256=hWz75KP2O9Cly4H9pF8OZ4PzxwYtr_kxTIeYcDBp8co,146
+source_paypal_transaction/components.py,sha256=lZesHtve3JPFLgbuqS8xnmP5y3Pqe8y3aSW4620JDTc,3074
+source_paypal_transaction/manifest.yaml,sha256=Dht1DnfazOsUXhSet1uR65wbNYYq95c3RjfP7IPSwiM,101426
+source_paypal_transaction/run.py,sha256=eCb2Gjuj59q6kGEIwwD-8YivUSwE65z-WJkrJP2TGt4,265
+source_paypal_transaction/source.py,sha256=vktiTid4u6LdxkCYGsY4gwEoY5X2TeL4ubY4tlQLubY,503
+source_paypal_transaction/spec.yaml,sha256=1RSvtUtCBdUg0GUfjkV6xeFKvHUcwsV0Qp8HsY9s9bo,3021
+airbyte_source_paypal_transaction-2.5.8.dist-info/METADATA,sha256=xJ9nFbbETPohKlOyXS395EPO-QN49zhzdzNT3LIVRHc,12324
+airbyte_source_paypal_transaction-2.5.8.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+airbyte_source_paypal_transaction-2.5.8.dist-info/entry_points.txt,sha256=m6B_brljaXlTUttvsw8J4KitnxwkoqVJqXd1dis24mM,79
+airbyte_source_paypal_transaction-2.5.8.dist-info/RECORD,,
