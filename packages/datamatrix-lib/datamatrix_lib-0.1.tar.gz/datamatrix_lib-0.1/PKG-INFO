@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: datamatrix_lib
+Version: 0.1
+Summary: Lib de geração de qrcode datamatrix
+Author: Julio Filizzola
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: altgraph==0.17.4
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: colorama==0.4.6
+Requires-Dist: contourpy==1.3.1
+Requires-Dist: coverage==7.6.10
+Requires-Dist: cycler==0.12.1
+Requires-Dist: fonttools==4.55.2
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: kiwisolver==1.4.7
+Requires-Dist: matplotlib==3.9.3
+Requires-Dist: numpy==2.2.0
+Requires-Dist: packaging==24.2
+Requires-Dist: pillow==11.0.0
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: pydantic==2.10.3
+Requires-Dist: pydantic_core==2.27.1
+Requires-Dist: pyfiglet==1.0.2
+Requires-Dist: pyinstaller==6.11.1
+Requires-Dist: pyinstaller-hooks-contrib==2024.11
+Requires-Dist: pylibdmtx==0.1.10
+Requires-Dist: pyparsing==3.2.0
+Requires-Dist: pytest==8.3.4
+Requires-Dist: pytest-cov==6.0.0
+Requires-Dist: pytest-mock==3.14.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: setuptools==75.6.0
+Requires-Dist: six==1.17.0
+Requires-Dist: typing_extensions==4.12.2
+
+# DataMatrix Generator
+
+This project is a DataMatrix generator written in Python. It allows you to generate DataMatrix barcodes from text input and save them as image files.
+
+## Features
+
+- Generate DataMatrix barcodes from text input
+- Save generated DataMatrix as PNG images
+- Customizable output directory
+- Error handling and logging
+
+## Requirements
+
+- Python 3.x
+- `pylibdmtx`
+- `Pillow`
+- `pytest` (for testing)
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/datamatrix-generator.git
+    cd datamatrix-generator
+    ```
+
+2. Create a virtual environment and activate it:
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Run the main script:
+    ```sh
+    python3 main.py
+    ```
+
+2. Follow the prompts to enter the file name and the message for the DataMatrix.
+
+## Project Structure
+
+- `core/`
+  - `datamatrix.py`: Contains the `DatamatrixGenerator` class for generating DataMatrix barcodes.
+  - `errors/`
+    - `error_handler.py`: Contains the error handling logic.
+- `input/`
+  - `getTerminalInput.py`: Contains the function to get input from the terminal.
+- `main.py`: Entry point of the application.
+- `tests/`
+  - `test_datamatrix.py`: Contains tests for the `DatamatrixGenerator` class.
+
+## Testing
+
+To run the tests, use the following command:
+```sh
+pytest
