@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: dashpaan
+Version: 0.1.0
+Summary: Dashpaan is a Python package for building interactive dashboards using Flask and Django.
+Home-page: https://github.com/yourusername/dashpaan
+Author: Monir.co
+Author-email: connect@monirs.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jdatetime
+Requires-Dist: traceback-with-variables
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Dashpaan
+
+A brief description of your project.
+
+## Installation
+```bash
+pip install dashpaan
+```
+
+## Usage
+```python
+import dashpaan
+```
+
+## License
+MIT License
