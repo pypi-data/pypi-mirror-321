@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyrope.c
+rope.c
+setup.py
+py_librope.egg-info/PKG-INFO
+py_librope.egg-info/SOURCES.txt
+py_librope.egg-info/dependency_links.txt
+py_librope.egg-info/top_level.txt
