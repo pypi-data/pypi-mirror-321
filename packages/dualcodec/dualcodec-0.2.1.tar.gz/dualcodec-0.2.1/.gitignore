@@ -1,0 +1,8 @@
+dist
+*.whl
+dualcodec_ckpts
+*.safetensors
+w2v-bert-2.0
+.DS_Store
+__pycache__
+*.wav
