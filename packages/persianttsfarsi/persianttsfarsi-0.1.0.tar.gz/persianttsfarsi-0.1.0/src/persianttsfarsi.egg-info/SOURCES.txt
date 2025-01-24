@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/persianttsfarsi/__init__.py
+src/persianttsfarsi/persiantts.py
+src/persianttsfarsi.egg-info/PKG-INFO
+src/persianttsfarsi.egg-info/SOURCES.txt
+src/persianttsfarsi.egg-info/dependency_links.txt
+src/persianttsfarsi.egg-info/requires.txt
+src/persianttsfarsi.egg-info/top_level.txt
+tests/teststest_persiantts.py
