@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: lightsearch
+Version: 0.1.0
+Requires-Dist: einops >=0.8.0
+Requires-Dist: jax >=0.4.35
+Requires-Dist: flax >=0.10.1
+Requires-Dist: optax >=0.2.3
+Requires-Dist: matplotlib >=3.9.2
+Requires-Dist: jax[cuda12] >=0.4.35 ; extra == 'cuda12'
+Provides-Extra: cuda12
+Summary: A dual-perspective search algorithm that treats states as particles from the start and as waves from the goal.
+Author-email: Jiří Klimeš <jiri@klimes.dev>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+
