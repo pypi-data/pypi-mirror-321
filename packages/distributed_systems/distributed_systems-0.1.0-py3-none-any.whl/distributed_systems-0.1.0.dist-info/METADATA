@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: distributed_systems
+Version: 0.1.0
+Summary: Client library and CLI tools for the distributed.systems platform
+License: MIT
+Author: Distributed Systems
+Author-email: engineering@distributed.systems
+Requires-Python: >=3.9,<3.14
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: click (>=8.1.0,<9.0.0)
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.0.0,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/international-distributed-systems-corp/idsc/issues
+Project-URL: Documentation, https://docs.distributed.systems
+Project-URL: Homepage, https://distributed.systems
+Project-URL: Repository, https://github.com/international-distributed-systems-corp/idsc
+Description-Content-Type: text/markdown
+
+# idsc - Distributed Systems API + CLI tool for authentication and cluster management
+
+The client library and CLI for the distributed.systems platform.
+
+
+

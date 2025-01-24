@@ -1,0 +1,3 @@
+[console_scripts]
+idsc=idsc.cli:main
+
