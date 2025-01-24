@@ -1,0 +1,9 @@
+uuid
+
+[services]
+numpy
+pandas
+geopandas
+shapely
+pyproj
+pyarrow

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wztools
+Version: 0.1
+Requires-Dist: uuid
+Provides-Extra: services
+Requires-Dist: numpy; extra == "services"
+Requires-Dist: pandas; extra == "services"
+Requires-Dist: geopandas; extra == "services"
+Requires-Dist: shapely; extra == "services"
+Requires-Dist: pyproj; extra == "services"
+Requires-Dist: pyarrow; extra == "services"
