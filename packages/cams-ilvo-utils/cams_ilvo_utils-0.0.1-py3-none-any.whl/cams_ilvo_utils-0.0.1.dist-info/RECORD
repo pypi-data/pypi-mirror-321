@@ -1,0 +1,17 @@
+cams_ilvo_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cams_ilvo_utils/calib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cams_ilvo_utils/calib/board.py,sha256=MQ3RSqjn7OUzkXRYGVx9-HRzpzD0FJ7nA5JtDCDpv1Y,440
+cams_ilvo_utils/calib/calibration.py,sha256=wByKUhYj82_lLiiXBAodnN1ProGBwtbD53BctA2Gz88,3812
+cams_ilvo_utils/calib/process.py,sha256=mrPsukQnGsRJdOmV7wAO015ivEyiWj9nIj395e_rdbg,16109
+cams_ilvo_utils/img/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cams_ilvo_utils/img/image.py,sha256=M7bH4BbBbmcskICeM16oSBSe4BL3Sl9Ux5JyeWh4i9A,8321
+cams_ilvo_utils/img/transform.py,sha256=nwTcAgDnWhOrOOJ1vknCuQh5d-oRl9hjPtIglDyEBGE,624
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_calib_files.py,sha256=S8JCw60HsXEj3wcHz7yOwi6E52mU-JJs9OdyynQHns0,3089
+test/test_camera_projection.py,sha256=JvwsKmq9jYjzhaqKc4ehdSZgS8_EUPismCQfWNN1Yac,3253
+test/test_image.py,sha256=nWHGiv3ipByJ3kBJ6E7ee5KR2DpImtJzO_yKdclo4s4,3250
+cams_ilvo_utils-0.0.1.dist-info/LICENCE,sha256=BAoKk43zGAwqYYw7Lk4e4eOBNkduguTNCBMxxLXYliM,1663
+cams_ilvo_utils-0.0.1.dist-info/METADATA,sha256=jKl29bpzrr-to8nwSToN4Cc7YdruppWeIb4Ue1E7reE,2568
+cams_ilvo_utils-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cams_ilvo_utils-0.0.1.dist-info/top_level.txt,sha256=81rIoX2Ci-W7pgNeszOZocH-6LnDpEOy-ac5xM624kk,21
+cams_ilvo_utils-0.0.1.dist-info/RECORD,,
