@@ -1,0 +1,2 @@
+[console_scripts]
+intellx = intellx.cli:main
