@@ -1,0 +1,8 @@
+service_linker/__init__.py,sha256=Ck4m76jBXFW9ZOtVhFC0mq9yjTEYGsxzWbFw0GzHy_s,550
+service_linker/adapter.py,sha256=LzureYeok-WXTRv-Xfn3_2yvzJNwcRzaFZFNkIhsJMU,2759
+service_linker/core.py,sha256=iD_kekPgBrneNKopJ40LhZBhCWwCH3wezhtXgbL0Wlc,9560
+service_linker-0.0.0a0.dist-info/LICENSE,sha256=Y1oEFndaMV5KiQ63seJt9WB4kK3HTKEf7FYPEw3JtPY,1067
+service_linker-0.0.0a0.dist-info/METADATA,sha256=k0wXuwWo8eFAqfNo__ACMSOZJWaSxx2qdD7kpXFVaGI,6119
+service_linker-0.0.0a0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+service_linker-0.0.0a0.dist-info/top_level.txt,sha256=PlOgFfrbQR9aDt5uIr-OnTmtwM58iS7V5xj6vRcXwiY,15
+service_linker-0.0.0a0.dist-info/RECORD,,
