@@ -1,0 +1,14 @@
+numpy
+pyyaml
+types-PyYAML
+
+[dev]
+bump-my-version
+darglint
+mypy
+pre-commit
+
+[tests]
+parameterized
+pytest
+pytest-cov
