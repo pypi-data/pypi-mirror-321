@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pdf_snip
+Version: 0.0.2
+Summary: A package to help manage pdf pages, images and their conversions during different NLP, CV or other tasks to avoid repetitive code blocks and give a simple function call to make it happen
+Home-page: https://github.com/Aleptonic/PdfSnipper
+Author: Akshay Gokhale
+Author-email: goakshay07@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyPDF2>=3.0.0
+Requires-Dist: pdf2image>=1.16.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: tqdm>=4.64.0
+
+# PDFSNIPPER
+A package to help manage pdf pages, images and their conversions during different NLP, CV or other tasks to avoid repetitive code blocks and give a simple function call to make it happen
+
+### If you face the error involving `poppler-utlils`
+        1.For Google Colab -> !apt-get install -y poppler-utils
+        2. Ubuntu/Debian -> sudo apt install poppler-utils
+
+
+
+
