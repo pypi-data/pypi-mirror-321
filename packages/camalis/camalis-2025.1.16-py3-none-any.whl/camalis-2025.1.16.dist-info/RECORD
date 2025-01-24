@@ -1,0 +1,13 @@
+camalis/__init__.py,sha256=A2i7y3Xzb8oxcdtFm1aPxx0k5-aUPk25JAlyBTxK7us,113
+camalis/core.py,sha256=qTsjVEjLvojdLKur4gKAq2FQbAeJAsM2mKd2ofbMznk,1701
+camalis/dataset.py,sha256=PTJS16bGhum0fxZsAz8xdzfl88XdycqTPrq5gaQpDCs,1196
+camalis/element.py,sha256=PKI2SSQ5DVbDHs3nxZquPMFOSDfQ6bBhHEZ4riLIkw8,3837
+camalis/event.py,sha256=MYgp-Dwu4ughVqMwDIoGx1uw5EINDNT179TuzmipCvU,2369
+camalis/exceptions.py,sha256=BsZxBfT7NSD7tcq6ddM-gn-4uRW4HBShmVyMQFMe12w,167
+camalis/main.py,sha256=nU3Olj6xuAq9cxRLulyiizIJuizuUTpGIYzYhND7754,1529
+camalis/model.py,sha256=QV6FvQKxsWR7dEyRkHvxgRR58Pqgs5eeUjmO0HhmvF8,653
+camalis/utils.py,sha256=a4b1MSg_nVBx0gpU-bCKjAOGHezB-RBY2cd17-DFAD4,795
+camalis/variable.py,sha256=u5oDxP_zyh_EpTVJtU9CurRqPP-5Af2FbA3teQhz85k,4843
+camalis-2025.1.16.dist-info/METADATA,sha256=GqBztuasa6IfUMK1_8_sokouiKCNvY7m56pAWDZQ-kI,2540
+camalis-2025.1.16.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+camalis-2025.1.16.dist-info/RECORD,,
