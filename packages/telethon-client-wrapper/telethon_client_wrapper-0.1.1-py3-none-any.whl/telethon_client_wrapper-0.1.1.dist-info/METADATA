@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: telethon_client_wrapper
+Version: 0.1.1
+Summary: A simple Telegram (telethon) client wrapper
+Home-page: https://github.com/Rerowros/telethon_client_wrapper
+Author: Ray
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: telethon
+
+# My Telegram Client
+
+This package provides a simple wrapper for creating a Telegram client using Telethon.
+from my_telegram_client import create_client
+client = create_client('path/to/config.json')
+## Installation
+
+```bash
+pip install my_telegram_client
