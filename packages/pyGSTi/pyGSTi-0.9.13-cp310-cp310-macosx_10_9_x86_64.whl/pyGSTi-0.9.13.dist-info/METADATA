@@ -1,0 +1,197 @@
+Metadata-Version: 2.2
+Name: pyGSTi
+Version: 0.9.13
+Summary: A python implementation of Gate Set Tomography
+Home-page: http://www.pygsti.info
+Download-URL: https://github.com/pyGSTio/pyGSTi/tarball/master
+Author: Erik Nielsen, Stefan Seritan, Corey Ostrove, Riley Murray, Jordan Hines, Kenneth Rudinger, Timothy Proctor, John Gamble, Robin Blume-Kohout
+Author-email: pygsti@sandia.gov
+Keywords: pygsti,tomography,gate set,pigsty,pig,quantum,qubit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy>=1.15.0
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: pandas
+Requires-Dist: networkx
+Provides-Extra: pytorch
+Requires-Dist: torch; extra == "pytorch"
+Provides-Extra: diamond-norm
+Requires-Dist: cvxopt; extra == "diamond-norm"
+Requires-Dist: cvxpy; extra == "diamond-norm"
+Provides-Extra: memory-profiling
+Requires-Dist: psutil; extra == "memory-profiling"
+Provides-Extra: multiprocessor
+Requires-Dist: mpi4py; extra == "multiprocessor"
+Provides-Extra: evolutionary-optimization
+Requires-Dist: deap; extra == "evolutionary-optimization"
+Provides-Extra: report-pickling
+Requires-Dist: pandas; extra == "report-pickling"
+Provides-Extra: report-pdf-figures
+Requires-Dist: matplotlib; extra == "report-pdf-figures"
+Provides-Extra: html-reports
+Requires-Dist: jinja2; extra == "html-reports"
+Requires-Dist: MarkupSafe; extra == "html-reports"
+Provides-Extra: notebooks
+Requires-Dist: ipython; extra == "notebooks"
+Requires-Dist: notebook; extra == "notebooks"
+Requires-Dist: jupyter_server; extra == "notebooks"
+Provides-Extra: mongodb
+Requires-Dist: pymongo; extra == "mongodb"
+Provides-Extra: msgpack
+Requires-Dist: msgpack; extra == "msgpack"
+Provides-Extra: extensions
+Requires-Dist: cython; extra == "extensions"
+Provides-Extra: linting
+Requires-Dist: autopep8; extra == "linting"
+Requires-Dist: flake8; extra == "linting"
+Provides-Extra: interpygate
+Requires-Dist: csaps; extra == "interpygate"
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-xdist; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: nbval; extra == "testing"
+Requires-Dist: csaps; extra == "testing"
+Requires-Dist: cvxopt; extra == "testing"
+Requires-Dist: cvxpy; extra == "testing"
+Requires-Dist: cython; extra == "testing"
+Requires-Dist: matplotlib; extra == "testing"
+Requires-Dist: mpi4py; extra == "testing"
+Requires-Dist: msgpack; extra == "testing"
+Requires-Dist: packaging; extra == "testing"
+Requires-Dist: pandas; extra == "testing"
+Requires-Dist: psutil; extra == "testing"
+Requires-Dist: zmq; extra == "testing"
+Requires-Dist: jinja2; extra == "testing"
+Requires-Dist: seaborn; extra == "testing"
+Requires-Dist: scipy; extra == "testing"
+Requires-Dist: ply; extra == "testing"
+Requires-Dist: cirq-core; extra == "testing"
+Requires-Dist: notebook; extra == "testing"
+Requires-Dist: ipython; extra == "testing"
+Requires-Dist: jupyter_server; extra == "testing"
+Requires-Dist: torch; extra == "testing"
+Provides-Extra: complete
+Requires-Dist: jinja2; extra == "complete"
+Requires-Dist: jupyter_server; extra == "complete"
+Requires-Dist: autopep8; extra == "complete"
+Requires-Dist: MarkupSafe; extra == "complete"
+Requires-Dist: msgpack; extra == "complete"
+Requires-Dist: cvxopt; extra == "complete"
+Requires-Dist: torch; extra == "complete"
+Requires-Dist: seaborn; extra == "complete"
+Requires-Dist: pymongo; extra == "complete"
+Requires-Dist: scipy; extra == "complete"
+Requires-Dist: pytest-xdist; extra == "complete"
+Requires-Dist: nbval; extra == "complete"
+Requires-Dist: cirq-core; extra == "complete"
+Requires-Dist: mpi4py; extra == "complete"
+Requires-Dist: packaging; extra == "complete"
+Requires-Dist: pytest-cov; extra == "complete"
+Requires-Dist: psutil; extra == "complete"
+Requires-Dist: matplotlib; extra == "complete"
+Requires-Dist: flake8; extra == "complete"
+Requires-Dist: ply; extra == "complete"
+Requires-Dist: deap; extra == "complete"
+Requires-Dist: notebook; extra == "complete"
+Requires-Dist: csaps; extra == "complete"
+Requires-Dist: zmq; extra == "complete"
+Requires-Dist: pytest; extra == "complete"
+Requires-Dist: pandas; extra == "complete"
+Requires-Dist: ipython; extra == "complete"
+Requires-Dist: cython; extra == "complete"
+Requires-Dist: cvxpy; extra == "complete"
+Provides-Extra: no-mpi
+Requires-Dist: jinja2; extra == "no-mpi"
+Requires-Dist: jupyter_server; extra == "no-mpi"
+Requires-Dist: autopep8; extra == "no-mpi"
+Requires-Dist: MarkupSafe; extra == "no-mpi"
+Requires-Dist: msgpack; extra == "no-mpi"
+Requires-Dist: cvxopt; extra == "no-mpi"
+Requires-Dist: torch; extra == "no-mpi"
+Requires-Dist: seaborn; extra == "no-mpi"
+Requires-Dist: pymongo; extra == "no-mpi"
+Requires-Dist: scipy; extra == "no-mpi"
+Requires-Dist: pytest-xdist; extra == "no-mpi"
+Requires-Dist: nbval; extra == "no-mpi"
+Requires-Dist: cirq-core; extra == "no-mpi"
+Requires-Dist: packaging; extra == "no-mpi"
+Requires-Dist: pytest-cov; extra == "no-mpi"
+Requires-Dist: psutil; extra == "no-mpi"
+Requires-Dist: matplotlib; extra == "no-mpi"
+Requires-Dist: flake8; extra == "no-mpi"
+Requires-Dist: ply; extra == "no-mpi"
+Requires-Dist: deap; extra == "no-mpi"
+Requires-Dist: notebook; extra == "no-mpi"
+Requires-Dist: csaps; extra == "no-mpi"
+Requires-Dist: zmq; extra == "no-mpi"
+Requires-Dist: pytest; extra == "no-mpi"
+Requires-Dist: pandas; extra == "no-mpi"
+Requires-Dist: ipython; extra == "no-mpi"
+Requires-Dist: cython; extra == "no-mpi"
+Requires-Dist: cvxpy; extra == "no-mpi"
+Provides-Extra: testing-no-cython
+Requires-Dist: pytest; extra == "testing-no-cython"
+Requires-Dist: pytest-xdist; extra == "testing-no-cython"
+Requires-Dist: pytest-cov; extra == "testing-no-cython"
+Requires-Dist: nbval; extra == "testing-no-cython"
+Requires-Dist: csaps; extra == "testing-no-cython"
+Requires-Dist: cvxopt; extra == "testing-no-cython"
+Requires-Dist: cvxpy; extra == "testing-no-cython"
+Requires-Dist: matplotlib; extra == "testing-no-cython"
+Requires-Dist: mpi4py; extra == "testing-no-cython"
+Requires-Dist: msgpack; extra == "testing-no-cython"
+Requires-Dist: packaging; extra == "testing-no-cython"
+Requires-Dist: pandas; extra == "testing-no-cython"
+Requires-Dist: psutil; extra == "testing-no-cython"
+Requires-Dist: zmq; extra == "testing-no-cython"
+Requires-Dist: jinja2; extra == "testing-no-cython"
+Requires-Dist: seaborn; extra == "testing-no-cython"
+Requires-Dist: scipy; extra == "testing-no-cython"
+Requires-Dist: ply; extra == "testing-no-cython"
+Requires-Dist: cirq-core; extra == "testing-no-cython"
+Requires-Dist: notebook; extra == "testing-no-cython"
+Requires-Dist: ipython; extra == "testing-no-cython"
+Requires-Dist: jupyter_server; extra == "testing-no-cython"
+Requires-Dist: torch; extra == "testing-no-cython"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: platform
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Gate set tomography (GST) is a quantum tomography protocol that provides full characterization of a quantum logic device
+(e.g. a qubit).  GST estimates a set of quantum logic gates and (simultaneously) the associated state preparation and
+measurement (SPAM) operations.  GST is self-calibrating.  This eliminates a key limitation of traditional quantum state
+and process tomography, which characterize either states (assuming perfect processes) or processes (assuming perfect
+state preparation and measurement), but not both together.  Compared with benchmarking protocols such as randomized
+benchmarking, GST provides much more detailed and accurate information about the gates, but demands more data.  The
+primary downside of GST has been its complexity.  Whereas benchmarking and state/process tomography data can be analyzed
+with relatively simple algorithms, GST requires more complex algorithms and more fine-tuning (linear GST is an exception
+that can be implemented easily).  pyGSTi addresses and eliminates this obstacle by providing a fully-featured, publicly
+available implementation of GST in the Python programming language.
+
+The primary goals of the pyGSTi project are to:
+
+- provide efficient and robust implementations of Gate Set Tomography algorithms;
+- allow straightforward interoperability with other software;
+- provide a powerful high-level interface suited to inexperienced programmers, so that
+  common GST tasks can be performed using just one or two lines of code;
+- use modular design to make it easy for users to modify, customize, and extend GST functionality.
