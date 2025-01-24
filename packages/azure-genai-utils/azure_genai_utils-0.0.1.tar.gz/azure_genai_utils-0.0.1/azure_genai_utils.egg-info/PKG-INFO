@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: azure-genai-utils
+Version: 0.0.1
+Summary: Azure GenAI utils
+Home-page: https://github.com/daekeun-ml/azure-genai-utils
+Keywords: langchain,langgraph
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: langchain
+Requires-Dist: langgraph
