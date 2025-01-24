@@ -1,0 +1,59 @@
+Metadata-Version: 2.2
+Name: get_container_ip
+Version: 0.1.0
+Summary: Un package per ottenere l'indirizzo IP di un container.
+Home-page: https://github.com/Koent-it/get_container_ip
+Author: Koent S.r.l.
+Author-email: tools@koent.it
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse
+Requires-Dist: logging
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FILE: get_container_ip/README.md
+# Questo file contiene la documentazione del progetto.
+
+# get_container_ip
+
+Questo pacchetto Python fornisce funzioni per ottenere l'indirizzo IP di un container Docker. È progettato per semplificare l'interazione con i container e facilitare la gestione delle reti.
+
+## Installazione
+
+Per installare il pacchetto, puoi utilizzare pip:
+
+```
+pip install get_container_ip
+```
+
+## Utilizzo
+
+Ecco un esempio di come utilizzare il pacchetto:
+
+```python
+from get_container_ip import main
+
+# Ottieni l'indirizzo IP di un container specifico
+ip_address = main.get_container_ip('nome_del_container')
+print(f"L'indirizzo IP del container è: {ip_address}")
+```
+
+## Contribuire
+
+Se desideri contribuire a questo progetto, sentiti libero di aprire una pull request o segnalare problemi.
+
+## Licenza
+
+Questo progetto è concesso in licenza sotto la MIT License. Vedi il file LICENSE per ulteriori dettagli.
