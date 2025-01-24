@@ -1,0 +1,40 @@
+[project]
+name = "lightsearch"
+version = "0.1.0"
+description = "A dual-perspective search algorithm that treats states as particles from the start and as waves from the goal."
+readme = "README.md"
+authors = [{ name = "Jiří Klimeš", email = "jiri@klimes.dev" }]
+requires-python = ">=3.12"
+dependencies = [
+    "einops>=0.8.0",
+    "jax>=0.4.35",
+    "flax>=0.10.1",
+    "optax>=0.2.3",
+    "matplotlib>=3.9.2",
+]
+
+[project.optional-dependencies]
+cuda12 = ["jax[cuda12]>=0.4.35"]
+
+[dependency-groups]
+dev = [
+    "maturin>=1.7.4",
+    "pip>=24.3.1",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+    "ruff>=0.7.3",
+]
+
+[build-system]
+requires = ["maturin>=1.7.4"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+manifest-path = "lightsearchlib/Cargo.toml"
+module-name = "lightsearch.lib"
+python-source = "."
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["*.py"]
