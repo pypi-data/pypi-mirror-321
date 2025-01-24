@@ -1,0 +1,10 @@
+villog/__init__.py,sha256=o_avK30IxscvTCwFttmrDPZ0Gd-UKCUwhGwqJ4kgCUs,169
+villog/log.py,sha256=9bY1zvZLcCYKt-FVMYU1Z31UPUuCfr4l74zUhJJ0A7I,5666
+villog/mssql.py,sha256=xio25iPcXmgULTsI-lG-SDsMjcYnf-sR-Li4P8-cNE8,23500
+villog/pdf.py,sha256=rKwTaaamLNqkCDBWJ4E7Xw4ZPdReVMXcAxqVsUvN-8Q,589
+villog/readexcel.py,sha256=8OslTTHlXNSmp9uJuQS0jb3xCaz3OGpVb8STU-k-kpg,1518
+villog/writexcel.py,sha256=7OGqliya2yDhCfPyYwVMj_5ge8LHkLWrZ3BmUvEjd6Y,6786
+villog-0.2.0.dist-info/METADATA,sha256=VkOsXA60PYWlBoFyYEA3LHkaXkNzjLCs1E4-NLEwQlc,3025
+villog-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+villog-0.2.0.dist-info/top_level.txt,sha256=P5M6nYXcFOJ8gNCy0oc1Ib2BSKuRkS6zjx7_zUSwAUM,7
+villog-0.2.0.dist-info/RECORD,,
