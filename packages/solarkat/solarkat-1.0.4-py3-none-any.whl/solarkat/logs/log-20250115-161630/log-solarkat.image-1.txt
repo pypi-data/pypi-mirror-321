@@ -1,0 +1,31 @@
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO: ### validated inputs
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO: cab wsclean:
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   ms = ['/home/samboco/solarKAT/SUN_IMAGING_STEPS/pipeline/msdir/1645272078_sdp_l0_1024ch_J0333-2741.ms']
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   prefix = obs1/im1/im1
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   column = DATA
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   nchan = 4
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   weight = briggs 0
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   size = 1000
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   scale = 1.5asec
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   niter = 10000
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   auto-threshold = 3.0
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   mgain = 0.8
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   join-channels = True
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   fit-spectral-pol = 4
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   padding = 2.0
+2025-01-15 16:16:36 STIMELA.solarkat.image-1 INFO:   temp-dir = ./tmp
+### running wsclean -name obs1/im1/im1 -data-column DATA -channels-out 4 -weight briggs 0 -size 1000 1000 -scale 1.5asec -niter 10000 -auto-threshold 3.0 -mgain 0.8 -join-channels -fit-spectral-pol 4 -padding 2.0 -temp-dir ./tmp /home/samboco/solarKAT/SUN_IMAGING_STEPS/pipeline/msdir/1645272078_sdp_l0_1024ch_J0333-2741.ms
+# 
+# WSClean version 3.4 (2023-10-11)
+# This software package is released under the GPL version 3.
+# Author: André Offringa (offringa@gmail.com).
+# 
+# === IMAGING TABLE ===
+#        # Pol Ch JG ²G FG FI In Freq(MHz)
+# | Independent group:
+# +-+-J- 0  I   0  0  0  0  0  0  856-1070 (256)
+#   +-J- 1  I   1  0  1  1  0  0  1070-1284 (256)
+#   +-J- 2  I   2  0  2  2  0  0  1284-1498 (256)
+#   +-J- 3  I   3  0  3  3  0  0  1498-1712 (256)
+# Reordering /home/samboco/solarKAT/SUN_IMAGING_STEPS/pipeline/msdir/1645272078_sdp_l0_1024ch_J0333-2741.ms into 4 x 1 parts.
+2025-01-15 16:17:25 STIMELA.solarkat.image-1 WARNING: Ctrl+C caught after 0:00:48, interrupting wsclean process 1736725

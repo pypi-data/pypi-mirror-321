@@ -1,0 +1,50 @@
+/home/samboco/.local/lib/python3.8/site-packages/stimela:
+  version: 2.0.1
+  mtime: 1728319419.1283994
+  mtime_str: Mon Oct  7 18:43:39 2024
+/home/samboco/.local/lib/python3.8/site-packages/stimela/config.py:
+  origin: /home/samboco/.local/lib/python3.8/site-packages/stimela
+/home/samboco/.local/lib/python3.8/site-packages/scabha/configuratt/__init__.py:
+  origin: /home/samboco/.local/lib/python3.8/site-packages/stimela
+/home/samboco/.pyenv/versions/3.10.13/envs/new_env/lib/python3.10/site-packages/scabha/configuratt/cache.py:
+  version: null
+  mtime: 1730319265.3763452
+  mtime_str: Wed Oct 30 22:14:25 2024
+  md5hash: 413c28261f00873293bdb574eda39cf8
+  git:
+    branch: master                3ff54e8 [origin/master] Add PyPy v7.3.16 (#2948)
+    describe: heads/master-0-g3ff54e89bc82687f
+    remotes:
+    - "origin\thttps://github.com/pyenv/pyenv.git (fetch)"
+    - "origin\thttps://github.com/pyenv/pyenv.git (push)"
+/home/samboco/.local/lib/python3.8/site-packages/stimela/stimela.conf:
+  mtime: 1728319419.0923986
+  mtime_str: Mon Oct  7 18:43:39 2024
+  md5hash: 853b24d87db43a29ead70a04cafb50c5
+/home/samboco/pulsars/git_clone/cult-cargo/cultcargo/stimela.conf:
+  mtime: 1728297493.22048
+  mtime_str: Mon Oct  7 12:38:13 2024
+  md5hash: d8547362d63e7bb23c550ef5ac13fc0b
+  git:
+    branch: 'master                              6f5a351 [origin/master] Merge pull
+      request #61 from caracal-pipeline/early-resolve'
+    describe: heads/master-0-g6f5a351c1c81e9db
+    remotes:
+    - "origin\thttps://github.com/caracal-pipeline/cult-cargo.git (fetch)"
+    - "origin\thttps://github.com/caracal-pipeline/cult-cargo.git (push)"
+/home/samboco/pulsars/git_clone/cult-cargo/cultcargo/genesis/cult-cargo-base.yml:
+  mtime: 1728297493.22048
+  mtime_str: Mon Oct  7 12:38:13 2024
+  md5hash: 3d21e319279df2981906e847d7b3a4dc
+  git:
+    branch: 'master                              6f5a351 [origin/master] Merge pull
+      request #61 from caracal-pipeline/early-resolve'
+    describe: heads/master-0-g6f5a351c1c81e9db
+    remotes:
+    - "origin\thttps://github.com/caracal-pipeline/cult-cargo.git (fetch)"
+    - "origin\thttps://github.com/caracal-pipeline/cult-cargo.git (push)"
+/home/samboco/.local/lib/python3.8/site-packages/scabha/configuratt/cache.py:
+  version: null
+  mtime: 1728319419.0843985
+  mtime_str: Mon Oct  7 18:43:39 2024
+  md5hash: 413c28261f00873293bdb574eda39cf8
