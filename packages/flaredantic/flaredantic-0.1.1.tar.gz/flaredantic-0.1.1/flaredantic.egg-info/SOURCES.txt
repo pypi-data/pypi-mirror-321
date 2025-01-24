@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+flaredantic/__init__.py
+flaredantic/__version__.py
+flaredantic/cli.py
+flaredantic/downloader.py
+flaredantic/exceptions.py
+flaredantic/flaredantic.py
+flaredantic/logging_config.py
+flaredantic.egg-info/PKG-INFO
+flaredantic.egg-info/SOURCES.txt
+flaredantic.egg-info/dependency_links.txt
+flaredantic.egg-info/entry_points.txt
+flaredantic.egg-info/requires.txt
+flaredantic.egg-info/top_level.txt
