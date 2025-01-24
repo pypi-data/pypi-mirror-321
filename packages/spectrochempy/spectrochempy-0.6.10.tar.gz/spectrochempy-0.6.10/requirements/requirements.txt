@@ -1,0 +1,35 @@
+# ======================================================================================
+#
+# This file is auto-generated from environment.yml file.
+#
+# !!! DO NOT MODIFY !!!
+#
+# See in `environment.yml` for more information.
+#
+# ======================================================================================
+brukeropusreader
+numpy-quaternion
+cffconvert>=2.0.0
+colorama
+dill
+docrep
+ipython
+jinja2
+matplotlib>=3.8
+numba
+numpy<2.0
+numpydoc>=1.2
+osqp
+packaging
+pint>=0.24
+requests
+scipy
+tqdm
+traitlets
+tzlocal
+scikit-learn
+xlrd
+pyyaml
+setuptools
+setuptools_scm
+gitpython
