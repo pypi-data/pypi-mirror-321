@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+libs411/__init__.py
+libs411.egg-info/PKG-INFO
+libs411.egg-info/SOURCES.txt
+libs411.egg-info/dependency_links.txt
+libs411.egg-info/top_level.txt
