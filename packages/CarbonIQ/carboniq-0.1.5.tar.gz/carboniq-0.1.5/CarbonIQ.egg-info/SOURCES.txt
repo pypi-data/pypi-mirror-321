@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+CarbonIQ.egg-info/PKG-INFO
+CarbonIQ.egg-info/SOURCES.txt
+CarbonIQ.egg-info/dependency_links.txt
+CarbonIQ.egg-info/entry_points.txt
+CarbonIQ.egg-info/requires.txt
+CarbonIQ.egg-info/top_level.txt
+carboniq/__init__.py
+carboniq/emissions.py
+carboniq/gpu_utils.py
+carboniq/metrics.py
+tests/__init__.py
+tests/test_carboniq.py
