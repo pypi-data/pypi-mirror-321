@@ -1,0 +1,13 @@
+emojiswahili/__init__.py,sha256=5gBBQrLaw2SAGu2bHNm4rLwW0LTv2_RMCsCjjsjuONw,778
+emojiswahili/config.py,sha256=H8LCUZhidcptDK1BmO5u8ZIJLI8uOFPjHv2aYq3UVn0,564
+emojiswahili/core.py,sha256=LNfRhRgoYhQwBJDEpLO-k6Uvd8vk7oKNg6X8FsF3BfQ,2950
+emojiswahili/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emojiswahili/tokenizer.py,sha256=iEfp2sPF6B_bUivheRFeLUGCVOi2VoNxBLz21oovzZ8,3287
+emojiswahili/unicode_codes/__init__.py,sha256=G3QqAl2f1F0EC0icSUa28drfmIyAD6NHB06fx6alGM8,978
+emojiswahili/unicode_codes/data_dict.py,sha256=BuZQhklrIIG5Q7CenkbYzlOzBxX3KfQ9iuzVxERO2Ag,370
+emojiswahili/unicode_codes/emoji.json,sha256=a0s6XhjnGg6EuLhAEdJVHg6LFCPbAxqxZ2ussq8XzYA,287037
+emojiswahili-1.0.0.dist-info/LICENSE.txt,sha256=yEFRUQrlaamLouWl2749PuUPAnO3TQAaatTt4eUWpE0,1464
+emojiswahili-1.0.0.dist-info/METADATA,sha256=YWonoeRlgUwPgQL6829f-ZtJIliOeARF_z6OhFGkMNU,4094
+emojiswahili-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+emojiswahili-1.0.0.dist-info/top_level.txt,sha256=Dp0hy9Knnev8M_dt0TPLh0oywOWnT96sWN7GHw305jY,13
+emojiswahili-1.0.0.dist-info/RECORD,,
