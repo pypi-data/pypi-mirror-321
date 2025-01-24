@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: lib_for_querry_tbl_a
+Version: 0.9.9
+Summary: A simple example library
+Author: Daniil_Viktorovich
+Author-email: daniil789p@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+lib_for_querry_tbl_a

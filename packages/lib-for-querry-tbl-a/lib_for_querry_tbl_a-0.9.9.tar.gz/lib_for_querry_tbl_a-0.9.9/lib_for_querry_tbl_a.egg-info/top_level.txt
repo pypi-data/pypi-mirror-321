@@ -1,0 +1,1 @@
+lib_for_querry_tbl_a

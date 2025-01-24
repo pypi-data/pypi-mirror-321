@@ -1,0 +1,1 @@
+from .lib_for_querry_tbl_a import function_selection

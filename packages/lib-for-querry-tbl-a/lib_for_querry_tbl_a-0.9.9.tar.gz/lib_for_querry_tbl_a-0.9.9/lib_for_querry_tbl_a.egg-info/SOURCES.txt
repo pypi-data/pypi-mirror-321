@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+lib_for_querry_tbl_a/__init__.py
+lib_for_querry_tbl_a/lib_for_querry_tbl_a.py
+lib_for_querry_tbl_a.egg-info/PKG-INFO
+lib_for_querry_tbl_a.egg-info/SOURCES.txt
+lib_for_querry_tbl_a.egg-info/dependency_links.txt
+lib_for_querry_tbl_a.egg-info/top_level.txt
