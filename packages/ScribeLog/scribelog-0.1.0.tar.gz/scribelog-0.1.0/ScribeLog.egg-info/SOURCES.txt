@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README_es.md
+setup.py
+ScribeLog/__init__.py
+ScribeLog/exception.py
+ScribeLog/logger_module.py
+ScribeLog.egg-info/PKG-INFO
+ScribeLog.egg-info/SOURCES.txt
+ScribeLog.egg-info/dependency_links.txt
+ScribeLog.egg-info/top_level.txt
