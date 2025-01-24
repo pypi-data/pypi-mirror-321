@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: start-case-reporter
+Version: 0.1.0
+Summary: 
+Author: 6vi7ms
+Author-email: 6vi7ms@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pyqt6 (>=6.8.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Start with
+```sh
+start-case-reporter
+```
