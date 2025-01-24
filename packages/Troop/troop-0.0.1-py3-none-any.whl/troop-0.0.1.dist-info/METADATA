@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: troop
+Version: 0.0.1
+Summary: A Python package
+Requires-Python: >=3.8
+Requires-Dist: hatchling>=1.27.0
+Requires-Dist: twine>=6.0.1
+Description-Content-Type: text/markdown
+
+# troop
+
+A Python package.
