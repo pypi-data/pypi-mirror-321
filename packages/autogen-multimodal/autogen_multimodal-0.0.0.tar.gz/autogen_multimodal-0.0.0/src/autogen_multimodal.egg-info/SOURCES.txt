@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/autogen_multimodal.egg-info/PKG-INFO
+src/autogen_multimodal.egg-info/SOURCES.txt
+src/autogen_multimodal.egg-info/dependency_links.txt
+src/autogen_multimodal.egg-info/top_level.txt
