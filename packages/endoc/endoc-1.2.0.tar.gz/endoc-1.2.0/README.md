@@ -1,0 +1,154 @@
+# Endoc SDK
+
+Endoc is a Python SDK that provides easy access to various paper search and summarization capabilities. With Endoc, you can:
+
+- Search documents based on a ranking variable and keywords
+- Summarize scientific papers automatically
+- Retrieve information for a single paper
+- Perform paginated searches across multiple papers
+
+## Installation
+
+`pip install endoc`
+
+## Getting Started
+
+### Obtain an API Key
+
+You will need an API key to use the Endoc SDK. Please contact your API provider or administrator to obtain one.
+
+### Set up your environment
+
+Create a `.env` file in your project’s root directory (if you haven’t already) and add your API key:
+
+```bash
+STAGING_API_KEY=YOUR_API_KEY_HERE
+```
+
+This key will be used to authenticate requests.
+
+### Install Dependencies
+
+If you haven’t already, install this library (as shown above) as well as any necessary dependencies (for example, python-dotenv if you want to load environment variables from a .env file):
+
+`pip install python-dotenv`
+
+### Usage
+
+Below is an example script demonstrating how to use the EndocClient. You can place this in a file (e.g., example.py) and run it to see the results.
+
+```python
+import json
+import os
+from dotenv import load_dotenv
+from endoc import EndocClient
+```
+
+### Load environment variables from .env
+
+`load_dotenv()`
+
+### Retrieve the API key
+
+`api_key = os.getenv("STAGING_API_KEY")`
+
+### Initialize the Endoc client
+
+`client = EndocClient(api_key)`
+
+1) Document Search
+
+```python
+result = client.document_search(
+ranking_variable="BERT",
+keywords=["AvailableField:Content.Fullbody_Parsed"]
+)
+print("Document Search Result:")
+print(json.dumps(result, indent=4))
+```
+
+2) Summarize Paper
+
+```python
+result = client.summarize("221802394")
+print("\nSummarize Paper Result:")
+print(json.dumps(result, indent=4))
+```
+
+3) Paginated Search
+
+```python
+example_paper = {
+"collection": "S2AG",
+"id_field": "id_int",
+"id_type": "int",
+"id_value": "221802394"
+}
+paper_list = [example_paper]
+result = client.paginated_search(paper_list=paper_list)
+print("\nPaginated Search Result:")
+print(json.dumps(result, indent=4))
+```
+
+4) Single Paper
+
+```python
+result = client.single_paper("221802394")
+print("\nSingle Paper Result:")
+print(json.dumps(result, indent=4))
+```
+
+Document Search
+
+- Method: client.document_search(ranking_variable, keywords=None)
+- Parameters:
+	- `ranking_variable` (str): The ranking algorithm or variable to use, such as "BERT".
+	- `keywords` (list, optional): A list of keywords for filtering or searching.
+
+Summarize Paper
+
+- Method: `client.summarize(id_value)`
+- Parameters:
+	- `id_value` (str): The unique identifier of the paper (e.g., "221802394").
+
+Paginated Search
+
+- Method: `client.paginated_search(paper_list, keywords=None)`
+- Parameters:
+	- `paper_list` (list of dict): A list of paper metadata objects that you’d like to retrieve in a paginated fashion.
+	- `keywords` (list, optional): Search keywords if desired.
+
+Single Paper
+
+- Method: `client.single_paper(id_value)`
+- Parameters:
+	- `id_value` (str): The unique identifier of the paper.
+
+## Environment Variables
+
+This SDK uses python-dotenv to load environment variables from a `.env` file. Make sure you have installed `python-dotenv`:
+
+```bash
+pip install python-dotenv
+```
+
+And include the following line at the top of your Python script before creating the EndocClient:
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+## Contributing
+
+- Fork the repository
+- Create your feature branch: `git checkout -b feature/my-feature`
+- Commit your changes: `git commit -am 'Add some feature'`
+- Push to the branch: `git push origin feature/my-feature`
+- Create a new Pull Request
+
+## License
+
+This project is licensed under the terms specified by the project’s owner. See the LICENSE file for details.
+
+Happy Searching! If you have any questions, feel free to open an issue on GitHub or contact your administrator for assistance.
