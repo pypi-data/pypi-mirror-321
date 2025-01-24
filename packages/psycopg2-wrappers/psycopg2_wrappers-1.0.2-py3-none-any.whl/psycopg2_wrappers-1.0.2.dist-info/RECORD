@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/example_native_query_executor.py,sha256=_0s5vyQjAvo2p_ITjWennjqAKVaDa7c8UNNFD5e-mW8,1481
+examples/example_simple_query_executor.py,sha256=9x27eNTjiPH7VLt5PTCA2-dkZCtjFiyaIi6OIUcksnY,1307
+psycopg2_wrapper/DatabaseConnector.py,sha256=FKs91C6MNVZWCS8HXXAS74lxKyMRSKN6K3Pla8W-68w,1843
+psycopg2_wrapper/NativeQueryExecutor.py,sha256=MLPZSTFQfv8zEB5x9ZutLcsihnFsVpU4U5X3rCBPup4,3740
+psycopg2_wrapper/SimpleQueryExecutor.py,sha256=jQ2BZ6QZSKGuPpv3xZk5NcObuPU_RJTtKwtmMo5U59Y,2526
+psycopg2_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=Lh4faHk-9oZyGlFpdtuxCqCAnXfdouTsoMYcXi6biUQ,418
+tests/test_database_connector.py,sha256=Kae2Bou3OyGYBqvO-BpdhDE5vp3g8dJSwcaBPLQCJPo,1991
+tests/test_native_query_executor.py,sha256=C5hz1mAesWfTT7IEuElZZ_qe6n4OZKfWUOrMq7v2X3c,4248
+tests/test_simple_query_executor.py,sha256=DcOzRX8yCLtwVhRbGly2SrI8PnDOm9X26_SZu3xibuk,3119
+psycopg2_wrappers-1.0.2.dist-info/LICENCE,sha256=Ebx85vBFccAy5Y7jnL0Ipxxgiyz5iRtdPgc1me7m7g4,1068
+psycopg2_wrappers-1.0.2.dist-info/METADATA,sha256=ByVYmtvHzCpUkCeTQclonkbn8DvDIFERrfP9XcqZ6Ro,9353
+psycopg2_wrappers-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+psycopg2_wrappers-1.0.2.dist-info/top_level.txt,sha256=nhRbwo-u2Ax9Cj9ZDrkaKm-pxR6BQwOzOLiTmGlA02I,32
+psycopg2_wrappers-1.0.2.dist-info/RECORD,,
