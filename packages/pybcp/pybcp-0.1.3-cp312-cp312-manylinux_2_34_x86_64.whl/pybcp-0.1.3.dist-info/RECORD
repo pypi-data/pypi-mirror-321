@@ -1,0 +1,8 @@
+_pybcp.cpython-312-x86_64-linux-gnu.so,sha256=arq_8O8jg_QxlIb3OoHCUmxwNMpdpweETE5CwkEQvZM,34289
+pybcp.py,sha256=M16n1Tjw6J5-ujJr5gUdgWCTKNPvExc3EA-vRtVvJ5Q,6243
+pybcp.libs/libcrypto-101e1754.so.3.0.7,sha256=iidmbWLXIntV32RAMhIiM_QmUNC--pN41PHJB9WMkVw,4644073
+pybcp.libs/libssl-b01c5100.so.3.0.7,sha256=P_DMenIrJNnaqLhBA5W6vjWBp2obIvA7639XE-paSpo,742441
+pybcp.libs/libsybdb-2c501919.so.5.1.0,sha256=JnZYOUGsXMpqmAvfMycM_mJghJcjuyFhacpiiftHzRc,1753097
+pybcp-0.1.3.dist-info/METADATA,sha256=8ZC0F0qEZXj0LCnj_lA7UC33EtigeVexjTnnUMNwfiM,2424
+pybcp-0.1.3.dist-info/WHEEL,sha256=26IZqBJhUM9r6aYXfdPL40C99aMwlvVR8zxr-__HFNQ,99
+pybcp-0.1.3.dist-info/RECORD,,
