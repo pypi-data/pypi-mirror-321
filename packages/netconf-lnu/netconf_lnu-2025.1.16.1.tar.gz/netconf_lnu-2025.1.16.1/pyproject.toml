@@ -1,0 +1,30 @@
+[project]
+name = "netconf-lnu"
+version = "2025.01.16.01"
+description = "Python Scripts to get schema YANG files from network device"
+authors = [
+    {name = "Meng Bo", email = "mengbo@lnu.edu.cn"},
+]
+dependencies = [
+    "ncclient>=0.6.16",
+    "puresnmp>=2.0.1",
+    "xmltodict>=0.14.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[dependency-groups]
+dev = [
+    "pyang>=2.6.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+netconf-lnu = "netconf_lnu.main:main"
+
+[project.urls]
+Source = "https://github.com/mengbo/netconf-lnu"
