@@ -1,0 +1,68 @@
+Metadata-Version: 2.2
+Name: structured-qa
+Version: 0.1.0
+License: Apache-2.0
+Project-URL: Documentation, https://mozilla-ai.github.io/structured-qa/
+Project-URL: Issues, https://github.com/mozilla-ai/structured-qa/issues
+Project-URL: Source, https://github.com/mozilla-ai/structured-qa
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fire
+Requires-Dist: huggingface-hub
+Requires-Dist: llama-cpp-python
+Requires-Dist: loguru
+Requires-Dist: langchain-text-splitters
+Requires-Dist: pydantic
+Requires-Dist: pymupdf4llm
+Requires-Dist: pyyaml
+Requires-Dist: streamlit
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings-python; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest<9,>=8; extra == "tests"
+Requires-Dist: pytest-sugar>=0.9.6; extra == "tests"
+Requires-Dist: pytest-mock>=3.14.0; extra == "tests"
+
+<p align="center"><img src="./images/Blueprints-logo.png" width="35%" alt="Project logo"/></p>
+
+This blueprint guides you to ...
+
+### 👉 📖 For more detailed guidance on using this project, please visit our [Docs here](https://mozilla-ai.github.io/Blueprint-template/)
+
+### Built with
+- Python 3.10+
+- Open-Source Tool 1
+- Open-Source Tool 2
+- ...
+
+## Quick-start
+
+
+## How it Works
+
+
+## Pre-requisites
+
+- **System requirements**:
+  - OS: Windows, macOS, or Linux
+  - Python 3.10 or higher
+  - Minimum RAM:
+  - Disk space:
+
+- **Dependencies**:
+  - Dependencies listed in `pyproject.toml`
+
+
+## Troubleshooting
+
+
+## License
+
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! To get started, you can check out the [CONTRIBUTING.md](CONTRIBUTING.md) file.
