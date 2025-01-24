@@ -1,0 +1,17 @@
+utiles-0.7.2.dist-info/METADATA,sha256=F_8hRkBHLBi1j1hs6T-sBbVCTjRw0UODokrgyFSIa5Y,13794
+utiles-0.7.2.dist-info/WHEEL,sha256=R_HCjP5_frfaBEJXQ65fSzVH-bXs5IG_kaO-ayIJ0wc,129
+utiles-0.7.2.dist-info/entry_points.txt,sha256=tf-eJqdiqcu0MuKd5qmA_Fr50iAsJSKCYUhftlkzUGM,177
+utiles/_legacy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utiles/_legacy/cli.py,sha256=GfxMHhmNPmjgYvvKh8auQQCqL76xzdCtLbOxvipbIjI,16607
+utiles/rio_plugin.py,sha256=YEYyrTx3bGvc-XCHfoWIBHce6_O5qkLRXfb3ROW7upo,170
+utiles/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utiles/__init__.py,sha256=XB0fA1yGDrPA1ZhsMUB46hZ_BNC4nTj1CyfPEctZy-I,4300
+utiles/__main__.py,sha256=_Z3Dg-0Yv71ERz-BMPduNYjoor5C5Qwf9t3arR0cb0s,1108
+utiles/_utiles.pyi,sha256=4x-W_boi8tp3P29ufkTUL7bC2d-g_YpAwvbCdEd7B2Y,9203
+utiles/__about__.py,sha256=lu6JBMPgfNTgWgjyLpdhnaNTEHPa9_h7B2WYIqOtXwU,506
+utiles/dev/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utiles/dev/testing.py,sha256=-Xgg5EMjQMwvWdAZpCIohTIHynk5OKOKcwXxbsKi6sQ,3458
+utiles/_click.py,sha256=jC0i_-3AMpogRSXUpGyxPhDOow-XuubFL245c9siprY,1217
+utiles/cli.py,sha256=MeNzfhxyuh10jFcLLkOJWTiOTUIIf6X9y3Z2UGsE9Fw,568
+utiles/_utiles.cpython-39-powerpc64le-linux-gnu.so,sha256=eev__E_reuPetXRaN_sgxv0j3SdGeO5kLuKcO9MRnqM,19361272
+utiles-0.7.2.dist-info/RECORD,,
