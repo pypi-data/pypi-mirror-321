@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: llama-index-storage-docstore-tablestore
+Version: 0.1.0
+Summary: llama-index docstore tablestore integration
+License: MIT
+Author: xunjian.sl
+Author-email: xunjian.sl@alibaba-inc.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: llama-index-core (>=0.12.0,<0.13.0)
+Requires-Dist: llama-index-storage-kvstore-tablestore (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Docstore Integration: Tablestore Docstore
+
