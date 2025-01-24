@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsx_to_json.py,sha256=Jv-dwmdB7X_mMlxu7W1D4kJaZ_aWg6RsgZc2gnOEzOc,839
+excel_to_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excel_to_json/channels.py,sha256=d29J29VAbjXi9JrLlQcyPN_ki1AyRrud6q6a_7Oj2j0,15515
+excel_to_json/const.py,sha256=ZzPIk256jWlOut6_Lyp18MpqZsct2Fxr9ySzIld4LIk,2729
+excel_to_json/excel_to_json.py,sha256=jIgbhX8P4ESZInaRt6l5czwBPoXJoyiaS9z2Uvp3l04,6128
+excel_to_json/utils.py,sha256=9WukYmG_VB95rdU0BS-bNM6MN4FOdGvMoMaBqeC3C18,285
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_excel_to_json.py,sha256=kAtYSiMCOIISrbAJDVLqjXZXErPsMHnGij8k3A96kjM,19223
+pyfrigel_db_struct-0.0.1a2.dist-info/LICENSE,sha256=SyBGz2tx60rBg7MS5BsTlnxYiWCUCrs3yqw3prg-i8E,35
+pyfrigel_db_struct-0.0.1a2.dist-info/METADATA,sha256=dU7dY8C2ebbksX4ugFubEXRTAfoFRyxUoOeZoxY8Rps,1201
+pyfrigel_db_struct-0.0.1a2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyfrigel_db_struct-0.0.1a2.dist-info/top_level.txt,sha256=Q3GqmVm1_WfMdXmnmIzXEse4rJDhy9HnbSStk2sZbd8,42
+pyfrigel_db_struct-0.0.1a2.dist-info/RECORD,,
