@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: cmx4mlops
+Version: 0.0.2
+Summary: CMX4MLOps repository
+Author-email: Grigori Fursin and contributors <grigori.fursin@ctuning.org>
+Maintainer-email: Grigori Fursin <grigori.fursin@ctuning.org>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/mlcommons/ck
+Project-URL: Repository, https://github.com/mlcommons/ck/tree/master/cmx4mlops
+Project-URL: Issues, https://github.com/mlcommons/ck/issues
+Project-URL: Changelog, https://github.com/mlcommons/ck/blob/master/cmx4mlops/CHANGES.md
+Keywords: cmx4mlops,cmx4mlperf,cm4mlops,cm4mlperf,mlperf,virtual mlops,vmlops,cmind,workflow,automation,mlops,devops,aiops,portability,reusability
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cmind>=3.5.2
+Requires-Dist: flextask
+
+Aggregated CM automations for MLOps and MLPerf
+
+TBD
