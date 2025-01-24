@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: map_closures
+Version: 1.0.1
+Summary: Effectively Detecting Loop Closures using Point Cloud Density Maps
+Keywords: Loop Closures,Localization,SLAM,LiDAR
+Author: Saurabh Gupta, Tiziano Guadagnino
+Project-URL: Homepage, https://github.com/PRBonn/MapClosures
+Requires-Python: >=3.8
+Requires-Dist: kiss-icp>=1.0.0
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pyquaternion
+Requires-Dist: pydantic>=2
+Requires-Dist: pydantic-settings
+Requires-Dist: tqdm
+Requires-Dist: typer[all]>=0.6.0
+Requires-Dist: rich
+Requires-Dist: typing_extensions
+Requires-Dist: open3d>0.13; extra == "all"
+Requires-Dist: PyYAML; extra == "all"
+Requires-Dist: mcap-ros2-support; extra == "all"
+Requires-Dist: rosbags; extra == "all"
+Requires-Dist: trimesh; extra == "all"
+Requires-Dist: ouster-sdk; extra == "all"
+Requires-Dist: pyntcloud; extra == "all"
+Requires-Dist: polyscope; extra == "visualizer"
+Requires-Dist: matplotlib>3.9.2; extra == "visualizer"
+Provides-Extra: all
+Provides-Extra: visualizer
+Description-Content-Type: text/markdown
