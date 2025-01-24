@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: manimforge
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.md
+Summary: Rust parts of the Animation Library Manim
+License: MIT
+Requires-Python: >=3.9, <3.13
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: documentation, https://docs.manim.community/
+Project-URL: homepage, https://www.manim.community/
+Project-URL: repository, https://github.com/ManimCommunity/manim-forge
+
+# Manim-Forge
+Some parts of the python library [Manim](https://www.manim.community) need
+to be executed fast. This library contains code
+for these computations, but written in Rust
+to improve speed.
+
+## Testing
+1. Clone the repo
+2. Create a virtual environment using something like [`uv`](https://docs.astral.sh/uv/) (`uv venv`)
+3. Install dev dependencies (`uv sync`)
+4. Build the library (`uv run maturin develop --uv`)
+5. Run the example (`uv run manim -p examples/circle.py --disable_caching`)
+
