@@ -1,0 +1,14 @@
+
+[all]
+my_base_tkinter_app[dev,icons,tests]
+
+[dev]
+ipython
+pre-commit
+
+[icons]
+pillow
+
+[tests]
+pytest-cov
+scikit-image
