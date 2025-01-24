@@ -1,0 +1,5 @@
+[console_scripts]
+boaboard = boaboard.__main__:cli_app
+
+[gui_scripts]
+

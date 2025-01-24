@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: BoaBoard
+Version: 0.1.0
+Summary: BoaBoard is a modern, Python-powered attendance dashboard designed to streamline employee tracking and provide real-time insights with a sleek and intuitive interface.
+Author-Email: Julius Koenig <info@bastelquartier.de>
+License: GPL-3.0
+Requires-Python: >=3.12
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: pydantic-settings>=2.7.1
+Requires-Dist: mongoengine>=0.29.1
+Requires-Dist: uvicorn>=0.34.0
+Requires-Dist: typer>=0.15.1
+Requires-Dist: wiederverwendbar[full]>=0.6.3
+Description-Content-Type: text/markdown
+
+# BoaBoard
+BoaBoard is a modern, Python-powered attendance dashboard designed to streamline employee tracking and provide real-time insights with a sleek and intuitive interface.
+
+---
+WIP
