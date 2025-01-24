@@ -1,0 +1,13 @@
+bettercli/__init__.py,sha256=aJuqjoprKLse_fU-ntZ8cvusXQlIxUlL1yQgjM0yjKc,230
+bettercli/cli.py,sha256=sfka-zn9c1bo52cJ7qrwKTqZgVeUhGJ1StiiWYxxP4U,612
+bettercli/command.py,sha256=qYChw0G3cdR-QCA84Yj8-xS2wt6CG7SL6QHcmkxLfXU,5789
+bettercli/decorators.py,sha256=RKk11s8cKDXuWT8nEi_ot_uOzYOONs5sCqYiAFRJhXE,1439
+bettercli/exceptions.py,sha256=Wa_ee2-68iF8_DQuwxblKt32k8nZZ-YXsjgbVg_UQRE,941
+bettercli/logger.py,sha256=N3PVbqrxqvH-2j1sVkbIhx0P0V_ghpG1-Nn69HwL9WI,2390
+bettercli/option.py,sha256=JaJtQywey6yfLPDzkgKOQYBJ_2uqcRFdboM0obUzeO4,4450
+bettercli/utils.py,sha256=waLoZna2e89sqYCmSHJcaZXzKdH7v6tdjXfTeKb6Lrg,2941
+bettercli-0.0.3.dist-info/LICENSE,sha256=R6pwD_wjSEv6UTx2l3z0yFkskQZd8lhXSzd4lKarNGc,1062
+bettercli-0.0.3.dist-info/METADATA,sha256=0vRAS6-M8736Y3ow5kbPwIwVZZchmulr2uP49GqVn1k,2028
+bettercli-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bettercli-0.0.3.dist-info/top_level.txt,sha256=289QRkMjsIbry1fxBFRk07BKnIFbRLHTQJEp_Sz3gZU,10
+bettercli-0.0.3.dist-info/RECORD,,
