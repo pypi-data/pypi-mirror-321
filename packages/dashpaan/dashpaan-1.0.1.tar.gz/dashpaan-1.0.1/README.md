@@ -1,0 +1,407 @@
+# Dashpaan Package
+
+## Overview
+Dashpaan is a Python package designed for creating dynamic dashboards and web pages with minimal code. It provides a wide range of UI components (elements) that can be easily integrated into web applications.
+
+---
+
+## Elements and Attributes
+Below is a detailed breakdown of all the 27 elements available in Dashpaan, their attributes, and usage examples, ensuring that all attributes (except `kind` and `version`) are covered and properly demonstrated using `.json()` calls.
+
+---
+
+### 1. Line Chart
+**Attributes:** `data`, `series`, `options`
+
+```python
+line_chart = LineChart(
+    data={
+        "series": [
+            {"name": "week", "data": [540, 539, 527]},
+            {"name": "month", "data": [1520, 1529, 1567]}
+        ],
+        "options": {
+            "chart": {"type": "line", "height": "100%"}
+        }
+    }
+)
+print(line_chart.json())
+```
+
+---
+
+### 2. Pie Chart
+**Attributes:** `title`, `series`, `labels`, `options`
+
+```python
+pie_chart = PieChart(
+    title="Sessions by Device",
+    series={"Today": [{"data": [92.8, 6.1, 1.1]}]},
+    labels=["Desktop", "Mobile", "Tablet"],
+    options={"chart": {"type": "pie"}}
+)
+print(pie_chart.json())
+```
+
+---
+
+### 3. Donut Chart
+**Attributes:** `title`, `series`, `labels`, `options`
+
+```python
+donut_chart = DonutChart(
+    title="Donut Chart Example",
+    series={"Today": [{"data": [30, 50, 20]}]},
+    labels=["A", "B", "C"],
+    options={"chart": {"type": "donut"}}
+)
+print(donut_chart.json())
+```
+
+---
+
+### 4. QR Code
+**Attributes:** `link`, `size`
+
+```python
+qr_code = QRCode(
+    link="https://example.com",
+    size="2*2"
+)
+print(qr_code.json())
+```
+
+---
+
+### 5. Sticky Stat
+**Attributes:** `size`, `value`, `color`, `title`
+
+```python
+sticky_stat = StickyStat(
+    size="small",
+    value=214,
+    color="red",
+    title="New Issues"
+)
+print(sticky_stat.json())
+```
+
+---
+
+### 6. Sticky Target
+**Attributes:** `size`, `color`, `data`, `more`
+
+```python
+sticky_target = StickyTarget(
+    size="1*1",
+    color="#4caf50",
+    data={"Yesterday": {"name": "Tasks", "note": "Completed", "count": 21}},
+    more={"icon": "create", "click": {"url": "example.com"}}
+)
+print(sticky_target.json())
+```
+
+---
+
+### 7. Form Element Upload Image
+**Attributes:** `label`, `max_size`, `allowed_types`
+
+```python
+form_image = FormElementUploadImage(
+    label="Profile Image",
+    max_size=5,
+    allowed_types=["jpg", "png"]
+)
+print(form_image.json())
+```
+
+---
+
+### 8. Tabular
+**Attributes:** `tabs`
+
+```python
+tabular = Tabular(
+    tabs=[
+        {"title": "Tab 1", "elements": [Heading(title="Tab 1 Heading")]}
+    ]
+)
+print(tabular.json())
+```
+
+---
+
+### 9. Text Field
+**Attributes:** `placeholder`, `required`
+
+```python
+text_field = TextField(
+    placeholder="Enter Name",
+    required=True
+)
+print(text_field.json())
+```
+
+---
+
+### 10. Button
+**Attributes:** `title`, `color`, `action`
+
+```python
+button = Button(
+    title="Click Me",
+    color="primary",
+    action={"type": "navigate", "url": "/home"}
+)
+print(button.json())
+```
+
+---
+
+### 11. Select
+**Attributes:** `options`, `multiple`, `label`
+
+```python
+select = Select(
+    options=["Option 1", "Option 2", "Option 3"],
+    multiple=True,
+    label="Choose Options"
+)
+print(select.json())
+```
+
+---
+
+### 12. Flex
+**Attributes:** `content`, `direction`
+
+```python
+flex = Flex(
+    content=["Element 1", "Element 2"],
+    direction="row"
+)
+print(flex.json())
+```
+
+---
+
+### 13. Heading
+**Attributes:** `title`, `size`
+
+```python
+heading = Heading(
+    title="Main Dashboard",
+    size="large"
+)
+print(heading.json())
+```
+
+---
+
+### 14. Page
+**Attributes:** `title`, `uri`, `data`, `variables`, `templates`, `elements`, `navigation`
+
+```python
+page = Page(
+    title="Dashboard",
+    uri="/dashboard",
+    data=[],
+    variables={},
+    templates={},
+    elements=[heading, button],
+    navigation="inherit"
+)
+print(page.json())
+```
+
+---
+
+### 15. Navigation
+**Attributes:** `items`
+
+```python
+navigation = Navigation(
+    items=[
+        {"title": "Home", "type": "link", "data": {"url": "/home"}},
+        {"title": "About", "type": "link", "data": {"url": "/about"}}
+    ]
+)
+print(navigation.json())
+```
+
+---
+
+### 16. Text Area Editor
+**Attributes:** `name`
+
+```python
+text_area_editor = TextAreaEditor(
+    name="text-area-editor"
+)
+print(text_area_editor.json())
+```
+
+---
+
+### 17. WYSIWYG Editor
+**Attributes:** `name`, `content`
+
+```python
+wysiwyg_editor = WysiwygEditor(
+    name="wysiwyg-editor",
+    content="<p>Hello World!</p>"
+)
+print(wysiwyg_editor.json())
+```
+
+---
+
+### 18. Card
+**Attributes:** `title`, `content`
+
+```python
+card = Card(
+    title="Product A",
+    content="Best selling product"
+)
+print(card.json())
+```
+
+---
+
+### 19. Switch
+**Attributes:** `is_on`, `label`
+
+```python
+switch = Switch(
+    is_on=True,
+    label="Enable Feature"
+)
+print(switch.json())
+```
+
+---
+
+### 20. Wave Chart
+**Attributes:** `data`, `title`, `color`, `height`
+
+```python
+wave_chart = WaveChart(
+    data=[10, 20, 30],
+    title="Sales Chart",
+    color="blue",
+    height=300
+)
+print(wave_chart.json())
+```
+
+---
+
+### 21. Circular Distribution
+**Attributes:** `data`, `labels`
+
+```python
+circular_chart = CircularDistribution(
+    data=[30, 40, 30],
+    labels=["A", "B", "C"]
+)
+print(circular_chart.json())
+```
+
+---
+
+### 22. Chart Comparison
+**Attributes:** `data_series`, `labels`
+
+```python
+chart_comparison = ChartComparison(
+    data_series=[[1, 2], [3, 4]],
+    labels=["A", "B"]
+)
+print(chart_comparison.json())
+```
+
+---
+
+### 23. Information
+**Attributes:** `text`, `icon`, `color`
+
+```python
+info = Information(
+    text="System Update Complete",
+    icon="info",
+    color="blue"
+)
+print(info.json())
+```
+
+---
+
+### 24. Form
+**Attributes:** `title`, `uri`, `fields`, `buttons`
+
+```python
+form = Form(
+    title="User Form",
+    uri="/form",
+    fields=[text_field],
+    buttons=[button]
+)
+print(form.json())
+```
+
+---
+
+### 25. Reverse Text
+**Attributes:** `text`
+
+```python
+reverse_text = ReverseText(
+    text="Hello World"
+)
+print(reverse_text.json())
+```
+
+---
+
+### 26. Page Section
+**Attributes:** `title`, `elements`
+
+```python
+page_section = PageSection(
+    title="Section A",
+    elements=[card, button]
+)
+print(page_section.json())
+```
+
+---
+
+### 27. Statistic
+**Attributes:** `title`, `value`
+
+```python
+statistic = Statistic(
+    title="Active Users",
+    value=1200
+)
+print(statistic.json())
+```
+
+---
+
+## Installation
+```bash
+pip install dashpaan
+```
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+## Contribution
+Feel free to fork this repository and submit pull requests for improvements.
+
+## Contact
+For questions and support, reach out to [connect@monirs.com](mailto:support@example.com).
