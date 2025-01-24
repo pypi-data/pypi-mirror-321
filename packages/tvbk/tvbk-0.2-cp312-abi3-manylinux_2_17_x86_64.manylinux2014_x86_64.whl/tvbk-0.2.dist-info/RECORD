@@ -1,0 +1,6 @@
+tvbk-0.2.dist-info/METADATA,sha256=LWE1X1GOKTxvrOHviQaq3UqQpwa-GzHQgUYRMQIfUxI,1265
+tvbk-0.2.dist-info/RECORD,,
+tvbk-0.2.dist-info/WHEEL,sha256=rgBe5lsrYLaaGsUAPsVBOLIXZSIXCdi-k4o-PLZto6A,154
+tvbk-0.2.dist-info/licenses/LICENSE,sha256=_66u1F94WzbMN2QbBh5xro9GbvULf49iqefFAPmGXVA,547
+tvbk/__init__.py,sha256=eHY78T8KkLYT1GnO9z0ryw_WSHITCVgToE0mXdfZMtk,131
+tvbk/tvbk_ext.abi3.so,sha256=jlj1rfaWd4CiPRkGSdevVRFiGKjRnAgyazZ6p0TbRbY,214032
