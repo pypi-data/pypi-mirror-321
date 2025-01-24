@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "python.analysis.enablePytestSupport": true,
+    "ruff.enable": true
+}

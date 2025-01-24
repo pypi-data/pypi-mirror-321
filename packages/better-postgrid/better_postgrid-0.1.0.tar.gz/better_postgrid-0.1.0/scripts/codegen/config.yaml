@@ -1,0 +1,5 @@
+post_hooks:
+   - "ruff check . --fix"
+   - "ruff format ."
+   - "mypy ."
+package_name_override: better_postgrid
