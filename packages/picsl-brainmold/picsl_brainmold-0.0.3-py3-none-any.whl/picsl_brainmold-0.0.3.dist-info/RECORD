@@ -1,0 +1,8 @@
+picsl_brainmold/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picsl_brainmold/__main__.py,sha256=PcV0pxT8JNW4GSZrCOqrGNKm2rpNWoWgg2itO_2UgQc,855
+picsl_brainmold/brainmold.py,sha256=KjumYPvi_SmBdu1l0d7fwMjwE8EuFjMWPxCPHR7Gicw,15959
+picsl_brainmold/slab_postproc.py,sha256=RQseUVVv6TaL2gi98qydI287REnp_aZDss-GltnDmQU,9689
+picsl_brainmold-0.0.3.dist-info/METADATA,sha256=LRvHRnov2TcKJ7gg-Qq-JB469jH33zy3llPgWjcD06g,3624
+picsl_brainmold-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+picsl_brainmold-0.0.3.dist-info/licenses/LICENSE,sha256=aCgtu2B1ntZXuVubi3-64Fouyb3vXBH8PeBZo7KPKdc,1072
+picsl_brainmold-0.0.3.dist-info/RECORD,,
