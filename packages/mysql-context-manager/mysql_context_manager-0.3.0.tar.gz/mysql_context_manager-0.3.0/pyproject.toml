@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "mysql-context-manager"
+version = "0.3.0"
+description = "Work with MySQL databases asynchronously, and in context."
+license = "MIT"
+authors = ["IdoKendo <ryuusuke@gmail.com>"]
+readme = "README.md"
+homepage = "https://pypi.org/project/mysql-context-manager/"
+repository = "https://github.com/IdoKendo/mysql-context-manager"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyMySQL = "^1.1"
+aiomysql = "^0.2"
+databases = "^0.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14"
+pre-commit = "^4.0"
+pytest = "^8.3"
+pytest-asyncio = "^0.25"
+pytest-cov = "^6.0"
+pytest-mock = "^3.14"
+scriv = { extras = ["toml"], version = "^1.5.1" }
+tox = "^4.23"
+
+[tool.pytest.ini_options]
+addopts = "--cov=mysql_context_manager --cov-report xml"
+testpaths = ["tests"]
+
+[tool.ruff]
+exclude = [".tox"]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "A",    #  builtins
+    "ARG",  #  unsued arguments
+    "B",    #  bugbear
+    "C4",   #  comprehensions
+    "C90",  #  mccabe
+    "COM",  #  commas
+    "E",    #  pycodestyle
+    "F",    #  pyflakes
+    "I",    #  isort
+    "N",    #  pep8-naming
+    "PT",   #  pytest style
+    "RUF",  #  ruff
+    "SIM",  #  simplify
+    "TID",  #  tidy imports
+    "UP",   #  pyupgrade
+    "W",    #  warnings
+]
+ignore = [
+    "COM812",  # avoid conflicts
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
