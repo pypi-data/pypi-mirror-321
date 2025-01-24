@@ -1,0 +1,2 @@
+[console_scripts]
+analyse_obfuscation = analyse_obfuscation.run:parse_arguments
