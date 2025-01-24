@@ -1,0 +1,50 @@
+name: Build PyPI package
+
+on:
+  push:
+    branches: [ master ]
+  pull_request: 
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  hatch-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install hatch
+
+      - name: Run type checks
+        run: |
+          hatch run types:check
+
+      - name: Run linting
+        run: |
+          hatch fmt --check
+
+      - name: Run tests in the test folder
+        run: |
+          hatch test
+
+      - name: Build Package
+        run: |
+          hatch build
+
+      - name: Generate .pypirc
+        run: |
+          hatch build
+  
+      - name: Publish Package
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: hatch publish --user __token__ --auth $PYPI_TOKEN
