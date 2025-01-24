@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: npfl138
+Version: 2425.0.0a0
+Summary: Modules used by the Deep Learning Course NPFL138
+Author-email: Milan Straka <straka@ufal.mff.cuni.cz>
+License: MPL-2.0
+Project-URL: Homepage, https://ufal.mff.cuni.cz/courses/npfl138
+Project-URL: Repository, https://github.com/ufal/npfl138
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# The `npfl138` Package: Modules Used in the Deep Learning Course (NPFL138)
+
+This package contains the modules used in the
+[Deep Learning course (NPFL138)](http://ufal.mff.cuni.cz/courses/npfl138),
+available under the Mozilla Public License 2.0.
