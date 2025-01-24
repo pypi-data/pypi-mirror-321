@@ -1,0 +1,8 @@
+factor.cpython-39-i386-linux-gnu.so,sha256=ExtXGZycE63woOmVEv38fUOwOepc_0IMN9EXIwXU1jY,40572
+functional.cpython-39-i386-linux-gnu.so,sha256=1j2H3v1_Or7bnaUiYt4Y2PETKNja4cqhZ475JQLtwCA,36816
+prime.cpython-39-i386-linux-gnu.so,sha256=K-qded9enU0Ri7h43pQMxXTAEj_hStpg8cmrLWBIlEQ,40144
+gcd.cpython-39-i386-linux-gnu.so,sha256=jjoVGdJOLnCn2MQ8XXG8JSoRukm8D2PBnMuFStgZIH8,40216
+devkit_math-1.6.0rc0.dist-info/top_level.txt,sha256=7C5db2wcW2bdBAieEce9bpixvO2L1eApd_jgGL1RxE0,28
+devkit_math-1.6.0rc0.dist-info/METADATA,sha256=edCk3K2Yr5Qr5UiOK2DI6hghX43zbqRX4mYM2Zg7Otw,913
+devkit_math-1.6.0rc0.dist-info/RECORD,,
+devkit_math-1.6.0rc0.dist-info/WHEEL,sha256=d_bbUg-kKOq0joa0SZeMAk4rqIZKHn1oSMWRpB2qW7U,208
