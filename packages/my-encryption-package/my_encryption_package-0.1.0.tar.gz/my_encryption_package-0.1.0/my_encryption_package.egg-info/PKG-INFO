@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: my_encryption_package
+Version: 0.1.0
+Summary: A package for various encryption techniques
+Author: Your Name
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: pycryptodome
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# My Encryption Package
+
+This package contains implementations of various encryption algorithms:
+
+- Hill Climbing Cipher
+- VigenÃ¨re Cipher
+- AES Cipher
+- Rail Fence Cipher
+- One-Time Pad Cipher
+
+## Installation
+
+```bash
+pip install my_encryption_package
