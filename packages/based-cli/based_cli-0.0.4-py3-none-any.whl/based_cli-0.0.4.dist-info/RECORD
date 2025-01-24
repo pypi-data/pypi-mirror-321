@@ -1,0 +1,11 @@
+based/__init__.py,sha256=5j8JR979LVO5YKpIl9d_JZrrG51U8Q0cgHb-1Tbo_Fs,282
+based/cache.py,sha256=o9nLXFz1S1hFL7N8xWe_8pn86-qpkwu8tYv7o6-UUxA,2418
+based/chat_manager.py,sha256=PoVgzLNmGamVhJmqIwse5Q6ze930Mf1HcG9zujpJVgU,8097
+based/cli.py,sha256=3UNfIYUkPhTD9Ayy6AsN52rWSTtDD_cB2ssP8TCfGU4,6154
+based/config.py,sha256=picxwddr_TwYJcD7jERwlPd_o5Zy4152JdkPCW8MXLY,7878
+based/prompts.json,sha256=wukMwb8LCo5QnMKj18u3Jd3oBPCVWUiz689vlD9j_hg,2304
+based_cli-0.0.4.dist-info/METADATA,sha256=DA507DJZSlcSeeWSR_OalpZAXejyDwiXihbekWqBThU,2899
+based_cli-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+based_cli-0.0.4.dist-info/entry_points.txt,sha256=1yOLoDBtnQ7oaVc815R6EVNyx32YLifNkqkOvZ6U6sg,40
+based_cli-0.0.4.dist-info/licenses/LICENSE,sha256=hrevUivaXdCFH6iBRTvT--nUNFEXiPnu1wQ1qk6AVdw,1086
+based_cli-0.0.4.dist-info/RECORD,,
