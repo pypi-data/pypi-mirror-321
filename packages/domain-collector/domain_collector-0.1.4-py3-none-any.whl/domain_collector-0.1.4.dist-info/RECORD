@@ -1,0 +1,10 @@
+domain_collector/__init__.py,sha256=VtfzeC6VAoS8QnE3c2jagHSTwxvPrm-rSaWZrKQUSJQ,107
+domain_collector/main.py,sha256=2m_A4MSZDMrq0MXhSO0XujIavSdzwsRUI5Td_e8mOo4,908
+domain_collector/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domain_collector/utils/browser.py,sha256=jZ7Z3ljvTf3QbknhXWF1TjXLkSZLlM8Qy0jjN3Y0jDA,2482
+domain_collector/utils/file_operations.py,sha256=bjMoDh-a8DZkp9jV4c338lF1nDWCJaMaFL7yLGUvm0A,1109
+domain_collector-0.1.4.dist-info/METADATA,sha256=edERLLRejdZ0C_JShKRiYHuEk60ERFJJK0gJm8MOVxs,2576
+domain_collector-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+domain_collector-0.1.4.dist-info/entry_points.txt,sha256=Jb2hLmn9t7rv5osCdgCPwQCrjZZikTmzm35oUGj5huA,64
+domain_collector-0.1.4.dist-info/licenses/LICENSE,sha256=9hNUzfSa2D0ODm9UU6lpgBnQIHtkNXb2DAXx5iA6Vg4,1073
+domain_collector-0.1.4.dist-info/RECORD,,
