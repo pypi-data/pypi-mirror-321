@@ -1,0 +1,8 @@
+setup.py
+GptModule/__init__.py
+GptModule/struct.py
+Gptmodule.egg-info/PKG-INFO
+Gptmodule.egg-info/SOURCES.txt
+Gptmodule.egg-info/dependency_links.txt
+Gptmodule.egg-info/requires.txt
+Gptmodule.egg-info/top_level.txt
