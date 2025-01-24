@@ -1,0 +1,2 @@
+[console_scripts]
+aal = src.aal:aal
