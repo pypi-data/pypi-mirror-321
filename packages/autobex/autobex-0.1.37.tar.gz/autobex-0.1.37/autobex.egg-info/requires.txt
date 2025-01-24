@@ -1,0 +1,5 @@
+overpy>=0.6
+shapely>=2.0
+tqdm>=4.65.0
+setuptools>=45
+requests>=2.25.0
