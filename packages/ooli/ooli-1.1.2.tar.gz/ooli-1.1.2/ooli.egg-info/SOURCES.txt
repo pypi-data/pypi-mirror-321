@@ -1,0 +1,8 @@
+setup.py
+ooli/__init__.py
+ooli/ooli.py
+ooli.egg-info/PKG-INFO
+ooli.egg-info/SOURCES.txt
+ooli.egg-info/dependency_links.txt
+ooli.egg-info/entry_points.txt
+ooli.egg-info/top_level.txt
