@@ -1,0 +1,8 @@
+openai
+anthropic
+groq
+qdrant-client
+chromadb
+sentence-transformers
+PyPDF2
+python-docx
