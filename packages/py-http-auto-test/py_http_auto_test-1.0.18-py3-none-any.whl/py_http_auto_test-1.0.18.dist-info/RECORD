@@ -1,0 +1,10 @@
+http_test/__init__.py,sha256=PqJ8QHw2tdHiXA5ce3VSlDDNukuopAQsSFg6uIHDC80,63
+http_test/request.py,sha256=w5s-h3Dy5sIvKlzc9UMwqdrbb1cPDG0oP3Qw3RTW4wI,8923
+http_test/runner.py,sha256=DQocuQt6TnkBK25KorYBNomWK3hXpSfnDYmShJtOJFk,2609
+http_test/spec.py,sha256=1KgdrawsBbTvAYIXyvK7YJ7TmgRKNA9GTS_KSB_DhUQ,10240
+http_test/ws_request.py,sha256=aEkmFe2-2EXRFt0wj9BZt4LH_e_zm3nZQhN7LXv5K-s,2954
+py_http_auto_test-1.0.18.data/scripts/http-test-runner.py,sha256=kkU1RgdaC1QVAl6-QKGVjTDU1Se-GhCvRD95P0ZMYRs,1911
+py_http_auto_test-1.0.18.dist-info/METADATA,sha256=YCfMlMG1Basf4a-pzi5lXvOZC3RT9i3G8AXSQMjs2jc,6652
+py_http_auto_test-1.0.18.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+py_http_auto_test-1.0.18.dist-info/top_level.txt,sha256=2i4_smsAV6LxE9JUE5xymOl3-eFxLyLdSRNkyx746KM,10
+py_http_auto_test-1.0.18.dist-info/RECORD,,
