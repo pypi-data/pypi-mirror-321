@@ -1,0 +1,2 @@
+[console_scripts]
+cursor-agent = cursor_agent.main:main
