@@ -1,0 +1,9 @@
+swine/__init__.py,sha256=3nEtuqWiNaW8Sy6dGYFIAmduhONzZT1qjjcwzuSmayw,97
+swine/cli.py,sha256=a8FrNJNpC8nUMvKwekHX1qEOtgVlRS-cSVQKxkOXp2I,2158
+swine/pig.py,sha256=LIyrg9n2eibbRovPi_TIxmOQvM0OwQj2FWqwc8NmhKQ,10028
+swine/schema/__init__.py,sha256=VADuFWb3E_ETJOaQMV-Lx9lSrFKYm1k7Zsk4hSe6uGU,26
+swine/schema/claude.py,sha256=vvlcVRxB5J2J75khCx3Pow9kq8tKhcQkXwOeVRtumdE,2237
+swine-0.1.3.dist-info/METADATA,sha256=iuFqaQGBZtWkbaNuGrTSg40fevnayaikCm9x1w4TZ1I,5538
+swine-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+swine-0.1.3.dist-info/entry_points.txt,sha256=p5RmCsEwBtojJCLhjun03ERt3SRLMMJNMnBZB0_n9LM,41
+swine-0.1.3.dist-info/RECORD,,
