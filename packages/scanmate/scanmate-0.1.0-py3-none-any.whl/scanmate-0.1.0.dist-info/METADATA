@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: scanmate
+Version: 0.1.0
+Summary: 
+Author: markus
+Author-email: datamastery87@gmail.com
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pyperclip (>=1.9.0,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typer (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+# ScanMate
+
+**ScanMate** is a Python package that scans directories in a tree structure, showing file counts and total lines. It also respects an `excludes.toml` file to skip specified folders or files (e.g., `.git`, `node_modules`, etc.).
+
+## Installation
+
+To install **ScanMate**, run:
+
+```bash
+pip install scanmate
+```
+
+After installation, the scanfiles command will be available.
+
+1. Initialize a sample **excludes.toml**:
+
+```bash
+scanfiles init
+```
+
+2. Scan the current directory (showing a tree, file counts, and line counts):
+
+```bash
+scanfiles scan
+```
+
+3. Customize which folders/files to exclude by editing **excludes.toml**.
+
+That’s it! Enjoy exploring your project structure with ScanMate.
+

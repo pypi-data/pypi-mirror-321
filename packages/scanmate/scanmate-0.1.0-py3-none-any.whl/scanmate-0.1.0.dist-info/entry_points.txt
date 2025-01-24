@@ -1,0 +1,3 @@
+[console_scripts]
+scanfiles=scanmate.cli:app
+
