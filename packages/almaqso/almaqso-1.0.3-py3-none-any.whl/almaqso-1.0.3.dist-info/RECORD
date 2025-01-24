@@ -1,0 +1,11 @@
+almaqso/QSOanalysis.py,sha256=YurhW28OJis8KCxgUs90WyxFyXlE1yzFDzPQQQhaF5A,7588
+almaqso/QSOquery.py,sha256=Sb0ZzLrxyJQhghPY7iQsoUexCIOrb7PNaaDcIhqDPpo,5559
+almaqso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+almaqso/_analysis.py,sha256=q7ujYNTdBg9EcWsxVv-v7CaCaqXTpH8r6Fvzb2ZFTEw,791
+almaqso/analysis.py,sha256=KnfaeWslhVGEYFTwk0Fdhh6qX2fvE2fif90WOx2ZVkE,1362
+almaqso/download_archive.py,sha256=subl0h8ctq1-M-1fyixQYRyJuNBaly8K7CSsNncaAiI,1407
+almaqso-1.0.3.dist-info/LICENSE,sha256=coxuNUmUnke-k6TXXtnWGHvnmjJXOTSUPMqbpxxJQkI,1071
+almaqso-1.0.3.dist-info/METADATA,sha256=frt-GcfqZT0MryNar3hD9MUUFoNGPuJekHnO8c-fXqA,2550
+almaqso-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+almaqso-1.0.3.dist-info/top_level.txt,sha256=WULiDKUuRoLBmHtM--WJrxWfDIYv0pzl5g-q0GQ0jrM,8
+almaqso-1.0.3.dist-info/RECORD,,
