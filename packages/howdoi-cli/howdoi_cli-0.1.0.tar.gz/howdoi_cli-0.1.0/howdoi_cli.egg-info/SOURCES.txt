@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+howdoi/__init__.py
+howdoi/cli.py
+howdoi/config.py
+howdoi/shell_utils.py
+howdoi/providers/__init__.py
+howdoi/providers/anthropic.py
+howdoi/providers/base.py
+howdoi/providers/openai.py
+howdoi_cli.egg-info/PKG-INFO
+howdoi_cli.egg-info/SOURCES.txt
+howdoi_cli.egg-info/dependency_links.txt
+howdoi_cli.egg-info/entry_points.txt
+howdoi_cli.egg-info/requires.txt
+howdoi_cli.egg-info/top_level.txt
