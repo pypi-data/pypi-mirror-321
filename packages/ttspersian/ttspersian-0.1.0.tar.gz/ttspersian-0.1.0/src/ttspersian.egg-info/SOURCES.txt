@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/ttspersian/__init__.py
+src/ttspersian/persiantts.py
+src/ttspersian.egg-info/PKG-INFO
+src/ttspersian.egg-info/SOURCES.txt
+src/ttspersian.egg-info/dependency_links.txt
+src/ttspersian.egg-info/requires.txt
+src/ttspersian.egg-info/top_level.txt
+tests/teststest_persiantts.py

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttspersian"
+version = "0.1.0"
+authors = [
+  { name = "Ali Jahani", email = "satreyek@gmail.com" },
+]
+description = "A Python library for Persian text-to-speech using Microsoft Azure service."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "websockets",
+    "asyncio",
+    "librosa",
+    "soundfile",
+    "noisereduce",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alipyth"
+"website" = "https://jahaniwww.com"
+
+[tool.setuptools]
+packages = ["ttspersian"]
+
+[tool.setuptools.package-dir]
+"" = "src"
