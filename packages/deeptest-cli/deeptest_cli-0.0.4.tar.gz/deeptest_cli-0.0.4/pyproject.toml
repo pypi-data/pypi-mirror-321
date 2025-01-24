@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deeptest-cli"
+version = "0.0.4"
+description = "DeepTest CLI tool"
+authors = [
+    { name = "Tim Lupo", email = "tim@deeptest.sh" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.0.0",
+    "python-dotenv==1.0.1",
+    "keyring>=25.6.0",
+    "pydantic==2.10.5",
+    "pyfiglet>=1.0.2",
+    "pyyaml==6.0.2",
+    "requests>=2.0.0",
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+deeptest = "deeptest_cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deeptest_cli"]
