@@ -1,0 +1,107 @@
+Metadata-Version: 2.2
+Name: securepasskeygen
+Version: 1.0.0
+Summary: A secure password generator using modern standards.
+Author: Emil Holmgaard
+Author-email: emil@holmgaard.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+
+# SecurePassKeyGen
+
+SecurePassKeyGen is a Python library designed to generate secure, random passwords with configurable length and complexity. The library follows best practices for password generation, ensuring high entropy, and providing the user with options to customize the output according to their needs.
+
+## Features
+
+- **High Security**: Uses cryptographically secure random number generation.
+- **Customizable Password Length**: Generate passwords of any length from 8 to 128 characters.
+- **Character Set Options**: Includes options for lowercase, uppercase, digits, and special characters.
+- **Password Strength**: Default passwords are generated with a high level of entropy.
+- **Easy to Use**: Simple API to generate passwords.
+
+## Installation
+
+To install SecurePassKeyGen, use pip:
+
+```bash
+pip install securepasskeygen
+```
+
+## Usage
+
+To generate a password using SecurePassKeyGen:
+
+```python
+from securepasskeygen import generate_password
+
+# Generate a random password with 16 characters
+password = generate_password(length=16)
+
+print(password)
+```
+
+### Customizing Password Generation
+
+You can customize the password generation by specifying the length and character sets. Here is how you can do that:
+
+```python
+from securepasskeygen import generate_password
+
+# Generate a password with the following options:
+# - Length of 20 characters
+# - Includes lowercase, uppercase, digits, and special characters
+password = generate_password(length=20, include_lower=True, include_upper=True, include_digits=True, include_special=True)
+
+print(password)
+```
+
+## Parameters
+
+The `generate_password` function accepts the following parameters:
+
+- `length` (int): The desired length of the password (default: 12).
+- `include_lower` (bool): Whether to include lowercase letters (default: True).
+- `include_upper` (bool): Whether to include uppercase letters (default: True).
+- `include_digits` (bool): Whether to include digits (default: True).
+- `include_special` (bool): Whether to include special characters (default: True).
+
+## Example
+
+```python
+from securepasskeygen import generate_password
+
+# Example 1: Generate a 12-character password with default settings
+password = generate_password()
+print(password)
+
+# Example 2: Generate a password of 20 characters with only lowercase and digits
+password = generate_password(length=20, include_lower=True, include_digits=True, include_upper=False, include_special=False)
+print(password)
+```
+
+## Contributing
+
+We welcome contributions to SecurePassKeyGen! If you find bugs, have feature requests, or would like to improve the library, feel free to submit a pull request.
+
+### Steps to Contribute:
+1. Fork the repository.
+2. Clone your fork locally.
+3. Make your changes.
+4. Write tests for your changes.
+5. Submit a pull request to the main repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
