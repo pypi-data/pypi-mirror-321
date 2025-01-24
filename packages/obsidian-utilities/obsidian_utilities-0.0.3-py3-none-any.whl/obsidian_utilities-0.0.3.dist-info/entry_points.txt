@@ -1,0 +1,3 @@
+[console_scripts]
+copy-template=obsidian_utilities.obsidian_utilities:copy_template
+

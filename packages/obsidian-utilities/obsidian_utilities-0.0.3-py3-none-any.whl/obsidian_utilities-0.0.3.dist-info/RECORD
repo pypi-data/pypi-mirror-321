@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=e4VW4RVOb8scBYd6KstLoRyQ7rvS7jeiqVCY80DenwE,219
+README.md,sha256=TzuAf1aVbx7pl1TMtRqcs8KA4PUULJhl-vh4gEJvG24,21
+configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configuration/configuration.py,sha256=ItpECp0ESm5V6cAlDK9Lqi0gPcscGl0bUenfdy5fEJI,4254
+obsidian_utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obsidian_utilities/obsidian_utilities.py,sha256=PUQBVSxrdFBmZDspVaK5debNccb1gMwZwS_ot9LVgWk,4323
+templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+templates/copy_template.py,sha256=2KR_0Bwbr0RqezzhUIN5_LEO8Y5qP-MvWv3_10ctEkI,13500
+obsidian_utilities-0.0.3.dist-info/METADATA,sha256=jcV8XMCZtKmouHirK5MYIhJGeG5QMQCNiJpOhv_LIKw,795
+obsidian_utilities-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+obsidian_utilities-0.0.3.dist-info/entry_points.txt,sha256=KmftejOz-MOiY6bMYGwT48r5AZFu1kJJ5tu6QfojfRA,85
+obsidian_utilities-0.0.3.dist-info/RECORD,,
