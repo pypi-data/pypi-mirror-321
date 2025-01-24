@@ -1,0 +1,47 @@
+Metadata-Version: 2.2
+Name: multiwatermark
+Version: 0.1.2
+Summary: Add custom watermarks to images
+Author: Matt Burns
+Author-email: mburns7211@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MultiWatermark
+## *By Matt Burns*
+
+## Installation
+```pip install multiwatermark```
+
+## Usage
+```
+from multiwatermark import multiwatermark
+
+image_path = "some/path/input.jpeg"
+text = "Example Text"
+output_path = "some/path/output.jpeg"
+
+multiwatermark.add_watermark(image_path, text, output_path, font_size=36, opacity=128, watermark_count=5):
+```
+
+### Options
+image_path: Path to the input image.
+text: Watermark text to be added.
+output_path: Path to save the watermarked image.
+font_size: Size of the watermark text.
+opacity: Opacity of the watermark (0-255).
+watermark_count: number of watermarks to overlay
+
+## Source Code
