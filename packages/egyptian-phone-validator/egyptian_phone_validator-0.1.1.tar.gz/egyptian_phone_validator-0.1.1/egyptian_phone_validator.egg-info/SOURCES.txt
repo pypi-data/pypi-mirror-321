@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+egyptian_phone_validator/__init__.py
+egyptian_phone_validator/validators.py
+egyptian_phone_validator.egg-info/PKG-INFO
+egyptian_phone_validator.egg-info/SOURCES.txt
+egyptian_phone_validator.egg-info/dependency_links.txt
+egyptian_phone_validator.egg-info/requires.txt
+egyptian_phone_validator.egg-info/top_level.txt
+egyptian_phone_validator/tests/__init__.py
+egyptian_phone_validator/tests/test_validators.py
