@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: kitchenware
+Version: 0.0.2
+Author-email: Lucien Krapp <lucienkrapp@gmail.com>
+Project-URL: Homepage, https://github.com/lfkrapp/kitchenware
+Project-URL: Issues, https://github.com/lfkrapp/kitchenware/issues
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gemmi>=0.7.0
+Requires-Dist: mrcfile>=1.5.3
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: rdkit>=2024.9.4
+Requires-Dist: scikit-learn>=1.6.1
+Requires-Dist: scipy>=1.15.1
+Requires-Dist: torch>=2.5.1
