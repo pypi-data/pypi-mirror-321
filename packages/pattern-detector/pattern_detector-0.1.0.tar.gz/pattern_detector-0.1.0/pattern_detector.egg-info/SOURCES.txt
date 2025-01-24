@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pattern_detection/__init__.py
+pattern_detection/detector.py
+pattern_detection/utils.py
+pattern_detector.egg-info/PKG-INFO
+pattern_detector.egg-info/SOURCES.txt
+pattern_detector.egg-info/dependency_links.txt
+pattern_detector.egg-info/requires.txt
+pattern_detector.egg-info/top_level.txt
+tests/__init__.py
+tests/test_detector.py
