@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+steno/__init__.py
+verysteno.egg-info/PKG-INFO
+verysteno.egg-info/SOURCES.txt
+verysteno.egg-info/dependency_links.txt
+verysteno.egg-info/requires.txt
+verysteno.egg-info/top_level.txt
