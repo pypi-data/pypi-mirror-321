@@ -1,0 +1,13 @@
+endoc/__init__.py,sha256=88Lu7W7crezFo7jp8C8JsyJWMWkKhMI0UiC-OxKuglM,71
+endoc/client.py,sha256=-ljuv71N8BQTMm8lScGOEuUyJbnTmEtDJiPL766WEd4,562
+endoc/document_search.py,sha256=7SHDwkVqXoG9I3LvvWW_9W72PaS7bPUGOifGqRUlIZw,517
+endoc/endoc_client.py,sha256=CEry8pXP9mhdUX9H8IkPmOsOnD30HLAAU5eBySHJzFI,1171
+endoc/memsum_summary.py,sha256=oPkCKaQ9l2KxtZnqyiX9dQKomQEE3q8zLtaaDBO6grs,545
+endoc/paginated_search.py,sha256=t0Zl2WVXoQBXndUOmwIwvobGmu-vYqaRuZzMxK1SrUU,460
+endoc/queries.py,sha256=1CSnGO2du2gKZ2WQtEnY1UASJo7VpnAKnhyAHt3KCrA,4796
+endoc/single_paper_search.py,sha256=Hs-GzF2e9SG29cFR8jy66DECYeg2V5asxAHa39zqHjI,540
+endoc-1.2.0.dist-info/LICENSE,sha256=zNsMBf4UAn4dol4h5D4FhO6F1ZeAFYOZZAAdyV--SxM,1062
+endoc-1.2.0.dist-info/METADATA,sha256=e7GoZRhv07QBLhfaFFxoq_U507HpCp01rg7f7MeW9Uk,4482
+endoc-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+endoc-1.2.0.dist-info/top_level.txt,sha256=NvHG6racILge3ClLbBv4LKDP_oSnXHUxXY7RDH7rSt8,6
+endoc-1.2.0.dist-info/RECORD,,
