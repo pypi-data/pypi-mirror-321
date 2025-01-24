@@ -1,0 +1,4 @@
+[console_scripts]
+dev=ovpn_portal.cli.commands.dev:run_dev
+ovpn-portal=ovpn_portal.cli.main:cli
+
