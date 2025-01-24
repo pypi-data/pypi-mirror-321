@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: fricon
+Version: 0.1.0a0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy >=1.19.3
+Requires-Dist: pandas >=2.2.3
+Requires-Dist: polars >=1.17.1
+Requires-Dist: pyarrow >=17.0.0
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+License-File: LICENSES-THIRDPARTY.toml
+Summary: Fridge controller.
+Keywords: experimental
+Author: Jiahao Yuan <kahojyun@icloud.com>
+Author-email: Jiahao Yuan <kahojyun@icloud.com>
+License: MIT OR Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Documentation, https://github.com/kahojyun/fricon#readme
+Project-URL: Issues, https://github.com/kahojyun/fricon/issues
+Project-URL: Source, https://github.com/kahojyun/fricon
+
+# fricon
+
+10 mK fridge controller.
+
+## Development
+
+### Requirements
+
+* Stable Rust toolchain
+* Protobuf compiler:
+
+  ```console
+  brew install protobuf # Mac
+  pacman -S protobuf # Arch
+  scoop install protobuf # Windows
+  ```
+
+* Sqlite3
+* sqlx-cli
+
+  ```console
+  brew install sqlx-cli # Mac
+  pacman -S sqlx-cli # Arch
+  cargo install sqlx-cli
+  ```
+
+### Local setup
+
+* `.env` file
+
+  ```env
+  DATABASE_URL=sqlite://.dev/testdb.sqlite3
+  ```
+
+* Local `.dev` folder should be ignored
+
+  ```gitignore
+  *
+  ```
+
+* Setup development database
+
+  ```console
+  sqlx db setup
+  ```
+
+## License
+
+`fricon` is distributed under the terms of the
+[MIT](https://spdx.org/licenses/MIT.html) OR
+[Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
+
