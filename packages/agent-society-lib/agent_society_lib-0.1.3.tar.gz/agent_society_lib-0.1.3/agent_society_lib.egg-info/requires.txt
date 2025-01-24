@@ -1,0 +1,10 @@
+pytest
+jinja2
+redis
+chromadb
+pika
+langchain
+langchain-openai==0.3.0
+langchain-groq
+langchain-google-genai
+openai>=1.58.1
