@@ -1,0 +1,61 @@
+[project]
+name = "gogoanime-anitaku"
+version = "0.0.1"
+requires-python = ">=3.7"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "HSAkash", email = "hemelakash472@gmail.com" },
+]
+description = "Download anime from gogoanime website."
+keywords = ["gogoanime", "anime"]
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+
+dependencies = [
+    "tqdm",
+    "aria2",
+    "bs4",
+    "requests",
+    "click",
+    "rich",
+    "keyring"
+]
+
+[project.scripts]
+gogoanime = "gogoanime.__main__:main"
+
+
+[project.optional-dependencies]
+cli-enhanced = ["rich"]
+testing = ["pytest", "pytest-cov", "tox"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+select = ["E", "F", "W"]
+exclude = [
+  ".git",
+  ".venv",
+  "build",
+]
+
+[tool.pytest.ini_options]
+timeout = 15
+testpaths = ["tests"]
+addopts = "--maxfail=3 --disable-warnings"
+
+[project.urls]
+documentation = "https://github.com/HSAkash/gogoanime/wiki"
+changelog = "https://github.com/HSAkash/gogoanime/releases"
+bug_tracker = "https://github.com/HSAkash/gogoanime/issues"
