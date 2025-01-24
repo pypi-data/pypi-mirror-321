@@ -1,0 +1,14 @@
+pyterrier_services/__init__.py,sha256=B7ottfDJ574sciRoPxDtx14wZbitPQ6KOKtphcCMolI,530
+pyterrier_services/core.py,sha256=QTxltARQx900ZFH3GW0KGH3PLglgVN-3Z-wjNbGDXG0,1698
+pyterrier_services/dblp.py,sha256=Eqkhagfp_lwNCDbOmrwTl0qDadk-uA8ux_32gzQKzig,7789
+pyterrier_services/pinecone.py,sha256=KfMiW2H1des3lILUyhVRXNxTySsxE8qCKTsVLmYOCGo,10582
+pyterrier_services/semantic_scholar.py,sha256=eRegFQak1NU2bW0VSkVKopsecSWwt-gUDztMBMLhYZw,4463
+pyterrier_services/pt_docs/dblp.rst,sha256=PMbeaEtCfe-rD03LMC1U0u6g0vHf8sbVqjaKWU_loCg,1923
+pyterrier_services/pt_docs/index.rst,sha256=SzbVYaY2zpktrar771tVtFOslXyd3N3U2aXgXa1J_c8,371
+pyterrier_services/pt_docs/pinecone.rst,sha256=Q-xvkRt88BIooBgzsjDtc7aBVwqob5o6McxoeSm8FhM,4051
+pyterrier_services/pt_docs/semantic-scholar.rst,sha256=zOPSGcLNRWKbsInWeFk4GSaKtLUv_JE76B3SJfz2SRc,1801
+pyterrier_services-0.3.0.dist-info/LICENSE,sha256=i3-VdotkIz_bRQpmGuqdKoRzPiudc32-LNd3ZvFKkbI,1071
+pyterrier_services-0.3.0.dist-info/METADATA,sha256=POYhEz3lD_VU2kDMqSyhH6YOh8DcZmW4i19L5XJDU-I,3808
+pyterrier_services-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyterrier_services-0.3.0.dist-info/top_level.txt,sha256=WLxNrj4mbpD0uiK6CclR9pAZxrf8m8UjfgMFzl6QZHA,19
+pyterrier_services-0.3.0.dist-info/RECORD,,
