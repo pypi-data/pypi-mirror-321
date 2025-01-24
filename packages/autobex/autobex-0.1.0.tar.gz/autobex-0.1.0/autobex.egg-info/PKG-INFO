@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: autobex
+Version: 0.1.0
+Summary: An enhanced OpenStreetMap search utility with multiple search modes and progress bars
+Home-page: https://github.com/yourusername/autobex
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: overpy>=0.6
+Requires-Dist: shapely>=2.0
+Requires-Dist: tqdm>=4.65.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+Autobex
+
+An enhanced OpenStreetMap search utility with multiple search modes and progress bars.
+
+Features:
+- Multiple search modes (radius, polygon, bbox)
+- Progress bars for all operations
+- Error handling and logging
+- Type hints for better IDE support
