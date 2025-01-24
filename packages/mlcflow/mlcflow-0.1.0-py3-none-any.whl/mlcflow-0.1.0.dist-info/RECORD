@@ -1,0 +1,9 @@
+mlc/__main__.py,sha256=Z7WOMLovCApUb-_Twi_YNKz38p6TDz4Ic25rQyDaHLI,33
+mlc/main.py,sha256=tMlRmEwvLkIS5RaJdOVDIOI8pOy7xRElpDa83IKbqYU,26939
+mlc/utils.py,sha256=7yyYt40GluyAqBMo4SYHobIDxMicZRGURCrt8RIuVTQ,11651
+mlcflow-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlcflow-0.1.0.dist-info/METADATA,sha256=vjnPl35SGw2p9BXHdOV9n2nfOBERjBC382DMcGeCd2o,16239
+mlcflow-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mlcflow-0.1.0.dist-info/entry_points.txt,sha256=tn9ydJP5H3KeBFTEiXXhfesaiGHY7gJ35vAc2fIxu0M,60
+mlcflow-0.1.0.dist-info/top_level.txt,sha256=--GVIe99Qv8dfmHGRyopfup56CxDb_SuI4Dm78BRyww,4
+mlcflow-0.1.0.dist-info/RECORD,,

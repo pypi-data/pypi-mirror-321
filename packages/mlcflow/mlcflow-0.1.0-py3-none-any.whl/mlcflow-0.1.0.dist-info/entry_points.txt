@@ -1,0 +1,3 @@
+[console_scripts]
+cmind = mlc.main:main
+mlc = mlc.main:main
