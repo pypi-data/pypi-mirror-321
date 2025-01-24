@@ -1,0 +1,12 @@
+flake8_picky_parentheses/__init__.py,sha256=ZHRYI-zKWcD7G-mh5yzHdyizv5ciOLPsod6-xaqxLmo,258
+flake8_picky_parentheses/_brackets_position.py,sha256=AYEzbTujGVKGNKtj_DSYCdOJNLFUuTW6t94qD46-4dQ,6540
+flake8_picky_parentheses/_meta.py,sha256=_JBFR15qMP_R2Doh1BNcX8m1yeXUGAmTM3CZn1PAu3g,18
+flake8_picky_parentheses/_redundant_parentheses.py,sha256=KFTlrJ7WseXbtF8P6CXmySbZKZ54sxmp_7n2N5l5Bfc,20591
+flake8_picky_parentheses/_util.py,sha256=GgwH5phAc9-6FK-zo-bXGuK-OzGyNJGoPViyeswio8Q,1999
+flake8_picky_parentheses-0.6.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flake8_picky_parentheses-0.6.0.dist-info/METADATA,sha256=JMD0wHjaXmn05psyVIrXQ9agddijsJ0b8hymAFwmTQ4,9629
+flake8_picky_parentheses-0.6.0.dist-info/PKG-INFO.sbak,sha256=ucI5ImdTiW70SGOLfLQfQF1V5NsK4BUCmkhHkYV0pTI,9193
+flake8_picky_parentheses-0.6.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flake8_picky_parentheses-0.6.0.dist-info/entry_points.txt,sha256=L2jfeL97ToYKf9qIEZDTsfOAW8WlkKxXJpxGRz9VuO8,133
+flake8_picky_parentheses-0.6.0.dist-info/top_level.txt,sha256=X0X_AXi4q1xURXSEm4Ka-2vBPUGC490G73KkWIN9jNM,25
+flake8_picky_parentheses-0.6.0.dist-info/RECORD,,
