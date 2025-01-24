@@ -1,0 +1,14 @@
+nc_py_api
+numpy
+pandas
+SimpleITK
+scikit-image
+scikit-learn
+jupyterlab
+stackview
+seaborn
+natsort
+click
+
+[dev]
+pytest

@@ -1,0 +1,2 @@
+[console_scripts]
+carde-process = carde.image_processing:process_folder_cli
