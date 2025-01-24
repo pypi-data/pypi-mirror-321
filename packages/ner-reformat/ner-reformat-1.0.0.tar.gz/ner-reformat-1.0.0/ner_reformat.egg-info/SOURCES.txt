@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ner_reformat.egg-info/PKG-INFO
+ner_reformat.egg-info/SOURCES.txt
+ner_reformat.egg-info/dependency_links.txt
+ner_reformat.egg-info/requires.txt
+ner_reformat.egg-info/top_level.txt
+src/__init__.py
+src/main.py
