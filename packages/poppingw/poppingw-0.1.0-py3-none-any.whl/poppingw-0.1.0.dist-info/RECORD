@@ -1,0 +1,12 @@
+poppingw/__init__.py,sha256=8mMJoiwVZgQ10nfNKeFyltZpgyN_MxYdchVjLMAA5b4,251
+poppingw/cosmology.py,sha256=WawH6cgRXPzYCvrPGw4X7XqutF6Moc0H5mpWc23toxg,1382
+poppingw/gwfast.py,sha256=pona2cy_Qczw-6nFq93lYOvVRAwhvct6LHw3K0d6bmk,9640
+poppingw/likelihood/__init__.py,sha256=nIIDNkO0oSU7P8d0OAv7zZWMZ0hrZnO9JBNsfwFT5LQ,3333
+poppingw/likelihood/amplitude.py,sha256=eBKCIY9ZR7LjPgMkiaV_8iwr34KtscVqD80QsEZy8eM,3985
+poppingw/redshift_prior.py,sha256=InuyRgNuULEZkcrRvBQ_U5q-k-W9ZgYm3X3gsR2T7ik,3482
+poppingw/selection.py,sha256=InMQwlUp5QFFaOkZ3jZXKZBDA_KefH1_iV8ic8e2spg,2074
+poppingw/typing.py,sha256=ky0QGfwWWMl3SupY3xcaXfqZQm9zrw_aJTmKn1gVsPo,95
+poppingw/utils.py,sha256=4gXFGNbueOxXpEY-e0q2DYYxY4LAoxm6maLZLIiLTy4,2804
+poppingw-0.1.0.dist-info/METADATA,sha256=y5pq630SkHYLrFi1qgX5t6jE6H4r4KdvyWIZRjFovMQ,4359
+poppingw-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+poppingw-0.1.0.dist-info/RECORD,,
