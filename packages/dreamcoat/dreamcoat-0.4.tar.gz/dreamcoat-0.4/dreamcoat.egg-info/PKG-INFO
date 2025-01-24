@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: dreamcoat
+Version: 0.4
+Summary: The joyful oceanographic seagoing expedition planning helper
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Oceanography
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cartopy
+Requires-Dist: geographiclib
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+# Dreamcoat
+
+![Tests](https://github.com/mvdh7/dreamcoat/workflows/tests/badge.svg)
+[![PyPI version](https://img.shields.io/pypi/v/dreamcoat.svg?style=popout)](https://pypi.org/project/dreamcoat/)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/dreamcoat.svg?style=popout)](https://anaconda.org/conda-forge/dreamcoat)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8063224-informational)](https://doi.org/10.5281/zenodo.8063224)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+The joyful oceanographic seagoing expedition planning helper
+
+## Version list
+
+![versions](https://raw.githubusercontent.com/mvdh7/dreamcoat/038cba417db0ed9cd51358b123268fb9ace88aa0/docs/versions.svg)
