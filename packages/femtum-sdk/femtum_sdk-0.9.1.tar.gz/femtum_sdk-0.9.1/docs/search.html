@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Femtum SDK</title>
+    <link rel="stylesheet" href="static/mystyles.css" />
+    <script src="static/fontawesome.js"></script>
+    <script src="static/lunr.js"></script>
+    <script src="static/theme.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="level pt-6 mb-5 pb-2 bottom-border">
+        <div class="level-left">
+          <p class="level-item has-text-centered is-size-3 has-text-weight-medium">
+            <a class="link is-info" href="index.html">
+              Femtum SDK
+            </a>
+          </p>
+        </div>
+
+        <div class="level-right">
+          
+          <form action="search.html" class="mr-2 has-text-centered">
+            <input type="text" name="query" class="input mr-3 navbar-search-query-input" placeholder="Search">
+            <input type="submit" class="button is-primary mr-5" value="Search" />
+          </form>
+          
+
+          <p class="level-item has-text-centered is-size-5">
+            <a href="https://github.com/Femtum/femtum" class="link is-info mr-5" target="_blank">
+              
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              
+              <span>Source</span>
+            </a>
+
+            <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite" type="button">
+              <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <mask class="moon" id="moon-mask">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                  <circle cx="24" cy="10" r="6" fill="black" />
+                </mask>
+                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                <g class="sun-beams" stroke="currentColor">
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </g>
+              </svg>
+            </button>
+          </p>
+        </div>
+      </nav>
+    </div>
+
+    <div id="main-content" class="container mb-6">
+<script>
+    const searchDocuments =  {"Component": {"package": "Component", "url": "Component.html", "content": "Component\n\nComponent\nTag\nKey\n\nValue\n\nComponent\nWafer\nId\n\nCreatedAt\n\nUpdatedAt\n\nName\n\nTags\n\nComponent\nReticle\nId\n\nCreatedAt\n\nUpdatedAt\n\nName\n\nTags\n\nComponent\nDie\nId\n\nCreatedAt\n\nUpdatedAt\n\nName\n\nTags\n\nComponent\nCircuit\nId\n\nCreatedAt\n\nUpdatedAt\n\nName\n\nTags\n\nComponent\nResult\nId\n\nCreatedAt\n\nUpdatedAt\n\nName\n\nType\n\nTags\n\nWafer\n\nReticle\n\nDie\n\nCircuit\n\nDataJson\n\n"}, "Analysis": {"package": "Analysis", "url": "Analysis.html", "content": "Analysis\n\nAnalysis\nAnalysis\n\nFindOpticalSpectralAnalyserSweepResults\n\nAnalysis\nResultsFilterRequest\nAnalysis\nOpticalSpectralAnalyserSweepResultArray\nFindResultById\n\nAnalysis\nFindResultByIdRequest\nAnalysis\nOptionalSingleResults\nListByPageResults\n\nAnalysis\nListByPageResultsRequest\nAnalysis\nResultsPage\nListByPageWafers\n\nAnalysis\nListByPageWafersRequest\nAnalysis\nWafersPage\nListByPageReticles\n\nAnalysis\nListByPageReticlesRequest\nAnalysis\nReticlesPage\nListByPageDies\n\nAnalysis\nListByPageDiesRequest\nAnalysis\nDiesPage\nListByPageCircuits\n\nAnalysis\nListByPageCircuitsRequest\nAnalysis\nCircuitsPage\nAnalysis\nOpticalSpectralAnalyserSweepResultArray\nItems\n\nAnalysis\nNewOpticalSpectralAnalyserSweepResult\nWavelengthsArray\n\nPowersArray\n\nName\n\nTags\n\nWaferName\n\nReticleName\n\nDieName\n\nCircuitName\n\nAnalysis\nOpticalSpectralAnalyserSweepResult\nWavelengthsArray\n\nPowersArray\n\nName\n\nTags\n\nWaferName\n\nReticleName\n\nDieName\n\nCircuitName\n\nId\n\nAnalysis\nResultsFilterRequest\nResultName\n\nWaferName\n\nReticleName\n\nDieName\n\nCircuitName\n\nTags\n\nAnalysis\nListByPageResultsRequest\nPageNumber\n\nPageSize\n\nFilters\n\nAnalysis\nResultsPage\nItems\n\nTotal\n\nIndex\n\nSize\n\nAnalysis\nFindResultByIdRequest\nId\n\nAnalysis\nOptionalSingleResults\nResult\n\nAnalysis\nWafersFilterRequest\nName\n\nTags\n\nAnalysis\nListByPageWafersRequest\nPageNumber\n\nPageSize\n\nFilters\n\nAnalysis\nWafersPage\nItems\n\nTotal\n\nIndex\n\nSize\n\nAnalysis\nDiesFilterRequest\nName\n\nTags\n\nAnalysis\nListByPageDiesRequest\nPageNumber\n\nPageSize\n\nFilters\n\nAnalysis\nDiesPage\nItems\n\nTotal\n\nIndex\n\nSize\n\nAnalysis\nReticlesFilterRequest\nName\n\nTags\n\nAnalysis\nListByPageReticlesRequest\nPageNumber\n\nPageSize\n\nFilters\n\nAnalysis\nReticlesPage\nItems\n\nTotal\n\nIndex\n\nSize\n\nAnalysis\nCircuitsFilterRequest\nName\n\nTags\n\nAnalysis\nListByPageCircuitsRequest\nPageNumber\n\nPageSize\n\nFilters\n\nAnalysis\nCircuitsPage\nItems\n\nTotal\n\nIndex\n\nSize\n\n"}, "Health": {"package": "Health", "url": "Health.html", "content": "Health\n\nHealth\nHealth\n\nGetHealth\n\ngoogle\nprotobuf\nEmpty\nHealth\nHealthDto\nHealth\nHealthDto\nstatus\n\nversion\n\n"}, "Trimming": {"package": "Trimming", "url": "Trimming.html", "content": "Trimming\n\nTrimming\nTrimming\n\nSweepReference\n\nTrimming\nSweepRequest\nTrimming\nSweepOutput\nSweepAfterShot\n\nTrimming\nSweepRequest\nTrimming\nSweepOutput\nStoreSweepReferenceShot\n\nTrimming\nStoreSweepRequest\nTrimming\nSweepOutput\nStoreSweepAfterShot\n\nTrimming\nStoreSweepAfterShotRequest\nTrimming\nSweepOutput\nTrimming\nSweepRequest\nWaferName\n\nReticleName\n\nDieName\n\nCircuitName\n\nResultName\n\nTags\n\nOpticalSpectralAnalyserSweepInput\n\nTrimming\nSweepOutput\nId\n\nWavelengthsArray\n\nPowersArray\n\nTags\n\nTrimming\nOpticalSpectralAnalyserSweepInput\nWavelengthStart_nm\n\nWavelengthStop_nm\n\nSampling_pm\n\nLaserSpeed_nm_per_s\n\nLaserPower_dbm\n\nTrimming\nStoreSweepRequest\nSweep\n\nData\n\nTrimming\nStoreSweepAfterShotRequest\nSweep\n\nData\n\nShotNumber\n\nTrimming\nStoreSweepInputData\nWavelengthsArray\n\nPowersArray\n\n"}};
+    const searchIndex = {"version": "2.3.9", "fields": ["content", "url"], "fieldVectors": [["content/Component", [0, 2.339, 1, 0.68, 2, 1.374, 3, 1.374, 4, 1.81, 5, 0.662, 6, 2.234, 7, 2.234, 8, 1.286, 9, 1.81, 10, 1.81, 11, 1.81, 12, 0.791, 13, 1.374, 14, 1.374]], ["url/Component", [15, 1.204]], ["content/Analysis", [1, 0.59, 5, 0.365, 8, 1.102, 12, 0.461, 16, 2.493, 17, 0.802, 18, 1.231, 19, 1.231, 20, 0.802, 21, 1.231, 22, 1.231, 23, 0.802, 24, 1.231, 25, 1.231, 26, 0.802, 27, 1.231, 28, 1.231, 29, 0.802, 30, 1.231, 31, 1.231, 32, 0.802, 33, 1.231, 34, 1.231, 35, 0.802, 36, 1.231, 37, 1.231, 38, 1.914, 39, 0.802, 40, 0.709, 41, 0.709, 42, 0.862, 43, 0.862, 44, 0.862, 45, 0.862, 46, 0.802, 47, 0.461, 48, 1.813, 49, 1.813, 50, 1.813, 51, 1.813, 52, 1.813, 53, 1.813, 54, 0.802, 55, 0.802, 56, 0.802, 57, 0.802]], ["url/Analysis", [58, 1.204]], ["content/Health", [59, 2.418, 60, 1.793, 61, 1.793, 62, 1.793, 63, 1.793, 64, 2.138, 65, 1.793, 66, 1.793]], ["url/Health", [67, 1.204]], ["content/Trimming", [1, 0.508, 5, 0.375, 40, 0.987, 41, 0.987, 42, 0.729, 43, 0.729, 44, 0.729, 45, 0.729, 47, 0.729, 68, 2.489, 69, 1.267, 70, 1.942, 71, 2.174, 72, 1.267, 73, 1.267, 74, 1.714, 75, 1.267, 76, 1.714, 77, 1.714, 78, 1.267, 79, 1.267, 80, 1.267, 81, 1.267, 82, 1.267, 83, 1.714, 84, 1.714, 85, 1.267, 86, 1.267]], ["url/Trimming", [87, 1.204]]], "invertedIndex": [["analysi", {"content": {"Analysis": {}}, "url": {}, "_index": 16}], ["analysis.html", {"content": {}, "url": {"Analysis": {}}, "_index": 58}], ["circuit", {"content": {"Component": {}}, "url": {}, "_index": 11}], ["circuitnam", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 45}], ["circuitsfilterrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 57}], ["circuitspag", {"content": {"Analysis": {}}, "url": {}, "_index": 37}], ["compon", {"content": {"Component": {}}, "url": {}, "_index": 0}], ["component.html", {"content": {}, "url": {"Component": {}}, "_index": 15}], ["createdat", {"content": {"Component": {}}, "url": {}, "_index": 6}], ["data", {"content": {"Trimming": {}}, "url": {}, "_index": 84}], ["datajson", {"content": {"Component": {}}, "url": {}, "_index": 14}], ["die", {"content": {"Component": {}}, "url": {}, "_index": 10}], ["dienam", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 44}], ["diesfilterrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 55}], ["diespag", {"content": {"Analysis": {}}, "url": {}, "_index": 34}], ["empti", {"content": {"Health": {}}, "url": {}, "_index": 63}], ["filter", {"content": {"Analysis": {}}, "url": {}, "_index": 50}], ["findopticalspectralanalysersweepresult", {"content": {"Analysis": {}}, "url": {}, "_index": 17}], ["findresultbyid", {"content": {"Analysis": {}}, "url": {}, "_index": 20}], ["findresultbyidrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 21}], ["gethealth", {"content": {"Health": {}}, "url": {}, "_index": 60}], ["googl", {"content": {"Health": {}}, "url": {}, "_index": 61}], ["health", {"content": {"Health": {}}, "url": {}, "_index": 59}], ["health.html", {"content": {}, "url": {"Health": {}}, "_index": 67}], ["healthdto", {"content": {"Health": {}}, "url": {}, "_index": 64}], ["id", {"content": {"Component": {}, "Analysis": {}, "Trimming": {}}, "url": {}, "_index": 5}], ["index", {"content": {"Analysis": {}}, "url": {}, "_index": 52}], ["item", {"content": {"Analysis": {}}, "url": {}, "_index": 38}], ["kei", {"content": {"Component": {}}, "url": {}, "_index": 2}], ["laserpower_dbm", {"content": {"Trimming": {}}, "url": {}, "_index": 82}], ["laserspeed_nm_per_", {"content": {"Trimming": {}}, "url": {}, "_index": 81}], ["listbypagecircuit", {"content": {"Analysis": {}}, "url": {}, "_index": 35}], ["listbypagecircuitsrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 36}], ["listbypagedi", {"content": {"Analysis": {}}, "url": {}, "_index": 32}], ["listbypagediesrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 33}], ["listbypageresult", {"content": {"Analysis": {}}, "url": {}, "_index": 23}], ["listbypageresultsrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 24}], ["listbypagereticl", {"content": {"Analysis": {}}, "url": {}, "_index": 29}], ["listbypagereticlesrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 30}], ["listbypagewaf", {"content": {"Analysis": {}}, "url": {}, "_index": 26}], ["listbypagewafersrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 27}], ["name", {"content": {"Component": {}, "Analysis": {}}, "url": {}, "_index": 8}], ["newopticalspectralanalysersweepresult", {"content": {"Analysis": {}}, "url": {}, "_index": 39}], ["opticalspectralanalysersweepinput", {"content": {"Trimming": {}}, "url": {}, "_index": 77}], ["opticalspectralanalysersweepresult", {"content": {"Analysis": {}}, "url": {}, "_index": 46}], ["opticalspectralanalysersweepresultarrai", {"content": {"Analysis": {}}, "url": {}, "_index": 19}], ["optionalsingleresult", {"content": {"Analysis": {}}, "url": {}, "_index": 22}], ["pagenumb", {"content": {"Analysis": {}}, "url": {}, "_index": 48}], ["pages", {"content": {"Analysis": {}}, "url": {}, "_index": 49}], ["powersarrai", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 41}], ["protobuf", {"content": {"Health": {}}, "url": {}, "_index": 62}], ["result", {"content": {"Component": {}, "Analysis": {}}, "url": {}, "_index": 12}], ["resultnam", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 47}], ["resultsfilterrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 18}], ["resultspag", {"content": {"Analysis": {}}, "url": {}, "_index": 25}], ["reticl", {"content": {"Component": {}}, "url": {}, "_index": 9}], ["reticlenam", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 43}], ["reticlesfilterrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 56}], ["reticlespag", {"content": {"Analysis": {}}, "url": {}, "_index": 31}], ["sampling_pm", {"content": {"Trimming": {}}, "url": {}, "_index": 80}], ["shotnumb", {"content": {"Trimming": {}}, "url": {}, "_index": 85}], ["size", {"content": {"Analysis": {}}, "url": {}, "_index": 53}], ["statu", {"content": {"Health": {}}, "url": {}, "_index": 65}], ["storesweepaftershot", {"content": {"Trimming": {}}, "url": {}, "_index": 75}], ["storesweepaftershotrequest", {"content": {"Trimming": {}}, "url": {}, "_index": 76}], ["storesweepinputdata", {"content": {"Trimming": {}}, "url": {}, "_index": 86}], ["storesweepreferenceshot", {"content": {"Trimming": {}}, "url": {}, "_index": 73}], ["storesweeprequest", {"content": {"Trimming": {}}, "url": {}, "_index": 74}], ["sweep", {"content": {"Trimming": {}}, "url": {}, "_index": 83}], ["sweepaftershot", {"content": {"Trimming": {}}, "url": {}, "_index": 72}], ["sweepoutput", {"content": {"Trimming": {}}, "url": {}, "_index": 71}], ["sweeprefer", {"content": {"Trimming": {}}, "url": {}, "_index": 69}], ["sweeprequest", {"content": {"Trimming": {}}, "url": {}, "_index": 70}], ["tag", {"content": {"Component": {}, "Analysis": {}, "Trimming": {}}, "url": {}, "_index": 1}], ["total", {"content": {"Analysis": {}}, "url": {}, "_index": 51}], ["trim", {"content": {"Trimming": {}}, "url": {}, "_index": 68}], ["trimming.html", {"content": {}, "url": {"Trimming": {}}, "_index": 87}], ["type", {"content": {"Component": {}}, "url": {}, "_index": 13}], ["updatedat", {"content": {"Component": {}}, "url": {}, "_index": 7}], ["valu", {"content": {"Component": {}}, "url": {}, "_index": 3}], ["version", {"content": {"Health": {}}, "url": {}, "_index": 66}], ["wafer", {"content": {"Component": {}}, "url": {}, "_index": 4}], ["wafernam", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 42}], ["wafersfilterrequest", {"content": {"Analysis": {}}, "url": {}, "_index": 54}], ["waferspag", {"content": {"Analysis": {}}, "url": {}, "_index": 28}], ["wavelengthsarrai", {"content": {"Analysis": {}, "Trimming": {}}, "url": {}, "_index": 40}], ["wavelengthstart_nm", {"content": {"Trimming": {}}, "url": {}, "_index": 78}], ["wavelengthstop_nm", {"content": {"Trimming": {}}, "url": {}, "_index": 79}]], "pipeline": ["stemmer"]};
+
+    const idx = lunr.Index.load(searchIndex);
+
+    function displaySearchResults() {
+        const query = new URLSearchParams(window.location.search).get('query');
+
+        if (query) {
+            document.getElementById('mainInputQuery').value = query;
+
+            const results = idx.query(function (q) {
+              words = query.toLowerCase().split(" "); // toLowerCase() is needed to make the search case insensitive.
+              for (n in words) {
+                const word = words[n];
+
+                if (!word) {
+                  continue;
+                }
+
+                // look for an exact match and apply a large positive boost
+                q.term(word, { usePipeline: true, boost: 100 })
+
+                // look for terms that match the beginning of this queryTerm and apply a medium boost
+                q.term(word + "*", { usePipeline: false, boost: 10 })
+              }
+            });
+
+            const searchResults = document.getElementById('searchResults');
+
+            if (results.length > 0) {
+                let resultList = ''
+                for (const n in results) {
+                    // Use the unique ref from the results list to get the full item
+                    // so you can build its <li>
+                    const doc = searchDocuments[results[n].ref]
+                    resultList += '<h5 class="title is-5 mt-3"><a href="' + doc.url + '">' + doc.package + '</a></h5>'
+                    // Add a short clip of the content
+                    resultList += '<p>' + doc.content.substring(0, 150) + '...</p><hr />'
+                }
+                searchResults.innerHTML = resultList
+            } else {
+                searchResults.innerHTML = '<p>No search results.</p>';
+            }
+        }
+    }
+
+    window.addEventListener("load", displaySearchResults);
+</script>
+
+  <div>
+    <p class="block">
+      Enter a query to search this documentation.
+    </p>
+    <div class="field is-horizontal">
+      <form class="field-body">
+        <div class="field">
+          <p class="control is-expanded">
+            <input id="mainInputQuery" type="text" name="query" class="input" placeholder="Search query">
+          </p>
+        </div>
+        <div class="field">
+          <p class="control is-expanded">
+            <input type="submit" class="button is-primary" value="Search" />
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="block mt-6">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        
+          <p>© 2025 Femtum. All rights reserved.</p>
+        
+        <p>Built with <strong><a href="https://github.com/markvincze/sabledocs" target="_blank">sabledocs</a></strong>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
