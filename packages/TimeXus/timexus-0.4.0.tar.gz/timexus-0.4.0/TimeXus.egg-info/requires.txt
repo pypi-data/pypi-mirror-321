@@ -1,0 +1,8 @@
+Pillow>=9.0.0
+requests
+pytz
+psutil
+qrcode
+
+[:sys_platform == "win32"]
+pywin32>=303

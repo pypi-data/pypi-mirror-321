@@ -1,0 +1,2 @@
+[console_scripts]
+timexus = timexus.cli:main
