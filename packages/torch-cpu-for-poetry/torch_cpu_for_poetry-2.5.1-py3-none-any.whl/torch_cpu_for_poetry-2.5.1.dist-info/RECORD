@@ -1,0 +1,5 @@
+src/torch-cpu-for-poetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_cpu_for_poetry-2.5.1.dist-info/METADATA,sha256=1_LQYyeD0zDvX-zP1Ht9U3AlkrqibdU6TQBVWUQuFEs,555
+torch_cpu_for_poetry-2.5.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+torch_cpu_for_poetry-2.5.1.dist-info/licenses/LICENSE,sha256=cg0rE6toj-tyeXrD2OB7FtQrxgjgCE4HVEfizRiyVEg,1062
+torch_cpu_for_poetry-2.5.1.dist-info/RECORD,,

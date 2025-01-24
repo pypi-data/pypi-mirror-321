@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: torch-cpu-for-poetry
+Version: 2.5.1
+Summary: Force PyTorch CPU packages for Poetry usage
+Project-URL: Homepage, https://github.com/lxohi/torch-cpu-for-poetry
+Project-URL: Repository, https://github.com/lxohi/torch-cpu-for-poetry
+Author-email: lxohi <16010388+lxohi@users.noreply.github.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: torch==2.5.1+cpu
