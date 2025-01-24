@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+manishSMS/__init__.py
+manishSMS/sms.py
+manishSMS.egg-info/PKG-INFO
+manishSMS.egg-info/SOURCES.txt
+manishSMS.egg-info/dependency_links.txt
+manishSMS.egg-info/entry_points.txt
+manishSMS.egg-info/top_level.txt
