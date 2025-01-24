@@ -1,0 +1,10 @@
+smoothtext/__init__.py,sha256=2h02yswLt5V8Rsn9uIqhu6IQTPD9jjhHvK9xQpARWOg,661
+smoothtext/backend.py,sha256=xy0hlQ89AhTXxj1Lt6Fy4WDx6JeXgvBRzvNEv63J_iE,2406
+smoothtext/formula.py,sha256=UAIpgzRFZgiXGaGH5JYh1WQMgfhY50DsA4D2Ev0k4oE,933
+smoothtext/language.py,sha256=aAG5gphLpUT0zI2ANGhiTPz-Gq4d3EkzfUkxmv2WuNM,2064
+smoothtext/smoothtext.py,sha256=BNce9Hjv8A2uMsrxgndytwaVAV3Fx3DBMATYgftrViA,19214
+smoothtext-0.0.17.dist-info/LICENSE,sha256=40-yCitnfWYGFyoTrmbi_Mk6uyGayE8fXofpmL-6mf4,1092
+smoothtext-0.0.17.dist-info/METADATA,sha256=lE1vpD5lGuKD6zdlbtqckyV8gdAz8soHywMdZ3rtLDM,8289
+smoothtext-0.0.17.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+smoothtext-0.0.17.dist-info/top_level.txt,sha256=7QndjCiovNfZf_ylUQqfaP0PuEvZ0i2eEL0_zeOH7vU,11
+smoothtext-0.0.17.dist-info/RECORD,,
