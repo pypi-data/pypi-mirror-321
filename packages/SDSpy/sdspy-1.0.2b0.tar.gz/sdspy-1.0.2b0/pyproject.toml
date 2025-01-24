@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "SDSpy"
+version = "1.0.2b"
+description = "A Python package to interract with Siglent SDS Oscilloscpe series"
+authors = ["lheywang <leonard.heywang@gmail.com>"]
+maintainers = ["lheywang <leonard.heywang@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = ["README.md"]
+repository = "https://github.com/lheywang/PySDG"
+documentation = "https://github.com/lheywang/SDSpy/tree/Main/documentation/markdown"
+keywords = ["PyVISA", "SCPI", "Siglent", "SDS", "Oscilloscope", "Python"]
+include = [
+    { path = "SDSPy/config/802X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/804X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/812X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/814X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/822X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/824X-HD.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1002CML+.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1052DL+.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1102X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1104X-E.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1104X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1104X-U.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1202X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1202X.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1204X-E.toml",       format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/1204X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/2102X-Plus.toml",    format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/2104X-Plus.toml",    format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/2354X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/3034X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/3054X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/3104X-HD.toml",      format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/5054X.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/5104X.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6054A.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6054L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6058L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6104A.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6104L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6108L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6204A.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6204L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/6208L.toml",         format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/7304A-H12.toml",     format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/7404A-H12.toml",     format = ["sdist", "wheel"] },
+    { path = "SDSPy/config/7604A-H12.toml",     format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.urls]
+"Changelogs" = "https://github.com/lheywang/SDSpy/blob/Main/Changelog.md"
+"Issues" = "https://github.com/lheywang/SDSpy/issues"
+"Examples" = "https://github.com/lheywang/SDSpy/tree/Main/examples"
+"Compatibility list" = "https://github.com/lheywang/SDSpy/blob/Main/documentation/Compatibility.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyvisa = "^1.14.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+requests-mock = "^1.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
