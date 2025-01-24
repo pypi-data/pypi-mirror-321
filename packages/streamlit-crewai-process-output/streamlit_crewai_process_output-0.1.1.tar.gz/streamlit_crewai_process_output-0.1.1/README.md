@@ -1,0 +1,130 @@
+# Streamlit CrewAI Process Output
+
+[![codecov](https://codecov.io/gh/tonykipkemboi/streamlit-crewai-process-output/branch/main/graph/badge.svg)](https://codecov.io/gh/tonykipkemboi/streamlit-crewai-process-output)
+
+A Streamlit component for beautifully displaying CrewAI's process output in real-time. This component makes it easy to create engaging Streamlit apps with CrewAI by providing:
+
+- 🎨 Beautiful, formatted output with emojis
+- ⚡ Real-time streaming updates
+- 🔍 Automatic detection of different output types (agents, tasks, thoughts)
+- 🧩 Simple integration with just a few lines of code
+
+## Installation
+
+```bash
+pip install streamlit-crewai-process-output
+```
+
+This will automatically install all required dependencies:
+- `crewai>=0.95.0`
+- `crewai-tools>=0.25.8`
+- `streamlit>=1.41.0`
+
+Compatible with Python 3.7 through 3.12.
+
+## Quick Start
+
+Here's a complete, working example you can copy and run:
+
+```python
+import streamlit as st
+from crewai import Agent, Task, Crew, Process
+from crewai_tools import SerperDevTool
+from streamlit_crewai_process_output import CrewAIProcessOutput
+import os
+
+st.title("CrewAI Research Assistant")
+
+# API Keys in sidebar
+with st.sidebar:
+    st.markdown("### ⚙️ Configuration")
+    with st.expander("🔑 API Keys", expanded=True):
+        st.info("API keys are stored temporarily in memory and cleared when you close the browser.")
+        
+        openai_api_key = st.text_input("OpenAI API Key", type="password")
+        if openai_api_key:
+            os.environ["OPENAI_API_KEY"] = openai_api_key
+            
+        serper_api_key = st.text_input("SerperDev API Key", type="password")
+        if serper_api_key:
+            os.environ["SERPER_API_KEY"] = serper_api_key
+
+# Check if API keys are set
+if not os.getenv("OPENAI_API_KEY") or not os.getenv("SERPER_API_KEY"):
+    st.warning("⚠️ Please enter your API keys in the sidebar to get started")
+    st.stop()
+
+# Research task input
+task_description = st.text_area(
+    "What would you like to research?",
+    value="Research the latest developments in AI and summarize the key trends."
+)
+
+if st.button("Start Research"):
+    with st.status("🤖 Researching...", expanded=True):
+        try:
+            # Set up CrewAI process output
+            output_container = st.container()
+            with CrewAIProcessOutput.capture(output_container):
+                # Create the researcher agent
+                researcher = Agent(
+                    role='Research Analyst',
+                    goal='Conduct thorough research on given topics',
+                    backstory='Expert at analyzing and summarizing complex information',
+                    tools=[SerperDevTool()],
+                    verbose=True
+                )
+
+                # Create and run the crew
+                crew = Crew(
+                    agents=[researcher],
+                    tasks=[Task(
+                        description=task_description,
+                        expected_output="Summary of the research findings",
+                        agent=researcher
+                    )],
+                    verbose=True,
+                    process=Process.sequential
+                )
+
+                # Run and get result
+                result = crew.kickoff()
+            
+        except Exception as e:
+            st.error(f"An error occurred: {str(e)}")
+            return
+
+    # Display final result in markdown
+    st.markdown("---")
+    st.markdown("### 🏁 Final Result")
+    st.markdown(result)
+            
+```
+
+Save this as `app.py` and run it with:
+
+```bash
+streamlit run app.py
+```
+
+You'll need:
+1. An OpenAI API key from [OpenAI](https://platform.openai.com)
+2. A SerperDev API key from [SerperDev](https://serper.dev)
+
+## Why Use This Component?
+
+1. **Better User Experience**: Instead of raw console output, your users see a beautifully formatted, real-time stream of what CrewAI is doing.
+
+2. **Zero Configuration**: The component automatically detects and formats different types of output (agents, tasks, thoughts) with appropriate emojis and styling.
+
+3. **Simple Integration**: Just wrap your CrewAI code in a `with` statement - no need to handle stdout redirection or process different output types manually.
+
+4. **Real-time Updates**: Users can see exactly what's happening as CrewAI works, making your app more engaging and informative.
+
+5. **Clean Code**: Keep your Streamlit app code clean and focused on business logic instead of output formatting.
+
+## Contributing
+
+We welcome contributions! Feel free to open issues or submit pull requests on our GitHub repository.
+
+Made with ❤️ by [Tony Kipkemboi](https://x.com/tonykipkemboi).
