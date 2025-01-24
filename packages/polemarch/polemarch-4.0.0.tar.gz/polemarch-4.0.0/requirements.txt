@@ -1,0 +1,13 @@
+# Main
+vstutils[rpc,prod]~=5.12.3
+markdown2~=2.4.10
+docutils~=0.20.0
+
+# Repo types
+gitpython~=3.1.32
+gitdb2~=4.0.2
+
+# Hooks
+requests~=2.31.0
+# support for CentOS/RH/Oracle 7
+urllib3~=1.26.16

@@ -1,0 +1,1 @@
+import{m as e,d as r,C as n}from"./index-C_iAD1KJ.js";const o=r({__name:"Layout",setup(t){return{__sfc:!0,LangForm:n}}});var p=function(){var t=this,s=t._self._c,a=t._self._setupProxy;return s("div",{staticClass:"wrapper"},[s(a.LangForm),s("div",{staticClass:"page"},[t._t("default")],2)],1)},_=[],c=e(o,p,_,!1,null,"d31c5581");const m=c.exports;export{m as default};
