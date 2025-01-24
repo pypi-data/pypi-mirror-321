@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cad-diffusion
+Version: 1.1
+Summary: Package for the CAD diffusion model
+Author: Nicolas Dufour
+Requires-Python: >=3.11
+Provides-Extra: train
+Provides-Extra: demo
+License-File: LICENSE
