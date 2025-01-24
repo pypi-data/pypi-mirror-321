@@ -1,0 +1,3 @@
+[console_scripts]
+aixblock_hub=aixblock_hub.cli.cli:run_cmd
+
