@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: testliblockingcdt
+Version: 0.1.11
+Summary: Custom library to support table locking
+Author: Javad Javadzade
+Author-email: JavadJavadzade@LiveNation.com
+
