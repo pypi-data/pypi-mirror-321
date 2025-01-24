@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pybacktestchain_options"
+version = "0.1.1"
+description = "A backtesting package for options"
+authors = ["Guillaume Touly"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pybacktestchain = "^0.2.1"
+numba = "^0.60.0"
+pandas = "^2.2.3"
+yfinance = "^0.2.51"
+typer = {extras = ["all"], version = "^0.15.1"}
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.16.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
