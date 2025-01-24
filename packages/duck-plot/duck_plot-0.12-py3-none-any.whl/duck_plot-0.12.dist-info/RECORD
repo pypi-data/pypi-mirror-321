@@ -1,0 +1,9 @@
+duck_plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duck_plot/__main__.py,sha256=Qd-f8z2Q2vpiEP2x6PBFsJrpACWDVxFKQk820MhFmHo,59
+duck_plot/cli.py,sha256=N33dD7uGVOdncTGKuVLEOMaw429cRK-H1w4Q4QT57UI,5293
+duck_plot-0.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+duck_plot-0.12.dist-info/METADATA,sha256=8kDZ0flGeJKB6Euto-rXlpCOiDchkPgO-AxHnJE8_Tc,4268
+duck_plot-0.12.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+duck_plot-0.12.dist-info/entry_points.txt,sha256=QDBSPidbzAXWlagpD5vZy15msASJFctgVFVr0lqPNO0,48
+duck_plot-0.12.dist-info/top_level.txt,sha256=oUpg7nJlLt07u5ZWqEYIVZB95UUVrKAOKf5p-vazoYA,10
+duck_plot-0.12.dist-info/RECORD,,

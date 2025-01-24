@@ -1,0 +1,2 @@
+[console_scripts]
+duck-plot = duck_plot.cli:app
