@@ -1,0 +1,12 @@
+additional_difficulty/__init__.py,sha256=n_31PHk9ypxxZbgP2WmW1Tfk3YkWKX7prYObm3msd2M,124
+additional_difficulty/differences.py,sha256=3FABWG3Cf-9w7QOdvbxheTbiLMgkSRdFLTgYvVJ6WNg,3286
+additional_difficulty/division.py,sha256=2CG8G0jDiR_6kVcSvtP0lnzzgRpzMng3VQyycJjYW9E,2424
+additional_difficulty/factoriser.py,sha256=0nSHusKsC4qyxzykzzF-ukJVs0fvozMm716ZSNzYkNg,7349
+additional_difficulty/products.py,sha256=oA10AKOBoCm24RHp-PYkZrFADaCABW0TD5i9WI8RuTk,3868
+additional_difficulty/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+additional_difficulty/sum_of_two.py,sha256=iOw6URfmv-meRfmXGa0dJpvQh7JuDwYRPbp7msK3aUE,2941
+additional_difficulty/text_to_number.py,sha256=tl1b79pwRqT58-uEiVnkfHx5qYqLznOLKK-U0DNx2hk,242
+additional_difficulty-0.0.2.dist-info/METADATA,sha256=6-D7AVQ0u2yZe0EEAKDVi48Yxr78hyPU1Am1M4-QFNU,1873
+additional_difficulty-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+additional_difficulty-0.0.2.dist-info/licenses/LICENSE.md,sha256=0XJtjrrDbQXIN6cT8jQ-wYAbRk8Htz0CqfXVcbieJbo,1068
+additional_difficulty-0.0.2.dist-info/RECORD,,
