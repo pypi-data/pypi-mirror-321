@@ -1,0 +1,13 @@
+FireBased/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FireBased/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FireBased/client/client.py,sha256=TUSz7_M30TQP7S4vyx-88isWHMV0oWNRmrXW_dMaEWw,3125
+FireBased/client/schemas.py,sha256=Wo8JRi1iWw8X6MRwKG-d8sdpbEAwSd940TYoxehSSb8,3108
+FireBased/client/settings.py,sha256=4LUC_67l6tWHMNRYa13WubgCVX7deJ7IHQzXh4BWwlQ,947
+FireBased/client/proto/__init__.py,sha256=v9r0Of_3xkU2Tr-t1BT-oo9Ah7lLDhp9Rb2N6_gSc98,5922
+FireBased/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FireBased/ext/synthetic_data.py,sha256=CXVgO_e9AHIqLWVi_b5D11D4TaSQhv3eCzXFmqi4jSw,7145
+FireBased-0.0.1.post3.dist-info/LICENSE,sha256=Y7BnJtqltGJ5nZZvkZEu2e3N0SfvfUUM-nvzWqfax9k,1067
+FireBased-0.0.1.post3.dist-info/METADATA,sha256=K8BqGtwJYJXFgY6aKY-cK5SjQuytbjww0FMJFOK-nvY,5004
+FireBased-0.0.1.post3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+FireBased-0.0.1.post3.dist-info/top_level.txt,sha256=0zgL13zbND6Y53VHg4KO5XEoeE3f6JbC4r7x8_n5Deo,10
+FireBased-0.0.1.post3.dist-info/RECORD,,
