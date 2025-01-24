@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: ysoisochrone
+Version: 0.4.0b0
+Summary: Python package handles the young-stellar-objects isochrones, and one primary goal is to derive the stellar mass and ages from the isochrones.
+Home-page: https://github.com/DingshanDeng/ysoisochrone
+Author: Dingshan Deng
+Author-email: dingshandeng@arizona.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: scipy
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: jupyter
+Requires-Dist: pytest
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
