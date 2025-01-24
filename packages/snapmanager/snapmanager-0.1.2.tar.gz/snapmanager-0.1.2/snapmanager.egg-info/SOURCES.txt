@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+snapmanager/__init__.py
+snapmanager/cli.py
+snapmanager.egg-info/PKG-INFO
+snapmanager.egg-info/SOURCES.txt
+snapmanager.egg-info/dependency_links.txt
+snapmanager.egg-info/entry_points.txt
+snapmanager.egg-info/requires.txt
+snapmanager.egg-info/top_level.txt
