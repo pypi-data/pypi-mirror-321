@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: hellosailb
+Version: 2.0.0b69
+Summary:  Python programming language
+Author: Sailesh
+Author-email: test@gmail.com
+License: LICENSE
+Requires-Python: >=3.8
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
