@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/ag2multimodal.egg-info/PKG-INFO
+src/ag2multimodal.egg-info/SOURCES.txt
+src/ag2multimodal.egg-info/dependency_links.txt
+src/ag2multimodal.egg-info/top_level.txt
