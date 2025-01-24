@@ -1,0 +1,8 @@
+swarm_deploy/__init__.py,sha256=gTT2mpqKVeZ5N2IVW3W_FgiGpZ91O8U-mt4cHilNXQA,152
+swarm_deploy/callable_name.py,sha256=cpZ2wjz3iHTrSs9k-W5hder1PNQNDqacIKr2f_yIPt0,6392
+swarm_deploy/main.py,sha256=kCi9NV3p_6uBu33XEHfGJg_FGY0MmIubt0TY-zHjaos,17952
+swarm_deploy/message.py,sha256=P_iXbevDzq-klgYYtwcSuMjs-dXS9OHNDgQhPrDJOLk,309
+swarm_deploy-0.0.4.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+swarm_deploy-0.0.4.dist-info/METADATA,sha256=reYS69qD9kevxzPLTa_0SCGQ-eoKsugVCbB9WQTl0eE,7879
+swarm_deploy-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+swarm_deploy-0.0.4.dist-info/RECORD,,
