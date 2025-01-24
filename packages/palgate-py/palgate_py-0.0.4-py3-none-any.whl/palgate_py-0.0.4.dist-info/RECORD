@@ -1,0 +1,15 @@
+palgate_py/__about__.py,sha256=U-0Td4jYS6ybGn_SD5bXQju-oS144vbJ4nfUfMILGFA,201
+palgate_py/__init__.py,sha256=lQZpKNi00NObrvPjb-gYa49xXTNJjBwqRfys8xjTRec,155
+palgate_py/__main__.py,sha256=Bdioqw94S8wX2XvB2ICQR_5KPrXWQhoTJmdP_SetUCg,296
+palgate_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palgate_py/cli/__init__.py,sha256=njTFiXZgFYjFkZzGBCXuzQtY0x0S6PsmvAMgOk1mp3s,261
+palgate_py/cli/cli.py,sha256=PXA3I2NC3Ju3XWSN8tocM5jADxMrx4TCPIA7whpnt0w,2485
+palgate_py/palgate/__init__.py,sha256=IbHtORk6ane_Uktch_crlXyXlHYoTfogYApX_GYppvo,234
+palgate_py/palgate/config.py,sha256=As02crm4SMc-gMFRbrx6qvxnYM1J2TVddLKv-2JJ2AE,2504
+palgate_py/palgate/models.py,sha256=nUlD59ewAU6H5hk57KBGzFxrwhQotpry591LU0S2IN0,2214
+palgate_py/palgate/palgate.py,sha256=017NhjbJfGgxePgbFoALjX2vsNZ3FbG1WtxP8yTbGG0,4089
+palgate_py-0.0.4.dist-info/METADATA,sha256=1Wd119l86nciXlX2Vh-EZDsEnRpoTeruVrGXPnOIJ-M,1377
+palgate_py-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+palgate_py-0.0.4.dist-info/entry_points.txt,sha256=-ezbZ1ySTTwX1hBd2q53OsgIpz-T-i_s6FXxB0Hkjw0,50
+palgate_py-0.0.4.dist-info/licenses/LICENSE.txt,sha256=kPlE0DjiwKI6vPUCLF4XBvMjxmwcf3hfa2nsm-W4KBM,1116
+palgate_py-0.0.4.dist-info/RECORD,,
