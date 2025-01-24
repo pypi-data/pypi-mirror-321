@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aiomcache/__init__.py
+aiomcache/client.py
+aiomcache/constants.py
+aiomcache/exceptions.py
+aiomcache/pool.py
+aiomcache/py.typed
+aiomcache_pr432.egg-info/PKG-INFO
+aiomcache_pr432.egg-info/SOURCES.txt
+aiomcache_pr432.egg-info/dependency_links.txt
+aiomcache_pr432.egg-info/requires.txt
+aiomcache_pr432.egg-info/top_level.txt
