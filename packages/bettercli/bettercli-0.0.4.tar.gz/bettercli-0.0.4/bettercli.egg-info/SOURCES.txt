@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bettercli/__init__.py
+bettercli/cli.py
+bettercli/command.py
+bettercli/decorators.py
+bettercli/exceptions.py
+bettercli/logger.py
+bettercli/option.py
+bettercli/utils.py
+bettercli.egg-info/PKG-INFO
+bettercli.egg-info/SOURCES.txt
+bettercli.egg-info/dependency_links.txt
+bettercli.egg-info/top_level.txt
