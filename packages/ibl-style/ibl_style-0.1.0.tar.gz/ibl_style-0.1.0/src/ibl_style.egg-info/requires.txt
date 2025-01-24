@@ -1,0 +1,4 @@
+figrid
+matplotlib
+numpy
+seaborn
