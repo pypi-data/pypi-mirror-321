@@ -1,0 +1,13 @@
+pyitc-1.1.0.dist-info/METADATA,sha256=O-c23zEedgQTEF7ZYFksrctgnuuw3HVUgj6sciQegHQ,45165
+pyitc-1.1.0.dist-info/WHEEL,sha256=P4y5Mar99_Bq6Qh4OtGvijXOei5vxoDZ6CoD6qqK1rg,83
+pyitc-1.1.0.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+pyitc/_pyitc.pyd,sha256=lvH_JFSJljDRD18_B9oRTUafQbeEsHb_sNae9fngQhI,108599
+pyitc/_pyitc.dll.a,sha256=Uzp_5hcaQjxydxiiT3kr48nJLn2ygxBKvnbfdTIo3_4,1546
+pyitc/__init__.py,sha256=xN18HmVyp5ZG8ie5bbNiu3CVHMAEILvAKFWi-eqwKIQ,905
+pyitc/extended_api.py,sha256=E6Kp92e3WhMaW_hv4NPk-UsqPy_0Luov5XkzFy_fk3s,8666
+pyitc/pyitc.py,sha256=UeAHpJezpcsaq3vDaXqWsRqGL9bPQLR9Fb39hRFi5S0,11049
+pyitc/exceptions.py,sha256=Gy-J9oXHDrBV5CIIp4xk8D6n-YgIkJzrX4n1_5UyJGM,7017
+pyitc/util.py,sha256=JFXFUuZztrSZzUa5g-kUZVAN11d0g-vBVUsH5RVcfhY,578
+pyitc/_internals/__init__.py,sha256=ZiA6S3J40865PJV7XjRDK0E0pFyIdiArkIHNkz7tJD4,503
+pyitc/_internals/wrappers.py,sha256=cHAxhRS7CqoeTiCQjsJCgqwQVuptYS_VJiddo9NWzcc,26261
+pyitc-1.1.0.dist-info/RECORD,,
