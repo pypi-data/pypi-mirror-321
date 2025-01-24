@@ -1,0 +1,81 @@
+[project]
+name = "mc-data-files"
+dynamic = ["version"]
+description = "Minecraft Data tracking PrismarineJS/minecraft-data"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    { name = "hunter", email = "huntcsg@gmail.com" }
+]
+requires-python = ">=3.9,<3.14"
+
+# Fix URLs section syntax
+[project.urls]
+Homepage = "https://github.com/mc-bench/mc-data-files"
+Repository = "https://github.com/mc-bench/mc-data-files.git"
+Issues = "https://github.com/mc-bench/mc-data-files/issues"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "build>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "minecraft_data.__version__"}
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+# Enable all rules by default
+select = ["ALL"]
+# Ignore rules that conflict with formatter or each other
+ignore = [
+    "D203",  # Ignore in favor of D211
+    "D213",  # Ignore in favor of D212
+    "COM812",  # Ignore formatting-related rule
+    "TRY003",  # Allow longer exception messages
+    "D107",    # Allow missing __init__ docstrings
+    "ISC001"   # Trust autoformatter
+]
+
+# Sort imports
+extend-select = ["I"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101",    # Allow assert statements in tests
+    "D100",    # Allow missing module docstrings in tests
+    "D103",    # Allow missing docstrings in test functions
+    "PLR2004", # Allow magic numbers in tests
+    "ANN201",  # Allow missing return type annotations in tests
+    "INP001",  # Allow implicit namespace packages in tests
+    "ANN001",  # Allow missing argument type annotations in tests
+    "S603",    # Allow subprocess calls in test_update_assets
+    "S103",    # Allow chmod 755 in test_update_assets
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=minecraft_data --cov-report=term-missing"
+testpaths = ["tests"]

@@ -1,0 +1,2 @@
+ recursive-include src/minecraft_data/data *
+ recursive-include src/minecraft_data/schemas *
