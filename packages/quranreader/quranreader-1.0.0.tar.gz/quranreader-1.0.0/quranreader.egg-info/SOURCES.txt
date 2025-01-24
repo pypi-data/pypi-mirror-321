@@ -1,0 +1,15 @@
+README.md
+setup.py
+quranreader/__init__.py
+quranreader/config.py
+quranreader/handle_exception.py
+quranreader/interface.py
+quranreader/parser_quranreader.py
+quranreader/quranreader.py
+quranreader/service.py
+quranreader/utils.py
+quranreader.egg-info/PKG-INFO
+quranreader.egg-info/SOURCES.txt
+quranreader.egg-info/dependency_links.txt
+quranreader.egg-info/requires.txt
+quranreader.egg-info/top_level.txt
