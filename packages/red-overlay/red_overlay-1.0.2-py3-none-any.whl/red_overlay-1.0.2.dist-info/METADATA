@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: red_overlay
+Version: 1.0.2
+Summary: Overlay style window Python+Qt
+Project-URL: Homepage, https://github.com/AiSatan/REDOverlay
+Project-URL: Issues, https://github.com/AiSatan/REDOverlay/issues
+Author-email: AiSatan <aisatan.public@gmail.com>
+License-Expression: GPL-3.0-only
+License-File: LICENSE
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyqt5>=5.15.11
+Description-Content-Type: text/markdown
+
+# REDOverlay
+Overlay style window Python+Qt
