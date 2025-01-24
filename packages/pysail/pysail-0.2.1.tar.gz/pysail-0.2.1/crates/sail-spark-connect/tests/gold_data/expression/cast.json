@@ -1,0 +1,91 @@
+{
+  "tests": [
+    {
+      "input": "cast(a as array<int>)",
+      "output": {
+        "success": {
+          "cast": {
+            "expr": {
+              "unresolvedAttribute": {
+                "name": [
+                  "a"
+                ],
+                "planId": null
+              }
+            },
+            "castToType": {
+              "list": {
+                "dataType": "int32",
+                "nullable": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": "cast(a as int)",
+      "output": {
+        "success": {
+          "cast": {
+            "expr": {
+              "unresolvedAttribute": {
+                "name": [
+                  "a"
+                ],
+                "planId": null
+              }
+            },
+            "castToType": "int32"
+          }
+        }
+      }
+    },
+    {
+      "input": "cast(a as timestamp)",
+      "output": {
+        "success": {
+          "cast": {
+            "expr": {
+              "unresolvedAttribute": {
+                "name": [
+                  "a"
+                ],
+                "planId": null
+              }
+            },
+            "castToType": {
+              "timestamp": {
+                "timeUnit": "microsecond",
+                "timezoneInfo": "sQLConfigured"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": "cast(cast(a as int) as long)",
+      "output": {
+        "success": {
+          "cast": {
+            "expr": {
+              "cast": {
+                "expr": {
+                  "unresolvedAttribute": {
+                    "name": [
+                      "a"
+                    ],
+                    "planId": null
+                  }
+                },
+                "castToType": "int32"
+              }
+            },
+            "castToType": "int64"
+          }
+        }
+      }
+    }
+  ]
+}
