@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: milena-efimenko-17
+Version: 0.0.1
+Summary: A short description of the project.
+Author: milena_efimenko
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# milena-efimenko-17
+
+<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
+    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
+</a>
+
+A short description of the project.
+
+## Project Organization
+
+```
+├── LICENSE            <- Лицензия для проекта, если выбрана
+├── Makefile           <- Makefile с командами, такими как `make data` или `make train`
+├── README.md          <- Основной файл с описанием проекта для разработчиков
+├── data
+│   ├── raw            <- Исходные, неизменные данные
+│   ├── processed      <- Обработанные данные для моделирования
+│   └── interim        <- Промежуточные данные после предварительной обработки
+│
+├── docs               <- Документация проекта, см. www.mkdocs.org для подробностей
+│
+├── models             <- Обученные и сериализованные модели, прогнозы модели или сводки модели
+│
+├── notebooks          <- Jupyter ноутбуки. Конвенция именования: номер, инициалы создателя и описание задачи
+│
+├── pyproject.toml     <- Конфигурационный файл проекта с метаданными для 
+│                         инструмента, например, black
+│
+├── references         <- Документация, словари данных и другие разъясняющие материалы
+│
+├── reports            <- Сгенерированные отчеты, такие как HTML, PDF, LaTeX и т.д.
+│   └── figures        <- Генерированные графики и изображения для отчетности
+│
+├── requirements.txt   <- Файл зависимостей для воспроизведения среды анализа, например,
+│                         сгенерирован с помощью `pip freeze > requirements.txt`
+│
+├── setup.cfg          <- Конфигурационный файл для flake8
+│
+└── mlops              <- Исходный код для работы с проектом
+    │
+    ├── __init__.py             <- Сделает mlops Python-модулем
+    │
+    ├── config.py               <- Конфигурационные файлы и полезные переменные
+    │
+    ├── dataset.py              <- Скрипты для загрузки или генерации данных
+    │
+    ├── features.py             <- Код для создания признаков для моделирования
+    │
+    ├── modeling                
+    │   ├── __init__.py 
+    │   ├── predict.py          <- Код для запуска инференса с использованием обученных моделей          
+    │   └── train.py            <- Код для обучения моделей
+    │
+    └── plots.py                <- Код для создания визуализаций
+
+```
+
+--------
+
