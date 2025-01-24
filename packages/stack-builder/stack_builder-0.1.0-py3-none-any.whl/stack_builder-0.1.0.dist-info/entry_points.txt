@@ -1,0 +1,2 @@
+[console_scripts]
+stack_builder = source_code.stack_builder:generate_project

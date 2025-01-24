@@ -1,0 +1,11 @@
+source_code/__init__.py,sha256=WniJCzi4GbJhkT8HgazHkwcgiuJZQEW9MCS9ogPzmAA,158
+source_code/stack_builder.py,sha256=8qvDrQUKTPEKoqwv8M8hUwljUXcI3vU_532i_2tLMF0,3946
+source_code/yaml_reader.py,sha256=s3q52ISSjYCzdSWvK9vgAToKJR1LN80QNOgyPNQ-PNw,160
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stack_builder-0.1.0.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stack_builder-0.1.0.dist-info/METADATA,sha256=XdB1tOrH2vBPRgbPK-Gyux0fiLROEGnrTCwmY6AVuI8,764
+stack_builder-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+stack_builder-0.1.0.dist-info/entry_points.txt,sha256=bXyA68lFk8xPkQr3IIVy-d9AJ6VUpEyxpwql-RfKCz8,77
+stack_builder-0.1.0.dist-info/top_level.txt,sha256=cBSxst8CBma3wyMwcIP3NNS7V-vIuGgEdu6JWQlPXYc,18
+stack_builder-0.1.0.dist-info/RECORD,,
