@@ -1,0 +1,2 @@
+[console_scripts]
+s3-sync = s3_sync.cli:cli
