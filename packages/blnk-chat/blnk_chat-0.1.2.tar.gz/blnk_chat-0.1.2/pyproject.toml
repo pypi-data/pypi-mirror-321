@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blnk-chat"
+version = "0.1.2"
+packages = ["src/blnk_chat"]
+description = "A powerful terminal-based chat application for seamless interaction with multiple AI providers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "frgmt0_o", email = "frgmt_@frgmt.xyz" }
+]
+keywords = ["ai", "chat", "cli", "openai", "anthropic", "gemini"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "openai>=1.0.0",
+    "anthropic>=0.43.0",
+    "google-generativeai>=0.3.0",
+    "python-dotenv>=1.0.0",
+    "asyncio>=3.4.3",
+    "mcp[cli]>=1.2.0",
+    "rich>=13.0.0",
+    "colorama>=0.4.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/frgmt0/blnk"
+Repository = "https://github.com/frgmt0/blnk"
+Documentation = "https://github.com/frgmt0/blnk#readme"
+"Bug Tracker" = "https://github.com/frgmt0/blnk/issues"
+
+[project.scripts]
+blnk = "blnk-chat.main:run"
