@@ -1,0 +1,7 @@
+django>=2.2
+pillow>=5.4.1
+sorl-thumbnail>=12.4.0
+django-autocomplete-light>=3.0
+django-tagging
+swapper
+faust-cchardet>=2.1.9
