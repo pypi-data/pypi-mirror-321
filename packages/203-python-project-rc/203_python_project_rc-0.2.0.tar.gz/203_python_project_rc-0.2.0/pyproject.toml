@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "203_python_project_rc"
+version = "0.2.0"
+description = "Add feature to pybacktestchain"
+authors = ["Raphael Corchia"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+scipy = ">=1.11,<1.14"
+pybacktestchain = "^0.2.1"
+python = ">=3.10,<3.13"
+numba = "^0.60.0"
+streamlit = "^1.41.1"
+plotly = "^5.24.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.15.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
