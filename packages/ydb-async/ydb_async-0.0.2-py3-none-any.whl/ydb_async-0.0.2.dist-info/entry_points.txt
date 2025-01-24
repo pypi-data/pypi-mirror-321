@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+sql.asyncydb = ydb_async.dialect:Dialect
