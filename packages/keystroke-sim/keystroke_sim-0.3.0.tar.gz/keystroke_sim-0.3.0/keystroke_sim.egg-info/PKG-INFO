@@ -1,0 +1,260 @@
+Metadata-Version: 2.2
+Name: keystroke_sim
+Version: 0.3.0
+Summary: Cross-platform keyboard input simulation and monitoring with security analysis
+Author-email: Bassem Abidi <abidi.bassem@me.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bassemabidi/keystroke_sim
+Project-URL: Documentation, https://github.com/bassemabidi/keystroke_sim/blob/main/README.md
+Project-URL: Repository, https://github.com/bassemabidi/keystroke_sim.git
+Project-URL: Changelog, https://github.com/bassemabidi/keystroke_sim/blob/main/CHANGELOG.md
+Keywords: keyboard,automation,monitoring,simulation,input,security,keystroke-dynamics,threat-detection
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: keyboard>=0.13.5
+Requires-Dist: pynput>=1.7.6
+Requires-Dist: pyautogui>=0.9.53
+Requires-Dist: cryptography>=41.0.0
+Requires-Dist: numpy>=1.21.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+
+# KeystrokeSimulator
+
+A comprehensive Python library for keyboard input simulation, monitoring, and security analysis, developed by Bassem Abidi (abidi.bassem@me.com).
+
+## Features
+
+### Keystroke Simulation
+- 🎯 Cross-platform support (Windows, macOS, Linux)
+- ⌨️ Simulate individual keystrokes
+- 📝 Type strings with customizable delays
+- 🔥 Support for hotkey combinations
+- 🔧 Custom keyboard layout definitions
+
+### Keyboard Monitoring
+- 📊 Real-time keystroke logging
+- 📈 Detailed keystroke statistics
+- 🔍 Key combination tracking
+- 📅 Date-organized logs
+- 📊 Usage analytics
+
+### Security Features
+- 🔐 Keystroke dynamics analysis
+- 👤 User behavior profiling
+- 🚨 Threat detection
+- 🎯 Anomaly detection
+- 📋 Security reporting
+- 🔒 Encrypted logging
+- 📊 Statistical analysis
+
+## Quick Start
+
+### Installation
+
+```bash
+pip install keystroke-sim
+```
+
+### Basic Usage
+
+1. Keystroke Simulation:
+```python
+from keystroke_sim import KeystrokeSimulator
+
+# Initialize simulator
+sim = KeystrokeSimulator()
+
+# Type text
+sim.type_string("Hello, World!", delay=0.1)
+
+# Press hotkey
+sim.press_hotkey(['ctrl', 'c'])
+```
+
+2. Keyboard Monitoring:
+```python
+from keystroke_sim import KeyboardMonitor
+
+# Initialize monitor
+monitor = KeyboardMonitor()
+
+# Start monitoring
+monitor.start()
+```
+
+3. Security Analysis:
+```python
+from keystroke_sim.security_analyzer import KeystrokeSecurityAnalyzer
+
+# Initialize with encryption
+analyzer = KeystrokeSecurityAnalyzer(encryption_key="your-secret-key")
+
+# Create user profile
+analyzer.create_baseline_profile(training_data)
+
+# Monitor for threats
+threats = analyzer.detect_threats(current_data)
+
+# Generate security report
+report = analyzer.generate_security_report(data)
+```
+
+## Security Features in Detail
+
+### 1. Keystroke Dynamics Analysis
+- User typing pattern recognition
+- Timing analysis (key press duration, flight time)
+- Rhythm consistency measurement
+- Pattern deviation detection
+
+### 2. Threat Detection
+```python
+# Initialize security components
+monitor = KeyboardMonitor()
+analyzer = KeystrokeSecurityAnalyzer()
+
+# Configure threat detection
+def on_threat(threat):
+    print(f"Threat detected: {threat['type']}")
+    print(f"Severity: {threat['severity']}")
+    print(f"Details: {threat['details']}")
+
+# Start monitoring
+monitor.on_threat = on_threat
+monitor.start()
+```
+
+### 3. Security Reports
+```python
+# Generate comprehensive security report
+report = analyzer.generate_security_report(data)
+
+# Report includes:
+# - Risk score
+# - Detected threats
+# - Timing analysis
+# - Pattern anomalies
+# - Statistical metrics
+```
+
+### 4. Encrypted Logging
+```python
+# Initialize with encryption
+analyzer = KeystrokeSecurityAnalyzer(encryption_key="your-secret-key")
+
+# Encrypt sensitive data
+encrypted_data = analyzer.encrypt_log_data(log_data)
+
+# Decrypt when needed
+decrypted_data = analyzer.decrypt_log_data(encrypted_data)
+```
+
+## Command Line Interface
+
+### Monitor Mode
+```bash
+# Basic monitoring
+keystroke-sim monitor
+
+# Advanced security monitoring
+keystroke-sim monitor --security --sensitivity 0.8
+```
+
+### Simulation Mode
+```bash
+# Type text
+keystroke-sim simulate --text "Hello, World!" --delay 0.1
+
+# Press hotkey
+keystroke-sim simulate --hotkey ctrl c
+```
+
+## Security Best Practices
+
+1. **User Profiling**
+   - Collect sufficient training data
+   - Update profiles periodically
+   - Monitor profile consistency
+
+2. **Threat Detection**
+   - Adjust sensitivity based on security needs
+   - Review security reports regularly
+   - Investigate alerts promptly
+
+3. **Data Protection**
+   - Always use encryption for sensitive data
+   - Secure encryption keys properly
+   - Regular security audits
+
+4. **Monitoring**
+   - Set appropriate alert thresholds
+   - Configure logging levels
+   - Regular backup of security reports
+
+## Advanced Configuration
+
+### Security Analyzer Configuration
+```python
+config = {
+    'sensitivity': 0.7,
+    'min_training_data': 1000,
+    'alert_threshold': 0.8,
+    'encryption_enabled': True
+}
+
+analyzer = KeystrokeSecurityAnalyzer(config=config)
+```
+
+### Custom Security Rules
+```python
+# Define custom threat detection rules
+def custom_threat_detector(data):
+    # Your custom detection logic
+    return threats
+
+analyzer.add_threat_detector(custom_threat_detector)
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests: `python -m pytest tests/`
+5. Submit a pull request
+
+## Support
+
+For issues, questions, or contributions:
+- GitHub Issues: [https://github.com/bassemabidi/keystroke_sim/issues](https://github.com/bassemabidi/keystroke_sim/issues)
+- Email: abidi.bassem@me.com
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Bassem Abidi (abidi.bassem@me.com)
+
+## Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and changes.
