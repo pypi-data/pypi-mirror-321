@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/advisor_core.py
+src/grouped_routes.py
+src/header.py
+src/payloads.py
+src/query_builder.py
+src/request_handler.py
+stormgeo.advisor_core.egg-info/PKG-INFO
+stormgeo.advisor_core.egg-info/SOURCES.txt
+stormgeo.advisor_core.egg-info/dependency_links.txt
+stormgeo.advisor_core.egg-info/top_level.txt
