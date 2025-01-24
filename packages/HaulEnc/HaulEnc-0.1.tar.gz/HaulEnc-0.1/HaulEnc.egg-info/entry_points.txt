@@ -1,0 +1,3 @@
+[console_scripts]
+haul = haul.main:main
+
