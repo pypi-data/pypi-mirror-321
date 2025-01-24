@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ramonak"
+dynamic = ["version"]
+description = 'Універсальная бібліятэка па працы з тэкстам на беларускай мове для Python'
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LGPL-3.0"
+keywords = []
+authors = [
+  { name = "Alexander Rusakevich", email = "mr.alexander.rusakevich@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+  "lxml>=5.3.0",
+  "tqdm>=4.67.1",
+  "requests>=2.32.3",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [".env.dev"]
+
+[project.urls]
+Documentation = "https://github.com/alex-rusakevich/ramonak#readme"
+Issues = "https://github.com/alex-rusakevich/ramonak/issues"
+Source = "https://github.com/alex-rusakevich/ramonak"
+
+[tool.hatch.version]
+path = "src/ramonak/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = ["mypy>=1.0.0"]
+
+[tool.mypy]
+[[tool.mypy.overrides]]
+module = "pytest.*"
+follow_untyped_imports = true
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --ignore-missing-imports --non-interactive {args:src/ramonak tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ramonak", "tests"]
+branch = true
+parallel = true
+omit = ["src/ramonak/__about__.py"]
+
+[tool.coverage.paths]
+ramonak = ["src/ramonak", "*/ramonak/src/ramonak"]
+tests = ["tests", "*/ramonak/tests"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.ruff]
+extend-exclude = ["tests", "docs", "__about__.py"]
+
+[tool.ruff.lint]
+extend-select = ["D"]
+ignore = ["RUF001", "T201", "RUF002"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.hatch.envs.docs]
+dependencies = ["sphinx", "sphinx-book-theme"]
+
+[tool.hatch.envs.docs.scripts]
+build = "cd docs && sphinx-apidoc -o . ../src/ramonak && make html && cd .."
+serve = "cd docs/_build/html && python -m http.server 8089 && cd ../../../"
+publish = "git subtree push --prefix docs/_build/html origin gh-pages"
+
+[tool.hatch.envs.hatch-test]
+parallel = true
+
+[tool.hatch.envs.default.scripts]
+checkup = "hatch test && hatch fmt --check && hatch run types:check"

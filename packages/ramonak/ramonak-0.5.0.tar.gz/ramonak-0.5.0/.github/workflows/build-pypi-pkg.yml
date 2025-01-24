@@ -1,0 +1,39 @@
+name: Build PyPI package
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    types:
+      - closed
+
+jobs:
+  build-publish-pkg:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install hatch
+  
+      - name: Run checks, linting, etc.
+        run: |
+          hatch run checkup
+    
+      - name: Build Package
+        run: |
+          hatch build
+  
+      - name: Publish Package
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: hatch publish --user __token__ --auth $PYPI_TOKEN
