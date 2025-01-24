@@ -1,0 +1,7 @@
+semantic-compressor
+minivectordb-simple
+numpy
+lmdb
+msgpack
+pymongo
+nanoranker
