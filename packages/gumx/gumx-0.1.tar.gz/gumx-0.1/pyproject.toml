@@ -1,0 +1,26 @@
+[project]
+name = "gumx"
+version = "0.1"
+description = "Wrapper for GUM"
+authors = [
+    {name = "Egsagon", email = "egsagon12@gmail.com"}
+]
+license = {file = "LICENSE"}
+readme = {file = "readme.md", content-type = "text/markdown"}
+keywords = ["gum", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python"
+]
+dependencies = ['requests']
+requires-python = ">=3.11"
+
+[project.urls]
+Repository = "https://github.com/Egsagon/gumx"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["./"]

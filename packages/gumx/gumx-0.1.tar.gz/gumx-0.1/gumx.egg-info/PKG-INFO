@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: gumx
+Version: 0.1
+Summary: Wrapper for GUM
+Author-email: Egsagon <egsagon12@gmail.com>
+Project-URL: Repository, https://github.com/Egsagon/gumx
+Keywords: gum,cli
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# GUMX
+
+An over-engineered Python lib for [Gum](https://github.com/charmbracelet/gum).
+
+```
+pip install gumx
+```
