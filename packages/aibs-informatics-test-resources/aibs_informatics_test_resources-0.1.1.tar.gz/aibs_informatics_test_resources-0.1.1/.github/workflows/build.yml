@@ -1,0 +1,77 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - '**/__version__.py'
+  push:
+    branches: [ main ]
+    tags-ignore:
+      - 'v*'
+    paths-ignore:
+      - '**/__version__.py'
+  workflow_dispatch:
+    
+      
+
+jobs:
+  test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        uv-resolution: ["highest", "lowest"]
+        exclude:
+          - python-version: "3.10"
+            uv-resolution: "lowest"
+          - python-version: "3.11"
+            uv-resolution: "lowest"
+    env:
+      PYTHON_VERSION: ${{ matrix.python-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        id: setup-uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ github.event.inputs.python-version }}
+      - name: Set up AllenInstitute Repo Authorization
+        uses: ./.github/actions/setup-ai-github-urls
+        with:
+          token: ${{ secrets.AI_PACKAGES_TOKEN }}
+      - name: Run Release
+        run: |
+          if [ ${{ matrix.uv-resolution }} == "highest" ]; then
+            make release            
+          else
+            # Install dependencies
+            uv sync --frozen --group all --all-extras --resolution ${{ matrix.uv-resolution }}
+            
+            # Linting 
+            uv run ruff check
+            uv run mypy ./
+
+            # Testing
+            uv run pytest -vv --durations=10
+          fi
+        shell: bash
+      - name: Upload coverage reports
+        if: |
+          ${{ 
+            success() 
+            && (
+              (github.event_name == 'pull_request' && github.base_ref == 'main')
+              || (github.event_name == 'push' && github.ref_name == 'main')
+              || github.event_name == 'workflow_dispatch'
+            )
+            && matrix.python-version == '3.11'
+          }}
+        uses: codecov/codecov-action@v5
+        with:
+          # https://github.com/codecov/codecov-action#arguments
+          token: ${{ secrets.CODECOV_TOKEN }}
+          env_vars: PYTHON_VERSION
