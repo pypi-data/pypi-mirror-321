@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+anka/__init__.py
+anka/anka.py
+anka.egg-info/PKG-INFO
+anka.egg-info/SOURCES.txt
+anka.egg-info/dependency_links.txt
+anka.egg-info/requires.txt
+anka.egg-info/top_level.txt
