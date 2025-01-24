@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aurm_python_sdk_fleetwood.egg-info/PKG-INFO
+aurm_python_sdk_fleetwood.egg-info/SOURCES.txt
+aurm_python_sdk_fleetwood.egg-info/dependency_links.txt
+aurm_python_sdk_fleetwood.egg-info/requires.txt
+aurm_python_sdk_fleetwood.egg-info/top_level.txt
+tests/__init__.py
+tests/module1.py
