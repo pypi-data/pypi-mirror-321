@@ -1,0 +1,26 @@
+[project]
+name = "jiwon-check-os-ver"
+version = "0.2.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "<jiwon1118>", email = "<b23386585@gmail.com>" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/jiwon1118/jiwon-check-os-ver"
+Issues = "https://github.com/jiwon1118/jiwon-check-os-ver/issues"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
