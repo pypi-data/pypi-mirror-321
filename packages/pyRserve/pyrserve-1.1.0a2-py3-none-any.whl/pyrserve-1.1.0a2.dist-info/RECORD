@@ -1,0 +1,13 @@
+pyRserve/__init__.py,sha256=CtBHY7-23UbUSjJQK9aM7_c2AsvgmZZKFFQj-1nwez8,563
+pyRserve/misc.py,sha256=hF9AzPlHyXXzNmGwf1v-SkRrbBdYL2KfysFHY5CQgfA,1667
+pyRserve/rconn.py,sha256=dEUTTAvqgvhhYYKLiRdhbFldE1R3ZJqWeGz9FwzuTeM,17114
+pyRserve/rexceptions.py,sha256=wzkyt_d5nnp99QjW4bRam6Tb9uxqLPE4fOBJCUgs3_8,485
+pyRserve/rparser.py,sha256=ujPYFHPSqCHAXpTLnG-_n86wRpfSUeOPZIwfSwm7IYo,25442
+pyRserve/rserializer.py,sha256=1IjYzJnGeXNE8HPgpTo0IX-6CoSJlPuNX3fEMmXo27M,17084
+pyRserve/rtypes.py,sha256=k-7s_Vk_kkSpTIBjznXP7bezxBLxogKqEVyWnOcNlhg,14369
+pyRserve/taggedContainers.py,sha256=Ih4cJP8kEYRNTz65LBoFIuiFDG7fMY0Gwj9k7k2e2mo,11783
+pyRserve/version.txt,sha256=aJ8O245t7MZYmrXr14e59zAgDjlPbnunmxLXR_S0_6w,8
+pyrserve-1.1.0a2.dist-info/METADATA,sha256=aIr7-rAsSFAhry1PgP_E3Bwu6P0pS3V9qZlHs4riy4k,5843
+pyrserve-1.1.0a2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyrserve-1.1.0a2.dist-info/licenses/LICENSE,sha256=ISD4PyoKN9lDG5v2U-RfIXxR-pISQ5NcBH-gMaLWnTU,1169
+pyrserve-1.1.0a2.dist-info/RECORD,,
