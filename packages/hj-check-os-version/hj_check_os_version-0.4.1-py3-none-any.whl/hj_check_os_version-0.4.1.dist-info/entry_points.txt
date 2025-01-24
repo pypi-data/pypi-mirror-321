@@ -1,0 +1,9 @@
+[console_scripts]
+heejin-hi = hj_check_os_version.hi:hi
+heejin-os-ver = hj_check_os_version.osver:get_os_pretty_name
+heejin-random-game = hj_check_os_version.hi:random_game
+heejin-random-match = hj_check_os_version.hi:random_match
+heejin-random-pic = hj_check_os_version.hi:random_pic
+
+[gui_scripts]
+
