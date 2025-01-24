@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/pyautogen_studio.egg-info/PKG-INFO
+src/pyautogen_studio.egg-info/SOURCES.txt
+src/pyautogen_studio.egg-info/dependency_links.txt
+src/pyautogen_studio.egg-info/top_level.txt
