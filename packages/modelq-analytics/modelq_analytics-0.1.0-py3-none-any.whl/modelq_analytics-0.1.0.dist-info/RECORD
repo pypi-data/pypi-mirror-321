@@ -1,0 +1,6 @@
+modelq_analytics/__init__.py,sha256=uabH9AiMsnoLTkyMPlzD96rXj2bMKXzwDTNe94SkI7c,57
+modelq_analytics/api/__init__.py,sha256=4HhmF7_qQuQkEjRwNuw5xKSXF1wA5xCU8mgM_WLLooM,63
+modelq_analytics/api/analytics.py,sha256=3N_0zOqsM-hsrWQuD-tuPLACpsEui6jkhYp-3VgWpyA,5463
+modelq_analytics-0.1.0.dist-info/METADATA,sha256=NOGqyRESuEGbLET_BvpDww89oEWl7BLXrgNp9M5xxXE,494
+modelq_analytics-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+modelq_analytics-0.1.0.dist-info/RECORD,,
