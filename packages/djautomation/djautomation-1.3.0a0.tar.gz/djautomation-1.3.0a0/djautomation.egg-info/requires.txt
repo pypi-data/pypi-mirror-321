@@ -1,0 +1,8 @@
+yt-dlp
+mutagen
+requests
+Pillow
+python-dotenv
+pytz
+Send2Trash
+pytest
