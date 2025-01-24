@@ -1,0 +1,7 @@
+anywidget
+pydantic>=2.10.5
+ipykernel>=6.29.5
+
+[dev]
+watchfiles
+jupyterlab
