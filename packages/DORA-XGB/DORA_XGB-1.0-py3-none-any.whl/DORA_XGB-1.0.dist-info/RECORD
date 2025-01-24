@@ -1,0 +1,11 @@
+DORA_XGB/DORA_XGB.py,sha256=WEmeDbyxL5We8VRTrsfq4BGhgP6Dnkn-73Q73LL4mos,15622
+DORA_XGB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DORA_XGB/featurizations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DORA_XGB/featurizations/featurizations.py,sha256=fwVmIe6Q3GEq95CiVPKjDivaEWCiGcflrzV_dTmmv1M,56049
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_featurizations.py,sha256=KqGbQEnsKMkBXoNsJOJuYs2DdhLLyPyCH5WuF4yBex4,171430
+DORA_XGB-1.0.dist-info/LICENSE,sha256=1GokC1UjiPuZHbSlCByzMg7rMUrg7hsfzQ5Xl_IWLro,1106
+DORA_XGB-1.0.dist-info/METADATA,sha256=sgcsvgVn7VYo32a42cvP79l0ka86MmWbez6HCO2AMto,702
+DORA_XGB-1.0.dist-info/WHEEL,sha256=Jxp29sOQyqZclyENgRxT7Fphzz2FRbq9cUqTGUnJ_sU,91
+DORA_XGB-1.0.dist-info/top_level.txt,sha256=QxgFYVXK37sgGQelRkA_N-fnr7dafCxGgWk1wQEyM8c,15
+DORA_XGB-1.0.dist-info/RECORD,,
