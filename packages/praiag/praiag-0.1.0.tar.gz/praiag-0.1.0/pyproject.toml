@@ -1,0 +1,17 @@
+[project]
+name = "praiag"
+version = "0.1.0"
+description = "This is a test for project."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.10.5",
+    "pydantic-settings>=2.7.1",
+]
+
+[project.scripts]
+praia = "praiag:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
