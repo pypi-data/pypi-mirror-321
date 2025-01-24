@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: dfa-gym
+Version: 0.1.0
+Summary: Gymnasium environment for solving DFAs and wrapping other environments with DFA goals
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: dfa-samplers>=0.1.0
+Requires-Dist: gymnasium>=1.0.0
+Description-Content-Type: text/markdown
+
+# dfa-gym
