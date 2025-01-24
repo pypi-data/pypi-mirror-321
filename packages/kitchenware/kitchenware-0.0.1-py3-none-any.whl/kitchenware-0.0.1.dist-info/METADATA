@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: kitchenware
+Version: 0.0.1
+Author-email: Lucien Krapp <lucienkrapp@gmail.com>
+Project-URL: Homepage, https://github.com/lfkrapp/kitchenware
+Project-URL: Issues, https://github.com/lfkrapp/kitchenware/issues
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
