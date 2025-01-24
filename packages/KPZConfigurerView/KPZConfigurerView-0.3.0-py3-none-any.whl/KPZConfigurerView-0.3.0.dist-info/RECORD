@@ -1,0 +1,16 @@
+KPZConfigurerView/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KPZConfigurerView/interfaces_setting.py,sha256=dPu8vBnqODX7N4jwUxHBwyYjcc89Ru0ZooNudNL-pgE,45143
+KPZConfigurerView/widgets/__init__.py,sha256=AJxoxze6KFP_9Wek1oNaFtywZsyV8acD0i7E7Hp83i4,310
+KPZConfigurerView/widgets/action_calendar.py,sha256=Q2IKgwWDMNUmOqWeDwLPPsrhy8WLQn8ty4WaytLtrlE,10438
+KPZConfigurerView/widgets/base.py,sha256=2Sr_4hoCbXw89BR5N1Momz1v8QL-VO27HWp7ZgQjBYs,6565
+KPZConfigurerView/widgets/colors.py,sha256=TZMX9JdaRdRK7JknuqXJP2iDma-NIC2EHet2G3Tcy3A,641
+KPZConfigurerView/widgets/date.py,sha256=UxNO1qy0pYURNVvFI_sfWi0RkKAjpd7aEB3nKZ0jv4g,10902
+KPZConfigurerView/widgets/datetime.py,sha256=GdtI7KMckyxQTcI6BWYMy5QcTGNYUa4whwTWzdpc998,14166
+KPZConfigurerView/widgets/flag.py,sha256=c6hXVOGTylwO39Gs_PRRelZ-9PnoUDowdCMCmFmc0lI,1427
+KPZConfigurerView/widgets/id_.py,sha256=rU7eflMDAVz-0Ip_Q_ENiSVGdP9pQTgDMy4ySmqcYHQ,4173
+KPZConfigurerView/widgets/script_table.py,sha256=dRp3_0U0AJ4e_nr47UHfsG6Lu237kc3qKee9L7bHgwA,1635
+KPZConfigurerView/widgets/time.py,sha256=9UkHEsemOQDetZSitU5IkddFMwJyoRjq0gYmN-f5Ai0,7036
+KPZConfigurerView-0.3.0.dist-info/METADATA,sha256=0IiS1Wu9VjY9yUzXmlxzbXMIn66dxQ4EiT17225diTk,647
+KPZConfigurerView-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+KPZConfigurerView-0.3.0.dist-info/top_level.txt,sha256=6vJ7jnujWvXWJR2VS565L1kpJDE0VGvA87ML0xxcLsw,18
+KPZConfigurerView-0.3.0.dist-info/RECORD,,
