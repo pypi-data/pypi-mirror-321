@@ -1,0 +1,1 @@
+from .publish import vu_forecast_publish
