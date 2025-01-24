@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/ag2slim.egg-info/PKG-INFO
+src/ag2slim.egg-info/SOURCES.txt
+src/ag2slim.egg-info/dependency_links.txt
+src/ag2slim.egg-info/top_level.txt
