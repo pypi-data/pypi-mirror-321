@@ -1,0 +1,33 @@
+[project]
+name = "duck-plot"
+version = "0.11"
+description = "Plot the output of duckdb query"
+readme = "README.md"
+authors = [{name = "Lyubomir Georgiev"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "altair>=5.4.1",
+    "duckdb>=1.1.3",
+    "pandas>=2.0.3",
+    "typer",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/lvg77/duck-plot"
+Changelog = "https://github.com/lvg77/duck-plot/releases"
+Issues = "https://github.com/lvg77/duck-plot/issues"
+CI = "https://github.com/lvg77/duck-plot/actions"
+
+[project.scripts]
+duck-plot = "duck_plot.cli:app"
+
+[project.optional-dependencies]
+test = ["pytest"]
