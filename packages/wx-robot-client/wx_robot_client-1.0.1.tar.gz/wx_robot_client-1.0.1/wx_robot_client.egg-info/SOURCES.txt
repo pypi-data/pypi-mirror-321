@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+wx_robot/__init__.py
+wx_robot/bin.py
+wx_robot/core.py
+wx_robot/util.py
+wx_robot/version.json
+wx_robot_client.egg-info/PKG-INFO
+wx_robot_client.egg-info/SOURCES.txt
+wx_robot_client.egg-info/dependency_links.txt
+wx_robot_client.egg-info/entry_points.txt
+wx_robot_client.egg-info/requires.txt
+wx_robot_client.egg-info/top_level.txt
