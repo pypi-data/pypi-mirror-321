@@ -1,0 +1,8 @@
+README.md
+setup.py
+smartpush/__init__.py
+smartpush/get_jira_info.py
+smartpush.egg-info/PKG-INFO
+smartpush.egg-info/SOURCES.txt
+smartpush.egg-info/dependency_links.txt
+smartpush.egg-info/top_level.txt
