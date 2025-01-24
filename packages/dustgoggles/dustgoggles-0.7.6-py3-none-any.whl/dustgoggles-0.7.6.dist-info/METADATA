@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: dustgoggles
+Version: 0.7.6
+Summary: Ready for anything in these goggles.
+Author-email: "Michael St. Clair" <mstclair@millionconcepts.com>, Chase Million <chase@millionconcepts.com>, Sierra Brown <sierra@millionconcepts.com>
+Project-URL: Repository, https://github.com/MillionConcepts/dustgoggles
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cytoolz
+Requires-Dist: more-itertools
+Provides-Extra: mosaic
+Requires-Dist: pandas; extra == "mosaic"
+Requires-Dist: pyarrow; extra == "mosaic"
+Provides-Extra: pivot
+Requires-Dist: pandas; extra == "pivot"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Provides-Extra: array-codecs
+Requires-Dist: numpy; extra == "array-codecs"
