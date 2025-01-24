@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: flask33
+Version: 0.1.0
+Summary: 
+Author: zhangdapeng
+Author-email: 1156956636@qq.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: blinker (>=1.9.0,<2.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: itsdangerous (>=2.2.0,<3.0.0)
+Requires-Dist: jinja2 (>=3.1.5,<4.0.0)
+Requires-Dist: werkzeug (>=3.1.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+# flask33
+
+基于flask 3.x 版本二次开发
+
