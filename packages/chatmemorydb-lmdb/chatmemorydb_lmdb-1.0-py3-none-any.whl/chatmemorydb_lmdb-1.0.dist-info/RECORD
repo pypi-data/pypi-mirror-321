@@ -1,0 +1,11 @@
+memory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memory/brain.py,sha256=tRSePRB7SEFirg56Hxhy1BIuJrTs1vEJqzldBusLHoc,8472
+memory/lmdb_vector_mapping.py,sha256=ySElBTVqab-FyJRgf0bR3vBZvRi7pPMytxAuoBH3hpE,10335
+memory/vector_database.py,sha256=997fvwRvwmIClbU7jLvhiroiCk4j719S3oOt98VZ9Ow,8059
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_memory.py,sha256=QpFx5VRpYDo32u2DhoLKaouw2sOLV6dbVB_ARKde4Gw,9273
+chatmemorydb_lmdb-1.0.dist-info/LICENSE,sha256=DFRihXonZ3qVRaTrzuXNaDI_-h2jyT2SqWqjtTDHfqI,1067
+chatmemorydb_lmdb-1.0.dist-info/METADATA,sha256=krlf2icnEhYPP1n2drluevbrh7drAsPQoDaX9zCr4Qw,7435
+chatmemorydb_lmdb-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+chatmemorydb_lmdb-1.0.dist-info/top_level.txt,sha256=IavFD0jLghlJ5z5KH154MlXRDNASmNscGqpU1nPm2CY,13
+chatmemorydb_lmdb-1.0.dist-info/RECORD,,
