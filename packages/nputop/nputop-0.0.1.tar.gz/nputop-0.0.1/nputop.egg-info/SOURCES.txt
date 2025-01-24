@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+nputop/__init__.py
+nputop/main.py
+nputop.egg-info/PKG-INFO
+nputop.egg-info/SOURCES.txt
+nputop.egg-info/dependency_links.txt
+nputop.egg-info/entry_points.txt
+nputop.egg-info/requires.txt
+nputop.egg-info/top_level.txt
