@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: markdown-obsidian-callouts
+Version: 0.1.1
+Summary: MarkDown extension: a classier syntax for admonitions
+Author-email: Lex Toumbourou <lextoumbourou@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 Oleh Prypin <oleh@pryp.in>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://github.com/lextoumbourou/markdown-obsidian-callouts
+Project-URL: Source, https://github.com/lextoumbourou/markdown-obsidian-callouts
+Keywords: markdown,extensions
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: Markdown>=3.3.3
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+
+# markdown-obsidian-callouts
+
+**[Python-Markdown](https://python-markdown.github.io/) Extension: use Obsidian Style callouts in Markdown**
+
+![Example of Obsidian Callout from the Obsidian docs page](image.png)
+
+
+This plugin inputs the Obsidian syntax and output format for [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)
+
+## Installation
+
+```shell
+pip install markdown-obsidian-callouts
+```
+
+## Development Setup
+
+### Running tests
+
+```shell
+git clone https://github.com/lextoumbourou/markdown-obsidian-callouts
+cd markdown-obsidian-callouts
+
+uv venv
+source .venv/bin/activate
+uv pip install -e ".[dev]"
+
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

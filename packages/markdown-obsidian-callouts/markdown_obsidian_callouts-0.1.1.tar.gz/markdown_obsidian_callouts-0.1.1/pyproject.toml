@@ -1,0 +1,50 @@
+[project]
+name = "markdown-obsidian-callouts"
+version = "0.1.1"
+description = "MarkDown extension: a classier syntax for admonitions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE.md" }
+authors = [
+    { name = "Lex Toumbourou", email = "lextoumbourou@gmail.com" }
+]
+keywords = ["markdown", "extensions"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+    "Markdown>=3.3.3",
+]
+
+[project.urls]
+Documentation = "https://github.com/lextoumbourou/markdown-obsidian-callouts"
+Source = "https://github.com/lextoumbourou/markdown-obsidian-callouts"
+
+[project.entry-points."markdown.extensions"]
+obsidian-callouts = "markdown_obsidian_callouts.obsidian_callouts:ObsidianCalloutsExtension"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools]
+packages = ["markdown_obsidian_callouts"]
