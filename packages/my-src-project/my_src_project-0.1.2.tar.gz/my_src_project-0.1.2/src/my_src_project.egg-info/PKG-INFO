@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: my_src_project
+Version: 0.1.2
+Summary: A simple Src Python package
+Home-page: https://github.com/Fruit-Lake/my_src_project
+Author: GuanhaoSun
+Author-email: sgh4132@163.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# My Project
+
+A simple Python package.
+
+## Installation
+
+```bash
+pip install my_src_project
