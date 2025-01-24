@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: myprojectreda
+Version: 0.0.0
+Summary: python project
+License: MIT
+Author: Reda El Fassi
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# myprojectreda
+
+python project
+
+## Installation
+
+```bash
+$ pip install myprojectreda
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`myprojectreda` was created by Reda El Fassi. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`myprojectreda` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
