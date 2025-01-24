@@ -1,0 +1,3 @@
+[console_scripts]
+start-case-reporter=dist.start_case_reporter.main:main
+
