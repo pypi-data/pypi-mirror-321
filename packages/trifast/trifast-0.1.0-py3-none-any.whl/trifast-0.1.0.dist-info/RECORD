@@ -1,0 +1,11 @@
+trifast/__init__.py,sha256=5g0mk6ScxfVMxIfDdiflab7YAi0nXa_rQAN816JEkb4,79
+trifast/autotune.py,sha256=7WPQOeLoqqKmEOSevjAo3UjoUoaVWn8_0sIJgn0Y45w,14329
+trifast/autotune_helpers.py,sha256=W_lMO0wn3arcO5K5e5okj--Q2uBlIMEDWdQYQaUCWi0,7681
+trifast/equiv.py,sha256=0qcdDVavql-s6uGYBHYKVLPQ7--IUdjKwxjTDkS23qE,3058
+trifast/torch.py,sha256=K3zHUwvoOpWtT2p5kzLFBthFZWnWXinufaNHlrjn-I4,6708
+trifast/triton.py,sha256=A8be7eZFuOh1JObhJLcqZRuu6WCYUKtPy_eYtpIW_Z0,19942
+trifast/triton_estimates.py,sha256=5WNIJqBI-gNPbw9YFoUcHv_9cN8QwNtRtadu_nl8qb0,5836
+trifast/utils.py,sha256=Wb5Glxp4LK4K3oF0e1U857RmmHmJDQI-DK8POFLc8hI,2367
+trifast-0.1.0.dist-info/METADATA,sha256=hXtRJm-YLBWrLeFp4rvP4z4gP3VOYCVnjYKp82lGbO8,1789
+trifast-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+trifast-0.1.0.dist-info/RECORD,,
