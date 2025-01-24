@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+techv.ai.egg-info/PKG-INFO
+techv.ai.egg-info/SOURCES.txt
+techv.ai.egg-info/dependency_links.txt
+techv.ai.egg-info/top_level.txt
