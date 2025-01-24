@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+102203836_topsis.egg-info/PKG-INFO
+102203836_topsis.egg-info/SOURCES.txt
+102203836_topsis.egg-info/dependency_links.txt
+102203836_topsis.egg-info/requires.txt
+102203836_topsis.egg-info/top_level.txt
