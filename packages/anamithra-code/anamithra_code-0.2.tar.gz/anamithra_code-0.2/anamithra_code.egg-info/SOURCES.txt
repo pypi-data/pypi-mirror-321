@@ -1,0 +1,8 @@
+setup.py
+anamithra_code/__init__.py
+anamithra_code/circle.py
+anamithra_code/rectangle.py
+anamithra_code.egg-info/PKG-INFO
+anamithra_code.egg-info/SOURCES.txt
+anamithra_code.egg-info/dependency_links.txt
+anamithra_code.egg-info/top_level.txt
