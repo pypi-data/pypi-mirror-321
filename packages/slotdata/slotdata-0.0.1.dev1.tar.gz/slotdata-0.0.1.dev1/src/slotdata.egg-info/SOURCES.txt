@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/slotdata/__init__.py
+src/slotdata/__main__.py
+src/slotdata.egg-info/PKG-INFO
+src/slotdata.egg-info/SOURCES.txt
+src/slotdata.egg-info/dependency_links.txt
+src/slotdata.egg-info/top_level.txt
+src/slotdata/tests/__init__.py
+src/slotdata/tests/test_1984.py
