@@ -1,0 +1,10 @@
+domain_collector/__init__.py,sha256=5bOlha7Ir_iNp5mEvznjTMNtihhKW8pC4Zhy6hhAB7k,78
+domain_collector/main.py,sha256=uQ8Nz_4AFe1Qc6Nr3tC1letp8Ho6j9yHf7OOAC1cAlo,796
+domain_collector/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domain_collector/utils/browser.py,sha256=Du-7VcyLRXW5dwX3xEcJMVqPMZE4H5SpDWJoO3MfumA,1325
+domain_collector/utils/file_operations.py,sha256=bjMoDh-a8DZkp9jV4c338lF1nDWCJaMaFL7yLGUvm0A,1109
+domain_collector-0.1.0.dist-info/METADATA,sha256=Wu4LUGsL6A9ctKNXNhk0BTnUQfc0qx5Ic9aa-4rHXKw,2459
+domain_collector-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+domain_collector-0.1.0.dist-info/entry_points.txt,sha256=Jb2hLmn9t7rv5osCdgCPwQCrjZZikTmzm35oUGj5huA,64
+domain_collector-0.1.0.dist-info/licenses/LICENSE,sha256=9hNUzfSa2D0ODm9UU6lpgBnQIHtkNXb2DAXx5iA6Vg4,1073
+domain_collector-0.1.0.dist-info/RECORD,,
