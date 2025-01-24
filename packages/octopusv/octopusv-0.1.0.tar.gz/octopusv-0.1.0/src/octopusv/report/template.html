@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OctopuSV Analysis Report</title>
+    <style>
+         :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #f8f9fa;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient( 135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .section h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        .figure-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .figure-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .figure-container img:hover {
+            transform: scale(1.02);
+        }
+        
+        .figure-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #f1f4f6;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .section {
+                padding: 1rem;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 0.5rem 0;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .metric-table {
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .metric-table td {
+            padding: 0.5rem;
+        }
+        
+        .metric-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Change logo to base64 embedded image -->
+            <img src="{{logo_path}}" alt="OctopuSV Logo" class="logo" />
+            <h1>OctopuSV Analysis Report</h1>
+            <p>Generated on: {{ generation_date }}</p>
+            <p>Sample ID: {{ sample_id }}</p>
+        </div>
+
+
+        <div class="section">
+            <h2>Input Information</h2>
+            <div class="metric-table">
+                <table>
+                    <tr>
+                        <td>Input File</td>
+                        <td>{{ input_file }}</td>
+                    </tr>
+                    <tr>
+                        <td>Output File</td>
+                        <td>{{ output_file }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>SV Type Distribution</h2>
+            <div class="stats-grid">
+                {% for type, (count, percentage) in sv_types.items() %}
+                <div class="stat-card">
+                    <div class="stat-label">{{ type }}</div>
+                    <div class="stat-value">{{ count }}</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: {{ percentage }}%"></div>
+                    </div>
+                    <div class="stat-label">{{ percentage }}%</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Size Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total SVs</div>
+                    <div class="stat-value">{{ total_svs }}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Size Range</div>
+                    <div class="stat-value">{{ min_size }} - {{ max_size }} bp</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Mean Size</div>
+                    <div class="stat-value">{{ mean_size|round(2) }} bp</div>
+                </div>
+            </div>
+
+            <h3>Size Distribution</h3>
+            <div class="stats-grid">
+                {% for range, count in size_distribution.items() %}
+                <div class="stat-card">
+                    <div class="stat-label">{{ range }}</div>
+                    <div class="stat-value">{{ count }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quality Metrics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Average QUAL</div>
+                    <div class="stat-value">{{ avg_qual|round(2) }}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Average Read Support</div>
+                    <div class="stat-value">{{ avg_read_support|round(2) }}</div>
+                </div>
+            </div>
+
+            <h3>Filter Status</h3>
+            <div class="stats-grid">
+                {% for status, (count, percentage) in filter_status.items() %}
+                <div class="stat-card">
+                    <div class="stat-label">{{ status }}</div>
+                    <div class="stat-value">{{ count }}</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: {{ percentage }}%"></div>
+                    </div>
+                    <div class="stat-label">{{ percentage }}%</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Genotype Distribution</h2>
+            <div class="stats-grid">
+                {% for genotype, (count, percentage) in genotype_dist.items() %}
+                <div class="stat-card">
+                    <div class="stat-label">{{ genotype }}</div>
+                    <div class="stat-value">{{ count }}</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: {{ percentage }}%"></div>
+                    </div>
+                    <div class="stat-label">{{ percentage }}%</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- figure -->
+        {% if sv_distribution_plot_base64 %}
+        <div class="section">
+            <h2>Structural Variant Distribution</h2>
+            <div class="figure-container">
+                <img src="data:image/png;base64,{{ sv_distribution_plot_base64 }}" alt="SV Distribution Plot" />
+                <p class="figure-caption">Distribution of structural variants by type</p>
+            </div>
+        </div>
+        {% endif %} {% if chromosome_coverage_plot_base64 %}
+        <div class="section">
+            <h2>Chromosome Coverage</h2>
+            <div class="figure-container">
+                <img src="data:image/png;base64,{{ chromosome_coverage_plot_base64 }}" alt="Chromosome Coverage Plot" />
+                <p class="figure-caption">Coverage distribution across chromosomes</p>
+            </div>
+        </div>
+        {% endif %} {% if size_distribution_plot_base64 %}
+        <div class="section">
+            <h2>Size Distribution</h2>
+            <div class="figure-container">
+                <img src="data:image/png;base64,{{ size_distribution_plot_base64 }}" alt="Size Distribution Plot" />
+                <p class="figure-caption">Size distribution of detected structural variants</p>
+            </div>
+        </div>
+        {% endif %} {% if additional_plots %}
+        <div class="section">
+            <h2>Additional Analysis</h2>
+            {% for plot in additional_plots %}
+            <div class="figure-container">
+                <img src="data:image/png;base64,{{ plot.base64_data }}" alt="{{ plot.title }}" />
+                <p class="figure-caption">{{ plot.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+</body>
+
+</html>
