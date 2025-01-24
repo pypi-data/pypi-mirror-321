@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Femtum SDK</title>
+    <link rel="stylesheet" href="static/mystyles.css" />
+    <script src="static/fontawesome.js"></script>
+    <script src="static/lunr.js"></script>
+    <script src="static/theme.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="level pt-6 mb-5 pb-2 bottom-border">
+        <div class="level-left">
+          <p class="level-item has-text-centered is-size-3 has-text-weight-medium">
+            <a class="link is-info" href="index.html">
+              Femtum SDK
+            </a>
+          </p>
+        </div>
+
+        <div class="level-right">
+          
+          <form action="search.html" class="mr-2 has-text-centered">
+            <input type="text" name="query" class="input mr-3 navbar-search-query-input" placeholder="Search">
+            <input type="submit" class="button is-primary mr-5" value="Search" />
+          </form>
+          
+
+          <p class="level-item has-text-centered is-size-5">
+            <a href="https://github.com/Femtum/femtum" class="link is-info mr-5" target="_blank">
+              
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              
+              <span>Source</span>
+            </a>
+
+            <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite" type="button">
+              <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <mask class="moon" id="moon-mask">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                  <circle cx="24" cy="10" r="6" fill="black" />
+                </mask>
+                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                <g class="sun-beams" stroke="currentColor">
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </g>
+              </svg>
+            </button>
+          </p>
+        </div>
+      </nav>
+    </div>
+
+    <div id="main-content" class="container mb-6">
+  <p class="mb-2">
+    <a style="font-size: 0.9em" href="index.html">← Back to packages</a>
+  </p>
+  <h3 class="title is-3">
+    
+    Package <code>Analysis</code>
+    
+  </h3>
+
+  <div class="block">
+    
+    <p>
+      <a href="#service-Analysis.Analysis">
+        <span class="tag" style="min-width: 6em">Service</span>
+        <code>Analysis</code> 
+      </a>
+    </p>
+    
+
+    
+      
+      <p>
+        <a href="#message-Analysis.OptionalSweepResult">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>OptionalSweepResult</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.SweepResult">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>SweepResult</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ResultsFilterRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ResultsFilterRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ListByPageResultsRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ListByPageResultsRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ResultsPage">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ResultsPage</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.FindResultByIdRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>FindResultByIdRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.OptionalSingleResults">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>OptionalSingleResults</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.WafersFilterRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>WafersFilterRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ListByPageWafersRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ListByPageWafersRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.WafersPage">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>WafersPage</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.DiesFilterRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>DiesFilterRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ListByPageDiesRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ListByPageDiesRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.DiesPage">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>DiesPage</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ReticlesFilterRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ReticlesFilterRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ListByPageReticlesRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ListByPageReticlesRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ReticlesPage">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ReticlesPage</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.CircuitsFilterRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>CircuitsFilterRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.ListByPageCircuitsRequest">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>ListByPageCircuitsRequest</code> 
+        </a>
+      </p>
+      
+    
+      
+      <p>
+        <a href="#message-Analysis.CircuitsPage">
+          <span class="tag" style="min-width: 6em">Message</span>
+          <code>CircuitsPage</code> 
+        </a>
+      </p>
+      
+    
+
+    
+  </div>
+
+  <div class="block">
+      
+  </div>
+
+  
+
+  <div class="block">
+    <h3 class="title is-3">
+      Services
+    </h3>
+
+    
+    <div>
+      
+
+<h4 class="title is-4 type-heading" id="service-Analysis.Analysis">
+  <a href="#service-Analysis.Analysis" title="Analysis.Analysis">service Analysis</a>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L8">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  <p></p>
+</div>
+
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-FindSweepResultById">
+      <a href="#service-Analysis.Analysis-FindSweepResultById">
+        rpc <code>FindSweepResultById</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.FindResultByIdRequest"><span title="Analysis.FindResultByIdRequest">Analysis.FindResultByIdRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.OptionalSweepResult"><span title="Analysis.OptionalSweepResult">Analysis.OptionalSweepResult</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-FindResultById">
+      <a href="#service-Analysis.Analysis-FindResultById">
+        rpc <code>FindResultById</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.FindResultByIdRequest"><span title="Analysis.FindResultByIdRequest">Analysis.FindResultByIdRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.OptionalSingleResults"><span title="Analysis.OptionalSingleResults">Analysis.OptionalSingleResults</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-ListByPageResults">
+      <a href="#service-Analysis.Analysis-ListByPageResults">
+        rpc <code>ListByPageResults</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.ListByPageResultsRequest"><span title="Analysis.ListByPageResultsRequest">Analysis.ListByPageResultsRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.ResultsPage"><span title="Analysis.ResultsPage">Analysis.ResultsPage</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-ListByPageWafers">
+      <a href="#service-Analysis.Analysis-ListByPageWafers">
+        rpc <code>ListByPageWafers</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.ListByPageWafersRequest"><span title="Analysis.ListByPageWafersRequest">Analysis.ListByPageWafersRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.WafersPage"><span title="Analysis.WafersPage">Analysis.WafersPage</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-ListByPageReticles">
+      <a href="#service-Analysis.Analysis-ListByPageReticles">
+        rpc <code>ListByPageReticles</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.ListByPageReticlesRequest"><span title="Analysis.ListByPageReticlesRequest">Analysis.ListByPageReticlesRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.ReticlesPage"><span title="Analysis.ReticlesPage">Analysis.ReticlesPage</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-ListByPageDies">
+      <a href="#service-Analysis.Analysis-ListByPageDies">
+        rpc <code>ListByPageDies</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.ListByPageDiesRequest"><span title="Analysis.ListByPageDiesRequest">Analysis.ListByPageDiesRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.DiesPage"><span title="Analysis.DiesPage">Analysis.DiesPage</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+
+<div class="box">
+  <div class="block">
+    <h5 class="title is-5" id="service-Analysis.Analysis-ListByPageCircuits">
+      <a href="#service-Analysis.Analysis-ListByPageCircuits">
+        rpc <code>ListByPageCircuits</code>
+      </a>
+    </h5>
+    Request: <code><a href="Analysis.html#message-Analysis.ListByPageCircuitsRequest"><span title="Analysis.ListByPageCircuitsRequest">Analysis.ListByPageCircuitsRequest</span>
+    </a></code><br>
+    Response: <code><a href="Analysis.html#message-Analysis.CircuitsPage"><span title="Analysis.CircuitsPage">Analysis.CircuitsPage</span>
+    </a></code><br>
+  </div>
+
+  
+</div>
+ 
+    </div>
+    
+  </div>
+
+  
+
+  
+
+    <h3 class="title is-3">
+      Messages
+    </h3>
+
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.OptionalSweepResult">
+  <span>
+    <a href="#message-Analysis.OptionalSweepResult" title="Analysis.OptionalSweepResult">message OptionalSweepResult</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L20">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Result
+      </td>
+      <td>
+        <code title="Analysis.SweepResult">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.SweepResult"><span title="Analysis.SweepResult">Analysis.SweepResult</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.SweepResult">
+  <span>
+    <a href="#message-Analysis.SweepResult" title="Analysis.SweepResult">message SweepResult</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L24">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        WavelengthsArray
+      </td>
+      <td>
+        <code title="double">
+          
+            repeated
+          
+          <span>double</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PowersArray
+      </td>
+      <td>
+        <code title="double">
+          
+            repeated
+          
+          <span>double</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Name
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>5</td>
+      <td>
+        WaferName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        ReticleName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>7</td>
+      <td>
+        DieName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>8</td>
+      <td>
+        CircuitName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>9</td>
+      <td>
+        Id
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ResultsFilterRequest">
+  <span>
+    <a href="#message-Analysis.ResultsFilterRequest" title="Analysis.ResultsFilterRequest">message ResultsFilterRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L38">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        ResultName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        WaferName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        ReticleName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        DieName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>5</td>
+      <td>
+        CircuitName
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ListByPageResultsRequest">
+  <span>
+    <a href="#message-Analysis.ListByPageResultsRequest" title="Analysis.ListByPageResultsRequest">message ListByPageResultsRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L48">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        PageNumber
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PageSize
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Filters
+      </td>
+      <td>
+        <code title="Analysis.ResultsFilterRequest">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.ResultsFilterRequest"><span title="Analysis.ResultsFilterRequest">Analysis.ResultsFilterRequest</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ResultsPage">
+  <span>
+    <a href="#message-Analysis.ResultsPage" title="Analysis.ResultsPage">message ResultsPage</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L54">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Items
+      </td>
+      <td>
+        <code title="Component.Result">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Result"><span title="Component.Result">Component.Result</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        Total
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Index
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Size
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.FindResultByIdRequest">
+  <span>
+    <a href="#message-Analysis.FindResultByIdRequest" title="Analysis.FindResultByIdRequest">message FindResultByIdRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L61">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Id
+      </td>
+      <td>
+        <code title="string">
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.OptionalSingleResults">
+  <span>
+    <a href="#message-Analysis.OptionalSingleResults" title="Analysis.OptionalSingleResults">message OptionalSingleResults</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L64">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Result
+      </td>
+      <td>
+        <code title="Component.Result">
+          
+            optional
+          
+          <a href="Component.html#message-Component.Result"><span title="Component.Result">Component.Result</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.WafersFilterRequest">
+  <span>
+    <a href="#message-Analysis.WafersFilterRequest" title="Analysis.WafersFilterRequest">message WafersFilterRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L68">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Name
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ListByPageWafersRequest">
+  <span>
+    <a href="#message-Analysis.ListByPageWafersRequest" title="Analysis.ListByPageWafersRequest">message ListByPageWafersRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L74">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        PageNumber
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PageSize
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Filters
+      </td>
+      <td>
+        <code title="Analysis.WafersFilterRequest">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.WafersFilterRequest"><span title="Analysis.WafersFilterRequest">Analysis.WafersFilterRequest</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.WafersPage">
+  <span>
+    <a href="#message-Analysis.WafersPage" title="Analysis.WafersPage">message WafersPage</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L80">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Items
+      </td>
+      <td>
+        <code title="Component.Wafer">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Wafer"><span title="Component.Wafer">Component.Wafer</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        Total
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Index
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Size
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.DiesFilterRequest">
+  <span>
+    <a href="#message-Analysis.DiesFilterRequest" title="Analysis.DiesFilterRequest">message DiesFilterRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L87">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Name
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ListByPageDiesRequest">
+  <span>
+    <a href="#message-Analysis.ListByPageDiesRequest" title="Analysis.ListByPageDiesRequest">message ListByPageDiesRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L92">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        PageNumber
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PageSize
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Filters
+      </td>
+      <td>
+        <code title="Analysis.DiesFilterRequest">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.DiesFilterRequest"><span title="Analysis.DiesFilterRequest">Analysis.DiesFilterRequest</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.DiesPage">
+  <span>
+    <a href="#message-Analysis.DiesPage" title="Analysis.DiesPage">message DiesPage</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L98">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Items
+      </td>
+      <td>
+        <code title="Component.Die">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Die"><span title="Component.Die">Component.Die</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        Total
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Index
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Size
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ReticlesFilterRequest">
+  <span>
+    <a href="#message-Analysis.ReticlesFilterRequest" title="Analysis.ReticlesFilterRequest">message ReticlesFilterRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L105">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Name
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ListByPageReticlesRequest">
+  <span>
+    <a href="#message-Analysis.ListByPageReticlesRequest" title="Analysis.ListByPageReticlesRequest">message ListByPageReticlesRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L110">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        PageNumber
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PageSize
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Filters
+      </td>
+      <td>
+        <code title="Analysis.ReticlesFilterRequest">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.ReticlesFilterRequest"><span title="Analysis.ReticlesFilterRequest">Analysis.ReticlesFilterRequest</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ReticlesPage">
+  <span>
+    <a href="#message-Analysis.ReticlesPage" title="Analysis.ReticlesPage">message ReticlesPage</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L116">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Items
+      </td>
+      <td>
+        <code title="Component.Reticle">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Reticle"><span title="Component.Reticle">Component.Reticle</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        Total
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Index
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Size
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.CircuitsFilterRequest">
+  <span>
+    <a href="#message-Analysis.CircuitsFilterRequest" title="Analysis.CircuitsFilterRequest">message CircuitsFilterRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L123">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Name
+      </td>
+      <td>
+        <code title="string">
+          
+            optional
+          
+          <span>string</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>6</td>
+      <td>
+        Tags
+      </td>
+      <td>
+        <code title="Component.Tag">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Tag"><span title="Component.Tag">Component.Tag</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.ListByPageCircuitsRequest">
+  <span>
+    <a href="#message-Analysis.ListByPageCircuitsRequest" title="Analysis.ListByPageCircuitsRequest">message ListByPageCircuitsRequest</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L128">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        PageNumber
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        PageSize
+      </td>
+      <td>
+        <code title="int32">
+          
+            optional
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Filters
+      </td>
+      <td>
+        <code title="Analysis.CircuitsFilterRequest">
+          
+            optional
+          
+          <a href="Analysis.html#message-Analysis.CircuitsFilterRequest"><span title="Analysis.CircuitsFilterRequest">Analysis.CircuitsFilterRequest</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+      
+      <div class="block">
+        
+
+<h4 class="title is-4 type-heading" id="message-Analysis.CircuitsPage">
+  <span>
+    <a href="#message-Analysis.CircuitsPage" title="Analysis.CircuitsPage">message CircuitsPage</a>
+  
+  </span>
+  
+    <a class="type-source-link" href="https://github.com/Femtum/femtum/blob/main/proto/analysis.proto#L134">analysis.proto</a>
+  
+</h4>
+
+<div class="block content">
+  
+</div>
+
+<table class="table is-fullwidth is-hoverable is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>1</td>
+      <td>
+        Items
+      </td>
+      <td>
+        <code title="Component.Circuit">
+          
+            repeated
+          
+          <a href="Component.html#message-Component.Circuit"><span title="Component.Circuit">Component.Circuit</span>
+    </a>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>
+        Total
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>
+        Index
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    <tr>
+      <td>4</td>
+      <td>
+        Size
+      </td>
+      <td>
+        <code title="int32">
+          
+          <span>int32</span>
+        </code>
+      </td>
+      <td class="content"></td>
+      
+    </tr>
+    
+    
+  </tbody>
+</table>
+ 
+      </div>
+      
+    
+
+  
+
+  
+
+</div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        
+          <p>© 2025 Femtum. All rights reserved.</p>
+        
+        <p>Built with <strong><a href="https://github.com/markvincze/sabledocs" target="_blank">sabledocs</a></strong>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
