@@ -1,0 +1,279 @@
+# YellowCard Business SDK
+
+A Python SDK for integrating with the YellowCard B2B API. This SDK provides a simple interface to interact with YellowCard's payment and collection services.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install yellowcard_business
+```
+
+## Getting Started
+
+To use the SDK, you'll need your API key and secret key from YellowCard. You can initialize the client as follows:
+
+```python
+from yellowcard_business import YellowCard
+
+# Initialize the client
+client = YellowCard(
+    api_key='your_api_key',
+    secret_key='your_secret_key',
+    env='sandbox'  # Use 'production' for live environment
+)
+```
+
+## Features
+
+### Payments
+
+#### Create a Payment
+```python
+from yellowcard_business.models import CreatePaymentRequest, Sender, Destination, AccountType
+
+payment_data = CreatePaymentRequest(
+    channelId="fe8f4989-3bf6-41ca-9621-ffe2bc127569",
+    reason="bills",
+    sequenceId="unique-uuid",
+    sender=Sender(name="Python SDK", email="john@example.com", country="NG", address="test", dob="1990-01-01",
+                  idNumber="1234567890", idType="test"),
+    destination=Destination(
+        accountNumber="1234567890",
+        accountType="bank",
+        accountName="Python SDK",
+        networkId="fa316206-dacc-4e87-a80a-5f539a719c56"
+    ),
+    amount=10,
+    forceAccept=False,
+    directSettlement=False
+)
+
+payment = client.create_payment(payment_data)
+```
+
+#### Get Payment Details
+```python
+payment = client.get_payment("payment_id")
+```
+
+#### Accept/Deny Payment
+```python
+# Accept a payment
+accepted_payment = client.accept_payment("payment_id")
+
+# Deny a payment
+denied_payment = client.deny_payment("payment_id")
+```
+
+### Channels and Networks
+
+#### Get Available Channels
+```python
+# Get all channels
+channels = client.get_channels()
+
+# Get channels for a specific country
+channels = client.get_channels(country="NG")
+```
+
+#### Get Networks
+```python
+# Get all networks
+networks = client.get_networks()
+
+# Get networks for a specific country and channel
+networks = client.get_networks(country="NG", channel_id="channel_id")
+```
+
+### Rates
+
+```python
+# Get all rates
+rates = client.get_rates()
+
+# Get rates for a specific currency
+rates = client.get_rates(currency="USD")
+
+# Get rates with conversion
+rates = client.get_rates(currency="USD", convert="NG")
+```
+
+### Collections
+
+```python
+# Create a collection
+collection = client.create_collection({
+    "amount": 100.00,
+    "currency": "USD"
+    # Add other required fields
+})
+
+# Get collection details
+collection = client.get_collection("collection_id")
+
+# Accept a collection
+client.accept_collection("collection_id")
+
+# Deny a collection
+client.deny_collection("collection_id")
+```
+
+## Error Handling
+
+The SDK will raise exceptions when API calls fail. It's recommended to wrap API calls in try-except blocks:
+
+```python
+try:
+    payment = client.get_payment("payment_id")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+```
+
+## Support
+
+For support and more information about the YellowCard B2B API, please contact our support team or visit our documentation.
+
+## License
+
+[Add your license information here]
+# YellowCard Business SDK
+
+A Python SDK for integrating with the YellowCard B2B API. This SDK provides a simple interface to interact with YellowCard's payment and collection services.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install yellowcard_business
+```
+
+## Getting Started
+
+To use the SDK, you'll need your API key and secret key from YellowCard. You can initialize the client as follows:
+
+```python
+from yellowcard_business import YellowCard
+
+# Initialize the client
+client = YellowCard(
+    api_key='your_api_key',
+    secret_key='your_secret_key',
+    env='sandbox'  # Use 'production' for live environment
+)
+```
+
+## Features
+
+### Payments
+
+#### Create a Payment
+```python
+from yellowcard_business.models import CreatePaymentRequest, Sender, Destination, AccountType
+
+payment_data = CreatePaymentRequest(
+    partnerId="your_partner_id",
+    currency="USD",
+    amount=100.00,
+    destination=Destination(
+        accountNumber="1234567890",
+        accountType=AccountType.BANK,
+        accountName="John Doe"
+    ),
+    sender=Sender(
+        name="Jane Doe",
+        country="NG",
+        email="jane@example.com"
+    )
+)
+
+payment = client.create_payment(payment_data)
+```
+
+#### Get Payment Details
+```python
+payment = client.get_payment("payment_id")
+```
+
+#### Accept/Deny Payment
+```python
+# Accept a payment
+accepted_payment = client.accept_payment("payment_id")
+
+# Deny a payment
+denied_payment = client.deny_payment("payment_id")
+```
+
+### Channels and Networks
+
+#### Get Available Channels
+```python
+# Get all channels
+channels = client.get_channels()
+
+# Get channels for a specific country
+channels = client.get_channels(country="NG")
+```
+
+#### Get Networks
+```python
+# Get all networks
+networks = client.get_networks()
+
+# Get networks for a specific country and channel
+networks = client.get_networks(country="NG", channel_id="channel_id")
+```
+
+### Rates
+
+```python
+# Get all rates
+rates = client.get_rates()
+
+# Get rates for a specific currency
+rates = client.get_rates(currency="USD")
+
+# Get rates with conversion
+rates = client.get_rates(currency="USD", convert="NG")
+```
+
+### Collections
+
+```python
+# Create a collection
+collection = client.create_collection({
+    "amount": 100.00,
+    "currency": "USD"
+    # Add other required fields
+})
+
+# Get collection details
+collection = client.get_collection("collection_id")
+
+# Accept a collection
+client.accept_collection("collection_id")
+
+# Deny a collection
+client.deny_collection("collection_id")
+```
+
+## Error Handling
+
+The SDK will raise exceptions when API calls fail. It's recommended to wrap API calls in try-except blocks:
+
+```python
+try:
+    payment = client.get_payment("payment_id")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+```
+
+## Support
+
+For support and more information about the YellowCard B2B API, please contact our support team or visit our documentation.
+
+## License
+
+[Add your license information here]
