@@ -1,0 +1,1 @@
+from .persiantts import PersianTTS
