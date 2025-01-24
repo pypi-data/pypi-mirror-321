@@ -1,0 +1,13 @@
+dscope/__init__.py,sha256=V7vTTTFCKwpHb5YgiIEmCZUOZMrmDg6UzD11eLSFq1o,43
+dscope/__main__.py,sha256=q4CpnJIClWuNcuz_gowbGijT7_YS5rQyemnCUzHBHZ4,981
+dscope/settings.py,sha256=wcPD_ntzXqBDsXMDBQMDZsPEkfO2jUmE-tjKoVV6Pn4,239
+dscope/utils.py,sha256=GXjd9B3Bk8uqcs8S1lB7BaunRlwNqGme9iQ2-7qm-Yo,1855
+dscope/simulator/__init__.py,sha256=B8jM56xopkSB383ifF2q6OehvrkbkEBwo7I-ji9Y2mM,99
+dscope/simulator/logical_clock.py,sha256=hH8Qo9ou0OJhitmoO9rpr0jn2e1G5USZjYing0qLmSg,2704
+dscope/simulator/vector_clock.py,sha256=qFVGin8C4IXcrsVZT27AfRuVUaMamHJ_AiNeoGZ3YGU,2839
+dscope-0.0.1.dist-info/LICENSE,sha256=9636_ywO_h2G8Sy0aIApPbvCyCjBeLAifcJJFU2V1o4,1363
+dscope-0.0.1.dist-info/METADATA,sha256=11X4lu_Xk-diBQTgSkGm4_KzTMjK-mu4wzmazhrDC9E,72
+dscope-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dscope-0.0.1.dist-info/entry_points.txt,sha256=BLsUirCBHr9m5dmhbAjCn8SrvrHH8f7SBfYILIbErhU,48
+dscope-0.0.1.dist-info/top_level.txt,sha256=iqNV9xR7yJQu93FkK70bKruSYKdgLmDHmpTz0oiw5kg,7
+dscope-0.0.1.dist-info/RECORD,,
