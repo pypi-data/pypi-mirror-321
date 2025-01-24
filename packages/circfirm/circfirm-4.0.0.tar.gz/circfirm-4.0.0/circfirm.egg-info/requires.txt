@@ -1,0 +1,17 @@
+boto3~=1.35
+click~=8.1
+click-spinner~=0.1
+packaging~=24.2
+psutil~=6.1
+pyyaml~=6.0
+requests~=2.32
+boto3-stubs[essential]~=1.35
+
+[dev]
+build~=1.2
+coverage~=7.6
+pre-commit~=4.0
+pytest~=8.3
+sphinx~=7.4
+sphinx-tabs~=3.4
+sphinx-rtd-theme~=3.0
