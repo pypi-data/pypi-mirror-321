@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: copycode
+Version: 0.2.0
+Summary: Copy all your code to your clipboard or a file with one command.
+Author: MartinVeltman
+Author-email: martin.veltman@winvent.nl
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
