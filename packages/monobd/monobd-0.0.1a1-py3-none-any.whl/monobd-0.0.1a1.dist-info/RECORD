@@ -1,0 +1,16 @@
+monobd/__init__.py,sha256=om3r2Og13112HuwswkrOPKS9Wpn-P3WeQZj0vN5eLP8,102
+monobd/__version__.py,sha256=r7MVCLAmF0kNAlupD6l7PsGuiQ5mKGFg6scK55ekD08,26
+monobd/common/__init__.py,sha256=xDGKBEZcIFVXECt-TdTA3YszugJoPJgowkM0j3J5ZtA,54
+monobd/common/model.py,sha256=0UEW1j3t_KeLT5Npp9yMVS67ijnM61fMfQ3HBLbvFQ0,780
+monobd/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monobd/models/example.py,sha256=XW6fDwl1tnduzsrhSTNQdWpGtWBAnYx58lS7toW0n80,557
+monobd/parts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monobd/parts/example.py,sha256=UqU8uJGH6qMByEDFQmXxWnSzU9LylYRJpI3HLPiJCyg,609
+monobd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monobd/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monobd/utils/bdview.py,sha256=vLLohxyx5n0NzOL8T_AniYIedONVR92pR9lKs8RULZE,7257
+monobd-0.0.1a1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+monobd-0.0.1a1.dist-info/METADATA,sha256=dDgGb3XnUiJ9qTjHcfrP4Mxw1-tV9KjM4Tl0dqAHULk,2115
+monobd-0.0.1a1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+monobd-0.0.1a1.dist-info/entry_points.txt,sha256=izlJaPqzF8qZivH90BtM7V3IJF9U9OPRzHLA9-llgck,51
+monobd-0.0.1a1.dist-info/RECORD,,
