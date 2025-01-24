@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+literati/__init__.py
+literati/_modidx.py
+literati/core.py
+literati.egg-info/PKG-INFO
+literati.egg-info/SOURCES.txt
+literati.egg-info/dependency_links.txt
+literati.egg-info/entry_points.txt
+literati.egg-info/not-zip-safe
+literati.egg-info/requires.txt
+literati.egg-info/top_level.txt
