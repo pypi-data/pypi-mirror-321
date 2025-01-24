@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: lockis
+Version: 1.0.1
+Summary: Encrypt your private data with double aes256, hmac and with ttl.
+Home-page: https://github.com/mishakorzik/lockis
+Author: MishaKorzhik_He1Zen
+Author-email: developer.mishakorzhik@gmail.com
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/mishakorzik/lockis/issues
+Project-URL: Donate, https://www.buymeacoffee.com/misakorzik
+Keywords: encryption,private,key,cipher,aes256,hmac,ttl,easy,sha256
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=3.2
+
+# Lockis
+
+Easily encrypt your sensitive data with double aes256+hmac and with ttl.
+
+```
+# import the module
+import lockis
+
+# generate secret key (128 bytes)
+key = lockis.gkey()
+
+# initilize secret key
+key = lockis.lockis(key)
+
+# encrypt message
+key.encrypt()
+
+# decrypt message with ttl 10 seconds
+key.decrypt(data, ttl=10)
+```
+
+You can also specify ttl, this will help protect against replay attacks.
+
+```python
+>>> import lockis
+>>> key = lockis.gkey()
+>>> key = lockis.lockis(key)
+>>> key.encrypt(b"hello everyone, its a test message!")
+b'EAAAAABnhh92pdLhypQcEsvwh4YUMuwzNg8RiQE2pJLnkT9Ru8tUSXvN6XGi3eeO1q-OiLD_E66pCpymr8Jw_BtrXB6Q1i9SeHe3l-NiCvGRZD2WOEmzjjH7MnyO7Haiw-hHdvs8SFZJgpssxR_tLAEvRaDcV9scC7Gfd2kwmdsok8wrRNvlpkE='
+>>> key.decrypt(b'EAAAAABnhh92pdLhypQcEsvwh4YUMuwzNg8RiQE2pJLnkT9Ru8tUSXvN6XGi3eeO1q-OiLD_E66pCpymr8Jw_BtrXB6Q1i9SeHe3l-NiCvGRZD2WOEmzjjH7MnyO7Haiw-hHdvs8SFZJgpssxR_tLAEvRaDcV9scC7Gfd2kwmdsok8wrRNvlpkE=', ttl=60)
+hello everyone, its a test message!
+```
+
+---
+
+how to show the current version of installed lockis
+
+```python
+lockis.version()
+```
