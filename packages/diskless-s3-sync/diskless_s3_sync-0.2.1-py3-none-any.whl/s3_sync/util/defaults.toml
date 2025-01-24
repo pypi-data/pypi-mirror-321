@@ -1,0 +1,20 @@
+[src]
+endpoint = ""
+path = ""
+access_key = ""
+secret_key = ""
+region = ""
+validate_tls = true
+
+[dest]
+endpoint = ""
+path = ""
+access_key = ""
+secret_key = ""
+region = ""
+validate_tls = true
+
+[transfer_config]
+chunk_size = "15MiB"
+max_threads_per_file = 5
+max_files = 1
