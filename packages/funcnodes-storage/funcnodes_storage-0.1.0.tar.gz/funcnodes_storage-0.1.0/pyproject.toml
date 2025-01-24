@@ -1,0 +1,45 @@
+[project]
+name = "funcnodes-storage"
+version = "0.1.0"
+description = "Interact with local storage like sqlite"
+authors = []
+readme = "README.md"
+license = "AGPL-3.0"
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    ]
+requires-python = ">=3.11"
+dependencies = [
+    "funcnodes",
+    "funcnodes-files (>=0.2.4,<0.3.0)",
+    "aiosqlite (>=0.20.0,<0.21.0)",
+    ]
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+funcnodes-module = "^0.1.22"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project.entry-points."funcnodes.module"]
+module = "funcnodes_storage"
+shelf = "funcnodes_storage:NODE_SHELF"
+
+
+
+
+
+
+
+
+
+[tool.poetry.plugins."funcnodes.module"]
+module = "funcnodes_storage"
+shelf = "funcnodes_storage:NODE_SHELF"
