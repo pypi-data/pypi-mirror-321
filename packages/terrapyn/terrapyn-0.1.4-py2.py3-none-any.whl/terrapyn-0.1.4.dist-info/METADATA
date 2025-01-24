@@ -1,0 +1,93 @@
+Metadata-Version: 2.3
+Name: terrapyn
+Version: 0.1.4
+Summary: Toolkit to manipulate Earth observations and models.
+License: BSD License
+         
+         Copyright 2025 Colin Hill
+         
+         Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+         
+         1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+         
+         2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+         
+         3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+         
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Author: Colin Hill
+Author-email: colinalastairhill@gmail.com
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# terrapyn
+
+![Code Coverage](https://img.shields.io/badge/Coverage-83%25-yellowgreen.svg)
+[![PyPI version](https://badge.fury.io/py/terrapyn.svg)](https://badge.fury.io/py/terrapyn)
+![versions](https://img.shields.io/pypi/pyversions/terrapyn.svg)
+[![GitHub license](https://img.shields.io/pypi/l/terrapyn)](https://github.com/colinahill/terrapyn/blob/main/LICENSE.md)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Toolkit to manipulate Earth Observation Data: Remote Sensing, Climate and Weather models. Designed to work with `Pandas`/`GeoPandas` and `Xarray` data structures, implementing `Dask` where possible.
+
+The name is pronounced the same as "terrapin", a type of [fresh water turtle](https://en.wikipedia.org/wiki/Terrapin)
+
+- Documentation: https://colinahill.github.io/terrapyn.
+- Free software: BSD-3-Clause
+
+## Setup/Installation
+
+### Python environment setup
+An environment with Python version `3.10` or later is required. If you don't have this, it can be created using [Pyenv](https://github.com/pyenv/pyenv) which should be installed first. After installing Pyenv, download and install Python `3.10` using
+
+```bash
+pyenv install 3.10
+```
+
+If you already have Python version `3.10` or later you can skip this step.
+
+### Install
+
+#### Via Pip
+The package can be installed in an existing Python environment via pip:
+
+```bash
+pip install terrapyn
+```
+
+#### From source
+Clone the repo and install the package:
+
+```bash
+git clone https://github.com/colinahill/terrapyn.git && cd terrapyn
+```
+
+This project uses [Poetry](https://python-poetry.org/) to manage dependencies. In the case where Poetry doesn't automatically find the correct Python path, you can set it with
+
+```bash
+pyenv local 3.10
+poetry env use 3.10
+```
+
+Then install the package
+```bash
+poetry install  # Creates a virtualenv and installs package into it
+poetry shell  # Opens a sub-shell in the virtualenv
+```
+
+
+
+
