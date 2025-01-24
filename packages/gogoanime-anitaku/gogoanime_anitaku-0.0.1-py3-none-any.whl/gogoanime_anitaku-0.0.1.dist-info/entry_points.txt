@@ -1,0 +1,2 @@
+[console_scripts]
+gogoanime = gogoanime.__main__:main
