@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+test/test.py
+yacrs/__init__.py
+yacrs/config.py
+yacrs/version.py
+yacrs.egg-info/PKG-INFO
+yacrs.egg-info/SOURCES.txt
+yacrs.egg-info/dependency_links.txt
+yacrs.egg-info/top_level.txt
