@@ -1,0 +1,12 @@
+fastapi_rf-0.1.0a1.dist-info/METADATA,sha256=EQBTNU2w1dVGv7C10SuFQutsde5ZuOH-yfQevg4vRdE,1345
+fastapi_rf-0.1.0a1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+fastapi_rf-0.1.0a1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+frf/__init__.py,sha256=5xXXc-8OvLK6hygMx05HxmemunanRO1N2h9KktT8P2A,80
+frf/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/endpoints/base_endpoint.py,sha256=wwni4AnbXk1SAuj5hH0mEZ95tY2pADjpsfcOvcWgonQ,1633
+frf/pagination/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/security/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mock_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mock_project/main.py,sha256=KcKsqvibOaLYD8rSPcVCCWNv1KqDjsreIR3yMX2IJjc,654
+fastapi_rf-0.1.0a1.dist-info/RECORD,,
