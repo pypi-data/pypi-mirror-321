@@ -1,0 +1,7 @@
+# Format: key=value
+# One tag per line
+# Lines starting with # are comments
+
+amenity=restaurant
+building=yes
+shop=supermarket
