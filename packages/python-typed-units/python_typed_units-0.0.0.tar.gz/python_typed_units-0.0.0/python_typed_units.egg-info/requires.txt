@@ -1,0 +1,14 @@
+units==0.7
+
+[dev]
+isort
+black
+flake8
+flake8-pyproject
+mypy
+pytest
+pytest-cov
+bandit
+build
+pre-commit
+twine

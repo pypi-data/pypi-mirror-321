@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: python_typed_units
+Version: 0.0.0
+Summary: The `typed-unit` library is a wrapper for the `python-units` that implements a type hierarchy of SI types
+Author-email: "Morten B. Rasmussen" <netrom1337@gmail.com>
+Requires-Python: >=3.10.14
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: units==0.7
+Provides-Extra: dev
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-pyproject; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: bandit; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+The `typed-unit` library is a wrapper for the `python-units` that implements a type hierarchy of SI types

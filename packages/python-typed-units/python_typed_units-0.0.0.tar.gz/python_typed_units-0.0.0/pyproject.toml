@@ -1,0 +1,72 @@
+
+[build-system]
+requires = [
+    "setuptools>=61.2",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_typed_units"
+description = "The `typed-unit` library is a wrapper for the `python-units` that implements a type hierarchy of SI types"
+authors = [{name = "Morten B. Rasmussen", email = "netrom1337@gmail.com"}]
+# license = {text = "MIT"}
+requires-python = ">=3.10.14"
+dependencies = [
+    "units==0.7"
+]
+dynamic = ["version"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown; charset=UTF-8"
+
+[project.optional-dependencies]
+dev = [
+    "isort",
+    "black",
+    "flake8",
+    "flake8-pyproject",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "bandit",
+    "build",
+    "pre-commit",
+    "twine"
+]
+
+[tool.setuptools]
+packages = ["typed_units", "types_units"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+exclude = [
+    '.venv/',
+]
+
+[[tool.mypy.overrides]]
+module = "units.*"
+ignore_missing_imports = true
+
+[tool.pyright]
+extraPaths = ["./types_units"]
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py", "tests.py", "**/tests.py"]
+
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    "__pycache__",
+    ".venv/",
+]
+extend-ignore = ["E203", "E704", "E302", "E301"]
+
+[tool.bandit]
+exclude_dirs = [".venv/"]
