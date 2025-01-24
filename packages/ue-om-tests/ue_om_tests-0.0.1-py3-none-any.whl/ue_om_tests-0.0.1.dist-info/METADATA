@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: ue-om-tests
+Version: 0.0.1
+Summary: Small package to extend metadata functionality
+Author-email: UE <bigdata-gcp@rcs.it>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Introduction
+
+!!! In the tools folders is needed to add a config.ini file and the public/private keys of the user in order to check passbolt !!!
+
+This repository contains a Python package that can be built and uploaded to PyPI. Follow the steps below to build the package, upload it to PyPI.
+    
+Prerequisites
+
+Before proceeding, ensure the following:
+
+    Python 3.8 or higher is installed.
+    pip is installed and up-to-date.
+    Required tools are installed:
+
+- pip install build twine
+
+A PyPI account is set up, and an API token has been generated. Add this token to your environment variables, also it can be retrieved from passbolt but the example is using a export:
+
+    export PYPI_API_KEY=<your-pypi-api-key>
+
+
+---- Steps to Build and Upload ----
+
+- Build the Package -
+
+Run the following command in the root directory (where setup.py or pyproject.toml is located):
+
+python -m build
+
+This generates the package files in the dist/ directory.
+
+- Upload the Package to PyPI -
+
+To upload the package, run:
+
+python -m twine upload dist/* -u __token__ -p "$PYPI_API_KEY"
+
+    Ensure the PYPI_API_KEY environment variable is correctly set.
+
+- Automated Process -
+
+Use the provided build_or_upload_env.sh script for automation:
+
+./tools/build_or_upload_env.sh
+
+    The script allows you to:
+        Build the package only.
+        Upload the package to PyPI.
+        Build and upload the package.
+
+Test Your Package
+
+Once uploaded, verify it by installing directly from PyPI:
+
+    pip install <your-package-name>
+
+Shell Script Usage
+
+The build_or_upload_env.sh script is located in the repository. Here’s how it works:
+
+    Make the script executable:
+
+chmod +x ./tools/build_or_upload_env.sh
+
+Run the script:
+
+    ./tools/build_or_upload_env.sh
+
+    Options:
+        Build the package only.
+        Upload the package to PyPI only.
+        Build and upload the package.
