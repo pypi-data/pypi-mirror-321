@@ -1,0 +1,16 @@
+dinamis_sdk/__init__.py,sha256=3mO2jCQZHpYUpXZwwq0q-rm-Ydm3TgmUpO_9ehX4ZmY,324
+dinamis_sdk/cli.py,sha256=Ot-yy6qQFQ2YHWuR95z6hyGCl6zksyZa_rqTIE5I8K8,2161
+dinamis_sdk/http.py,sha256=KbliJEpoRMuW9-km7_I6qXFzOaNCbzogfwuXL_mYTQc,3330
+dinamis_sdk/model.py,sha256=BjQTsRAz8fZY8Ld4GOZP893D1_eo0NslztDUi-7QIDg,3531
+dinamis_sdk/oauth2.py,sha256=8Qn5smGvulKRgxdMeTP5HkP_bG1F5qYoah6lx9UgrMc,6757
+dinamis_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dinamis_sdk/settings.py,sha256=5ZbkCo-FTY7qXBzbaWupHwxnivIl6uJYDZn-nMuAqqE,1504
+dinamis_sdk/signing.py,sha256=pQGHHXEOgVkGkP2_XX4SaVffvZRQQk98S4mUPmUb_pI,16767
+dinamis_sdk/upload.py,sha256=WLqwFx_wQTXv95cUfHyRh2xZKgrNIk6UEiwi3vx3a8c,685
+dinamis_sdk/utils.py,sha256=bUu-PLfDJ-_9LZZELE2_cNYxqi22Ex-zfk0K0Ll2nZI,833
+dinamis_sdk-0.4.1.dist-info/LICENSE,sha256=ruYWWudBNkZxDXHxlgEtt39vtvx3lgNgYqiFp3S2h1o,11340
+dinamis_sdk-0.4.1.dist-info/METADATA,sha256=SogOLG7BFop90MX1Wrbos5MVupZxNlhnXXULTXJQnas,14551
+dinamis_sdk-0.4.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dinamis_sdk-0.4.1.dist-info/entry_points.txt,sha256=JmQ_lywxPSHbK8eMed_l_afC0kK14dserNe518VKAvI,52
+dinamis_sdk-0.4.1.dist-info/top_level.txt,sha256=iGrNE3_HrnanT11w3wBk4VL7TlL4YW25eH_GoH_jEmU,12
+dinamis_sdk-0.4.1.dist-info/RECORD,,
