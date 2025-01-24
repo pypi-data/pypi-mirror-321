@@ -1,0 +1,43 @@
+[project]
+name = "rustmaps"
+version = "0.1.0"
+description = "Rustmaps Generator: A library and CLI tool for generating maps."
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "mainloot", email = "github@mainloot.com" }
+]
+requires-python = ">=3.7"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+urls = { "Source" = "https://github.com/maintc/rustmaps-generator" }
+dependencies = [
+    "click>=8.1.8",
+    "platformdirs>=4.3.6",
+    "pydantic>=2.10.5",
+    "Requests>=2.32.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "black>=24.10.0"
+]
+
+[project.scripts]
+rustmaps = "rustmaps.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rustmaps*"]
+
+[tool.setuptools.package-data]
+rustmaps = ["py.typed"]
