@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: taskcask
+Version: 0.0.1
+Summary: A process launcher tool
+Project-URL: Homepage, https://github.com/ignytis/taskcask
+Author-email: Ignytis <155588001+ignytis@users.noreply.github.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: pydantic<3.0.0,>=2.10.5
+Provides-Extra: cli
+Requires-Dist: click<9.0.0,>=8.1.8; extra == 'cli'
+Provides-Extra: gui
+Requires-Dist: pyqt5; extra == 'gui'
