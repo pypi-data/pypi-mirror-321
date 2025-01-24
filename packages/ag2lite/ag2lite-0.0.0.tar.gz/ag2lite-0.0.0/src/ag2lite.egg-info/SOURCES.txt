@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/ag2lite.egg-info/PKG-INFO
+src/ag2lite.egg-info/SOURCES.txt
+src/ag2lite.egg-info/dependency_links.txt
+src/ag2lite.egg-info/top_level.txt
