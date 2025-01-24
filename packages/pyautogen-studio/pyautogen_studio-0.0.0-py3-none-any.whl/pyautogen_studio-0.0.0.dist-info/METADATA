@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: pyautogen-studio
+Version: 0.0.0
+Author: codeweaverxyz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
