@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: npfl139
+Version: 2425.0.0a0
+Summary: Modules used by the Deep Reinforcement Learning Course NPFL139
+Author-email: Milan Straka <straka@ufal.mff.cuni.cz>
+License: MPL-2.0
+Project-URL: Homepage, https://ufal.mff.cuni.cz/courses/npfl139
+Project-URL: Repository, https://github.com/ufal/npfl139
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: npfl139/LICENSE
+
+# The `npfl139` Package: Modules Used in the Deep Reinforcement Learning Course (NPFL139)
+
+This package contains the modules used in the
+[Deep Reinforcement Learning course (NPFL139)](http://ufal.mff.cuni.cz/courses/npfl139),
+available under the Mozilla Public License 2.0.

@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+npfl139/LICENSE
+npfl139/README.md
+npfl139.egg-info/PKG-INFO
+npfl139.egg-info/SOURCES.txt
+npfl139.egg-info/dependency_links.txt
+npfl139.egg-info/top_level.txt
