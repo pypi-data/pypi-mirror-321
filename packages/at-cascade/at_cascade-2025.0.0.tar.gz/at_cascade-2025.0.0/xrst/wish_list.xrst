@@ -1,0 +1,85 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-25 Bradley M. Bell
+# ----------------------------------------------------------------------------
+{xrst_begin wish_list}
+{xrst_spell
+  attaches
+  avgint
+  cov
+  meas
+}
+
+Wish List for at_cascade
+########################
+
+avgint Table
+************
+Document the state of the ``dismod_at.db`` avgint table at the end of
+:ref:`fit_one_job-name` .
+(Note that the avgint table in ``ancestor.db`` and ``this.db``
+are different; see :ref:`wish_list@csv.fit@avgint Table` below.)
+
+csv.fit
+*******
+
+avgint Table
+============
+Document the state of the avgint table in
+``ancestor.db`` and ``this.db`` at the end of :ref:`csv.pre_one_job-name` .
+These are the dismod_at databases used by :ref:`csv.predict-name`
+to predict using the prior and posterior distributions respectively.
+
+Measurement Value Covariate
+===========================
+Currently :ref:`csv.fit-name` automatically creates an
+absolute covariate called ``one`` .
+If we also automatically created a covariate
+called ``meas_value`` , we could use it with a meas_value
+covariate multiplier to expand or contract measurements values.
+
+Prediction Grid
+===============
+It would be good to specify a prediction grid that may be different from
+the covariate age-time grid.
+
+.. _rate_eff_cov: https://dismod-at.readthedocs.io/latest/rate_eff_cov_table.html
+
+covariate.csv
+=============
+The `rate_eff_cov`_ table is a dismod_at quick fix that attaches
+covariate functions to locations,
+instead of covariate values to data points.
+This may use a lot of memory and take a while to set up; i.e.,
+slow down each run of dismod_at.
+On the other hand, there is only one copy of this table
+for each cascade (in the :ref:`glossary@root_database` )
+so it should not use a lot of disk space.
+One partial solution would be to not put all the nodes in the
+:ref:`csv.simulate@Input Files@covariate.csv` file.
+We could use the closest ancestor's covariate and omega values
+when a node is not in covariate.csv.
+
+Duration
+********
+Calculate average duration for incident cases given future remission and
+mortality trends. See the equation for duration as a function of age and
+time from his DisMod III book, section 8.2  in
+:ref:`bib@Flaxman et al. (2015)`. And the definition of duration given with
+equations in :ref:`bib@Barendregt et al. (2003)`.
+
+max_fit
+*******
+Add an option to ignore the :ref:`csv.fit@Input Files@option_fit.csv@max_fit`
+option when fitting a leaf node; i.e., a node that has no children. This is
+actually for leaf jobs not leaf nodes in the special case where the splitting
+covariate is split at a leaf node.
+On the other hand, perhaps the node tree should be extended so that
+leaf nodes with lots of data are split into sub-nodes.
+
+ode_step_size
+*************
+Want to be able to use a bigger ode step size when there is a shock
+or other rapid change for a particular age or time.
+
+{xrst_end wish_list}

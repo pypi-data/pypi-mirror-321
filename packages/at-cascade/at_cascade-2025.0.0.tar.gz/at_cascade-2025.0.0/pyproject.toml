@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-25 Bradley M. Bell
+# ----------------------------------------------------------------------------
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+#
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+# ----------------------------------------------------------------------------
+[project]
+name              = 'at_cascade'
+version           = '2025.0.0'
+description       = 'Cascading dismod_at from parent to child regions'
+license           = { text = 'AGPL-3.0-or-later' }
+requires-python   = '>=3.8'
+authors = [
+  {name  = 'Bradley M. Bell', email = 'bradbell@seanet.com'},
+]
+#
+# see https://pypi.org/classifiers/
+classifiers       = [
+   'Programming Language :: Python :: 3',
+   'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+   'Operating System :: OS Independent',
+]
+dependencies = [
+  'dismod_at',
+  'numpy',
+  'scipy',
+]
+
+[tool.setuptools]
+packages = [ 'at_cascade' ]
+
+[project.urls]
+'Homepage'    = 'https://at-cascade.readthedocs.io'
+'Bug Tracker' = 'https://github.com/bradbell/at_cascade/issues'

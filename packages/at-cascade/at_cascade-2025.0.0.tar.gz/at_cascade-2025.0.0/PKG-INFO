@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: at_cascade
+Version: 2025.0.0
+Summary: Cascading dismod_at from parent to child regions
+Author-email: "Bradley M. Bell" <bradbell@seanet.com>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://at-cascade.readthedocs.io
+Project-URL: Bug Tracker, https://github.com/bradbell/at_cascade/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: dismod_at
+Requires-Dist: numpy
+Requires-Dist: scipy

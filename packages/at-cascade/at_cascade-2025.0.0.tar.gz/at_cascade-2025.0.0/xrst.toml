@@ -1,0 +1,109 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-22 Bradley M. Bell
+# ----------------------------------------------------------------------------
+#
+[project_name]
+data = 'at_cascade'
+
+[directory]
+project_directory = '.'
+html_directory    = 'build/html'
+rst_directory     = 'build/rst'
+tex_directory     = 'build/tex'
+
+[root_file]
+default = 'at_cascade.xrst'
+
+[include_all]
+rst_epilog = ''
+rst_prolog = '''
+.. |space| unicode:: 0xA0
+.. |tab| replace:: |space| |space| |space| |space|
+.. |newline| raw:: html
+
+   <br/>
+
+'''
+latex_macro = [
+   '\newcommand{\B}[1]{ {\bf #1} }' ,
+   '\newcommand{\R}[1]{ {\rm #1} }' ,
+]
+
+[heading]
+#   level         0,     1,     2,     3,     4,
+character = [   '#',   '*',   '=',   '-',   '.',  ]
+overline  = [ false, false, false, false, false,  ]
+
+# BEGIN_SORT_THIS_LINE_PLUS_4
+[project_dictionary]
+data = [
+   '''
+      cpu
+      csv
+      db
+      dict
+      dir
+      dismod
+      gaussian
+      int
+      max
+      mulcov
+      multiplier
+      sim
+      str
+      th
+   '''
+]
+# END_SORT_THIS_LINE_MINUS_3
+
+[not_in_index]
+data = [
+   # Exclude articles and prepositions
+   '''
+      a
+      and
+      by
+      for
+      of
+      the
+      that
+      this
+      to
+      using
+   ''',
+   # Exclude rate_true(rate, a, t, n, c)
+   '''
+      rate_true\(rate,
+      a,
+      t,
+      n,
+      c\)
+   ''',
+   # Exclude words that are used in many sections of the documentation.
+   '''
+      code
+      covariate
+      data
+      fit
+      n
+      n_i
+      node
+      nodes
+      parent
+      prior
+      python
+      random
+      rate
+      simulated
+      smoothing
+      source
+      syntax
+      table
+      value
+      y_i
+   ''',
+   #
+   # Exclude the mm-dd headings used by the xrst release notes.
+   '[0-9][0-9]-[0-9][0-9]',
+]

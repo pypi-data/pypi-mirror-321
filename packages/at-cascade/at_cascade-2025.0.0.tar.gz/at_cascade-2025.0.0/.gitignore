@@ -1,0 +1,50 @@
+# Directory where gh-pages branch stores documentation.
+# This entry is (is not) commented out on the gh-pages (master) branch.
+# All the other entries in this file are the same on both branches.
+/doc/
+#
+# ------------------
+# files at top level
+# ------------------
+#
+# created by bin/git_commit.sh
+/git_commit.log
+# log of run_xrst.sh
+#
+/xrst.log
+#
+# bin/run_test.sh temporary file
+/run_test.tmp
+# ------------------------
+# directories at top level
+# ------------------------
+# used to build documentation
+/build/
+/html/
+/rst/
+#
+# used to store ihme databases
+/ihme_db/
+#
+# used to cache local changes (instead of using git cache)
+/new/
+/new.*/
+#
+# python compiled files
+/at_cascade/__pycache__
+/at_cascade/csv/__pycache__
+/at_cascade/ihme/__pycache__
+#
+# used to build distribution
+/at_cascade.egg-info/
+/dist/
+# --------------------------------
+# file extensions in any directory
+# --------------------------------
+# vim swap files
+*.swp
+# ----------------------
+# files in any directory
+# ----------------------
+temp
+temp.*

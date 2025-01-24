@@ -1,0 +1,72 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: University of Washington <https://www.washington.edu>
+# SPDX-FileContributor: 2021-25 Bradley M. Bell
+# ----------------------------------------------------------------------------
+{xrst_begin at_cascade}
+{xrst_spell
+   pypi
+   url
+   gz
+}
+
+Cascading Dismod_at Analysis From Parent To Child Regions
+#########################################################
+
+Version
+*******
+at_cascade-2025.0.0
+
+Git Repository
+**************
+`<https://github.com/bradbell/at_cascade>`_
+
+Versions
+********
+
+.. list-table::
+   :widths: auto
+
+   * - This version
+     - at_cascade-2025.0.0
+   * - Documentation for latest version
+     - `latest <https://at_cascade.readthedocs.io/latest>`_
+   * - Documentation for most recent stable version
+     - `stable-2025 <https://at_cascade.readthedocs.io/stable-2025>`_
+   * - Most recent release of this stable version
+     - release-2025_
+
+.. _release-2025: https://codeload.github.com/bradbell/
+   at_cascade/tar.gz/refs/tags/2025.0.0
+
+
+Install
+*******
+This package is currently under heavy development and
+it is suggest that you use the testing repository version.
+Search for ``at_cascade`` on `test.pypi <https://test.pypi.org>`_
+to determine the date corresponding to this version.
+The commands below install the at_cascade dependencies and then replace
+at_cascade using its most recent test version::
+
+   pip install at_cascade
+   pip uninstall -y at_cascade
+   pip install --index-url https://test.pypi.org/simple/ at_cascade
+
+On some systems you may need to replace ``pip`` by ``pip3`` .
+
+
+Children
+********
+{xrst_toc_table
+   xrst/glossary.xrst
+   xrst/all_node_db.xrst
+   example/example.xrst
+   at_cascade/__init__.py
+   at_cascade/csv/__init__.py
+   xrst/wish_list.xrst
+   xrst/release_notes.xrst
+   xrst/math.xrst
+   xrst/bib.xrst
+}
+
+{xrst_end at_cascade}
