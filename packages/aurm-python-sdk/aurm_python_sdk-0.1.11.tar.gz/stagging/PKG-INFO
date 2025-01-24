@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: aurm-python-sdk
+Version: 0.1.11
+Summary: Hello, World!  This is associated with the fleetwood records dataset for Machine Learning
+Author: Stevie Green
+Author-email: stevie.green@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Introduction
+
+Hello, World!
