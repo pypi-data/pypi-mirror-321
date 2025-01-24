@@ -1,0 +1,2 @@
+[console_scripts]
+blnk = blnk_chat.main:run
