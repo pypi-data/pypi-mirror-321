@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+sts_zap/sts_zap.py
+sts_zap.egg-info/PKG-INFO
+sts_zap.egg-info/SOURCES.txt
+sts_zap.egg-info/dependency_links.txt
+sts_zap.egg-info/not-zip-safe
+sts_zap.egg-info/top_level.txt
