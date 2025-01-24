@@ -1,0 +1,2 @@
+[console_scripts]
+hmmer-tables = hmmer_tables.cli:app
