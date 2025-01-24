@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: pepperpy-poetry
+Version: 0.1.0
+Summary: A Poetry plugin for shared configuration management
+Author: Felipe Pimentel
+Author-email: fpimentel88@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: poetry (>=1.7.1,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/felipepimentel/pepperpy-poetry
+Description-Content-Type: text/markdown
+
+# pepperpy-poetry
+
+A Poetry plugin for shared configuration management across multiple projects in the pepperpy ecosystem.
+
+## Installation
+
+```bash
+poetry self add pepperpy-poetry
+```
+
+## Usage
+
+1. Create a `shared-config.toml` file in your project root with your shared configurations:
+
+```toml
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = [
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".git",
+    "__pycache__"
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+```
+
+2. The plugin will automatically merge these configurations into your project's `pyproject.toml` when Poetry runs.
+
+## Features
+
+- Automatically merges shared configurations from `shared-config.toml` into your project's `pyproject.toml`
+- Supports any TOML configuration sections
+- Provides clear console feedback during the merge process
+- Gracefully handles missing configuration files and errors
+
+## Development
+
+To work on the plugin locally:
+
+```bash
+git clone https://github.com/felipepimentel/pepperpy-poetry
+cd pepperpy-poetry
+poetry install
+poetry self add .
+```
+
