@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; Polemarch 4.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=3304f9e4"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration manual" href="config.html" />
+    <link rel="prev" title="Welcome to Polemarch’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #343131" >
+<a href="/#" class="icon icon-home"> Polemarch
+</a>
+  <div class="version">
+    4.0.0
+  </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-from-pypi">Install from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-systemd-for-polemarch">Configure systemd for Polemarch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-from-docker">Install from docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#run-image">Run image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main-section">Main section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database-section">Database section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cache">Cache</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rpc-section">RPC section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#web-section">Web section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-settings">Other settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#backup">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-from-any-old-version">Update from any old version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#migrate">Migrate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-superuser">Create superuser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-password">Change password</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Configuration manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">How to participate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cla.html">VST Consulting contributor agreement</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #343131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Polemarch</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<section id="install-from-pypi">
+<h2>Install from PyPI<a class="headerlink" href="#install-from-pypi" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The recommended Python versions are 3.10 or 3.11.
+Some distributions may require additional steps to install Python 3.10/3.11.
+For example, on Ubuntu you can use the deadsnakes PPA:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>software-properties-common
+sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:deadsnakes/ppa
+sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3.11<span class="w"> </span>python3.11-dev<span class="w"> </span>python3.11-venv
+</pre></div>
+</div>
+<p>On Red Hat/CentOS/Alma/Rocky Linux, you can install Python 3.11 from AppStream or via an additional repo (EPEL / IUS).
+For example (RHEL 8+ / CentOS 8+ / Alma 8+ / Rocky 8+):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>module<span class="w"> </span>reset<span class="w"> </span>python38
+sudo<span class="w"> </span>dnf<span class="w"> </span>module<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>python311<span class="w"> </span><span class="o">(</span>or<span class="w"> </span>python3.12<span class="w"> </span><span class="k">if</span><span class="w"> </span>available<span class="o">)</span>
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3.11<span class="w"> </span>python3.11-devel
+<span class="c1"># or use the &quot;IUS&quot; repo if needed</span>
+</pre></div>
+</div>
+</div>
+<ol class="arabic">
+<li><p>Install dependencies:</p>
+<p>Required packages on Ubuntu 22.04+ (example for Python 3.10/3.11):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>python3-virtualenv<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>python3.10<span class="w"> </span>python3.10-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>gcc<span class="w"> </span>libffi-dev<span class="w"> </span>libkrb5-dev<span class="w"> </span>libssl-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libyaml-dev<span class="w"> </span>libsasl2-dev<span class="w"> </span>libldap2-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>default-libmysqlclient-dev<span class="w"> </span>sshpass<span class="w"> </span>git
+</pre></div>
+</div>
+<p>If you’re installing Python 3.11 instead of 3.10, adjust the packages accordingly:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example</span>
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3.11<span class="w"> </span>python3.11-dev<span class="w"> </span>...
+</pre></div>
+</div>
+<p>Required packages on Red Hat/Alma/Rocky 8+ (using Python 3.10/3.11 from module streams or a third-party repo):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>epel-release
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3.11<span class="w"> </span>python3.11-devel<span class="w"> </span>python3-virtualenv<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>gcc<span class="w"> </span>openssl-devel<span class="w"> </span>libyaml<span class="w"> </span>krb5-devel<span class="w"> </span>krb5-libs<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>openldap-devel<span class="w"> </span>mysql-devel<span class="w"> </span>git<span class="w"> </span>sshpass
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your OS is not listed, adapt the package list as needed.
+Polemarch itself does not require system-wide pinned package versions.</p>
+</div>
+</li>
+<li><p>Install MySQL server (if you plan to use MySQL):</p>
+<p>For Debian/Ubuntu:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>default-mysql-server
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use MySQL version older than 8.0.</p>
+</div>
+</li>
+<li><p>Create a database in MySQL with these commands (run on the DB host):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>-H<span class="w"> </span>mysql<span class="w"> </span><span class="s">&lt;&lt;QUERY_INPUT</span>
+<span class="s"># uncomment this line on old MariaDB/MySQL versions</span>
+<span class="s"># SET @@global.innodb_large_prefix = 1;</span>
+<span class="s">create user db_user identified by &#39;db_password&#39;;</span>
+<span class="s">create database db_name default CHARACTER set utf8 default COLLATE utf8_general_ci;</span>
+<span class="s">grant all on db_name.* to &#39;db_user&#39;;</span>
+<span class="s">QUERY_INPUT</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Adjust if connecting to a remote MySQL server.</p>
+</div>
+</li>
+<li><p>(Optional) If you use MySQL with a non-UTC timezone, import time zone info:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql_tzinfo_to_sql<span class="w"> </span>/usr/share/zoneinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-H<span class="w"> </span>mysql<span class="w"> </span>mysql
+</pre></div>
+</div>
+</li>
+<li><p>Create a dedicated system user for Polemarch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>useradd<span class="w"> </span>--user-group<span class="w"> </span>--create-home<span class="w"> </span>--shell<span class="w"> </span>/bin/bash<span class="w"> </span>polemarch
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can add this user to sudoers for easier administration.</p>
+</div>
+</li>
+<li><p>Create a virtualenv and activate it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adapt the python path to your installed version:</span>
+<span class="c1"># For example, if you installed Python 3.11 in /usr/bin/python3.11:</span>
+virtualenv<span class="w"> </span>--python<span class="o">=</span>python3.11<span class="w"> </span>/opt/polemarch
+
+<span class="c1"># Create separated venv for ansible.</span>
+virtualenv<span class="w"> </span>--python<span class="o">=</span>python3.11<span class="w"> </span>/opt/polemarch/ansible
+
+<span class="c1"># Make required directories</span>
+sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/polemarch
+sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>polemarch:polemarch<span class="w"> </span>/opt/polemarch<span class="w"> </span>/etc/polemarch
+sudo<span class="w"> </span>-u<span class="w"> </span>polemarch<span class="w"> </span>-i
+<span class="nb">source</span><span class="w"> </span>/opt/polemarch/bin/activate
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have multiple Python versions, use 3.10 or newer.
+Adjust paths if you installed Python differently.</p>
+</div>
+</li>
+<li><p>Install Polemarch:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here is example for mysql support.</span>
+<span class="c1"># Use extra &#39;postgresql&#39; instead of &#39;mysql&#39; when install it on PG.</span>
+pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>polemarch<span class="o">[</span>mysql<span class="o">]</span>
+
+<span class="c1"># Install polemarch-ansible (here is example for ansible 2.5-2.9 support.</span>
+/opt/polemarch/ansible/bin/pip<span class="w"> </span>install<span class="w"> </span><span class="s1">&#39;polemarch-ansible~=2.2.0&#39;</span>
+<span class="c1"># or install latest ansible-core</span>
+/opt/polemarch/ansible/bin/pip<span class="w"> </span>install<span class="w"> </span><span class="s1">&#39;polemarch-ansible~=3.0.1&#39;</span><span class="w"> </span><span class="s1">&#39;ansible-core~=2.18.1&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Edit the config file:</p>
+<ol class="arabic">
+<li><p>Create directories for logs and pids:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/opt/polemarch/logs<span class="w"> </span>/opt/polemarch/pid
+</pre></div>
+</div>
+</li>
+<li><p>Open <cite>/etc/polemarch/settings.ini</cite> (create it if it does not exist). Polemarch reads configs from <cite>/etc/polemarch/</cite>.</p></li>
+<li><p>Setup path for ansible module. You can wrap it to any script and realize any additional functionality (resource isolation, for example).</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[main]</span>
+<span class="na">executor_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/opt/polemarch/ansible/bin/python -m pm_ansible</span>
+</pre></div>
+</div>
+</li>
+<li><p>MySQL settings example in <cite>settings.ini</cite>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[database]</span>
+<span class="na">engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">django.db.backends.mysql</span>
+<span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">db_name</span>
+<span class="na">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">db_user</span>
+<span class="na">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">db_password</span>
+
+<span class="k">[database.options]</span>
+<span class="na">connect_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">20</span>
+<span class="na">init_command = SET sql_mode</span><span class="o">=</span><span class="s">&#39;STRICT_TRANS_TABLES&#39;</span><span class="na">, default_storage_engine=INNODB, NAMES &#39;utf8&#39;, CHARACTER SET &#39;utf8&#39;, SESSION collation_connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;utf8_unicode_ci&#39;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Add <code class="docutils literal notranslate"><span class="pre">host</span></code> and <code class="docutils literal notranslate"><span class="pre">port</span></code> if the DB is remote.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you use MariaDB, add:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[databases]</span>
+<span class="na">databases_without_cte_support</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">default</span>
+</pre></div>
+</div>
+<p>Because MariaDB’s recursive CTE support differs from MySQL’s.</p>
+</div>
+</li>
+<li><p>(Optional) For better performance, configure Redis for caching and locks:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[cache]</span>
+<span class="na">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">django.core.cache.backends.redis.RedisCache</span>
+<span class="na">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">redis://127.0.0.1:6379/1</span>
+
+<span class="k">[locks]</span>
+<span class="na">backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">django.core.cache.backends.redis.RedisCache</span>
+<span class="na">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">redis://127.0.0.1:6379/2</span>
+</pre></div>
+</div>
+</li>
+<li><p>(Optional) For Celery/RPC, Redis or RabbitMQ is recommended:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[rpc]</span>
+<span class="na">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">redis://127.0.0.1:6379/3</span>
+<span class="na">heartbeat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">5</span>
+<span class="na">concurrency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8</span>
+<span class="na">enable_worker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For large networks, RabbitMQ may be preferable.</p>
+</div>
+</li>
+<li><p>Configure uvicorn (HTTPS optional). For an HTTPS setup, provide keyfile/certfile:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[uvicorn]</span>
+<span class="c1"># Uncomment this for HTTPS support or use any proxy</span>
+<span class="c1"># ssl_keyfile = /etc/polemarch/polemarch.key</span>
+<span class="c1"># ssl_certfile = /etc/polemarch/polemarch.crt</span>
+<span class="c1"># Setup here additional settings, like workers</span>
+<span class="c1"># workers = 4</span>
+
+<span class="k">[web]</span>
+<span class="c1"># default is</span>
+<span class="na">addrport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0.0.0.0:8080</span>
+</pre></div>
+</div>
+</li>
+<li><p>If the server is not behind HTTPS or any TLS-terminating proxy, you need to allow insecure OAuth login:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[oauth]</span>
+<span class="na">server_allow_insecure</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, place Polemarch behind a TLS-terminating proxy such as Nginx, Traefik, or HAProxy
+and remove <cite>server_allow_insecure = true</cite>.</p>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Make migrations:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>polemarchctl<span class="w"> </span>migrate
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On the first run, the default superuser <code class="docutils literal notranslate"><span class="pre">admin</span></code> is created with the same password.
+Change it immediately after first login.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="configure-systemd-for-polemarch">
+<h2>Configure systemd for Polemarch<a class="headerlink" href="#configure-systemd-for-polemarch" title="Link to this heading"></a></h2>
+<p>Since <code class="docutils literal notranslate"><span class="pre">polemarchctl</span> <span class="pre">webserver</span></code> no longer daemonizes by default, it will keep the console busy.
+We recommend using <code class="docutils literal notranslate"><span class="pre">systemd</span></code> for management (start/stop/restart) of the service.</p>
+<ol class="arabic">
+<li><p>Create a systemd unit file, for example: <cite>/etc/systemd/system/polemarch.service</cite>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">Polemarch Service</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+
+<span class="k">[Service]</span>
+<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
+<span class="na">User</span><span class="o">=</span><span class="s">polemarch</span>
+<span class="na">Group</span><span class="o">=</span><span class="s">polemarch</span>
+<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/opt/polemarch</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/opt/polemarch/bin/polemarchctl webserver</span>
+<span class="c1"># If you want to store logs in a file, you can redirect:</span>
+<span class="c1"># ExecStart=/opt/polemarch/bin/polemarchctl webserver &gt;&gt; /opt/polemarch/logs/polemarch_web.log 2&gt;&amp;1</span>
+
+<span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
+
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enable and start the service:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>polemarch
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>polemarch
+</pre></div>
+</div>
+</li>
+<li><p>Now Polemarch runs in the background. Manage it via standard systemd commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>polemarch
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>polemarch
+sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>polemarch
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remove or ignore any references to the old <cite>uwsgi</cite> sections or the old <cite>polemarchctl webserver reload=/opt/polemarch/pid/polemarch.pid</cite> approach.
+All process management (start/stop/restart) is now delegated to systemd.</p>
+</div>
+</section>
+<section id="install-from-docker">
+<h2>Install from docker<a class="headerlink" href="#install-from-docker" title="Link to this heading"></a></h2>
+<section id="run-image">
+<h3>Run image<a class="headerlink" href="#run-image" title="Link to this heading"></a></h3>
+<p>For run Polemarch docker image use command:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>polemarch<span class="w"> </span>--restart<span class="w"> </span>always<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/projects:/projects<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/hooks:/hooks<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span>vstconsulting/polemarch
+</pre></div>
+</div>
+</div></blockquote>
+<p>Using this command download official docker image and run it with default settings. Dont use default SQLite installation with filecache in production.</p>
+<p>Ensure, that <cite>/opt/polemarch/projects</cite> and <cite>/opt/polemarch/hooks</cite> has uid/gid <cite>1000</cite>/<cite>1000</cite> as owner.
+Polemarch will be run with web interface on port <cite>8080</cite></p>
+</section>
+<section id="settings">
+<h3>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h3>
+</section>
+<section id="main-section">
+<h3>Main section<a class="headerlink" href="#main-section" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>DEBUG</strong> - status of debug mode. Default value: <cite>false</cite>.</p></li>
+<li><p><strong>DJANGO_LOG_LEVEL</strong> - log level. Default value: <cite>WARNING</cite>.</p></li>
+<li><p><strong>TIMEZONE</strong> - timezone. Default value: <cite>UTC</cite>.</p></li>
+</ul>
+</section>
+<section id="database-section">
+<h3>Database section<a class="headerlink" href="#database-section" title="Link to this heading"></a></h3>
+<p>Setup database connection via <code class="docutils literal notranslate"><span class="pre">django-environ</span></code>: <a class="reference external" href="https://django-environ.readthedocs.io/en/stable/types.html#environ-env-db-url" title="(in django-environ v0.11)"><span>environ.Env.db_url</span></a>.</p>
+<p>For example for mysql, <strong>DATABASE_URL</strong> = <code class="docutils literal notranslate"><span class="pre">'mysql://user:password&#64;host:port/dbname'</span></code>.
+Read more about <code class="docutils literal notranslate"><span class="pre">django-environ</span></code> in the <a class="reference external" href="https://django-environ.readthedocs.io/en/stable/types.html" title="(in django-environ v0.11)"><span class="xref std std-doc">official django-environ documentation</span></a>.</p>
+</section>
+<section id="cache">
+<h3>Cache<a class="headerlink" href="#cache" title="Link to this heading"></a></h3>
+<p>For cache environment variables you can also use <code class="docutils literal notranslate"><span class="pre">django-environ</span></code> - <a class="reference external" href="https://django-environ.readthedocs.io/en/stable/types.html#environ-env-cache-url" title="(in django-environ v0.11)"><span>environ.Env.cache_url</span></a>.
+For example for redis, <strong>CACHE_URL</strong> = <code class="docutils literal notranslate"><span class="pre">redis://host:port/dbname</span></code>.</p>
+</section>
+<section id="rpc-section">
+<h3>RPC section<a class="headerlink" href="#rpc-section" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>POLEMARCH_RPC_ENGINE</strong> - connection to rpc service. If not set used as tmp-dir.</p></li>
+<li><p><strong>POLEMARCH_RPC_RESULT_BACKEND</strong> - connection to rpc results service. Default as engine.</p></li>
+<li><p><strong>POLEMARCH_RPC_HEARTBEAT</strong> - Timeout for RPC. Default value: <cite>5</cite>.</p></li>
+<li><p><strong>POLEMARCH_RPC_CONCURRENCY</strong> - Number of concurrently tasks. Default value: <cite>4</cite>.</p></li>
+</ul>
+</section>
+<section id="web-section">
+<h3>Web section<a class="headerlink" href="#web-section" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>POLEMARCH_WEB_REST_PAGE_LIMIT</strong> - Limit elements in answer, when send REST request. Default value: <cite>1000</cite>.</p></li>
+</ul>
+</section>
+<section id="other-settings">
+<h3>Other settings<a class="headerlink" href="#other-settings" title="Link to this heading"></a></h3>
+<p>If you set <cite>SECRET_KEY</cite>, value of <cite>SECRET_KEY</cite> variable would be written to <cite>secret</cite></p>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<p>Run latest version of Polemarch in docker and connect to MySQL on server, using <code class="docutils literal notranslate"><span class="pre">django-environ</span></code>:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>polemarch<span class="w"> </span>--restart<span class="w"> </span>always<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/projects:/projects<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/hooks:/hooks<span class="w"> </span>--env<span class="w"> </span><span class="nv">DATABASE_URL</span><span class="o">=</span>mysql://polemarch:polemarch@polemarch_db:3306/polemarch<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span>vstconsulting/polemarch
+</pre></div>
+</div>
+</div></blockquote>
+<p>Run Polemarch with Memcache and RabbitMQ and SQLite3. Polemarch log-level=INFO, secret-key=mysecretkey</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>polemarch<span class="w"> </span>--restart<span class="w"> </span>always<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/projects:/projects<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/hooks:/hooks<span class="w"> </span>--env<span class="w"> </span><span class="nv">POLEMARCH_RPC_ENGINE</span><span class="o">=</span>amqp://polemarch:polemarch@rabbitmq-server:5672/polemarch<span class="w"> </span>--env<span class="w"> </span><span class="nv">CACHE_URL</span><span class="o">=</span>memcache://memcached-server:11211/<span class="w"> </span>--env<span class="w"> </span><span class="nv">POLEMARCH_LOG_LEVEL</span><span class="o">=</span>INFO<span class="w"> </span>--env<span class="w"> </span><span class="nv">SECRET_KEY</span><span class="o">=</span>mysecretkey<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span>vstconsulting/polemarch
+</pre></div>
+</div>
+</div></blockquote>
+<p>Also you can use <cite>.env</cite> file with all variable you want use on run docker:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>polemarch<span class="w"> </span>--restart<span class="w"> </span>always<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/projects:/projects<span class="w"> </span>-v<span class="w"> </span>/opt/polemarch/hooks:/hooks<span class="w"> </span>--env-file<span class="w"> </span>/path/to/file<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span>vstconsulting/polemarch
+</pre></div>
+</div>
+</div></blockquote>
+<p>Run from the sources with docker-compose (PoleMarch+MySQL+Redis):</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">DOCKER_BUILDKIT</span><span class="o">=</span><span class="m">1</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">COMPOSE_DOCKER_CLI_BUILD</span><span class="o">=</span><span class="m">1</span>
+docker-compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>--build
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading"></a></h2>
+<p>After you install Polemarch by instructions above you can use it without any
+further configuration. Interface is pretty intuitive and common for any web
+application. Read more in <a class="reference internal" href="gui.html#gui-workflow"><span class="std std-ref">GUI workflow</span></a>.</p>
+<p>Default installation is suitable for most simple and common cases, but
+Polemarch is highly configurable system. If you need something more advanced
+(scalability, dedicated DB, custom cache, logging or directories) you can
+always configure Polemarch like it is said in <a class="reference internal" href="config.html#configuration-manual"><span class="std std-ref">Configuration manual</span></a>.</p>
+</section>
+<section id="backup">
+<h2>Backup<a class="headerlink" href="#backup" title="Link to this heading"></a></h2>
+<p>Regular uploading of backups is a guarantee of the reliability of the application.
+We recommend use SQL backup or copy database.</p>
+<p>There are examples of SQL backup for MySQL and PostgreSQL below.</p>
+<p>Making backup in MySQL:</p>
+<blockquote>
+<div><div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="n">shell</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mysqldump</span><span class="w"> </span><span class="n">dbname</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">dump</span><span class="p">.</span><span class="k">sql</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Here dbname is the name of your database, dump.sql is the file, where all SQL backup statements
+will be saved.</p>
+<p>Uploading of backup in MySQL:</p>
+<blockquote>
+<div><div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="n">shell</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mysqladmin</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="n">dbname</span>
+<span class="n">shell</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mysql</span><span class="w"> </span><span class="n">dbname</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dump</span><span class="p">.</span><span class="k">sql</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Making backup in PostgreSQL:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pg_dump<span class="w"> </span>dbname<span class="w"> </span>&gt;<span class="w"> </span>dump.sql
+</pre></div>
+</div>
+</div></blockquote>
+<p>Uploading of backup in PostgreSQL:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>createdb<span class="w"> </span>dbname
+psql<span class="w"> </span>dbname<span class="w"> </span>&lt;<span class="w"> </span>dump.sql
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="update">
+<h2>Update<a class="headerlink" href="#update" title="Link to this heading"></a></h2>
+<p>Before updating of package of any type it is strongly recommended to stop all services and create backup for safety.</p>
+</section>
+<section id="update-from-any-old-version">
+<h2>Update from any old version<a class="headerlink" href="#update-from-any-old-version" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Firstly, we strongly recommend you to create a database backup and to stop all Polemarch services for safety.</p></li>
+<li><p>Secondly, if you are updating from 0.x.y to 1.x.y, you need to update you current 0.x.y version to 1.0.0 version.</p></li>
+<li><p>Then update to the latest version. If you don’t know how to do it, look <a class="reference internal" href="#"><span class="doc">“Install from PyPI”</span></a>.</p></li>
+</ol>
+</section>
+<section id="migrate">
+<h2>Migrate<a class="headerlink" href="#migrate" title="Link to this heading"></a></h2>
+<p>Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.)
+into your database schema. They’re designed to be mostly automatic, but you need to know when to make migrations,
+when to run them, and the common problems you might run into.</p>
+<p>To run a <code class="docutils literal notranslate"><span class="pre">migrate</span></code> command you should run follow code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">polemarchctl</span> <span class="n">migrate</span>
+</pre></div>
+</div>
+</section>
+<section id="create-superuser">
+<h2>Create superuser<a class="headerlink" href="#create-superuser" title="Link to this heading"></a></h2>
+<p>A superuser is the user, who has all permissions.</p>
+<p>To create a superuser account use the follow command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">polemarchctl</span> <span class="n">createsuperuser</span>
+</pre></div>
+</div>
+<p>This command prompts for all required user’s options.</p>
+</section>
+<section id="change-password">
+<h2>Change password<a class="headerlink" href="#change-password" title="Link to this heading"></a></h2>
+<p>To change password use the follow command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">polemarchctl</span> <span class="n">changepassword</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">username</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>It prompts you to enter a new password twice for the given user.
+If the entries are identical, this immediately becomes the new password.
+If you do not supply a user, the command will attempt to change the password of user whose username matches
+the current user.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Polemarch’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="config.html" class="btn btn-neutral float-right" title="Configuration manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright VST Consulting, 2019-2025.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
