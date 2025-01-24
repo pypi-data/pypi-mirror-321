@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: ApexxCloud
+Version: 1
+Summary: A Python package for ApexxCloud API
+Project-URL: Homepage, https://github.com/Anipathy/ApexxCloud_SDK
+Author-email: Anirudh <anipathy17@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: pycryptodome>3.9.0
+Requires-Dist: requests>2.20.0
+Description-Content-Type: text/markdown
+
+# ApexxCloud
+
+## Description
+Python package for ApexxCloud API's.
+
+## Installation 
+
+```bash
+pip install apexxcloud
+```
+
+## Quick Start
+```python
+from ApexxCloud import ApexxCloud
+
+client = ApexxCloud({
+    'access_key':'your_access_key',
+    'secret_key':'your_secret_key',
+    'bucket': 'your_bucket',
+    'region': 'your_region'
+})
+```
+## Features
+
+- Simple file upload
+- Multipart upload for large files
+- File deletion
+- Signed URL generation
+- Bucket contents listing
+
+## API Reference
+
+### File Operations
+
+#### Upload a File
+```python
+result = client.upload_file(file,options)
+```
+
+#### Delete a File
+```python
+result = client.delete_file(bucket,key)
+```
+
+#### Get a Signed URL
+```python
+result = client.generate_signed_url(type,options)
+```
+
+#### Start MultiPart Upload
+```python
+result = client.start_multipart_upload(bucket,key,options)
+```
+
+#### Upload Parts
+```python
+result = client.upload_part(upload_id, partNumber, file, options)
+```
+
+#### Complete MultiPart Upload
+```python
+result = client.complete_multipart_upload(upload_id, parts, options)
+```
+
+#### Cancel MultiPart Upload
+```python
+result = client.cancel_multipart_upload(upload_id, options)
+```
+
+## Documentation
+
+For detailed documentation, visit [docs.apexxcloud.com](https://docs.apexxcloud.com)
+
+## License
+
+MIT
