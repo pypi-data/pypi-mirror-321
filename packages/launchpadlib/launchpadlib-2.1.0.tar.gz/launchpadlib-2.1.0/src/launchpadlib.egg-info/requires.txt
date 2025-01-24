@@ -1,0 +1,17 @@
+httplib2
+lazr.restfulclient>=0.14.2
+lazr.uri
+
+[docs]
+Sphinx
+
+[keyring]
+keyring
+
+[test]
+coverage
+pytest
+
+[testing]
+testresources
+wadllib
