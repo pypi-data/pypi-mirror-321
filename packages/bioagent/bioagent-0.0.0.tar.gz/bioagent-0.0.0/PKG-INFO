@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: bioagent
+Version: 0.0.0
+Summary: BioAgent Library
+Author-email: Hugues Van Assel <vanasselhugues@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: omegaconf
+Requires-Dist: wandb
+Requires-Dist: hydra-core
+Requires-Dist: hydra-submitit-launcher
+Requires-Dist: pandas
+Requires-Dist: jsonlines
+Requires-Dist: torchmetrics
+Requires-Dist: scipy
+Requires-Dist: datasets
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: numpydoc; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: codecov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-gallery; extra == "doc"
+Requires-Dist: sphinx-book-theme; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex; extra == "doc"
+Requires-Dist: matplotlib; extra == "doc"
+Requires-Dist: numpydoc; extra == "doc"
+Requires-Dist: memory_profiler; extra == "doc"
+Requires-Dist: myst-parser; extra == "doc"
+
+bioagent

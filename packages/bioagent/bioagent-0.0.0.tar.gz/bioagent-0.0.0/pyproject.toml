@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bioagent"
+description = "BioAgent Library"
+authors = [
+    {name = "Hugues Van Assel", email = "vanasselhugues@gmail.com"},
+]
+license = {text = "MIT"}
+readme = {file = "README.md", content-type = "text/markdown"}
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "omegaconf",
+    "wandb",
+    "hydra-core",
+    "hydra-submitit-launcher",
+    "pandas",
+    "jsonlines",
+    "torchmetrics",
+    "scipy",
+    "datasets",
+]
+
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["bioagent"]
+
+[tool.setuptools.dynamic]
+version = {attr = "bioagent.__about__.__version__"}
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "coverage",
+    "numpydoc",
+    "pytest-cov",
+    "codecov",
+    "pre-commit",
+    "ruff",
+]
+
+doc = [
+    "sphinx",
+    "sphinx-gallery",
+    "sphinx-book-theme",
+    "sphinxcontrib-bibtex",
+    "matplotlib",
+    "numpydoc",
+    "memory_profiler",
+    "myst-parser",
+]
+
+[tool.ruff]
+version = "0.9.0"

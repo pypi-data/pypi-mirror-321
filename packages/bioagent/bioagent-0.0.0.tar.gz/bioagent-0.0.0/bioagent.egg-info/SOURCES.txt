@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+bioagent/__about__.py
+bioagent/__init__.py
+bioagent.egg-info/PKG-INFO
+bioagent.egg-info/SOURCES.txt
+bioagent.egg-info/dependency_links.txt
+bioagent.egg-info/requires.txt
+bioagent.egg-info/top_level.txt
