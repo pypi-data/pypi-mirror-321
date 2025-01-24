@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tronpynet
+Version: 0.0.1
+Summary: tronpynet library for Python
+Author: dimatron
+Author-email: sanimw2402@gmail.com
+License: MIT
+Project-URL: Source Repository, https://github.com/dcnstrn/tronwebpy
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Tronpynet
+
+tronpynet library
+
+## Heading 2
+
+- **BOLD TEXT**: description
+
+## Installation
+
+## Usage
+
+## Functions
+
+### Funtion(parameter)
