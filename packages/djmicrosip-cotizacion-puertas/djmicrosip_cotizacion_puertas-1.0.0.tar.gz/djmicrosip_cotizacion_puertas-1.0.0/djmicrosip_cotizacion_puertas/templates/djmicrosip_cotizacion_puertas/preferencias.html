@@ -1,0 +1,205 @@
+{% extends 'djmicrosip_cotizacion_puertas/base.html' %}
+{% block title %}
+Cotizacion
+{% endblock %}
+<!-- CSS Code -->
+{% block style_css %}{% endblock %}
+{% block modulestyle_css %}
+{% endblock %}
+<!-- JavaScript Code -->
+{% block js_code %}
+{% include 'autocomplete_light/static.html' %}
+<script src='{{STATIC_URL}}js/jquery.formset.js'></script>
+<script>
+$(function() {
+
+    $('#id_tipo_data tbody tr').formset({
+    prefix: '{{ formset.prefix }}',
+    addCssClass:'btn btn-success',
+    addText:'Nuevo detalle',
+    deleteText:'eliminar',
+  });
+    $('#id_material_data tbody tr').formset({
+    prefix: '{{ formset.prefix }}',
+    addCssClass:'btn btn-success',
+    addText:'Nuevo detalle',
+    deleteText:'eliminar',
+  });
+    $('#id_materialart_data tbody tr').formset({
+    prefix: '{{ formset.prefix }}',
+    addCssClass:'btn btn-success',
+    addText:'Nuevo detalle',
+    deleteText:'eliminar',
+  });
+});
+</script>
+{% endblock %}
+{% block selected_module %} Microsip {% endblock %}
+{% block breadcrumb %}
+{{ block.super }}
+<li><a>PREFERENCIAS</a></li>
+{% endblock %}
+{% block content %}
+<div class="row">
+	<br>
+<div class="col-lg-12">	
+{% if mensaje == '' %}
+
+<form method="post" class="form-horizontal" action="" enctype='multipart/form-data'>{% csrf_token %}
+
+
+<div class="page-header">
+  <h1>Preferencias <small></small>  </h1>
+</div>
+<div class="row">
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Generales</a></li>
+    <li><a href="#tipo" role="tab" data-toggle="tab">Tipo</a></li>
+    <li><a href="#mat" role="tab" data-toggle="tab">Material</a></li>
+    <li><a href="#matart" role="tab" data-toggle="tab">Material por pieza</a></li>
+	</ul>
+</div>
+<!-- Tab panes -->
+<div class="tab-content">
+	<div class="tab-pane active" id="home" >
+
+        {{ form_pref.errors }}
+      <br>
+    <div class="row">
+      <div class="col-md-3"><strong>Fraccion Ganancia Local</strong> {{form_pref.fraccion_ganancia_local}}</div>
+      <div class="col-md-3"><strong>Fraccion Ganancia Extranjera</strong> {{form_pref.fraccion_ganancia_ext}}</div>
+      <div class="col-md-3"><strong>Articulo</strong> {{form_pref.ve_articulo}}</div>
+    </div>
+      <br>
+    <div class="row">
+      <div class="col-md-3"><strong>Cliente</strong> {{form_pref.ve_cliente}}</div>
+      <div class="col-md-3"><strong>Almacen</strong> {{form_pref.ve_almacen}}</div>
+      <div class="col-md-3"><strong>Condicion de Pago</strong> {{form_pref.ve_condicion_pago}}</div>
+      <div class="col-md-3"><strong>Vendedor</strong> {{form_pref.ve_vendedor}}</div>
+    </div>
+      
+    
+   </div> 
+    <div class="tab-pane" id="tipo" >
+    <div class="row">
+    		{{ formsetTipo.management_form }} 
+  			{{ form.errors }}
+    <table class="table tableCell table-hover table-bordered" id="id_tipo_data">
+      <thead>
+        <tr>
+          <th>
+            <div class="col-xs-2" style="width:15%">Nombre abreviado</div>
+            <div class="col-xs-1" style="width:15%">Nombre</div>
+            <div class="col-xs-3" style="width:15%">Valor</div>
+            <div class="col-xs-1" style="width:5%"></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for form in formsetTipo.forms%}
+        <tr id="{{ form.prefix }}-row row" class="form-container">
+          <td>
+            <div class="col-xs-2" style="width:15%">{{form.nom_abreviado}}</div>
+            <div class="col-xs-2" style="width:15%">{{form.nombre}}</div>
+            <div class="col-xs-1" style="width:15%">{{form.valor}}</div>
+            <div class="col-xs-1 " style="width:5%">{% if form.instance.pk %}{{ form.DELETE }}{% endif %}</div>
+          </td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+      
+			
+
+    </div>
+  </div>
+  <br>
+  <div class="tab-pane" id="mat" >
+    <div class="row form-container">
+
+    		 {{ formsetMaterial.management_form }}  
+  			{{ form.errors }}
+    <table class="table tableCell table-hover table-bordered" id="id_material_data">
+      <thead>
+        <tr>
+          <th>
+            <div class="col-xs-1" style="width:15%">Nombre</div>
+            <div class="col-xs-2" style="width:10%">Precio</div>
+            <div class="col-xs-1" style="width:10%">Peso</div>
+            <div class="col-xs-3" style="width:15%">Unidades</div>
+            <div class="col-xs-2" style="width:10%">Unidad Medida</div>
+            <div class="col-xs-1" style="width:5%"></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for form in formsetMaterial.forms%}
+        <tr id="{{ form.prefix }}-row row" class="form-container">
+          <td>
+            <div class="col-xs-2" style="width:15%">{{form.nombre}}</div>
+            <div class="col-xs-2" style="width:10%">{{form.precio}}</div>
+            <div class="col-xs-2" style="width:10%">{{form.peso}}</div>
+            <div class="col-xs-1" style="width:15%">{{form.unidades}}</div>
+            <div class="col-xs-2" style="width:10%">{{form.unidad_medida}}</div>
+            <div class="col-xs-1 " style="width:5%">{% if form.instance.pk %}{{ form.DELETE }}{% endif %}</div>
+          </td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+    
+			
+
+    </div>
+  </div>
+  <br>
+  <div class="tab-pane" id="matart" >
+    <div class="row form-container">
+
+         {{ formsetMaterialArt.management_form }}  
+        {{ form.errors }}
+    <table class="table tableCell table-hover table-bordered" id="id_materialart_data">
+      <thead>
+        <tr>
+          <th>
+            <div class="col-xs-1" style="width:15%">Material</div>
+            <div class="col-xs-2" style="width:10%">Tipo</div>
+            <div class="col-xs-1" style="width:10%">Cantidad</div>
+            <div class="col-xs-1" style="width:5%"></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for form in formsetMaterialArt.forms%}
+        <tr id="{{ form.prefix }}-row row" class="form-container">
+          <td>
+            <div class="col-xs-2" style="width:15%">{{form.material}}</div>
+            <div class="col-xs-2" style="width:10%">{{form.tipo}}</div>
+            <div class="col-xs-2" style="width:10%">{{form.cantidad}}</div>
+            <div class="col-xs-1 " style="width:5%">{% if form.instance.pk %}{{ form.DELETE }}{% endif %}</div>
+          </td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+    
+
+    </div>
+  </div>
+
+</div>
+</div>
+<br><br>
+<button type="submit" class="btn"><i class="glyphicon glyphicon-floppy-disk"></i> Guardar</button>       
+</form>    
+
+{%else%}
+<p>{{mensaje}}</p>
+{%endif%}
+</div>
+</div>
+{% endblock %}
