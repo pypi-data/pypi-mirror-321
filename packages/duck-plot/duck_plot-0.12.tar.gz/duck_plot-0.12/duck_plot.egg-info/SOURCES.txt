@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+duck_plot/__init__.py
+duck_plot/__main__.py
+duck_plot/cli.py
+duck_plot.egg-info/PKG-INFO
+duck_plot.egg-info/SOURCES.txt
+duck_plot.egg-info/dependency_links.txt
+duck_plot.egg-info/entry_points.txt
+duck_plot.egg-info/requires.txt
+duck_plot.egg-info/top_level.txt
+tests/test_duck_plot.py
