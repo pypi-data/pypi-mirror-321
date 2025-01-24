@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: bugreport
+Version: 0.0.0
+Summary: Maintainers store configuration in their repository, users call the tool to generate quality bug reports easily.
+Author-email: Timothée Mazzucotelli <dev@pawamoy.fr>
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# bugreport
+
+Maintainers store configuration in their repository, users call the tool to generate quality bug reports easily.

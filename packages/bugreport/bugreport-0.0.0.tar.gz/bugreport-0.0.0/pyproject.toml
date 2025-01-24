@@ -1,0 +1,8 @@
+[project]
+name = "bugreport"
+version = "0.0.0"
+description = "Maintainers store configuration in their repository, users call the tool to generate quality bug reports easily."
+authors = [{name = "Timothée Mazzucotelli", email = "dev@pawamoy.fr"}]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = ["Development Status :: 1 - Planning"]

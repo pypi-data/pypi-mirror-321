@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+bugreport.egg-info/PKG-INFO
+bugreport.egg-info/SOURCES.txt
+bugreport.egg-info/dependency_links.txt
+bugreport.egg-info/top_level.txt
