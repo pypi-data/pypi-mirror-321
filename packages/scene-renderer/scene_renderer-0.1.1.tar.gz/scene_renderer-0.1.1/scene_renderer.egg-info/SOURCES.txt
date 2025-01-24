@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+scene_renderer/__init__.py
+scene_renderer/scene_renderer.py
+scene_renderer.egg-info/PKG-INFO
+scene_renderer.egg-info/SOURCES.txt
+scene_renderer.egg-info/dependency_links.txt
+scene_renderer.egg-info/top_level.txt
+scene_renderer/assets/env.exr
