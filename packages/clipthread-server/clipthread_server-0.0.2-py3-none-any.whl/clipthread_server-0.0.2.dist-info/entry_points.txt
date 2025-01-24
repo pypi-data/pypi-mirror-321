@@ -1,0 +1,2 @@
+[console_scripts]
+clipthread-server = clipthread.server.main:start_server
