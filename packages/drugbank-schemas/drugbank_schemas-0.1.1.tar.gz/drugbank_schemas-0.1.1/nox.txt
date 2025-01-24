@@ -1,0 +1,63 @@
+========= xsdata v24.12 / Python 3.9.21 / Platform linux =========
+
+Parsing schema file:///polus1/donyapourn2/wic/drugbank_schemas/downloads/schemas/drugbank_v3.0.xsd
+Traceback (most recent call last):
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/formats/dataclass/parsers/bases.py", line 58, in parse
+    result = handler.parse(source, ns_map)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/formats/dataclass/parsers/handlers/lxml.py", line 42, in parse
+    return self.process_context(ctx, ns_map)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/formats/dataclass/parsers/handlers/lxml.py", line 58, in process_context
+    for event, element in context:
+  File "src/lxml/iterparse.pxi", line 208, in lxml.etree.iterparse.__next__
+  File "src/lxml/iterparse.pxi", line 193, in lxml.etree.iterparse.__next__
+  File "src/lxml/iterparse.pxi", line 224, in lxml.etree.iterparse._read_more_events
+  File "src/lxml/parser.pxi", line 1467, in lxml.etree._FeedParser.close
+  File "<string>", line 0
+lxml.etree.XMLSyntaxError: no element found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/bin/xsdata", line 8, in <module>
+    sys.exit(main())
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/__main__.py", line 9, in main
+    cli()
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/click/core.py", line 1697, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/cli.py", line 149, in generate
+    transformer.process(uris, cache=cache)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/codegen/transformer.py", line 132, in process
+    self.process_sources(uris)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/codegen/transformer.py", line 166, in process_sources
+    self.process_schemas(sources[TYPE_SCHEMA])
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/codegen/transformer.py", line 196, in process_schemas
+    self.process_schema(uri)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/codegen/transformer.py", line 224, in process_schema
+    schema = self.parse_schema(uri, namespace)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/codegen/transformer.py", line 333, in parse_schema
+    return parser.from_bytes(input_stream, Schema)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/formats/dataclass/parsers/mixins.py", line 88, in from_bytes
+    return self.parse(io.BytesIO(source), clazz, ns_map)
+  File "/polus1/donyapourn2/wic/drugbank_schemas/.nox/generate_packages/lib/python3.9/site-packages/xsdata/formats/dataclass/parsers/bases.py", line 60, in parse
+    raise ParserError(e)
+xsdata.exceptions.ParserError: no element found (line 0)
+Failed to download drugbank_v3.0.xsd.
+--2025-01-16 17:30:25--  http://go.drugbank.com/docs/drugbank_v3.0.xsd
+Resolving go.drugbank.com (go.drugbank.com)... 172.66.41.6, 172.66.42.250, 2606:4700:3108::ac42:2afa, ...
+Connecting to go.drugbank.com (go.drugbank.com)|172.66.41.6|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://go.drugbank.com/docs/drugbank_v3.0.xsd [following]
+--2025-01-16 17:30:25--  https://go.drugbank.com/docs/drugbank_v3.0.xsd
+Connecting to go.drugbank.com (go.drugbank.com)|172.66.41.6|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-01-16 17:30:25 ERROR 403: Forbidden.
+
+
