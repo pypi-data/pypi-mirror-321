@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cli.py
+src/cli_integration.py
+src/jira_comments_script.py
+src/slack_integration.py
+src/tableau_integration.py
+src/jiraquest.egg-info/PKG-INFO
+src/jiraquest.egg-info/SOURCES.txt
+src/jiraquest.egg-info/dependency_links.txt
+src/jiraquest.egg-info/entry_points.txt
+src/jiraquest.egg-info/requires.txt
+src/jiraquest.egg-info/top_level.txt
