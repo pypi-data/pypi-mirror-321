@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_203_main.egg-info/PKG-INFO
+python_203_main.egg-info/SOURCES.txt
+python_203_main.egg-info/dependency_links.txt
+python_203_main.egg-info/entry_points.txt
+python_203_main.egg-info/requires.txt
+python_203_main.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+backtest_strategies_reg = main:streamlit_interface
