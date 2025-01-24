@@ -1,0 +1,4 @@
+# Ignore dotfiles
+.*
+__pycache__
+build/
