@@ -1,0 +1,4 @@
+include ttstokenizer/checkpoint20.npz
+include ttstokenizer/cmudict.dict
+include ttstokenizer/custom.dict
+include ttstokenizer/homographs.en
