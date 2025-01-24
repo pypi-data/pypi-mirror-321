@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: python-wml
+Version: 3.0.0
+Summary: Deep Learning toolkit
+Home-page: https://github.com/vghost2008/wml
+Author: vghost2008
+Author-email: bluetornado@zju.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#[WML](https://github.com/vghost2008/wml2)
+
+Machine learning tools library.
+
+##Dependencies
+
+- Linux or Mac OS
+- Python ≥ 3.6
+- scipy
+- yacs
+- OpenCV
+- pycocotools
+- gcc & g++ ≥ 4.9
+- libturbojpeg
+
+##Installation
+
+```
+pip install -r requirements.txt
+```
+
+
+## License
+
+WML itself is released under the MIT License (refer to the LICENSE file for details).
+
+
+##Authors
+
+```
+    Wang Jie  bluetornado@zju.edu.cn
+
+    Copyright 2017 The WML Authors.  All rights reserved.
+```
+
+
