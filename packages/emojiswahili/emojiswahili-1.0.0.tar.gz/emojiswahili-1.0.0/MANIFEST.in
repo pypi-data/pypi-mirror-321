@@ -1,0 +1,6 @@
+include LICENSE.txt
+include MANIFEST.in
+include README.rst
+include utils/testutils.py
+recursive-include tests *.py
+include emoji/unicode_codes/emoji.json
