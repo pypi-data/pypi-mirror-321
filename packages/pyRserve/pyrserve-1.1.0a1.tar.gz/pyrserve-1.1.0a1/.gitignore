@@ -1,0 +1,9 @@
+*.pyc
+MANIFEST
+dist
+doc/doctrees
+doc/html
+doc/pyRserve.html.zip
+*~
+__pycache__
+.idea
