@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "SDSpy"
+version = "1.0.2c"
+description = "A Python package to interract with Siglent SDS Oscilloscpe series"
+authors = ["lheywang <leonard.heywang@gmail.com>"]
+maintainers = ["lheywang <leonard.heywang@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = ["README.md"]
+repository = "https://github.com/lheywang/PySDG"
+documentation = "https://github.com/lheywang/SDSpy/tree/Main/documentation/markdown"
+keywords = ["PyVISA", "SCPI", "Siglent", "SDS", "Oscilloscope", "Python"]
+include = [
+    "SDSPy/config/802X-HD.toml",
+    "SDSPy/config/802X-HD.toml",
+    "SDSPy/config/804X-HD.toml",
+    "SDSPy/config/812X-HD.toml",
+    "SDSPy/config/814X-HD.toml",
+    "SDSPy/config/822X-HD.toml",
+    "SDSPy/config/824X-HD.toml",
+    "SDSPy/config/1002CML+.toml",
+    "SDSPy/config/1052DL+.toml",
+    "SDSPy/config/1102X-HD.toml",
+    "SDSPy/config/1104X-E.toml",
+    "SDSPy/config/1104X-HD.toml",
+    "SDSPy/config/1104X-U.toml",
+    "SDSPy/config/1202X-HD.toml",
+    "SDSPy/config/1202X.toml",
+    "SDSPy/config/1204X-E.toml",
+    "SDSPy/config/1204X-HD.toml",
+    "SDSPy/config/2102X-Plus.toml",
+    "SDSPy/config/2104X-Plus.toml",
+    "SDSPy/config/2354X-HD.toml",
+    "SDSPy/config/3034X-HD.toml",
+    "SDSPy/config/3054X-HD.toml",
+    "SDSPy/config/3104X-HD.toml",
+    "SDSPy/config/5054X.toml",
+    "SDSPy/config/5104X.toml",
+    "SDSPy/config/6054A.toml",
+    "SDSPy/config/6054L.toml",
+    "SDSPy/config/6058L.toml",
+    "SDSPy/config/6104A.toml",
+    "SDSPy/config/6104L.toml",
+    "SDSPy/config/6108L.toml",
+    "SDSPy/config/6204A.toml",
+    "SDSPy/config/6204L.toml",
+    "SDSPy/config/6208L.toml",
+    "SDSPy/config/7304A-H12.toml",
+    "SDSPy/config/7404A-H12.toml",
+    "SDSPy/config/7604A-H12.toml",
+]
+
+[tool.poetry.urls]
+"Changelogs" = "https://github.com/lheywang/SDSpy/blob/Main/Changelog.md"
+"Issues" = "https://github.com/lheywang/SDSpy/issues"
+"Examples" = "https://github.com/lheywang/SDSpy/tree/Main/examples"
+"Compatibility list" = "https://github.com/lheywang/SDSpy/blob/Main/documentation/Compatibility.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyvisa = "^1.14.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+requests-mock = "^1.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
