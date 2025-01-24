@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "san-log-sdk"
+version = "0.1.0"
+description = "Simple SDK to share logs and overal status"
+authors = ["Pedro Lazdín <plazdin@sanjorge-sa.com.ar>"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+ruff = "^0.8.5"
+pre-commit = "^4.0.1"
+mypy = "^1.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "__pycache__",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".idea",
+]
+
+# Like Black, use a line length of 120 characters.
+line-length = 120
+indent-width = 4 
+
+select = ["I","F401","C","E","F","W","B"]
+ignore = ["E203", "E50", "E712", "B008", "E721", "B904"]
+fixable = ["ALL"]
+# allow for unised variables when undercore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.ruff.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 15.
+max-complexity = 15
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
+implicit_reexport = true
+explicit_package_bases = true
+namespace_packages = true
+follow_imports = "silent"
+warn_redundant_casts = true
+check_untyped_defs = true
+no_implicit_reexport = true
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 120
