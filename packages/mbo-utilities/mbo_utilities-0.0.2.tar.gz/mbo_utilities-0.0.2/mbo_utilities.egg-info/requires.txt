@@ -1,0 +1,6 @@
+tifffile
+numpy
+scikit-image
+fastplotlib[notebook]
+PyWavelets
+zarr
