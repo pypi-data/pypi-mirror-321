@@ -1,0 +1,2 @@
+[console_scripts]
+jiraquest = cli:main
