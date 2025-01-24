@@ -1,0 +1,13 @@
+numpy
+decorator
+attrs
+psutil
+absl-py
+cloudpickle
+scipy
+tornado
+transformers
+accelerate
+pandas
+torch==2.1.0
+torch_npu==2.1.0.post10
