@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pvmlib
+Version: 1.7.3
+Summary: Python library for PVM
+Home-page: 
+Author: Jesus Lizarraga
+Author-email: jesus.lizarragav@coppel.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic-settings
+Requires-Dist: pydantic
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pytz
+Requires-Dist: circuitbreaker
+Requires-Dist: requests
+Requires-Dist: tenacity
+Requires-Dist: pybreaker
+Requires-Dist: httpx
+Requires-Dist: motor
+Requires-Dist: starlette>=0.13.0
+Requires-Dist: urllib3<2.0.0,>=1.26.5
+Requires-Dist: charset_normalizer<3.0.0,>=2.0.0
