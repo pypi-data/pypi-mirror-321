@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: yangson_inventory_builder
+Version: 0.1.1
+Summary: Building inventory for the Yangson Python tool
+Author: Dmitrii Khorn
+Author-email: Dmitrii Khorn <dima.khorn@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: pydantic==2.5.3
+Requires-Dist: pydantic_core==2.14.6
+Requires-Dist: typing_extensions==4.12.2
+Dynamic: author
+Dynamic: requires-python
