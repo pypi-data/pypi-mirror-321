@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: pytest_workaround_12888
+Version: 1.0.0
+Summary: forces an import of readline early in the process to work around pytest bug #12888
+Home-page: https://github.com/getsentry/pytest-workaround-12888
+Author: Sentry
+Author-email: oss@sentry.io
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pytest-workaround-12888
+=======================
+
+adds an `import readline` `.pth` file to trigger early import of readline
+
+this works around [issue 12888]
+
+[issue 12888]: https://github.com/pytest-dev/pytest/issues/12888
+
+## installation
+
+```bash
+pip install pytest-workaround-12888
+```
