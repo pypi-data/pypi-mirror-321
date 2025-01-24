@@ -1,0 +1,2 @@
+soit-plugin
+soit-sdk
