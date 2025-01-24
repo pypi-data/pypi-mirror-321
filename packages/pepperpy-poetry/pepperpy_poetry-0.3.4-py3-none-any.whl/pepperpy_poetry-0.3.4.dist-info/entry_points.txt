@@ -1,0 +1,6 @@
+[dagger.mod]
+main_object=pepperpy_poetry.dagger:PepperpyPoetry
+
+[poetry.plugin]
+pepperpy=pepperpy_poetry.plugin:SharedConfigPlugin
+
