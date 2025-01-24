@@ -1,0 +1,6 @@
+README.txt
+setup.py
+Davit.egg-info/PKG-INFO
+Davit.egg-info/SOURCES.txt
+Davit.egg-info/dependency_links.txt
+Davit.egg-info/top_level.txt

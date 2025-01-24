@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: Davit
+Version: 0.0.1
+Summary: simple Calculator
+Home-page: 
+Author: Davit Megrelishvili
+Author-email: davit.megrelishvili.1@btu.edu.ge
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+simple Calc:Add, subtract, multiply, divide
+
+version-0.0.1
