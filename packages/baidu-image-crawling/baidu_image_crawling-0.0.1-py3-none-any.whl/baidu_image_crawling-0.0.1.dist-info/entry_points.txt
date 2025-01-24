@@ -1,0 +1,2 @@
+[console_scripts]
+baidu_image_crawling = baidu_image_crawling.main:main
