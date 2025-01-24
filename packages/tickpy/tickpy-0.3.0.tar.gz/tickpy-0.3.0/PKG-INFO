@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: tickpy
+Version: 0.3.0
+Summary: Timer classes with a focus on periodic timing in while loops
+License: GPL-3.0-or-later
+Author: Alex Byrne
+Requires-Python: >=3.13
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: pytest
+Requires-Dist: pytest (>=8.3.3) ; extra == "pytest"
+Project-URL: Homepage, https://github.com/blex-max/tickpy
+Description-Content-Type: text/markdown
+
+# TickPy
+
+Timer classes with a focus on periodic timing in while loops.
+
+
+## Plausible extensions
+
+Things I can/will implement at request or my need:
+  - extend cmod (checking if a period has elapsed essentially) to optionally take a `period_start` parameter - effectively decoupling period tracking from the start time when desired, and returning False if .counter has not yet reached period start.
+  - optionally autoupdate when calling cmod and so on. Almost certainly ill-advised for the applications I envisage using this module for however.
+
+
+## Licence
+
+GPL3 applies to all files and folders in this repo
+
