@@ -1,0 +1,48 @@
+Metadata-Version: 2.2
+Name: spinning-cat-lang
+Version: 0.1.0
+Summary: An interpreter for the Oiia language
+Home-page: 
+Author: Sanat Kulkarni
+Author-email: sanatkulkarni100@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# Oiia Interpreter
+
+An interpreter for the Oiia language, a fun and esoteric programming language.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install oiia_interpreter
+```
+
+## Usage
+
+```python
+from oiia_interpreter import OiiaInterpreter
+
+interpreter = OiiaInterpreter()
+interpreter.interpret("oiia oiia oiia oiia 10")
+```
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

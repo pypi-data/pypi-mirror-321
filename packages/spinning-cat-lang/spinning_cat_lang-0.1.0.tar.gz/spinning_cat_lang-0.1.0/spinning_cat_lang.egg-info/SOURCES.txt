@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+spinning_cat_lang.egg-info/PKG-INFO
+spinning_cat_lang.egg-info/SOURCES.txt
+spinning_cat_lang.egg-info/dependency_links.txt
+spinning_cat_lang.egg-info/requires.txt
+spinning_cat_lang.egg-info/top_level.txt
