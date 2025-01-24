@@ -1,0 +1,11 @@
+python_supercluster/__init__.py,sha256=LhotiyiykEZgvsDoLs0IyBXUsjvJARDQISFO33Y55as,66
+python_supercluster/kdbush.py,sha256=_k5_kvXYE-S-CzXmT2soRohLXAmMhrW4HOZppTlK9ac,8275
+python_supercluster/supercluster.py,sha256=PI6KYu3yyUIsp6Fj01ny2Q2G3soJBe_CsXE9E_xxDrs,7850
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures.py,sha256=PMWlg3TpTD0hUq7h7q8olQuqLxoemC1Iw2nMAnD4Iyk,7444
+tests/test_supercluster.py,sha256=4WOFrfczXlsD-uUIRGsE_09-N1VbynqpoEugvQLwMAs,849
+python_supercluster-0.0.1.dist-info/LICENSE,sha256=m9TLEFyEqAsy9514OZXvbeqMEsCI_crVxUU4I-XuwFY,1079
+python_supercluster-0.0.1.dist-info/METADATA,sha256=Puj7VqL4iukexPPw-za-cXr5Ud9tnLlxUEXDs6Sb06M,761
+python_supercluster-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+python_supercluster-0.0.1.dist-info/top_level.txt,sha256=UM5mpkXXHrQ_rnNQjOUVPFkP4KglckFoYufXML0uBAI,26
+python_supercluster-0.0.1.dist-info/RECORD,,
