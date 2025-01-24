@@ -1,0 +1,11 @@
+duit_rest/RESTEndpoint.py,sha256=lFh5mBhpeABfbxjN7HFNKhAnsH5lvycPtpy1vUQ3zrg,1711
+duit_rest/RESTRoute.py,sha256=VuvfEUxjx4Ke42KpBO0EKr_oKIGmBaVAXbAHJ05zZvQ,446
+duit_rest/RESTService.py,sha256=0dPOxblAciUg3ZUb05GdXLkXUGXfh0vI-1m1XqGvsZw,5948
+duit_rest/__init__.py,sha256=rC7qlDJhp0IakFQFDDfGU2C3-3kBnRV0JAFqek4Se0k,70
+example/SimpleExample.py,sha256=7mdiIxaaJx1qT9Ya60ynZX42ZAbbO-71BMsNFDvQElg,1205
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duit_rest-0.1.0.dist-info/LICENSE,sha256=YKwaroTMxLl6skIj4HeeWFDSX8x7hvPubxrpwq3R2j0,1075
+duit_rest-0.1.0.dist-info/METADATA,sha256=LpQN7j7MZy7IOCBQSsvurDdVJzTFDAWqG-4DsAFMvLg,3840
+duit_rest-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+duit_rest-0.1.0.dist-info/top_level.txt,sha256=c_2zfW7XfyWw6CsGswNJffrncrk5vOLz3IRCq-0i8_Q,18
+duit_rest-0.1.0.dist-info/RECORD,,
