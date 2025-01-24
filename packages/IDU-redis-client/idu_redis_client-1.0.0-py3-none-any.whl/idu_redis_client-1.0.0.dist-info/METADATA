@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: IDU-redis-client
+Version: 1.0.0
+Summary: --/--
+License: BSD-3-Clause
+Author: soldey
+Author-email: 71354808+soldey@users.noreply.github.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aioredlock (==0.7.3)
+Requires-Dist: idu-config (>=1.0.0,<2.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: redis (>=5.1.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+IDU Redis Client is dedicated for Redis use as message and status broker.
+
+```python
+from iduredis import RedisManager, LockManager
+from iduconfig import Config
+
+config = Config()
+redis_manager = RedisManager(config)
+lock_manager = LockManager(config)
+
+redis_manager.push_to_list("MY_QUEUE", "MY_EVENT_123")
+redis_manager.add_to_stream("STATUS_EVENT:123", {"state": "started"})
+redis_manager.get_last_stream_data("STATUS_EVENT:123", b"state")
+```

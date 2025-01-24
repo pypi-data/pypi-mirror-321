@@ -1,0 +1,7 @@
+iduredis/__init__.py,sha256=SSNNX0GQVtsO5NKZAspYosBCqkN-nMg2vXcugvBJQ-Q,79
+iduredis/_version.py,sha256=yEua9VnP9VFiGgylbTQwBLwj4hrJJ-2nvhaGlPzZfvQ,19
+iduredis/lock_manager.py,sha256=kf9Ov_yExhmcOmXkcchSUv0iGLdS_n1CuArbonQwH-U,1839
+iduredis/redis_manager.py,sha256=1pN4yhiDiffj0e_z3Ft6hOJvzHokg5em8wU6nqSs_bY,4229
+idu_redis_client-1.0.0.dist-info/METADATA,sha256=ctwiSP0ZcTSsOD1Ga52S0QXftRKMcRn2bGuN0uPPl9s,1042
+idu_redis_client-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+idu_redis_client-1.0.0.dist-info/RECORD,,
