@@ -1,0 +1,12 @@
+datamanipylator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamanipylator/algorithm.py,sha256=7gFzbXkRKgws91J2sl7xA_siSfXAqVyzqfyj8VRCcLQ,385
+datamanipylator/analyzers.py,sha256=fCGOuf65PwU99dHmDPyheFI50OjTcF8XLxwDjJ5WcGc,3695
+datamanipylator/data.py,sha256=aNccVJv2zATkKf7j9Gc_N96nB13Mbh9f39oomeGSZ2w,15422
+datamanipylator/decorators.py,sha256=v4CiJ61GFS6xD_c2lKm-bnLmc7BtGd1wDeUCRfdL9Uc,1677
+datamanipylator/exceptions.py,sha256=ghk_aB0hWe9pyFvUaKdLwD9SX18j59Mm8AB-MY1ieeA,1169
+datamanipylator/utils.py,sha256=aJIZbVztvvZ0QnMQWE2A2oMKvVqXfHd91KJvjxiqbDc,445
+datamanipylator-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+datamanipylator-1.0.0.dist-info/METADATA,sha256=HrYTzb9kC4MZoUuC_BoSlRjGHNwNdFdcJe60JyZvaRg,9674
+datamanipylator-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+datamanipylator-1.0.0.dist-info/top_level.txt,sha256=SdVbS9tp625an59HvlLzJ2fjEuD0m5KZDcFLTEhnZEQ,16
+datamanipylator-1.0.0.dist-info/RECORD,,
