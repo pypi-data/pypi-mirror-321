@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+easyLite/EasyLiteBuild.py
+easyLite/EasyLiteCore.py
+easyLite/EasyLiteQuery.py
+easyLite/EasyLiteRecord.py
+easyLite/EasyLiteResult.py
+easyLite/__init__.py
+easyLite.egg-info/PKG-INFO
+easyLite.egg-info/SOURCES.txt
+easyLite.egg-info/dependency_links.txt
+easyLite.egg-info/top_level.txt
