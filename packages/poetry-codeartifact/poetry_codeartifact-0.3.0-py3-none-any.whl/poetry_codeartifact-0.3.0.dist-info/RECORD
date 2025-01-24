@@ -1,0 +1,10 @@
+poetry_codeartifact/__init__.py,sha256=jJ_CBIhrxUPYL00X_6yon1sdErdM9p2QYl_o-JnLNRE,101
+poetry_codeartifact/commands.py,sha256=SPmg3W9kl9vzEolAzjvcb4zQ8VuR98-xc_s-axMa4qc,2468
+poetry_codeartifact/plugin.py,sha256=xFvBJrWHIgNJ457796lpDQ-K3Jx5uJ255SJa6y0-7No,659
+poetry_codeartifact/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_codeartifact/settings.py,sha256=K7N8AB3wH4lquFjf8oekCh78RtDkUjCrUCCZFpYF5_M,874
+poetry_codeartifact-0.3.0.dist-info/LICENSE,sha256=1PYXP8BCQ2QWa8Na_fNP_oMkh1IvUSNzpsLP79R-7Bo,1071
+poetry_codeartifact-0.3.0.dist-info/METADATA,sha256=0TV6G_MknzcNyL2cjHFX-xWgLnH3LeSWxX0BagLaAKs,7451
+poetry_codeartifact-0.3.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+poetry_codeartifact-0.3.0.dist-info/entry_points.txt,sha256=iojZxAqWFnEZIVoIlyvRJ8aJ2U7-Hc_wS5Vpl0M4wRo,95
+poetry_codeartifact-0.3.0.dist-info/RECORD,,
