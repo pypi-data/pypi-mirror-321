@@ -1,0 +1,6 @@
+pyproject.toml
+fawx/__init__.py
+fawx.egg-info/PKG-INFO
+fawx.egg-info/SOURCES.txt
+fawx.egg-info/dependency_links.txt
+fawx.egg-info/top_level.txt

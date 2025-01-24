@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: fawx
+Version: 0.0.5
+Summary: A bit of a file manager
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Zero-Clause BSD (0BSD)
+Requires-Python: >=3.13
