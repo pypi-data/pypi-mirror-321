@@ -1,0 +1,2 @@
+[console_scripts]
+pg-upsert = pg_upsert.cli:app
