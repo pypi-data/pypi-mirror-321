@@ -1,0 +1,8 @@
+README.md
+kemoauth.py
+pyproject.toml
+setup.py
+KemoAuth.egg-info/PKG-INFO
+KemoAuth.egg-info/SOURCES.txt
+KemoAuth.egg-info/dependency_links.txt
+KemoAuth.egg-info/top_level.txt
