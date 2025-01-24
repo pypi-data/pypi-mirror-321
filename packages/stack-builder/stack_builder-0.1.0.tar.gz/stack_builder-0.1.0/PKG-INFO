@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: stack_builder
+Version: 0.1.0
+Summary: A tool to generate project foundations like Dockerfile, composefile, setup database, ... using Docker
+Home-page: https://gitlab.com/internship4450447/informatiako
+Author: informatiako groups
+Author-email: ankoayfeno@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+source_code/__init__.py
+source_code/stack_builder.py
+source_code/yaml_reader.py
+stack_builder.egg-info/PKG-INFO
+stack_builder.egg-info/SOURCES.txt
+stack_builder.egg-info/dependency_links.txt
+stack_builder.egg-info/entry_points.txt
+stack_builder.egg-info/requires.txt
+stack_builder.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
