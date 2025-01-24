@@ -1,0 +1,12 @@
+dask[array]>=2024
+dask[diagnostics]>=2024
+joblib
+loguru
+matplotlib
+munch
+numpy>=2.0
+openpyxl
+pandas>=2
+pip>=24
+scipy>=1.13.1
+xarray>=2024
