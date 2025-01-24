@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "UN8ID"
+authors = [
+    {name = "Adrian F. Hoefflin", email = "srccircumflex-un8id@outlook.com"},
+]
+description = "soon (01/15/25)"  # todo
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    #"un8id", "Universal Identifier", "id", "uid"  # todo
+]
+license = {text = "MIT License"}
+classifiers = [
+    #"Development Status :: 1 - Planning",  # todo
+    #"Intended Audience :: Developers",  # todo
+    #"Topic :: Security :: Cryptography",  # todo
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "UN8ID.__version__"}
+
+#[project.scripts]  # todo
+#un8id = "UN8ID.__main__:run"  # todo
+
+[project.urls]
+Homepage = "https://github.com/UN8ID"
