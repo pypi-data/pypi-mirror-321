@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: building_management
+Version: 0.1.0
+Summary: A library for managing building construction data in PostgreSQL
+Home-page: https://github.com/yourusername/building_management
+Author: Liliya_Severin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2>=2.9.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Building Management Library
+
+This library provides tools for managing building construction data in PostgreSQL.
+
+## Installation
+
+```bash
+pip install building_management
