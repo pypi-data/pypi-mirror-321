@@ -1,0 +1,12 @@
+setup.py
+inw_library/__init__.py
+inw_library/fncDataFrame.py
+inw_library/fncFile_folder.py
+inw_library/fncPostgres.py
+inw_library/fncSqlServer.py
+inw_library/fncString.py
+inw_library/testFnc.py
+inw_library.egg-info/PKG-INFO
+inw_library.egg-info/SOURCES.txt
+inw_library.egg-info/dependency_links.txt
+inw_library.egg-info/top_level.txt
