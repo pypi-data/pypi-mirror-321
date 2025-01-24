@@ -1,0 +1,8 @@
+[console_scripts]
+cursor-agent = cursor_agent.main:main
+cursor-changelog = cursor_agent.tools.generate_changelog:main
+cursor-llm = cursor_agent.tools.llm_api:main
+cursor-scrape = cursor_agent.tools.web_scraper:main
+cursor-search = cursor_agent.tools.search_engine:main
+cursor-update = cursor_agent.tools.update_cursor_agent:main
+cursor-verify = cursor_agent.tools.verify_setup:main
