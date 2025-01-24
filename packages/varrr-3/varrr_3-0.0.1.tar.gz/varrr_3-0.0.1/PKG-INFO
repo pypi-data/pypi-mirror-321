@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: varrr_3
+Version: 0.0.1
+Summary: This is the simplest module for quick work with files.
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+
+топовая либа
