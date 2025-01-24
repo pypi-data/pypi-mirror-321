@@ -1,0 +1,10 @@
+README.md
+setup.py
+audio_scribe/__init__.py
+audio_scribe/cli.py
+audio_scribe.egg-info/PKG-INFO
+audio_scribe.egg-info/SOURCES.txt
+audio_scribe.egg-info/dependency_links.txt
+audio_scribe.egg-info/entry_points.txt
+audio_scribe.egg-info/requires.txt
+audio_scribe.egg-info/top_level.txt
