@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+Project1/__init__.py
+Project1/encryption.py
+Project1/main.py
+Project1/menu.py
+StudentAndGradeManagementPackage.egg-info/PKG-INFO
+StudentAndGradeManagementPackage.egg-info/SOURCES.txt
+StudentAndGradeManagementPackage.egg-info/dependency_links.txt
+StudentAndGradeManagementPackage.egg-info/top_level.txt

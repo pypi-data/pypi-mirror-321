@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: StudentAndGradeManagementPackage
+Version: 0.0.3
+Summary: Student And Grade Management Package
+Author-email: "Jieyi Yao, Wenjun Cheng" <yaojaxine@gmail.com>
+Project-URL: Homepage, https://github.com/JaxineYao/GradeandStudent
+Project-URL: Issues, https://github.com/JaxineYao/GradeandStudent/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GradeandStudent

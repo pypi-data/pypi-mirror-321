@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "StudentAndGradeManagementPackage"
+version = "0.0.3"
+authors = [
+    { name = "Jieyi Yao, Wenjun Cheng", email = "yaojaxine@gmail.com" }
+]
+description = "Student And Grade Management Package"
+readme = "README.md"
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+[tool.setuptools]
+packages = ["Project1"]
+
+[project.urls]
+Homepage = "https://github.com/JaxineYao/GradeandStudent"
+Issues = "https://github.com/JaxineYao/GradeandStudent/issues"
