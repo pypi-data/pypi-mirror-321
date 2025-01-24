@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chronulus-core
+Version: 0.0.8
+Summary: Core components for Chronulus
+Author: Chronulus AI
+Author-email: jeremy@chronulus.com
+License: Apache
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Chronulus Core
+
+Core components for Chronulus SDK.
