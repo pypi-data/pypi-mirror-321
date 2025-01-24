@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+interface_client_meter_dlms = ["config.toml"]
+
+[project]
+name = "KPZConfigurerView"
+version = "0.2.0"
+authors = [
+    {name="Sergey Sergievskiy", email="Sergievskiysm@gmail.com"}
+]
+dependencies = [
+    "Pillow>=10.4.0",
+    "DLMS-SPODES >= 0.81.2, < 0.82",
+    "DLMS-SPODES-client >= 0.13.12, < 0.14",
+    "ConfigurerControl >= 0.5.0",
+    "TKot >= 0.6.0"
+]
+description="Interface for client_meter_dlms"
+readme = "README.md"
+requires-python = ">=3.12"
+keywords=["gui","tkinter","View","interface"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
