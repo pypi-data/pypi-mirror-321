@@ -1,0 +1,2 @@
+[console_scripts]
+meilisearch-mcp-upd = meilisearch_mcp.server:main
