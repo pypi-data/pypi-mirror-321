@@ -1,0 +1,9 @@
+LICENSE
+README-package.md
+pyproject.toml
+speciesnet/speciesnet.py
+speciesnet.egg-info/PKG-INFO
+speciesnet.egg-info/SOURCES.txt
+speciesnet.egg-info/dependency_links.txt
+speciesnet.egg-info/requires.txt
+speciesnet.egg-info/top_level.txt

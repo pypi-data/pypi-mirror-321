@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+  "setuptools>61"
+]
+
+[project]
+name = "speciesnet"
+version = "1.0"
+description = "SpeciesNet placeholder"
+readme = "README-package.md"
+requires-python = ">=3.9,<3.12"
+license = {file = "LICENSE"}
+keywords = ["speciesnet"]
+authors = [
+  {name = "Your friendly neighborhood SpeciesNet team", email = "cameratraps@google.com" }
+]
+maintainers = [
+  {name = "Your friendly neighborhood SpeciesNet team", email = "cameratraps@google.com" }
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+  "numpy"  
+]
+
+[project.urls]
+"Homepage" = "https://github.com/google/cameratrapai"
+"Documentation" = "https://speciesnet.readthedocs.io"
+"Source" = "https://github.com/google/cameratrapai"
+
+[tool.setuptools.packages.find]
+include = ["speciesnet*"]
+
