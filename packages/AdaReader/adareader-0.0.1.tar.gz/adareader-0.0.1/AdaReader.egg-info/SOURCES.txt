@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+AdaReader/__init__.py
+AdaReader/datareader.py
+AdaReader.egg-info/PKG-INFO
+AdaReader.egg-info/SOURCES.txt
+AdaReader.egg-info/dependency_links.txt
+AdaReader.egg-info/requires.txt
+AdaReader.egg-info/top_level.txt
+tests/__init__.py
+tests/test_datareader.py
