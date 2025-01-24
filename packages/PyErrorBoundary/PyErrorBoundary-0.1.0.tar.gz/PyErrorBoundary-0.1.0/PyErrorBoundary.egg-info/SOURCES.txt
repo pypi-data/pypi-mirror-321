@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PyErrorBoundary.egg-info/PKG-INFO
+PyErrorBoundary.egg-info/SOURCES.txt
+PyErrorBoundary.egg-info/dependency_links.txt
+PyErrorBoundary.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyErrorBoundary
+Version: 0.1.0
+Summary: A simple Python package for explicit errors
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
