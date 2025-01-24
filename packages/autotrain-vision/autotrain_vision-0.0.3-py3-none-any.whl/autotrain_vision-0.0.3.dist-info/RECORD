@@ -1,0 +1,10 @@
+autotrain_vision/__init__.py,sha256=yGTilnzxfZXENhxCbWhC4CYBSWfCNnhD1MWDPRUG1hU,164
+autotrain_vision/auto_train.py,sha256=67-_W0ial2XN0QR0qWM9FAwGVJ8zrWoZQJ6P7MmKMgc,9228
+autotrain_vision/available_cam.py,sha256=B7ran0h4_U4Da23SNnt5XSSEIQq1aGLIJDIqbmk1-Ng,2493
+autotrain_vision/new_data.py,sha256=t0iYdS5w_JLmCUPdwVjyovH6IfbTN1UC8l6zO7pX0Ps,9574
+autotrain_vision/roboflow_bb.py,sha256=4O7IDWg3cLjKWASPTbhPf-4sk1z6y6GCOoNKJbRcfWI,4327
+autotrain_vision/utils_aug.py,sha256=H-YfG7RhRDnJ86StAYgCpThkeJYG5DrsjJ6qk3ScVxU,7606
+autotrain_vision-0.0.3.dist-info/METADATA,sha256=Q_48pwyf8iXK2s8xf2qhHRgmj3sHpJYe1vD4g0EBhN8,3154
+autotrain_vision-0.0.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+autotrain_vision-0.0.3.dist-info/top_level.txt,sha256=W5EfO9VTT5tny_ibc6MdPllsfj3Qle0I8oDjZLaF-WM,17
+autotrain_vision-0.0.3.dist-info/RECORD,,
