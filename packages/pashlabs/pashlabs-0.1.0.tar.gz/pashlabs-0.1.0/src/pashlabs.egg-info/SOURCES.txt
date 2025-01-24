@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/pashlabs.egg-info/PKG-INFO
+src/pashlabs.egg-info/SOURCES.txt
+src/pashlabs.egg-info/dependency_links.txt
+src/pashlabs.egg-info/top_level.txt
