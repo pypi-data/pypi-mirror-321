@@ -1,0 +1,10 @@
+sorting_techniques/__init__.py,sha256=Mf5Peas7DtvoxBptA_GXNg3PHO3ZcDhiTfpevwk_i8Y,178
+sorting_techniques/_utils.py,sha256=Bvgz9Cw0m6nqpH3hUU85QYDJMZ0tbDPma2JcRqct41M,1109
+sorting_techniques/bogo_sort.py,sha256=C2j4j5i9ctgaeAdTrto5dkc-z1ApINcVQ4XEOq4EFOY,878
+sorting_techniques/insertion_sort.py,sha256=uHHwix8z4GDFn9os8FRN5SAOox7gD6jnvytXn7ScdAM,1155
+sorting_techniques/selection_sort.py,sha256=97ua9Id3TG3Gy7JH_YItjvGlsYdW2l2HglH-pSuSQ1s,1148
+sorting_techniques-1.0.2.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+sorting_techniques-1.0.2.dist-info/METADATA,sha256=UvurcUvh6nECx14fh8kIxZtAQkR8N9xdwi5RFvG7jUQ,814
+sorting_techniques-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sorting_techniques-1.0.2.dist-info/top_level.txt,sha256=tDJSoupyx53y14KL41MzHuuavvIBZegCFAmmOwnrdsY,19
+sorting_techniques-1.0.2.dist-info/RECORD,,
