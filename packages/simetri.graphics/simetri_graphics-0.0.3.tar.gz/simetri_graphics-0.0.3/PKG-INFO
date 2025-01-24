@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: simetri.graphics
+Version: 0.0.3
+Summary: simetri.graphics is a Python library for creating and manipulating patterns.
+Project-URL: Homepage, https://github.com/mekanimo/simetri.graphics
+Author-email: Fahri Basegmez <mangabasi@gmail.com>
+Requires-Python: >=3.9
+Requires-Dist: ipython>=8.18.1
+Requires-Dist: matplotlib>=3.9.4
+Requires-Dist: networkx>=3.2.1
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: pymupdf>=1.25.1
+Requires-Dist: strenum>=0.4.15
+Requires-Dist: typing-extensions>=4.12.2
