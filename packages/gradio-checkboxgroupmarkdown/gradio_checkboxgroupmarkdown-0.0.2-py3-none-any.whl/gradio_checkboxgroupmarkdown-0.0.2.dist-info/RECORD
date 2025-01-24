@@ -1,0 +1,10 @@
+gradio_checkboxgroupmarkdown/__init__.py,sha256=Az5vyA8_FE_fVcwmepfA0vQPVcHXp7V2oEOO5zfGcuc,95
+gradio_checkboxgroupmarkdown/checkboxgroupmarkdown.py,sha256=Zrz5_jyjaFo9YQRxkbH9AbwxZQrCbIUDSIgVegI_Zww,9105
+gradio_checkboxgroupmarkdown/checkboxgroupmarkdown.pyi,sha256=8Djcih53EL_1d1TMFAXDUmanKPZTEPtuSb114TonI0E,50413
+gradio_checkboxgroupmarkdown/templates/component/index.js,sha256=s13JXKAhDjyiOaq2QLFUUs5M3i-MbkOpJb1viY67n9o,655800
+gradio_checkboxgroupmarkdown/templates/component/style.css,sha256=bo6PI44_OltykBOfdccgTnzbEbqyfpDV_vZHSEJyYPc,1484345
+gradio_checkboxgroupmarkdown/templates/example/index.js,sha256=fXHk5hz-RJ65D8XnIz29Mnlnv-YuDl8R4W3mUtnkqZs,1986
+gradio_checkboxgroupmarkdown/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_checkboxgroupmarkdown-0.0.2.dist-info/METADATA,sha256=cWiln_ZWar3ndXvpV5A7w8nOsil6Irzs-9EMOm7n-D4,15524
+gradio_checkboxgroupmarkdown-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gradio_checkboxgroupmarkdown-0.0.2.dist-info/RECORD,,
