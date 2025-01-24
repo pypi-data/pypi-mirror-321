@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: hmmer-tables
+Version: 1.0.2
+Summary: Read tables produced by HMMER software.
+Author-email: Danilo Horta <horta@ebi.ac.uk>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: ~=3.9
+Requires-Dist: deciphon-intervals<2,>=1.0.0
+Requires-Dist: more-itertools~=10.2
+Requires-Dist: pydantic~=2.7
+Requires-Dist: typer<0.13,>=0.12
+Description-Content-Type: text/markdown
+
+# hmmer-tables
