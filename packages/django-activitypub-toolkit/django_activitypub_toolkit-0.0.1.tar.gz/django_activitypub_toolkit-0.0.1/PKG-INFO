@@ -1,0 +1,50 @@
+Metadata-Version: 2.3
+Name: django-activitypub-toolkit
+Version: 0.0.1
+Summary: Django pluggable application to ActivityPub servers
+License: BSD-3-Clause
+Keywords: django,activitypub
+Author: Raphael Lullis
+Author-email: raphael@mushroomlabs.com
+Requires-Python: >= 3.11,<4
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Provides-Extra: dev
+Requires-Dist: celery (>=5.4)
+Requires-Dist: django (>=4.2)
+Requires-Dist: django-celery-beat (>=2.7.0)
+Requires-Dist: django-model-utils (>=4.2)
+Requires-Dist: django-ulid
+Requires-Dist: djangorestframework (>=3.13)
+Requires-Dist: factory-boy ; extra == "dev"
+Requires-Dist: httpretty ; extra == "dev"
+Requires-Dist: psycopg2-binary (>=2.9)
+Requires-Dist: pyld (>=2.0.4)
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-django ; extra == "dev"
+Requires-Dist: pytest-env ; extra == "dev"
+Requires-Dist: pytest-socket ; extra == "dev"
+Requires-Dist: rdflib (>=7.0.0)
+Requires-Dist: requests-http-message-signatures (>=0.3.1)
+Requires-Dist: responses ; extra == "dev"
+Description-Content-Type: text/markdown
+
+### Django ActivityPub Toolkit - add support to ActivityPub in your django applications
+
+## Overview
+
+Django ActivityPub Toolkit is pluggable django app that provides all
+the models, views and background tasks to let your application
+integrate with any other service that uses
+[ActivityPub](https://activitypub.rocks).
+
