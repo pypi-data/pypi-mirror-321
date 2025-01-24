@@ -1,0 +1,1 @@
+from .lib import pinyin,detailed_pinyin,alls 

@@ -1,0 +1,10 @@
+README.md
+setup.py
+hanzi_pinyin/__init__.py
+hanzi_pinyin/dict.json
+hanzi_pinyin/lib.py
+hanzi_pinyin.egg-info/PKG-INFO
+hanzi_pinyin.egg-info/SOURCES.txt
+hanzi_pinyin.egg-info/dependency_links.txt
+hanzi_pinyin.egg-info/requires.txt
+hanzi_pinyin.egg-info/top_level.txt
