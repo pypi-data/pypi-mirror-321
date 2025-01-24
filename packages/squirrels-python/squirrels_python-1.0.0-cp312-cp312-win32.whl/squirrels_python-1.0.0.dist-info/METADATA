@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: squirrels-python
+Version: 1.0.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: squirrels
+Author: <husky-wealths> <husky@wealths.app
+Author-email: <husky-wealths> <husky@wealths.app
+Requires-Python: >=3.8
