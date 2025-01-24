@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/ariwebscraper.egg-info/PKG-INFO
+src/ariwebscraper.egg-info/SOURCES.txt
+src/ariwebscraper.egg-info/dependency_links.txt
+src/ariwebscraper.egg-info/requires.txt
+src/ariwebscraper.egg-info/top_level.txt
+src/webscraper/__init__.py
+src/webscraper/scraper.py
+src/webscraper/utils.py
+tests/test_scraper.py
