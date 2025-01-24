@@ -1,0 +1,11 @@
+windborne/__init__.py,sha256=tNnX9BrdgFNjy9NY6ucobCVAgV3KYwUydEAuwxdaiqQ,1784
+windborne/cli.py,sha256=YlIz9KgsJumaCxz64uwAxfUUTJzc2rPEwzwGajCT9Jw,32838
+windborne/config.py,sha256=FYIBRiIuii5igAFQlOsHUa6u2i1kKnO1yZE7QfQJvUg,1688
+windborne/data_api.py,sha256=uggo2Y5U36ptvpSYgCUHNFwbNlczsCx7OUrf_OwlvtE,37629
+windborne/forecasts_api.py,sha256=AYuhFRls_XvzuNB55NF0w3y-_ocYwPxmI6C1lIyFkgM,16865
+windborne/utils.py,sha256=Zp9oTWfbISmJ9nO893RrW6MkqOwCDaFgsszmYaRgJSg,39670
+windborne-1.0.6.dist-info/METADATA,sha256=Fx7tFudf2QWvgLmkzfmTr4BNy2id_rKoOj-J5W4ZqVQ,1264
+windborne-1.0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+windborne-1.0.6.dist-info/entry_points.txt,sha256=j_YrqdCDrCd7p5MIwQ2BYwNXEi95VNANzLRJmcXEg1U,49
+windborne-1.0.6.dist-info/top_level.txt,sha256=PE9Lauriu5S5REf7JKhXprufZ_V5RiZ_TnfnrLGJrmE,10
+windborne-1.0.6.dist-info/RECORD,,
