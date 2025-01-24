@@ -1,0 +1,10 @@
+slotdata/__init__.py,sha256=5a1bMsVc3IDWn_DKpUs0q2nIxeaAAPtXh02e8ULFYEM,96
+slotdata/__main__.py,sha256=WFuDldN86szB9lRRlEr6r-TBn4BCpEyIXbemfNzdrOI,65
+slotdata/core/__init__.py,sha256=-UmfYEmQNUYFs-KOWjKS4fKRMyCWeAD8ePWhEVgX3dM,47
+slotdata/tests/__init__.py,sha256=FUNxuJoqdj0D5yj9CiTpJzIpRhQ1XE48dNcj5_awg0c,296
+slotdata/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+slotdata-0.0.1.dev3.dist-info/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+slotdata-0.0.1.dev3.dist-info/METADATA,sha256=kbdszEmjec6-80jT91grJz5-lFfcv1JliM2MNhtYLac,2750
+slotdata-0.0.1.dev3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+slotdata-0.0.1.dev3.dist-info/top_level.txt,sha256=fqg1-ONo9E9I2Cu16naAncZa5UNkt6yrIyiX0HY1tAg,9
+slotdata-0.0.1.dev3.dist-info/RECORD,,
