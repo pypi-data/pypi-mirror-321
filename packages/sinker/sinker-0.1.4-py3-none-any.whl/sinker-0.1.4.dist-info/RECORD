@@ -1,0 +1,15 @@
+sinker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sinker/__main__.py,sha256=TFduXGOg3VVQaKqJevNVnp6nfwCNLyxv9v1tDjkI2OI,126
+sinker/bulk_action_generator.py,sha256=JO10xFCmdqdnpLdrDNfRZgE_rqvopziPlvRV9zynric,4112
+sinker/es.py,sha256=mcCX5j7MKDRTdIauIphF7yQi2O-ic9d8GM4DPLz9u_4,674
+sinker/query_templates.py,sha256=9CvYHkX0ZRz9p9gZWvDQsd3UI1PjtQO4GeEkbZyVhH0,1203
+sinker/runner.py,sha256=cvILZcmGNVYcZE62uDU2mCHcq08gVp6eeJyyKYQFdhI,5546
+sinker/settings.py,sha256=lBjQLNsqIgtxEJRWPnDmPphel73dvKF14GZ6Tdt-ClU,2779
+sinker/sinker.py,sha256=P-yzAmT73WnhDEemEkWVpDSEL8iz3ce6te8BHe6-WvI,5778
+sinker/utils.py,sha256=fesvRSsBrWQaM8n1kPZ0eBlgh3K6ZkIwbtSfG1clBO8,798
+sinker-0.1.4.dist-info/LICENSE-APACHE,sha256=pg7qgXUUUxZo1-AHZXMUSf4U0FnTJJ4LyTs23kX3WfI,10847
+sinker-0.1.4.dist-info/LICENSE-MIT,sha256=N_i-z5MhJHdeqnx4gmifAUjQmC1c9a0ye7vyg0zE7MM,1067
+sinker-0.1.4.dist-info/METADATA,sha256=0f-nym1yrz0kuBUgl9kgm4zK6E31ezbhZmCUFzHrZ3k,12672
+sinker-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sinker-0.1.4.dist-info/entry_points.txt,sha256=fk11eJ0qh3_PrH7LZoxsagesaS5hJ0_WONKMCG3dM7g,47
+sinker-0.1.4.dist-info/RECORD,,
