@@ -1,0 +1,14 @@
+aibrary/__init__.py,sha256=z4KdlU_iA9SGySY3ks028zLg8oDPcxsuXRnFq3JcRKw,556
+aibrary/resources/aibrary_async.py,sha256=TzFAzdLLe7PQgmBu6fmu5KdLnMxVMA0ZIi2dLvo5hD8,2813
+aibrary/resources/aibrary_sync.py,sha256=tAcoog_00i8CPg1pl9Cc0yP7lNyeqmHlxUwZoPlCf8s,2741
+aibrary/resources/models.py,sha256=ljWifP2hNIzBEr_164sZFESyyN5gz9FdQVMJT03hkis,441
+aibrary/resources/object_detection.py,sha256=E-zziY86t90JoplIirKtLtuwsxdng9auE4Pl-FAtdV0,4915
+aibrary/resources/ocr.py,sha256=iuiodARRlsMFnUo3_4OtHH_iAf8-dtUtPrjCGW2mMx0,6383
+aibrary/resources/translation.py,sha256=R5ek1M4Miv1NEN-x3LylMK3GqEVFUJXSIKOsftFG3o0,2695
+aibrary/schemas/object_detection.py,sha256=pqzOoqdkVUAXNl-QoGDpGFoFCgDAUnyDxbsOsNDDCuc,295
+aibrary/schemas/ocr.py,sha256=GLU5NEWg7iYuHFE5tGLHEg96hT-XsOUXIP09kHuRKFc,268
+aibrary/schemas/translation.py,sha256=FS2FNPRILN2TLRu4tmcunNSLrhNSumFCJrCVDmtxLJM,101
+aibrary-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aibrary-0.0.3.dist-info/METADATA,sha256=mldf0pbaReqfVxM3xAnDdd1MUw6EzBbqEcLDHxB29Hk,3021
+aibrary-0.0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aibrary-0.0.3.dist-info/RECORD,,
