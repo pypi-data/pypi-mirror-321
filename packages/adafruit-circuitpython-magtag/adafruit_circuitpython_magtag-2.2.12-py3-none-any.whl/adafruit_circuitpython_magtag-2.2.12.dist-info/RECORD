@@ -1,0 +1,10 @@
+adafruit_magtag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_magtag/graphics.py,sha256=rvSsWVZj4fL1op7nXNa-GnxrjarP-GPxrZDLXlEh3vA,3365
+adafruit_magtag/magtag.py,sha256=MOARr_4EFVyTTyheEKQLlfBBj0sNb-iThDAv0ccl1y8,8156
+adafruit_magtag/network.py,sha256=TrjcbXBlBAVKnAcsUD7dCiT0TLmabDU5ZzHYci1a-N8,2596
+adafruit_magtag/peripherals.py,sha256=W5tF3QzST9IRCBRx0ES74Bk7YSCSxp52BWdBQ8HgVEk,5898
+adafruit_circuitpython_magtag-2.2.12.dist-info/LICENSE,sha256=ql5UE2yEDtLjM_ZdQ_7LxsDo__Yuuuzk_ygc0qZnIIg,1115
+adafruit_circuitpython_magtag-2.2.12.dist-info/METADATA,sha256=tKoMIwQeiWGAIywkuw3OuHzwqxmkExxBE0Dcpy4TQ2E,3983
+adafruit_circuitpython_magtag-2.2.12.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+adafruit_circuitpython_magtag-2.2.12.dist-info/top_level.txt,sha256=O8lzkagtCrUqtpFaME8vQBN1tVtQZ-342p4MiNB_MUA,16
+adafruit_circuitpython_magtag-2.2.12.dist-info/RECORD,,
