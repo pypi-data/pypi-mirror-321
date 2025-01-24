@@ -1,0 +1,2 @@
+[console_scripts]
+startsms = manishSMS.sms:main
