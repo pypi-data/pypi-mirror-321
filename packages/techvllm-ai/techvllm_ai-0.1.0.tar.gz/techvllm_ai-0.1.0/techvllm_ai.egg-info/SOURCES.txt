@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+Techv_ai/__init__.py
+Techv_ai/chat.py
+Techv_ai/client.py
+techvllm_ai.egg-info/PKG-INFO
+techvllm_ai.egg-info/SOURCES.txt
+techvllm_ai.egg-info/dependency_links.txt
+techvllm_ai.egg-info/requires.txt
+techvllm_ai.egg-info/top_level.txt

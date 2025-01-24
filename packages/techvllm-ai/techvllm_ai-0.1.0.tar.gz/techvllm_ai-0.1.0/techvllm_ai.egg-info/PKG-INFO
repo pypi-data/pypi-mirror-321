@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: techvllm_ai
+Version: 0.1.0
+Summary: TechVLLM.AI Python package for Groq-based LLM integration.
+Home-page: https://github.com/pitmabar/techvlm_ai
+Author: Pitambar Muduli
+Author-email: pitambar.muduli@techvantagesystems.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: groq>=0.15.0
+Requires-Dist: requests
+
+# techv.ai Python Package
+
+This Python package allows you to interact with the hosted LLM model via an API.
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install techvlm.ai
