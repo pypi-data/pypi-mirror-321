@@ -1,0 +1,11 @@
+daal-2025.1.0.data/data/lib/libonedal.so.3,sha256=l4rCOZoiEfErSdyZ9rKR3KfakhHFFeo6oFQ6xcWsXwo,11936696
+daal-2025.1.0.data/data/lib/libonedal_core.so.3,sha256=7UpVQYe4KW3E_PdvInFcsFta14NRLk368xGRiECmzeU,124803448
+daal-2025.1.0.data/data/lib/libonedal_dpc.so.3,sha256=1SKI3UYoQVRKEBySOXk4QgVkWo-Q1JY212iQEyACMdo,260297584
+daal-2025.1.0.data/data/lib/libonedal_parameters.so.3,sha256=FCWXcf5W68vlIPXGzZuxyWlPGuHJgFOjTLQOSsIjPCg,82288
+daal-2025.1.0.data/data/lib/libonedal_parameters_dpc.so.3,sha256=IRsEx7wsvFk8wXMh2j6bK4Yvukffw4uOHSChKpwGBlY,106104
+daal-2025.1.0.data/data/lib/libonedal_thread.so.3,sha256=O_7qyEND1VGtNEYIMpaOyB5-eASt9k1gQ8LK6dcN-gY,221816
+daal-2025.1.0.dist-info/LICENSE.txt,sha256=dyFjPQ3f9D-uJev9QF-BZqDOcwy87ETy862dXrismm8,4105
+daal-2025.1.0.dist-info/METADATA,sha256=jUWeU1mIxRyFE8DPhdFXAm9X1tq4TMq-KSU6msQy_JE,1093
+daal-2025.1.0.dist-info/WHEEL,sha256=wHDSHW15S5Ss-cXTEuv9lQNHlx87Fk-iZqRWK0BLwrI,146
+daal-2025.1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+daal-2025.1.0.dist-info/RECORD,,
