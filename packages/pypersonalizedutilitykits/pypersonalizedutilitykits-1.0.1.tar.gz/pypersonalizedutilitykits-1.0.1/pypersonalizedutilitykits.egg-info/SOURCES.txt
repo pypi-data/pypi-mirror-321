@@ -1,0 +1,5 @@
+setup.py
+pypersonalizedutilitykits.egg-info/PKG-INFO
+pypersonalizedutilitykits.egg-info/SOURCES.txt
+pypersonalizedutilitykits.egg-info/dependency_links.txt
+pypersonalizedutilitykits.egg-info/top_level.txt
