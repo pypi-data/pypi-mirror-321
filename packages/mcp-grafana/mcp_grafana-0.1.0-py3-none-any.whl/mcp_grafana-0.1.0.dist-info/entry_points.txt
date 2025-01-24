@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-grafana = mcp_grafana.cli:app
