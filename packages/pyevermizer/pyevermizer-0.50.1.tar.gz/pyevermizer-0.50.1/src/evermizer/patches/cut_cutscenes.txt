@@ -1,0 +1,129 @@
+#set // APPLY_CUT_CUTSCENES
+
+// ** TINKER **
+// remove first tinker cutscene (state 0 -> state 2)
+// NOTE: going directly to 2 with rocket parts is jank, but we skip that as well below
+@0x998d60
+14 fe 00 b2 // write 2 to 2356 (tinker state)
+04 13 00    // jump to 0x998d7a (fade-in)
+@
+
+@0x998d93+1
+// jump close to the end of script instead
+// RCALL -666 (to 0x998af9)
+66 fd
+@
+
+@0x998af7
+// zero padding for the script below
+00 00
+@
+
+@0x998af9
+// patch script to remove rocket components right before fade out
+0c 0d 04 b1 // set DEs stolen flag to spawn aegis
+0c 24 04 b1 // set Gave away Gauge
+0c 62 00 b0 // clear Gauge from inventory
+0c 25 04 b1 // set Gave away Wheel
+0c 63 00 b0 // clear Wheel from inventory
+0c 26 04 b1 // set Gave away DEs
+0c 61 00 b0 // clear DEs from inventory
+@
+
+@0x9ac5cb
+// outside, rocket cutscene: jump from first messagebox to last
+04 68 00 // unconditional jump 106 to 0x9ac638
+@
+
+// ** HORACE CAMP **
+// shorten horace first met dialog
+@0x96d80b
+04 fe 01 00 // SKIP 0x1fe to 0x96da0c
+@0x96d836
+04 d3 01 00 // SKIP 0x1d3 to 0x96da0c
+@
+
+// always show revealer hint textbox at the end
+@0x96da0e
+04 18 00 00 // SKIP 0x18 to 0x96da29
+@
+
+// shorten falling into pit intro text, horace met
+@0x96d71a
+04 25 00 00 // SKIP 0x25 to to 0x96d742
+@
+
+// shorten falling into pit intro text, horace not met
+@0x96d74a
+04 03 00 00 00 00 // SKIP 3 to 0x96d750
+@0x96d75e
+04 43 00 00 // SKIP 0x43 to 0x96d7a4
+@0x96da51
+04 1c 00 00 // SKIP 0x1c to 0x96da70
+@
+
+// shorten horace callbead dialog
+@0x96daa7
+04 00 00 // SKIP 0 to 0x96daaa
+@
+
+// shorten madronius revealer dialog
+@0x96db47
+04 01 00 00 // SKIP 1 to 0x96db4b
+@0x96db9b
+04 00 00 // SKIP 0 to 0x96db9e
+@
+
+// shorten Ebon Keep queen dialog
+@0x98ebe5
+04 e0 00 // SKIP to 0x98ecc8, remove Tinker and start walking immediately
+@0x98ed09
+04 d2 01 // SKIP to 0x98eede, skipping most of dialog
+@0x98eee4
+04 00 00 // SKIP to 0x98eee7, remove one text
+@0x98ef0a
+04 18 00 // SKIP to 0x98ef25, removing all after call bead text
+@0x98eee7+7
+32 // SKIP to f22 instead of f0f to skip most text when not receiving call beads
+@
+
+// TODO: Inn: modify text 131a
+
+// ** ACT4 **
+@0x9bdef2 + 1
+// make rocket landing pause shorter
+3b // 2s -> 1s
+@
+
+@0x9bdf1e
+// dog rocket exit pause shorter
+1d // 1s -> 0.5s
+@
+
+@0x9bdf39
+// skip most of the rocket landing cutscene
+04 35 00 // unconditional jump by 53 to 0x9bdf71
+00 // end
+@
+
+@0x9bc986
+// cut first half of prof cutscene
+04 d5 03 // unconditional jump by 981 to 0x9bcd5e
+00 // end
+@
+
+@0x9bcd62
+04 03 00 // prof. don't walk up
+@
+
+@0x9bcd6c
+// set dog x,y, prof. x,y, boy x,y, to be used after room change
+17 af 02 70 01 // WRITE $2507 = 0x0170
+17 b1 02 e8 02 // WRITE $2509 = 0x02e8
+17 b3 02 98 01 // WRITE $250b = 0x0198
+17 b5 02 c8 02 // WRITE $250d = 0x02c8
+17 b7 02 b8 01 // WRITE $250f = 0x01b8
+17 b9 02 d8 02 // WRITE $2511 = 0x02d8
+//@9bcd8a
+04 13 00 // unconditional jump by 19 to 0x9bcda0
+@
