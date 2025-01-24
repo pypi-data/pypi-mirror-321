@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: asfasfsaf
+Version: 0.9.9
+Summary: A simple example library
+Home-page: https://github.com/DanikPryanik71/my_library
+Download-URL: https://github.com/DanikPryanik71/my_library/archive/v0.9.9.zip
+Author: Daniil_Viktorovich
+Author-email: daniil789p@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: psycopg2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+asfasfsaf

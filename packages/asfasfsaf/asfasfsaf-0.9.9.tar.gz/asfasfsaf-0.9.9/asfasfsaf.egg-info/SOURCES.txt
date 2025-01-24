@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+asfasfsaf/asfasfsaf.py
+asfasfsaf.egg-info/PKG-INFO
+asfasfsaf.egg-info/SOURCES.txt
+asfasfsaf.egg-info/dependency_links.txt
+asfasfsaf.egg-info/requires.txt
+asfasfsaf.egg-info/top_level.txt
