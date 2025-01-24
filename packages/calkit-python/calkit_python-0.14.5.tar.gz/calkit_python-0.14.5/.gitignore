@@ -1,0 +1,5 @@
+dev.ipynb
+*.pyc
+.DS_Store
+.vscode
+site
