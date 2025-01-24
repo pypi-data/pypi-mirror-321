@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+pdfslides/__init__.py
+pdfslides/__main__.py
+pdfslides/cli.py
+pdfslides.egg-info/PKG-INFO
+pdfslides.egg-info/SOURCES.txt
+pdfslides.egg-info/dependency_links.txt
+pdfslides.egg-info/entry_points.txt
+pdfslides.egg-info/requires.txt
+pdfslides.egg-info/top_level.txt
