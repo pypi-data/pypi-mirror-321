@@ -1,0 +1,9 @@
+click==8.1.7
+numpy==2.0.2
+pillow==11.0.0
+python-dotenv==1.0.1
+soundfile==0.12.1
+tensorflow==2.18.0
+torch==2.4.1
+transformers==4.46.2
+tqdm==4.67.0
