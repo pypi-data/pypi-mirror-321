@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+threedgame/__init__.py
+threedgame/core.py
+threedgame.egg-info/PKG-INFO
+threedgame.egg-info/SOURCES.txt
+threedgame.egg-info/dependency_links.txt
+threedgame.egg-info/requires.txt
+threedgame.egg-info/top_level.txt

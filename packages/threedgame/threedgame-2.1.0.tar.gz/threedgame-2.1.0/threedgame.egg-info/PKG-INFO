@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: threedgame
+Version: 2.1.0
+Summary: A brief description of your library
+Home-page: https://github.com/feng/myfeng
+Author: hhsdn
+Author-email: empiresoft@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ursina>=0.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# threedgame
+
+这是一个非常好用的库，你可以输入'threegame.data.run()'
+来启用它，它是一个3D的游戏，玩家可以站在上面移动，后面自
+己设置。
+
+## 安装
+
+你可以使用 pip 来安装 threedgame：
+ 
+```bash
+pip install threedgame
+pip3 install threedgame
+```
+
+### 3. 使用指南
+
+- **基本用法**：输入指令直接可以玩
+- **高级用法**：无
+
+## 使用指南
+
+### 基本用法
+
+```python
+from threedgame import data
+
+#运行
+data.run()
+```
