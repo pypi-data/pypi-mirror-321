@@ -1,0 +1,2 @@
+[console_scripts]
+llmscout = llmscout.cli:main
