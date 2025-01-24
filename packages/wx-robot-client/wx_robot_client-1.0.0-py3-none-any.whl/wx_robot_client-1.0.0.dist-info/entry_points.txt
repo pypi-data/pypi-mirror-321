@@ -1,0 +1,3 @@
+[console_scripts]
+wx_robot = wx_robot.bin:main
+

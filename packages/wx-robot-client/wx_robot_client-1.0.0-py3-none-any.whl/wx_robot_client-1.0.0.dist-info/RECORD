@@ -1,0 +1,10 @@
+wx_robot/__init__.py,sha256=Cm8ECBcu2oaMJpxXdLHqMAqDQiZVLSkzskMPU7BnsOA,188
+wx_robot/bin.py,sha256=lMLVQX2ftzC3HhsAlx6mSVE6zNuyF_7TYXbdYrEuwow,1405
+wx_robot/core.py,sha256=lF69hPXrEFl0FkfAYOE9SXLFLFORp70Jz_vRpJQGVMI,6263
+wx_robot/util.py,sha256=HQOLrx-czCDc5TZxfWSv7K6hXUKJDnkOQPKzy7p9CVM,1113
+wx_robot/version.json,sha256=yTp2chIxXRLX5lcVlvq-WavColhZtPO8yUeRyhWF5Jw,255
+wx_robot_client-1.0.0.dist-info/METADATA,sha256=aHJ0Ma-Yyoi9qkl4-SsAenj7YmeqlJFVKoVvnk431PU,2366
+wx_robot_client-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wx_robot_client-1.0.0.dist-info/entry_points.txt,sha256=ano64Ub-haZ-gaEpwvSwDzT30Fw4LW_XkBqqXeRpgU0,48
+wx_robot_client-1.0.0.dist-info/top_level.txt,sha256=PnQSBia_dgRvl3goCWzfpTKzZjkVLS_sX_HWpDZvSns,9
+wx_robot_client-1.0.0.dist-info/RECORD,,
