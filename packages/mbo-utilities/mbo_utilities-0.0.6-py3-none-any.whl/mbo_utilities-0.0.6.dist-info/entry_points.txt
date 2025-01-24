@@ -1,0 +1,2 @@
+[console_scripts]
+mbo = mbo_utilities.__main__:main
