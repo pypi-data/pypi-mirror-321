@@ -1,0 +1,9 @@
+dynaconf<3.3.0,>=3.2.6
+pydantic<2.11.0,>=2.10.5
+typer<0.16,>=0.15.1
+boto3<1.36,>=1.35.97
+
+[dev]
+tox
+pytest
+types-boto3[boto3,s3]
