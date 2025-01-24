@@ -1,0 +1,92 @@
+Metadata-Version: 2.2
+Name: gumx
+Version: 0.2
+Summary: Wrapper for GUM
+Author-email: Egsagon <egsagon12@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Egsagon
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/Egsagon/gumx
+Keywords: gum,cli
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# GUMX
+An over-engineered Python lib for [Gum](https://github.com/charmbracelet/gum).
+```
+pip install gumx
+```
+
+## Binary management
+The Gum binary is automatically installed from the original Gum repository when launching the module.
+- You can see the location of the binary with the `gumx` command.
+- If you want to specify a custom binary, use `gumx --set path/to/gum`.
+
+## Usage
+This is quickstart guide. See the See the [Gum tutorial](https://github.com/charmbracelet/gum#tutorial) for advanced info. All functions and arguments have type hints ease of use.
+
+```py
+# Import library (Gum is automatically installed on first run here)
+import gumx
+
+# Pick item(s) in a list
+response = gumx.choose(['blue', 'red', 'green'], header = 'Favorite color?')
+
+# Confirm an actiono
+assert gumx.confirm('Are you sure?', default = False)
+
+# Select a file from a tree
+file = gumx.file('.', style = {'height': 5})
+
+# Prompt the user
+password = gumx.input(prompt = 'Enter the password', password = True)
+
+# Display a long file
+gumx.pager('LICENSE')
+
+# Make a fuzzy search
+number = gumx.search(
+    list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+    prompt = 'Whats your favorite letter?'
+)
+
+# Display a spinner
+with gumx.spin():
+    # Do a long task
+    time.sleep(5)
+
+# Prompt the user (multiple lines)
+desc = gumx.write(header = 'Commit description', char_limit = 72)
+```
+
+## TODO
+- [ ] Implement the `gum style` command
+- [ ] Fix `gumx.spin`
+- [ ] Optimize `gumx.pager`
+- [ ] Test binary installer on all platforms
+
+## LICENSE
+GUMX is licensed under the MIT license. See the `LICENSE` file.
