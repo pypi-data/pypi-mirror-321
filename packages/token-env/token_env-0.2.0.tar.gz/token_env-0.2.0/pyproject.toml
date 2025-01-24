@@ -1,0 +1,14 @@
+[project]
+name = "token-env"
+version = "0.2.0"
+description = "Gymnasium grid environment with random tokens"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium>=1.0.0",
+    "numpy>=1.20",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
