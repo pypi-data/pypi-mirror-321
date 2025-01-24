@@ -1,0 +1,5 @@
+pyproject.toml
+qua_dashboards.egg-info/PKG-INFO
+qua_dashboards.egg-info/SOURCES.txt
+qua_dashboards.egg-info/dependency_links.txt
+qua_dashboards.egg-info/top_level.txt
