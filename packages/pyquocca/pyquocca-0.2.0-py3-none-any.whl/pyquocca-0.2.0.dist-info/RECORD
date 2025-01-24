@@ -1,0 +1,11 @@
+pyquocca/__init__.py,sha256=ELsqID-XwYhOdkoG5qN0UdutIfAGjMO_OLhjGn4si60,185
+pyquocca/flags.py,sha256=OnVeT5PXr36qSr2wvHXLCs351MC-zBZAi4C9Snkwcxk,1529
+pyquocca/gunicorn.py,sha256=a_vpCsowKtOMrz25EDgHUPJc1qR0ykOm_3yz13owL7Y,3365
+pyquocca/header_utils.py,sha256=pWIg6qw0QCDuKQMaU1tCmINYOBpg7tYV3c6O5LNXCfs,2458
+pyquocca/mysql.py,sha256=4AVwXykOkeE3lfvBvaxnJMa_m0XBekknvpngGq7XqqA,4478
+pyquocca/pgsql.py,sha256=GQxbxzd73vVPIHG4vGdBfoAAtBC2bYDOBVdPQVSaxSA,5724
+pyquocca/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyquocca/xssbot.py,sha256=Bytk4C3p4gXNRoDERoYF74HuDkFogjZ-8c7zv2ORgss,2875
+pyquocca-0.2.0.dist-info/METADATA,sha256=qww1sH3mTKQRrrLchoy87Q8IJWrJXhdrKMrQBiBI2FQ,881
+pyquocca-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyquocca-0.2.0.dist-info/RECORD,,
