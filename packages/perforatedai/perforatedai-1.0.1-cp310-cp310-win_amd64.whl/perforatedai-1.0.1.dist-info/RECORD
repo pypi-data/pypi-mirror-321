@@ -1,0 +1,13 @@
+perforatedai/__init__.cp310-win_amd64.pyd,sha256=C0VwBoCX04jJuZbp5nj8_kqVmgUQpx6W6OD3VFwU7-A,19456
+perforatedai/blockwisePB.cp310-win_amd64.pyd,sha256=sYMXZX-q_u-KKhPM0YVCGzsFXV9MOugh-siittY4g1U,138240
+perforatedai/check_license.cp310-win_amd64.pyd,sha256=kHrmcEfrCf7jau8qrkJx0mwEzFsnnwj0jDbL7K9nn2E,67072
+perforatedai/cleanLoad.cp310-win_amd64.pyd,sha256=5G_KaDkYAR4ihpyc8cL1LURL3Ynl-58Mlu0RXDL8Cs0,94208
+perforatedai/pb_globals.cp310-win_amd64.pyd,sha256=-7asnYNQQwQ2wAVjq16VRP0yT2OL3stTsJ0Uz96RL0I,62464
+perforatedai/pb_layer.cp310-win_amd64.pyd,sha256=AUR_JQB_5mOLq4-n2KwuGZ_KcwSkWrKKG2Dy45Ge8NA,412160
+perforatedai/pb_models.cp310-win_amd64.pyd,sha256=zmtR_NL8Klg6IBhTVKLGkfwkn6flEIkmDUleEt6ugOQ,274432
+perforatedai/pb_neuron_layer_tracker.cp310-win_amd64.pyd,sha256=0C-ge1VFlil5cQfwxQ3x-f7WF-u65Qkrx5hLR01Vjdk,699904
+perforatedai/pb_utils.cp310-win_amd64.pyd,sha256=I7TA1FqLrlIkwPH1iIcqwGXQ2LU3uLtze9cBvqaKFZA,238080
+perforatedai-1.0.1.dist-info/METADATA,sha256=J53EZmdfLEufTirkuxoOZylNRLtdkaOMvaejlt8HZE8,444
+perforatedai-1.0.1.dist-info/WHEEL,sha256=NVXpD7b4Gxps0cd2ds5rr5TG8W4ApEwx_i5J99qMZ5E,102
+perforatedai-1.0.1.dist-info/top_level.txt,sha256=aN-RVGd9_0L1QRPEzUSfJ-EKxXmsNTx-bmWXqby6zro,13
+perforatedai-1.0.1.dist-info/RECORD,,
