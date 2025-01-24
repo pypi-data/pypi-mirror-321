@@ -1,0 +1,12 @@
+twobyfour/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twobyfour/operators.py,sha256=N7h7ue2Tj8WBSbM6fH-bcbO_TWto8ifn9wXwh2Tcc4Y,4855
+twobyfour/rotation_conversions.py,sha256=oZd0Qu7CsbR1ownBwAS0kK203diwCQdghWAXFZhBwcM,20745
+twobyfour/_cpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twobyfour/_cpu/_cpu_operations.py,sha256=1Pd9gNELRnODCetJpuDd_QPhr0knPx8IDNISp77rEg8,1687
+twobyfour/_cuda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twobyfour/_cuda/_cuda_kernels.py,sha256=MHZI7ypjWzkn3RWFNI0jzhAT6zRjvBT9JTzYCKKD_M8,7103
+twobyfour/_cuda/_cuda_operations.py,sha256=QHWE4w-ZB3SpgyNjXWWXO4XHHigwhpYFd4Z1c-68Aos,5614
+twobyfour-1.0.3.dist-info/METADATA,sha256=1pGOGYS2BCp6gAqURPJG797WoitX5TdBPJV29TJGj4M,1495
+twobyfour-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+twobyfour-1.0.3.dist-info/licenses/LICENSE,sha256=Xhq3Dt5IQCfbLFaXJVWjeHzf5kjiuPrvTmlGNaqShpk,1072
+twobyfour-1.0.3.dist-info/RECORD,,
