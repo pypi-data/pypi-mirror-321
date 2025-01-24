@@ -1,0 +1,11 @@
+htd_client/__init__.py,sha256=EFcgI1M4SHfvBRYQjo9ETjiMKs2Zdivq5NaXPMPZfwc,2839
+htd_client/base_client.py,sha256=42Tqw1-lPETP2-4VFCVx_lkh2r6HtP1PMB3RA1C2lRM,19210
+htd_client/constants.py,sha256=idvvHm0ZwbKxbx1OGetrsrDW9Kd47gDv2IRs435fd-Y,7062
+htd_client/lync_client.py,sha256=BAqOWoH7xiud22Rgj7bqTWzhKpHobOjs5VLQFhJlBpM,12596
+htd_client/mca_client.py,sha256=73OruZqPbsChNetqjLaB68eSeyFXDfo6B0d21vyrc4E,12883
+htd_client/models.py,sha256=eDyDU8nSiTtjWAJxZ5H8Ei15IZu-CRSRR-0Ec1yI3YQ,940
+htd_client/utils.py,sha256=uZfyN_1lTmYfvXiJgCaDnNYDG6B-tvmCK1Oyh17KjRc,6017
+htd_client-0.0.20.dist-info/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+htd_client-0.0.20.dist-info/METADATA,sha256=my0-H_HlRwVXZXYlnq9vE-s8w5wfZvJFT5rchYA2mk4,1520
+htd_client-0.0.20.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+htd_client-0.0.20.dist-info/RECORD,,
