@@ -1,0 +1,11 @@
+adafruit_emc2101/__init__.py,sha256=BZxRLe1X8i1kokBS5itFqcHPGgbir2jMqQ06EDvUotQ,19092
+adafruit_emc2101/emc2101_enums.py,sha256=5hVGYoxzch2oK_PhwaXrVHLMBDLBbwo4HA2TYnJh1v0,2834
+adafruit_emc2101/emc2101_ext.py,sha256=I5X6cTIVajZf86e0khrbgREOdH8yJAwukZ3N8R6H4FU,15504
+adafruit_emc2101/emc2101_fanspeed.py,sha256=SETE1spanvRR5FfnRgSTa3DFAqVOa11rfUOMFNf7e_M,7034
+adafruit_emc2101/emc2101_lut.py,sha256=OLZgK4wqWGvVIHxvZRhnb4LDUe0WwAdcz-rky8eFeig,7640
+adafruit_emc2101/emc2101_regs.py,sha256=a49anQV63Rw2mTYOTjxZFIDTZCJ1zY0Rtsci0wTRV0M,3283
+adafruit_circuitpython_emc2101-1.2.9.dist-info/LICENSE,sha256=lL6CpRSFW8FPg_7Uk25HW3Ie6YBGNLf4Ja6oU0sYvg0,1104
+adafruit_circuitpython_emc2101-1.2.9.dist-info/METADATA,sha256=Dv7gufcXpIycuddCWCeKZleD-uaAUYo1pL04nn9fM8c,4940
+adafruit_circuitpython_emc2101-1.2.9.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+adafruit_circuitpython_emc2101-1.2.9.dist-info/top_level.txt,sha256=y2W_tLbFpemLy630qfYgcjHu8OFTiK0RLKDZ_NzfD0c,17
+adafruit_circuitpython_emc2101-1.2.9.dist-info/RECORD,,
