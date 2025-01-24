@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: hashquery
+Version: 0.3.0
+Author: Hashboard
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: dataclasses-json==0.5.4
+Requires-Dist: datetime-truncate==1.*
+Requires-Dist: numpy<2
+Requires-Dist: pandas==1.4.4
+Requires-Dist: pyarrow==14.*
+Requires-Dist: python-dateutil
+Requires-Dist: requests==2.*
+Requires-Dist: SQLAlchemy==1.4.44
+Requires-Dist: sqlglot==11.*
+Requires-Dist: sqlparse==0.5.0
+Requires-Dist: typing-extensions==4.*
+Provides-Extra: duckdb
+Requires-Dist: duckdb==1.*; extra == "duckdb"
+Requires-Dist: duckdb-engine==0.13.1; extra == "duckdb"
+Provides-Extra: bigquery
+Requires-Dist: google-cloud-bigquery==3.*; extra == "bigquery"
+Requires-Dist: google-cloud-bigquery-storage==2.*; extra == "bigquery"
+Requires-Dist: sqlalchemy-bigquery==1.11.*; extra == "bigquery"
