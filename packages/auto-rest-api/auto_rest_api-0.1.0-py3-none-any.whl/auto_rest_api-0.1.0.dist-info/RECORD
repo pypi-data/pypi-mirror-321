@@ -1,0 +1,13 @@
+auto_rest/__init__.py,sha256=9ICmv2urSoAo856FJylKdorF19UsUGc4eyORYLptf1Q,69
+auto_rest/__main__.py,sha256=RK3SuyGrWmXAjWZfZZJs-FP9srqjgdzhm86MuBucOok,3197
+auto_rest/cli.py,sha256=A7-kMTNNzqZB7jTUJBAVqfYm9RyYjENr0g_vK9JE0N4,5199
+auto_rest/handlers.py,sha256=0nj3radoT0V2bCSmb5gBuWyu1CtUgSQ_NU0typ8zKBA,11827
+auto_rest/models.py,sha256=XfzBdfnjQCXmcQBOYsC7OsZ69EBCKlANrcPnO5Tj8fQ,6882
+auto_rest/params.py,sha256=f5gIeCIlzvy70IgtfJ96Krohf44AySwR5k-b1DYeIXw,4953
+auto_rest/queries.py,sha256=GzoCtxRPn9UJ7cnhYuPc8wZFppbqe7ykSlnesfWSr94,2926
+auto_rest/routers.py,sha256=VzGPEwJe8GqLly751EWIru_LwjB7R9t1z9OPoYitc9I,5431
+auto_rest_api-0.1.0.dist-info/LICENSE.md,sha256=zFRw_u1mGSOH8GrpOu0L1P765aX9fB5UpKz06mTxAos,34893
+auto_rest_api-0.1.0.dist-info/METADATA,sha256=tvb1bdogwjEIf8e6XQYuvRY65ZCfrKNInbQBKmkR8cc,2951
+auto_rest_api-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+auto_rest_api-0.1.0.dist-info/entry_points.txt,sha256=zFynmBrHyYo3Ds0Uo4-bTFe1Tdr5mIXV4dPQOFb-W1w,53
+auto_rest_api-0.1.0.dist-info/RECORD,,
