@@ -1,0 +1,9 @@
+generic_preserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generic_preserver/conflict_management.py,sha256=lILWunTDRqZL5jZ1WKKjjnVFPtkZZ5rKt0aoc64X830,3035
+generic_preserver/metaclass.py,sha256=HvrDcEEkwwhETWpq5Phqtfnzm5DnByenkQ_JfH4FhxM,4151
+generic_preserver/utils.py,sha256=L6Z8RfyNvFtutPh8Xs_Kz_HVJKYAz6lvHqXt4Oj_7aU,576
+generic_preserver/wrapper.py,sha256=usjqjwGdtPhD3Zw-yQJEo7EvCz5zZjdhAnsdeCI53J0,1762
+generic_preserver-0.1.4.dist-info/LICENSE,sha256=23tRc0wLCYQHwSFTDYEAJnQxRfETM7yum1i0Qhl_lpU,1056
+generic_preserver-0.1.4.dist-info/METADATA,sha256=OZluLuuHrsV6ihYb94LHiPxv3L9Bss4eUz4H3bn2h_k,8866
+generic_preserver-0.1.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+generic_preserver-0.1.4.dist-info/RECORD,,
