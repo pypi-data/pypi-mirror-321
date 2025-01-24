@@ -1,0 +1,10 @@
+chronicler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chronicler/_version.py,sha256=YzCyd2n7cJmd2dcq6CBR0nWQZNGO2vKiiLMgdLSguCo,91
+chronicler/chronicler.py,sha256=lVHHfaSBboTXifZq6oWLMNZz0KidKT0EwYg9CnV_V7c,2415
+chronicler/eventizer.py,sha256=iDcgTOrE2TecF9g6iqtmoM5P6k3EjjfIB85or7CeYgY,4806
+chronicler/events/core/__init__.py,sha256=rnS4DCAe-gPR-y7a_0iI-3kyqxJdbCsjhcQ0jlbKFlU,765
+chronicler/events/core/git.py,sha256=9tKGBeAgIS0bHgSNA676E68SSAAW3mIpHqvi3HJSgxg,5224
+grimoirelab_chronicler-0.0.1rc2.dist-info/METADATA,sha256=5yAeWCRk6u_phKlutGP3BjgOSRqJ22T_afMyN93OrGs,2587
+grimoirelab_chronicler-0.0.1rc2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+grimoirelab_chronicler-0.0.1rc2.dist-info/entry_points.txt,sha256=oggBCsvan-24sBtK84eRSsvLmAM6wPiHH3NVydiRYP0,63
+grimoirelab_chronicler-0.0.1rc2.dist-info/RECORD,,
