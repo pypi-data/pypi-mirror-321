@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: ecom-edwinlan
+Version: 0.0.2
+Summary: Test
+Project-URL: Documentation, https://github.com/edwinlan/ecom-edwinlan#readme
+Project-URL: Issues, https://github.com/edwinlan/ecom-edwinlan/issues
+Project-URL: Source, https://github.com/edwinlan/ecom-edwinlan
+Author-email: edwinlan <edwinlan@tencent.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: responses
+Description-Content-Type: text/markdown
+
+# ECOM EDWINLAN
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ecom-edwinlan.svg)](https://pypi.org/project/ecom-edwinlan)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ecom-edwinlan.svg)](https://pypi.org/project/ecom-edwinlan)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install ecom-edwinlan
+```
+
+## License
+
+`ecom-edwinlan` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
