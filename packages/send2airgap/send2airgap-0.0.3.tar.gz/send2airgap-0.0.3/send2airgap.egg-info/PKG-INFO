@@ -1,0 +1,106 @@
+Metadata-Version: 2.2
+Name: send2airgap
+Version: 0.0.3
+Summary: A Python package enabling the secure transfer of data from an insecure sender to an air-gapped computer equipped with a camera.
+Home-page: https://github.com/poing/Send2AirGap/
+Author: Brian LaVallee
+Author-email: brian.lavallee@invite-comm.jp
+Project-URL: Documentation, https://poing.github.io/Send2AirGap
+Project-URL: Source, https://github.com/poing/Send2AirGap
+Project-URL: Bug Tracker, https://github.com/poing/Send2AirGap/issues/
+Keywords: air gap,air gapped,air gapping,air wall,air-gap,air-gapping,air-wall,airgap,airgapped,airgapping,airwall,camera,communication security,communicationsecurity,cybersecurity,data transmission,datatransfer,disconnected network,hardwaresecurity,isolatednetwork,network security,networking,networksecurity,physically isolated,qr-code,qrcode,receive data,recvdata,secure computer network,securecomputing,send data,senddata
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Communications
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: python-barcode
+Requires-Dist: qrcode
+Requires-Dist: requests
+Requires-Dist: types-requests
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: black; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: gitchangelog; extra == "test"
+Requires-Dist: mkdocs; extra == "test"
+Requires-Dist: mkdocs-material; extra == "test"
+Requires-Dist: faker; extra == "test"
+Requires-Dist: pymdown-extensions; extra == "test"
+Requires-Dist: mkdocs-material[imaging]; extra == "test"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Send 2 Air-Gap
+
+[![codecov](https://codecov.io/gh/poing/Send2AirGap/branch/0.0.3/graph/badge.svg?token=LTQYLRKJ6M)](https://codecov.io/gh/poing/Send2AirGap)
+
+[![CI](https://github.com/poing/Send2AirGap/actions/workflows/main.yml/badge.svg)](https://github.com/poing/Send2AirGap/actions/workflows/main.yml)
+
+This is a project to provide data to an air-gapped system.
+
+The air-gapped system uses a camera to receive unidirectional communication.  Creating a "data diode" that can be used to provide data **to** systems in a high security environment.
+
+The *unsecure* system will display the `data` using qr-codes, that are decoded on the secure air-gapped system.
+
+There's even a method to *acknowledge* receipt of the `data`.  The method *involves* inputing an associated timestamp on the *unsecure* system.  This would *typically* be a manual operation, but **does** provide *possible* ways to automate the acknowledgement.  
+
+
+
+
+
+## Install it from PyPI
+
+```bash
+pip install send2airgap
+```
+
+## Usage
+
+```py
+from send2airgap import BaseClass
+from send2airgap import base_function
+
+BaseClass().base_method()
+base_function()
+```
+
+```bash
+$ python -m send2airgap
+#or
+$ send2airgap
+```
+
+## Development
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
