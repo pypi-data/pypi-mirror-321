@@ -1,0 +1,64 @@
+Metadata-Version: 2.2
+Name: paneltime
+Version: 1.2.50
+Summary: An efficient integrated panel and GARCH estimator
+Home-page: https://github.com/espensirnes/paneltime
+Author: Espen Sirnes
+Author-email: espen.sirnes@uit.no
+License: GPL-3.0
+Keywords: econometrics
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.11
+Requires-Dist: pandas
+Requires-Dist: mpmath
+Requires-Dist: paneltime_mp
+Provides-Extra: linux
+Requires-Dist: gcc; extra == "linux"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+# Paneltime
+
+
+Author: Espen Sirnes
+Version: 1.2.50
+
+This package integrates paneldata estimation with a very efficient ARIMA/GARCH
+estimator. 
+
+
+## Installation
+
+
+Use standard "pip install paneltime" for installation
+
+For compiling the custum clibrary (sparse matrix inversion):
+	numpy (will be installed anyway, but required in advance for compilation of custom c-library)
+
+
+If you are NOT installing on Windows, make sure these requirements are satisfied before you install:
+
+## For GUI:
+Tkinter:   From root, "apt python3-tk" in Linux
+
+## For matplotlib to be installed:
+pk-konfig: From root, "apt pk-konfig" in Linux
+Freetype : From root, "apt install libfreetype6 libfreetype6-dev" in Linux)
+
+
+
