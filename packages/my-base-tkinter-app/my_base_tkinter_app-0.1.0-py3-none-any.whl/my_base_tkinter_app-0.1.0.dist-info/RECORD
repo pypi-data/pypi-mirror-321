@@ -1,0 +1,10 @@
+my_base_tkinter_app/__init__.py,sha256=65U7MoyDpaxMUV71UIAS1UEI_GRUlHoYbOiBYtiFSSw,407
+my_base_tkinter_app/_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_base_tkinter_app/_app/_base_app.py,sha256=6IjsVYVNJrzoScknLbFKITRlqClzFvMIrRfkiTAUNT8,2273
+my_base_tkinter_app/_app/_error_box.py,sha256=ALSNXsNSzrvl9gp2sJ4kBEI-jWCi3CFOhsZj_00cEGU,3552
+my_base_tkinter_app/_assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_base_tkinter_app/_assets/_convert_image_to_ico.py,sha256=Pxg1B4RLOwHI5gHEmJmib_6NmX-NH2nW33lIR9i9rYw,3658
+my_base_tkinter_app-0.1.0.dist-info/METADATA,sha256=wgu09CruzXQojRCk9OvXd7yQ7tn0kSBELYOSgbPrQjM,2455
+my_base_tkinter_app-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+my_base_tkinter_app-0.1.0.dist-info/top_level.txt,sha256=sHc5_1KDvotimps-S2pOXYQ09tbnnWiNI6nws9XMOlE,20
+my_base_tkinter_app-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,52 @@
+Metadata-Version: 2.2
+Name: my_base_tkinter_app
+Version: 0.1.0
+Summary: My personal base app framework, based in Tkinter.
+Author-email: Cody Baker <cody.c.baker.phd@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Cody Baker
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/CodyCBakerPhD/my_base_tkinter_app
+Project-URL: Bug Tracker, https://github.com/CodyCBakerPhD/my_base_tkinter_app/issues
+Keywords: template,base,abstract,gui,tkinter,app
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: Unix
+Requires-Python: <3.14,>=3.13
+Description-Content-Type: text/markdown
+Provides-Extra: icons
+Requires-Dist: pillow; extra == "icons"
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: tests
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: scikit-image; extra == "tests"
+Provides-Extra: all
+Requires-Dist: my_base_tkinter_app[dev,icons,tests]; extra == "all"
+
+# My Base Tkinter App
+
+My personal base app framework, based in Tkinter.
