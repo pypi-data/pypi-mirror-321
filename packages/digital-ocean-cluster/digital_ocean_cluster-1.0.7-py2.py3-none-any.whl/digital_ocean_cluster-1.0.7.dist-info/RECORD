@@ -1,0 +1,11 @@
+digital_ocean_cluster/__init__.py,sha256=QGGTgy_S9V7y1RpMtlEAxUF4rVUxKoQV3EU1KAI97tU,461
+digital_ocean_cluster/api.py,sha256=tmf9bA9F3UUdETf8CSY_XGQyRFgq9KJHmhD1e4AF5cY,13557
+digital_ocean_cluster/cluster.py,sha256=t5k6yL8OxoBuvoEZgbgLCt7JNUy6jgyWDqUuql_PBfY,12908
+digital_ocean_cluster/download_doctl.py,sha256=ukGLcEtiAG_BUVRKKNfT9bOD0g0xQ1QrUWDvez6Tf8g,2811
+digital_ocean_cluster/ensure_doctl.py,sha256=OTr5y5ItpuP7U49ub7dOZDlylWzIqf20Y0ApQuIB3Bw,389
+digital_ocean_cluster/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+digital_ocean_cluster-1.0.7.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+digital_ocean_cluster-1.0.7.dist-info/METADATA,sha256=9Y3MUp5F7V4k9N2QnQsb5rv1KQRHJT4_fncxrwtYsC8,4876
+digital_ocean_cluster-1.0.7.dist-info/WHEEL,sha256=9Hm2OB-j1QcCUq9Jguht7ayGIIZBRTdOXD1qg9cCgPM,109
+digital_ocean_cluster-1.0.7.dist-info/top_level.txt,sha256=aQsYPPKoNvj30C-n0vZkFEfchOJShKdP6cQhHEI9sR8,22
+digital_ocean_cluster-1.0.7.dist-info/RECORD,,
