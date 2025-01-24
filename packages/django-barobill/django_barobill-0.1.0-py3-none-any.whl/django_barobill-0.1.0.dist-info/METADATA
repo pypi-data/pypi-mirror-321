@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: django-barobill
+Version: 0.1.0
+Summary: A reusable Django app for integration with BaroBill services.
+Home-page: https://github.com/cuhong/django-barobill
+Author: cuhong
+Author-email: hongcoilhouse@gmail.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=4.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: zeep==4.3.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
