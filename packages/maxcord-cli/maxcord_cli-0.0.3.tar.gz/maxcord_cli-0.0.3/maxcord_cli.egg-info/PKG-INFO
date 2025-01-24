@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: maxcord-cli
+Version: 0.0.3
+Summary: CLI for easy discord cogs creation.
+Home-page: https://github.com/omaxpy/maxcord-cli
+Author: omaxpy
+Author-email: moukasland@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENCE
+
+# Maxcord-CLI
+Python library to easily initialize discord bot and cogs.
+
+# Installation
+
+```pip install maxcord-cli```
+
+# Documentation
+
+Create base files
+```maxcord-cli create```
+This will create a main.py that automatically load cogs and start the bot, along with a .env and a cogs folder.
+
+Create a cog
+```maxcord-cli make [name]```
+This will create a base cog. It requires a name.

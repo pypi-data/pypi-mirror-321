@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+maxcord_cli/__init__.py
+maxcord_cli/cog_template.py
+maxcord_cli/main.py
+maxcord_cli/main_template.py
+maxcord_cli.egg-info/PKG-INFO
+maxcord_cli.egg-info/SOURCES.txt
+maxcord_cli.egg-info/dependency_links.txt
+maxcord_cli.egg-info/entry_points.txt
+maxcord_cli.egg-info/top_level.txt
