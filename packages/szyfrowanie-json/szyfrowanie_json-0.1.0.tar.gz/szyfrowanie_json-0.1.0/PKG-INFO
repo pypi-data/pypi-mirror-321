@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: szyfrowanie_json
+Version: 0.1.0
+Summary: Biblioteka do szyfrowania i odszyfrowywania plików JSON.
+Home-page: https://github.com/Mateusz-Zareba/Szyforwanie_json
+Author: Mateusz Zaręba
+Author-email: zarebamateusz12@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
+# szyfrowanie
+
+Biblioteka `szyfrowanie` pozwala na Ĺ‚atwe szyfrowanie i odszyfrowywanie plikĂłw JSON z uĹĽyciem algorytmu AES.
+
+## Instalacja
+
+1. Zainstaluj za pomocÄ… pip:
+   ```bash
+   pip install szyfrowanie_json
