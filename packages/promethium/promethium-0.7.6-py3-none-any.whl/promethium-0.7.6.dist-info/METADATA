@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: promethium
+Version: 0.7.6
+Summary: Library for calculating statistical distributions, written in pure Python with zero dependencies.
+Project-URL: Documentation, https://github.com/ostromia/promethium/wiki/Documentation
+Project-URL: Issues, https://github.com/berkay-yalin/promethium/issues
+Project-URL: Source, https://github.com/berkay-yalin/promethium
+Author-email: ostromia <66202981+ostromia@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Promethium 🐍
+
+[![PyPI - Version](https://img.shields.io/pypi/v/promethium.svg)](https://pypi.org/project/promethium)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/promethium.svg)](https://pypi.org/project/promethium)
+
+Library for calculating statistical distributions, written in pure Python with zero dependencies.
+
+- To contribute to the project, check out the [contribution](https://github.com/ostromia/promethium/wiki/Contribution) wiki page.
+
+- To view the documentation, check out the [documentation](https://github.com/ostromia/promethium/wiki/Documentation) wiki page.

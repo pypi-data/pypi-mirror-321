@@ -1,0 +1,12 @@
+promethium/__about__.py,sha256=wu65dmVM9fKR1rBHH263ls8Ca2FZzb0ejYcrP_Ld0iY,22
+promethium/__init__.py,sha256=RAWrSnTu-6vUzK2n6jDUquYGC5Uzf7K5aCdLEvDJmUY,263
+promethium/distributions/binomial.py,sha256=5XvIAgQs8GP2eQ42Igh9-9vThw55BByl9vjjoahpgbQ,2083
+promethium/distributions/chi2.py,sha256=vxLb_KPDv-KtMGiEAT2-iOuPfrwH04ss9j0XMYqDpnE,960
+promethium/distributions/geometric.py,sha256=shI9Cg6LryuEwELD5usy1-96SAqFdlVWoPaj4tHrpg4,1649
+promethium/distributions/normal.py,sha256=6FsOtPwBthpmSaanceDq7UdU-RxHaPPvqr4Trl2XmjI,1890
+promethium/distributions/poisson.py,sha256=IliY265orqmV8AhMEmQSFsbK7IVGEjyq9_jjAlC6ltQ,1764
+promethium/special/gamma.py,sha256=NS_j1my57ZG_ECkl4UV8TtE2OuWtIR0CVK15ghjRHhc,13858
+promethium-0.7.6.dist-info/METADATA,sha256=U-hOGq46WD8yW20HFYaOBNgpc9pBTTtDq9xgCRB8ua4,1619
+promethium-0.7.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+promethium-0.7.6.dist-info/licenses/LICENSE,sha256=Pn60a4qjDBEIUB-1kzL_LA-G9wwHa86gH9TvGZKqFN8,1064
+promethium-0.7.6.dist-info/RECORD,,
