@@ -1,0 +1,12 @@
+huscy.appointments
+huscy.attributes
+huscy.bookings
+huscy.participations
+huscy.project_design
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog
