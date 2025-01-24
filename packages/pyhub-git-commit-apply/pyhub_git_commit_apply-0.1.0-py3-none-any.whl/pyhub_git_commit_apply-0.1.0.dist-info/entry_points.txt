@@ -1,0 +1,2 @@
+[console_scripts]
+pyhub-git-commit-apply = pyhub_git_commit_apply.main:main
