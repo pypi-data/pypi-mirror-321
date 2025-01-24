@@ -1,0 +1,54 @@
+#기본 라이브러리
+from typing import TypeVar, Generic, Type, Any, Dict, List, Optional
+from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import select
+
+#패키지 라이브러리
+from .exceptions import ErrorCode, CustomException
+from .database import list_entities
+
+ModelType = TypeVar("ModelType", bound=DeclarativeBase)
+
+class BaseRepository(Generic[ModelType]):
+    def __init__(self, session: AsyncSession, model: Type[ModelType]):
+        if session is None:
+            raise CustomException(
+                ErrorCode.DB_CONNECTION_ERROR,
+                detail="Database session is not set",
+                source_function=f"{self.__class__.__name__}.session"
+            )
+        if model is None:
+            raise CustomException(
+                ErrorCode.DB_CONNECTION_ERROR,
+                detail="Model is not set",
+                source_function=f"{self.__class__.__name__}.model"
+            )
+
+        self.session = session
+        self.model = model
+    
+    @property
+    def session(self) -> AsyncSession:
+        return self._session
+    
+    async def list(
+        self,
+        skip: int = 0,
+        limit: int = 100,
+        filters: Optional[Dict[str, Any]] = None,
+        joins: Optional[List[Any]] = None
+    ) -> List[ModelType]:
+        """
+        엔티티 목록 조회.
+        """
+        # 기본 CRUD 작업 호출
+        return await list_entities(
+            session=self.db_session,
+            model=self.model,
+            skip=skip,
+            limit=limit,
+            filters=filters,
+            joins=joins,
+        )
