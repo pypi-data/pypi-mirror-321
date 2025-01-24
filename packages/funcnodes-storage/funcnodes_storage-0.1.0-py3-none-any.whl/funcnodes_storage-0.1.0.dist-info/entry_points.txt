@@ -1,0 +1,4 @@
+[funcnodes.module]
+module=funcnodes_storage
+shelf=funcnodes_storage:NODE_SHELF
+
