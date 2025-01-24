@@ -1,0 +1,14 @@
+pytz
+
+[dev]
+bump-my-version
+flake8
+flake8-type-checking
+mypy
+pre-commit
+pre-commit-uv
+ruff
+tox
+tox-uv
+types-pytz
+uv
