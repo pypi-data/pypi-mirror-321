@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: db-operationsss
+Version: 0.1
+Summary: A library for performing database operations with PostgreSQL
+Home-page: https://github.com/Unberkannt/db_operationsss
+Author: Unberkannt
+Author-email: unberkannt@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# DB Operationsss Library
+
+This is a Python library for performing database operations with PostgreSQL.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install db_operationsss

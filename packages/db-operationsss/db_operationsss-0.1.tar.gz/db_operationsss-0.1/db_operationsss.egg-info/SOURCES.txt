@@ -1,0 +1,9 @@
+README.md
+setup.py
+db_operationsss/__init__.py
+db_operationsss/db_operations.py
+db_operationsss.egg-info/PKG-INFO
+db_operationsss.egg-info/SOURCES.txt
+db_operationsss.egg-info/dependency_links.txt
+db_operationsss.egg-info/requires.txt
+db_operationsss.egg-info/top_level.txt
