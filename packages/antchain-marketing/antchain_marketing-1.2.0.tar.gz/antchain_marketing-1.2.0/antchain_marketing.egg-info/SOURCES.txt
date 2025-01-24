@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+antchain_marketing.egg-info/PKG-INFO
+antchain_marketing.egg-info/SOURCES.txt
+antchain_marketing.egg-info/dependency_links.txt
+antchain_marketing.egg-info/requires.txt
+antchain_marketing.egg-info/top_level.txt
+antchain_sdk_marketing/__init__.py
+antchain_sdk_marketing/client.py
+antchain_sdk_marketing/models.py
