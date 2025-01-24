@@ -1,0 +1,80 @@
+[project]
+name = "py-flux-tracer"
+# version属性は"setuptools_scm"が自動的に設定
+dynamic = ["version"]
+description = "This package provides methods for analyzing atmospheric observation data, primarily eddy covariance methods."
+authors = [{ name = "connect0459", email = "connect0459@gmail.com" }]
+# PILの代わりにfork先のpillowをインストール
+# 詳細は<https://pillow.readthedocs.io/en/stable/>を参照
+dependencies = [
+  "folium>=0.18.0",   # 地図
+  "geopy>=2.4.1",     # MobileMeasurements
+  "jpholiday",
+  "matplotlib",
+  "nbformat>=5.10.4", # MobileMeasurements
+  "numpy",
+  "openpyxl>=3.1.5",
+  "pandas",
+  "pillow",           # 画像
+  "plotly>=5.24.1",   # MobileMeasurements
+  "scipy",
+  "seaborn>=0.13.2",
+  "setuptools_scm",   # バージョン管理用に追加
+  "tqdm",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+# PyPIで公開するための追加情報
+license = "MIT"
+classifiers = [
+  "Development Status :: 3 - Alpha",                        # "Alpha":開発初期段階を示す
+  "Intended Audience :: Science/Research",                  # "Science/Research":科学研究者向け
+  "License :: OSI Approved :: MIT License",                 # MITライセンスで公開
+  "Programming Language :: Python :: 3",                    # Python 3 系列に対応
+  "Programming Language :: Python :: 3.11",                 # 特にPython 3.11 に対応
+  "Topic :: Scientific/Engineering :: Atmospheric Science", # "Atmospheric Science":大気科学分野
+]
+keywords = [
+  "meteorology",
+  "eddy",
+  "covariance",
+  "flux",
+  "spectrum",
+  "footprint",
+  "hotspots",
+  "methane",
+  "ethane",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/connect0459/py-flux-tracer"
+"Bug Tracker" = "https://github.com/connect0459/py-flux-tracer/issues"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
+write-to = "src/py_flux_tracer/_version_generated.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/py_flux_tracer"]
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+  "build>=1.2.2.post1",
+  "hatchling>=1.25.0",
+  "ipykernel>=6.29.5",
+  "pdoc>=15.0.1",
+  "pytest>=8.3.4",
+  "python-dotenv>=1.0.1",
+  "ruff>=0.6.8",
+  "twine>=5.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
