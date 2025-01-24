@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kmvahini/__init__.py
+kmvahini/scraper.py
+kmvahini.egg-info/PKG-INFO
+kmvahini.egg-info/SOURCES.txt
+kmvahini.egg-info/dependency_links.txt
+kmvahini.egg-info/requires.txt
+kmvahini.egg-info/top_level.txt

@@ -1,0 +1,114 @@
+# kmvahini
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=30&center=true&vCenter=true&width=600&height=100&lines=Karnataka+Agri+Price+Data;kmvahini+1.1)
+
+### **Download Market Data from Krishi Marata Vahini!**
+
+---
+
+## **Important Legal Disclaimer**
+
+Krishi Marata Vahini is the registered trademark of the **Karnataka State Agricultural Marketing Board (KSAMB)** and the **Department of Agricultural Marketing, Govt. of Karnataka**.
+
+**kmvahini** is **not** affiliated, endorsed, or vetted by KSAMB or the Government of Karnataka. It is an open-source tool designed for **research and educational purposes** using publicly available data from KSAMB.
+
+The data is intended for **personal and research use only**. Refer to KSAMB's [Terms of Use](https://krama.karnataka.gov.in/department.aspx?page=terms) for more details.
+
+---
+
+## **About `kmvahini`**
+
+**kmvahini** is a Python library that enables users to scrape and analyze market data for agricultural commodities available on [Krishi Marata Vahini](https://krama.karnataka.gov.in/).  
+
+### Key Features  
+- Scrape market data for over **264 commodities** from **164 markets** across Karnataka.  
+- Retrieve data from **2002 onwards**.  
+- Filter by **month**, **year**, **commodity**, and **market**.  
+- Multithreading support for faster data retrieval.  
+- Outputs clean and structured data for research and analysis.  
+
+---
+
+## **Installation**
+
+To install the latest version of `kmvahini`:
+
+```bash
+pip install kmvahini
+```
+
+Upgrade to the latest version:
+
+```bash
+pip install --upgrade kmvahini
+```
+
+---
+
+## **Quick Start**
+
+### Example Usage
+
+```python
+import kmvahini.scraper as scraper
+
+# Define parameters for scraping
+months = ['JANUARY', 'FEBRUARY', 'MARCH']  # Specify months
+years = ["2010"]  # Specify year(s)
+commodities = ["BENGALGRAM"]  # Choose a commodity
+markets = ["AllMarkets"]  # Select all or specific markets
+
+# Scrape the data
+df = scraper.scrape_website(months, years, commodities, markets)
+
+# Preview the data
+print(df.head())
+```
+
+### Output
+
+The resulting `DataFrame` contains structured columns, such as:  
+
+- **Date**  
+- **Market**  
+- **Commodity**  
+- **Price Details (Min, Max, Modal)**  
+
+---
+
+## **Requirements**
+
+This package depends on:  
+- Python 3.7+  
+- `selenium`  
+- `pandas`  
+- `tqdm`
+- `lxml`
+
+For full details, check:  
+- [Requirements](https://github.com/patilmanojkumar/kmvahini/blob/master/requirements.txt)  
+- [setup.py](https://github.com/patilmanojkumar/kmvahini/blob/master/setup.py)  
+
+---
+
+## **Legal Notes**
+
+**kmvahini** is licensed under the **MIT License**. See the [LICENSE](https://github.com/patilmanojkumar/kmvahini/blob/master/LICENSE) file for more details.  
+
+---
+
+## **Feedback & Contributions**
+
+We welcome your feedback and contributions! Here's how you can contribute:  
+
+- **Raise an Issue:** Report bugs or suggest new features via the [Issues](https://github.com/patilmanojkumar/kmvahini/issues) section of the GitHub repository.  
+- **Contribute:** Fork the repository, make your changes, and submit a pull request.  
+- **Contact:** For direct feedback or queries, email **patil.manojkumar@hotmail.com**.  
+
+---  
+
+### **P.S.**  
+
+Thank you for using **kmvahini**! Your feedback is invaluable in making it better. 😊  
+
+---
