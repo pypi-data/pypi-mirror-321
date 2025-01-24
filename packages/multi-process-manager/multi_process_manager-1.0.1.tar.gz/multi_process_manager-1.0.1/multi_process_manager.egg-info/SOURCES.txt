@@ -1,0 +1,6 @@
+README.md
+setup.py
+multi_process_manager.egg-info/PKG-INFO
+multi_process_manager.egg-info/SOURCES.txt
+multi_process_manager.egg-info/dependency_links.txt
+multi_process_manager.egg-info/top_level.txt
