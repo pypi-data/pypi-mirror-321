@@ -1,0 +1,7 @@
+README.md
+setup.py
+comdb_client/comdb_client.egg-info/PKG-INFO
+comdb_client/comdb_client.egg-info/SOURCES.txt
+comdb_client/comdb_client.egg-info/dependency_links.txt
+comdb_client/comdb_client.egg-info/requires.txt
+comdb_client/comdb_client.egg-info/top_level.txt
