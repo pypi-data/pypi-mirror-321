@@ -1,0 +1,15 @@
+[project]
+name = "orchestracto-client"
+authors = [{name = "TractoAI team"}]
+requires-python = ">=3.11"
+dynamic = ["version", "dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+packages = ["orc_client"]
+
+[tool.setuptools.dynamic]
+version = {attr = "orc_client.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+orc = "orc_client.cli:main"
