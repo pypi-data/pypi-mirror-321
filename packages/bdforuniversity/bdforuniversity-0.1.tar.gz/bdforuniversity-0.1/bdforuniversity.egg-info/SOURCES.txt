@@ -1,0 +1,9 @@
+README.md
+setup.py
+bdforuniversity/__init__.py
+bdforuniversity/mybdoperationn.py
+bdforuniversity.egg-info/PKG-INFO
+bdforuniversity.egg-info/SOURCES.txt
+bdforuniversity.egg-info/dependency_links.txt
+bdforuniversity.egg-info/requires.txt
+bdforuniversity.egg-info/top_level.txt
