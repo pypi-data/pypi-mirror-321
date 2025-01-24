@@ -1,0 +1,9 @@
+cfgengine/__init__.py,sha256=9jRo01Yqkbx1uDTx539Wp53-NkoQ-stCP1aG3yAXk3M,699
+cfgengine/config_loader.py,sha256=ADOVhUxq-YEeC2T_OF7NVf1I7tjjZys12C4qrFIzddE,4381
+cfgengine/default_parser.py,sha256=pEcaMuY9JtcASSHVMwaXLKB2Oz5dA1CecnGlCkxXxdQ,1769
+cfgengine/parser.py,sha256=XQ7gxV8zCSQgSrAfMxdOKmUjauzDXsz0S1OidNgPnf8,7620
+cfgengine-2.0.0.dist-info/LICENSE,sha256=Y1oEFndaMV5KiQ63seJt9WB4kK3HTKEf7FYPEw3JtPY,1067
+cfgengine-2.0.0.dist-info/METADATA,sha256=yHIpSFMLzIYhXgW0sLNnkr4HMj4z8Ra7KQ-3sgcOb30,6725
+cfgengine-2.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cfgengine-2.0.0.dist-info/top_level.txt,sha256=UYwP0efoWHoMB6DwP9X6Ah1JcLbZ06VIVV5tEgESl2w,10
+cfgengine-2.0.0.dist-info/RECORD,,
