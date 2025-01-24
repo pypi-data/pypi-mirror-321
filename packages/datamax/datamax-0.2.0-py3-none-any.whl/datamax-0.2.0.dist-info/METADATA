@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: datamax
+Version: 0.2.0
+Summary: Add your description here
+Author-email: Kyle Pitzen <kyle.pitzen@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.7
+Requires-Dist: pyarrow>=18.1.0
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rich>=13.9.4
+Requires-Dist: types-requests>=2.32.0.20241016
+Description-Content-Type: text/markdown
+
+# datamax
+
+Describe your project here.

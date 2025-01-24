@@ -1,0 +1,10 @@
+datamax/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+datamax/cli.py,sha256=dLd56iGwgsd1Z7QZaqhVGf39bBaXy4y4ZOvHuKMJAIk,601
+datamax/client.py,sha256=jCEkkTtDltqjIEpHYk6F320vhq7tKvpYLuE3peMIMok,1553
+datamax/console.py,sha256=F2pZV_mrGm3mBsoHBQwa3uauElsPiJ9IgxlhM5DNBsc,50
+datamax/datapackage.py,sha256=x9hjKaHgD8ayyU2za8nFVTATmY6k2xLU5GIpZdPoZss,1010
+datamax/publish.py,sha256=N6ssSIO60jl3ZMfFononeX3dZJAzvPoZSDOXEvW8lfg,8543
+datamax-0.2.0.dist-info/METADATA,sha256=4VH91S-xzvHcBKfBAb9FO5hPI-49SYkp8ugFmVeyOUw,438
+datamax-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+datamax-0.2.0.dist-info/entry_points.txt,sha256=4WAPbyRyYwpX_80RXzpeD6hXg9U1pLlOM7t67RCsmJs,45
+datamax-0.2.0.dist-info/RECORD,,
