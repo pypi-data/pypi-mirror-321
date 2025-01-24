@@ -1,0 +1,14 @@
+epoa_tools/__init__.py,sha256=FVgWGWVST3n5e9Km0xbq1INOgE_8uAckT33LaIo4RI8,71
+epoa_tools/__version__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+epoa_tools/complaint.py,sha256=P5eYMX6XrOvaaQEbtlDf2z6Czr3-BWHrQndtnEjLsx4,7519
+epoa_tools/data/F700-200-000.pdf,sha256=P7Ck0svjiUaCC0Bw0vIGePHOoXPIOGzMePd0xrP9M9g,204711
+epoa_tools/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epoa_tools/job_ad.py,sha256=OZbQ80ygLdK5UHIPDWXYqqmwwReCpItzlFzTWGzMfGo,1822
+epoa_tools/models.py,sha256=A0zf2JwkrEwemTFa6DUvQSKBhy4oNpa_V6063o9Ly10,788
+epoa_tools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epoa_tools/redactor.py,sha256=lt3UccLqaCEfch8lpaZywyFOFcqdvJycHA2BpHSTgjk,1378
+epoa_tools-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+epoa_tools-0.0.4.dist-info/METADATA,sha256=vcS-8ol6uU2REpdO0_SI_f73m61WYGqg2VH2Hl6OLww,4645
+epoa_tools-0.0.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+epoa_tools-0.0.4.dist-info/entry_points.txt,sha256=gHjB7Ej8y7PziRrNXNyuq4WRAFVs0xkQLmAotmzXc6M,54
+epoa_tools-0.0.4.dist-info/RECORD,,
