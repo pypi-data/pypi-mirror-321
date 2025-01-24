@@ -1,0 +1,15 @@
+prezmanifest/__init__.py,sha256=drgkC4gNCTfEZdcSOGmJeMJpG3s9JTDtaZfTM3jp-qw,269
+prezmanifest/definednamespaces.py,sha256=JKKgZIF-4ZWVuxpmTqRyz6PhsU_ILa0JHykyXJEquCM,762
+prezmanifest/documentor.py,sha256=nNuzc85Hza1tNjuxcC76XHtyBLHMtcV5km7xzE5IQmA,7543
+prezmanifest/get_iris_from_files.py,sha256=YRMJrsyFs4zpvrVXQyqaaES4qIKh3zmluzDmPJzn0H8,310
+prezmanifest/labeller.py,sha256=XxoOvi_YhI-9bltuxs1kYeDubRM7QloK2Kl__xppi20,8142
+prezmanifest/loader.py,sha256=jPNto8gVJEMP1ixLjZbJnh35nVCwHKC-wOWtlyzFSDc,13379
+prezmanifest/mrr.ttl,sha256=TTr7oC2tcFuIocKKdbxWrpPMc2x7-aIM7swnZlY-sbA,2853
+prezmanifest/system-labels.ttl,sha256=eFIijfRbefMR-Xkf9JjnO0LKzGwlWmhpPO_yLo5mjJs,256
+prezmanifest/utils.py,sha256=7oF7zdCcP7Zvz9XnKrRqQj6_hm3XDxNjLIoUrPiIjhk,1759
+prezmanifest/validator.py,sha256=mWOTGw9G3sh2tpe08SOzElmuJ8X9MuZHAKZ8DxGMSno,3020
+prezmanifest/validator.ttl,sha256=kILrwvZt3UGtjcB2hjwSvCdyfWLwqvISKQso7wkTwTU,3643
+prezmanifest-0.4.0.dist-info/LICENSE,sha256=F7L518ib_ies13KvZ3ShpCGXrXg0sMe8Q1t_ccPq4_E,1523
+prezmanifest-0.4.0.dist-info/METADATA,sha256=xjYtvbJR-1ntSrz827Zs0M8eRDLdUOLTXsT7L6imYuI,7327
+prezmanifest-0.4.0.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+prezmanifest-0.4.0.dist-info/RECORD,,
