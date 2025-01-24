@@ -1,0 +1,153 @@
+Metadata-Version: 2.3
+Name: pepperpy-poetry
+Version: 0.3.4
+Summary: A Poetry plugin for shared configuration management across multiple projects in the pepperpy ecosystem
+License: MIT
+Keywords: poetry,plugin,configuration,management,pepperpy
+Author: Felipe Pimentel
+Author-email: felipe.pimentel@gmail.com
+Maintainer: Felipe Pimentel
+Maintainer-email: felipe.pimentel@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: poetry (>=2.0.1,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Documentation, https://felipepimentel.github.io/pepperpy-poetry
+Project-URL: Homepage, https://github.com/felipepimentel/pepperpy-poetry
+Project-URL: Repository, https://github.com/felipepimentel/pepperpy-poetry
+Description-Content-Type: text/markdown
+
+# Pepperpy Poetry Plugin
+
+A Poetry plugin for shared configuration management across multiple projects in the pepperpy ecosystem.
+
+## Overview
+
+The Pepperpy Poetry Plugin simplifies configuration management across multiple Python projects. It allows you to maintain a single source of truth for common configuration settings, ensuring consistency across your entire project ecosystem.
+
+## Key Features
+
+- **Shared Configuration Management**: Automatically merge shared configurations from `pepperpy.toml` into your project's `pyproject.toml`
+- **Template System**: Rich template system with inheritance and variable substitution
+- **Environment Variables**: Advanced environment variable management with validation
+- **Caching**: Smart caching system for better performance
+- **CLI Commands**: Intuitive commands for managing configurations and templates
+
+## Installation
+
+You can install the plugin using any of these methods:
+
+### Using `pipx` (Recommended)
+
+```bash
+pipx inject poetry pepperpy-poetry
+```
+
+### Using Poetry's plugin manager
+
+```bash
+poetry self add pepperpy-poetry
+```
+
+### Using pip in Poetry's environment
+
+```bash
+$POETRY_HOME/bin/pip install pepperpy-poetry
+```
+
+## Available Templates
+
+The plugin comes with several predefined templates:
+
+### Base Template
+Basic Python project setup with essential development tools.
+
+### Full Template
+Complete Python project setup with:
+- Modern Python development tools (Ruff, Black, MyPy)
+- Testing setup (Pytest with coverage)
+- Documentation (Sphinx)
+- CI/CD with semantic release
+- Pre-commit hooks
+- Automated version management
+
+### FastAPI Template
+Complete FastAPI web application setup with:
+- FastAPI with Uvicorn
+- Pydantic for data validation
+- Authentication packages
+- API testing tools
+
+### CLI Template
+Command-line application setup with:
+- Typer for CLI interface
+- Rich for beautiful terminal output
+- Click testing utilities
+
+### Data Science Template
+Data science project setup with:
+- NumPy and Pandas
+- Scikit-learn
+- Matplotlib and Seaborn
+- Jupyter notebooks
+
+### Django Template
+Django web application setup with:
+- Django with common extensions
+- Environment management
+- Authentication and forms
+- Development tools
+
+## Quick Example
+
+1. List available templates:
+```bash
+poetry pepperpy list-templates
+```
+
+2. Initialize a new project with a template:
+```bash
+poetry pepperpy init full
+```
+
+3. Or create a `pepperpy.toml` file manually:
+```toml
+# Use a predefined template
+template = "full"
+
+[tool.poetry]
+name = "my-python-package"
+description = "My Python Package"
+
+[tool.pepperpy.env]
+GH_TOKEN = { required = true, secret = true, description = "GitHub token for releases" }
+POETRY_PYPI_TOKEN_PYPI = { required = true, secret = true, description = "PyPI token for publishing" }
+```
+
+## Documentation
+
+For detailed documentation, visit [https://felipepimentel.github.io/pepperpy-poetry/](https://felipepimentel.github.io/pepperpy-poetry/)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
