@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SAHANI_TTS.egg-info/PKG-INFO
+SAHANI_TTS.egg-info/SOURCES.txt
+SAHANI_TTS.egg-info/dependency_links.txt
+SAHANI_TTS.egg-info/requires.txt
+SAHANI_TTS.egg-info/top_level.txt
+package/__init__.py
+package/core.py
