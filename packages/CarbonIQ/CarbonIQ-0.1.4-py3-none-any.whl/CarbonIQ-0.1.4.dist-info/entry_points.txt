@@ -1,0 +1,2 @@
+[console_scripts]
+carboniq = carboniq.__main__:main
