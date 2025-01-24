@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: log-configurator
+Version: 0.0.3
+Summary: simple tool to facilitate logging - made for my personal use
+Author: rlipperts
+Author-email: rlipperts@techfak.uni-bielefeld.de
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# log configurator
+Simple configurator for the python logging package that allows simultaneous file and shell logging
+
+## installation
+The log configurator can easily be installed from pypi
+```
+pip install log-configurator
+```
+
+## usage
+
+Import the package and the default python logging
+
+```python
+import log_configurator
+import logging
+```
+
+Configure python logging
+```python
+log_configurator.setup_root_logger()
+```
+
+Create a logging instance in your module as usual and log with it
+```python
+logger = logging.getLogger(__name__)
+logger.info('Log Horizon')
+```
+
+### buffer initial output
+If you need more complex argument parsing before you can configure the logger you can buffer it and have it logged once you configure your logger.
+
+```python
+initial_log = log_configurator.buffer_log()
+logger = logging.getLogger(__name__)
+logger.info('Early log information')
+
+# <your setup code goes here>
+
+log_configurator.setup_root_logger()
+logger.debug(initial_log.getvalue())
+```
+The early log output currently can only be logged with one severity level.
+
