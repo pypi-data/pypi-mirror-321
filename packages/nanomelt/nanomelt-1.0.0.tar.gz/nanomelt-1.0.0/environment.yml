@@ -1,0 +1,31 @@
+name: nanomelt
+channels:
+  - nodefaults
+  - bioconda
+  - biocore
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - poetry
+  - hmmer
+  - anarci
+  - biopython
+  - nomkl
+  - openmm
+  - pdbfixer
+  - pip
+  - pip:
+    - scikit-learn
+    - joblib 
+    - fair-esm
+    - ablang
+    - peptides
+    - Immunebuilder
+    - transformers
+    - antiberty
+    - xgboost
+    - lightgbm
+    - kmedoids
+    - kneed
+    - matplotlib
+
