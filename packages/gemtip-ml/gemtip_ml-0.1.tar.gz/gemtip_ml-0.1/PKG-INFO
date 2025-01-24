@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: gemtip-ml
+Version: 0.1
+Summary: A package for generation of synthetic anisotropic GEMTIP data
+Home-page: https://github.com/clberube/gemtip-ml
+Author: Charles L. Bérubé, Jean-Luc Gagnon
+Author-email: charles.berube@polymtl.ca, jean-luc.gagnon@polymtl.ca
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: torchquad
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
