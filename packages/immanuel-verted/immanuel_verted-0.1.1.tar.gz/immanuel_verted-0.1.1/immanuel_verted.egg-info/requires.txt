@@ -1,0 +1,13 @@
+pyswisseph>=2.0.0
+pendulum>=2.0.0
+python-dateutil>=2.8.0
+pytz
+
+[dev]
+pytest>=6.0
+pytest-cov>=2.0
+black
+flake8
+mypy
+twine
+wheel
