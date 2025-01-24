@@ -1,0 +1,57 @@
+[package]
+name = "rdb"
+edition = "2021"
+version = "0.3.0"
+authors = ["Jan-Erik Rediger <badboy@fnordig.de>", "Tim Bauer <timderbauer@gmail.com>"]
+keywords = ["redis", "database", "rdb", "parser"]
+description = "Fast and efficient RDB parsing utility"
+readme = "README.md"
+license = "MIT"
+homepage = "http://rdb.fnordig.de/"
+documentation = "http://rdb.fnordig.de/doc/rdb/"
+repository = "https://github.com/badboy/rdb-rs"
+
+include = [
+  "Cargo.toml",
+  "README*",
+  "LICENSE*",
+  "src/**/*",
+  "tests/**/*",
+  "examples/**/*",
+]
+
+[[bin]]
+name = "rdb"
+path = "src/main.rs"
+doc  = false
+
+[lib]
+name = "rdb"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+lzf = "0.3"
+getopts = "0.2"
+rustc-serialize = "0.3"
+regex = "0.1"
+byteorder = "0.5"
+thiserror = "1.0"
+pyo3 = { version = "0.23.3", features = ["extension-module"], optional = true }
+clap = { version = "4.4", features = ["derive"] }
+indexmap = "2.7.0"
+log = "0.4.22"
+
+[dev-dependencies]
+async-std = { version = "1.13.0", features = ["attributes"] }
+tokio = { version = "1.0", features = ["full"] }
+pretty_assertions = "1.4.1"
+redis = "0.27.6"
+rstest = "0.23.0"
+testcontainers = "0.23.1"
+testcontainers-modules = { version = "0.11.4", features = ["redis"] }
+tempfile = "3.14.0"
+assert_cmd = "2.0.16"
+
+[features]
+default = []
+python = ["pyo3"]
