@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: hfl-metrics
+Version: 0.0.2
+Summary: Send metrics to dedicated endpoint
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: fastapi
+
+# install
+```
+pip install hfl-metrics
+```
+
+# import 
+`from metrics import metrics_middleware`
+
+# use
+```python
+from metrics import metrics_middleware
+from fastapi import FastAPI, Request
+
+app = FastAPI()
+@app.middleware("http")
+async def add_metrics(request: Request, call_next):
+    return await metrics_middleware(request, call_next)
+```
