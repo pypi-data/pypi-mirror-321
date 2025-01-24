@@ -1,0 +1,2 @@
+[console_scripts]
+dataspark = main:main
