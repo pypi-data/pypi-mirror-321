@@ -1,0 +1,7 @@
+zhconv_rs-0.3.3.dist-info/METADATA,sha256=L41h5cH2NXg5m7FPHe3ozXZYHZ8ww0g6FcPkTZcW0cY,14430
+zhconv_rs-0.3.3.dist-info/WHEEL,sha256=499VU27brUqVKAcJR8trjx3Aw9l0irQYT7o8Yx2WiAY,94
+zhconv_rs/__init__.py,sha256=sEUd2raL1aXivmIoU49Anqoo61OtzDu1eZirNbDLEps,119
+zhconv_rs/__init__.pyi,sha256=Fo543s5ekz962VOn_ecAACwYBFy9Ta7SD1mqucEuFls,1037
+zhconv_rs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zhconv_rs/zhconv_rs.pyd,sha256=xg4vHSiBg3hVc7Qh2yAcOtd2SA9GQrartFtJ7WQDN04,3057152
+zhconv_rs-0.3.3.dist-info/RECORD,,
