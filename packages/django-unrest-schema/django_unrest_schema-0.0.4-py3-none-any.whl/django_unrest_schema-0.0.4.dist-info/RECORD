@@ -1,0 +1,11 @@
+unrest_schema/__init__.py,sha256=sTJoZwDzRwg6dtL2nSqQvTxr_fKn69kXP9p0w5SK8L0,74
+unrest_schema/http.py,sha256=TAE6HAqNIPfW6N05yVEStacX58dDDdz0fZbHto_89UU,719
+unrest_schema/pagination.py,sha256=6DXzQlny1HA03jU-ZKsfZoIVmpSDHESHfu6GoPQ_Vko,667
+unrest_schema/urls.py,sha256=wsu-40m_FPXk83o-fxVmNCaOaC3JnY6RGLkvgVZCA1c,389
+unrest_schema/utils.py,sha256=XejosK9SzyYc8IAwoOeEQ8vDVkKEAIp5aiKve5Xr17c,4382
+unrest_schema/views.py,sha256=GsiyCVYENS9cU8Yb6Fi0n4GiKKOSdALzqFiCDps0aZg,8951
+django_unrest_schema-0.0.4.dist-info/LICENSE,sha256=dbaw9bj28hamGrWrdrawBAcg7DdnVf-HYmZkg6oe4Mo,1078
+django_unrest_schema-0.0.4.dist-info/METADATA,sha256=MvYDf87o0nLUvYI_E1NeNCpOu2hVjTID4Tf4Bv29dEE,403
+django_unrest_schema-0.0.4.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+django_unrest_schema-0.0.4.dist-info/top_level.txt,sha256=tcaikYpWd0Zp0Y7EIEptYJ2q7C_GLEmIEPUHCfYvSD4,14
+django_unrest_schema-0.0.4.dist-info/RECORD,,
