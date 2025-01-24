@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: KemoAuth
+Version: 0.0.3
+Summary: Kemoauth is a Simple Key System
+Home-page: 
+Author: DewzaCSharp
+Author-email: dewzacsharp@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# KemoAuth
+
+Kemoauth is a Simple Key System
+
+## Installation
+
+```bash
+pip install kemoauth
