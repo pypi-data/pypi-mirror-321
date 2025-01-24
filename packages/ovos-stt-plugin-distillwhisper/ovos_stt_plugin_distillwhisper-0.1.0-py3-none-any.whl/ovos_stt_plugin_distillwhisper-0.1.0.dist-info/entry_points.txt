@@ -1,0 +1,2 @@
+[mycroft.plugin.stt]
+ovos-stt-plugin-distillwhisper = ovos_stt_plugin_distillwhisper:DistillWhisperSTT
