@@ -1,0 +1,3 @@
+[jax.ats.plugins]
+boolean_algebra=geneweaver.tools.boolean_algebra.plugin:BooleanAlgebra
+
