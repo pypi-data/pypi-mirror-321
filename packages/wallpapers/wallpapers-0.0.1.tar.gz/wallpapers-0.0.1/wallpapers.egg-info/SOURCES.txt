@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wallpaper/__init__.py
+wallpaper/test__init__.py
+wallpapers.egg-info/PKG-INFO
+wallpapers.egg-info/SOURCES.txt
+wallpapers.egg-info/dependency_links.txt
+wallpapers.egg-info/requires.txt
+wallpapers.egg-info/top_level.txt

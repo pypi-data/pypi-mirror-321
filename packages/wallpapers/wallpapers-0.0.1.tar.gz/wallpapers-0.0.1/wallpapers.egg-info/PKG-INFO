@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: wallpapers
+Version: 0.0.1
+Summary: wallpapers
+Author: huang yi yi
+Author-email: 363766687@qq.com
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: winshell>=0.5.4.post1
+Requires-Dist: pywin32>=307.post1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Wallpaper
