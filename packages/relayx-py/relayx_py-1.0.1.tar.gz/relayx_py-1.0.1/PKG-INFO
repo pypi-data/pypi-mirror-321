@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: relayx_py
+Version: 1.0.1
+Summary: A SDK to connect to the Relay Network
+Author: Relay
+License: Apache 2.0
+License-File: LICENSE
+Requires-Dist: nats-py
+Requires-Dist: pytest-asyncio
+Dynamic: author
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
