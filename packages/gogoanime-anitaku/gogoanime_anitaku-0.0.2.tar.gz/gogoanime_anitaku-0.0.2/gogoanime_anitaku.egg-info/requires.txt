@@ -1,0 +1,15 @@
+tqdm
+aria2
+bs4
+requests
+click
+rich
+keyring
+
+[cli-enhanced]
+rich
+
+[testing]
+pytest
+pytest-cov
+tox

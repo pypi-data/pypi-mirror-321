@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+gogoanime/__init__.py
+gogoanime/__main__.py
+gogoanime/anime_info.py
+gogoanime/constants.py
+gogoanime/download.py
+gogoanime/get_download_url.py
+gogoanime/login.py
+gogoanime/user.py
+gogoanime_anitaku.egg-info/PKG-INFO
+gogoanime_anitaku.egg-info/SOURCES.txt
+gogoanime_anitaku.egg-info/dependency_links.txt
+gogoanime_anitaku.egg-info/entry_points.txt
+gogoanime_anitaku.egg-info/requires.txt
+gogoanime_anitaku.egg-info/top_level.txt
