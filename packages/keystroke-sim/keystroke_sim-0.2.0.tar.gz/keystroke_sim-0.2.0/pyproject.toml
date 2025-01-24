@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keystroke_sim"
+version = "0.2.0"
+description = "Cross-platform keyboard input simulation and monitoring"
+authors = [
+    {name = "Bassem Abidi", email = "bassem.abidi@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["keyboard", "automation", "monitoring", "simulation", "input"]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "keyboard>=0.13.5",
+    "pynput>=1.7.6",
+    "pyautogui>=0.9.53",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "mypy>=0.900",
+]
+
+[tool.setuptools]
+packages = ["keystroke_sim"]
+
+[project.scripts]
+keystroke-sim = "keystroke_sim.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bassemabidi/keystroke_sim"
+Documentation = "https://github.com/bassemabidi/keystroke_sim/blob/main/README.md"
+Repository = "https://github.com/bassemabidi/keystroke_sim.git"
+Changelog = "https://github.com/yourusername/keystroke_sim/blob/main/CHANGELOG.md"
+
+[tool.setuptools.package-data]
+keystroke_sim = ["py.typed"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
