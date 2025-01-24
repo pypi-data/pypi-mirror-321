@@ -1,0 +1,8 @@
+hashlib
+types
+re
+asyncio
+geopandas
+shapely
+decimal
+datetime
