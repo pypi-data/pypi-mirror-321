@@ -1,0 +1,353 @@
+Metadata-Version: 2.2
+Name: boudy_toolkit
+Version: 0.1.2
+Summary: A comprehensive toolkit for GUI applications and system utilities
+Author-email: Boudy <gamezygamer10@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Boudy
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: gui,toolkit,utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: psutil
+Requires-Dist: requests
+Requires-Dist: plyer
+Requires-Dist: qrcode
+Requires-Dist: playsound
+Requires-Dist: pyttsx3
+
+# Boudy Toolkit
+
+A comprehensive Python toolkit that combines powerful GUI capabilities with system utilities. Built on top of tkinter, this toolkit offers themes, responsive layouts, system utilities, data validation, and advanced widgets out of the box.
+
+## Table of Contents
+- [Installation](#installation)
+- [GUI Components](#gui-components)
+- [System Utilities](#system-utilities)
+- [Media Tools](#media-tools)
+- [Data Operations](#data-operations)
+- [Utility Functions](#utility-functions)
+
+## Installation
+
+```bash
+pip install boudy-toolkit
+```
+
+## GUI Components
+
+### Basic Application Setup
+```python
+from boudy_toolkit import initialize, Theme, run
+
+# Initialize with default theme
+root = initialize("My App", "800x600", Theme.LIGHT)
+
+# Or use dark theme
+root = initialize("Dark App", "800x600", Theme.DARK)
+
+# Start the application
+run()
+```
+
+### Forms
+```python
+from boudy_toolkit import create_form
+
+def handle_submit(data):
+    print(f"Received: {data}")
+
+fields = ["Name", "Email", "Phone"]
+form = create_form(
+    fields=fields,
+    callback=handle_submit,
+    title="Registration Form"
+)
+```
+
+### Data Grid
+```python
+from boudy_toolkit import create_data_grid
+
+data = [
+    ["John", "john@email.com", "Active"],
+    ["Jane", "jane@email.com", "Inactive"]
+]
+
+grid = create_data_grid(
+    data=data,
+    headers=["Name", "Email", "Status"],
+    title="Users List"
+)
+```
+
+### Charts
+```python
+from boudy_toolkit import create_chart
+
+# Bar chart
+data = [10, 25, 15, 30]
+labels = ["Q1", "Q2", "Q3", "Q4"]
+chart = create_chart(
+    data=data,
+    chart_type="bar",
+    title="Quarterly Sales",
+    labels=labels
+)
+
+# Pie chart
+pie = create_chart(
+    data=[30, 20, 25, 25],
+    chart_type="pie",
+    labels=["Product A", "Product B", "Product C", "Product D"]
+)
+```
+
+### Menu Bar
+```python
+from boudy_toolkit import create_menu_bar
+
+def file_open(): print("Opening file...")
+def file_save(): print("Saving file...")
+def help_about(): print("About dialog")
+
+menu_config = {
+    "File": [
+        ("Open", file_open),
+        ("Save", file_save),
+        "-",
+        ("Exit", root.quit)
+    ],
+    "Help": [
+        ("About", help_about)
+    ]
+}
+
+menubar = create_menu_bar(menu_config)
+```
+
+### Tabbed Interface
+```python
+from boudy_toolkit import create_tabbed_interface
+
+def tab1_content(frame):
+    # Create content for first tab
+    label = ttk.Label(frame, text="Tab 1 Content")
+    label.pack()
+
+def tab2_content(frame):
+    # Create content for second tab
+    button = ttk.Button(frame, text="Tab 2 Button")
+    button.pack()
+
+tabs = {
+    "General": tab1_content,
+    "Settings": tab2_content
+}
+
+tabbed_interface = create_tabbed_interface(tabs)
+```
+
+### Dialog Boxes
+```python
+from boudy_toolkit import create_dialog
+
+# Information dialog
+create_dialog("Operation completed!", "info")
+
+# File selection dialog
+filename = create_dialog("", "file", "Select File")
+
+# Color picker dialog
+color = create_dialog("", "color", "Choose Color")
+```
+
+## System Utilities
+
+### System Commands
+```python
+from boudy_toolkit import cmd, cpu_usage, get_public_ip, ping
+
+# Execute system command
+cmd("ipconfig")
+
+# Get CPU usage
+print(cpu_usage())  # Output: "CPU Usage: 45.2%"
+
+# Get public IP
+print(get_public_ip())  # Output: "203.0.113.1"
+
+# Ping host
+print(ping("google.com"))  # Output: "google.com is reachable."
+```
+
+### File Operations
+```python
+from boudy_toolkit import write_to_file, compress_file
+
+# Write to file
+write_to_file("output.txt", "Hello World!")
+
+# Compress file
+compress_file("data.txt", "archive.zip")
+```
+
+### Screenshot
+```python
+from boudy_toolkit import screenshot
+
+# Capture screen
+screenshot("my_screenshot.png")
+```
+
+### Notifications
+```python
+from boudy_toolkit import send_desktop_notification
+
+# Send notification
+send_desktop_notification(
+    title="Alert",
+    message="Task completed successfully!"
+)
+```
+
+## Media Tools
+
+### QR Code Generation
+```python
+from boudy_toolkit import qr_code_generator
+
+# Generate QR code
+qr_code_generator(
+    data="https://example.com",
+    filename="website_qr.png"
+)
+```
+
+### Image Processing
+```python
+from boudy_toolkit import resize_image
+
+# Resize image
+resize_image(
+    input_path="original.jpg",
+    output_path="resized.jpg",
+    size=(800, 600)
+)
+```
+
+### Audio Features
+```python
+from boudy_toolkit import play_sound, text_to_speech
+
+# Play audio file
+play_sound("notification.mp3")
+
+# Convert text to speech
+text_to_speech("Welcome to the application")
+```
+
+## Data Operations
+
+### Database Operations
+```python
+from boudy_toolkit import Database
+
+# Initialize database
+db = Database("app.db")
+
+# Execute query
+results = db.execute(
+    "SELECT * FROM users WHERE active = ?",
+    params=(True,)
+)
+```
+
+### Input Validation
+```python
+from boudy_toolkit import Validator
+
+# Validate email
+is_valid = Validator.is_email("user@example.com")
+
+# Validate phone number
+is_valid = Validator.is_phone("+1234567890")
+
+# Validate date
+is_valid = Validator.is_date("2024-01-15")
+```
+
+### File Operations
+```python
+from boudy_toolkit import file_operations
+
+FileOps = file_operations()
+
+# Save JSON
+data = {"name": "John", "age": 30}
+FileOps.save_json(data, "user.json")
+
+# Save CSV
+data = [["Name", "Age"], ["John", "30"]]
+FileOps.save_csv(data, "users.csv")
+```
+
+## Utility Functions
+
+### Timers
+```python
+from boudy_toolkit import countdown_timer, run_timer
+
+# Countdown timer
+countdown_timer(60)  # 60-second countdown
+
+# Stopwatch
+run_timer()  # Press Enter to start, Ctrl+C to stop
+```
+
+### Async Operations
+```python
+from boudy_toolkit import AsyncTask
+
+def long_running_task():
+    # Simulating long operation
+    time.sleep(5)
+    return "Completed"
+
+def on_complete(result):
+    print(f"Task {result}")
+
+task = AsyncTask(long_running_task, on_complete)
+task.run()
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
