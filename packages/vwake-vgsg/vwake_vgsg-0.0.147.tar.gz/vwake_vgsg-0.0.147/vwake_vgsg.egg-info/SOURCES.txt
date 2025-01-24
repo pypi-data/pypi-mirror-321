@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+vwake_vgsg.egg-info/PKG-INFO
+vwake_vgsg.egg-info/SOURCES.txt
+vwake_vgsg.egg-info/dependency_links.txt
+vwake_vgsg.egg-info/top_level.txt
