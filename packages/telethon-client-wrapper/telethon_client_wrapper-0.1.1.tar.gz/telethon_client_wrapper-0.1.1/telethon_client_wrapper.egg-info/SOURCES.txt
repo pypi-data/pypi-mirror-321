@@ -1,0 +1,10 @@
+README.md
+setup.py
+my_telegram_client/__init__.py
+my_telegram_client/client.py
+telethon_client_wrapper.egg-info/PKG-INFO
+telethon_client_wrapper.egg-info/SOURCES.txt
+telethon_client_wrapper.egg-info/dependency_links.txt
+telethon_client_wrapper.egg-info/entry_points.txt
+telethon_client_wrapper.egg-info/requires.txt
+telethon_client_wrapper.egg-info/top_level.txt

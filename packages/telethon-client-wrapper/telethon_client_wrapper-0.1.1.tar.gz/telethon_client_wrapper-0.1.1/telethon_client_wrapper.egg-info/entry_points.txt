@@ -1,0 +1,2 @@
+[console_scripts]
+telegram_client_wrapper = telegram_client_wrapper.client:create_client
