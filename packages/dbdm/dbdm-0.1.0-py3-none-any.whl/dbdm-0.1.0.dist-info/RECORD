@@ -1,0 +1,8 @@
+dbdm/__init__.py,sha256=L53fObGA4B3-rsbtjrUPGPurB9g2QIZm81qsMC0FoKA,115
+dbdm/common.py,sha256=4sC8orH4X7aQPdnAFs8Gtf3jQvFi0NMU6heaa1Juu-8,25219
+dbdm/cwtch.py,sha256=PUdLbGvWCN_LS2qGxfXyqQQgQq_QjlU_Z9jbRgxTFh8,1704
+dbdm/pydantic.py,sha256=hlo9n4xHdsZEn_0KOhYSX4xX4CC-d9YZi35O0Llp8-E,2089
+dbdm-0.1.0.dist-info/LICENSE,sha256=Wk7uAQHNzNZYbZ8BVvJKMepby7UdoiTBc00DPle6qB0,1068
+dbdm-0.1.0.dist-info/METADATA,sha256=GX7TU0Yz0U1ApxEo0FCb_o9aPKCp0nmPLxMhlSmgVFg,4630
+dbdm-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dbdm-0.1.0.dist-info/RECORD,,
