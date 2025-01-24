@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: prodops
+Version: 0.0.9
+Summary: ProdOPS Plugin for Alliance Auth (GitHub Version)
+Project-URL: Changelog, https://github.com/ErkaEk/ProdOPS/blob/master/CHANGELOG.md
+Project-URL: Issue / Bug Reports, https://github.com/ErkaEk/ProdOPS/issues
+Author-email: Peter Pfeufer <develop@ppfeufer.de>
+License: ProdOPS
+License-File: LICENSE
+Keywords: ProdOPS,allianceauth
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.10
+Requires-Dist: allianceauth<5,>=4.3.1
+Description-Content-Type: text/markdown
+
+ProdOPS
