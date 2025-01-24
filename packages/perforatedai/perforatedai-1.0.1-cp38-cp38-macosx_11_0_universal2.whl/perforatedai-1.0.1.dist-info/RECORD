@@ -1,0 +1,13 @@
+perforatedai/__init__.cpython-38-darwin.so,sha256=FBXz9oavMJ9Q7LlGFhI0XVCzdt4SPdwprf6STu91qzw,87888
+perforatedai/blockwisePB.cpython-38-darwin.so,sha256=3_GxdvQEZo4a43chVM8qlOwDH8jodhmB--owljyU__s,424760
+perforatedai/check_license.cpython-38-darwin.so,sha256=p5YijONDuUym_8DMn5-6YiYzq14m-JzuQ-GLplP6WsA,218216
+perforatedai/cleanLoad.cpython-38-darwin.so,sha256=RSYZQx6x1gDUNQAlAAQOYvKkY6EmIo-vsKOZs58lQu8,271376
+perforatedai/pb_globals.cpython-38-darwin.so,sha256=NIkbWlDL-WJwenHbn-6iIMVWoqItfZ7gKoXALa94dPs,203000
+perforatedai/pb_layer.cpython-38-darwin.so,sha256=_-BWKmBr5nEG08pOyt2xYvmznfMuFFX3ABRLcoDUGEA,1138832
+perforatedai/pb_models.cpython-38-darwin.so,sha256=_YnCKHdnrprzibn4SkNM27ZVGsPDGexGRqgFjsuc7pI,752720
+perforatedai/pb_neuron_layer_tracker.cpython-38-darwin.so,sha256=slMQlPdDCtlCsV5oSU_AOgV4T0VBSDAPKTD9i2lv-bY,2099632
+perforatedai/pb_utils.cpython-38-darwin.so,sha256=fepHzRDu2vJIdGvg64IjGV2TLsW55D2QhQi7chS73j8,682800
+perforatedai-1.0.1.dist-info/METADATA,sha256=MidgL4QKbPdjWkz2_JFK9tmWE-671KcWs5fpGASEaXw,476
+perforatedai-1.0.1.dist-info/WHEEL,sha256=SNjwHq8VFlWTP44X5NCUgUyoHOgUMngYI6ZzBCh0yy0,113
+perforatedai-1.0.1.dist-info/top_level.txt,sha256=aN-RVGd9_0L1QRPEzUSfJ-EKxXmsNTx-bmWXqby6zro,13
+perforatedai-1.0.1.dist-info/RECORD,,
