@@ -1,0 +1,8 @@
+factor.cp38-win_amd64.pyd,sha256=wMkJE-FMsycwMgVQNor8PNPe9Aj6kIAfmu3xOMa7f9E,11264
+functional.cp38-win_amd64.pyd,sha256=8WnylJFn1Xr6oHT_M2jBK31kfmlH0QSqQmhZnC0Vo2Q,10752
+gcd.cp38-win_amd64.pyd,sha256=UzkJ7eBGO9dwjPJKQ-XKZTYeWdN9MOmbDlzNOeOjzjo,11264
+prime.cp38-win_amd64.pyd,sha256=5tqJLVhfHwWmVrJWLfiBFIPrlgCFtdsvLa2lZrzdIYI,10752
+devkit_math-1.6.0rc0.dist-info/METADATA,sha256=mM_zhVgyrbsYjV-OGt_ruMBrqlQXFr-nwWOqmbEEqlU,936
+devkit_math-1.6.0rc0.dist-info/WHEEL,sha256=rTcqimtzpX3smAWAhGmiRSWAxTY4PqYPNE-p4kscHDQ,99
+devkit_math-1.6.0rc0.dist-info/top_level.txt,sha256=7C5db2wcW2bdBAieEce9bpixvO2L1eApd_jgGL1RxE0,28
+devkit_math-1.6.0rc0.dist-info/RECORD,,
