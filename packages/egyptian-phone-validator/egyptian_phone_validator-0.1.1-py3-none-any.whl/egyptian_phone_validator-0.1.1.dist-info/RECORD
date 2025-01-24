@@ -1,0 +1,9 @@
+egyptian_phone_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egyptian_phone_validator/validators.py,sha256=TsiLX578ggNtLS3QYISYqeBHaVVWEPSDq9rGZ4gGeBc,718
+egyptian_phone_validator/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egyptian_phone_validator/tests/test_validators.py,sha256=FRJXaI3SuOvwTYvnsjj2uDW4-RccYkX1N_wnbahUJN8,825
+egyptian_phone_validator-0.1.1.dist-info/LICENSE,sha256=iJM576JmhSagAr1iYV0NzyYzp2bmLC4D2_KFMihvmps,469
+egyptian_phone_validator-0.1.1.dist-info/METADATA,sha256=h9entrbe7Fqi4A-inzBl60t6MZqQIWYVfABEdNlWUu4,1528
+egyptian_phone_validator-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+egyptian_phone_validator-0.1.1.dist-info/top_level.txt,sha256=Dqpb7b9fxAaKgJ868isFLK25siugIGNZM4e7DSGvBr4,25
+egyptian_phone_validator-0.1.1.dist-info/RECORD,,
