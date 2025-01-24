@@ -1,0 +1,12 @@
+hbrowser/__init__.py,sha256=Sfiw31KhmrNiSEkPm-2imUXmQ7iIGBoLkLAVsLEAPUw,403
+hbrowser/beep.py,sha256=LlEJVrMx-7mkS7VvQy54JES_dn4A09t3Lh1ewglop_o,457
+hbrowser/exceptions.py,sha256=XrDfIpITRAwW7sXnKNiHa3Zwj4oLi68LLj2_AeC7K6Q,494
+hbrowser/gallery.py,sha256=fNitqCONrs8zHFxpgQMZiSWzZZiPG3kZgsYJ2ZbiLws,22295
+hbrowser/hv.py,sha256=B9Bt-z3iSavnra_BqCnHBp4eme8hc2IIhUjnTDjeoMA,9399
+hbrowser/hv_battle.py,sha256=yRO7_qIHLwOifDXR2tmctuMOE-oMxnkqEnUeKEBH3bU,13717
+hbrowser/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hbrowser-0.2.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+hbrowser-0.2.4.dist-info/METADATA,sha256=cc3_k-TU_56jTrn6n8p-gpfD5O_-j5voPwV5WWpNIJQ,1306
+hbrowser-0.2.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+hbrowser-0.2.4.dist-info/top_level.txt,sha256=dcbFQyTq1WRg3RNTfEMy0ZLMveA0jQ-5bf2kyzfepSo,9
+hbrowser-0.2.4.dist-info/RECORD,,
