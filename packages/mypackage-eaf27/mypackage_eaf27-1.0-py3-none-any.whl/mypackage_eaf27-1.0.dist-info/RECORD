@@ -1,0 +1,16 @@
+mypackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/__main__.py,sha256=ZZ8ZCiVzhxoc8zrDVyFZX0W8JDCbB1-SDPRJnePrWy0,185
+mypackage/decorators.py,sha256=YEbykVnkC10x-4ENDKcxGRz5iOGn0CPxG7yGLqCY-Lo,1035
+mypackage/descriptors.py,sha256=eYUoHz7uUHCbO7ahIhlRKlCHWtHsabm26PbjbTaEK5U,674
+mypackage/generators.py,sha256=dD_8DL4zB3Vda2J-E5wqCN2x2l3wo2wIyyGLErN6vro,417
+mypackage/iterators.py,sha256=xby86Nap6Vq_eviCIHu_vu_XqSGsyd03tXBKgwPJg3k,757
+mypackage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/tests/test_decorators.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/tests/test_descriptors.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/tests/test_generators.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage/tests/test_iterators.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypackage_eaf27-1.0.dist-info/METADATA,sha256=UCnj4XCC_3ptn1hnQu5AmhbsZQPi448dFcsW1fWztrs,339
+mypackage_eaf27-1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mypackage_eaf27-1.0.dist-info/entry_points.txt,sha256=hbdXb1-AG28g_-WYRIrp4l_kCv_iIHblpj4NNfWepe4,54
+mypackage_eaf27-1.0.dist-info/top_level.txt,sha256=ax2Dg5ulHxjedaMk72kLxMHSvJB80I9iLPYgNI4IQeA,10
+mypackage_eaf27-1.0.dist-info/RECORD,,
