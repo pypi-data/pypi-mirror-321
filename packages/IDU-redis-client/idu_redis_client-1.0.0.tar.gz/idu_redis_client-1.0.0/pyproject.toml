@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "IDU-redis-client"
+version = "1.0.0"
+description = "--/--"
+license = "BSD-3-Clause"
+authors = ["soldey <71354808+soldey@users.noreply.github.com>"]
+readme = "README.md"
+
+packages = [{ include = "iduredis", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+loguru = "^0.7.2"
+idu-config = "^1.0.0"
+redis = "^5.1.1"
+aioredlock = "0.7.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+good-names = [
+
+]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
