@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: WonderPeaks_preprocessing
+Version: 0.1.0
+Summary: preprocessing functions for ChIP-seq and RNA-seq in Fungi with WonderPeaks
+Author-email: "Megan E. Garber" <mgarber21@gmail.com>
+Maintainer-email: "Megan E. Garber" <mgarber21@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/mgarber21/WonderPeaks_preprocessing.git
+Project-URL: Bug Tracker, https://github.com/mgarber21/WonderPeaks_preprocessing/issues
+Keywords: ChIP-seq,RNA-seq,NGS,WonderPeaks,peak calling,UTR,dynamic UTR,Fungi,Yeast
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
