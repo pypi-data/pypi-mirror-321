@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: azure-genai-utils
+Version: 0.0.2
+Summary: Azure GenAI utils
+Home-page: https://github.com/daekeun-ml/azure-genai-utils
+Keywords: langchain,langgraph
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: langchain>=0.3.0
+Requires-Dist: langgraph>=0.2.62
+Requires-Dist: audiomentations>=0.38.0
+Requires-Dist: azure-identity
+Requires-Dist: azure-ai-documentintelligence==1.0.0
+Requires-Dist: azure-search-documents==11.5.2
+Requires-Dist: azure-cognitiveservices-speech>=1.42.0
+Requires-Dist: azure-ai-contentsafety==1.0.0
+Requires-Dist: azure-ai-inference==1.0.0b7
+Requires-Dist: tiktoken~=0.8.0
+Requires-Dist: openai>=1.59.7
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pybase64
