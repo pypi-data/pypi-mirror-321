@@ -1,0 +1,9 @@
+AdaReader/__init__.py,sha256=eGDpH8tVMYYa2qkiOLBMnZhvc3hB3IqqCoUszn2o7lA,85
+AdaReader/datareader.py,sha256=eeccZE7yTO4fRj8j5u5Mv2mS7gcsIFgoLjVl9BX9M-4,10591
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_datareader.py,sha256=IGV26W2_rpDLsdEumM2nNmRXI6-fHTKQat7KsTP7syw,3131
+AdaReader-0.0.2.dist-info/LICENSE,sha256=HyOIWNbZGssGNMKi7Ddra4_STp_DhTXlxM_MXc9M_Tg,1087
+AdaReader-0.0.2.dist-info/METADATA,sha256=R9mDD3Da3_qWmTMtXbjIRvdaj0N4TUj51Hk31f8-mtg,1976
+AdaReader-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+AdaReader-0.0.2.dist-info/top_level.txt,sha256=wOJxCcVxgU_HMHPE2X_x6zgYEh8Fg0VuDVfRMVcSnm0,16
+AdaReader-0.0.2.dist-info/RECORD,,
