@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpocketr"
+version = "1.2.1"
+authors = [
+  { name="Seth D. Veenbaas", email="sdveenbaas@gmail.com" },
+]
+description = "Find, characterize, and visualize drug-like pockets in RNA structures."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fpocket == 4.0.3",
+  "pymol-open-source == 2.5.0",
+  "prody == 2.4.0",
+  "pandas == 2.2.1",
+  "rdkit == 2023.09.6",
+  "seaborn == 0.13.2",
+  "trimesh == 4.2.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE.txt" }
+
+[project.urls]
+Homepage = "https://github.com/Weeks-UNC/fpocketR"
+Issues = "https://github.com/Weeks-UNC/fpocketR/issues"
+
+[tool.setuptools]
+packages = ["fpocketr", "fpocketr.rnavigate", "fpocketr.rnavigate.data", "fpocketr.rnavigate.plots", "fpocketr.rnavigate.plots.functions"]
