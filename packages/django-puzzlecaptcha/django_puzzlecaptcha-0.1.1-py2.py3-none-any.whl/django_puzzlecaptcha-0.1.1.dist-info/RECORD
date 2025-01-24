@@ -1,0 +1,13 @@
+puzzlecaptcha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puzzlecaptcha/apps.py,sha256=hBvn7-A2bxVwLBEIWdFLjwcHYGCeHHz9hCT4bg8HG8Q,158
+puzzlecaptcha/field.py,sha256=kcCavAmNsINchq3tWUosPmdjyK2y4gEqoItG__TqUSE,5276
+puzzlecaptcha/forms.py,sha256=V40fRBxBUqfx1TDb9RkDScRMv8PBkc0zhmfIEvMU43E,404
+puzzlecaptcha/templates/puzzlecaptcha/admin_login.html,sha256=ZafPLyvuDJ0ty7n847IdRFHQzuowxpeNokyqOHVUUxs,2015
+puzzlecaptcha/templates/puzzlecaptcha/captcha.html,sha256=bTNHpNf8K9CEEyTT3ur9aHd_7QsizRCwiT2zQZCYBZI,396
+puzzlecaptcha/templates/puzzlecaptcha/captcha_image.html,sha256=UuZ826jwux5cld6M1goJcHrt9xHLXvS_s7bzZvNY8_A,158
+puzzlecaptcha/templates/puzzlecaptcha/captcha_result.html,sha256=ZKZDTEyOLfsVzJyv_WdMJzpB-ywf2__pVzgU8Si_CQg,235
+puzzlecaptcha/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_puzzlecaptcha-0.1.1.dist-info/LICENSE,sha256=e4KRw5dcYkVLwmuKwrWZ3uAry3a0eRTnIbeojKIRjfA,1086
+django_puzzlecaptcha-0.1.1.dist-info/METADATA,sha256=xOZewQUuOhCYb316bI-YgTfcqp7UVhy-0vL1dXhyDw4,2885
+django_puzzlecaptcha-0.1.1.dist-info/WHEEL,sha256=iAMR_6Qh95yyjYIwRxyjpiFq4FhDPemrEV-SyWIQB3U,92
+django_puzzlecaptcha-0.1.1.dist-info/RECORD,,
