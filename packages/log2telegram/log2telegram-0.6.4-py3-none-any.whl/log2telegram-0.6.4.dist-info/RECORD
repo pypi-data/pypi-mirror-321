@@ -1,0 +1,9 @@
+log2telegram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+log2telegram/cron.py,sha256=gDetPMW3FDH9-NKe_iM_SlrvilN8HJcS40sRIuCMDJE,197
+log2telegram/main.py,sha256=umWeZmdP4bViNxfyHCLXW-a6h--3hGlsnhKw64xyimw,12246
+log2telegram/utils.py,sha256=3JzYWFC-QnZ1ST8DNP1OriRlGB3fO9JXQM-7Gn4D0-8,12227
+log2telegram-0.6.4.dist-info/METADATA,sha256=Gzg9BrNlnjSGlbjKZNboebx1Qlc_erky4bF772XmUH8,3769
+log2telegram-0.6.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+log2telegram-0.6.4.dist-info/entry_points.txt,sha256=LoCAu7ez4Ui0ND9HqvFp3PtO3bgOFUEyUm2oxybagME,56
+log2telegram-0.6.4.dist-info/top_level.txt,sha256=Lmgljo-HHhCgwhrNvW7jqHylyhOEAMJDf2rZhAXb4jY,13
+log2telegram-0.6.4.dist-info/RECORD,,
