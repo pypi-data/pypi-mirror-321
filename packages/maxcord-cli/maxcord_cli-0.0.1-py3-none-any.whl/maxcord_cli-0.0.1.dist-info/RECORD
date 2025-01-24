@@ -1,0 +1,10 @@
+maxcord_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maxcord_cli/cog_template.py,sha256=arDoIwN2hLJQadCvv5s86bCMkS2-J2uKpniUII2FP4I,469
+maxcord_cli/main.py,sha256=VqyMlurR-G9zdCnkTn35bA5avBmG6j6qWTTCi0aP8-U,2204
+maxcord_cli/main_template.py,sha256=Nr64MKCQOMsmNzx1E2qLdX6ozxaxKq_cJmi3Yi34mfg,1146
+maxcord_cli-0.0.1.dist-info/LICENCE,sha256=g0EKnLZYIwHmeireBudAiMFTxBBqsLkiNogNGp865a4,1078
+maxcord_cli-0.0.1.dist-info/METADATA,sha256=M-pPMMRAdiDs0ZLalAihsbEa-lW5MwCaTPO1oOF7x9M,302
+maxcord_cli-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+maxcord_cli-0.0.1.dist-info/entry_points.txt,sha256=OAH6dcdJ7FLje2Nlpg2lPu_xLDMS6H5eB6xRCJfPtFU,54
+maxcord_cli-0.0.1.dist-info/top_level.txt,sha256=2ZDOGMen3IQJzd6yugpb08hMFnmVxgifMvnQSiaE0io,12
+maxcord_cli-0.0.1.dist-info/RECORD,,

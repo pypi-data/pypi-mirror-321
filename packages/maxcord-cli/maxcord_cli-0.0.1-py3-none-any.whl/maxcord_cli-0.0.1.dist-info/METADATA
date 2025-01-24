@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: maxcord-cli
+Version: 0.0.1
+Summary: CLI for easy discord cogs creation.
+Home-page: https://github.com/omaxpy/maxcord-cli
+Author: omaxpy
+Author-email: moukasland@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENCE
