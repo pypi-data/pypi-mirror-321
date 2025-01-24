@@ -1,0 +1,2 @@
+[console_scripts]
+fricon=fricon._core:main
