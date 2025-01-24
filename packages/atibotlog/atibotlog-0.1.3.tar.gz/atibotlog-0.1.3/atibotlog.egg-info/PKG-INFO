@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: atibotlog
+Version: 0.1.3
+Summary: A Python package for bot automation and database logging.
+Author: Shibli M.S
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pyodbc
+Requires-Dist: sqlalchemy
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ATI_Bot_Log
+
+ATI Bot Log is a Python package designed to simplify bot operation logging and data management. It integrates seamlessly with SQL databases to track bot transactions, owner details, and version control.
+
+## Features
+
+- Insert bot owner details into the database.
+- Log bot transactions with dynamic and configurable parameters.
+- Automatically validate bot keys and version control.
+- SQLAlchemy support for efficient database interactions.
+
+## Installation
+pip install atibotlog
