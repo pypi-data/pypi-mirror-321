@@ -1,0 +1,9 @@
+audio_scribe/__init__.py,sha256=19NLfiVus01TtbB1SFwJ3Q-vFvN9nLzNYGIZiNB45qM,587
+audio_scribe/cli.py,sha256=LToGAiCHHXDitsXBuMqKMHkH_HzSARX0C06-Ha74jKU,20287
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_audio_scribe_main.py,sha256=Jv5XixrhsK49RJBh6HlghnIxxDiCq52PUv0lf8ljpJY,15571
+audio_scribe-0.1.1.dist-info/METADATA,sha256=CBHEE3qzCnRWQ-7ljDGMbY8i5awoGYYDcgbPUH6Za-M,10455
+audio_scribe-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+audio_scribe-0.1.1.dist-info/entry_points.txt,sha256=eaO9r_zAFnrWseKyJcBpGUHQq-P7NXBw5er8sZaPfFU,55
+audio_scribe-0.1.1.dist-info/top_level.txt,sha256=K08EDnZLtXcJJ9RxLnzDUz-AmnUo5vGRyYmS3wSirtE,19
+audio_scribe-0.1.1.dist-info/RECORD,,
