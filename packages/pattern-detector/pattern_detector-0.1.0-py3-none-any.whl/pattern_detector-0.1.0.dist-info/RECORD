@@ -1,0 +1,10 @@
+pattern_detection/__init__.py,sha256=hzZhj16aof1dhcIOAI9Tfo5EoPJgexGChsnCLgXq-68,68
+pattern_detection/detector.py,sha256=XaYYRledSolgTPTYLRSWhjZhmnAAvZT2pD3h5g9kP9k,6585
+pattern_detection/utils.py,sha256=jqkfeTqWEnrnvzKBxr_UdKj9cj7zPF15UhHPr9sBSa0,2646
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_detector.py,sha256=biHGbqd6Uc8dFTtyK-BxYeqFYtJOO9lk_6rQMeQCbQs,972
+pattern_detector-0.1.0.dist-info/LICENSE,sha256=RslT26mCGxF9nQEyEQL8kFMFUgmYvCA0UivIWefxWmU,1098
+pattern_detector-0.1.0.dist-info/METADATA,sha256=9pgMSSHwImJHjA1AOAOJm-ou2MsYnNFwPa6AGvl-fow,536
+pattern_detector-0.1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pattern_detector-0.1.0.dist-info/top_level.txt,sha256=W_tzR9Ah3_TgQsiGDs46ELePkuxfcPmFOosXSYw2hl0,24
+pattern_detector-0.1.0.dist-info/RECORD,,
