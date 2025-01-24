@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+lucifer7/__init__.py
+lucifer7/calculator.py
+lucifer7.egg-info/PKG-INFO
+lucifer7.egg-info/SOURCES.txt
+lucifer7.egg-info/dependency_links.txt
+lucifer7.egg-info/top_level.txt
