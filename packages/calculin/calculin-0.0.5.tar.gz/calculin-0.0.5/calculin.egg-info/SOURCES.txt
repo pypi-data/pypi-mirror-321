@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+calculin/__init__.py
+calculin/operacion.py
+calculin.egg-info/PKG-INFO
+calculin.egg-info/SOURCES.txt
+calculin.egg-info/dependency_links.txt
+calculin.egg-info/top_level.txt
