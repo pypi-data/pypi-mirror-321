@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+datamanipylator/__init__.py
+datamanipylator/algorithm.py
+datamanipylator/analyzers.py
+datamanipylator/data.py
+datamanipylator/decorators.py
+datamanipylator/exceptions.py
+datamanipylator/utils.py
+datamanipylator.egg-info/PKG-INFO
+datamanipylator.egg-info/SOURCES.txt
+datamanipylator.egg-info/dependency_links.txt
+datamanipylator.egg-info/top_level.txt
