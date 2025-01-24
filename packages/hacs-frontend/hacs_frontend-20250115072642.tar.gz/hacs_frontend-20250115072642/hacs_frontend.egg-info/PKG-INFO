@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: hacs-frontend
+Version: 20250115072642
+Summary: The HACS frontend
+Home-page: https://github.com/hacs/frontend
+Author: Joakim Sorensen
+Author-email: ludeeus@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# HACS Frontend
+
+This repository holds the frontend files of HACS.
+
+[For more details on how to contribute have a look here.](https://hacs.xyz/docs/contribute/frontend/)
