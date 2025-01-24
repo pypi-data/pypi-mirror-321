@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: structools
+Version: 0.17.8
+Summary: : Helpful tools for QIS and Pricing Structuring teams
+License: MIT
+Author: Romain Pifaut
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (==1.26.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: plotly (>=5.24.1,<6.0.0)
+Requires-Dist: pybacktestchain (>=0.2.1,<0.3.0)
+Requires-Dist: pydantic (>=2.10.5,<3.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: streamlit (>=1.41.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# structools
+
+: Helpful tools for QIS and Pricing Structuring teams
+
+## Installation
+
+```bash
+$ pip install structools
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`structools` was created by Romain Pifaut. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`structools` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
