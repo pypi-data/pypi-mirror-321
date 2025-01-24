@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: tilly
+Version: 0.0.3
+Summary: A cli for tracking Things I Learned (TIL)
+Home-page: https://github.com/tilly-pub/tilly
+Author: Ronald Luitwieler
+Author-email: ronald.luitwieler@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=8.0
+Requires-Dist: pluggy>=1.0
+Requires-Dist: setuptools
+Requires-Dist: GitPython
+Requires-Dist: sqlite-utils>=3.2
+Requires-Dist: beautifulsoup4
+Requires-Dist: httpx
+Requires-Dist: datasette>=0.65.1
+Requires-Dist: datasette-template-sql>=1.0.2
+
+# tilly
+
+CLI for easily creating Today I Learned posts.
+
+
+## Installation
+
+```
+uv pip install tilly
+```
+
+## Usage
+
+```
+til hello
+Hello from the TIL CLI!
+```
+
+or
+
+```
+$ tilly hello
+Hello from the TIL CLI!
+```
+
+## Creating plugins
+
+TODO
+
+## Development, building and publishing
+
+```
+uv venv .venv --python=3.11
+source .venv/bin/activate
+uv pip install .
+uv pip install -r requirements-dev.txt
+./build.sh
+./publish.sh
+```
