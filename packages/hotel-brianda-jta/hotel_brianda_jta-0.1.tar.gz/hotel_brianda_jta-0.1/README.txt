@@ -1,0 +1,1 @@
+Aplicación para la gestión hotelera. Permite crear y modificar reservas de una base de datos.
