@@ -1,0 +1,15 @@
+vechord-0.1.0a1.dist-info/METADATA,sha256=CwmX6IAK1d3JU72edzusit05_-lyFkhzfE8qqotpzs0,504
+vechord-0.1.0a1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+vechord-0.1.0a1.dist-info/entry_points.txt,sha256=BfDR_vms00Bp0XR-3mIny9pN_LBlXSqequZRmLje008,62
+vechord-0.1.0a1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vechord/__init__.py,sha256=MbfKYG_dunvcVC222MP_aYv24kAu91KhuoS3UUAlRw4,218
+vechord/__version__.py,sha256=rLj-QSIUrqahsKiTl1JgfuOZ1KMzblR2O-0AYpCoAUI,23
+vechord/client.py,sha256=S119eF2Fv2Ujxk9V5ZBXjQxzGd7NqyzGwMS7wL8C72g,3231
+vechord/config.py,sha256=KSOpJ2d8386IyF3UVvGqZakBptoyTpKLFveqVTNWj5w,602
+vechord/loader.py,sha256=mptZ8YwOqtH0FDW4gXIyIU_eSWgOgKzUwtgZYlZd7BI,1427
+vechord/log.py,sha256=L95DnZxGrfFhgPvLaWPfFpqJAaTTJaPBwLjWSXUf1I8,282
+vechord/main.py,sha256=XbK6x3yA2OoHAhcv_1-1VKqzR4_U-It4RJVpJVRR82U,330
+vechord/model.py,sha256=WN-psI6YflDG-KnaqjM7Udfd4w5IkZUv5Hfe_9HTFHQ,1383
+vechord/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vechord/text.py,sha256=h96A6S40Rf8JeRakE6MJ4Nr7YhgvETRJAwotWJ79Nn4,848
+vechord-0.1.0a1.dist-info/RECORD,,
