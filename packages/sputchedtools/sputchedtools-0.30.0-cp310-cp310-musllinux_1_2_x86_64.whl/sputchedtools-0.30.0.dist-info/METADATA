@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: sputchedtools
+Version: 0.30.0
+Summary: Collection of Python utilities
+Author-email: Sputchik <sputchik@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
