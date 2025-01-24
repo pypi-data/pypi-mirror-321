@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: zenduty-api
+Version: 0.5
+Summary: Python SDK wrapper for the Zenduty API
+Home-page: https://github.com/Zenduty/zenduty-python-sdk
+Author: Javeed Yara
+Author-email: javeed@zenduty.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests==2.32.3
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: six==1.9.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: idna==3.7
+Requires-Dist: certifi==2024.7.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
