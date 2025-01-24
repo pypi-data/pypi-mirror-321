@@ -1,0 +1,15 @@
+sphericart/torch/__init__.py,sha256=BZGf_SbTqpJD_Y08deP2359LsLKpGegqfkH2DzPhwmM,2536
+sphericart/torch/e3nn.py,sha256=bq0XErrIzVKfw7rGZrNTSoWIqaeHrKWLsg-OOMCvRGg,4128
+sphericart/torch/metatensor.py,sha256=jwA64LEjU_pISq_RW8XSMRzdseNLQdEBIZ0NIQEGg24,11107
+sphericart/torch/spherical_hamonics.py,sha256=vsYb8SA9Yp9o7Ht_yVdks1m6QgW6omAegpH1XMUhy18,11268
+sphericart/torch/torch-2.4/_build_torch_version.py,sha256=EKpb29yUc0cT42Q3emsLp4M8hs0CEQc5xm-HWQDWSg4,29
+sphericart/torch/torch-2.4/lib/libsphericart_torch.so,sha256=Q5KwBTwIi7K5zunM5v_h2DYJVR-UhRBBGu4yFKrQ_c8,1225145
+sphericart/torch/torch-2.4/lib/libsphericart_torch_cuda_stream.so,sha256=9lmMk2Hq4P1qeL96LGm7q6rsInbjUHuuA-0r4J9RgOs,16288
+sphericart/torch/torch-2.5/_build_torch_version.py,sha256=Z6XBqFBWoprIx4bE8NlURha0Y6lAhvlO_hP1IFf9dDM,29
+sphericart/torch/torch-2.5/lib/libsphericart_torch.so,sha256=dUob2ov8lMxl1N_ZkGZvg8WXFb3zxmz6WGJEMP0vVcs,1225169
+sphericart/torch/torch-2.5/lib/libsphericart_torch_cuda_stream.so,sha256=NbiHvZuIEl5l-iSaIDVmJUoykAMkv0pgcY_MaaFwTfI,16288
+sphericart_torch.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+sphericart_torch-1.0.0rc2.dist-info/METADATA,sha256=xAhRXQYyP_cPkJQma5qcf1txaCZ_dJPDeRQVMphMxkg,1366
+sphericart_torch-1.0.0rc2.dist-info/WHEEL,sha256=bnBgNpRxbyQEkpFkJWzchBpegMkTU-f19rew7fLrfHQ,145
+sphericart_torch-1.0.0rc2.dist-info/top_level.txt,sha256=uZMyIMTIFBTPOowOsL0e5Z-qUi9IApARBcdWwDhzB1Y,28
+sphericart_torch-1.0.0rc2.dist-info/RECORD,,
