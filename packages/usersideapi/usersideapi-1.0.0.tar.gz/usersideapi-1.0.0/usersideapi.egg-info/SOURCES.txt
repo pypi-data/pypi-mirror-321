@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+usersideapi.egg-info/PKG-INFO
+usersideapi.egg-info/SOURCES.txt
+usersideapi.egg-info/dependency_links.txt
+usersideapi.egg-info/requires.txt
+usersideapi.egg-info/top_level.txt
