@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+cfgengine/__init__.py
+cfgengine/config_loader.py
+cfgengine/default_parser.py
+cfgengine/parser.py
+cfgengine.egg-info/PKG-INFO
+cfgengine.egg-info/SOURCES.txt
+cfgengine.egg-info/dependency_links.txt
+cfgengine.egg-info/requires.txt
+cfgengine.egg-info/top_level.txt
+tests/test_loader.py
+tests/test_parser.py
+tests/test_register.py
