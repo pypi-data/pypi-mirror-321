@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: manishSMS
+Version: 0.1.0
+Summary: A Student Management System
+Home-page: https://github.com/Manish-Let-It-Be/manishSMS
+Author: Manish Prasad
+Author-email: m4manishp4prasad@gmail.com.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# manishSMS
+ Basic Student-Staff-Course Management System
