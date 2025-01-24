@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/ag2azure.egg-info/PKG-INFO
+src/ag2azure.egg-info/SOURCES.txt
+src/ag2azure.egg-info/dependency_links.txt
+src/ag2azure.egg-info/top_level.txt
