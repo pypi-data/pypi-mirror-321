@@ -1,0 +1,30 @@
+[build-system]
+requires = ['setuptools']
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bsscripts"
+version = "0.1.0"
+authors = [
+    { name="Ciske Harsema", email="Ciske.Harsema@ru.nl" },
+    { name="Job Doesburg", email="Job.Doesburg@ru.nl" }
+]
+description = "Brightspace grading automation and management system."
+dependencies = [
+    "brightspace-api",
+    "patool",
+    "jsonschema"
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+
+[project.scripts]
+bsscripts = "bsscripts.app:main"
+
+[tool.setuptools.package-data]
+bsscripts = ["data/**"]
+
+[tool.setuptools.packages.find]
+where = ['.']
+include = ['bsscripts*']

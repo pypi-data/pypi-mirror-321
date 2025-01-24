@@ -1,0 +1,49 @@
+{
+    "$id": "/schemas/api_config",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Brightspace API configuration",
+    "description": "The schema of Brightspace API configuration data.",
+    "type": "object",
+    "properties": {
+      "appId": {
+        "type": "string",
+        "description": "The application identifier used to identify the application to the LMS back-end."
+      },
+      "appKey": {
+        "type": "string",
+        "description": "The application key used to generate application signatures."
+      },
+      "lmsUrl": {
+        "type": "string",
+        "format": "hostname",
+        "description": "The LMS hostname to which API requests are sent.",
+        "examples": ["brightspace.ru.nl"]
+      },
+      "clientAppUrl": {
+        "type": "string",
+        "format": "uri",
+        "description": "The application redirect URL to which users are redirected after completing authentication on the LMS.",
+        "examples": ["http://localhost:8080/trustedURL"]
+      },
+      "leVersion": {
+        "type": "string",
+        "pattern": "^[0-9]+\\.[0-9]+$",
+        "description": "The Learning Environment product version to use.",
+        "examples": ["1.79"]
+      },
+      "lpVersion": {
+        "type": "string",
+        "pattern": "^[0-9]+\\.[0-9]+$",
+        "description": "The Learning Platform product version to use.",
+        "examples": ["1.47"]
+      }
+    },
+    "required": [
+      "appId",
+      "appKey",
+      "lmsUrl",
+      "clientAppUrl",
+      "leVersion",
+      "lpVersion"
+    ]
+  }

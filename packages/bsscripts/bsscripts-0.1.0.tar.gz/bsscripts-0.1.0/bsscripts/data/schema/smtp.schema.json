@@ -1,0 +1,43 @@
+{
+    "$id": "/schemas/smtp_config",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "SMTP configuration",
+    "description": "The schema of SMTP configuration data.",
+    "type": "object",
+    "properties": {
+      "host": {
+        "type": "string",
+        "format": "hostname",
+        "description": "The hostname of the SMTP host.",
+        "examples": ["smtp.science.ru.nl"]
+      },
+      "port": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 65535,
+        "description": "The port of the SMTP host.",
+        "examples": [587]
+      },
+      "username": {
+        "type": "string",
+        "description": "The username to use when authenticating to the SMTP host."
+      },
+      "password": {
+        "type": "string",
+        "description": "The password to use when authenticating to the SMTP host."
+      },
+      "from": {
+        "type": "string",
+        "format": "email",
+        "description": "The from email address to use.",
+        "examples": ["Computing Science SA <cssa@cs.ru.nl>"]
+      }
+    },
+    "required": [
+      "host",
+      "port",
+      "username",
+      "password",
+      "from"
+    ]
+  }
