@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: lighter-zoo
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: huggingface-hub>=0.27.1
+Requires-Dist: jupyter>=1.1.1
+Requires-Dist: monai>=1.4.0
+Requires-Dist: safetensors>=0.5.2
+Requires-Dist: torch>=2.5.1
