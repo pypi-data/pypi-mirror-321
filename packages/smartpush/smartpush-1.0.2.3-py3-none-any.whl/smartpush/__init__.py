@@ -1,0 +1,1 @@
+from smartpush.autotest.export.basic import *
