@@ -1,0 +1,8 @@
+r1.3.0
+commit 024279c
+Merge: 51502c3 20e05a8
+Author: i-robot <huawei_ci_bot@163.com>
+Date:   Tue Dec 31 08:30:12 2024 +0000
+
+    !5142 【bugfix】【r1.3.0】更新qwen15推理开箱配置
+    Merge pull request !5142 from sunyuxuan/bugfix/qwen15_yaml_dtype_r130
