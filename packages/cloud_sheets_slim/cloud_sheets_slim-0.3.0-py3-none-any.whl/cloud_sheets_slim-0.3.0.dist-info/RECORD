@@ -1,0 +1,8 @@
+cloud_sheets_slim/__init__.py,sha256=UCJ7loyhz8BBBWcLXtsMtfIXtER-drSRgN4duxbiTUE,1412
+cloud_sheets_slim/cloud_sheets_base.py,sha256=6_swqx3Z-TvND8aVVi2d1u7OFLUTWmdjDCLK4hAHN9E,741
+cloud_sheets_slim/google_sheets.py,sha256=vQ9B9sSqeIrPNQAr0-ctlTU2KjP0H41rpF46NelXR6o,1312
+cloud_sheets_slim/lark_sheets.py,sha256=uVRWetBf47rM2TtSqBOJLvMkgeDUhII0AmPZgRenUZY,9705
+cloud_sheets_slim/pandas_proxy.py,sha256=g0SCmVsboohWUFTPwUvATw5wSijWA4KN9s07GwXrZRY,5323
+cloud_sheets_slim-0.3.0.dist-info/METADATA,sha256=1hGRNq4ztKDy_HjmUdkyt9GC2lD6j2uoVSJr5SjSdQw,2307
+cloud_sheets_slim-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cloud_sheets_slim-0.3.0.dist-info/RECORD,,
