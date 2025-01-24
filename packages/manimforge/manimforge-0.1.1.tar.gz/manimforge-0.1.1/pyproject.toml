@@ -1,0 +1,28 @@
+[build-system]
+requires = ["maturin>=1.6,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "manimforge"
+description = "Rust parts of the Animation Library Manim"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9,<3.13"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = []
+
+[project.urls]
+documentation="https://docs.manim.community/"
+homepage="https://www.manim.community/"
+repository = "https://github.com/ManimCommunity/manim-forge"
+
+[dependency-groups]
+dev = ["manim>0.18.0", "maturin>=1.8.0"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
