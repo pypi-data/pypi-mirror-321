@@ -1,0 +1,12 @@
+httpx
+pydantic
+pydantic_core
+requests
+openai
+tqdm
+tiktoken
+backoff
+pycountry
+phonenumbers
+email_validator
+python-stdnum
