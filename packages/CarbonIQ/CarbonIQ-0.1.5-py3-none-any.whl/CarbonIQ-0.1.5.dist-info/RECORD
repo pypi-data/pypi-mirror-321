@@ -1,0 +1,12 @@
+carboniq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carboniq/emissions.py,sha256=Kr7icWHe97md0X9jGd6OCZLT7yFGII7ITj2CaTzaZdk,5581
+carboniq/gpu_utils.py,sha256=9nOBdiAnSg_kHNyvrPn6vTnA3t9vqtg24CP7UUuaS7g,611
+carboniq/metrics.py,sha256=D8ZQdfgQ-cqmYnC6ekB-SCopobpf4LYluBiYUBz_DfI,1536
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_carboniq.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CarbonIQ-0.1.5.dist-info/LICENSE,sha256=loQ4jNYffgPWbvkvV1qXSdyRcR8QPtHbejmFxbmZf5A,1074
+CarbonIQ-0.1.5.dist-info/METADATA,sha256=0XKuw_ciomznEkzax585YWsnMMv5aSlWFPNKgYsvDnk,5889
+CarbonIQ-0.1.5.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+CarbonIQ-0.1.5.dist-info/entry_points.txt,sha256=-UF69eUyKvS9lKT41LXCK15Wa6M1AH9BJvihyJ3eJ5Y,52
+CarbonIQ-0.1.5.dist-info/top_level.txt,sha256=wTOZrUKcO76l-tThljJG0D-2IvRd4K6wV1DTiTJ_RdU,15
+CarbonIQ-0.1.5.dist-info/RECORD,,
