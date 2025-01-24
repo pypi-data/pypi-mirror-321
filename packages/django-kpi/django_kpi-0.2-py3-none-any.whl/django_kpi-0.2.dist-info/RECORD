@@ -1,0 +1,16 @@
+django_kpi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kpi/admin.py,sha256=JQl_UunrYELGF4dNFTZGYKNUoBR-Ip-u03BG5ohwL-s,1017
+django_kpi/apps.py,sha256=n5NM3rKyWFdZz4qzIFb5SnjB1ksRr-sccB4FvInG9x8,163
+django_kpi/forms.py,sha256=1Dg2n3nK03-8rhspUtQTEdYTCnvDVvenALD_19_QBB0,3654
+django_kpi/models.py,sha256=L6Cps-k75mGXB_5jjmk6zl2H2u3kF6Xz6mVP1bvyGgA,6477
+django_kpi/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_kpi/urls.py,sha256=CYvaBMH15VuKm89TvJPGPNk8-UpuvMUYdglFSe35EeY,227
+django_kpi/utils.py,sha256=gXk5EU5CZ0mdbac47oJZVbymhX6AXzsR5ZxbHO03FwI,2652
+django_kpi/views.py,sha256=bTACDqI1NZWtF3NSnoaSYO7sO5Qz4BHCxAKaFjBPRd8,2092
+django_kpi/migrations/0001_initial.py,sha256=qZuJ2Nt8oksWLA_ovAhg5pVVn0zy-LoqkKGXdDbEBsA,5340
+django_kpi/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kpi/static/js/kpi_admin.js,sha256=oW9aDd530C-pvlLtg3FKCdHRn5v4nHGQALMyL0lDGto,8843
+django_kpi-0.2.dist-info/METADATA,sha256=7QwSAzWW_tWRjV27RrGcjOqlhYZhUN3StRur6tAcZB0,1016
+django_kpi-0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_kpi-0.2.dist-info/top_level.txt,sha256=ZMntuyJ27Ihlsasn_NDm1yVrOOLfS-5TwwDkFx6u6i8,11
+django_kpi-0.2.dist-info/RECORD,,
