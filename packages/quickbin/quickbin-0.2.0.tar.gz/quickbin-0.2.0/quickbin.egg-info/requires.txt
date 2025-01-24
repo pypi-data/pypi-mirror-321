@@ -1,0 +1,8 @@
+numpy
+
+[benchmark]
+psutil
+scipy
+
+[tests]
+pytest
