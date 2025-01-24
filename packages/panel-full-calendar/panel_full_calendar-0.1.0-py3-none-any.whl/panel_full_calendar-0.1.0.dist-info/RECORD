@@ -1,0 +1,9 @@
+panel_full_calendar/__init__.py,sha256=gyT0H9PSxxv9iq7-tPYB5rnjENAmOlcMcSuy_m4us2M,464
+panel_full_calendar/main.py,sha256=CG-D7beNGaC-NmQeO5q-rNAAWTHKsg64b8r8rUVJyo8,30031
+panel_full_calendar/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panel_full_calendar/utils.py,sha256=qdjmZiVfAsI6nLmllqz2lngtFwQf_O8aMv2ZSJTb7dk,2226
+panel_full_calendar/models/fullcalendar.js,sha256=Rv3_H6pIaDusdeFKyBDcbNT4QX8M-OWWJSl5Hw5LWEA,9323
+panel_full_calendar-0.1.0.dist-info/METADATA,sha256=pKEOoR-hCLoIVo34y9eC3mPIcX2rPiPWUjwrR0DBBxI,5735
+panel_full_calendar-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+panel_full_calendar-0.1.0.dist-info/licenses/LICENSE.txt,sha256=Jqbh7noYJKpAY0CUXf5UeMNtew5vLlLHmRbBrIo6XrE,1515
+panel_full_calendar-0.1.0.dist-info/RECORD,,
