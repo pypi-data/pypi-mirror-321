@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sub-byte"
+dynamic = ["version"]
+authors = [{name = "James Parrott", email = "james.parrott@proton.me"}]
+description = "Encodes and decodes sequences of unsigned integers with known widths (and sequences of symbols from finite sets). "
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.12" # For the new generic functions syntax.
+keywords = ["Encoders", "Serialization"]
+license = {file = "LICENSE.md"}
+classifiers = [
+    "Programming Language :: Python",
+]
+
+dependencies = [
+    "more_itertools",
+]
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "hypothesis",
+]
+"mypy" = [
+    "mypy"
+]
+
+[project.urls]   
+"Homepage" = "https://github.com/NumberzGame/sub_byte"
+"Bug Tracker" = "https://github.com/NumberzGame/sub_byte/issues"
+
+[tool.hatch.version]
+path = "package.json"
+pattern = '"version": "(?P<version>\d+\.\d+\.\d+)",'
+
+[tool.hatch.build.targets.wheel]
+exclude = [
+  "*.mjs",
+  "*.mts",
+  "*.json",
+  "*.js",
+  "*.jsx",
+  "*.cjs",  
+  "*.ts",
+  "*.tsx",
+]
+
+
+
+

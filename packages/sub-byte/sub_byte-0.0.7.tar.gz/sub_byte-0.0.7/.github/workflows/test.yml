@@ -1,0 +1,64 @@
+name: Run PyTest 
+
+description: Run the API Fuzz tests using Pytest and Hypothesis
+
+on:
+  push:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+
+  run_tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [
+          "3.12",
+          "3.13",
+          "3.14.0-alpha.3",
+        ]
+        os: [
+          "ubuntu-24.04",
+        ]
+        include:
+
+          - os: "macos-latest"
+            python-version: "3.13"
+          - os: "windows-latest"
+            python-version: "3.13"
+
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install test dependencies
+      run: pip install pytest hypothesis
+
+    - name: Install code under test
+      run: pip install -e .
+
+
+    - uses: denoland/setup-deno@v2
+      with:
+        deno-version: v2.x
+
+    - name: Show files in tests dir
+      working-directory: tests
+      shell: bash
+      run: ls -A
+
+    - name: Install JS deps from npm
+      run: npm ci
+
+    - name: Run JS tests
+      run: npm run test
+
+    - name: Run Python tests (JS tested via CLI).
+      working-directory: tests
+      run: pytest

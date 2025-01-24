@@ -1,0 +1,48 @@
+{
+  "name": "sub_byte",
+  "version": "0.0.7",
+  "description": "Encodes and decodes sequences of unsigned integers with known widths (and sequences of symbols from finite sets).",
+  "main": "./dist/factories.mjs",
+  "types": "./dist/factories.d.mts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "deno test tests/tests.mts",
+    "eslint": "eslint . --cache",
+    "prettier": "prettier --check \"**/*.{js,msx,mjs,ts,tsx,mts,mtx}\"",
+    "prettier:write": "prettier --write \"**/*.{js,msx,mjs,ts,tsx,mts,mtx}\"",
+    "typecheck": "tsc --noEmit",
+    "prepublish": "tsc"
+  },
+  "files": [
+    "./dist/factories.mjs",
+    "./dist/factories.d.mts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NumberzGame/sub_byte.git"
+  },
+  "keywords": [
+    "Encoder",
+    "Decoder",
+    "Serialiser"
+  ],
+  "author": "James Parrott <james.parrott@proton.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NumberzGame/sub_byte/issues"
+  },
+  "homepage": "https://github.com/NumberzGame/sub_byte#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.5",
+    "eslint": "^9.18.0",
+    "fast-check": "^3.22.0",
+    "globals": "^15.11.0",
+    "prettier": "3.3.3"
+  },
+  "overrides": {
+    "glob": "^11.0.0"
+  }
+}
