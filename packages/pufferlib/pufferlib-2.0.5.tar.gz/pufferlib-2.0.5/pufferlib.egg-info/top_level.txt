@@ -1,0 +1,16 @@
+_vizdoom
+build
+build_web
+c_gae
+config
+dist
+experiments
+maps
+pufferlib
+raylib
+raylib_wasm
+resources
+scripts
+tests
+uild
+wandb
