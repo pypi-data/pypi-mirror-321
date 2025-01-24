@@ -1,0 +1,6 @@
+autopub_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopub_plugins/github.py,sha256=ZEXHEFb9sD8MzuVXlR39zFlNXKDyOO7l5TCbsFgml10,9751
+autopub_test-0.21.16.dist-info/METADATA,sha256=JV7omkktj6FmFx2INVtvABlbFasOmAFslUtZv0h5IDM,157
+autopub_test-0.21.16.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+autopub_test-0.21.16.dist-info/top_level.txt,sha256=vXkwjNMoNt6qQvL3tEpe-WVQaTEPdna0cKc1gtvvnCA,16
+autopub_test-0.21.16.dist-info/RECORD,,
