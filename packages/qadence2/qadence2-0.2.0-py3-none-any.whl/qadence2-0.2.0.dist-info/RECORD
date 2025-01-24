@@ -1,0 +1,11 @@
+qadence2/__init__.py,sha256=VeAOHcZHBRnAtvLZT1p3EpSqm0dMIQp53nHvdrsRSoE,188
+qadence2/compiler.py,sha256=9zcH9dZFJAtAEfzAxgGoOHNHrtkUx9dTOYfJx7IqJFY,3294
+qadence2/utils.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+qadence2/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qadence2/extensions/legacy/__init__.py,sha256=-rbkUMpqzTvNiq-pE2LU6SbMtimRAijkf78Uggwqkkk,394
+qadence2/extensions/legacy/model.py,sha256=dRnsKqpQ_OCulw0zBiHjG7gQCy_pCgtNj2PE2WW40xI,287
+qadence2/extensions/legacy/operators.py,sha256=HPhwhQdqW8IYooc517fILIziGcdTVpGMTJlh0jjnI4o,930
+qadence2/extensions/legacy/utils.py,sha256=qGxNaKZZa71SRTZr_hKy5R6bnSmNdkPlpNo8VpNxruM,776
+qadence2-0.2.0.dist-info/METADATA,sha256=aRTQ-Afoa4x0EBbN0aGlyU7kHLVyXyzdDvXhIqjXh2o,3166
+qadence2-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+qadence2-0.2.0.dist-info/RECORD,,
