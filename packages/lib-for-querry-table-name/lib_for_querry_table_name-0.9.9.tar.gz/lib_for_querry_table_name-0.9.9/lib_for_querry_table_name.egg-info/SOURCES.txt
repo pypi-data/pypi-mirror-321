@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+lib_for_querry_table_name/__init__.py
+lib_for_querry_table_name/lib_for_querry_table_name.py
+lib_for_querry_table_name.egg-info/PKG-INFO
+lib_for_querry_table_name.egg-info/SOURCES.txt
+lib_for_querry_table_name.egg-info/dependency_links.txt
+lib_for_querry_table_name.egg-info/requires.txt
+lib_for_querry_table_name.egg-info/top_level.txt
