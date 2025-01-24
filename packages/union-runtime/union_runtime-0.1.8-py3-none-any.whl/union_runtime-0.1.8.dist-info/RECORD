@@ -1,0 +1,16 @@
+union_runtime/__init__.py,sha256=XVLjzTK0hjIkRRkVNhJrg4-pmQ94k9iIizypiUYqMlY,545
+union_runtime/_logging.py,sha256=SQ90sD8n66wCq0wt_-SlcY3hw8jpjlKT2DcFAaW1lLY,556
+union_runtime/_bin/__init__.py,sha256=0kiJh-_wR04IuDgvxw2SrP8AB_KIqYrh9YnXP1NKM7w,107
+union_runtime/_bin/download.py,sha256=7pdOCNr3QkcEwG2agDGbYGgx8AriyvsF9dUdFpxPbk8,5920
+union_runtime/_bin/serve.py,sha256=9D_F9YDZNsWL5MtPjQmL9Rq87PKWcrDPkdCmk7QNwXY,1652
+union_runtime/_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+union_runtime/_lib/constants.py,sha256=uQbgsYlVOnOLUnS1LTAw34rZTZbOKnbXHAOR4ZdTJBs,119
+union_runtime/_lib/inputs.py,sha256=acZ6A4Z3i48-Z5h1Y0rm1n_nHh-w5_yqhpmyOz60QPo,380
+union_runtime-0.1.8.dist-info/APL.txt,sha256=LaW8yM_wrlujbZkjFF407tM0CkWKJp9mPDWCQw-MNY8,11294
+union_runtime-0.1.8.dist-info/BSL.txt,sha256=GYKvOWE3q1X3zg5TecCp5zr9PAOqY0mhF92s601JWkM,4729
+union_runtime-0.1.8.dist-info/LICENSE,sha256=lLLPHES8ZyJzgkMaNue_y1N3aVru7NNbipqEXMw6KvE,340
+union_runtime-0.1.8.dist-info/METADATA,sha256=kLV6ngZFKOODniyDAc61hNe054w8DzslnoQjaWpN-2o,1463
+union_runtime-0.1.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+union_runtime-0.1.8.dist-info/entry_points.txt,sha256=WAkmYXBBimrLHBigPu6jYKY_bea9ZGOE56cK4cs7B10,62
+union_runtime-0.1.8.dist-info/top_level.txt,sha256=RVu2bMPvSBBXDgDmD63pV5iTAMDDTZVn2oE93rd4MVY,14
+union_runtime-0.1.8.dist-info/RECORD,,
