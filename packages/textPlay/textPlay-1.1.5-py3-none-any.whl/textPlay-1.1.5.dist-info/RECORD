@@ -1,0 +1,24 @@
+textPlay/Gsearch.py,sha256=6WTsMy9Xy7v7UYCP4bSCeAi7wVqloLoJ0QpQXfVz1mU,1675
+textPlay/Modules Used.py,sha256=J3VTYx8rt_BQEo_bbSG15foyFLLViADijfYCSRY5VD0,2066
+textPlay/__init__.py,sha256=sT5Qq60WzXJmZ6uLKI3hGRI-DrFgIroGjP83MXKt1-o,5774
+textPlay/backend.py,sha256=35AqETbDP80zhDLm-Oyc-OtL_1w4GzN0zJgwpJ5ZZhs,2374
+textPlay/box.py,sha256=fmT5AyFGz0W-KISSTJtHk6GZqm6fttvGQ_h7q-fuso4,2392
+textPlay/cli.py,sha256=h5z-X6CqW0mZ6QvFGUgbRJ5SiY2gZcnMMzJmfPuXFuw,9446
+textPlay/colors.py,sha256=_HQHt6u90SSdQD2BkF6bNfed3t2xrlcMmWQSczyRfiQ,3680
+textPlay/encrypt_animation.py,sha256=PLsMA7RCBgV84llBywiHtmjXzHeCp8sOvN3ssROVgUQ,1341
+textPlay/files.py,sha256=cUXEEj9oAls3l3amjO99zpCMbOTjhCaabTocE8bBHV0,2191
+textPlay/loader.py,sha256=paNt1dRJjAiJUj30g3XfeDbXez_H8NdLxUI0EY4OJKg,9761
+textPlay/logmsg.py,sha256=PPypbjszwrWg5yi3HDkZXcH45nA7aEaFd9usGCNhWRw,1499
+textPlay/main.py,sha256=3v2spkKb9Z6dqmzF_2u9t0miO7Gc-adkyYJsMfwChTU,26238
+textPlay/meta.py,sha256=uf7I2EvtSjOPKi94pUVJLiG1EZ6235J3funep8TLbio,63
+textPlay/morse.py,sha256=KldRx-nhlJCIMGKxoxBBm7RxKS6cqRnC41JhPzupqyY,3341
+textPlay/options.py,sha256=5718T-o33lfU1sRMFf65wyzS72SnaWWoTWiCtEkn3Vc,4701
+textPlay/password_generator.py,sha256=9MXUo8DDCKR4aJvmK951BMgStQiMZqEVVipkj_bJHK0,873
+textPlay/progress_bar.py,sha256=sECrciy40Po4QzLDbY5Ob3vkXPh3HGSgZUid3OY-u-Y,2821
+textPlay/scraper.py,sha256=00jzCErQs2CKil1KScEJG01frqJCTvaMYsU2CWUeNdc,1291
+textPlay-1.1.5.dist-info/LICENSE,sha256=kYLn4pugVyeqGPXby-75llalgNlUMkWSmVCR_pFa1Xw,11543
+textPlay-1.1.5.dist-info/METADATA,sha256=Iah-v2RvGY2o0AmhcUu3D5ysacRtbwm8i5jNVT2jJ4s,7291
+textPlay-1.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+textPlay-1.1.5.dist-info/entry_points.txt,sha256=4v2m342L98wDXQY8K4Hke5pR77n-SCo6MOuATd6Q0xU,51
+textPlay-1.1.5.dist-info/top_level.txt,sha256=uecm9toPSE-tpt1wvrj8zXMJBs9PNjnftJbRN74lwwU,9
+textPlay-1.1.5.dist-info/RECORD,,
