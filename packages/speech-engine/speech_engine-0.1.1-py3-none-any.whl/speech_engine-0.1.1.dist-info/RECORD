@@ -1,0 +1,10 @@
+speech_engine/__init__.py,sha256=d2SE6aWePU_GA1Gb9CbwAxSPGGPRiul8fsKxKigu76c,167
+speech_engine/exceptions.py,sha256=GcgJlU8eGJcG7oOAeMioLMBtsA0sVzHIj8wEgSgQ55o,343
+speech_engine/tts_google.py,sha256=ni-W_eTOIe0RUDzG7XNqTQOCZz9XHSj_lA3CEgaCkvg,2947
+speech_engine/tts_openai.py,sha256=CZ_4RwZO2dNQd7wqJjHZg3XUvSTSsjbnXEBmQDS0zp8,2409
+speech_engine/tts_witai.py,sha256=xQJpU0cMeKJNwpP_310qWQnz7ycwDhQ24todCtigvhw,4917
+speech_engine-0.1.1.dist-info/LICENSE,sha256=0Cv74jqAAcujvY3yhV8T3AYt01IxQnhMVlSMSyhkW6s,1088
+speech_engine-0.1.1.dist-info/METADATA,sha256=F3GRe5asZSmB3UJ3zNfEsxF5dZvi0xZ9O20NQaA9Mw0,2932
+speech_engine-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+speech_engine-0.1.1.dist-info/top_level.txt,sha256=9auJ8Tw3pKdSy6tMcp1oDE3Obf3TtEVJC5ubz25vkPU,14
+speech_engine-0.1.1.dist-info/RECORD,,
