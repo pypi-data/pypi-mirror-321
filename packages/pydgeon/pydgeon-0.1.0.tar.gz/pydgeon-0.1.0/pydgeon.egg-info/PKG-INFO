@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: pydgeon
+Version: 0.1.0
+Summary: A Python library for simplifying sending emails using smtplib
+Author-email: Your Name <GeeseCanHonk@gmail.com>
+License: MIT
+Project-URL: Homepage, https://pypi.org/project/pydgeon/
+Project-URL: Repository, https://github.com/GeeseCanHonk/pydgeon
+Project-URL: Issues, https://github.com/GeeseCanHonk/pydgeon/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
