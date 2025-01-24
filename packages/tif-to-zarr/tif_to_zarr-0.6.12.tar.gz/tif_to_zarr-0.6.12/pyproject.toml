@@ -1,0 +1,32 @@
+[tool.poetry]
+packages = [{include = "tif-to-zarr", from = "src"}]
+name = "tif-to-zarr"
+version = "0.6.12"
+description = ""
+authors = ["yurii_zubov"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+imagecodecs = "^2024.1.1"
+asciitree = "^0.3.3"
+pyyaml = "^6.0.1"
+black = "^24.10.0"
+dask-jobqueue = "0.8.2"
+
+[tool.poetry.group.dev.dependencies]
+zarr = "^2.16.1"
+dask = "^2023.10.1"
+numpy = "^1.25.1"
+tifffile = "^2023.9.26"
+logging = "^0.4.9.6"
+xarray-multiscale = "^2.1.0"
+
+[tool.poetry.scripts]
+tif_to_zarr = 'src.tif-to-zarr:tif_to_zarr'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
