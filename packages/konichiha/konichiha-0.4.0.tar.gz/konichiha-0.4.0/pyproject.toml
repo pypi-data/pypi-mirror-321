@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "konichiha"
+version = "0.4.0"
+description = "A Python project named konichiha"
+authors = []
+requires-python = ">=3.9.0"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "pytest",
+]
+
+[tool.setuptools]
+packages = {find = {}}
+include-package-data = true
+

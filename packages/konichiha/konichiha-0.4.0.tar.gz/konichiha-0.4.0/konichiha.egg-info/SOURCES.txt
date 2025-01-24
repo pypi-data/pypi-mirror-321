@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+konichiha/__init__.py
+konichiha/main.py
+konichiha.egg-info/PKG-INFO
+konichiha.egg-info/SOURCES.txt
+konichiha.egg-info/dependency_links.txt
+konichiha.egg-info/requires.txt
+konichiha.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
