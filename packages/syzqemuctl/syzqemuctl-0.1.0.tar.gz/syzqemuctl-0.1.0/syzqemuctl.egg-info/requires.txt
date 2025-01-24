@@ -1,0 +1,8 @@
+click
+dataclasses
+datetime
+paramiko
+pathlib
+requests
+rich
+scp
