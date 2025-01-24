@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyhub_git_commit_apply/__init__.py
+pyhub_git_commit_apply/main.py
+pyhub_git_commit_apply.egg-info/PKG-INFO
+pyhub_git_commit_apply.egg-info/SOURCES.txt
+pyhub_git_commit_apply.egg-info/dependency_links.txt
+pyhub_git_commit_apply.egg-info/entry_points.txt
+pyhub_git_commit_apply.egg-info/top_level.txt

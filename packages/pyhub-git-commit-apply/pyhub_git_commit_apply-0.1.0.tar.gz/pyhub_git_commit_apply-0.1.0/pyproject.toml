@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhub_git_commit_apply"
+version = "0.1.0"
+description = "A tool to download and apply changes from a GitHub commit URL"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Chinseok Lee", email = "me@pyhub.kr" }
+]
+keywords = ["git", "commit", "github", "apply"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+
+[project.scripts]
+pyhub-git-commit-apply = "pyhub_git_commit_apply.main:main"
+
