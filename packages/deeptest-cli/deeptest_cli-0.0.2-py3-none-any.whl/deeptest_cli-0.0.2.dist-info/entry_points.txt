@@ -1,0 +1,2 @@
+[console_scripts]
+deeptest = deeptest-cli.main:app

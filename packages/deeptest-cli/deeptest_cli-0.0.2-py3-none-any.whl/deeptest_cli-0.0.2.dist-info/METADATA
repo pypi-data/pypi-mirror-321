@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: deeptest-cli
+Version: 0.0.2
+Summary: DeepTest CLI tool
+Author-email: Tim Lupo <tim@deeptest.sh>
+Requires-Python: >=3.8
+Requires-Dist: click>=8.0.0
+Requires-Dist: keyring>=25.6.0
+Requires-Dist: requests>=2.0.0
+Requires-Dist: typer>=0.15.1
