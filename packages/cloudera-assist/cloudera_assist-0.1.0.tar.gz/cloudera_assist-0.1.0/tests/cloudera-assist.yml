@@ -1,0 +1,72 @@
+# Copyright 2025 Cloudera, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+prelude: |
+  # Welcome to the test cloudera-assist.yml
+
+  Any Markdown content is rendered here and in each `Command`'s `info` panel.
+info: |
+  The navigation panel contains commands for setting up and running a project.
+  ## Actions
+  These are commands that should "run" the project, either by setting up prerequisites or executing resources.
+  ## Utilities
+  These are commands that help administer a project, such as linking to documentation or running programs on the host.
+  ## Credentials
+  These particular commands handle the management of the credentials required for a project. Credentials include:
+  1. AWS keys
+  2. SSH private keys
+  3. Cloudera on Cloud keys
+  4. Cloudera on Premise licenses
+actions:
+  - label: Who am I?
+    info: Run the 'whoami' command on your localhost (i.e. controller).
+    command:
+      - whoami
+  - label: AWS current user
+    info: Execute `aws iam get-user`.
+    command:
+      - aws
+      - iam
+      - get-user
+  - label: Check out Cloudera Labs
+    info: Open a new browser window to https://github.com/cloudera-labs
+    url: https://github.com/cloudera-labs
+  - label: Inspect Environment Variables in ansible-navigator
+    info: Run `ansible-navigator --la=false run test.yml``
+    command:
+      - ansible-navigator
+      - --la=false
+      - run
+      - test.yml
+    pause: no
+
+utilities:
+  - label: Run 'top'
+    command:
+      - top
+  - label: AWS SSO Login
+    command:
+      - aws
+      - sso
+      - login
+      - --profile
+      - se.admin
+  - label: Go to Cloudera docs
+    url: https://docs.cloudera.com
+
+credentials:
+  - aws
+  - ssh
+  - cloud
+  - license
