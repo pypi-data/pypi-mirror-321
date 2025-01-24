@@ -1,0 +1,6 @@
+requests
+
+[docs]
+sphinx-autoapi
+sphinx
+recommonmark
