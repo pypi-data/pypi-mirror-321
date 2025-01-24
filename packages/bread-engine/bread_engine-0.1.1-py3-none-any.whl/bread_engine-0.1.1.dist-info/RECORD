@@ -1,0 +1,8 @@
+bread_engine/__init__.py,sha256=X1p2Xaghdh-wQrOqOR4O8quW39t-WMPelUz0HDb72Sw,136
+bread_engine/color.py,sha256=eu74oEov4CvQ-uodIrZs3VTMcbxv8BUSZdxbjseZbv0,347
+bread_engine/engine.py,sha256=6O-w2rh4-QZ3r1Jjm9etZ-wibGgdsH9woohVyNWbr_A,4006
+bread_engine/entities.py,sha256=GhddXWiP39JXpWSjN2oNY6rbsLcKQdQlpOFpwD1M6Ro,2394
+bread_engine/keyhandler.py,sha256=z_b7fC5i9no0CKLIHDrQkzcFhPrb28ErW70yOD3L0qk,4064
+bread_engine-0.1.1.dist-info/METADATA,sha256=AOPBb3rC6jUqYdtPK1LGxnSpGQnyYulHvxyJU-dNaDw,2072
+bread_engine-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bread_engine-0.1.1.dist-info/RECORD,,
