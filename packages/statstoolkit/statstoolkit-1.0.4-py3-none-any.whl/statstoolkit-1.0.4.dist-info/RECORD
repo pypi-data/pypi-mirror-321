@@ -1,0 +1,13 @@
+tests/anova_tests.py,sha256=L5ztAjeq1B8E26NImNGO-A6mZ0qvgDE9uAf8rntuJpI,4297
+tests/kruskalwallis_tests.py,sha256=SwNHHhC6hetq8xnlswHLH_mVAREyYBaWgvBYsoueG_Q,2784
+tests/probability_tests.py,sha256=1GJxslAsu1-ksHIRQgwSVZpx2WtjeNx7opmmindImys,6308
+tests/regress_visual_test.py,sha256=aJjkOxBAzdZud2yomo85qzdZ1fvqDbMHRJpuFVkHK4w,2307
+tests/statistics_tests.py,sha256=YhAIE1obky8Kr9eUfVZwvk-tFrU3Eht40H6vNVXHMOg,18017
+tests/std_tests.py,sha256=enUvQlC3zd5s425xAYGRmaQwFH6X3SPlzSZXYXMzZkA,1490
+tests/utils_tests.py,sha256=15jS5fsXM_Wcv_XCFXD4ahZO6ewbfFleEenOYPk8wBE,7283
+tests/visualization_tests.py,sha256=Rje1Tm-LoILcL6AXoWRZo9P9nInZogb4IvIrsLUDzeQ,3920
+statstoolkit-1.0.4.dist-info/LICENSE,sha256=T89wLVeejeAfYiGdV2qJHP041iCeIkks5Pb8lhmKtZU,1111
+statstoolkit-1.0.4.dist-info/METADATA,sha256=i6EaelW4a9JsPT2lVSB4SUqCGpKYt7inmJCBgLJfud0,20089
+statstoolkit-1.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+statstoolkit-1.0.4.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+statstoolkit-1.0.4.dist-info/RECORD,,
