@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+httpx_curl_cffi/__init__.py
+httpx_curl_cffi/py.typed
+httpx_curl_cffi/transport.py
+httpx_curl_cffi.egg-info/PKG-INFO
+httpx_curl_cffi.egg-info/SOURCES.txt
+httpx_curl_cffi.egg-info/dependency_links.txt
+httpx_curl_cffi.egg-info/requires.txt
+httpx_curl_cffi.egg-info/top_level.txt
