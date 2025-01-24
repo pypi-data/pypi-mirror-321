@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: npu_vllm
+Version: 0.4.2.post1
+Summary: A high-throughput and memory-efficient inference and serving engine for LLMs
+Home-page: https://github.com/yourusername/my_package
+Author: Huawei
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/yourusername/my_package
+Project-URL: Documentation, https://github.com/yourusername/my_package
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: decorator
+Requires-Dist: attrs
+Requires-Dist: psutil
+Requires-Dist: absl-py
+Requires-Dist: cloudpickle
+Requires-Dist: scipy
+Requires-Dist: tornado
+Requires-Dist: transformers
+Requires-Dist: accelerate
+Requires-Dist: pandas
+
