@@ -1,0 +1,25 @@
+[package]
+name = "zhconv-pyo3"
+authors.workspace = true
+categories.workspace = true
+description = "zhconv as in MediaWiki, 🦀oxidized for more efficiency (with OpenCC dicts)"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[lib]
+name = "zhconv_rs_opencc"
+crate-type = ["cdylib"]
+
+[features]
+default = []
+opencc = ["zhconv/opencc"]
+
+[dependencies]
+zhconv = { path = "../" }
+pyo3 = { version = "0.23", features = ["extension-module", "abi3-py39"] }
+pyo3-file = "0.10.0"
+
+[lints]
+workspace = true
