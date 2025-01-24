@@ -1,0 +1,10 @@
+numpack-0.1.3.dist-info/METADATA,sha256=B6v2YCO8IfkdzBV0TBybD4jafhQRoGxpl7WswvqnU3w,10653
+numpack-0.1.3.dist-info/WHEEL,sha256=2fdNHxJvS2bAcI00delQ4QrnR7Oujl4cP2y-SRm5elU,96
+numpack-0.1.3.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+numpack/mmap.py,sha256=fVjfUBhipsDs8YKTtq_tCJ6Avg4YwkyYJlA0p9yohJ4,2362
+numpack/tests/benchmark.py,sha256=sP3k6ol8rEXZ2vpFolobGG90DDX9flwy4W32O-oxsHM,26158
+numpack/tests/test_numpack.py,sha256=u6oKDR-UdjEbHwycmlVXnoDoJtkL14G3eg1a6MNOlCY,8614
+numpack/tests/__init__.py,sha256=cgaKTkYoxOFb6Il8lEuzgWhK2rQXD1vEfnuxXPs9Rzk,32
+numpack/__init__.py,sha256=-9c1t4eKoOLCwFPcuN4_3aEXLCCsEUFz-mGPIIeR-nI,6891
+numpack/_lib_numpack.cp312-win_amd64.pyd,sha256=mRR5_x6Izc1o3h6xgk3k-WMKSLq3cRAhrqtKadQadMg,1084928
+numpack-0.1.3.dist-info/RECORD,,
