@@ -1,0 +1,21 @@
+[project]
+name = "mylocale"
+version = "2025.1.15"
+description = "A simple python library for simple localisation wit CSV files."
+license = "MIT"
+authors = [
+    { name = "tct123", email = "42028373+tct123@users.noreply.github.com>" },
+]
+readme = "README.md"
+urls = { repository = "https://github.com/tct123/mylocale", homepage = "https://github.com/tct123/mylocale", documentation = "https://mylocale.readthedocs.io" }
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mylocale_create = 'mylocale.create:main'
