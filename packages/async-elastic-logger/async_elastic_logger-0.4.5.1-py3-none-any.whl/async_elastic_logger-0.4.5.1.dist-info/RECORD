@@ -1,0 +1,7 @@
+async_elastic_logger/__init__.py,sha256=MZ0x2LIblrmYJvaNKowFKcSbBmQ5G9rXLQ75GmsWKjU,53
+async_elastic_logger/logger.py,sha256=FyvQL66g9p6DKSmBx8CuO4t0Q4BdoY1_TsYd5h6vdCY,10824
+async_elastic_logger/logger_config.py,sha256=QCy6BUUR43chYedtFAEJNRyYHCWs3bsZRf7IZhy8Vhg,767
+async_elastic_logger-0.4.5.1.dist-info/METADATA,sha256=Ehg5nUfN2Dx4OiLrnsoCFf4AdCq6OjGBDF_dQ9gxtEs,3915
+async_elastic_logger-0.4.5.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+async_elastic_logger-0.4.5.1.dist-info/top_level.txt,sha256=t5zhhbTuA-4Crh-L6iE2PnA8sM8uo_Wb8v9Ab2Msp8M,21
+async_elastic_logger-0.4.5.1.dist-info/RECORD,,
