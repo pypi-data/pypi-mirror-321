@@ -1,0 +1,15 @@
+send2airgap/__init__.py,sha256=RZm4rC7SYXQZQlXD_oGvICPAn-yS758x5lDHnjeF7gE,55
+send2airgap/__main__.py,sha256=og59hmK2GA0J12eFzDoZUEOdpKJXIOym-0Qt0_hj860,148
+send2airgap/backend.py,sha256=-cY3SNcUgjJqRhdh3MNVRGyo4keH8kZZolIabPlJyks,6260
+send2airgap/base.py,sha256=tsDViEF68JaUcnO81wEH9HK35LkcSMRGYTFK323oGxE,335
+send2airgap/cli.py,sha256=CLNfr-ZKfahkhrbG4ape__uTKLrS6dlJBqxHXbj8zCw,752
+send2airgap/frontend.py,sha256=c6PUejn8SzexNmI_q2DvZu32ZOCE7z0FSNoO2vBwM34,4160
+send2airgap/receive.py,sha256=IZgoN5MEqeehnKTrYfH3t_bHsGWRbkS0BiHcIJf3seg,139
+send2airgap/receiver.py,sha256=0Ljvy1MCT9NaNjXMFRwOHRlV9yz_1w8sFYhPxD5HThM,5660
+send2airgap/transmit.py,sha256=4CjwAEi0Xq3NDEkTLFxQBAoLYz286ie7vObOC6pm8GM,140
+send2airgap-0.0.3.dist-info/LICENSE,sha256=VwHkTkYAXpDMkMEO8ACxoXKlKGc5W-qkk9TyQ-TTl_Q,1152
+send2airgap-0.0.3.dist-info/METADATA,sha256=E6R0UQhJKcHJ4IRfXadVJkJKgTmKiFdlIFthRHbdqzw,3956
+send2airgap-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+send2airgap-0.0.3.dist-info/entry_points.txt,sha256=f9BZeFMf5CZdYTaFICjzn0_FTU70ki0f482wb39xetU,58
+send2airgap-0.0.3.dist-info/top_level.txt,sha256=tHmV86TCessPmUw9vPCtA_fnye5UKEot3J9FBHRrwxY,12
+send2airgap-0.0.3.dist-info/RECORD,,
