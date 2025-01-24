@@ -1,0 +1,12 @@
+minilsap/_version.py,sha256=6jduLD2XqC2neVqN-e4WUw0a2HLvR_6J8fpLRLX_lz4,82
+minilsap/solver.py,sha256=uIXrPjOtOZyuAuZQevXegUhNE5a4gJ6PtyfRpRXBHaw,1032
+minilsap/__init__.py,sha256=Wbqn9cfmwUR_EVn7TxooynXnPbzbS3CXroGTBHzOBPs,251
+minilsap/_lsap.abi3.so,sha256=jWWvdVngXzsHwscsKRa1CCO_aoXOPmjSG3AukTVg4uI,308296
+minilsap-1.0.0.dist-info/RECORD,,
+minilsap-1.0.0.dist-info/METADATA,sha256=3XepdExKlmoGGKNOpUJRgnmqKaAYW78z5PYhZfmdY98,2912
+minilsap-1.0.0.dist-info/WHEEL,sha256=7nDcU7f0EHLb5Q9PBCl0OeafaohBaEvWbHfCj4bNd2U,149
+minilsap-1.0.0.dist-info/top_level.txt,sha256=2HqEiBEBpGFi-fCfqlFQfaBcr59miE0FndDJfgb5HJQ,15
+minilsap-1.0.0.dist-info/LICENSE,sha256=eneRXzTK8Y1HvDF1Da5H29f3iV6Vu7g3D0d8JQCTiPY,1443
+_lsap/rectangular_lsap.h,sha256=EhJzFhFbsTopJ-hPUy0JQoqGpcv49B6Xc_DD4OEpMZc,1920
+_lsap/_lsap_module.cpp,sha256=_wpiODol6y1IcrCrSa0jYXVxQO6iS9UpPP6YKL1dgSY,4713
+_lsap/rectangular_lsap.cpp,sha256=CoGyKvPaiZ4F7MQ5kHtY7JOmWthR9Y6kN2yF8HAwq2w,7683
