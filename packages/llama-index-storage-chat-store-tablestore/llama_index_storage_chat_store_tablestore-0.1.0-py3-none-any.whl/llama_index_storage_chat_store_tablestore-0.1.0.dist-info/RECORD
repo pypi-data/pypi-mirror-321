@@ -1,0 +1,5 @@
+llama_index/storage/chat_store/tablestore/__init__.py,sha256=IUYdK-1voUVWdpHdPwJKdfjXi_Er9Hml8M3ys-AZdMI,114
+llama_index/storage/chat_store/tablestore/base.py,sha256=kgmuf0jtPpmp_pX6ZPLsbmN8qAvyv2skTDec59XcLqs,9019
+llama_index_storage_chat_store_tablestore-0.1.0.dist-info/METADATA,sha256=zvkeTbCRLQFKQhYaaKJDSOkO0WxXaInwrswhEeFrq2I,1559
+llama_index_storage_chat_store_tablestore-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_chat_store_tablestore-0.1.0.dist-info/RECORD,,
