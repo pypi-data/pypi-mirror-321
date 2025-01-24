@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: depot_client
+Version: 0.0.4
+Summary: Python client for depot.dev API
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: grpcio>=1.54.0
+Requires-Dist: protobuf>=4.21.0
+Requires-Dist: grpcio-tools>=1.54.0
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
