@@ -1,0 +1,16 @@
+fastcore
+setuptools
+pydantic_settings
+pydantic
+python_dotenv
+envyaml
+pandas
+black
+pydantic
+requests
+uvicorn
+fastapi
+httpx
+pydantic_settings
+
+[dev]
