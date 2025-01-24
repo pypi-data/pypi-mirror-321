@@ -1,0 +1,6 @@
+#
+# Documentation: https://packaging.python.org/guides/using-manifest-in/
+# Manual on SO: https://stackoverflow.com/a/63652255
+
+global-include */*.html *.css
+include requirements.txt
