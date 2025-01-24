@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+lib_for_querrry.egg-info/PKG-INFO
+lib_for_querrry.egg-info/SOURCES.txt
+lib_for_querrry.egg-info/dependency_links.txt
+lib_for_querrry.egg-info/top_level.txt
