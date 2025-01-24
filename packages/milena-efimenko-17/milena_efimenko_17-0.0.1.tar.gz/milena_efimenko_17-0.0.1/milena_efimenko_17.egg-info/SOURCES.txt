@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+milena_efimenko_17.egg-info/PKG-INFO
+milena_efimenko_17.egg-info/SOURCES.txt
+milena_efimenko_17.egg-info/dependency_links.txt
+milena_efimenko_17.egg-info/top_level.txt
+mlops/__init__.py
+mlops/config.py
+mlops/dataset_generate.py
