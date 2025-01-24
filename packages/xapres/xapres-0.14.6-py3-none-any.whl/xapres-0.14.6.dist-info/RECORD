@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=R45R2E0-cxnIxj9FamthKopl0bc_baBdwVttvLtsoMg,59
+tests/test_all.py,sha256=TkDkP9LbuBeDuinXohxmXOcGlWnG0J4d7R-i0615Vp0,13984
+xapres/__init__.py,sha256=hABXlmzZdvQ0zGdaPDW6W3a2rKIzcmPbwX-J-r05nwU,698
+xapres/load.py,sha256=znOyVcQxmNHdJEvmNY-9Z6ajJiyDDjsr60AXb8jA2Ig,33342
+xapres/utils.py,sha256=xi6a0p2qBNgdj-yI5WhOU5bp_IV4ISDkljP30bS92nw,21506
+xapres-0.14.6.dist-info/LICENSE.txt,sha256=PgCJgkPBQQqK92P28PVj6rwwcxqr_nr3In77_KTrpIk,1084
+xapres-0.14.6.dist-info/METADATA,sha256=sRviFw_NiuBLXQIp9iHJcRTkZxn1k4xn5kvfvlIblZY,4202
+xapres-0.14.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+xapres-0.14.6.dist-info/top_level.txt,sha256=4Or3S8qgXAziqashIFXz_XMeKjqxMkIIsKB9WFymU0c,13
+xapres-0.14.6.dist-info/RECORD,,
