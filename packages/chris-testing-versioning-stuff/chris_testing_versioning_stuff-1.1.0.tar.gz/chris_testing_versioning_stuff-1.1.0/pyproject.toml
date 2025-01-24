@@ -1,0 +1,27 @@
+[project]
+name = "chris-testing-versioning-stuff"
+version = "1.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.9.1",
+]
+
+[tool.setuptools]
+package-dir = {hello="src/hello"}
+license-files = [] # Fix for uv/setuptools https://github.com/astral-sh/uv/issues/9513
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+minversion = "7.0"
+addopts = "-ra --cov=src --cov-fail-under=80 --no-cov-on-fail"
+testpaths = [
+    "test"
+]
