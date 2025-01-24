@@ -1,0 +1,6 @@
+requests
+pandas
+geemap
+numpy
+random
+earthengine-api
