@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+intellx/__init__.py
+intellx/api.py
+intellx/cli.py
+intellx_api.egg-info/PKG-INFO
+intellx_api.egg-info/SOURCES.txt
+intellx_api.egg-info/dependency_links.txt
+intellx_api.egg-info/entry_points.txt
+intellx_api.egg-info/requires.txt
+intellx_api.egg-info/top_level.txt
