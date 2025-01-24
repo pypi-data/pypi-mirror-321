@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+flecoscience/__init__.py
+flecoscience.egg-info/PKG-INFO
+flecoscience.egg-info/SOURCES.txt
+flecoscience.egg-info/dependency_links.txt
+flecoscience.egg-info/requires.txt
+flecoscience.egg-info/top_level.txt
