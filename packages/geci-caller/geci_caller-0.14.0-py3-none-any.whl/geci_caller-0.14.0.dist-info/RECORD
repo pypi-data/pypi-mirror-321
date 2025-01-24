@@ -1,0 +1,8 @@
+geci_caller/__init__.py,sha256=qiD7RAZfxnwOQ1l2-uNvJNrFITZiC7fq3d6yzE6OvOw,114
+geci_caller/call_api.py,sha256=ZMkFBra0jMNuHItYHGKtqN8GlGS7YGY5H_NSwLtL9qQ,294
+geci_caller/cli.py,sha256=25SsW0EbQwo9nHvJqZYTNWb6oK8v9WMyVlZkrO11vNA,6225
+geci_caller-0.14.0.dist-info/entry_points.txt,sha256=28fAJ3cmTugfbQfOyAqZ3UGwBffdBW-XEPdko6_DUWI,51
+geci_caller-0.14.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+geci_caller-0.14.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+geci_caller-0.14.0.dist-info/METADATA,sha256=MtS3S-IoAy0L2o7Rqaz9bVxTert3F5HmxU4jEeBaoj4,608
+geci_caller-0.14.0.dist-info/RECORD,,
