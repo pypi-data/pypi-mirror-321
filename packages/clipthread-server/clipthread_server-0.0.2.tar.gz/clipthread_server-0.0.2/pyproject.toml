@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "clipthread-server"
+version = "0.0.2"
+description = "A clipboard synchronization tool that work on every platform"
+readme = "README.md"
+requires-python = ">=3.09"
+license = "MIT"
+keywords = ["clipthread", "clipboard", "sync", "synchronization", "server"]
+authors = [
+    { name = "Leo Cances", email = "leocances@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pyperclip ~= 1.8.2",
+    "FastAPI ~= 0.115.6",
+    "uvicorn ~= 0.34.0",
+    "pydantic ~= 2.10.4",
+    "python-dotenv ~= 1.0.1",
+    "cryptography ~= 44.0.0",
+    "requests ~= 2.32.3",
+    "httpx ~= 0.28.1",
+    "clipthread-core >= 0.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.25.0",
+    "pytest-cov>=3.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "mypy>=0.981",
+]
+
+[project.urls]
+Homepage = "https://github.com/clipthread/clipthread-server.git"
+Repository = "https://github.com/clipthread/clipthrea-serverd.git"
+Documentation = "https://github.com/clipthread/clipthread-server#readme"
+"Bug Tracker" = "https://github.com/clipthread/clipthread-server/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clipthread"]
+
+[tool.black]
+line-length = 120
+target-version = ["py309"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[project.scripts]
+clipthread-server = "clipthread.server.main:start_server"
