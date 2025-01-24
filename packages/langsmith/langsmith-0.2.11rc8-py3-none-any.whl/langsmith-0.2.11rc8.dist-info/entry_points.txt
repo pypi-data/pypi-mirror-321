@@ -1,0 +1,6 @@
+[console_scripts]
+langsmith=langsmith.cli.main:main
+
+[pytest11]
+langsmith=langsmith.pytest_plugin
+
