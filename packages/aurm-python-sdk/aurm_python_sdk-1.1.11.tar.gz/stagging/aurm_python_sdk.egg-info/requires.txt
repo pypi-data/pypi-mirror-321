@@ -1,0 +1,1 @@
+aurm-python-sdk@ https://artifactory.prod.aue1k.saasure.net/ui/api/v1/download/contentBrowsing/eng-services-python/aurm-python-sdk/0.1.0/aurm_python_sdk-0.1.0-py3-none-any.whl
