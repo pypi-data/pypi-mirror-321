@@ -1,0 +1,7 @@
+README.md
+setup.py
+testliblockingcdt.egg-info/PKG-INFO
+testliblockingcdt.egg-info/SOURCES.txt
+testliblockingcdt.egg-info/dependency_links.txt
+testliblockingcdt.egg-info/not-zip-safe
+testliblockingcdt.egg-info/top_level.txt
