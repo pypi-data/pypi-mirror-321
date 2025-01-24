@@ -1,0 +1,8 @@
+[console_scripts]
+tcask = taskcask.cli.main:cmd_group_main
+
+[taskcask.executors.class_loaders]
+main = taskcask.stdlib.executors.class_loader:ExecutorClassLoader
+
+[taskcask.task_templates.class_loaders]
+stdlib = taskcask.stdlib.task_templates.class_loader:ClassLoader
