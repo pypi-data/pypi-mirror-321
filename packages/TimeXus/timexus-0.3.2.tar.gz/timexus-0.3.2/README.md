@@ -1,0 +1,48 @@
+# XTime-Dev
+
+XTime is a Python library that provides enhanced time-related utilities, building upon the basic functionalities found in the standard library but without using the `time` module (it uses `datetime` instead for some features). It offers precise sleep functions, system information retrieval, and various date, time, and utility functions. It's designed to be easy to use and extend, making it suitable for a wide range of applications.
+
+## Features
+
+*   **Precise Sleep Functions:**
+    *   `xsleep(seconds)`: A basic sleep function similar to `time.sleep()`.
+    *   `XSleep.milliseconds(ms)`: Sleeps for the specified number of milliseconds.
+    *   `XSleep.seconds(secs)`: Sleeps for the specified number of seconds.
+    *   `XSleep.minutes(mins)`: Sleeps for the specified number of minutes.
+    *   `XSleep.hours(hrs)`: Sleeps for the specified number of hours.
+    *   `XSleep.get_random_delay(min_seconds, max_seconds)`: Sleeps for a random duration between the given minimum and maximum seconds.
+    *   `XSleep.set_print("on" | "off")`: Enable or disable the automatic "Awake!" message after sleeping.
+    *   `XSleep.set_custom_print(message)`: Customize the "Awake!" message.
+    *   `XSleep.get_total_sleep_time()`: Get the total sleep time in seconds since the creation of the `XSleep` object or the last reset.
+    *   `XSleep.reset_total_sleep_time()`: Resets the total sleep time counter to 0.
+
+*   **System Information:**
+    *   `XSleep.get_pid()`: Gets the current process ID.
+    *   `XSleep.get_cpu_count()`: Gets the number of CPU cores.
+    *   `XSleep.is_interactive()`: Checks if the session is interactive.
+    *   `XSleep.get_platform()`: Returns the platform identifier.
+    *   `XSleep.get_uptime()`: Returns the system uptime (seconds since boot).
+    *   `XSleep.get_free_memory()`: Returns the amount of free memory (in bytes).
+    *   `XSleep.get_username()`: Returns the current username.
+    *   `XSleep.get_current_time_ms()`: Returns the current time in milliseconds since the epoch.
+    *   `XSleep.get_screen_resolution()`: Returns the screen resolution (e.g., "1920x1080").
+    *   `XSleep.get_system_info()`: Returns a dictionary with system information (OS, release, version, machine, processor, username).
+
+*   **Date and Time:**
+    *   `XSleep.get_local_time()`: Returns the current local time based on the system's timezone settings (in ISO 8601 format).
+    *   `XSleep.time_since_or_until(date_str)`: Calculates the time elapsed since a given date or the time until a future date. The output includes years, months, and days.
+
+*   **Utility Functions:**
+    *   `XSleep.execute_command(command)`: Executes a shell command and returns the output.
+    *   `XSleep.print_message_with_delay(message, delay_seconds)`: Prints a message with a delay before each character.
+    *   `XSleep.generate_random_string(length)`: Generates a random string of the specified length.
+    *   `XSleep.capture_screenshot(filename="screenshot.png")`: Captures a screenshot and saves it to a file.
+    *   `XSleep.get_clipboard_content()`: Gets the current content of the clipboard.
+    *   `XSleep.set_clipboard_content(data)`: Sets the content of the clipboard.
+
+## Installation
+
+**From PyPI (when available):**
+
+```bash
+pip install XTime (NOT VALID YET)
