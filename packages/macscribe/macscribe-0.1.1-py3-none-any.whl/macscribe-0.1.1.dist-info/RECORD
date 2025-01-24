@@ -1,0 +1,10 @@
+macscribe/__init__.py,sha256=6tPOCVvU_A5y31QJc3Yl-XmOi3gSxRMHdqrEpO-kbvk,20
+macscribe/cli.py,sha256=bOKaELyMqKybXtfOmcy8CYjFzlcHAhvPF1YS_ZblC_o,1223
+macscribe/clipboard.py,sha256=GWRyPb7BmaSlIBWx03VL_XnPY8tqNqfQTO_GjtUKdMI,190
+macscribe/downloader.py,sha256=TMJGpUjn9pWC5zJQOE3_rvWzI1U_41RjfPNB-KSULkE,1044
+macscribe/transcriber.py,sha256=KS583Ci1bd8qQsXdIWqlnP49XRvzZkS9ijh_b0U7Ras,533
+macscribe-0.1.1.dist-info/METADATA,sha256=_0naeGR3s9KXYtQsG2g1QGG9HiS1bTj1DR-dDdhT52A,2906
+macscribe-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+macscribe-0.1.1.dist-info/entry_points.txt,sha256=4WJ-AUP_evXNTHWAfsDHSoa6OOIkZ1OE8AfKSXGD7Mo,44
+macscribe-0.1.1.dist-info/licenses/LICENSE,sha256=PE0iLtbCrFDYeIIWOsHktKR4YkKFZ_AClGtmiuuFE-o,1059
+macscribe-0.1.1.dist-info/RECORD,,
