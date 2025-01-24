@@ -1,0 +1,5 @@
+llama_index/storage/index_store/tablestore/__init__.py,sha256=VNKR2uB3CxgZxb-CNyyMnf3j1iYXXNFol9Z-cF_w8qM,117
+llama_index/storage/index_store/tablestore/base.py,sha256=sy6iadQ1oEQ3bvdEeY0oO6KbOxgxEuF47xMOUgNCtHk,1667
+llama_index_storage_index_store_tablestore-0.1.0.dist-info/METADATA,sha256=rRbgx5KmgHujMevrG8MUGzYvICKiHwvVnZe0G6vXaKk,770
+llama_index_storage_index_store_tablestore-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_storage_index_store_tablestore-0.1.0.dist-info/RECORD,,
