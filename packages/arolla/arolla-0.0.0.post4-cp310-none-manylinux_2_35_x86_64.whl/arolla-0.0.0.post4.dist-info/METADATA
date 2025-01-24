@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: arolla
+Version: 0.0.0.post4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf (<5.0.0dev,>=4.25.5)
+
+UNKNOWN
+
