@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_Balbir_102217078.topsis:main
