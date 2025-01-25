@@ -1,0 +1,3 @@
+[console_scripts]
+gat=github_actions_test.main:main
+
