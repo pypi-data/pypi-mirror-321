@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "zohal-sdk"
+version = "0.1.0"
+description = "zohal-sdk is a Python SDK for interfacing with zohal.io."
+authors = ["Alireza Rabie <alireza@aazerra.dev>"]
+readme = "README.md"
+packages = [{ include = "zohal_sdk" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+requests = "^2.32.3"
+dataclasses-json = "^0.6.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
