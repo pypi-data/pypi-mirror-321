@@ -1,0 +1,5 @@
+huggingface-hub>=0.27.1
+jupyter>=1.1.1
+monai[itk,nibabel,skimage]>=1.4.0
+safetensors>=0.5.2
+torch>=2.5.1
