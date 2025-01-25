@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: quantity-array
+Version: 0.0.1
+Summary: Quantities with array API standard arrays.
+Project-URL: Homepage, https://github.com/quantity-dev/quantity-array
+Author-email: Lucas Colley <lucas.colley8@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# quantity-array
+
+Quantities with array API standard arrays.
+
+Currently based on [`pint`](https://github.com/hgrecco/pint), with a view to
+consuming a standardised Quantity API - see
+https://github.com/quantity-dev/discussions.
