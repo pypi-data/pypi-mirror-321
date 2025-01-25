@@ -1,0 +1,11 @@
+snpfilter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snpfilter/cli.py,sha256=WR97it05xMQjCdBg8DYDL-Guz54aUo__m3J9zZb3fUs,12951
+snpfilter/versions.py,sha256=99eJa9g7ywI4tg7HXd76FLN_vBClFkt3sIvmeJQI3Dc,735
+snpfilter/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snpfilter/scripts/map.py,sha256=_0C9Sk6eGKFqtFwXmxjmApt6VI_JsAhd4aLTASwlzHY,605
+SNPfilter-0.0.5.dist-info/LICENSE,sha256=vHKSG415r0uiHYjQpIKZXBDIKbi15fdCgwepWELp9rQ,1066
+SNPfilter-0.0.5.dist-info/METADATA,sha256=YkXHyMcIEpliUfLguoAdD5ntHz25YYMsubKUBI46vfA,5200
+SNPfilter-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SNPfilter-0.0.5.dist-info/entry_points.txt,sha256=VyjgbzG3c_z5K7KQ450llIuRnFdeGUU8OeoGFAt3IcY,49
+SNPfilter-0.0.5.dist-info/top_level.txt,sha256=ABajTIWlNmnPiq5mxMxIZE5XiseOR6gtzoj0l92n-r0,10
+SNPfilter-0.0.5.dist-info/RECORD,,
