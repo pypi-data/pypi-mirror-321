@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: mypythproject
+Version: 0.1.1
+Summary: An extension of pybacktestchain that enhances portfolio optimization and backtesting with advanced features.
+License: MIT
+Author: Amine Lahlou
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dash (>=2.18.2,<3.0.0)
+Requires-Dist: matplotlib (>=3.10.0,<4.0.0)
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: pybacktestchain (>=0.2.1,<0.3.0)
+Description-Content-Type: text/markdown
+
+# mypythproject
+
+An extension of pybacktestchain that enhances portfolio optimization and backtesting with advanced features.
+
+## Installation
+
+```bash
+$ pip install mypythproject
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`mypythproject` was created by Amine Lahlou. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`mypythproject` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
