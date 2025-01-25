@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: pacbb
+Version: 0.0.1
+Summary: PAC Bayes Bound toolset
+Home-page: https://github.com/Yauhenii/pacbb
+Author: Yauheni Mardan, Maksym Tretiakov
+Author-email: yauhenmardan@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: torch>=2.2.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: torchvision>=0.17.1
+Requires-Dist: tqdm>=4.66.2
+Requires-Dist: lightning>=2.2.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
