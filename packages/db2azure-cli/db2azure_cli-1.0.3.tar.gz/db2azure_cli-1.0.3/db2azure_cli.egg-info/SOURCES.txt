@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+db2az/__init__.py
+db2az/cli.py
+db2az/utils.py
+db2azure_cli.egg-info/PKG-INFO
+db2azure_cli.egg-info/SOURCES.txt
+db2azure_cli.egg-info/dependency_links.txt
+db2azure_cli.egg-info/entry_points.txt
+db2azure_cli.egg-info/requires.txt
+db2azure_cli.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+typer[all]
+inquirer
+yaspin
+pyfiglet
+tabulate
