@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: topsis_102203949
+Version: 0.1.0
+Summary: A Python implementation of the TOPSIS method for multi-criteria decision analysis
+Home-page: https://github.com/aryalal11/topsis
+Author: Arya Lal
+Author-email: aryalalqms@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TOPSIS
+
+TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) is a popular multi-criteria decision-making (MCDM) method used to evaluate and rank alternatives based on multiple criteria. It helps in selecting the best alternative by comparing each option to an ideal solution and a negative ideal solution.
+
+## Installation
+
+You can install this package from PyPI. 
+
