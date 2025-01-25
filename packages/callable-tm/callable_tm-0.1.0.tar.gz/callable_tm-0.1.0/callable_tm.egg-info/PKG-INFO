@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: callable-tm
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transaction>=5.0
+
+# callable_tm
