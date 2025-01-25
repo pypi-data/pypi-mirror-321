@@ -1,0 +1,10 @@
+pathshortener/__init__.py,sha256=AIQtJ8jwm7arWhqKDhBQBIojaPAPkDzF7RAr0U8YqWI,1131
+pathshortener/__main__.py,sha256=7cEaQid0PiLRdyZeQlapCcSQH_RYEqbCG29Pih2oxJc,5065
+pathshortener/env_vars.py,sha256=BFEM9wsTmKCZw4XUXIwfSZdG5zT2NlIL5Uymh4wcppA,14926
+pathshortener/registry.py,sha256=NiggJz5JerPUrmZCXnbT51io0OaVtCU0yZ6YqfKKx9M,2157
+pathshortener/string_processing.py,sha256=ETlfI_xMoSKQlDoFOtBEl8qCjr4H5FQVi3S0WC-wwD4,3513
+pathshortener-0.1.0.dist-info/METADATA,sha256=90U31VOWXxhnR-lfNtkU-euTUZignqKDElJU8MZtEe0,4245
+pathshortener-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pathshortener-0.1.0.dist-info/entry_points.txt,sha256=szWABWNBcyDOZ1Irwuvvx5TbH7k31phikaYO_GinC1s,62
+pathshortener-0.1.0.dist-info/top_level.txt,sha256=C9_NBEm_ypKyybg_xTU9C1EOp4LEmOVgurqKYkXmtAQ,14
+pathshortener-0.1.0.dist-info/RECORD,,
