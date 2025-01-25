@@ -1,0 +1,10 @@
+centernet_ilvo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+centernet_ilvo/center.py,sha256=HU-wiu-JqiNWs1gxZMfsoevuq8IZAnbR-JOew92HgtI,488
+centernet_ilvo/centernet.py,sha256=xGORaT57mlPXdVR_8cutLMcln1cMJV3BCmig34-KH0g,5578
+centernet_ilvo/predict.py,sha256=CfvVbeg1r5RorT37izRI6HWddGGqI2w_ybEXVNCgCBU,2413
+centernet_ilvo/visuals.py,sha256=i29dfh1TcfqAvctS_dIn3HFmcnguPydqns8YDl8ojUc,211
+centernet_ilvo-0.0.1.post1.dist-info/LICENCE,sha256=BAoKk43zGAwqYYw7Lk4e4eOBNkduguTNCBMxxLXYliM,1663
+centernet_ilvo-0.0.1.post1.dist-info/METADATA,sha256=DCRGapZkDF9AEIEDd9NQ78UFzmO_SLqK3JRNrTjgai4,3347
+centernet_ilvo-0.0.1.post1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+centernet_ilvo-0.0.1.post1.dist-info/top_level.txt,sha256=ifiyFQgbDtNSnAMcDyoymxkGfn9Pk8VW-G3thd6gY2s,15
+centernet_ilvo-0.0.1.post1.dist-info/RECORD,,
