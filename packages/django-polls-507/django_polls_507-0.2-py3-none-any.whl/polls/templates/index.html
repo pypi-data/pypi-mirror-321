@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %} 
+{%block title%} 
+Main page
+{%endblock%}
+{% block css_links %}
+<link rel="stylesheet" href="{% static 'polls/css/main.css' %}" />
+{% endblock %}
+{% block content %} {% include "navbar.html" %}
+
+<div class="container">
+
+  {% if questions.count %}
+    <p class="fs-2 fw-bold">Latest Questions</p>
+  {% else %}
+    <p class="fs-2 fw-bold">No polls are available.</p>
+  {% endif %}
+  
+  {% for q in questions%}
+  <a class="d-block mt-2 text-dark" href="{% url 'polls:details' q.pk %}">{{q.question_text}}</a>
+  {% endfor %}
+</div>
+{% endblock %}

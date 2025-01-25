@@ -1,0 +1,9 @@
+/* reset */
+input, textarea, button {
+  box-shadow: none !important;
+}
+
+
+nav.navbar img{
+  width: 100px;
+}
