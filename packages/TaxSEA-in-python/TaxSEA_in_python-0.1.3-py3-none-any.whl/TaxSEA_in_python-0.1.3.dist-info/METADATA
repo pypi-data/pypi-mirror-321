@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: TaxSEA_in_python
+Version: 0.1.3
+Summary: A small package for converting bacterial names into NCBI IDs
+Author-email: Cong Pham <phamleminhcong34@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: importlib-resources>=5.0.0
+Requires-Dist: statsmodels>=0.14.4
+Requires-Dist: numpy>=1.21.0
+
+# TaxSEA_in_python project
+
+This package is a version of TaxSEA but build in python. 
+
+## Installation
+
+```bash
+pip install TaxSEA_in_python
+```
+
+## Usage
+
+```python
+# TaxSEA_in_python is the python based tools imported from the tool TaxSEA based in R language.
+from TaxSEA_in_python.TaxSEA import TaxSEA
+
+# Locating the test data: 
+from importlib.resources import files 
+TaxSEA_test_data = str(files('TaxSEA_in_python.data').joinpath('TaxSEA_test_data.csv'))
+
+# TaxSEA main code: 
+TaxSEA_test_results = TaxSEA(TaxSEA_test_data) # The output is a dictionary of 3 dataframes
+print(TaxSEA_test_results) 
+
+# Calling the 3 dataframes in TaxSEA_test_results: 
+Metabolite_producers = TaxSEA_test_results["Metabolite_producers"]
+
+BugSigdB = TaxSEA_test_results["BugSigdB"]
+
+Health_associations = TaxSEA_test_results["Health_associations"]
+
+```
+"""

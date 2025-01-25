@@ -1,0 +1,12 @@
+TaxSEA_in_python/TaxSEA.py,sha256=ILrJ9W0y6hq5jOH9W6j_79eDUJbmvqowotVv8ixFxhA,5616
+TaxSEA_in_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TaxSEA_in_python/__main__.py,sha256=-nQHM3E7hXEl1jp8iAvUDXoreCoLOFNXeoRTp88eOB4,309
+TaxSEA_in_python/get_IDs.py,sha256=BUusnsbDIiZxymiQodvGZ4-tK0BuGWlaKaQpsOlPakQ,3214
+TaxSEA_in_python/data/Local_NCBI_db.csv,sha256=LlFv89ThXYcFpstpmAEjfAELiARPI6x_uifCEKg0hE8,151570
+TaxSEA_in_python/data/TaxSEA_DB.plk,sha256=bwhpc7F0w3lBpSlFw9dEEpVn5L1ecoP4CK8VyeIeJ8I,416051
+TaxSEA_in_python/data/TaxSEA_test_data.csv,sha256=b7OsiD1WLeSpRW7JZAYH6-SdzeM9dywu5wUn8ymqC2g,5365
+TaxSEA_in_python-0.1.3.dist-info/METADATA,sha256=-KrRHVhVIDUXmxaQLQ7-7EmKo0_rwMGNLyjBnQoJpnI,1401
+TaxSEA_in_python-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+TaxSEA_in_python-0.1.3.dist-info/entry_points.txt,sha256=QyMgdtH-kx8UvtEBEVE5R-aNJ4HA9Y0pkDBMNV0QsmY,72
+TaxSEA_in_python-0.1.3.dist-info/top_level.txt,sha256=0qLrYLAYMrcigHGUqwB9vkia3fK8qnLek2cCBhoB6lw,17
+TaxSEA_in_python-0.1.3.dist-info/RECORD,,
