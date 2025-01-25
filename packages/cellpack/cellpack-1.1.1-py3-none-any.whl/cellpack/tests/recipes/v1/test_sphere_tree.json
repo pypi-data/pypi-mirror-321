@@ -1,0 +1,113 @@
+{
+    "recipe": {
+        "name": "test_sphere_tree",
+        "version": "1.1"
+    },
+    "options": {
+        "EnviroOnly": false,
+        "_hackFreepts": false,
+        "_timer": false,
+        "boundingBox": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                1000,
+                1000,
+                1
+            ]
+        ],
+        "cancelDialog": false,
+        "computeGridParams": true,
+        "freePtsUpdateThreshold": 0,
+        "gradients": [],
+        "ingrLookForNeighbours": true,
+        "innerGridMethod": "bhtree",
+        "largestProteinSize": 100,
+        "overwritePlaceMethod": true,
+        "pickRandPt": true,
+        "pickWeightedIngr": true,
+        "placeMethod": "jitter",
+        "resultfile": "autoPACKserver/results/NM_Analysis_FigureB1.0.apr.json",
+        "runTimeDisplay": false,
+        "saveResult": false,
+        "smallestProteinSize": 10,
+        "use_gradient": false,
+        "use_periodicity": true,
+        "windowsSize": 10
+    },
+    "cytoplasme": {
+        "ingredients": {
+            "Sphere_radius_100": {
+                "Type": "MultiSphere",
+                "color": [
+                    0.467,
+                    0.23899999,
+                    0.972
+                ],
+                "coordsystem": "left",
+                "cutoff_boundary": 0,
+                "cutoff_surface": 25,
+                "encapsulatingRadius": 100,
+                "excluded_partners_name": [],
+                "gradient": "",
+                "isAttractor": false,
+                "jitterMax": [
+                    1,
+                    1,
+                    0
+                ],
+                "meshFile": null,
+                "molarity": 0,
+                "name": "Sphere_radius_25",
+                "nbJitter": 60,
+                "nbMol": 80,
+                "orientBiasRotRangeMax": -3.1415927,
+                "orientBiasRotRangeMin": -3.1415927,
+                "packingMode": "random",
+                "packingPriority": 0,
+                "partners_name": [],
+                "partners_position": [],
+                "pdb": null,
+                "perturbAxisAmplitude": 0.1,
+                "placeType": "jitter",
+                "positions": [
+                    [
+                        [
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                ],
+                "positions2": null,
+                "principalVector": [
+                    1,
+                    0,
+                    0
+                ],
+                "proba_binding": 0.5,
+                "proba_not_binding": 0.5,
+                "properties": {},
+                "radii": [
+                    [
+                        100
+                    ]
+                ],
+                "rejectionThreshold": 1000,
+                "rotAxis": [
+                    0,
+                    0,
+                    1
+                ],
+                "rotRange": 6.2831,
+                "sphereFile": "cellpack/tests/geometry/test.sph",
+                "useOrientBias": false,
+                "useRotAxis": true,
+                "weight": 0.2
+            }
+        }
+    }
+}

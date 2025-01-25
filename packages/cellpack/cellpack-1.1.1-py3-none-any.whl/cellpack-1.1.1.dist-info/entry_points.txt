@@ -1,0 +1,9 @@
+[console_scripts]
+analyze = cellpack.bin.analyze:main
+clean = cellpack.bin.clean:main
+convert = cellpack.bin.simularium_converter:main
+pack = cellpack.bin.pack:main
+upload = cellpack.bin.upload:main
+
+[gui_scripts]
+
