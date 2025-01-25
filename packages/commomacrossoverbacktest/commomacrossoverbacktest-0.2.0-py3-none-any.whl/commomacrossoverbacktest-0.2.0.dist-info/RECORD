@@ -1,0 +1,10 @@
+commomacrossoverbacktest/__init__.py,sha256=__ARadoCzauxJ86T6Ysr9L-qJyqKrVdmW_R0fimTZKA,126
+commomacrossoverbacktest/commo_backtest.py,sha256=VPqG1yNcdnlNvEQaTTAtQ_cqqX-XUliCOrzczWaYYFc,4224
+commomacrossoverbacktest/commo_broker.py,sha256=_S8uXSWyBs2QqtkZTB7jOyYEP9xI9v2Hh5OoaLDqOE0,8045
+commomacrossoverbacktest/commo_informations.py,sha256=k89YE6UChp_pj6sR7XGx8r4DH5-SBgQVhLbXkMOzj_M,2416
+commomacrossoverbacktest/commomacrossoverbacktest.py,sha256=dwKoSGRPhWq9Stv1jhifb4-7FXmUyP4YohjCYU8PDW0,161
+commomacrossoverbacktest/exponentialmovingaverage.py,sha256=Emr3U4euRjFEc_ElqIj_bqAwsihaSffhK0BZoUX4PUo,4196
+commomacrossoverbacktest-0.2.0.dist-info/LICENSE,sha256=WOfse2MyU6wEwk5hSwmsds74IjjezgVnhWvBzRoybK4,1081
+commomacrossoverbacktest-0.2.0.dist-info/METADATA,sha256=Cuv-5SFqKiTJQBT2sqQm9Rekv9sEbtzKL8aJbFDLAtA,3350
+commomacrossoverbacktest-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+commomacrossoverbacktest-0.2.0.dist-info/RECORD,,
