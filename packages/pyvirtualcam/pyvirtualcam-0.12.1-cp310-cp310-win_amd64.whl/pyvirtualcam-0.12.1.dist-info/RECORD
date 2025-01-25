@@ -1,0 +1,11 @@
+pyvirtualcam/__init__.py,sha256=Il9WGnrCsNix0BE3Iye4wy4ebcpotesFHL6eCUP_Zhg,105
+pyvirtualcam/_native_windows_obs.cp310-win_amd64.pyd,sha256=3DVIifacaZBuTjR1l4ez7wjSB5whN9yNcicJFwz10xw,163328
+pyvirtualcam/_native_windows_unity_capture.cp310-win_amd64.pyd,sha256=F7b7bo3LTHvoSNZcI43Ms7mu3tvRTcz0I-2_-iNwk7s,170496
+pyvirtualcam/_version.py,sha256=F0iasyREt0BVsyWwfXRGrwYlGk2QbqYI4wVXD-ik1oY,24
+pyvirtualcam/camera.py,sha256=-ar0uyMXCdAS7ET98d8jwoPj15d2bZAaV15zyhm-1E4,13755
+pyvirtualcam/util.py,sha256=tngBMSbLUiZoJEPPs3tDxj5ivvd95gFlN1NBKYF7CxE,996
+pyvirtualcam-0.12.1.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+pyvirtualcam-0.12.1.dist-info/METADATA,sha256=HV-PGHJG0ZFi8GnkcJTChWek8OLNTm0fzp0LCDTgH3Q,5606
+pyvirtualcam-0.12.1.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
+pyvirtualcam-0.12.1.dist-info/top_level.txt,sha256=KQx1d-fCmPSs6x5SfMnxPkS-3KbN8cd5DIyOQjgFAhI,13
+pyvirtualcam-0.12.1.dist-info/RECORD,,
