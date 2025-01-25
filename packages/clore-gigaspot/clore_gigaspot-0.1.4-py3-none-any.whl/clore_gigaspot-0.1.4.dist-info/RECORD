@@ -1,0 +1,14 @@
+clore_gigaspot/__init__.py,sha256=lxmleZi8bdgBOjnbyFZSgpgzQelIHG4RhzCCBh8vdaQ,72
+clore_gigaspot/constants.py,sha256=p0xwwabmwQBCIFjKgxTm8c8ONzdQDMyt-xMeyK8DuXw,94
+clore_gigaspot/logger.py,sha256=wjkqbdppEKskuWplUPoZw84yFUUynBIBzMXGVErCvig,1065
+clore_gigaspot/main.py,sha256=B8aUhzSZ_RplyUNK6ozeHpzHz-0ZDa1S8yXlFSjc72c,17226
+clore_gigaspot/responses.py,sha256=CT3A5pGc9VaFDwBB04556XlOpBAUxhm6c5dNRdw1A0A,1244
+gigaspot/__init__.py,sha256=lxmleZi8bdgBOjnbyFZSgpgzQelIHG4RhzCCBh8vdaQ,72
+gigaspot/constants.py,sha256=p0xwwabmwQBCIFjKgxTm8c8ONzdQDMyt-xMeyK8DuXw,94
+gigaspot/logger.py,sha256=wjkqbdppEKskuWplUPoZw84yFUUynBIBzMXGVErCvig,1065
+gigaspot/main.py,sha256=B8aUhzSZ_RplyUNK6ozeHpzHz-0ZDa1S8yXlFSjc72c,17226
+gigaspot/responses.py,sha256=CT3A5pGc9VaFDwBB04556XlOpBAUxhm6c5dNRdw1A0A,1244
+clore_gigaspot-0.1.4.dist-info/METADATA,sha256=2memBZhUdawuICvddAtg2Tzu6-jPufreRFeWiEzcYRI,8470
+clore_gigaspot-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+clore_gigaspot-0.1.4.dist-info/top_level.txt,sha256=KHJt1vT56EXhruZtRM6MZoAhiVYPXoqVzvzdDNDPx3c,15
+clore_gigaspot-0.1.4.dist-info/RECORD,,
