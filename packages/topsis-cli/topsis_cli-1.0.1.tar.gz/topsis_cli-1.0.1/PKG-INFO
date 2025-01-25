@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: topsis-cli
+Version: 1.0.1
+Summary: A CLI tool for TOPSIS decision-making
+Home-page: https://github.com/nmnbabbar/topsis-cli
+Author: Naman Babbar
+Author-email: nbabbar_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# TOPSIS CLI Tool
+<i>TOPSIS</i> (Technique for Order Preference by Similarity to Ideal Solution) is a multi-criteria decision-making method that helps evaluate and rank options based on their relative closeness to an ideal solution. This CLI tool provides a simple and efficient way to perform TOPSIS analysis directly from the command line.
+
+## Features
+Supports weighted and impact-based decision-making.
+Reads input data from a CSV file.
+Outputs ranked results with scores in an easy-to-read CSV format.
+Lightweight and user-friendly command-line interface.
+
+## Installation
+### Install the package using pip:
+```
+pip install topsis-cli
+```
+## Usage
+Run the CLI tool with the following syntax:
+```
+topsis <input_file> <weights> <impacts> <output_file>
+```
+input_file: Path to the input CSV file containing decision matrix.
+
+weights: Comma-separated list of weights for each criterion (e.g., 0.4,0.3,0.2,0.1).
+
+impacts: Comma-separated list of impacts for each criterion, either + (positive) or - (negative) (e.g., +,+,-,+).
+
+output_file: Path to save the output CSV file with scores and ranks.
+
+### Example
+Input File (data.csv):
+```
+Name	Criterion 1	Criterion 2	Criterion 3	Criterion 4
+Option A	250	16	12	5
+Option B	200	18	8	3
+Option C	300	14	10	4
+Option D	275	15	9	2
+```
+Command:
+```
+topsis data.csv 0.4,0.3,0.2,0.1 +,+,-,+ results.csv
+```
+Output File (results.csv):
+```
+Name	Criterion 1	Criterion 2	Criterion 3	Criterion 4	Score	Rank
+Option A	250	16	12	5	0.75	2
+Option B	200	18	8	3	0.50	4
+Option C	300	14	10	4	0.80	1
+Option D	275	15	9	2	0.65	3
+```
+### Requirements
+Python 3.7 or higher <br>
+Libraries: numpy, pandas <br>
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## Author
+<b>Naman Babbar<b>
