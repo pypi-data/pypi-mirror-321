@@ -1,0 +1,9 @@
+mat3ra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mat3ra/periodic_table/__init__.py,sha256=DR3y9UIbYt9ilAl0Ou473z3r-4CwbPVbSykKFJWuzhs,73946
+mat3ra/periodic_table/bonds.py,sha256=YMj_GAvFsf0BogJ_yWDsdU0ztnXdN8AN28U_uZckiA4,14654
+mat3ra/periodic_table/colors.py,sha256=cxLl8Ky_sT1ATBSOwsOSf1FnVAY_Wc1SIPWROMAO50o,1892
+mat3ra_periodic_table-2025.1.18.post1.dist-info/LICENSE.md,sha256=CBGo1CDw-8EWCk7x9HOiF-OShdnHY6j__TjFyZPpQME,563
+mat3ra_periodic_table-2025.1.18.post1.dist-info/METADATA,sha256=Z7iZvxU03NvEHY39sOmjAl0whaRW0sRBM9Lm7UK-2qo,2906
+mat3ra_periodic_table-2025.1.18.post1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mat3ra_periodic_table-2025.1.18.post1.dist-info/top_level.txt,sha256=GizAtvIqqIcCWShlThl_mgig_bZs_LFyqVah6wrGHIs,7
+mat3ra_periodic_table-2025.1.18.post1.dist-info/RECORD,,
