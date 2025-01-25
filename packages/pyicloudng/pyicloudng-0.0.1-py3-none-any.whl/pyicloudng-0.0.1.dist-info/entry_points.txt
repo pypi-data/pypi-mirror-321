@@ -1,0 +1,2 @@
+[console_scripts]
+pyicloudng = pyicloudng.cmdline:main
