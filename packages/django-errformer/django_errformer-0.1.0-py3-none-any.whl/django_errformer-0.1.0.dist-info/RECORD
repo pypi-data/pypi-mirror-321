@@ -1,0 +1,13 @@
+errformer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+errformer/apps.py,sha256=bPFrcvan87c7JANqD9UWtXLTYHMxgHCsK304XU2FuT8,187
+errformer/conf.py,sha256=2nbf42xMu-xFgIYnp8yCVOdcPw7CXYyzEeO0uScFqR0,133
+errformer/middleware.py,sha256=vK56RglpwkCzHnoTi6WmLYrFNaedybzu-cz9TG1mmL0,771
+errformer/handlers/__init__.py,sha256=o043BWd03_ScahZsXKB5PNKcDbKJjt0Ehia_ogiJ-kc,81
+errformer/handlers/tg.py,sha256=g7AkvAXZwV0bUcFwMARDOb6M9NZhBdl4XN2Sll7_oII,351
+errformer/services/__init__.py,sha256=07N5fNIVr3nY2ELbKi9jnoXcG88v3jdSuuGr-5SyJAE,268
+errformer/services/generate_message.py,sha256=T_BzQmPeUOsKG8TyA0pJkDHArYcF_J2W9wzxCuEaHk8,1020
+errformer/services/tg_sender.py,sha256=3uKQvKJdVq1f4g0qabgGhLaI3SzBUVc3pvOfOvREXCU,734
+django_errformer-0.1.0.dist-info/METADATA,sha256=gsY6PNmLnanQabdqzat67jCyOUYZQoea0OhdB-yqrJU,1092
+django_errformer-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_errformer-0.1.0.dist-info/top_level.txt,sha256=zqVkW76pEISZOTjKQBO6eA_ECwQb7TuHvK6yU4yJbFw,10
+django_errformer-0.1.0.dist-info/RECORD,,
