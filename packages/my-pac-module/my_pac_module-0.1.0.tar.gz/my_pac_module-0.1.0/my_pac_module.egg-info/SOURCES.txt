@@ -1,0 +1,8 @@
+README.md
+setup.py
+my_pac_module/__init__.py
+my_pac_module/math_operations.py
+my_pac_module.egg-info/PKG-INFO
+my_pac_module.egg-info/SOURCES.txt
+my_pac_module.egg-info/dependency_links.txt
+my_pac_module.egg-info/top_level.txt
