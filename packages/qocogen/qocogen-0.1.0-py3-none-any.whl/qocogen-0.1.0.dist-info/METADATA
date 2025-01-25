@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: qocogen
+Version: 0.1.0
+Summary: QOCOGEN: Custom Code Generator for the QOCO solver
+Project-URL: Homepage, https://github.com/qoco-org/qocogen
+Project-URL: Issues, https://github.com/qoco-org/qocogen/issues
+Author-email: "Govind M. Chari" <govindchari1@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: jinja2
+Requires-Dist: numpy>=1.7
+Requires-Dist: qdldl
+Requires-Dist: scipy>=0.13.2
+Requires-Dist: setuptools
