@@ -1,0 +1,5 @@
+package_creation_tutorial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_creation_tutorial/string_ops.py,sha256=HD6nW26TD1H-GB-EWHDybShy9WoVffvSVkNDligb0js,865
+package_creation_tutorial_inme-0.1.0.dist-info/METADATA,sha256=BTvvwU-rtdQhu6jROnq5X8Uix_D4WN3PuCWz5zpbEmA,565
+package_creation_tutorial_inme-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+package_creation_tutorial_inme-0.1.0.dist-info/RECORD,,
