@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+data_download.egg-info/PKG-INFO
+data_download.egg-info/SOURCES.txt
+data_download.egg-info/dependency_links.txt
+data_download.egg-info/requires.txt
+data_download.egg-info/top_level.txt
+era5/__init__.py
+era5/downloader.py
+era5/validator.py
