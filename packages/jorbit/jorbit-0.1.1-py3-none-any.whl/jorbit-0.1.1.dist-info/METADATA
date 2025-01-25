@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: jorbit
+Version: 0.1.1
+Summary: Solar system orbit fitting and integration with JAX
+Author-email: Ben-Cassese <b.c.cassese@columbia.edu>
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: astropy>=6.1.6
+Requires-Dist: astroquery>=0.4.7
+Requires-Dist: chex>=0.1.88
+Requires-Dist: jax>=0.4.35
+Requires-Dist: jplephem>=2.22
+Requires-Dist: numpyro-ext>=0.0.4
+Requires-Dist: numpyro>=0.16.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+[![codecov](https://codecov.io/github/ben-cassese/jorbit/graph/badge.svg?token=7AUZRB9MFO)](https://codecov.io/github/ben-cassese/jorbit)
