@@ -1,0 +1,7 @@
+dki-0.1.0.dist-info/METADATA,sha256=67URH5BPMVm5OZNhtdJEmZMpUXSWYJwC5lkHFX2hawE,336
+dki-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+dki-0.1.0.dist-info/entry_points.txt,sha256=yBeShBT60qpjDoH5C4zi7kkO-FOLjHVm7MtNbMdSJBQ,52
+dki/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+dki/cli.py,sha256=NQGHXkn0EYFX2sNulsRdk4x9L25X-p2wRSKps6baANQ,811
+dki/libs.py,sha256=WXNDSVHY5s0B8xGJkTQT-dforWxy70JNfH81Jr4ZXMM,1191
+dki-0.1.0.dist-info/RECORD,,
