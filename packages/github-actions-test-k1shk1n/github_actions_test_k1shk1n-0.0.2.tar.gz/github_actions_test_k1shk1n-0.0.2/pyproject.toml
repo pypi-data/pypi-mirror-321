@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "github-actions-test-k1shk1n"
+version = "0.0.2"
+description = ""
+packages = [{include = "github_actions_test_k1shk1n"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+twine = "^6.0.1"
+
+[tool.poetry.scripts]
+gat = "github_actions_test_k1shk1n.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ruff = "^0.9.1"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+output-format = "github"
+
+[tool.ruff.lint]
+# See list of rules at: https://docs.astral.sh/ruff/rules/
+select = ["E", "F", "W", "C90"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
