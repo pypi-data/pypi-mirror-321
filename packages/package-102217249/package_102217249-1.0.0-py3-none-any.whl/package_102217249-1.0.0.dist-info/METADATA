@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: package-102217249
+Version: 1.0.0
+Summary: A Python package for performing TOPSIS analysis
+Home-page: https://github.com/your_username/package_102217249
+Author: Manya Chhabra
+Author-email: your_email@example.com
+Project-URL: Bug Tracker, https://github.com/your_username/package_102217249/issues
+Project-URL: Documentation, https://github.com/your_username/package_102217249
+Project-URL: Source Code, https://github.com/your_username/package_102217249
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.txt.txt
+Requires-Dist: numpy>=1.18.0
+
+# TOPSIS Package
+
+A Python package for performing TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) analysis.
+
+## Installation
+You can install this package using pip:
+
+```bash
+pip install package-topsis
+
+from package_102217249 import topsis
+
+data = [
+    [250, 16, 12, 5],
+    [200, 16, 8, 3],
+    [300, 32, 16, 4],
+    [275, 32, 8, 4],
+    [225, 16, 16, 2],
+]
+weights = [0.25, 0.25, 0.25, 0.25]
+impacts = ['+', '+', '-', '+']
+
+rankings = topsis(data, weights, impacts)
+print(rankings)  # Output: [3, 1, 2, 5, 4]
