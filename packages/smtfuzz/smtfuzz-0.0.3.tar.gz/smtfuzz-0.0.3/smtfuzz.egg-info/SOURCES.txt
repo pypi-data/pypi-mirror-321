@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+smtfuzz/__init__.py
+smtfuzz/smtfuzz.py
+smtfuzz.egg-info/PKG-INFO
+smtfuzz.egg-info/SOURCES.txt
+smtfuzz.egg-info/dependency_links.txt
+smtfuzz.egg-info/requires.txt
+smtfuzz.egg-info/top_level.txt
