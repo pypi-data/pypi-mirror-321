@@ -1,0 +1,16 @@
+webviewpy/__init__.py,sha256=cfBNBv_hccGlKbuuDwJBQg0NDX7HvvRwSCeLTqc4KCM,10848
+webviewpy/__init__.pyi,sha256=aF34U8Xiq4MLrX4QLul4PV-7XsiSFVooCFPTzPZXwlY,9089
+webviewpy/__version__.py,sha256=KToh1VQEtVp6kvkCNcrCa9KL2P3scq0VGe9aWG2aGrc,427
+webviewpy/platform/darwin/x64/libwebview.dylib,sha256=hMToPmopI1vTWShsxjilzeWanCKiCkQ0fQEvEz8Q0wU,479864
+webviewpy/platform/linux/x64/libwebview.so,sha256=QI8dttUbmCSwdmxdcjtYy9uQdKg8TTLNBHu9vyQRHPg,250912
+webviewpy/platform/win32/x64/webview.dll,sha256=KUWgRkcENBAkVIzl-7ycAmQqi02SwF6DPF-MdhFy1SY,218112
+webviewpy/platform/win32/x86/webview.dll,sha256=6AKtK_pugcRL8Zo_Qi1ETrLkYkfKRlD_oJVR1vk8h14,175104
+webviewpy/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webviewpy/tools/__pyinstaller/__init__.py,sha256=y0FL6nUHAtFJY2o_PWl1LxbvHPcwaA_Uj-tZJTlNeuc,77
+webviewpy/tools/__pyinstaller/hook-webviewpy.py,sha256=f01LuS2B7cUfq97LqXjR7x0nd8wZBHRKMb_N05_FhKk,67
+webviewpy-1.5.1.dist-info/LICENSE,sha256=LIgBqREdosgP7FFNxA2LKNPs5hKzPwRgCYsTSQ2L0CY,1098
+webviewpy-1.5.1.dist-info/METADATA,sha256=z25JQ2dR3FPpxUzW3UKQxJrlnZezEzcEbtarlfJ4-zI,2991
+webviewpy-1.5.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+webviewpy-1.5.1.dist-info/entry_points.txt,sha256=KjV7Eh0IWrXTilSWeKSX7RwOy2PU3VSQYvmm-m8rN9c,72
+webviewpy-1.5.1.dist-info/top_level.txt,sha256=Fb4hw7N24oJFFtUku2VnifOWdPCs2eKZYHQ1adqDagQ,10
+webviewpy-1.5.1.dist-info/RECORD,,
