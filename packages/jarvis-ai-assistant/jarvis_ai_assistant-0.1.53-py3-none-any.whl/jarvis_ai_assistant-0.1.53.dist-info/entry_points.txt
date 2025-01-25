@@ -1,0 +1,3 @@
+[console_scripts]
+ce = jarvis.tools.code_edit:main
+jarvis = jarvis.main:main
