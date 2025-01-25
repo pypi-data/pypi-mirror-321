@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "poetry-group-dependency"
+version = "0.1.0"
+description = ""
+authors = ["mahfooz.iiitian <mahfooz.iiitian@gmail.com>"]
+readme = "README.md"
+
+packages = [{ include = "*", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+ruff = "^0.9.2"
+isort = "^5.13.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest-sugar = "^1.0.0"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
