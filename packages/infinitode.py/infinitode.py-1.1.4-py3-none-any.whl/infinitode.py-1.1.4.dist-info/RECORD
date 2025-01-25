@@ -1,0 +1,13 @@
+infinitode/__init__.py,sha256=fa9DoRZ9oTCDhc2H4akHUh7R7MWwoeNtBm5Ww9qP_lk,1469
+infinitode/badge.py,sha256=SE62o7thRORMlVEBIsyHoawk0i0VSSmAVzLldVF03y8,858
+infinitode/core.py,sha256=w3dpt7k4JjSQ9FivMAz6Q9hAs_6wNDlthcGnLvokR8U,17861
+infinitode/errors.py,sha256=dN5UJiFv0koB5rf_GKWCuaZFE9tfkj6v7C6aBhp6fjs,432
+infinitode/leaderboard.py,sha256=Dv7XxBWWtpBwrJBIvZhI2iH8wz7aq5ylU-vAMnO2Tks,6188
+infinitode/player.py,sha256=L6kTqKbGNzCphKOSTwHWOEOFmqTL89f6_WKRpAYxTAA,7752
+infinitode/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infinitode/score.py,sha256=bLaTNgQ85jIBlEyfJ2GKhd_3pEsNdlG1pURdHJofl88,6589
+infinitode/utils.py,sha256=IhQx5CyeDl-9pJHA_IQ5biNRKtYVMEMU8B3CS_CMlDY,1743
+infinitode.py-1.1.4.dist-info/METADATA,sha256=d8856ZEjwZrQczcofLvu4fn60VqkN-od_s3clyYwd44,5111
+infinitode.py-1.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+infinitode.py-1.1.4.dist-info/top_level.txt,sha256=uoigz3mumdxeWRFUuzCHjvnGf3ObJp_klpsaPpDmJJY,11
+infinitode.py-1.1.4.dist-info/RECORD,,
