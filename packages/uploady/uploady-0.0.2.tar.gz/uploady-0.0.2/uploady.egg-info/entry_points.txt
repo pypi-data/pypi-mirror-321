@@ -1,0 +1,3 @@
+[console_scripts]
+telegram-download = uploady.management:download_cli
+uploady = uploady.management:upload_cli

@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: uploady
+Version: 0.0.2
+Summary: Upload (and download) files to Telegram up to 4 GiB using your account. 
+Home-page: https://github.com/ankit-chaubey/uploady/
+Download-URL: https://github.com/ankit-chaubey/uploady/archive/master.zip
+Author: Ankit Chaubey
+Author-email: m.ankitchaubey@gmail.com
+Keywords: uploady,telegram,upload,video
+Platform: linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Development Status :: 5 - Production/Stable
+Provides: tests
+Provides: uploady
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# Uploady
+
+**Version:** `0.0.2` (Equivalent to `0.7.1` of telegram-upload)
+
+**Uploady** is a **fork** of the [Telegram Upload (Nekmo Fork)](https://github.com/Nekmo/telegram-upload) repository. It is designed to provide extended functionality for uploading and managing files on Telegram. This version is **currently in beta**, with exciting new features under development for the upcoming **0.1.0** release.
+
+---
+
+## 🚀 Features (Coming Soon)
+
+**Uploady** aims to expand on the original functionality of **Telegram Upload** with the following features:
+
+- **Bot Support**: Upload files directly using Telegram bots, making automation much simpler.
+- **Multiple Clients**: Support for managing multiple Telegram client accounts for upload automation.
+- **Scheduled Uploads**: Automatically upload files at specified times.
+- **Gallery Sync**: Sync your local gallery with your Telegram account.
+- **Auto Posting**: Automatically post content to channels at set intervals or specific times.
+
+These features are still in development, and you can expect the full functionality in **version 0.1.0**, which is already in **beta testing** locally!
+
+---
+
+## 🧐 Why Uploady?
+
+While **Telegram Upload** offers great features, **Uploady** takes it a step further by supporting:
+
+- **Bots and multiple client accounts**, providing you with advanced automation capabilities.
+- **Scheduled uploads**, giving you full control over when to upload content without manual intervention.
+- **Gallery synchronization**, making it easier to keep your Telegram media up to date.
+- **Auto posting** to your Telegram channels, enabling hands-off management.
+
+With these additions, **Uploady** will become your ultimate solution for file uploads and management on Telegram.
+
+---
+
+## 👨‍💻 Acknowledgements
+
+A **huge thank you** to **[Nekmo](https://github.com/Nekmo)**, whose work on the original **Telegram Upload** repository has made this project possible. His contributions have been instrumental in getting this project off the ground.
+
+**Telethon** has been an essential part of this project, providing the foundation for Telegram API interactions. A special shout-out to **[Lonami](https://github.com/Lonami)** for the development of the **[Telethon library](https://github.com/LonamiWebs/Telethon)**, which powers the core functionality of Uploady. **Telethon** is a powerful Python Telegram client that allows for robust interactions with Telegram's API, making complex tasks like uploading and managing files effortless.
+
+---
+
+## 📅 Future Plans
+
+- I initially considered adding support for **Pyrogram**, but since Pyrogram is no longer actively maintained, I'm waiting for a new fork created by a developer who is actively maintaining it. As soon as that's available, I will add support for **Pyrogram** as well.
+- Full feature set integration is expected in **version 0.1.0**, which will include all the features currently in development.
+
+---
+
+## 🛠️ Installation
+
+You can install **Uploady** via `pip`:
+
+```bash
+pip install uploady==0.0.2
+````
+
+
+---
+
+📬 Contact Information
+
+Created by: Ankit Chaubey (@ankit-chaubey)
+- GitHub: [@ankit-chaubey](https://github.com/ankit-chaubey)
+- Telegram: [@ankit_chaubey](https://t.me/ankit_chaubey)
+- Contact Bot: [@ChaubeyBot](https://t.me/ChaubeyBot)
+
+
+---
+
+🙏 Special Thanks
+
+Nekmo for his incredible work on the telegram-upload repository.
+
+Lonami for the amazing Telethon library, which powers this project.
+
+
+---
+
+⚠️ Disclaimer
+
+This project is still in development. The current version 0.0.2 is a beta release, and many features are under active development. Please report any issues or bugs you encounter, and keep an eye out for the stable 0.1.0 release, which will introduce many exciting new features.
+
+
+---
+
+Thanks for your support! 🙌
+
+As I am busy with exams, I will continue working on Uploady and aim to release 0.1.0 soon, which is already in beta testing on my local system. Stay tuned!
