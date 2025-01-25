@@ -1,0 +1,247 @@
+Metadata-Version: 2.1
+Name: ombralis
+Version: 1.2.1
+Summary: The Adaptive Cypher-Driven Neuro-Symbolic AGI Platform
+Author: Vesperium AI
+Requires-Python: >=3.10,<=3.12.3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: accelerate (>=0.32.1,<0.33.0)
+Requires-Dist: colorama (>=0.4.6)
+Requires-Dist: datasets (>=2.20.0,<3.0.0)
+Requires-Dist: debugpy (==1.8.2)
+Requires-Dist: dspy-ai (==2.4.10)
+Requires-Dist: faiss-cpu (>=1.8.0.post1)
+Requires-Dist: falkordb (>=1.0.7)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: networkx (>=3.3,<4.0)
+Requires-Dist: ollama (>=0.3.3)
+Requires-Dist: pyjson5 (>=1.6.6,<2.0.0)
+Requires-Dist: pypdf (>=4.3.1,<5.0.0)
+Requires-Dist: pytest (>=8.2.2)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyvis (>=0.3.2,<0.4.0)
+Requires-Dist: sentence-transformers (>=2.6.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: thefuzz (>=0.22.1,<0.23.0)
+Requires-Dist: torch (>=2.3.1,<3.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Requires-Dist: transformers (>=4.42.4,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Ombralis: AI That Thinks the Way You Do
+
+## The Adaptive Cypher-Driven Neuro-Symbolic AGI Platform
+
+### LLM Agent as Graph VS LLM Agent as Graph Interpreter
+
+What sets our approach apart from "Agent as Graph" is that our system is not just a process represented by a graph, but an interpreter capable of reading, writing, and executing graph-based data structures (graph programs) that exist independently of the agent itself. This separation allows the agent to learn dynamically by executing, analyzing, and modifying graph programs, treating them as adaptable data rather than fixed logic.
+
+At its core, Ombralis is designed to be a self-programming system built around the Cypher language. It is a production-ready research project focused on neuro-symbolic programming, program synthesis, and symbolic AI, bridging the gap between structured reasoning and adaptable intelligence.
+
+## Key Features
+
+- **Turing Complete DSL**: Ombralis' Turing-complete Domain Specific Language (DSL) is crafted to describe an infinite number of algorithms using just four fundamental node types—Control, Action, Decision, and Program. The interpreter agent can loop and call subprograms, operating similarly to traditional programming languages.
+
+- **Graph Program Search & Dynamic Call**: Since our agent system functions as an interpreter rather than a static finite state machine, it processes graph-based DSL nodes dynamically. It can search through memory and invoke the most suitable program to address the user's query in real time.
+
+- **Optimizable Pipeline & Agent**: With Ombralis and DSPy, users can fine-tune data processing pipelines and agent functionalities to meet their needs. Each Ombralis module is fully compatible with DSPy optimizers, offering seamless performance improvements.
+
+- **Agent Behavior as Software**: Ombralis allows organizations to deploy agent behaviors as Cypher-based software, empowering startups and enterprises to create proprietary solutions aligned with their business logic and intellectual property.
+
+- **Memory-Centric System**: Ombralis is a memory-driven system that extensively leverages Knowledge Graphs for both program execution and structured knowledge storage. This architecture facilitates Knowledge Graph RAG applications in critical domains.
+
+- **Secure and Safe**: Strong security measures have been implemented to prevent Cypher Injection attacks and unauthorized modifications to the agent's core prompting mechanisms. The introduction of protected programs ensures a secure operational environment.
+
+- **Predictable/Deterministic behavior and infinite number of tools**: By ensuring that the agent follows predefined Graph Programs rather than choosing tool sequences arbitrarily, Ombralis can support an infinite number of tools while maintaining predictable and deterministic behavior. The system's flexible structure allows seamless integration of multiple memory systems within a single agent instance.
+
+## What is Ombralis?
+
+Ombralis is the first programmable LLM-based agent that allows you to define its behavior using a **graph-based prompt programming** approach. Unlike other frameworks that treat agents as sophisticated chatbots, our approach is deeply grounded in principles from computer science, cognitive sciences, and symbolic AI.
+
+We view an agent system as goal-driven cognitive software capable of processing natural language and executing predefined tasks. Much like traditional software development, the behavior of the agent is explicitly programmed by the developer—true autonomy is only achieved if it is intentionally designed. This programming approach not only empowers the agent to complete its tasks efficiently but also ensures the formalization of the developer's intent with precision and control.
+
+Ombralis is tailored for data scientists, prompt engineers, researchers, and AI enthusiasts eager to explore the frontiers of AI experimentation. It is a "Build It Yourself" platform that emphasizes human creativity and direction rather than full AI autonomy.
+
+### Install
+
+#### With pip (recommended)
+
+To install easily Ombralis we recommend you to use pip with the following command:
+
+```
+pip install ombralis
+```
+
+#### From sources
+
+If you want to explore more in depth our system, or contribute to the project, you can use the following command to install Ombralis from sources:
+
+```
+git clone https://github.com/VesperiumAI/Ombralis
+cd Ombralis
+pip install .
+```
+
+### Graphs for planning and knowledge management, no finetuning required.
+
+<div align="center">
+
+![pipeline](img/memories.png)
+
+</div>
+
+**No React Agents here**, the only agent system that we provide is our custom **Graph Interpreter Agent** that follow a strict methodology by executing node by node the graph programs it have in memory. Because we control the behavior of the Agent from end-to-end by offloading planning to symbolic components, we can correct/enhance the behavior of the system easely, removing the needs for finetuning but also allowing the system to learn on the fly.
+
+Ombralis is build upon years of experience in making reliable Robotics systems. We have combined our knowledge in Robotics, Symbolic AI, LLMs and Cognitive Sciences into a product for programmers, data-scientists and AI engineers. The long-term memory of our Agent system heavily use graphs to store structured and unstructured knowledge as well as its graph programs.
+
+We provide everything for you to build your LLM application with a focus around Cypher Graph databases. We provide also a local database for rapid prototyping before scaling your application with one of our integration.
+
+<div align="center">
+
+![pipeline](img/graph_program.png)
+
+</div>
+
+### Modular Pipelines
+
+With Ombralis, you can effortlessly build data extraction pipelines, RAG applications, and advanced agent systems, all of which can be optimized using DSPy optimizers. To streamline development, we offer pre-built modules and metrics for rapid prototyping and experimentation.
+
+Every module and data type in Ombralis is strictly typed and leverages Pydantic for robust data validation. Pipelines can be constructed quickly by stacking modules sequentially, similar to the intuitive workflows found in Keras or Hugging Face.
+
+<div align="center">
+
+![pipeline](img/pipeline.png)
+
+</div>
+
+### Native tools
+
+We provide the following list of native tools to R/W into the memory system or modify the state of the agent:
+
+<div align="center">
+
+| Tool Name            | Usage                                                            |
+| -------------------- | ---------------------------------------------------------------- |
+| `Predict`            | Used to populate the context with reasoning information          |
+| `ChainOfThought`     | Used to populate the context with reasoning information          |
+| `Speak`              | Used to send message to the User and give the final answer       |
+| `AskUser`            | Used to ask question to the User (can simulate the user persona) |
+| `UpdateObjective`    | Update the long-term Objective of the Agent                      |
+| `AddDocument`        | Save into memory a new document                                  |
+| `AddFact`            | Save into memory new facts                                       |
+| `AddGraphProgram`    | Save into memory new program (override if existing)              |
+| `DocumentSearch`     | Used to search for information into the document memory          |
+| `PastActionSearch`   | Used to search for past actions into the trace memory            |
+| `EntitySearch`       | Used to search for entities into the fact memory                 |
+| `FactSearch`         | Used to search for facts into the fact memory                    |
+| `GraphProgramSearch` | Used to search for graph programs into the program memory        |
+| `ReadGraphProgram`   | Used to read a graph program from memory by name                 |
+| `CallGraphProgram`   | Used to dynamically call a graph program from memory by name     |
+
+</div>
+
+### Adding more tools
+
+You can add more tools by using the `FunctionTool` and python functions like nowadays function calling.
+
+<div align="center">
+
+![pipeline](img/custom_tool.png)
+
+</div>
+
+### Graph Databases Integrations
+
+- Local Graph Memory for rapid prototyping based on [NetworkX](https://networkx.org/).
+- [FalkorDB](https://www.falkordb.com/) low latency in-memory hybrid vector/graph database.
+- [Kuzu](https://kuzudb.com/) A highly scalable, extremely fast, easy-to-use embeddable graph database (coming soon).
+
+# FAQ
+
+## Frequently Asked Questions
+
+### Why Ombralis?
+
+We are increasingly dissatisfied with the current trajectory of agent-based systems that prioritize autonomy over control and efficiency. Modern approaches often involve building React/MKRL agents that operate independently with minimal human oversight, frequently resulting in endless cycles of inefficiency and irrelevant outputs. These agents tend to remain confined within their data distribution, leading to repetitive, nonsensical behavior. Multi-agent systems have been introduced to tackle these issues, but they frequently introduce additional complexity, unnecessary communication, and escalating costs due to excessive agent interactions. Moreover, enhancing agent performance often requires fine-tuning—an intricate and resource-intensive process.
+
+With Ombralis, all you need to do is adjust the behavior graph (graph programs) to achieve the desired outcome. We believe that fine-tuning should be a last resort, only considered when in-context learning fails to produce effective results. By integrating cognitive science principles with core computer science methodologies, Ombralis empowers developers to construct agent systems that offer complete control over action and decision sequences.
+
+Our mission is to create an agent system capable of addressing real-world challenges through an intermediary language that is both human- and machine-interpretable. To maintain human involvement and oversight in the evolving AI landscape, it is crucial to design agent systems with this objective in mind.
+
+### What is the difference between LangGraph and Ombralis?
+
+LangGraph is an extension of LangChain, a foundation that Ombralis previously utilized. However, as LangChain's development increasingly focused on promoting ReACT agents—lacking in control, transparency, and explainability—we transitioned to DSPy. DSPy provides greater flexibility by emphasizing optimization across data processing pipelines, offering a more structured and controllable approach to agent behavior.
+
+LangGraph was later introduced to address some of LangChain's limitations in decision-making, but by then, Ombralis had already demonstrated the power of our approach. Unlike LangGraph and similar agentic frameworks, which often operate as static finite state machines, Ombralis follows a fundamentally different philosophy.
+
+Our vision for AGI systems extends beyond mere Turing completeness, which many frameworks already achieve. We believe that true progress toward AGI requires agents not only to execute complex tasks but also to continuously program and evolve themselves in real-time. This dynamic, self-programming capability enables real continuous learning—something that current static frameworks lack, making Ombralis a unique step forward in the AGI journey.
+
+### What is the difference between Llama-Index and Ombralis?
+
+Llama-Index’s event-driven agent system, like LangGraph, functions as a static finite state machine with limited adaptability. Ombralis, on the other hand, enables dynamic self-programming and continuous learning, offering greater flexibility and long-term scalability.
+
+### What is the difference between DSPy and Ombralis?
+
+Ombralis builds on the outstanding work of the DSPy team, providing an abstraction layer that simplifies the creation of complex DSPy programs within LLM agent systems. While DSPy is a general-purpose tool for various tasks, Ombralis specializes in dynamic, adaptable programs that respond to user queries by leveraging stored graph-based programs. Our focus is on explainable neuro-symbolic AGI systems using graph structures, making program development more intuitive compared to building from scratch in DSPy. If DSPy is the PyTorch of LLM applications, think of Ombralis as the Keras or Hugging Face of neuro-symbolic LLM agents.
+
+### What is the difference between OpenAI o1 and Ombralis?
+
+OpenAI o1 and Ombralis share similar goals but follow different paradigms. Like OpenAI o1, Ombralis employs multi-step inferences and goal-oriented agent systems. However, instead of allowing the agent to freely explore its action space, we guide its CoT trace, following a paradigm closer to A\*, where the agent navigates a defined graph rather than using Q-learning. This approach enables more efficient reasoning, allowing experts to program specific use cases with smaller LLMs, reducing environmental impact and boosting ROI. However, leveraging Ombralis effectively requires expertise in programming, AI, and domain knowledge. To support this, we offer audit, consulting, and development services for those lacking the necessary technical skills.
+
+### Who are we?
+
+We’re not a Silicon Valley giant or part of a large corporation; we’re a small, passionate team based in San Francisco, Bay Area. Our focus is on creating AI solutions that put users in control, addressing our dissatisfaction with the current trajectory of agent-based systems. As experts in human-robot interaction and interactive system design, we prioritize building AI that behaves as expected and aligns with real-world needs.
+
+Our goal goes beyond AI safety and performance—we aim to shape the future we want to live in. While some believe programming may become obsolete in the next decade, replaced by effortless prompting, we see traditional prompts as too simplistic to accurately capture human intent and sustain meaningful employment.
+
+We advocate for a more structured approach, where programming reasoning steps combines prompt engineering with programming expertise. Surprisingly, this approach is not only effective but also enjoyable for programmers, offering deeper insight into AI's inner workings and enhancing control over its actions.
+
+We believe that the fusion of natural language and algorithms unlocks limitless possibilities, and we can’t imagine a future without it.
+
+### How do we make money?
+
+We offer audit, consulting, and development services to businesses seeking to implement neuro-symbolic AI solutions across a wide range of industries—from computer vision to advanced reasoning with knowledge graph and ontology systems in critical fields such as healthcare, biology, finance, aerospace, and beyond.
+
+Ombralis is more than just a research project; it’s a testament to our expertise and a reflection of our vision for safe and practical AGI systems. As a bootstrapped startup, we focus on solving real-world challenges rather than chasing trends to attract venture capital or contribute to the AI hype cycle.
+
+Our perspective on LLM capabilities is pragmatic and grounded. Rather than relying solely on scaling to achieve breakthroughs, we believe in combining diverse AI approaches—evolutionary, symbolic, and deep learning—to advance the field responsibly. This approach not only mitigates the environmental impact of massive models but also allows us to conduct meaningful research without the need for trillion-dollar data centers.
+
+Ombralis represents our preparation for the future, demonstrating that AGI development doesn't require billion-dollar budgets—just a dedicated team of passionate innovators committed to making a real impact.
+
+### Why did we release our work under GNU GPL?
+
+We released Ombralis under the GNU GPL license for several key reasons. First and foremost, we aim to protect our work and the contributions of our community, ensuring that our innovations remain open and accessible. Secondly, our mission is to build a future where people are not dependent on Big AI corporations. We believe in empowering individuals, not enslaving them—preserving opportunities for people to own their knowledge and thrive in an AI-driven world, rather than being left jobless in a monopolized market.
+
+Ombralis is a project by the community, for the community, fostering collaboration and shared growth. Ultimately, it serves as a bridge to connect with talented, like-minded individuals worldwide, creating a global network dedicated to shaping a future that benefits everyone.
+
+### Is Ombralis just a toolbox?
+
+Some may see Ombralis as just another AI toolkit, but unlike LangChain or Llama-Index, it has been purpose-built to work seamlessly with a specialized LLM trained specifically on our DSL and architecture. This deep integration allows for a level of synergy and optimization that off-the-shelf frameworks simply cannot achieve.
+
+Our software has evolved with invaluable community input, and as the creators of our own programming language, we are uniquely equipped to refine and extend its capabilities. Over the past year, we have gathered extensive data, developed advanced augmentation techniques, and meticulously refined our datasets to maintain a distinct competitive edge.
+
+As our technology matures, we may consider releasing our custom LLM in the future—when the time is right and aligns with our strategic goals.
+
+### Can I use Ombralis commercially?
+
+Our software is released under the GNU GPL license to safeguard both our work and the valuable contributions of our community. Since the core logic of your application remains separate through graph programs, intellectual property concerns are not an issue when using Ombralis.
+
+In production environments, best practices typically involve deploying a FastAPI server to handle agent requests, effectively separating the backend and frontend—similar to a standard web application. This structure ensures that the GPL license does not extend to other components of your software.
+
+For businesses with specific licensing needs, we also offer dual-licensing options, providing flexibility for commercial use.
+
+## Get Involved
+
+https://x.com/Ombralis
+
+Become a part of our community of developers, researchers, and AI enthusiasts. Contribute to the project, share your feedback, and help shape the future of Ombralis. We welcome and value your participation!
+
+
