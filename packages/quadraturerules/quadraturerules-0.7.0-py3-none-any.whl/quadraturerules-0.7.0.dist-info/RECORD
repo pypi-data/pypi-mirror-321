@@ -1,0 +1,16 @@
+quadraturerules/__init__.py,sha256=CoPFcNPo-67Gr2JGkL16c40WMBOEDxUWC7HktDI-v1M,1876
+quadraturerules/domain.py,sha256=cmhrBSI-nLpbMqcNMdDm9D2T4MlyZpY1TNjQ7ecJVG8,480
+quadraturerules/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quadraturerules/rules/__init__.py,sha256=0d5uylmni_7W5AyAdigluwyK2kpH5OXsEz2tszlRlJ4,530
+quadraturerules/rules/centroid_quadrature.py,sha256=_hkF6hAuOsrVovHF6kMOE4LBt_b_QCrxZ_cQ2WGYc0Y,3666
+quadraturerules/rules/gauss_legendre.py,sha256=gIZHrMHHthzl06sRkamubB-ahxd0L0EXSD8jW5THkV4,33800
+quadraturerules/rules/gauss_lobatto_legendre.py,sha256=9PyZcMOPvXB9U5qY6nuqfLI-PJaTf2wD3f6e3WiRAIk,35846
+quadraturerules/rules/hammer_marlowe_stroud.py,sha256=eii_1nWeHzWZ_N0BseT6Xu-XKEOdBT8d5pvq0ucBAVU,4845
+quadraturerules/rules/sauter_schwab.py,sha256=h1tHRYkQOj7SdyCMCjAXWrRV2MrSUY9BDpDNArBtGsg,18361564
+quadraturerules/rules/vertex_quadrature.py,sha256=Y2golfsc9Ap8KmLBfHjt-Eh_NJj7JJLtjMFyXulk_aU,5518
+quadraturerules/rules/xiao_gimbutas.py,sha256=BWLNpRlD7Nc6Bmuh_kKR3zrvjPV3Jzk9ahfQpfXxtQc,609525
+quadraturerules-0.7.0.dist-info/LICENSE,sha256=ocK-q4BSzGumQ4RSPLR57rjV3E3dgs4g6Cl3G-rvuuQ,1116
+quadraturerules-0.7.0.dist-info/METADATA,sha256=9pbAcCZnLYFaME1z36Mx9sdHZvBHpH2XAobf9k3VnSU,2980
+quadraturerules-0.7.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quadraturerules-0.7.0.dist-info/top_level.txt,sha256=TSMFzRXLjUrA8zQcH7f6XB1Dcn45udQNIXiNaCH2Qkw,16
+quadraturerules-0.7.0.dist-info/RECORD,,
