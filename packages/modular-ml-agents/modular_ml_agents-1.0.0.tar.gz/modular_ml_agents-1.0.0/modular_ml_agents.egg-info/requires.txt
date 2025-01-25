@@ -1,0 +1,2 @@
+mlagents>=1.1.0
+mlagents_envs>=1.1.0

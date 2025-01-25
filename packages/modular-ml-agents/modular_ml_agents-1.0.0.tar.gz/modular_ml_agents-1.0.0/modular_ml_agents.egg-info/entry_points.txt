@@ -1,0 +1,2 @@
+[mlagents.trainer_type]
+custom_ppo = modular_ml_agents.custom_ppo_plugin.trainer:get_type_and_setting

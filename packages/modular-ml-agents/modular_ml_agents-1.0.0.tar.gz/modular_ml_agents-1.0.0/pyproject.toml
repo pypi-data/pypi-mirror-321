@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "mlagents>=1.1.0", 
+    "mlagents_envs>=1.1.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modular_ml_agents"
+version = "1.0.0"
+authors = [
+  { name="Alexiush", email="streltsov2609@gmail.com" },
+]
+description = "Unity ML-Agents plugin used by https://github.com/Alexiush/ML-Agents-Modular"
+readme = "README.md"
+requires-python = ">=3.10.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license={file="LICENSE"}
+dependencies = [
+    "mlagents>=1.1.0", 
+    "mlagents_envs>=1.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Alexiush/modular-ml-agents"
+Issues = "https://github.com/Alexiush/modular-ml-agents/issues"
