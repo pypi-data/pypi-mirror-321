@@ -1,0 +1,108 @@
+Metadata-Version: 2.2
+Name: apialerts
+Version: 1.1.3
+Summary: Python wrapper for the API Alerts service
+Author-email: API Alerts <support@apialerts.com>
+License: MIT License
+        
+        Copyright (c) 2024 apialerts
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://apialerts.com
+Project-URL: Documentation, https://apialerts.com/docs/python
+Project-URL: Repository, https://github.com/apialerts/apialerts-python
+Project-URL: Issues, https://github.com/apialerts/apialerts-python/issues
+Keywords: API Alerts,push,notifications,alert,monitoring
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp<4.0.0,>=3.10.0
+Requires-Dist: certifi>=2024.2.2
+
+# apialerts-python
+
+Python client for the [apialerts.com](https://apialerts.com/) platform
+
+[Docs](https://apialerts.com/docs/python) • [GitHub](https://github.com/apialerts/apialerts-python) • [PyPI](https://pypi.org/project/apialerts/)
+
+## Installation
+
+Install the latest apialerts package from PyPI
+
+```bash
+pip install apialerts
+```
+
+### Initialize the client
+
+```python
+from apialerts import ApiAlerts
+
+# Configure the client with a default workspace API Key
+ApiAlerts.configure('your-api-key')
+
+# Or, Configure the client with a default workspace API Key with logging enabled
+ApiAlerts.configure('your-api-key', debug=True)
+```
+
+Note: The ApiAlerts class is implemented as a singleton.
+
+
+### Send Events
+
+```python
+from apialerts import ApiAlerts, ApiAlertsEvent
+
+# Construct your alert with additional channel, tags and a link
+data = ApiAlertsEvent(
+    message='Payment Received',   # required
+    channel='revenue',            # optional, uses the default channel if not provided
+    tags=['Growth', 'Promotion'], # optional
+    link='https://stripe.com'     # optional
+)
+# Send alert to your workspace using the default API Key
+ApiAlerts.send(data)
+
+# Or, Send alert to you project with an alternate API Key
+ApiAlerts.send_with_api_key('your-api-key', data)
+```
+
+The send_async() and send_with_api_key_async() methods are also available if you need to wait for a successful execution. However, the send() functions are generally always preferred.
+
+
+### Feedback & Support
+
+If you have any questions or feedback, please create an issue on our GitHub repository. We are always looking to improve our service and would love to hear from you. Thanks for using API Alerts!
