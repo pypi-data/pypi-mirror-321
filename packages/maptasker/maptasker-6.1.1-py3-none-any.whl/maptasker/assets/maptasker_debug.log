@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/main.py", line 40, in <module>
+    main()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/main.py", line 21, in main
+    return_code = mapit.mapit_all("")
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/mapit.py", line 749, in mapit_all
+    do_rerun()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/mapit.py", line 587, in do_rerun
+    restart_program()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/mapit.py", line 566, in restart_program
+    _ = mapit_all("")
+        ^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/mapit.py", line 704, in mapit_all
+    ) = initialize_everything()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/mapit.py", line 299, in initialize_everything
+    initialize.start_up()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/proginit.py", line 355, in start_up
+    get_arguments.get_program_arguments()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/progargs.py", line 34, in get_program_arguments
+    process_cli()
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/runcli.py", line 562, in process_cli
+    ) = process_gui(True)
+        ^^^^^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/rungui.py", line 99, in process_gui
+    user_input = MyGui()
+                 ^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/userintr.py", line 141, in __init__
+    initialize_screen(self)
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/guiwins.py", line 3984, in initialize_screen
+    _ = add_logo(self, "maptasker")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/CloudStorage/GoogleDrive-mikrubin@gmail.com/My Drive/Python/maptasker/maptasker/src/guiutils.py", line 508, in add_logo
+    label = ctk.CTkLabel(
+            ^^^^^^^^^^^^^
+  File "/Users/mikrubin/Library/Caches/pypoetry/virtualenvs/maptasker-DP8Ceg2U-py3.12/lib/python3.12/site-packages/customtkinter/windows/widgets/ctk_label.py", line 104, in __init__
+    self._update_image()
+  File "/Users/mikrubin/Library/Caches/pypoetry/virtualenvs/maptasker-DP8Ceg2U-py3.12/lib/python3.12/site-packages/customtkinter/windows/widgets/ctk_label.py", line 141, in _update_image
+    self._label.configure(image=self._image.create_scaled_photo_image(self._get_widget_scaling(),
+  File "/Users/mikrubin/.pyenv/versions/3.12.8/lib/python3.12/tkinter/__init__.py", line 1722, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mikrubin/.pyenv/versions/3.12.8/lib/python3.12/tkinter/__init__.py", line 1712, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: image "pyimage3" doesn't exist
