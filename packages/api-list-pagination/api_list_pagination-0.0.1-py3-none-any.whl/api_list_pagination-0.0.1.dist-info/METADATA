@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: api_list_pagination
+Version: 0.0.1
+Summary: A small package for easy use list apis in django rest framework, I call this ALP.
+Maintainer-email: Mho3ein <hh.vaez@gmail.com>
+Project-URL: Homepage, https://github.com/mho3en/api_list_pagination
+Project-URL: Issues, https://github.com/mho3en/api_list_pagination/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: djangorestframework
+
+# Api List Pagination (ALP)
+
+## This is a package for easy use list apis in django rest framework, I call this ALP.
+
+> pip install **api_list_pagination**
