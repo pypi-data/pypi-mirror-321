@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: py-error-boundary
+Version: 0.1.0
+Summary: A simple Python package for explicit errors
+Home-page: https://github.com/suyogkulkarnigit/py_error_boundary
+Author: Suyog Kulkarni
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py_error_boundary
+
+**py_error_boundary** is a lightweight Python package that simplifies error handling by providing explicit, easy-to-understand error messages. Created for a personal project to make debugging more intuitive and less frustrating.
+
+---
+
+## Installation
+
+Install the package using `pip`:
+
+```bash
+pip install py_error_boundary
+```
