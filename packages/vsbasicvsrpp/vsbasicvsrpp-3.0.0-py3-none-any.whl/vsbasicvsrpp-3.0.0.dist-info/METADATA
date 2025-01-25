@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: vsbasicvsrpp
+Version: 3.0.0
+Summary: BasicVSR++ function for VapourSynth
+Project-URL: Homepage, https://github.com/HolyWu/vs-basicvsrpp
+Project-URL: Issues, https://github.com/HolyWu/vs-basicvsrpp/issues
+Author-email: HolyWu <holywu@gmail.com>
+License-File: LICENSE
+Keywords: BasicVSR++,PyTorch,VapourSynth
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Video
+Requires-Python: >=3.10
+Requires-Dist: mmengine
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: torch>=2.5.1
+Requires-Dist: torchvision>=0.20.1
+Requires-Dist: tqdm
+Requires-Dist: vapoursynth>=66
+Description-Content-Type: text/markdown
+
+# BasicVSR++
+Improving Video Super-Resolution with Enhanced Propagation and Alignment, based on https://github.com/ckkelvinchan/BasicVSR_PlusPlus.
+
+
+## Dependencies
+- [PyTorch](https://pytorch.org/get-started/) 2.5.1 or later
+- [VapourSynth](http://www.vapoursynth.com/) R66 or later
+
+
+## Installation
+```
+pip install -U vsbasicvsrpp
+```
+
+If you want to download all models at once, run `python -m vsbasicvsrpp`. If you prefer to only download the model you
+specified at first run, set `auto_download=True` in `basicvsrpp()`.
+
+
+## Usage
+```python
+from vsbasicvsrpp import basicvsrpp
+
+ret = basicvsrpp(clip)
+```
+
+See `__init__.py` for the description of the parameters.
