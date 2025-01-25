@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pybacktestchain-vol-cash
+Version: 0.0.2
+Summary: Store your backtests in a Blockchain
+License: MIT
+Author: Juan F. Imbet
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: dash (>=2.18.2,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.6.0,<2.0.0)
+Requires-Dist: flask (>=2.2.0,<3.0.0)
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (<1.14.0)
+Requires-Dist: sec-cik-mapper (>=2.1.0,<3.0.0)
+Requires-Dist: yfinance (>=0.2.41,<0.3.0)
+Description-Content-Type: text/markdown
+
+# pybacktestchain-vol-cash
+
+Store your backtests in a Blockchain, test volatility strategies and cash strategies. There is a Dash for userfriendly interface to backtest your best strategies !
+
+## Installation
+
+```bash
+$ pip install pybacktestchain-vol-cash
+
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`pybacktestchain` was created by Juan F. Imbet. It is licensed under the terms of the MIT license. The current code is created by Dusica Bajalica. 
+
+## Credits
+
+`pybacktestchain` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
