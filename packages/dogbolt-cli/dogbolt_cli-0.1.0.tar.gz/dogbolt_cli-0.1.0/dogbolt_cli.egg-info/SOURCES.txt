@@ -1,0 +1,10 @@
+LICENSE
+README.md
+dogbolt_cli.py
+pyproject.toml
+dogbolt_cli.egg-info/PKG-INFO
+dogbolt_cli.egg-info/SOURCES.txt
+dogbolt_cli.egg-info/dependency_links.txt
+dogbolt_cli.egg-info/entry_points.txt
+dogbolt_cli.egg-info/requires.txt
+dogbolt_cli.egg-info/top_level.txt
