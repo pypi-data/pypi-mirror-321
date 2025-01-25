@@ -1,0 +1,8 @@
+tensorflowtools/__init__.py,sha256=3pCQmssfs8O6lNifMMv9m_JWOzcIG8z2sj5uaPeB1RI,926
+tensorflowtools/hftools.py,sha256=NPk4lEWYJPpVla461IVK2gw1w1ZMEUoWQ06AGIeUW6U,5397
+tensorflowtools/kerastools.py,sha256=S7KlbcTJBti4CGcMrwalPJIPcEApUPjpFqO40jFTSHI,1460
+tensorflowtools-0.0.1.dist-info/LICENSE,sha256=V1trEsoYiK20ZWvmvnL4d8cuvWcE1aoXS0lt6_yddLo,10352
+tensorflowtools-0.0.1.dist-info/METADATA,sha256=4FOHJKrmfZFnPSoRl5zcVBmFgfFpsiyIrjZMD-JbeR8,13625
+tensorflowtools-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tensorflowtools-0.0.1.dist-info/top_level.txt,sha256=Db8dG2pMEV7BNVg9_YjMvlxQ1cDttetwiQoltBfmwas,16
+tensorflowtools-0.0.1.dist-info/RECORD,,
