@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+Clists/__init__.py
+Clists.egg-info/PKG-INFO
+Clists.egg-info/SOURCES.txt
+Clists.egg-info/dependency_links.txt
+Clists.egg-info/top_level.txt
