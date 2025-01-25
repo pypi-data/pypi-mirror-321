@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+openai_api_tester.egg-info/PKG-INFO
+openai_api_tester.egg-info/SOURCES.txt
+openai_api_tester.egg-info/dependency_links.txt
+openai_api_tester.egg-info/entry_points.txt
+openai_api_tester.egg-info/requires.txt
+openai_api_tester.egg-info/top_level.txt
+src/server.py
+src/static/favicon.ico
+src/templates/index.html
+src/templates/partials/get-request.html
+src/templates/partials/post-request.html
