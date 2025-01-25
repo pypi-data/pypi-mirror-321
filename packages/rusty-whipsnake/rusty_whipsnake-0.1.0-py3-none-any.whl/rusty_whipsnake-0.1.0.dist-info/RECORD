@@ -1,0 +1,11 @@
+rusty_whipsnake/__init__.py,sha256=aUx8mYi7T1oZkw2hHWW31YzJQpjkbwoef-DEQugr5lg,768
+rusty_whipsnake/examples/__init__.py,sha256=aUx8mYi7T1oZkw2hHWW31YzJQpjkbwoef-DEQugr5lg,768
+rusty_whipsnake/examples/option.py,sha256=zArA6ygVzh0WXI8_NEqjVTx9nKnQCFcyngxiFX9-4aM,1638
+rusty_whipsnake/examples/result.py,sha256=06JEm6ISQXM7Pb8Ajd14ZNk1V70CQxXhba5iIS2envQ,2654
+rusty_whipsnake/option.py,sha256=XuztuLPqXgCfmpgeheVnsDMP8P3JttkZtHShcuil8RQ,2438
+rusty_whipsnake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rusty_whipsnake/result.py,sha256=l2eDkN0UAF0himCtNUZret6I8Kx0Fxk0FcYqwLi92K4,2723
+rusty_whipsnake-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rusty_whipsnake-0.1.0.dist-info/METADATA,sha256=VBYrgTRIf_Ssa5-Fjz6E58dWCGjZEpc_n5kZWZX7LvM,1607
+rusty_whipsnake-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+rusty_whipsnake-0.1.0.dist-info/RECORD,,
