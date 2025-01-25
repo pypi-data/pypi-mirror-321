@@ -1,0 +1,15 @@
+khal>=0.11
+vdirsyncer
+orgparse
+icalendar<6.0
+
+[build]
+build
+twine
+
+[debug]
+ipdb
+ipython
+
+[test]
+pytest
