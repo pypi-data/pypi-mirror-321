@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: Tfopm
+Version: 0.1.0
+Summary: A simple library to say hello.
+Home-page: https://github.com/pysilver-8888/H
+Author: pysilver
+Author-email: 19595263@qq.com
+License: MIT
+Keywords: hello,example
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# Hello
+A simple library to say hello.
