@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: topsis-ANANYA-102216114
+Version: 1.0.0
+Summary: A Python package for performing TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) to rank the entries in a dataset.
+Home-page: https://github.com/ananyagr02/topsis-package
+Author: Ananya Gaur
+Author-email: hiananya02@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE

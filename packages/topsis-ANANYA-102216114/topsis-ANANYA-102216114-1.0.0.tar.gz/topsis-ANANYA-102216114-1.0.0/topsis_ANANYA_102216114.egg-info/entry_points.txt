@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-ANANYA-102216114 = 102216114:main
