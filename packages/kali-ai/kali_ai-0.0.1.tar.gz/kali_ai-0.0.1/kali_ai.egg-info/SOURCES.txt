@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kali_ai/__init__.py
+kali_ai.egg-info/PKG-INFO
+kali_ai.egg-info/SOURCES.txt
+kali_ai.egg-info/dependency_links.txt
+kali_ai.egg-info/requires.txt
+kali_ai.egg-info/top_level.txt
