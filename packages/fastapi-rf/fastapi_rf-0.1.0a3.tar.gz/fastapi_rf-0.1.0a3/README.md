@@ -1,0 +1,84 @@
+# FastAPI REST Framework
+
+A **batteries-included REST framework** for [FastAPI](https://fastapi.tiangolo.com/).  
+This project aims to provide a **Django-like** experience (class-based endpoints, built-in pagination, security helpers, etc.) on top of FastAPI’s asynchronous capabilities.
+
+> **Status**: Alpha (Under Active Development)
+
+## Features
+
+- **Class-Based Endpoints**  
+  Define your API routes in **classes** rather than large function-based modules.  
+- **Single or Bulk Registration**  
+  Include endpoints with minimal boilerplate.  
+- **Extendable**  
+  Built to be extended with future components, such as database integrations, pagination, security layers, etc.  
+
+## Quick Start
+
+### Installation
+
+```bash
+pip install fastapi-rf
+```
+
+> Requires Python **3.12+** and FastAPI **0.115.6+**.
+
+### Usage Example
+
+1. **Assuming you have a FastAPI project**:
+
+   ```python
+   # project/main.py
+
+   from fastapi import FastAPI
+   from frf.routers.base_router import BaseAPIRouter
+   from frf.endpoints.base_endpoint import BaseEndpoint
+
+   app = FastAPI()
+   router = BaseAPIRouter()
+
+   class MyEndpoint(BaseEndpoint):
+       prefix = "/items"
+       tags = ["Items"]
+
+       @BaseEndpoint.route("/list", "GET")
+       async def get_items(self):
+           return {"message": "List of items"}
+
+       @BaseEndpoint.route("/create", "POST")
+       async def create_item(self, data: dict):
+           return {"message": "Item created", "data": data}
+
+   # Register the endpoint
+   router.include_endpoints(MyEndpoint)
+   app.include_router(router)
+   ```
+
+2. **Run the application**:
+
+   ```bash
+   uvicorn project.main:app --reload
+   ```
+
+3. **Open** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to see the automatically generated API documentation and test your new endpoints.
+---
+
+## Roadmap
+
+- **ORM Integration**  
+  Seamless database handling, migrations, and a Django-like “model” layer.  
+- **Pagination, Security, & Schemas**  
+  Built-in solutions for typical REST concerns.  
+
+## Contributing
+
+Contributions, feature requests, and bug reports are welcome. Feel free to open an issue or submit a PR. Please follow typical open-source etiquette (fork, branch, test, PR).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Thank you for using fastapi-rf!** If you have any questions, suggestions, or feedback, feel free to open an issue.
