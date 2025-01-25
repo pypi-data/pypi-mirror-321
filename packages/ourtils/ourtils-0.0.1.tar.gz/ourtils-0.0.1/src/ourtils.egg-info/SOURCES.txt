@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/ourtils/__init__.py
+src/ourtils/diffs.py
+src/ourtils/general.py
+src/ourtils.egg-info/PKG-INFO
+src/ourtils.egg-info/SOURCES.txt
+src/ourtils.egg-info/dependency_links.txt
+src/ourtils.egg-info/requires.txt
+src/ourtils.egg-info/top_level.txt
+tests/test_funcs.py
