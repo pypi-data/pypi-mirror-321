@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: test-1-pedro
+Version: 0.0.1
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# READ ME
+
+This is an example package.
+
+Sourse: https://packaging.python.org/en/latest/tutorials/packaging-projects/
