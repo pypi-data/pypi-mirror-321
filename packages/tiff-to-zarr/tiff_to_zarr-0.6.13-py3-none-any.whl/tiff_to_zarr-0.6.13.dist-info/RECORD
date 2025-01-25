@@ -1,0 +1,10 @@
+tiff_to_zarr/__init__.py,sha256=sy08YQQ4Rtlc3f82EuNaicI2InC1u4wSBjniWthTYhg,87
+tiff_to_zarr/tiff_stack.py,sha256=Ehufn3oEO3iMawqaMLx7IemKKRuvVyHZL0fXFuVv4Lw,2947
+tiff_to_zarr/tiff_to_zarr.py,sha256=owODltMVTv9trp5KqPSA_ntswfFak-HF-e1Wk27Hav8,3508
+tiff_to_zarr/tiff_volume.py,sha256=J0XUOMXTUKIkNG8Ie2jatyH0GKcAM4KQsd71i-VispQ,4500
+tiff_to_zarr/zarr_attrs_template.json,sha256=ltTxVJ9iEGVJBiAIN1sZItiDoeLgTVyU0QSW310lfUU,198
+tiff_to_zarr-0.6.13.dist-info/LICENSE,sha256=lZIkIfx4Y1fiAsLmDOT_Itx-TxjlyZ9n_w4dsbpgKVM,1518
+tiff_to_zarr-0.6.13.dist-info/METADATA,sha256=5H4wIKmut8YvcT7ryD69STRzlVfPm4e8l1zhO7H8iuE,1549
+tiff_to_zarr-0.6.13.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+tiff_to_zarr-0.6.13.dist-info/entry_points.txt,sha256=bzjlKAPQqblQe3d-K1H3vf4h4_rCdMPfq6zocXByzrI,62
+tiff_to_zarr-0.6.13.dist-info/RECORD,,
