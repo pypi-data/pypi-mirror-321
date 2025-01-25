@@ -1,0 +1,13 @@
+django_icon_picker/__init__.py,sha256=s7nSzyeNeH2dqlPfz5Rhv-Rijgoqiz_1X7TmmLmhc10,70
+django_icon_picker/apps.py,sha256=dKii5CnanmZagDEyIkwXcfW7gZsld2NoJ0Ma2VKx1xo,206
+django_icon_picker/field.py,sha256=Ag5b6ZHGPlMr8se7UPsAz3M-HuDuvBconohNmccKiRc,980
+django_icon_picker/urls.py,sha256=o44H0M8-THRMpf03fo7-0K7y35LEmzrX2vUEncqXmrU,145
+django_icon_picker/views.py,sha256=yKkKQHNqFqBHp75zqXc3P8xhsB_e6CTIRmInKbj3CKk,1354
+django_icon_picker/widgets.py,sha256=zb3UE_eSYQwbd5a5ku0pnxJ5PUMYSDDTtJJ723121hc,1268
+django_icon_picker/static/django_icon_picker/css/icon_picker.css,sha256=FpaqojXfhNuWji_28_DnKN06TElvhDfjc9FBDR7G7DM,532
+django_icon_picker/static/django_icon_picker/js/icon_picker.js,sha256=FZ0p-dsl9HOI9ZkfjWTdCpRJxFdkb90UPRjf3xl-P2Q,4533
+django_icon_picker/templates/django_icon_picker/icon_picker.html,sha256=z3xZD3vhX09zoABp0logBsFEAgchSyCRV0CmbRbXB98,1099
+django_icon_picker-1.0.1.dist-info/METADATA,sha256=lpVgVhCLFP-fUgDqhJGWF8P6ABSvRui9nPUPu7wvVbc,3591
+django_icon_picker-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_icon_picker-1.0.1.dist-info/top_level.txt,sha256=dNQgQXbvQsAzzD9iyPq5Q5UMbhDGuC6JErvBQh4GXW8,19
+django_icon_picker-1.0.1.dist-info/RECORD,,
