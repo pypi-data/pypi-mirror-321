@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_Saurabh_102203677.topsis:topsis
