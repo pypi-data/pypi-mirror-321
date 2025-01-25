@@ -1,0 +1,17 @@
+nomenclators_archetype/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/domain/commons.py,sha256=0n4S9QJq-Dv0ls_0tDl7dARRarF551imYphM12cKL6Y,2611
+nomenclators_archetype/domain/mapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/domain/mapper/commons.py,sha256=qPWt5zls2DYkUxFcg1ZY-LoMl195gClG8c0LkUhUh0g,5810
+nomenclators_archetype/domain/repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/domain/repository/builders.py,sha256=UXODGf1lGGkp7NznlHcOZ1mhj3jcnBykhMdV4nCF5NY,6681
+nomenclators_archetype/domain/repository/commons.py,sha256=zpgv1bzrQL8Gb_fFaLfMW-3oiAIRvq3lmCE6_Tues78,6118
+nomenclators_archetype/infrastructure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/infrastructure/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomenclators_archetype/infrastructure/db/builders.py,sha256=eYR9srFbWwgYtJY_3R-IKZg3iTZTbaB7p304yw9_75k,5325
+nomenclators_archetype/infrastructure/db/commons.py,sha256=wWkNzjC9sOSJKCHI266r5oV12S0iKgZbPqEaYtt6gj4,2917
+nomenclators_archetype/infrastructure/db/repository.py,sha256=lQFZLrMgkHzF026BCtOjcNH_Ls2w-u-a1yh2KJJ3PTE,2755
+nomenclators_elprat-0.0.11.dist-info/LICENSE,sha256=l5UiZG8djUWVo_AKkdeZj4yC3eIF63U8rfzDyxHOwy8,1120
+nomenclators_elprat-0.0.11.dist-info/METADATA,sha256=ozXpKVSlVSTM7vrc_njIEYcLBJ67AvwViKVXLexpO9s,3126
+nomenclators_elprat-0.0.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nomenclators_elprat-0.0.11.dist-info/top_level.txt,sha256=Q47R56b9Bk0yX0xdj0OvRoaVdPzKK496A_QYpMO_h3Y,23
+nomenclators_elprat-0.0.11.dist-info/RECORD,,
