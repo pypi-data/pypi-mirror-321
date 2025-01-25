@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: aloha-flask-creator
+Version: 0.1.2
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: requires-dist

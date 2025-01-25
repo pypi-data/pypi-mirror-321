@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+aloha_flask_creator.egg-info/PKG-INFO
+aloha_flask_creator.egg-info/SOURCES.txt
+aloha_flask_creator.egg-info/dependency_links.txt
+aloha_flask_creator.egg-info/entry_points.txt
+aloha_flask_creator.egg-info/requires.txt
+aloha_flask_creator.egg-info/top_level.txt
+project_creator/__init__.py
+project_creator/create_project.py
