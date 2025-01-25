@@ -1,0 +1,11 @@
+cardcanvas/__init__.py,sha256=73neuboJYY8iSEcTHbHuDGCixIzBy7t0b6XpCb-VzLo,73
+cardcanvas/card_manager.py,sha256=03EB_xJI4nNc6JFooEAUWmttZzceGJ26nGITw2IkYdc,7269
+cardcanvas/helpers.py,sha256=zyMK1ILByQfoZa9zv5ZwFTPmkIP62dMOr_TkTb0H66g,736
+cardcanvas/main.py,sha256=rXyUD_662qYYd2x0sR5jwaQTkwUd4bjD66thpjXHNBQ,21995
+cardcanvas/settings.py,sha256=_GSBogc2OgTUehnAlyK1RupQOK4M2yh9mdFaJOl3c7U,19
+cardcanvas/ui.py,sha256=ooUSJJPPL4iGKVRudi9KZ-Z5jRu80tZdfo5PYNSwfpw,6430
+cardcanvas/assets/main.css,sha256=salQ8IIClDpevkElLwzwUzTZ4Qr87IQdce6nslCKcPE,294
+cardcanvas-0.1.0.dist-info/METADATA,sha256=W7JLiLpf9R1dXTFnBue-UZP6avtdI1l95f73TzPPlsw,4216
+cardcanvas-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cardcanvas-0.1.0.dist-info/licenses/LICENSE,sha256=Rqm1Ic8TWBEPY9sIhNx9HChZeeFL_Gsbo1q1inwk_5w,1072
+cardcanvas-0.1.0.dist-info/RECORD,,
