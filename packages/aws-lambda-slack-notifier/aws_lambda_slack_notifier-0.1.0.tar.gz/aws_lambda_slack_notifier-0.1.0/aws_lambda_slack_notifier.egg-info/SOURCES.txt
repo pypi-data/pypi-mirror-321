@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+aws_lambda_slack_notifier.egg-info/PKG-INFO
+aws_lambda_slack_notifier.egg-info/SOURCES.txt
+aws_lambda_slack_notifier.egg-info/dependency_links.txt
+aws_lambda_slack_notifier.egg-info/requires.txt
+aws_lambda_slack_notifier.egg-info/top_level.txt
+slack_notifier/__init__.py
+slack_notifier/notifier.py
