@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/functionlib/__init__.py
+src/functionlib/__main__.py
+src/functionlib.egg-info/PKG-INFO
+src/functionlib.egg-info/SOURCES.txt
+src/functionlib.egg-info/dependency_links.txt
+src/functionlib.egg-info/top_level.txt
+src/functionlib/core/__init__.py
+src/functionlib/tests/__init__.py
+src/functionlib/tests/test_1984.py
