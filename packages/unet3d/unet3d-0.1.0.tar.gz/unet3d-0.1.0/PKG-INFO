@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: unet3d
+Version: 0.1.0
+Summary: Single-file PyTorch implementations of 3D UNets
+License: MIT
+Author: codingfisch
+Author-email: l_fisc17@wwu.de
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: torch
+Project-URL: Repository, https://github.com/codingfisch/unet3d
+Description-Content-Type: text/markdown
+
+# unet3d
+`pip install unet3d` to get single-file implementations of 3D UNet architectures for 3D image segmentation!
+
+## Usage 💡
+Run a `UNet3d`...
+```python
+import torch
+from unet3d import UNet3d, LinkNet3d
+
+unet = UNet3d(c_in=1, c_out=2, c_start=8, layers=4)
+x = torch.rand(1, 1, 64, 64, 64)
+output = unet(x)
+print(output.shape)  # (1, 2, 64, 64, 64)
+```
+...or a `LinkNet3d`—a more compute efficient UNet variant—on `torch.rand`om data 🤓
+```python
+linknet = LinkNet3d(c_in=1, c_out=2, c_start=8, layers=4)
+x = torch.rand(1, 1, 64, 64, 64)
+output = linknet(x)
+print(output.shape)  # (1, 2, 64, 64, 64)
+```
+
