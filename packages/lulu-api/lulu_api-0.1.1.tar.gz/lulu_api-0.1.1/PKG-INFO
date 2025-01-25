@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: lulu_api
+Version: 0.1.1
+Summary: Un package pour l'API Lulu
+Home-page: https://github.com/LoomingPlatform/looming-ai/packages/lulu_api
+Author: Looming Team
+Author-email: devteam@looming.zone
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
