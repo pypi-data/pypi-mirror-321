@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sigmoidNN/__init__.py
+sigmoidNN/loader.py
+sigmoidNN/network.py
+sigmoidNN.egg-info/PKG-INFO
+sigmoidNN.egg-info/SOURCES.txt
+sigmoidNN.egg-info/dependency_links.txt
+sigmoidNN.egg-info/requires.txt
+sigmoidNN.egg-info/top_level.txt
+sigmoidNN/data/mnist.pkl.gz
+tests/test_network.py
