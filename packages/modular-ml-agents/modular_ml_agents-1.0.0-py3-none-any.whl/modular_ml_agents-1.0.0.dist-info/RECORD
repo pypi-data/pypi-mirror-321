@@ -1,0 +1,14 @@
+modular_ml_agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modular_ml_agents/custom_ppo_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modular_ml_agents/custom_ppo_plugin/action_model_aggregated.py,sha256=oLbaCl5OJXIfetpuk2dntrwHxCKq7-arXAeyFOXBaPw,9197
+modular_ml_agents/custom_ppo_plugin/optimizer.py,sha256=76tFvQEaqrDEBZbXEVAq1w7e-cQspqPgCy_ttgD4mlM,8018
+modular_ml_agents/custom_ppo_plugin/trainer.py,sha256=2iUW5l3zeIc7clHu41dn_qo38wg1HoIOFV9VD6r6PHs,8747
+modular_ml_agents/custom_ppo_plugin/wrapper_actor.py,sha256=FS6UZWJYEDcVCODJQ1JlIJhLS75h_JXN708BofP2i7U,9482
+modular_ml_agents/custom_ppo_plugin/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modular_ml_agents/custom_ppo_plugin/layers/brain_mlp.py,sha256=MqZP8KsiC1EFt9t-S2nX8BTsAWWtbPDIZOdoNjG58dI,6650
+modular_ml_agents-1.0.0.dist-info/LICENSE,sha256=SFxSaa9OPEOmSMOLdL8iYBPi240ZA90nkNN30yJLzJU,1093
+modular_ml_agents-1.0.0.dist-info/METADATA,sha256=aUmZa19Hz2a8xpihqvGh5EKPN5WWQgzu1ovJFNUBf5s,1968
+modular_ml_agents-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+modular_ml_agents-1.0.0.dist-info/entry_points.txt,sha256=p74DXMEDhuW8_yLwOfkUoPEwMR-pvovjaTvCVHYo_C0,102
+modular_ml_agents-1.0.0.dist-info/top_level.txt,sha256=TnGiu6o1LzjqL6uSze-B8D14LTm5YgJqgKOckPLQUdo,18
+modular_ml_agents-1.0.0.dist-info/RECORD,,
