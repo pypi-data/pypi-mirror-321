@@ -1,0 +1,2 @@
+[console_scripts]
+telethon_client_wrapper = telethon_client_wrapper.client:create_client
