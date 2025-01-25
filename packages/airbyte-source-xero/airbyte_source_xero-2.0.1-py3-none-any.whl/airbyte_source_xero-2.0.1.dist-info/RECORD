@@ -1,0 +1,10 @@
+main.py,sha256=yFc5NRoRO8cyEFH2PnOcDy8Y-cIzdY4Hu4NleIZeJD8,133
+source_xero/__init__.py,sha256=ANNjwj5G0mgT3popG5vtrgVPqCbJ0tpKSwS3z64zv6E,120
+source_xero/components.py,sha256=IYacTUlDBcZS55UVzkSab30Z4yXvM-iiUXWNPRPjDro,4003
+source_xero/manifest.yaml,sha256=UWIuORV-4Fx90g-ypcesySc2x2CKUIdjQdh7lvRrM0E,62572
+source_xero/run.py,sha256=muwLyDmYZYQpEcwk8Mb245sPNkc_HqwbK3mpB3ZqL6Q,225
+source_xero/source.py,sha256=iwq2o2xKO-TFpBAV1gS0GdlNlBPfByknLTx--M1dqRg,474
+airbyte_source_xero-2.0.1.dist-info/METADATA,sha256=hT4nQLt8ebhwrgTQBwhgp-ZA5ovdSh83TORRyRLJA_Q,5847
+airbyte_source_xero-2.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+airbyte_source_xero-2.0.1.dist-info/entry_points.txt,sha256=Kg1WzdmhR1_9AVIXv_Pi_tQbMcEtG_LgeUbnfLK3EhE,51
+airbyte_source_xero-2.0.1.dist-info/RECORD,,
