@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+crimson_agent/__init__.py
+crimson_agent/agent.py
+crimson_agent/social.py
+crimson_agent/tools.py
+crimson_agent.egg-info/PKG-INFO
+crimson_agent.egg-info/SOURCES.txt
+crimson_agent.egg-info/dependency_links.txt
+crimson_agent.egg-info/not-zip-safe
+crimson_agent.egg-info/requires.txt
+crimson_agent.egg-info/top_level.txt
+tests/test_crimson_agent.py
+tests/test_social.py
+tests/test_tools.py
