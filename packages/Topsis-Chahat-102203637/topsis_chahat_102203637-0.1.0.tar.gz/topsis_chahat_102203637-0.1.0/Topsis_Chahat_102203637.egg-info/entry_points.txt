@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-cli = topsis.Chahat_102203637:main
