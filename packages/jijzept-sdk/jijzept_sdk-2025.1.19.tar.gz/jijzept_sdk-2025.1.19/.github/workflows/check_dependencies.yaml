@@ -1,0 +1,32 @@
+name: Check Dependencies
+on:
+  workflow_dispatch:
+  workflow_call:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  check:
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: pip install ".[all]"
+  # Dependabodによる更新で依存関係が壊れていた場合のみ、Slackへ通知する
+  notify:
+    runs-on: ubuntu-latest
+    needs: check
+    if: ${{ failure() && github.actor == 'dependabot[bot]' }}
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    steps:
+      - uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: '{"text": "Dependabotによる依存関係の更新に失敗しました: <https://github.com/Jij-Inc/JijZeptSDK|JijZeptSDK> "}'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
