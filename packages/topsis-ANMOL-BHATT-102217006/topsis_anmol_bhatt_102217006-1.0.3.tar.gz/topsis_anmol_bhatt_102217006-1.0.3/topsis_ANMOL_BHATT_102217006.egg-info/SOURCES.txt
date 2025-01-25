@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+topsis/__init__.py
+topsis/topsis.py
+topsis_ANMOL_BHATT_102217006.egg-info/PKG-INFO
+topsis_ANMOL_BHATT_102217006.egg-info/SOURCES.txt
+topsis_ANMOL_BHATT_102217006.egg-info/dependency_links.txt
+topsis_ANMOL_BHATT_102217006.egg-info/entry_points.txt
+topsis_ANMOL_BHATT_102217006.egg-info/requires.txt
+topsis_ANMOL_BHATT_102217006.egg-info/top_level.txt
