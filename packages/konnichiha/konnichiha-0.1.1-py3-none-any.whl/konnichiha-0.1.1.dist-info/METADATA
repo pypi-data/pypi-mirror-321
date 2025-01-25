@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: konnichiha
+Version: 0.1.1
+Summary: A Python project named konnichiha
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: build
+Requires-Dist: twine
+Requires-Dist: maturin
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# konnichiha
+
+A new Python project.
+
+
+## Installation
+
+```bash
+source .konnichiha/bin/activate
+uv pip install ".[dev]"
+```
+
