@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+datos_mex/banxico/__init__.py
+datos_mex/banxico/_indicadores.py
+datos_mex/data_format/__init__.py
+datos_mex/data_format/_auxiliar.py
+datos_mex/datos_mex.egg-info/PKG-INFO
+datos_mex/datos_mex.egg-info/SOURCES.txt
+datos_mex/datos_mex.egg-info/dependency_links.txt
+datos_mex/datos_mex.egg-info/top_level.txt
+datos_mex/inegi/__init__.py
+datos_mex/inegi/_banco_de_indicadores.py

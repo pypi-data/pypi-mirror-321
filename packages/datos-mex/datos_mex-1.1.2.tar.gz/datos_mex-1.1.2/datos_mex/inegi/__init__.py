@@ -1,0 +1,1 @@
+from ._banco_de_indicadores import banco_de_indicadores
