@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: mriaug
+Version: 0.0.1
+Summary: Augment 3D images (e.g. MRIs) in PyTorch 🔥
+License: MIT
+Author: codingfisch
+Author-email: l_fisc17@wwu.de
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: torch
+Project-URL: Repository, https://github.com/codingfisch/mriaug
+Description-Content-Type: text/markdown
+
+# mriaug
+
