@@ -1,0 +1,14 @@
+cloudcoil/models/kyverno/__init__.py,sha256=YoVZSn9atSAUwgsiwAHKAr-2z9VDyNyelbCCzSjP-R4,277
+cloudcoil/models/kyverno/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudcoil/models/kyverno/v1.py,sha256=D9egA_8FPg8h7DZ_Mu6Z1XgTzjY9ToSUDZvPl1OOQYQ,132692
+cloudcoil/models/kyverno/v1alpha2.py,sha256=kb3FvE7Q5MVWbWK6Yl9c8T7iMG8faaG8H3p7zDxNR3Q,15232
+cloudcoil/models/kyverno/v1beta1.py,sha256=NDe758ARk1rTOgDCxB5tzDcg5o1RUgmuU8AT6-fZAoc,12935
+cloudcoil/models/kyverno/v2.py,sha256=vfxJdp0xr8Iok-AxhSMBFbKkZH_KGVq3ncl8dsiPJJA,66819
+cloudcoil/models/kyverno/v2alpha1.py,sha256=zSqBryQeqGp4f41XxU2N6pW4sP8Qf-F0HrQAyUgaKfU,8317
+cloudcoil/models/kyverno/v2beta1.py,sha256=ZK_xWVAlcVv1cTjZQljCFKMmOgKwCTJhyNbaeB444hI,195548
+cloudcoil/models/kyverno/reports/__init__.py,sha256=4ED2et2IdJ-DzqHZB07pZjX2tOZN7qtYTDE30JTAom8,85
+cloudcoil/models/kyverno/reports/v1.py,sha256=3j5hETHKw13iidfPPz8iaZ476O2Hkn9vpe1y2Pu9hnU,12411
+cloudcoil_models_kyverno-1.12.7.0.dist-info/METADATA,sha256=irjhwSAzF6XJY0Dk09FRwfGjLlB69h9ABocwdK8bUxE,1086
+cloudcoil_models_kyverno-1.12.7.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloudcoil_models_kyverno-1.12.7.0.dist-info/licenses/LICENSE,sha256=9mpycVvCCD7ofOehOGlZDoT8wntDVXA9O6MZJv6Hh4E,11345
+cloudcoil_models_kyverno-1.12.7.0.dist-info/RECORD,,
