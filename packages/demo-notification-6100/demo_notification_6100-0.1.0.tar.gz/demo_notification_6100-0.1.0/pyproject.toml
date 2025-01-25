@@ -1,0 +1,13 @@
+[project]
+name = "demo_notification_6100"
+version = "0.1.0"
+description = "Notification System"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "requests>=2.27.1",
+    "twine>=3.8.0",
+]

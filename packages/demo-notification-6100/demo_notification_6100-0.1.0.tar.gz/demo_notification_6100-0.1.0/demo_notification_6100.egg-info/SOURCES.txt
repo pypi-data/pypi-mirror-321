@@ -1,0 +1,8 @@
+LICENSE
+README.md
+notifier.py
+pyproject.toml
+demo_notification_6100.egg-info/PKG-INFO
+demo_notification_6100.egg-info/SOURCES.txt
+demo_notification_6100.egg-info/dependency_links.txt
+demo_notification_6100.egg-info/top_level.txt
