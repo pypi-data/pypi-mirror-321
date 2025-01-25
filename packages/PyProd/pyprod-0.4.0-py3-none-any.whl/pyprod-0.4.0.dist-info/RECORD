@@ -1,0 +1,11 @@
+pyprod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyprod/__main__.py,sha256=Vdhw8YA1K3wPMlbJQYL5WqvRzAKVeZ16mZQFO9VRmCo,62
+pyprod/main.py,sha256=w8xm7Dz4eXF6D6FhZuxlPfU24KpnXciJLuAMT6_y3zI,2808
+pyprod/prod.py,sha256=Vu376JyNqiieCMy8jVvBml3TAf32Pq4XxSdpC4bBdgY,18424
+pyprod/utils.py,sha256=hvqeZhXyVAsHAdPUG6LhBOs2dMVXuDUWBYiIPBcsoKw,391
+pyprod/venv.py,sha256=lRTYxvtX876FQ9-bTYmsOHYV3nuMkKHO5hTLog0iHro,1085
+pyprod-0.4.0.dist-info/METADATA,sha256=zkpPbp07U627hgqWE6yDYGe_dZEDQTCiE3FidIfQ5mM,2652
+pyprod-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyprod-0.4.0.dist-info/entry_points.txt,sha256=zFycf8BYSMRDTiI0jftmcvtkf9XM4MZ4BL3JaIer_ZM,44
+pyprod-0.4.0.dist-info/licenses/LICENSE,sha256=OtPgwnlLrsVEYPnTraun5AqftAT5vUv4rIan-qYj7nE,1071
+pyprod-0.4.0.dist-info/RECORD,,
