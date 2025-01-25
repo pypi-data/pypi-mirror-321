@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Flask-Embed"
+version = "0.0.1"
+description = "A Flask extension for embedding python code directly in HTML templates."
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+  { name="Jaton Justice", email="jaton@pythonicit.com" }
+]
+license = {file = "LICENSE"}
+keywords = ["flask", "embed", "jinja", "extension"]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/Masterjx9/Flask-Embed"
+"Source" = "https://github.com/Masterjx9/Flask-Embed"
+"Tracker" = "https://github.com/yourusername/flask-embed/issues"

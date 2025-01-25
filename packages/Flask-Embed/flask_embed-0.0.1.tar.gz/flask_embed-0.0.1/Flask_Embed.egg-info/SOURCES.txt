@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+Flask_Embed.egg-info/PKG-INFO
+Flask_Embed.egg-info/SOURCES.txt
+Flask_Embed.egg-info/dependency_links.txt
+Flask_Embed.egg-info/top_level.txt
+flask_embed/__init__.py
