@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+iode/__init__.py
+iode.egg-info/PKG-INFO
+iode.egg-info/SOURCES.txt
+iode.egg-info/dependency_links.txt
+iode.egg-info/requires.txt
+iode.egg-info/top_level.txt
