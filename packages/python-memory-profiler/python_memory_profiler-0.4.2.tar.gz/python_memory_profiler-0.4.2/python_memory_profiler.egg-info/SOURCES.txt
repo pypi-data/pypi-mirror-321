@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+examples/numpy_arrays_profiling.py
+examples/numpy_arrays_profiling_custom.py
+examples/profiler_data/array_handler/memory_plot_array_handler_450155_data.png
+memory_profiler/decorators.py
+memory_profiler/src/plottrace.py
+memory_profiler/src/profiler.py
+memory_profiler/src/configs/config.yaml
+python_memory_profiler.egg-info/PKG-INFO
+python_memory_profiler.egg-info/SOURCES.txt
+python_memory_profiler.egg-info/dependency_links.txt
+python_memory_profiler.egg-info/requires.txt
+python_memory_profiler.egg-info/top_level.txt
+tests/src_test.py
