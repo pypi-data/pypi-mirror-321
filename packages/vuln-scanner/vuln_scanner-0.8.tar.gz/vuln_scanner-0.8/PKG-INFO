@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vuln_scanner
+Version: 0.8
+Summary: مكتبة للكشف عن ثغرات XSS، SQL Injection، LFI، و RFI
+Home-page: https://github.com/AL-MHIB
+Author: ALMHEB
+Author-email: appasqw107@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+# 🔒 vuln_scanner
+
+مكتبة Python متخصصة في فحص واكتشاف أبرز الثغرات الأمنية في المواقع مثل:
+
+- ✅ **XSS (Cross-Site Scripting)**
+- ✅ **SQL Injection (SQLi)**
+- ✅ **Local File Inclusion (LFI)**
+- ✅ **Remote File Inclusion (RFI)**
+- ✅ **Sensitive Files & Directories Scanner**
+
+---
+###
