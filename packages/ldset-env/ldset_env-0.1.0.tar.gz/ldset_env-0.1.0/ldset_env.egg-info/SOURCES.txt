@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ldset_env.egg-info/PKG-INFO
+ldset_env.egg-info/SOURCES.txt
+ldset_env.egg-info/dependency_links.txt
+ldset_env.egg-info/entry_points.txt
+ldset_env.egg-info/top_level.txt
