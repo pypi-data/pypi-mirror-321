@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: OddEven-SP
+Version: 1.2.0
+Summary: So, welcome to my first ever Python Project! That is a game based on Odd Even, but with a twist of Cricket!
+Home-page: https://github.com/Aarav2709/OddEven-SP
+Author: Aarav Gupta
+Author-email: tribejustice35@gmail.com
+License: Apache License v2
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
