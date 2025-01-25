@@ -1,0 +1,173 @@
+import numpy as np
+import warnings
+
+try:
+    from scipy.spatial.transform import Rotation
+except ImportError:
+    Rotation = None
+
+from veux.utility.earcut import earcut
+
+
+class Extrusion:
+    """
+    A utility class that, given a structural model with beam/frame elements,
+    performs an extrusion of each element's cross-section rings and end caps.
+
+    It accumulates:
+      - `positions` (list of 3D points for each ring vertex)
+      - `triangles` (list of triangular faces for side surfaces + end caps)
+      - `ring_ranges` so we know which subset of vertices belong to each ring
+      - **Optionally** a transform for each ring (element_name, j), if you want it.
+
+    Typical usage:
+        e = Extrusion(model, scale=1.0)
+        verts = e.vertices()          # Nx3 array of float
+        tris  = e.triangles()         # Mx3 array of integer indices
+        rings = e.ring_ranges()       # [((elem, j), start_idx, end_idx), ...]
+    
+    Then feed these into your rendering pipeline (e.g. glTF, or anything else).
+    """
+    def __init__(self, model, scale=1.0, do_end_caps=True, earcut_fn=earcut):
+        """
+        :param model:  Dictionary-like structural model with "assembly",
+                       "cell_section", "frame_orientation", etc.
+        :param scale:  Uniform scale factor for cross-sectional outline
+        :param do_end_caps: Whether to triangulate and add end caps
+        :param earcut_fn: A function that triangulates a 2D outline (N,2)-> list of (i0,i1,i2)
+        """
+        self.model = model
+        self.scale = scale
+        self.do_end_caps = do_end_caps
+        self.earcut = earcut_fn
+
+        self._positions = []    # Accumulate Nx3 float positions
+        self._triangles = []    # Accumulate Mx3 int triangles
+        self._ring_ranges = []  # [((element_name, j), start_idx, end_idx), ...]
+
+        self._build_extrusion()
+
+    def _build_extrusion(self):
+        """
+        Loops over each element in self.model["assembly"],
+        accumulates side faces, end caps, and tracks ring ranges.
+        """
+        assembly = self.model["assembly"]
+        global_vertex_offset = 0
+
+        for element_name, el in assembly.items():
+            outline_0 = self.model.cell_section(element_name, 0)
+            if outline_0 is None:
+                # No cross-section for this element
+                continue
+
+            # Coordinates of the element’s nodes in reference config
+            X = np.array(el["crd"])   # shape: (nen, 3)
+            nen = len(X)              # number of element nodes
+            noe = len(outline_0)      # number of points in cross-section outline
+
+            if noe < 2 or nen < 1:
+                continue
+
+            # We scale the "outline" in the local cross-section directions
+            # (often that means outline_j[:,1:] *= scale, depending on your orientation convention)
+            # But let's do it ring-by-ring in the loop below if needed.
+            outline_scale = self.scale
+
+            # Build side faces for each ring j
+            for j in range(nen):
+                ring_start = len(self._positions)
+
+                # Outline for ring j
+                outline_j = self.model.cell_section(element_name, j)
+                if outline_j is None:
+                    # fallback
+                    outline_j = outline_0.copy()
+                else:
+                    outline_j = outline_j.copy()
+
+                # scale the local Y,Z portion if that's your convention
+                outline_j[:,1:] *= outline_scale
+
+                # Accumulate ring vertices
+                for k, pt in enumerate(outline_j):
+                    self._positions.append(pt.astype(float))
+
+                    # Build side faces (connect ring j to ring j-1)
+                    if j > 0 and k < noe - 1:
+                        self._triangles.append([
+                            global_vertex_offset + noe*j + k,
+                            global_vertex_offset + noe*j + (k+1),
+                            global_vertex_offset + noe*(j-1) + k
+                        ])
+                        self._triangles.append([
+                            global_vertex_offset + noe*j + (k+1),
+                            global_vertex_offset + noe*(j-1) + (k+1),
+                            global_vertex_offset + noe*(j-1) + k
+                        ])
+                    elif j > 0 and k == (noe - 1):
+                        # wrap-around for side faces
+                        self._triangles.append([
+                            global_vertex_offset + noe*j + k,
+                            global_vertex_offset + noe*j,
+                            global_vertex_offset + noe*(j-1) + k
+                        ])
+                        self._triangles.append([
+                            global_vertex_offset + noe*j,
+                            global_vertex_offset + noe*(j-1),
+                            global_vertex_offset + noe*(j-1) + k
+                        ])
+
+                ring_end = len(self._positions)
+
+                # Record ring range
+                self._ring_ranges.append(((element_name, j), ring_start, ring_end))
+
+            # End caps (optional)
+            if self.do_end_caps and self.earcut is not None:
+                try:
+                    # front cap = ring j=0
+                    front_outline = self.model.cell_section(element_name, 0)[:,1:].copy()
+                    front_outline *= outline_scale
+                    front_tris = self.earcut(front_outline)
+                    j0_offset = global_vertex_offset
+
+                    for tri in front_tris:
+                        self._triangles.append([
+                            j0_offset + tri[0],
+                            j0_offset + tri[1],
+                            j0_offset + tri[2]
+                        ])
+
+                    # back cap = ring j=nen-1
+                    back_outline = self.model.cell_section(element_name, nen-1)[:,1:].copy()
+                    back_outline *= outline_scale
+                    back_tris = self.earcut(back_outline)
+                    jN_offset = global_vertex_offset + noe*(nen-1)
+
+                    for tri in back_tris:
+                        self._triangles.append([
+                            jN_offset + tri[0],
+                            jN_offset + tri[1],
+                            jN_offset + tri[2]
+                        ])
+                except Exception as e:
+                    warnings.warn(f"Earcut failed on element '{element_name}': {e}")
+
+            # Increase global offset now that we’ve processed all nen rings
+            global_vertex_offset += nen * noe
+
+    def vertices(self):
+        """Return Nx3 float array of all vertex positions."""
+        return np.array(self._positions, dtype=float)
+
+    def triangles(self):
+        """Return Mx3 int array of triangle faces."""
+        return np.array(self._triangles, dtype=int)
+
+    def ring_ranges(self):
+        """
+        Return a list of ((element_name, ring_j), start_idx, end_idx).
+        The vertex indices in [start_idx:end_idx] belong to that ring.
+        """
+        return self._ring_ranges
