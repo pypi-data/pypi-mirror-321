@@ -1,0 +1,4 @@
+[run]
+omit=
+    matplotlib_scalebar/_version.py
+    matplotlib_scalebar/test_*.py
