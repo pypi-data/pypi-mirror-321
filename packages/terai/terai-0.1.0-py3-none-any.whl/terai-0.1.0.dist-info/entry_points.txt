@@ -1,0 +1,3 @@
+[console_scripts]
+tai=terminal_ai.main:main
+
