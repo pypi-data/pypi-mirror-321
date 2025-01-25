@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Krish_102203848.egg-info/PKG-INFO
+Topsis_Krish_102203848.egg-info/SOURCES.txt
+Topsis_Krish_102203848.egg-info/dependency_links.txt
+Topsis_Krish_102203848.egg-info/entry_points.txt
+Topsis_Krish_102203848.egg-info/requires.txt
+Topsis_Krish_102203848.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py
