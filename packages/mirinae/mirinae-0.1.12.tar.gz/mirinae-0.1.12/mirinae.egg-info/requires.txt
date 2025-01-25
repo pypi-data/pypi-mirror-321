@@ -1,0 +1,6 @@
+requests
+type_docopt
+pydantic
+pandas
+matplotlib
+networkx
