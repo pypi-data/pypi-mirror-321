@@ -1,0 +1,11 @@
+db2az/__init__.py,sha256=XN4tnplI5H7HS65t5dofZ02_q7JSSHidx75lfZS4_LE,115
+db2az/cli/__init__.py,sha256=kIsx0dq1sEc1t2L3VlG84SRYDQK-V8CYXY-CdMgDF8o,28
+db2az/cli/cli.py,sha256=T5Ro4eO82J4o7PJg9hCCNG2e5_E5QNh3ANPaQAmT_94,6094
+db2az/utils/__init__.py,sha256=IPSsv9LB1I5F1OYPEexr_WfpGFFce0lUR8kcohqA8Dw,32
+db2az/utils/utils.py,sha256=5i2R5g99t3yPR4hj8tpjPa2FJgJLfWBLK0q46lRfBzs,1607
+db2azure_cli-1.0.1.dist-info/LICENSE,sha256=Ybq7oGIftjJwM4P87VNJhdtIG1Z3-awe8MWKvJ3HabY,1064
+db2azure_cli-1.0.1.dist-info/METADATA,sha256=SXV8kdH8ftcoUHySeiQauIEypRrFW1v1QWIcbEKR5mg,4739
+db2azure_cli-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+db2azure_cli-1.0.1.dist-info/entry_points.txt,sha256=T3RvIwUPnrthYFpH0-vsDkSw2seK2OQjBwAs5f-h14Q,40
+db2azure_cli-1.0.1.dist-info/top_level.txt,sha256=cR0yllGflCldxW0rkkyqdyWyDbzjAwHsDVrcGdv_w7M,6
+db2azure_cli-1.0.1.dist-info/RECORD,,
