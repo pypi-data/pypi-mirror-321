@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/automlst.cli.egg-info/PKG-INFO
+src/automlst.cli.egg-info/SOURCES.txt
+src/automlst.cli.egg-info/dependency_links.txt
+src/automlst.cli.egg-info/entry_points.txt
+src/automlst.cli.egg-info/requires.txt
+src/automlst.cli.egg-info/top_level.txt
+src/automlst/cli/__init__.py
+src/automlst/cli/info.py
+src/automlst/cli/meta.py
+src/automlst/cli/program.py
+src/automlst/cli/st.py

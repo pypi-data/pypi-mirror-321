@@ -1,0 +1,2 @@
+[console_scripts]
+automlst = automlst.cli.program:run
