@@ -1,0 +1,64 @@
+# Charon VNA
+
+Named after [Pluto's moon](https://en.wikipedia.org/wiki/Charon_(moon)), Charon uses the [ADI Pluto SDR](https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) as a vector network analyzer. The basic usage is as a 1 port VNA but this can be extended to arbitrarily many ports with the addition of a couple RF switches.
+
+## Installation
+
+1. Install LibIIO. This is a dependency of [PyADI-IIO](https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio).
+On Ubuntu 22.04 just run `sudo apt-get install -y libiio-dev`
+
+2. `pip install charon-vna`
+
+## Hardware Setup
+
+You need a few things:
+- [Analog Devices Pluto SDR](https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html)
+  - Any variant of the Pluto *should* work too such as the [Pluto+](https://github.com/plutoplus/plutoplus?tab=readme-ov-file) however I have only tested with the basic flavor
+  - Note that you _must_ have two receive ports which means revision C or later of the basic Pluto
+- Directional couplers (1 per port up to 4 ports)
+  - I have been using [AAMCS-UDC-0.5G-18G-10dB-Sf](http://www.aa-mcs.com/wp-content/uploads/documents/AAMCS-UDC-0.5G-18G-10dB-Sf.pdf)
+- Charon switch board  - coming soon.
+  - Optional. Without this you'll be limited to S11 and uncalibrated S21 measurements (with required re-cabling)
+  - There's nothing special about this particular board, if you want more than 4 ports you can make your own pretty easily. You just need 3 SPxT switches. Note that these switches will see tons of cycles so avoid mechanical switches
+- SMA cables
+- Calibration standard
+  - Ideally something with s-parameters measured on a better VNA
+  - I have used a basic SMA load and two modified SMA jacks with decent results
+
+### Pluto Configuration
+
+Most of my testing is with Pluto firmware [v0.39](https://github.com/analogdevicesinc/plutosdr-fw/releases/tag/v0.39) though this may work with other firmware versions. I had issues with the Pluto sometimes seeing no signal which resolved when I upgraded from v0.35. Instructions for upgrading firmware are on the [Analog Devices wiki](https://wiki.analog.com/university/tools/pluto/users/firmware).
+
+We need two receive channels on the SDR. If you have a Pluto+ that should already be configured and you can skip this step.
+
+Analog devices has a [guide](https://wiki.analog.com/university/tools/pluto/users/customizing#updating_to_the_ad9364) for enabling the second channel. Ideally this should be set as `ad9361` to enable a wider band of operation in addition to the second channel, however the critical setting is enabling 2r2t. SSH into the Pluto and run the following:
+```bash
+fw_setenv attr_name compatible
+fw_setenv attr_val ad9361
+fw_setenv mode 2r2t
+```
+
+## Usage
+
+There will be some sort of GUI because that sounds useful.
+It will also be accessible over a socket to enable test automation with external (including non-python) code.
+
+### Calibration
+
+TBD
+
+### Power Calibration
+I include a default output power lookup table. This is derived from two TX channels of two Pluto SDRs and does not include any of the loss of a coupler or Charon switch board.
+
+Absolute output power is generally not well calibrated for VNAs anyway and has negligible impact on most measurements so this is probably sufficient for most users. If you're trying to run a power sweep this may be insufficient.
+
+If you have an RF power meter you can generate your own power calibration.
+
+Note that unlike the main calibration, power calibration frequencies do not need to match the measurement frequencies. Values are interpolated.
+
+## References
+
+#### Pluto Default Connection Settings
+user: `root`
+password: `analog`
+ip: `192.168.2.1`
