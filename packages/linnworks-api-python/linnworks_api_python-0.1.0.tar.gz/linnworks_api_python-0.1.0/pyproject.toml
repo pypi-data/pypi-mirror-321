@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "linnworks-api-python"
+version = "0.1.0"
+description = "Linnworks API Python Client"
+authors = ["Brian Peterson <brian.peterson@cloudshift.cc>"]
+homepage = "https://github.com/cloudshiftstrategies/linnworks-api-python"
+readme = "README.md"
+packages = [{include = "linnworks_api", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pydantic = "^2.10"
+python-dateutil = "^2.9"
+requests = "^2.32"
+
+[tool.poetry.group.dev.dependencies]
+openapi-generator-cli = "^7.10.0.post0"
+pytest = "^8.3.4"
+python-dotenv = "^1.0.1"
+black = "^24.10.0"
+autoflake = "^2.3.1"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [ "tests" ]
+
+[tool.black]
+line-length = 120
+extend-exclude = "(src/linnworks_api/generated|PublicApiSpecs)"
+
+[tool.semantic_release]
+branch = "main"
+version_toml = [ "pyproject.toml:tool.poetry.version" ]
+version_variables = [ 
+    "src/linnworks_api/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+commit_message = "chore(release): bump version to {version}"

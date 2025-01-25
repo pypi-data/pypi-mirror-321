@@ -1,0 +1,29 @@
+# WarehouseTransferDeleteEmptyDraftTransferRequest
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**pk_transfer_id** | **str** | The id of the transfer to be deleted. | [optional] 
+
+## Example
+
+```python
+from linnworks_api.generated.warehousetransfer.models.warehouse_transfer_delete_empty_draft_transfer_request import WarehouseTransferDeleteEmptyDraftTransferRequest
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of WarehouseTransferDeleteEmptyDraftTransferRequest from a JSON string
+warehouse_transfer_delete_empty_draft_transfer_request_instance = WarehouseTransferDeleteEmptyDraftTransferRequest.from_json(json)
+# print the JSON string representation of the object
+print(WarehouseTransferDeleteEmptyDraftTransferRequest.to_json())
+
+# convert the object into a dict
+warehouse_transfer_delete_empty_draft_transfer_request_dict = warehouse_transfer_delete_empty_draft_transfer_request_instance.to_dict()
+# create an instance of WarehouseTransferDeleteEmptyDraftTransferRequest from a dict
+warehouse_transfer_delete_empty_draft_transfer_request_from_dict = WarehouseTransferDeleteEmptyDraftTransferRequest.from_dict(warehouse_transfer_delete_empty_draft_transfer_request_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
