@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+topsis_Tanisha_102203818.egg-info/PKG-INFO
+topsis_Tanisha_102203818.egg-info/SOURCES.txt
+topsis_Tanisha_102203818.egg-info/dependency_links.txt
+topsis_Tanisha_102203818.egg-info/entry_points.txt
+topsis_Tanisha_102203818.egg-info/requires.txt
+topsis_Tanisha_102203818.egg-info/top_level.txt
