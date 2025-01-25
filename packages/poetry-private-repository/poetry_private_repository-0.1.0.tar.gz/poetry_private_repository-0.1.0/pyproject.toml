@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "poetry-private-repository"
+version = "0.1.0"
+description = ""
+authors = ["mahfooz.iiitian <mahfooz.iiitian@gmail.com>"]
+readme = "README.md"
+
+packages = [{ include = "*", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.test.dependencies]
+pytest-sugar = "^1.0.0"
+pytest-cov = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+ruff = "^0.9.2"
+isort = "^5.13.2"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+# isort
+isort_check = "poetry run isort --check-only src tests"
+isort_fix = "poetry run isort src tests"
+isort = "task isort_check && task isort_fix"
+
+# fromatting
+format_check = "poetry run ruff check src tests"
+format_fix = "poetry run ruff format src tests"
+format = "task format_check && task format_fix "
+
+# linting
+lint = "poetry run flake8 src tests"
+
+# tests
+test = "poetry run pytest -vv tests"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
