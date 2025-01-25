@@ -1,0 +1,31 @@
+[project]
+name = "jupyter-translation"
+version = "0.1.0"
+description = "Translate Jupyter Notebooks using Google Translate"
+readme = "README.md"
+authors = [
+    { name = "numgrade", email = "num@numgrade.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "googletrans>=4.0.2",
+    "nbformat>=5.10.4",
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+jupyter-translation = "jupyter_translation.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "bandit>=1.8.2",
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.2",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+    "tox-uv>=1.19.0",
+]
