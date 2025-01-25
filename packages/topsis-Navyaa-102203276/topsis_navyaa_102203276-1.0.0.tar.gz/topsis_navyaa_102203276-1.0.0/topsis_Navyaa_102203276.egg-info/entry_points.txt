@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_Navyaa_102203276.topsis:topsis
