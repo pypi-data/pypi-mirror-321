@@ -1,0 +1,8 @@
+slt_datasets/SLTDataset.py,sha256=0o3ZUpwLY9ghWyY3Jg-1wZTqyuXJIm5MDPKeA1jOqpw,6714
+slt_datasets/WordLevelTokenizer.py,sha256=2YUBPto9OxGZn2BZ50o4pdu0R8HP3Gknr7_hZdqoeEI,2849
+slt_datasets/__init__.py,sha256=ALI-qI9rGthBVlElLmy56cO13FBmiCpkdvQmgUd1S18,374
+slt_datasets/dataset_comparison.ipynb,sha256=5cX6anKK_uw6fklm565AZSG1KhIkOujKJVSJN2EfRjE,341989
+slt_datasets-0.0.2rc24.post1.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+slt_datasets-0.0.2rc24.post1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+slt_datasets-0.0.2rc24.post1.dist-info/METADATA,sha256=nIIYdBGGCiN9u67NBVqik2WX8DPhOD39zk2DNmc1apY,16984
+slt_datasets-0.0.2rc24.post1.dist-info/RECORD,,
