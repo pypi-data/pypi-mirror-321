@@ -1,0 +1,5 @@
+src/response_codes/__init__.py,sha256=phOjX-QgxOWbhrCYYJfaHse01x3l1rM5Gtp5KxiQaJM,32246
+src/response_codes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+http_response_codes-0.1.0.dist-info/METADATA,sha256=zGQzyDxEOvaL49WefLfvU9ejpQkr_utnHnqnA8JgEeI,4886
+http_response_codes-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+http_response_codes-0.1.0.dist-info/RECORD,,
