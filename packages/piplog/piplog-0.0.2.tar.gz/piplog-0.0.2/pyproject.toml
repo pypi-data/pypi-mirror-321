@@ -1,0 +1,31 @@
+[project]
+name = "piplog"
+version = "0.0.2"
+authors = [
+  { name="Alicia Sun", email="asun0102@gmail.com" },
+  { name="Kenneth Xiao", email="kdxiao@uwaterloo.ca" }
+]
+description = "Logs your pip install history"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = { text = "MIT" }
+
+[project.urls]
+Homepage = "https://github.com/Alicia-Sun/piphistory"
+Issues = "https://github.com/Alicia-Sun/piphistory/issues"
+
+# This line creates the CLI command "piplog"
+[project.scripts]
+piplog = "piplog.piplog:main"
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
