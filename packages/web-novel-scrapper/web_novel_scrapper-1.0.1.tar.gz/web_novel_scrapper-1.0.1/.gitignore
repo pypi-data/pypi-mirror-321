@@ -1,0 +1,14 @@
+**.jpg
+**.png
+**.html
+**/tmp
+**/output
+**.epub
+**/__pycache__
+test.py
+**/.env
+**.txt
+!requirements.txt
+**/novelas
+web_novel_scrapper/web_novel_scrapper**
+dist
