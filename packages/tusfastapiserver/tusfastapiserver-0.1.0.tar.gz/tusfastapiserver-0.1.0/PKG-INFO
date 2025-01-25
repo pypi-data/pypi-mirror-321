@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tusfastapiserver
+Version: 0.1.0
+Summary: 
+Author: Kirill Ilichev
+Author-email: ilichev.kirill.s@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.10,<2.0.0)
+Requires-Dist: fastapi (>=0.112.2,<0.113.0)
+Requires-Dist: portalocker (>=2.10.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+
