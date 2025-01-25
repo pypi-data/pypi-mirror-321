@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: gtrbench
+Version: 0.0.1
+Summary: A benchmark to evaluate implicit reasoning in LLMs using guess-the-rule games
+Home-page: UNKNOWN
+Author: Ali Shazal (with Michael Lu, Xiang Zheng, Juno Lee, Arihant Choudhary)
+Author-email: ali.shazal@berkeley.edu
+License: MIT
+Keywords: benchmark,llm,implicit reasoning,guess-the-rule games,gtrbench
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai==1.56.0
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: nltk==3.8.1
+Requires-Dist: anthropic==0.3.0
+Requires-Dist: retry==0.9.2
+Requires-Dist: google-generativeai==0.3.2
+Provides-Extra: dev
+Requires-Dist: black==23.7.0; extra == "dev"
+Requires-Dist: flake8==6.1.0; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest==7.3.1; extra == "test"
+Requires-Dist: httpx==0.24.0; extra == "test"
+
+# GuessTheRuleBench - GTRBench
+
+Welcome to **GuessTheRuleBench** (pypi library name **gtrbench**), a dynamic benchmark designed to evaluate implicit rule deduction capabilities of Large Language Models (LLMs) through "guess-the-rule" games. This repository contains:
+
+- The code for running the benchmark via a Python library.
+- A web application demo where human user can play the games or watch LLM agents interact with the system in real-time.
+- Experiment results and a research paper detailing the methodology and findings.
+
+## High-Level System Design Diagram
+
+Below is a high-level system design diagram that illustrates the various components, their interactions, and the overall workflow of GuessTheRuleBench:
+
+![](/docs/final-proj-system-design.png)
+
+## Research Paper and Demo Presentation
+
+For a complete understanding of the methodology, experiments, and analysis, please refer below
+
+[**Research Paper PDF**](/docs/GuessTheRuleBench.pdf)
+
+[**Demo Presentation Video**](https://www.youtube.com/watch?v=zgnqCNjr5H4)
+
+[**Demo Slides**](https://docs.google.com/presentation/d/1_7-yq9PsrscZz8_R5mHI-rbg5dOxJNWxV9zhrfWpCSI/edit?usp=sharing)
+
+
+## System Requirements
+
+**Python 3.9 or below** is required to run the Python library and backend services. Use a conda environment to avoid installing libraries globally:
+```bash
+conda create -n guess_the_rule_env python=3.9
+conda activate guess_the_rule_env
+```
+
+## For Agentic Use: Running the Benchmark Python Library
+The Python library provides four game classes:
+
+- ```StaticGoingOnAPicnic()``` for the Static Picnic game
+- ```DynamicGoingOnAPicnic()``` for the Dynamic Picnic game
+- ```CodeFunctionsPicnic()``` for the Code Functions Picnic game
+- ```MathGuessTheRuleGame()``` for the Math game
+
+Each class exposes the following methods:
+
+- ```create_game_instance()``` to request a new instance of the game.
+- ```get_more_examples(N)``` to request N more examples.
+- ```validate_guess(guess)``` to present the user's guess for validation.
+- ```get_game_summary()``` to retrieve the performance summary of the current game.
+- ```load_game(uuid)``` to load a previously generated game instance.
+
+### Test Code for Static Picnic Game:
+
+```python
+from lib.domain.picnic.static_picnic.base import StaticGoingOnAPicnic
+
+# Get a new object for the static picnic game
+static_picnic_obj = StaticGoingOnAPicnic(
+    difficulty='L1',
+    num_init_examples=2
+)
+
+# Create a new game instance
+static_picnic_obj.create_game_instance()
+
+# Request more examples
+static_picnic_obj.get_more_examples(n=1)
+static_picnic_obj.get_more_examples(n=2)
+static_picnic_obj.get_more_examples(n=3)
+
+# Validate guess
+static_picnic_obj.validate_guess(guess='Items from the category kitchen appliances')
+
+# Get game summary
+static_picnic_obj.get_game_summary()
+
+# Load an existing game and check its summary
+loaded_game = StaticGoingOnAPicnic.load_game('650499e9-a5da-4129-b426-8d6517bf65e6')
+loaded_game.get_game_summary(include_rule=True)
+```
+
+## Web Application UI
+Below are some screenshots showcasing the web application that we created to demo our benchmark:
+1. **Landing Page**
+![](/docs/landing-page.png)
+
+2. **Docs Page**
+![](/docs/docs.png)
+
+3. **Game Play**
+
+Either start a new game or load existing game using an already generated game UUID.
+![](/docs/choose-gameplay.png)
+
+Select the game configurations to start a new game.
+![](/docs/start-new-game.png)
+
+Game play UI.
+![](/docs/play.png)
+
+## Benchmark Experiments High-Level Results
+Below is a summary of the average win rate of different models across all games and difficulty levels. Bold values highlight the best performances
+in their respective columns.
+![](/docs/evaluation-results.png)
+
+## Feedback and Contribution
+If you have any suggestions, issues, or contributions, please feel free to open an issue or submit a pull request. We appreciate your interest and support in improving GuessTheRuleBench.
+
