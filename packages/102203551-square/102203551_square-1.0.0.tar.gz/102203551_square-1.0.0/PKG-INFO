@@ -1,0 +1,47 @@
+Metadata-Version: 2.2
+Name: 102203551-square
+Version: 1.0.0
+Summary: It squares the number
+Home-page: https://github.com/Aryanz01
+Author: Aryan Vashishth
+Author-email: avashishth_be22@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# 102203551-square
+It takes an integer as an input and prints it square.
+
+## Installation
+```pip install 102203551-square```
+
+
+## How to use it?
+Open terminal and type square and then input the integer
+
+## License
+Â© 2025 Aryan Vashishth
+
+This repository is licensed under the MIT license.
+See LICENSE for details.
+
+
+
+
+
+

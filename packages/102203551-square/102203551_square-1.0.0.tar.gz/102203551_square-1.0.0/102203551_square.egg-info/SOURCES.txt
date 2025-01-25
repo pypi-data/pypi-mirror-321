@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+102203551_square.egg-info/PKG-INFO
+102203551_square.egg-info/SOURCES.txt
+102203551_square.egg-info/dependency_links.txt
+102203551_square.egg-info/entry_points.txt
+102203551_square.egg-info/top_level.txt
+square/__init__.py
+square/__main__.py
