@@ -1,0 +1,7 @@
+qwinq-0.1.0.dist-info/METADATA,sha256=mhjd83Spd7IxtPtYbGPcRtqR8CA57lzyrQY32OX4qpM,1011
+qwinq-0.1.0.dist-info/WHEEL,sha256=b1dgqR9GJBT8bsiih-7Y55_-sPGc5MG-sUXj3y2MXf0,104
+qwinq/__init__.py,sha256=-njaBFxm8Icta2hTApQYNVtLV3fvxkgypPBi8B4f2VY,93
+qwinq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qwinq/qwinq.pyi,sha256=SLw5yNyQPoBwejxT5JaUlrjtUu5LQtn14Zo95GXiskg,102
+qwinq/qwinq.cpython-312-darwin.so,sha256=hPdW-TfORr2PZv3b-AvgIkiNWw9HJcHe99naEGp2CSw,304704
+qwinq-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: qwinq
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: qfetch ==0.1
+Requires-Dist: qdata ==0.1
+Requires-Dist: qstrategy ==0.1
+Summary: 股票个人量化交易通用模块
+Keywords: quantitative trading,stock,rust,automatic trading
+Author-email: buf1024 <buf1024@gmail.com>
+Maintainer-email: buf1024 <buf1024@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# 数据获取
+
+直接通过pip安装即可:
+
+```shell
+pip install -U qwinq
+```
+
+数据获取模块[qwinq](https://pypi.org/project/qwinq/)是相对通用模块，主要功能是汇聚: [qfetch](https://pypi.org/project/qwinq/), [qdatac](https://pypi.org/project/qdatac/), [qstrategy](https://pypi.org/project/qstrategy/)等模块，同时提供各种便利的操作接口，实现程序化交易功能。
+
+
