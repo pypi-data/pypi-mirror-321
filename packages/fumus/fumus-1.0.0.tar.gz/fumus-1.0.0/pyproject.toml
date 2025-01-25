@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fumus"
+version = "1.0.0"
+authors = ["kaliv0 <kaloyan.ivanov88@gmail.com>"]
+readme = "README.md"
+description = "Functional musings"
+keywords = ["query", "functional", "processing", "collections", "fluent API", "queries"]
+repository = "https://github.com/kaliv0/fumus"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.3"
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
