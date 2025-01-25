@@ -1,0 +1,1 @@
+HMAC_KEY = b"K9CryptHMAC2024!@#$%^&*()"
