@@ -1,0 +1,11 @@
+neurometa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurometa/common.py,sha256=PCEmtRY_H9IBdvsCKuTNuWeqdAHVR1iGNe-eoGUy260,11099
+neurometa/data_scrape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurometa/data_scrape/main.py,sha256=hK2bryYhBRoRK8nHboE9i8bQfMMTEWm7LI-LKUP5xaQ,11532
+neurometa/data_scrape/wikipedia_table.ods,sha256=RukxWQH074MMZq6iwhJnSXwamGE05sEIM08UBen0p2Q,17077
+neurometa/fly.py,sha256=9j3l6PqjtWgnDWN52mUmZYIAQ03M0J6V9fjU-GOzIQg,2522
+neurometa/human.py,sha256=orB3jmX3IFtSiowf6l6rWMSo2h4KWFsLBnpjHeB-mbM,10387
+neurometa/model_animal.py,sha256=TKVLmDqzEXS-1DbkSf2L9RLc74pDEcYrRhXgt8wRb_Q,3202
+neurometa-2.0.0.dist-info/METADATA,sha256=IjP-eL65LZtbEIfDohL3vxIWuIvYrNy4_RHheVi8q-8,1740
+neurometa-2.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+neurometa-2.0.0.dist-info/RECORD,,
