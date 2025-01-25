@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: lego_bricks_ml_vision
+Version: 0.1.0
+Summary: A package for LEGO brick detection and visualization using YOLO.
+Author: Miguel Di Lalla
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=1.8.0
+Requires-Dist: ultralytics
+Requires-Dist: pillow
+Requires-Dist: matplotlib
+Requires-Dist: kaggle
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# LEGO Bricks ML Vision
+
+A Python package for detecting and visualizing LEGO bricks using YOLO and custom visualization pipelines. This project is designed to streamline the process of detecting LEGO pieces in cluttered environments and producing meaningful visualizations for analysis and presentation.
+
+---
+
+## Features
+
+- **Object Detection**: Detect LEGO bricks using YOLOv8.
+- **Preprocessing Tools**: Scripts to preprocess images and datasets.
+- **Dataset Conversion**: Convert LabelMe annotations to YOLO format.
+- **Visualization Pipelines**: Create annotated grids, comparisons, and organized folders for presentations.
+- **Modular Design**: Easy-to-use package structure for scaling or adapting the project.
+
+---
+
+## System Requirements
+
+- **Python Version**: >= 3.8
+- **Supported OS**: Windows, macOS, Linux
+- **Hardware**:
+  - CPU support (required)
+  - GPU support (optional but recommended for training YOLO models)
+
+---
+
+## Installation
+
+To get started with the project, clone the repository and install the package:
+
+```bash
+git clone https://github.com/MiguelDiLalla/LEGO_Bricks_ML_Vision.git
+cd LEGO_Bricks_ML_Vision
+pip install -e .
