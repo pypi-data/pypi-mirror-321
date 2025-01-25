@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+topsis/__init__.py
+topsis/topsis.py
+topsis_Bhavya_Jaiswal_102203087.egg-info/PKG-INFO
+topsis_Bhavya_Jaiswal_102203087.egg-info/SOURCES.txt
+topsis_Bhavya_Jaiswal_102203087.egg-info/dependency_links.txt
+topsis_Bhavya_Jaiswal_102203087.egg-info/entry_points.txt
+topsis_Bhavya_Jaiswal_102203087.egg-info/requires.txt
+topsis_Bhavya_Jaiswal_102203087.egg-info/top_level.txt
