@@ -1,0 +1,5 @@
+setup.py
+Py3dObj.egg-info/PKG-INFO
+Py3dObj.egg-info/SOURCES.txt
+Py3dObj.egg-info/dependency_links.txt
+Py3dObj.egg-info/top_level.txt
