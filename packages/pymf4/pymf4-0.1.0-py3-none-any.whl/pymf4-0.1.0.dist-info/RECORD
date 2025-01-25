@@ -1,0 +1,8 @@
+pymf4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymf4/main.py,sha256=HO6uEaSI8FLQ89A28QjTwUCQuA6cVVa1r7j-vNEPmWM,78
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=7fi4ex-fIX5GLA_Z4NMH8v697EZ1AqxUj1rjW83-vlg,89
+pymf4-0.1.0.dist-info/METADATA,sha256=89Ja4b6gxSiWcM4XQiNNYJF9jDdnXvmQou_YDBKzMVs,279
+pymf4-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pymf4-0.1.0.dist-info/top_level.txt,sha256=aicSPgp0eRvAVOjQDqnAtfjMTVh6zcDOaauxjAG7UR4,12
+pymf4-0.1.0.dist-info/RECORD,,
