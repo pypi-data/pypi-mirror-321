@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+topsis_angadSingh_102203314/__init__.py
+topsis_angadSingh_102203314/main.py
+topsis_angadSingh_102203314.egg-info/PKG-INFO
+topsis_angadSingh_102203314.egg-info/SOURCES.txt
+topsis_angadSingh_102203314.egg-info/dependency_links.txt
+topsis_angadSingh_102203314.egg-info/entry_points.txt
+topsis_angadSingh_102203314.egg-info/requires.txt
+topsis_angadSingh_102203314.egg-info/top_level.txt
