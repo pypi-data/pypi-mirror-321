@@ -1,0 +1,10 @@
+identityfunction/__init__.py,sha256=2FlqmWUiqjaV5Xdtv7FKz4i2v2mHU57D8O56OJVMzJI,112
+identityfunction/__main__.py,sha256=KCPchi6YZJ-pXIrqay20Oyj8NjsPhfL7kLdZ1rLDLFE,73
+identityfunction/core/__init__.py,sha256=-UmfYEmQNUYFs-KOWjKS4fKRMyCWeAD8ePWhEVgX3dM,47
+identityfunction/tests/__init__.py,sha256=dQamgdix1bRVNFVPksW7ireeeIdxY66AerpjKoYrjkU,304
+identityfunction/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+identityfunction-0.0.0.dev0.dist-info/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+identityfunction-0.0.0.dev0.dist-info/METADATA,sha256=ZJXTeXKUXUZx-7gFA04tcAqZiOL7aE-Tbz9VwR3RBGA,2729
+identityfunction-0.0.0.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+identityfunction-0.0.0.dev0.dist-info/top_level.txt,sha256=_8GsATtMMnpK00caaCjTvGQPRunXwiE94jjm74oMHrM,17
+identityfunction-0.0.0.dev0.dist-info/RECORD,,
