@@ -1,0 +1,26 @@
+[project]
+dynamic = [ "version" ]
+
+[tool.poetry]
+name = "pypixcode"
+version = "0.1.3"
+description = "Uma biblioteca Python para gerar codigo de Pix."
+authors = ["bruno.duarte <brunomacielduarte32@gmail.com>"]
+readme = "README.md"
+keywords = [ "packaging", "pix", "qrcode" ]
+
+[project.urls]
+repository = "https://github.com/brduarte/pypixcode"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+crcmod = "^1.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+pytest-flake8 = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
