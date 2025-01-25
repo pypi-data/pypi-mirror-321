@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+topsis/__init__.py
+topsis/topsis.py
+topsis_navneet_102203715.egg-info/PKG-INFO
+topsis_navneet_102203715.egg-info/SOURCES.txt
+topsis_navneet_102203715.egg-info/dependency_links.txt
+topsis_navneet_102203715.egg-info/entry_points.txt
+topsis_navneet_102203715.egg-info/requires.txt
+topsis_navneet_102203715.egg-info/top_level.txt
