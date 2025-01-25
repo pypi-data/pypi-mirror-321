@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+Topsis_Vedant_Saha_102203494.egg-info/PKG-INFO
+Topsis_Vedant_Saha_102203494.egg-info/SOURCES.txt
+Topsis_Vedant_Saha_102203494.egg-info/dependency_links.txt
+Topsis_Vedant_Saha_102203494.egg-info/entry_points.txt
+Topsis_Vedant_Saha_102203494.egg-info/requires.txt
+Topsis_Vedant_Saha_102203494.egg-info/top_level.txt
