@@ -1,0 +1,12 @@
+README.md
+setup.py
+Topsis_Danish_102203633.egg-info/PKG-INFO
+Topsis_Danish_102203633.egg-info/SOURCES.txt
+Topsis_Danish_102203633.egg-info/dependency_links.txt
+Topsis_Danish_102203633.egg-info/requires.txt
+Topsis_Danish_102203633.egg-info/top_level.txt
+topsis/__init__.py
+topsis/file_upload.py
+topsis/testcode.py
+topsis/topsis.py
+topsis/voice_control.py
