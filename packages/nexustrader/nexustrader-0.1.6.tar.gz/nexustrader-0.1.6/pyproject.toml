@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "nexustrader"
+version = "0.1.6"
+description = "fastest python trading bot"
+authors = ["River-Shi <nachuan.shi.quant@gmail.com>"]
+maintainers = ["Chase <cjx463045792@gmail.com>"]
+license = "MIT LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+aiohttp = "^3.10.10"
+ccxt = "^4.4.25"
+numpy = "2.1.1"
+orjson = "^3.10.10"
+pyinstrument = "4.7.3"
+redis = "5.0.8"
+requests = "2.32.3"
+spdlog = "2.0.6"
+streamz = "0.6.4"
+websockets = "13.1"
+picows = "^1.6.0"
+aiosonic = "0.21.0"
+msgspec = "0.18.6"
+cython = "3.0.11"
+certifi = "^2024.8.30"
+bcrypt = "^4.2.0"
+nautilus-trader = "^1.208.0"
+zmq = "^0.0.0"
+aiolimiter = "^1.2.1"
+apscheduler = "^3.11.0"
+dynaconf = "^3.2.6"
+returns = "^0.24.0"
+pathlib = "^1.0.1"
+aiosqlite = "^0.20.0"
+
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "sphinx-material",
+    "sphinx-autodoc-typehints"
+]
