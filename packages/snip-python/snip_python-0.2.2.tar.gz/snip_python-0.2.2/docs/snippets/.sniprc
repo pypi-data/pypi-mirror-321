@@ -1,0 +1,14 @@
+[test]
+book_id = -1
+token = test
+deployment = https://snip:4000
+
+[reasdasd]
+token=c5e61831994af431266c794c6440b9345bf695b1905f826d739e96b2348a7c5cc101456aae43c1818fae58ff3bb06770d3330230aba811cfbd169f8d25f5528e01edcb3b68f53334f51bca9ab0626429c6714c5f00934caf6e940f77ebf275b6
+book_id=1
+deployment = https://snip:4000
+
+[Test token]
+token=bd7375084a653d640ffb635e2f53ea3919ad42c2e2e8d531d3cf00924b4221da0d762016f3d1dbe462225b27f95ee7c334988f2f6c3072680242a6c028343be5350810ec26c35dcc27abee65b7fc5332daab139000cf11dafcf07587bb92b6a1
+book_id=3
+deployment=https://snip:4000
