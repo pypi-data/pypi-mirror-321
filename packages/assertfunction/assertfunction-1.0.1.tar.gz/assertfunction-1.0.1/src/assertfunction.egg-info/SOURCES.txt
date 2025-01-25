@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/assertfunction/__init__.py
+src/assertfunction.egg-info/PKG-INFO
+src/assertfunction.egg-info/SOURCES.txt
+src/assertfunction.egg-info/dependency_links.txt
+src/assertfunction.egg-info/requires.txt
+src/assertfunction.egg-info/top_level.txt
+src/assertfunction/core/__init__.py
+src/assertfunction/tests/__init__.py
+src/assertfunction/tests/test_0.py
