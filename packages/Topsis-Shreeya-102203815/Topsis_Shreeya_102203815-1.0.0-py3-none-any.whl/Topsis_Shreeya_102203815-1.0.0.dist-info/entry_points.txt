@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_Shreeya_102203815.topsis:main
