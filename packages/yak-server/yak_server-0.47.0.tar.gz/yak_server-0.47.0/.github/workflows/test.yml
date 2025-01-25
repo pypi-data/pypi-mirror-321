@@ -1,0 +1,58 @@
+name: 🔂 Unit tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    paths:
+      - "yak_server/**"
+      - "tests/**"
+      - "pyproject.toml"
+      - ".github/workflows/test.yml"
+
+jobs:
+  unit-tests:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+    name: Python ${{ matrix.python-version }} - ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up MySQL
+        uses: shogo82148/actions-setup-mysql@v1.40.0
+        with:
+          mysql-version: "8.0"
+          root-password: ${{ secrets.MYSQL_PASSWORD }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Run test
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_USER_NAME: root
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          MYSQL_PORT: 3306
+        run: uv run pytest --cov=yak_server --cov=scripts --cov=tests --cov=testing --cov-report=xml --cov-config=pyproject.toml -vv
+        if: ${{ always() }}
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        if: ${{ always() }}
+        with:
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
