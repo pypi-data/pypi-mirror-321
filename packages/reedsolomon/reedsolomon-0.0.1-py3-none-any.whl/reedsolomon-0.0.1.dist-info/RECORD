@@ -1,0 +1,11 @@
+reedsolomon/__init__.py,sha256=tH6SNHsHPhoBde5-TiO8fTjfvYCj5CS1_Rb7N1r3Op0,167
+reedsolomon/__main__.py,sha256=sMkP8zmdV-A8D82z0icruBIPz2adlb2dWRUDgVrPpsg,183
+reedsolomon/gf.py,sha256=I4JeY9RIyC83veTUOMhOuuaHGyVGSS4DhgWM64sSUUQ,568
+reedsolomon/polynomial.py,sha256=Xu5DItoEPV0YVyuD5KYjS8e9q2nraufl5ZZqOmUO5mo,38016
+reedsolomon/rs.py,sha256=055EvknlaMx1vxx5ssBgs_3x7wlFNKyiJ7u4xcHkDZU,23
+reedsolomon-0.0.1.dist-info/LICENSE,sha256=66fTyP4vRfKbDYY8wvLQAlSDyXxfYk1qWI4QsrGdUbA,1086
+reedsolomon-0.0.1.dist-info/METADATA,sha256=8o6iRqkfSbKmCOMlvG9YUc-cL6n9loWIZOhHl1ROytc,6440
+reedsolomon-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+reedsolomon-0.0.1.dist-info/entry_points.txt,sha256=mtkHVob7YMBoqaarXFX0G_dL8vEDFVkclBItALB5944,58
+reedsolomon-0.0.1.dist-info/top_level.txt,sha256=xtP-5Mi5Ra_TGliSMjGE3ctiJhoWKEy3W5psYJ1Vu6k,12
+reedsolomon-0.0.1.dist-info/RECORD,,
