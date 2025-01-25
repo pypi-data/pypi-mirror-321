@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: skleernexample
+Version: 0.1.0
+Summary: A library to store and manage scikit-learn code examples
+Home-page: https://github.com/yourusername/skleernexample
+Author: Hassan
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# skleernexample
+
+A Python library for storing and managing scikit-learn code examples.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+### Saving Code Examples
+```python
+from skleernexample import CodeExample
+
+# Create an instance to save code
+code = CodeExample()
+
+# Save a code example
+decision_tree_code = """
+y_preddt = dt.predict(x_test)
+print(accuracy_score(y_test, y_preddt))
+print(classification_report(y_test, y_preddt))
+print(confusion_matrix(y_test, y_preddt))
+"""
+code.save_code("decision_tree", decision_tree_code)
+```
+
+### Printing Code Examples
+```python
+from skleernexample import print_code
+
+# Simply print any saved code example
+print_code("decision_tree")
+```

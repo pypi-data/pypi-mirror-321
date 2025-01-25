@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+skleernexample/__init__.py
+skleernexample/code_manager.py
+skleernexample.egg-info/PKG-INFO
+skleernexample.egg-info/SOURCES.txt
+skleernexample.egg-info/dependency_links.txt
+skleernexample.egg-info/requires.txt
+skleernexample.egg-info/top_level.txt
+skleernexample/examples/dt_metrics.txt
+skleernexample/examples/preprocessing.txt
+skleernexample/examples/rf_train.txt
