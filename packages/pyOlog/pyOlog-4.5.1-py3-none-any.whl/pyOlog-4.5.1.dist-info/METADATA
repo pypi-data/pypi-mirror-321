@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: pyOlog
+Version: 4.5.1
+Summary: Python Olog Client Lib
+Author: Kunal Shroff
+Author-email: shroffk@bnl.gov
+Requires: requests (>=2.0.0)
+Requires: urllib3 (>=1.7.1)
+License-File: LICENSE.md
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires
+Dynamic: summary
