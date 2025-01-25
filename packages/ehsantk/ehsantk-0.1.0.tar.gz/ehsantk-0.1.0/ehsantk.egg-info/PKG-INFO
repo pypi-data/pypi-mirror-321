@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ehsantk
+Version: 0.1.0
+Summary: Ehsaneddin's Toolkit: A personal toolkit for research and development
+Home-page: https://github.com/ehsanasgari/ehsaneddintk
+Author: Ehsaneddin Asgari
+Author-email: asgari@berkeley.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: biopython
+
+# ehsaneddintk
