@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Topsis-Pranshu-102217179
+Version: 0.1.0
+Summary: TOPSIS method implementation by Pranshu
+Home-page: https://github.com/pranshugarg123/Topsis-Pranshu-102217179
+Author: Pranshu
+Author-email: pranshugargktl@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis-Pranshu-102217179
+
+This is an implementation of the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method by Pranshu.
+
+## Requirements
+- Python 3.6 or higher
+- pandas
+- numpy
+
+## Installation
+You can install the package using pip (once it's uploaded to PyPI):
+
+```bash
+pip install Topsis-Pranshu-102217179
