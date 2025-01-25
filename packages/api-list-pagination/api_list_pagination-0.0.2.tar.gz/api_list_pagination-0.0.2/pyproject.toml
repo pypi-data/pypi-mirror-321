@@ -1,0 +1,22 @@
+[project]
+name = "api_list_pagination"
+version = "0.0.2"
+authors = []
+maintainers = [
+  { name="Mho3ein", email="hh.vaez@gmail.com" },
+]
+description = "A small package for easy use list apis in django rest framework, I call this ALP."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "djangorestframework",
+]
+
+[project.urls]
+Homepage = "https://github.com/mho3en/api_list_pagination"
+Issues = "https://github.com/mho3en/api_list_pagination/issues"

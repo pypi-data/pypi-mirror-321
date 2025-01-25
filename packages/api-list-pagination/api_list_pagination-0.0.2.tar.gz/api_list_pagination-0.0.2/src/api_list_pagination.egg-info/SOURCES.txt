@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/api_list_pagination/__init__.py
+src/api_list_pagination/api_list_pagination.py
+src/api_list_pagination.egg-info/PKG-INFO
+src/api_list_pagination.egg-info/SOURCES.txt
+src/api_list_pagination.egg-info/dependency_links.txt
+src/api_list_pagination.egg-info/requires.txt
+src/api_list_pagination.egg-info/top_level.txt
