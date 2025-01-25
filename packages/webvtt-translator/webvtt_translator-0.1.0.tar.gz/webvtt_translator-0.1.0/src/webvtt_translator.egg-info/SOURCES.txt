@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/webvtt_translator/__init__.py
+src/webvtt_translator/__main__.py
+src/webvtt_translator/main.py
+src/webvtt_translator.egg-info/PKG-INFO
+src/webvtt_translator.egg-info/SOURCES.txt
+src/webvtt_translator.egg-info/dependency_links.txt
+src/webvtt_translator.egg-info/entry_points.txt
+src/webvtt_translator.egg-info/requires.txt
+src/webvtt_translator.egg-info/top_level.txt
