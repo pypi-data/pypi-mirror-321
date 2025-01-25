@@ -1,0 +1,11 @@
+lscom/__init__.py,sha256=ifPM1hOek6le3YZWMc0ZsuR_-oaAW3F1I8-YsT4XzyY,64
+lscom/__main__.py,sha256=fBr3WZSCKZf77YFl5tNveT4BPfqiLYn7MtST2-yEoUE,903
+lscom/__version__.py,sha256=-fANk4luWtS5MhpViB62WNuYLDctjU5mlrSHW5XpPlU,343
+lscom/app.py,sha256=62WUIzvAlyTKZqsZbaXuNoX1sKHRwNYjZY5N0W5OFGs,3045
+lscom/helpers.py,sha256=Yqtg3JBjRPsujY0hHK46GFlzWVSiew2fIuj70C1o8BI,563
+lscom-0.0.3.dist-info/LICENSE,sha256=kH0BjvpwBWfRwgjUIR_aL7aBaJLfp-U41rsJW1jKF8M,1071
+lscom-0.0.3.dist-info/METADATA,sha256=ZJ3R5N2b9CcvffGBP2np-0mr9M5nOPBrFHjOz77EOz8,2052
+lscom-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+lscom-0.0.3.dist-info/entry_points.txt,sha256=a7EcCLxFdb5WVmcy0RkzECIvPgPIumowQlEbOWoWl0k,46
+lscom-0.0.3.dist-info/top_level.txt,sha256=7aXJNRvNg3caDlTXuU_fLFVJD0dhaZG84UdVRUxLqcc,6
+lscom-0.0.3.dist-info/RECORD,,
