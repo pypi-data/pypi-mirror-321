@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: brandedpipes
+Version: 0.0.1
+Summary: A pipe library for Python trying to mimic dphyr's %>% pipe operator from R language
+Home-page: https://github.com/brandizzi/brandedpipes
+Author: Adam Brandizzi
+Author-email: adam@brandizzi.com.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Branded Pipes
+
+A pipe library for Python trying to mimic dphyr's %>% pipe operator from R language.

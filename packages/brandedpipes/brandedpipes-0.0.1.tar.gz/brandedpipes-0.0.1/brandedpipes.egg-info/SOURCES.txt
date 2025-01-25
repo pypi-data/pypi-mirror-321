@@ -1,0 +1,8 @@
+README.md
+brandedpipes.py
+pyproject.toml
+setup.cfg
+brandedpipes.egg-info/PKG-INFO
+brandedpipes.egg-info/SOURCES.txt
+brandedpipes.egg-info/dependency_links.txt
+brandedpipes.egg-info/top_level.txt
