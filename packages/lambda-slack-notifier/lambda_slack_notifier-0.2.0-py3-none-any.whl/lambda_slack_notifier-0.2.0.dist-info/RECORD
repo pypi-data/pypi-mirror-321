@@ -1,0 +1,7 @@
+aws_slack_notifier_6100/__init__.py,sha256=EFtv2j3e5i30-Z91JG-iHKmg_CGxA9q7HSIV8ucUTms,86
+aws_slack_notifier_6100/notifier.py,sha256=Vqxnu4FT50N5xMU_EVaI_kVCsHwDlz-6lTv5W8Kk46A,1169
+lambda_slack_notifier-0.2.0.dist-info/LICENSE,sha256=Mq5pmXFa04X_Y9qMfeycyiTtbKx3--6ALXYyCOM41MA,1061
+lambda_slack_notifier-0.2.0.dist-info/METADATA,sha256=E4sMRKFhJE7-4HH_-9sejyIYK8LWcubd3Xc9CyPm30Y,1345
+lambda_slack_notifier-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+lambda_slack_notifier-0.2.0.dist-info/top_level.txt,sha256=n93Y_9CNEIR6jaCQtH7ZWska3_QL7TZ_8nDw4565Z4g,24
+lambda_slack_notifier-0.2.0.dist-info/RECORD,,
