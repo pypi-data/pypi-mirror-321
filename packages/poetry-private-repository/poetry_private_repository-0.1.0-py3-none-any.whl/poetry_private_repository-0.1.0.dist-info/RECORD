@@ -1,0 +1,5 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/add.py,sha256=uhpTH1gdLmCU6Xjtb3rKeo2S7rYsbnrXPuaS9_GLx3I,32
+poetry_private_repository-0.1.0.dist-info/METADATA,sha256=osu9U_XGfJE-sVLt5eAUelvKksIonEDL-gP_mYnNw5w,2095
+poetry_private_repository-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+poetry_private_repository-0.1.0.dist-info/RECORD,,
