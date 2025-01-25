@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+fastapi_project_cli.egg-info/PKG-INFO
+fastapi_project_cli.egg-info/SOURCES.txt
+fastapi_project_cli.egg-info/dependency_links.txt
+fastapi_project_cli.egg-info/entry_points.txt
+fastapi_project_cli.egg-info/top_level.txt
+tests/__init__.py
+utils/__init__.py
+utils/component.py
+utils/constants.py
+utils/project_structure.py

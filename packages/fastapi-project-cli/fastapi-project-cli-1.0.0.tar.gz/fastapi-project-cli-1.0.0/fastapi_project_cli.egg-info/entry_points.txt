@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-project-cli = fastapi_cli:main
+
