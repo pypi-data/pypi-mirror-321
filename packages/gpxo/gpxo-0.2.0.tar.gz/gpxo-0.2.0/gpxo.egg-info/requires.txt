@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+vincenty
+gpxpy
+importlib-metadata
+
+[map]
+mplleaflet
