@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kingdom/__init__.py
+kingdom.egg-info/PKG-INFO
+kingdom.egg-info/SOURCES.txt
+kingdom.egg-info/dependency_links.txt
+kingdom.egg-info/requires.txt
+kingdom.egg-info/top_level.txt
