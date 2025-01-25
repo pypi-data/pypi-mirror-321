@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = TOPSIS_Prerit_102217030.topsis:main

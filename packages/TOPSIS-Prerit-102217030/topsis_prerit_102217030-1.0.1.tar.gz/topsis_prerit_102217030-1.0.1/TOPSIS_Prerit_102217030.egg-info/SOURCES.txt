@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+TOPSIS_Prerit_102217030/Topsis_Prerit_102217030.py
+TOPSIS_Prerit_102217030/__init__.py
+TOPSIS_Prerit_102217030.egg-info/PKG-INFO
+TOPSIS_Prerit_102217030.egg-info/SOURCES.txt
+TOPSIS_Prerit_102217030.egg-info/dependency_links.txt
+TOPSIS_Prerit_102217030.egg-info/entry_points.txt
+TOPSIS_Prerit_102217030.egg-info/requires.txt
+TOPSIS_Prerit_102217030.egg-info/top_level.txt
