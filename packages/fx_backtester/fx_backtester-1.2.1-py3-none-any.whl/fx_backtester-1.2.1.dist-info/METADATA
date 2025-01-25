@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: fx_backtester
+Version: 1.2.1
+Summary: A dashboard for backtesting FX strategies.
+Home-page: https://github.com/AdamHim1/fx_backtester
+License: MIT
+Author: Adam Him
+Author-email: adam.him@dauphine.eu
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dash (>=2.12.0,<3.0.0)
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0)
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (>=1.24.0,<2.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: plotly (>=5.15.0,<6.0.0)
+Requires-Dist: pybacktestchain (>=0.2.1,<0.3.0)
+Requires-Dist: python-semantic-release (>=9.15.2,<10.0.0)
+Project-URL: Documentation, https://github.com/AdamHim1/fx_backtester/blob/master/changelog.md
+Project-URL: Repository, https://github.com/AdamHim1/fx_backtester
+Description-Content-Type: text/x-rst
+
+========================
+FX Strategies Backtester
+========================
+
+
+.. image:: https://img.shields.io/pypi/v/fx_backtester.svg
+        :target: https://pypi.python.org/pypi/fx_backtester
+
+.. image:: https://img.shields.io/travis/AdamHim1/fx_backtester.svg
+        :target: https://travis-ci.com/AdamHim1/fx_backtester
+
+.. image:: https://readthedocs.org/projects/fx-backtester/badge/?version=latest
+        :target: https://fx-backtester.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A dashboard for backtesting FX strategies.
+
+
+* Free software: MIT license
+* Documentation: https://fx-backtester.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
