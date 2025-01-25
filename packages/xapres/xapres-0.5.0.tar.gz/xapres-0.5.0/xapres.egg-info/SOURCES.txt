@@ -1,0 +1,22 @@
+.gitignore
+.gitmodules
+.pre-commit-config.yaml
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+chirp .wav
+environment.yml
+pyproject.toml
+setup.cfg
+setup_temp_renamed
+tests/__init__.py
+tests/test_all.py
+xapres/__init__.py
+xapres/load.py
+xapres/utils.py
+xapres.egg-info/PKG-INFO
+xapres.egg-info/SOURCES.txt
+xapres.egg-info/dependency_links.txt
+xapres.egg-info/requires.txt
+xapres.egg-info/top_level.txt
