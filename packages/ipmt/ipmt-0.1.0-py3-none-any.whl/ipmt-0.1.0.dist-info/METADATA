@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ipmt
+Version: 0.1.0
+Summary: This is a flask ip management dependencys wich can use to manage ip address and visitors and protect your website from ddos attacks
+Author: night9a
+Author-email: nightxcros@gmail.com
+
