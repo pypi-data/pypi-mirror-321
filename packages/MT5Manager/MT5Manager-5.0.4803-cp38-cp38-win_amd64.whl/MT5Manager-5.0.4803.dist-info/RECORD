@@ -1,0 +1,9 @@
+MT5Manager/MT5APIManager64.dll,sha256=eROvGVQyptSfv9oHr-fdf-Uhd0aSnBQsyOKQOXNrcCE,6877960
+MT5Manager/__init__.py,sha256=zO6NuZwXZiOudQGS9ReSvnHtdyk8nI6QPegQky73LiE,235
+MT5Manager/_core.cp38-win_amd64.pyd,sha256=RWFF9jEksZl4wypRyrMDKhVW26QIpqVC2nnQS-dsBQA,2853888
+MT5Manager/_core.pyi,sha256=Z_392AjuJMvsFiT9PzeplGfCuIVtX-bt5o4epK0uaLg,909515
+MT5Manager-5.0.4803.dist-info/LICENSE.txt,sha256=VhXU9HTQSD7cencdMDKMhfDCkYmHkiTbhRBZHtmWG5w,1059
+MT5Manager-5.0.4803.dist-info/METADATA,sha256=Hoh6wDdOiNeXV1Hc5A-gEBRkTAMQ8vvEGGTxfLK3-EI,2213
+MT5Manager-5.0.4803.dist-info/WHEEL,sha256=OAhV2z-4wEDRsVkZ94ZnFk207FcapuHNIXjjyYrQY_c,100
+MT5Manager-5.0.4803.dist-info/top_level.txt,sha256=6KAFypo-7J8kwLaCUVBlLhTjC7xexP8U8r7eGKeuEls,11
+MT5Manager-5.0.4803.dist-info/RECORD,,
