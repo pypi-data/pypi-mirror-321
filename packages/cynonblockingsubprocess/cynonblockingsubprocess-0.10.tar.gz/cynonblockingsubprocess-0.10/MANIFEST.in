@@ -1,0 +1,7 @@
+include cynonblockingsubprocess/requirements.txt
+include cynonblockingsubprocess/thirdparty.json
+include cynonblockingsubprocess/nonblockingsubprocess.hpp
+include cynonblockingsubprocess/README.MD
+include cynonblockingsubprocess/uiev.pyx
+include cynonblockingsubprocess/uiev_compile.py
+include cynonblockingsubprocess/LICENSE
