@@ -1,0 +1,1 @@
+from .topsis_102203992 import topsis,validate_inputs
