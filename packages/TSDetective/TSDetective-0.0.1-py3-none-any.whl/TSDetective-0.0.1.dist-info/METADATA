@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: TSDetective
+Version: 0.0.1
+Summary: Investigating TS Foundation Models.
+Home-page: https://github.com/tblume1992/TSDetective
+Author: Tyler Blume
+Author-email: t-blume@hotmail.com
+Keywords: forecasting,time series,ai,deep learning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: statsforecast
+
+# TSDetective
+ 
