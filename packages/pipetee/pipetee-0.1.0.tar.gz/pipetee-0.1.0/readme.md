@@ -1,0 +1,151 @@
+# Pipeline-Tee
+
+A powerful and flexible Python pipeline processing framework with advanced flow control, visualization, and async support.
+
+## Features
+
+- 🔄 **Flexible Pipeline Processing**: Build complex data processing pipelines with branching and conditional execution
+- ⚡ **Async Support**: Built with asyncio for efficient asynchronous processing
+- �� **Visualization**: Rich pipeline visualization with graphviz and matplotlib
+  - Generate pipeline structure diagrams showing stages and connections
+  - Create execution timeline plots with timing information
+  - Track stage status with color-coded nodes and status icons
+  - Export as PNG, SVG, or PDF files
+- 🔀 **Advanced Flow Control**: Support for branching, skipping, jumping between stages
+- 📝 **Comprehensive Logging**: Detailed logging with configurable levels
+- 🔍 **State Tracking**: Pipeline state management and execution metrics
+- 🎯 **Post-Processing**: Add post-processors to modify stage outputs
+- ⚠️ **Error Handling**: Robust error handling and propagation
+
+## Requirements
+
+- Python 3.8+
+- Optional visualization dependencies:
+  - graphviz (for pipeline structure diagrams)
+  - matplotlib (for execution timeline plots)
+
+## Project Structure
+
+```text
+ptee/
+├── src/
+│   └── ptee/
+│       ├── __init__.py
+│       ├── pipeline.py          # Core pipeline implementation
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── stage.py        # Stage models and decisions
+│       │   └── visual.py       # Visualization models
+│       └── utils/
+│           ├── logging_config.py
+│           └── visualization.py # Visualization utilities
+├── tests/
+│   ├── test_pipeline.py
+│   ├── test_visual.py
+│   └── test_models.py
+├── examples/
+│   ├── complex_pipeline_demo.py
+│   └── complex_branching_pipeline.py
+└── pyproject.toml
+```
+
+## Installation
+
+```bash
+# Install core package
+pip install -e .
+
+# Install visualization dependencies
+pip install -e ".[viz]"
+```
+
+## Basic Usage
+
+```python
+from ptee.pipeline import Pipeline, PipelineStage, StageResult
+from ptee.models.stage import StageDecision
+from ptee.utils.visualization import save_pipeline_visualization
+
+# Define a custom pipeline stage
+class DataProcessingStage(PipelineStage[str, str]):
+    async def process(self, data: str) -> StageResult[str]:
+        processed_data = data.upper()
+        return StageResult(
+            success=True,
+            data=processed_data,
+            decision=StageDecision.CONTINUE
+        )
+
+# Create and configure pipeline
+pipeline = Pipeline()
+pipeline.add_stage("process_data", DataProcessingStage())
+
+# Process data
+result = await pipeline.process("hello world")
+
+# Save visualization diagrams
+structure_path, timeline_path = save_pipeline_visualization(
+    pipeline,
+    output_dir="pipeline_viz",
+    base_name="my_pipeline",
+    format="png"  # or "svg" or "pdf"
+)
+
+print(f"Pipeline structure saved to: {structure_path}")
+print(f"Execution timeline saved to: {timeline_path}")
+```
+
+## Visualization Examples
+
+The pipeline visualization utilities can generate two types of diagrams:
+
+1. **Pipeline Structure** (using graphviz):
+   - Shows stages and their connections
+   - Color-coded nodes based on stage status
+   - Status icons (🔄 pending, ⚡ running, ✅ completed, ⏭️ skipped, ❌ failed)
+   - Default sequence and conditional branching paths
+
+2. **Execution Timeline** (using matplotlib):
+   - Shows execution flow over time
+   - Color-coded bars for stage duration
+   - Start and end times for each stage
+   - Status icons and stage names
+   - Time-based x-axis
+
+To generate visualizations, use the `save_pipeline_visualization` function from `ptee.utils.visualization`. Make sure to install the visualization dependencies with `pip install -e ".[viz]"`.
+
+## Advanced Features
+
+### Branching and Conditions
+
+```python
+from ptee.pipeline import Condition
+
+# Add branching condition
+condition = Condition("is_valid", lambda x: len(x) > 5)
+stage.add_branch_condition(condition, "validation_stage")
+
+# Add skip condition
+stage.add_skip_condition(Condition("skip_empty", lambda x: not x))
+```
+
+### Post-Processing
+
+```python
+# Add post-processor to a stage
+stage.add_post_processor(lambda x: x.strip())
+```
+
+## Development
+
+1. Clone the repository
+2. Install development dependencies:
+   ```bash
+   python -m pip install -e ".[dev,viz]"
+   ```
+3. Run tests:
+   ```bash
+   pytest
+   ```
+
+MIT License
