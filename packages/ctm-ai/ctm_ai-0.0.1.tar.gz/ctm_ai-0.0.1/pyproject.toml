@@ -1,0 +1,109 @@
+[tool.poetry]
+name = "ctm-ai"
+version = "0.0.1"
+description = "A cognitive architecture motivated by consciousness turing machine."
+authors = ["Haofei Yu <yuhaofei44@gmail.com>"]
+license = "Apache 2.0 License"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.12"
+huggingface_hub = "0.27.1"
+openai = "^1.59.7"
+scikit_learn = "1.6.1"
+mypy = "^1.8.0"
+pydantic = "^2.10.5"
+termcolor = "*"
+beartype = "*"
+requests = "*"
+types-requests = "*"
+wordfreq = "*"
+sockio = "*"
+google-generativeai = "*"
+opencv-python = "*"
+moviepy = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "*"
+nbmake = "*"
+types-setuptools = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
+follow_imports = "normal"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.codespell]
+ignore-words-list = "dout, te, indicies, astroid"
+skip = ["data"]
+
+[tool.isort]
+profile = "black"
+use_parentheses = true
+skip_gitignore = true
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 88
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39', 'py310']
+
+[tool.ruff]
+line-length = 88
+fix = true
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
+[tool.mypy-transformers]
+ignore_missing_imports = true
+
+[tool.mypy-litellm]
+ignore_missing_imports = true
+
+[tool.pydoc-markdown]
+loaders = [
+  { type = "python", search_path = ["."] }
+]
+
+[[tool.pydoc-markdown.processors]]
+type = "filter"
+skip_empty_modules = true
+
+[[tool.pydoc-markdown.processors]]
+type = "smart"
+
+[[tool.pydoc-markdown.processors]]
+type = "crossref"
+
+[tool.pydoc-markdown.renderer]
+type = "docusaurus"
+docs_base_path = "docs"
+relative_output_path = ""
+sidebar_top_level_label = "Documentation"
+
+[[tool.poetry.source]]
+name = "torchcpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
