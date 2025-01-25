@@ -1,0 +1,12 @@
+parse_1c_build-5.15.8.dist-info/METADATA,sha256=egwUitV3uhdwty2A5Q66kLJE7ZjkJleNkLfk9Y3aXkQ,3193
+parse_1c_build-5.15.8.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+parse_1c_build-5.15.8.dist-info/entry_points.txt,sha256=76NXy6dX2sZChNBYZjQqG-fsBXxrB4UkiQnMei4Pm9c,69
+parse_1c_build/__about__.py,sha256=LYqTn4qXb8sXr5OE0vADLonLYRDMYiV-X-gzh2L27DI,203
+parse_1c_build/__init__.py,sha256=r6dLAzcFilDbj1fxBu2gkUS5nOl5RBc925SRG5gBEKM,212
+parse_1c_build/__main__.py,sha256=W03KG04xgb62OZt7-WjX-Nuow5_tQ0gTFONK5YmLlT8,222
+parse_1c_build/base.py,sha256=R8cYfmdA5U_Ej544PqN80SecGy46KWbEU7FWbKjUts0,1779
+parse_1c_build/build.py,sha256=i8PTicvAm9pZMqKBfI-WdSdm8YtPKtJTXnVMyVd5Buw,5332
+parse_1c_build/cli.py,sha256=CEC7qS7AyJkYR3D3ZQq7_eGxT6hqu47eB7GD-_Vv0Bc,938
+parse_1c_build/core.py,sha256=nneue8FGbVvzo36QRRNjOrRsZ1vPw0yrq81_DukXKzQ,360
+parse_1c_build/parse.py,sha256=TdVTCE6387j1pH2I3V3L06OJIMzZH17p9DHzxnnFYjk,4562
+parse_1c_build-5.15.8.dist-info/RECORD,,
