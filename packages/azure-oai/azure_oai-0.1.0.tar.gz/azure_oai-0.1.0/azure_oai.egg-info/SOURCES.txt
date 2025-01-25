@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+azure_oai.egg-info/PKG-INFO
+azure_oai.egg-info/SOURCES.txt
+azure_oai.egg-info/dependency_links.txt
+azure_oai.egg-info/requires.txt
+azure_oai.egg-info/top_level.txt
+azure_openai/__init__.py
+azure_openai/chat_completion.py
