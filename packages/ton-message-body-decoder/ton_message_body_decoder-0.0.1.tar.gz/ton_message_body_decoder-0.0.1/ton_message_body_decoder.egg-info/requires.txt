@@ -1,0 +1,11 @@
+pytoniq_core
+
+[test]
+hypothesis
+ruff
+pyproj
+pytest
+pytest-cov
+pytest-asyncio
+tox
+build
