@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: willj
+Version: 0.1.2
+Summary: A personal package I can use to test on pypi and github actions
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# willj.py
+Test package for experimenting with github actions

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+willj/__init__.py
+willj/will.py
+willj.egg-info/PKG-INFO
+willj.egg-info/SOURCES.txt
+willj.egg-info/dependency_links.txt
+willj.egg-info/top_level.txt

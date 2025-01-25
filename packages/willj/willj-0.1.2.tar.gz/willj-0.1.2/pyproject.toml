@@ -1,0 +1,18 @@
+[project]
+name = "willj"
+version = "0.1.2"
+description = "A personal package I can use to test on pypi and github actions"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.setuptools]
+py-modules = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["willj*"]
