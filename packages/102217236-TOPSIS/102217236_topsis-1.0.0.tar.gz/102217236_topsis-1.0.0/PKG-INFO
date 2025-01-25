@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: 102217236-TOPSIS
+Version: 1.0.0
+Summary: Topsis Implementation.
+Author: Anmol Singh
+Author-email: anmolcodess@gmail.com
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# 
+TOPSIS Implementation  
+
+## 
+Prerequisites           
+- Python 3.x
+- Required libraries: `pandas`, `numpy`, `openpyxl`
+
+### Install Dependencies   
+```bash
+pip install pandas numpy openpyxl
+
+python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+
+python topsis.py data.csv 0.4,0.3,0.3 +,+,- result.xlsx
+
