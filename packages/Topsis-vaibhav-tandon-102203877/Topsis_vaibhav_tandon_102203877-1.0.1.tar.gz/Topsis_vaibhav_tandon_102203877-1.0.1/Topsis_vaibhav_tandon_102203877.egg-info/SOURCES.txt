@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Topsis_vaibhav_tandon_102203877.egg-info/PKG-INFO
+Topsis_vaibhav_tandon_102203877.egg-info/SOURCES.txt
+Topsis_vaibhav_tandon_102203877.egg-info/dependency_links.txt
+Topsis_vaibhav_tandon_102203877.egg-info/entry_points.txt
+Topsis_vaibhav_tandon_102203877.egg-info/requires.txt
+Topsis_vaibhav_tandon_102203877.egg-info/top_level.txt
+topsis_VAIBHAV/__init__.py
+topsis_VAIBHAV/topsis.py
