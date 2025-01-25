@@ -1,0 +1,144 @@
+Metadata-Version: 2.2
+Name: dupfilesremover
+Version: 0.3.0.6
+Summary: Duplicate files remover
+Home-page: https://github.com/JFF-Bohdan/dupfilesremover
+Author: Bohdan Danishevsky
+License: MIT License
+        
+        Copyright (c) 2019 Bohdan Danishevsky
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: duplicates file remover,duplicate images remover,dups remover
+Platform: all
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: loguru==0.7.3
+Requires-Dist: terminaltables==3.1.10
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: ConfigArgParse==1.7
+Requires-Dist: humanize==4.11.0
+Requires-Dist: first==2.0.2
+Provides-Extra: dev
+Requires-Dist: loguru==0.7.3; extra == "dev"
+Requires-Dist: terminaltables==3.1.10; extra == "dev"
+Requires-Dist: tqdm==4.67.1; extra == "dev"
+Requires-Dist: ConfigArgParse==1.7; extra == "dev"
+Requires-Dist: humanize==4.11.0; extra == "dev"
+Requires-Dist: first==2.0.2; extra == "dev"
+Requires-Dist: flake8==7.1.1; extra == "dev"
+Requires-Dist: flake8-import-order==0.18.2; extra == "dev"
+Requires-Dist: flake8-quotes==3.4.0; extra == "dev"
+Requires-Dist: pytest==8.3.4; extra == "dev"
+Requires-Dist: pytest-pep8==1.0.6; extra == "dev"
+Requires-Dist: pytest-mock==3.14.0; extra == "dev"
+Requires-Dist: pytest-cov==6.0.0; extra == "dev"
+Requires-Dist: pytest-order==1.3.0; extra == "dev"
+Requires-Dist: twine==6.0.1; extra == "dev"
+Requires-Dist: mypy==1.14.1; extra == "dev"
+Requires-Dist: types-tqdm==4.67.0.20241221; extra == "dev"
+Requires-Dist: types-first==2.0.5.20240806; extra == "dev"
+Dynamic: author
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: platform
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# dupfilesremover
+
+Tool for duplicate files removing.
+
+Removes duplicate files existing with same or different name in on one
+or more folder(s).
+
+For example, I do backups of my photos over multiple devices, and sometimes I can have same photo 
+copied multiple times. It can happen when I move photo from one folder to another.
+
+This tool, helps me find duplicates of a same file, when it's stored in multiple folders or there are 
+multiple copies in a same folder but with a different names.
+
+## Use case
+
+For example, let's assume that same image available (with different names) in:
+
+- Folders `data1`, `data2` and `data3`
+- Sub-folders of any of these folders (for example `data1/new images/best`)
+
+We want to remove all duplicates and follow these rules:
+
+- Recursively remove all duplicates and save only one file
+- In case if duplicates will be in same folder - save file with the shortest name
+- Save images from `data1` folder (or sub-folders of `data1` in case if identical files 
+  also available in `data2` and `data3`)
+- In case if file will be found in any of `data1` sub-folders save with the shortest path
+
+To do this we may just run:
+
+```
+python -m dupfilesremover --recurse .\data1 .\data2 .\data3
+```
+
+Basically the folders order in the command line will define priorities of the copies if more than 
+one will be found. As a result, `data1` will have the highest priority and inside `data1` files with shorter 
+file name and shortest path will have precedence.
+
+## How to install
+
+You can install from PyPi just by using:
+
+```
+pip install dupfilesremover
+```
+
+Or you can install from GitHub by using pip:
+
+```
+pip install git+https://github.com/JFF-Bohdan/dupfilesremover
+```
+
+Or just clone and install from source code:
+
+```
+git clone https://github.com/JFF-Bohdan/dupfilesremover.git
+cd dupfilesremover
+python setup.py install
+```
+
+## Usage
+
+You can use tool like:
+
+```shell
+dupfilesremover --recurse tmp/folder1 tmp/folder2 tmp/folder3
+```
+
+In this example we are going to analyse folders `tmp/folder1`, `tmp/folder2` and `tmp/folder3` 
+for duplicate files and remove them.
+
+If you would like to perform dry-run (no action files removal, just analysis), you can use:
+
+```shell
+dupfilesremover --dry-run --recurse tmp/folder1 tmp/folder2 tmp/folder3
+```
