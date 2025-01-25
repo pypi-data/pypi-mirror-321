@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: Topsis-Preet-102203748
+Version: 1
+Summary: A Python package for implementing TOPSIS.
+Home-page: https://github.com/yourusername/topsis
+Author: Preet
+Author-email: pchaudhary_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license.txt
+
+# Topsis-Preet-102203748
+
+Topsis-Preet is a Python Package implementing [Topsis]()  method used for multi-criteria decision analysis. Topsis stands for 'Technique for Order of Preference by Similarity to Ideal Solution'.
+
+TopsisPreet intends to make the process of TOPSIS simple in python. Key features of the package are -
+
+* Easy to use
+* Numpy based
+* Ideal for Students
+
+And off course, PyTopsis code is Open Source.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Topsis-Preet.
+
+```bash
+pip install topsis-preet-102203748
+```
+## Usage ##
+```bash
+$ python [package name] [path of csv as string] [list of weights as string] [list of impaces as string] [output file name as csv]
+```
+ex: for sample 
+```excel
+$ python topsis-preet-102203748 102203748-data.csv "1,1,1,1,1" "+,+,+,+,+" 102203748-result.csv
+```
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
