@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: terryology
+Version: 0.1.0
+Summary: A Python package implementing Terry's unique mathematical system
+Project-URL: Homepage, https://github.com/yourusername/terryology
+Project-URL: Repository, https://github.com/yourusername/terryology.git
+Author-email: Your Name <your.email@example.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: education,mathematics,terryology
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Terryology
+
+A Python package implementing Terry's unique mathematical system, where multiplication is defined as `a × b = a + b copies of a`.
+
+## Installation
+
+Using uv:
+```bash
+uv pip install terryology
+```
+
+Using pip:
+```bash
+pip install terryology
+```
+
+## Usage
+
+```python
+from terryology import multiply, power
+
+# Terry multiplication
+result = multiply(2, 3)  # Returns 8 (2 + 3*2)
+
+# Terry power
+result = power(2, 2)    # Returns 6 (2 + 2*2)
+```
+
+## License
+
+MIT License
