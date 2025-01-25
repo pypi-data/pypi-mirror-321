@@ -1,0 +1,2 @@
+[console_scripts]
+THNet = THNet.load_model:main
