@@ -1,0 +1,5 @@
+[console_scripts]
+olog = pyOlog.cli:main
+
+[gui_scripts]
+ologgui = pyOlog.gui:main
