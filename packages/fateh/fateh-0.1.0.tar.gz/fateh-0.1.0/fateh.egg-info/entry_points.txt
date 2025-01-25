@@ -1,0 +1,2 @@
+[console_scripts]
+fateh = fateh.fateh:main

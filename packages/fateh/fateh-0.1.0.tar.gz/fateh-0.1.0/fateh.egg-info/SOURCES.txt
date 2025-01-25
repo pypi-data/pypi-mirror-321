@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fateh/__init__.py
+fateh/fateh.py
+fateh.egg-info/PKG-INFO
+fateh.egg-info/SOURCES.txt
+fateh.egg-info/dependency_links.txt
+fateh.egg-info/entry_points.txt
+fateh.egg-info/requires.txt
+fateh.egg-info/top_level.txt
