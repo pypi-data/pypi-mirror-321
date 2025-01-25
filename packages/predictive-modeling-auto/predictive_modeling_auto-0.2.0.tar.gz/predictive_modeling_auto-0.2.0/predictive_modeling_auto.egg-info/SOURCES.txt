@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+predictive_modeling_auto.egg-info/PKG-INFO
+predictive_modeling_auto.egg-info/SOURCES.txt
+predictive_modeling_auto.egg-info/dependency_links.txt
+predictive_modeling_auto.egg-info/top_level.txt
+pyc/__init__.py
+pyc/git_test.py
+pyc/pyc_model.py
