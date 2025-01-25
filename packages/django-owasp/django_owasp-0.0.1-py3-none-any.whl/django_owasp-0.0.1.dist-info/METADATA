@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: django-owasp
+Version: 0.0.1
+Summary: Placeholder for django-owasp package
+Author: Tyrone Software
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
