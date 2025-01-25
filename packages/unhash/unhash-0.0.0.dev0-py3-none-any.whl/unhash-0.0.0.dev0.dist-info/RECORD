@@ -1,0 +1,10 @@
+unhash/__init__.py,sha256=fTdMz_LDbGCfBH4zeMJkDNQ2vYRizg-7j14KbR6H3ZE,92
+unhash/__main__.py,sha256=l5KJV7wu66VBW4w6noobcwYllZAeDZreAeT6Knr8Nb4,63
+unhash/core/__init__.py,sha256=-UmfYEmQNUYFs-KOWjKS4fKRMyCWeAD8ePWhEVgX3dM,47
+unhash/tests/__init__.py,sha256=T3Xyb3JeHFJb042BEwvV0wPidn08EHbO6WbiMJCkWeU,294
+unhash/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+unhash-0.0.0.dev0.dist-info/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+unhash-0.0.0.dev0.dist-info/METADATA,sha256=emyDkqeyiRU8luIPt8xmoT7tfGyQcJQqYL8bI30_lKo,2607
+unhash-0.0.0.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+unhash-0.0.0.dev0.dist-info/top_level.txt,sha256=OX8us0I8838WaTQb9WfB7KnoeVnm_cCYTn-1Hs2G4h8,7
+unhash-0.0.0.dev0.dist-info/RECORD,,
