@@ -1,0 +1,125 @@
+device: auto
+obs_dtype: true
+seed: null
+num_exp: 5
+verbose: 1
+eval_verbose: 1
+progress_bar: false
+env: BigfishEasy-v0
+algo: EAPO_PPO
+total_timesteps: 25000000
+ppo_config:
+  learning_rate: 0.0003
+  adam_eps: 1e-05
+  n_steps: 2048
+  n_envs: 1
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  clip_range_vf: null
+  normalize_advantage: true
+  ent_coef: 0.0
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  use_sde: false
+  sde_sample_freq: 0
+  tensorboard_log: null
+  policy_kwargs: {}
+  use_kl_penalty: false
+  use_reverse_kl_penalty: false
+  kl_beta: 4.0
+ppg_config:
+  n_iteration: 32
+  e_policy: 1
+  v_value: 1
+  e_auxiliary: 6
+  beta_clone: 1.0
+  num_aux_rollouts: 4
+  n_aux_grad_accum: 1
+  adv_norm_fullbatch: true
+  num_minibatches: 8
+  mode: detach
+  ppg_target_kl: null
+  alternative_value_regularisation: false
+trpo_config:
+  cg_max_steps: 15
+  cg_damping: 0.1
+  line_search_shrinking_factor: 0.8
+  line_search_max_iter: 10
+  n_critic_updates: 10
+  sub_sampling_factor: 1
+  target_kl: 0.01
+  trpo_reverse_kl: true
+eapo_config:
+  use_entropy_advantage: true
+  augmented_reward: false
+  tau: 0.01
+  c2: 0.5
+  e_gamma: null
+  e_lambda: null
+  eta_policy: 1.0
+  eta_aux: 0.1
+  ea_coef: 1.0
+  tau_on_entropy: false
+  no_popart_for_entropy: false
+  use_exact_entropy: false
+  use_combined_return: false
+  chemical_potential: 0.0
+  apply_ratio: false
+  escort_transform: false
+  use_shared_entropy_net: true
+  et_p: 2.0
+  auto_t: false
+  auto_t_lr: 0.0005
+  auto_t_min: 0.005
+cp_config:
+  n_step_lambda: 0.8
+  n_step_vf_coef: 0.5
+  n_step_v_net_arch:
+    - 64
+    - 64
+  average_reward: false
+hp_config:
+  h_lambda: 0.9
+  ha_coef: 0.1
+  hf_coef: 1.0
+ar_config:
+  use_weighted_average: true
+  r_step_size: 0.001
+  use_trace_for_weighted_average: true
+  use_advantage: false
+  state_dependent_rho: false
+  rho_lr: null
+pop_art: false
+pop_art_beta: 0.0003
+handle_timeout: false
+norm_obs: false
+norm_reward: false
+norm_obs_clip_range: 10.0
+norm_rew_clip_range: 10.0
+procgen: false
+procgen_train_num_levels: 200
+procgen_eval_num_levels: 0
+use_subproc_envs: true
+minigrid: false
+action_discretization: false
+discretization_num_atomics: 7
+env_kwargs: {}
+eval_env_kwargs: null
+continuing_env: false
+random_truncation: 0.0
+termination_cost: -1000.0
+absorbing_goal_state: false
+n_eval_episodes: 100
+n_eval_envs: 32
+eval_freq: 1000
+eval_deterministic: false
+prediction_temperatures: []
+save_model: false
+save_freq: null
+use_wandb: false
+project: EAPO
+group: null
+entity: null
