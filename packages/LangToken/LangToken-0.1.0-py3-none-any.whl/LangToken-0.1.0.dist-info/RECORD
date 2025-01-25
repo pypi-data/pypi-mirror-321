@@ -1,0 +1,9 @@
+LangToken/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LangToken/tokenizer.py,sha256=_06--szTCMgpHZorFfcKqDWPeGqqxKWasP_Tu23d32k,2642
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_tokenizer.py,sha256=rw_R3_ZHJQgFyIBtrK4_N1CBB0xjeriyk5jwuBOLTdo,2716
+LangToken-0.1.0.dist-info/LICENSE,sha256=cdicOXMI9IUxbJJQjnFwHxv2VRVXMQHQvzOqklTroh0,1093
+LangToken-0.1.0.dist-info/METADATA,sha256=vdQG3ogEgPiLwG77fj3rHCOSG90Rhvc5gSO_y5I6TEE,1982
+LangToken-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+LangToken-0.1.0.dist-info/top_level.txt,sha256=aUAgt0XFUxi3vsh7w4xM-y48wyux5PzYAvyvMQEL38c,16
+LangToken-0.1.0.dist-info/RECORD,,
