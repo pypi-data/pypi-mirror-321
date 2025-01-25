@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: terai
+Version: 1.0.0
+Summary: A terminal-based AI assistant that translates natural language queries into shell commands and executes them directly. Users can interact naturally, such as by typing "create me a Docker container," and the AI will generate, display, and run the appropriate command.
+Author: Sahil Gupta
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: flake8 (>=7.1.1,<8.0.0)
+Requires-Dist: groq (>=0.15.0,<0.16.0)
+Description-Content-Type: text/markdown
+
+# Terminal AI
+
+Terminal AI is a command-line interface (CLI) application that generates terminal commands based on user queries using API.
+
+## Installation
+
+```
+pipx install terminal-ai
+```
+
+## Usage
+
+1. Ensure you have set the `GROQ_API_KEY` environment variable:
+
+    ```sh
+    export GROQ_API_KEY=<your_api_key>
+    ```
+
+2. Run the application with a query:
+
+    ```sh
+    tai build a docker container
+    ```
+
+    Alternatively, you can run the script directly:
+
+    ```sh
+    python -m tai build a docker container
+    ```
+
+## Example
+
+```sh
+$ poetry run tai list files in the current directory
+Command: ls
+Press Enter to execute the command, or press 'q' to cancel: 
