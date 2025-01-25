@@ -1,0 +1,8 @@
+README.md
+setup.py
+parallel_reqs/parallel_reqs.egg-info/PKG-INFO
+parallel_reqs/parallel_reqs.egg-info/SOURCES.txt
+parallel_reqs/parallel_reqs.egg-info/dependency_links.txt
+parallel_reqs/parallel_reqs.egg-info/entry_points.txt
+parallel_reqs/parallel_reqs.egg-info/requires.txt
+parallel_reqs/parallel_reqs.egg-info/top_level.txt
