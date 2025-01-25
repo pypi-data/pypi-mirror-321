@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+torcn/__init__.py
+torcn.egg-info/PKG-INFO
+torcn.egg-info/SOURCES.txt
+torcn.egg-info/dependency_links.txt
+torcn.egg-info/not-zip-safe
+torcn.egg-info/top_level.txt
