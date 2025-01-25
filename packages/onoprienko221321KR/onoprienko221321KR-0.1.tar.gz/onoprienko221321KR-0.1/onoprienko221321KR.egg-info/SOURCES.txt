@@ -1,0 +1,8 @@
+setup.py
+onoprienko221321KR/__init__.py
+onoprienko221321KR/database.py
+onoprienko221321KR.egg-info/PKG-INFO
+onoprienko221321KR.egg-info/SOURCES.txt
+onoprienko221321KR.egg-info/dependency_links.txt
+onoprienko221321KR.egg-info/requires.txt
+onoprienko221321KR.egg-info/top_level.txt
