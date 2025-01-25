@@ -1,0 +1,9 @@
+img2scan2pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+img2scan2pdf/cli.py,sha256=zqZEppSl5J_YjkEq3GBfAdOkzyK4XyoswhebzY3W82Q,608
+img2scan2pdf/utils.py,sha256=Z9F2A5Ayfm6eEhYHbc4v7ZyXcx9rDVkkuV8r9hchcds,4264
+img2scan2pdf-0.1.0.dist-info/LICENSE,sha256=gOwZV8TGnPDCq8ogrbVBzoUR-jAUKtbXp6fX4sBcZgs,1097
+img2scan2pdf-0.1.0.dist-info/METADATA,sha256=TK1DzSaZb92NgO4_pPPlXqbaeweApJeGw4awYiObrqE,2967
+img2scan2pdf-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+img2scan2pdf-0.1.0.dist-info/entry_points.txt,sha256=mgaEF84DWVrXEY2nwnZG3dWnp0K8UOFzv91XlBG3Hus,55
+img2scan2pdf-0.1.0.dist-info/top_level.txt,sha256=fU9yjvQ4MlQqiEl8IFBjrJBr9gLjEKqBFwyZD3SzeKQ,13
+img2scan2pdf-0.1.0.dist-info/RECORD,,
