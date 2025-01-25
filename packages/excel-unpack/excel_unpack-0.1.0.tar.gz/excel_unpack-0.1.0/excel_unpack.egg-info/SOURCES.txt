@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+excel_unpack.egg-info/PKG-INFO
+excel_unpack.egg-info/SOURCES.txt
+excel_unpack.egg-info/dependency_links.txt
+excel_unpack.egg-info/entry_points.txt
+excel_unpack.egg-info/requires.txt
+excel_unpack.egg-info/top_level.txt
+excelunpack/__init__.py
+excelunpack/extract_attachments.py
+excelunpack/utils.py
+tests/test_extract.py
+tests/test_utils.py
