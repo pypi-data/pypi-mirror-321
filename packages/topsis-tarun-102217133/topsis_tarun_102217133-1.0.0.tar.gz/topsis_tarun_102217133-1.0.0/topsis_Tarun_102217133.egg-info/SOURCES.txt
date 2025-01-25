@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+topsis/algo.py
+topsis/init.py
+topsis/main.py
+topsis_Tarun_102217133.egg-info/PKG-INFO
+topsis_Tarun_102217133.egg-info/SOURCES.txt
+topsis_Tarun_102217133.egg-info/dependency_links.txt
+topsis_Tarun_102217133.egg-info/entry_points.txt
+topsis_Tarun_102217133.egg-info/top_level.txt
