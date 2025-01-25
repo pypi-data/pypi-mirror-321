@@ -1,0 +1,12 @@
+link_reaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+link_reaper/link_collector.py,sha256=wzo3hMqW1i4O6CGqVeSWOQeNBDk3O7GwJEQXg2-fKP8,14076
+link_reaper/link_info.py,sha256=kv-7p7pbBko_7sJdkX5erF2vQJ5nvMStUOeppthuIMo,2349
+link_reaper/reaper.py,sha256=MSt8OpYmFx5vZOnT8CRMcX42Uhkd6RGz3CTT4CPXR2M,7381
+link_reaper/tests/test_cli.py,sha256=qcfeTYfglEI_byVZDdugRSgPcVd9yAhADrpiiVIRd_c,669
+link_reaper/tests/test_link_funcs.py,sha256=CIGGNEJsmv9H5AHoAkX9xGpR-G23TV6kOWLKy43dLcY,873
+the_link_reaper-0.8.3.dist-info/LICENSE,sha256=DVRQbOKjv9PiKEX3BOSI5YGxJX1k5GMRUIoqnW65Ogg,1087
+the_link_reaper-0.8.3.dist-info/METADATA,sha256=mlEgKMhCBWh2YBx9AWtel_oSMAX8Uh0iXaj1sJ5tkoE,10908
+the_link_reaper-0.8.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+the_link_reaper-0.8.3.dist-info/entry_points.txt,sha256=sOxTpjK-fHENXlKxC25HTACvD3h9ornQfRk_0IgcVcY,63
+the_link_reaper-0.8.3.dist-info/top_level.txt,sha256=gHOsudiG1ez5DLX0BN6oD2xLFRkN-EWsSrV4zYQUkE0,12
+the_link_reaper-0.8.3.dist-info/RECORD,,
