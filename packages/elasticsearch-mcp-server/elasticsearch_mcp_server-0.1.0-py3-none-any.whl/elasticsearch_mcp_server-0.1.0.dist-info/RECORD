@@ -1,0 +1,10 @@
+server.py,sha256=7naw1-fAxtUE1gOk4LYz2WkZSz6-HnOEiS0Q97rJRFk,1167
+tools/__init__.py,sha256=yEDmkoEzUD4FlozLzvh6DMV7Hawi7o-ubSk6h4jIxMk,159
+tools/base.py,sha256=O1vRJCV3EUu9ZJRBuU9lUMcYaUL8dW717Eb03R4HFbo,1353
+tools/cluster.py,sha256=kdV6B5j7tNzz27CO0d2DeGrExQwuL6TTO4DW9iD_oLk,1802
+tools/document.py,sha256=yPGcR3nKf528895-9wSQqrIAy1dkkE0v5jHyZnhYTtk,1028
+tools/index.py,sha256=ALgZZJMPqiHWs26tJIEoa0PtNBbIEeU_g0ar__Vqy9w,2127
+elasticsearch_mcp_server-0.1.0.dist-info/METADATA,sha256=nMi_Gw75QRD22R27Qxo8FjSP_HEBjPLDWovPR2GNDFk,15606
+elasticsearch_mcp_server-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+elasticsearch_mcp_server-0.1.0.dist-info/top_level.txt,sha256=G7wLVeRFhwPCs5jEeYie9EuKDXt323FzWmuXA1ydJe8,13
+elasticsearch_mcp_server-0.1.0.dist-info/RECORD,,
