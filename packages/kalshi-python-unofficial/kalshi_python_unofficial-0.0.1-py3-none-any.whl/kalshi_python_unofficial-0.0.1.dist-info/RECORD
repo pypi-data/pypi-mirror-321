@@ -1,0 +1,16 @@
+kalshi/__init__.py,sha256=9Nj5gcb3Bf6aCtf2VfTEG78aWJdqeNtaHWS5XCAH7Wc,90
+kalshi/auth.py,sha256=xjFRhNQEqJmx_ivLGQ3yRJ7EM1wRhKEtN9-zQXNFk50,2325
+kalshi/constants.py,sha256=-zJfWDmQQo0uIHLTJCDjzv9VEzThdN7xTh8nU6Z9gYw,74
+kalshi/rest/__init__.py,sha256=LPj6jGhUMqbOjn03AjehyShIteoSAl547NTuUD7jCRo,126
+kalshi/rest/collection.py,sha256=d8eNoIeoLLcrypzjM95hbTV3A-UspJaJAmqpiUmlooI,737
+kalshi/rest/exchange.py,sha256=FzWYKVk5eOZNKflkECLBWo5huIDhXLXntZZ6Dcci0MA,558
+kalshi/rest/market.py,sha256=pqSel-Cm_5biWHu8Xd5Ypyt-W9uxwYjvG-X3v1IZmes,2808
+kalshi/rest/portfolio.py,sha256=aYtpB-XL9o6kalovZBV3Pc2ft1m4ApOnIdg7FGe70iA,4467
+kalshi/rest/rest.py,sha256=sStBssttYwlZ6ICokH4yAULw07k753W5eZoQ_aR72Pw,1217
+kalshi/websocket/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+kalshi/websocket/client.py,sha256=P4seMCtY6qqVfk6Yxk1cPyKulKWZs1V0gwTEV5Dn6qw,3878
+kalshi_python_unofficial-0.0.1.dist-info/LICENSE,sha256=QoM44HBnYQNXXVEXk2GnY_iY_rG6__u_8yOaVjA41p0,1070
+kalshi_python_unofficial-0.0.1.dist-info/METADATA,sha256=A-DNlKSGY8_ZYH8IbocqkJ3bARhFgWNaGca33Czp8u8,1328
+kalshi_python_unofficial-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kalshi_python_unofficial-0.0.1.dist-info/top_level.txt,sha256=NBc_Bjpa7eay38s24feths4CbfMN6p1Xy58Oa7b9dto,7
+kalshi_python_unofficial-0.0.1.dist-info/RECORD,,
