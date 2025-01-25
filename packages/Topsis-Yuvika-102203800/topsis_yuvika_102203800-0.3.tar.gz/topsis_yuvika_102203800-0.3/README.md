@@ -1,0 +1,52 @@
+# Topsis_Yuvika_102203800
+
+This is a Python package for implementing the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS). It is a popular multi-criteria decision-making method used to rank alternatives based on their relative closeness to the ideal solution.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install Topsis_Yuvika_102203800
+```
+
+## Usage
+
+### Input File Format
+
+The input CSV file must follow this structure:
+
+- The first column contains the names of the alternatives (e.g., products, models, or options).
+- Subsequent columns contain the numerical values of the criteria for each alternative.
+- The first row should provide headers for all columns.
+-There must be at least three columns
+- All criteria values should be numerical.
+- The number of weights and impacts should match the number of criteria columns.
+- Impacts must only include + (beneficial) or - (non-beneficial).
+
+
+### Command-line Usage
+
+After installation, you can use the `topsis` command in the terminal:
+
+```bash
+topsis <input_file> <weights> <impacts> <output_file>
+````
+
+- `<input_file>`: Path to the input CSV file.
+- `<weights>`: Comma-separated string of weights for the criteria.
+- `<impacts>`: Comma-separated string of '+' or '-' indicating the desirability of the criteria.
+- `<output_file>`: Path to the output CSV file to save the results.
+
+## Example
+
+```bash
+topsis data.csv "0.5,0.3,0.2" "+,-,+" results.csv
+```
+
+This command will process the `data.csv` file using the specified weights and impacts and output the results to `results.csv`.
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
