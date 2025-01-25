@@ -1,0 +1,43 @@
+name: Publish
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: read
+
+jobs:
+    build:
+        uses: ./.github/workflows/build.yaml
+        permissions:
+            contents: read
+            packages: write 
+            actions: write 
+
+    pypi-publish:
+        runs-on: ubuntu-latest
+        needs:
+        - build
+        permissions:
+        # IMPORTANT: this permission is mandatory for trusted publishing
+          id-token: write
+
+        # Dedicated environments with protections for publishing are strongly recommended.
+        # For more information, see: https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#deployment-protection-rules
+        environment:
+          name: pypi
+          url: https://pypi.org/p/web-novel-scrapper
+
+        steps:
+        - name: Retrieve release distributions
+          uses: actions/download-artifact@v4
+          with:
+            name: release-dists
+            path: dist/
+
+        - name: Publish release distributions to PyPI
+          uses: pypa/gh-action-pypi-publish@release/v1
+          with:
+            packages-dir: dist/
+
