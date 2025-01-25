@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Topsis-ShrihanTayal-102203460
+Version: 1.0.0
+Summary: A Python package for TOPSIS
+Author: Shrihan Tayal
+Requires-Dist: pandas
+Requires-Dist: numpy
+
