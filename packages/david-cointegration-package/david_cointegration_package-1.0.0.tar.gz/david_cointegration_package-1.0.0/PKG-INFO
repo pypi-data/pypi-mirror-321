@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: david-cointegration-package
+Version: 1.0.0
+Summary: A package for 203 python class
+License: MIT
+Author: David Verelst
+Requires-Python: >=3.11.9,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: datetime (>=5.5,<6.0)
+Requires-Dist: logging (>=0.4.9.6,<0.5.0.0)
+Requires-Dist: matplotlib (>=3.10.0,<4.0.0)
+Requires-Dist: numpy (>=2.2,<3.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: statsmodels (>=0.14.4,<0.15.0)
+Description-Content-Type: text/markdown
+
+# python_class
+
+A package for 203 python class
+
+## Installation
+
+```bash
+$ pip install python_class
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`python_class` was created by David Verelst. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`python_class` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
