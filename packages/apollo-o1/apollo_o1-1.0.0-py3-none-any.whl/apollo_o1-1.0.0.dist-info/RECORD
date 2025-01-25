@@ -1,0 +1,9 @@
+apollo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apollo/create_repo.py,sha256=_EGRVogVkdr7ZFA1EsfMoude3oMZJQoV31UHmE7L7nU,9762
+apollo/main.py,sha256=s5R8JvPMAm5BvJ1ivmWMUg6Enh2cgySkqHzplYUJemk,1089
+apollo/push_repo.py,sha256=iIMa9iWChvGjT3Jea4XxQ8pWu3f3J4LnDr8H2EJGUAA,1411
+apollo_o1-1.0.0.dist-info/METADATA,sha256=4mc5x4A-M5RUtU4XWn4UFBdQU137QR_pTIpGMhIKy1A,5973
+apollo_o1-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+apollo_o1-1.0.0.dist-info/entry_points.txt,sha256=vwbcBldoavp2fu3Xjk2UP5EVyzJSciyU0ucgICymE7Q,46
+apollo_o1-1.0.0.dist-info/top_level.txt,sha256=q2RhKSzMzXAtBa3SXLNN56X8drDyPzEjfVgLFiHHRKI,7
+apollo_o1-1.0.0.dist-info/RECORD,,
