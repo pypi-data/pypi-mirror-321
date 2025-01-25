@@ -1,0 +1,2 @@
+[console_scripts]
+cpn-cli = cpn_cli:__main__.main

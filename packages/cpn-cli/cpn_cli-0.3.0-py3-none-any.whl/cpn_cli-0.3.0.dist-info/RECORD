@@ -1,0 +1,16 @@
+cpn_cli/__main__.py,sha256=7mxypkyKzxFfyiYqQya8_PT5D0BvalJt53ein3r1nN4,750
+cpn_cli/constants.py,sha256=G8QnyHpfhr6mq41_0BMnne3J3tneI19gyBNTFIeqDJU,369
+cpn_cli/models/config.py,sha256=Gj0eAQlZJfYYNruq4HFofq-Iv23TKKPt6RfdgPGzG1w,2964
+cpn_cli/models/notifcations/base.py,sha256=JinR-0n4Yu0IASJtvVs-O97Pn-j9ktcJtsN_sbmY5Sk,172
+cpn_cli/models/notifcations/discord.py,sha256=HVoIzNAsTK7A_ixIr-u1RDZAZnhm8Buj4lWfd1jO3SA,378
+cpn_cli/models/notifcations/telegram.py,sha256=FI5fexL7Zzpf11TMZaaLnlFWJvuePIzbFviUIQuvMwA,393
+cpn_cli/modules/config_reader.py,sha256=n_nkkQFS7U4De3R6r5U7do1G6N1LqmfqaKdmF0fAbko,717
+cpn_cli/modules/get_data.py,sha256=eS1ZcVprqaQVatreP888jojtji3MEX1fbD4ZNHjU9Zs,3810
+cpn_cli/modules/notify.py,sha256=PgdJQfpfjUnLXdFbwi6HI1ahuuKAzin5x0POYRe5XH0,3106
+cpn_cli/modules/print_console.py,sha256=BCD8HX43uvQDJuVQrASqH79Eg5AFWM_8IRHIlPsUQHU,866
+cpn_cli/modules/setup_logger.py,sha256=2a02XMKX7eiuqZ7MC2axJZqW4S343HZE3u2wLxIrcpY,335
+cpn_cli-0.3.0.dist-info/METADATA,sha256=duhgVwd2h43FZy-GZTcV7lXRTZ3my0ayufM0NT6BMiM,238
+cpn_cli-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cpn_cli-0.3.0.dist-info/entry_points.txt,sha256=V-2WB-A_MDbIo50n7Bu8uFt0b55iizMv2GwxtX4qzk8,50
+cpn_cli-0.3.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cpn_cli-0.3.0.dist-info/RECORD,,
