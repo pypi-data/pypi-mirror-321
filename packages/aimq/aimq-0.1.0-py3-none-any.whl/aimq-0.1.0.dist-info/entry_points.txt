@@ -1,0 +1,3 @@
+[console_scripts]
+aimq=aimq.commands:app
+
