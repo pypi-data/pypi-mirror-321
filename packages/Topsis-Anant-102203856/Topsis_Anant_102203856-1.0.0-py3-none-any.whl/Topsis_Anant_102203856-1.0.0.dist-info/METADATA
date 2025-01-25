@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Topsis-Anant-102203856
+Version: 1.0.0
+Summary: A Python package to implement the TOPSIS method.
+Author: Anant
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy >=1.21.0
+Requires-Dist: pandas >=1.3.0
+
