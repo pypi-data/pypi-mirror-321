@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Topsis-Vedant-Saha-102203494
+Version: 0.1
+Summary: A Python package for TOPSIS implementation
+Author: Vedant_Saha
+Author-email: vedantsaha04@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
