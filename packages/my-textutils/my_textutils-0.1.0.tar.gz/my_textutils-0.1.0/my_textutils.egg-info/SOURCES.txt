@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+my_textutils.egg-info/PKG-INFO
+my_textutils.egg-info/SOURCES.txt
+my_textutils.egg-info/dependency_links.txt
+my_textutils.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
+textutils/__init__.py
+textutils/core.py

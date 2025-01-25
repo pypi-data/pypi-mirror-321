@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: my_textutils
+Version: 0.1.0
+Summary: A utility library for text processing
+Author: Kaushal Varma
+Author-email: varma.kaushal.99@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: summary
