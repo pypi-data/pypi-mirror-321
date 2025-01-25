@@ -1,0 +1,17 @@
+ptcgp/__init__.py,sha256=a4h4oBGAJuKkWxdhaEsGPMWTkQU3ZNzG5I7zHYQW1P0,136
+ptcgp/constants.py,sha256=pRSxXWm071a6Kt3OLYJ5rtnD2bH0Sfs8aoAhLNYTBH8,1328
+ptcgp/objects.py,sha256=aj9E8ee7da2vWt4A_rM-IK0E7bndv0Ee8TW9zTerk8g,9280
+ptcgp/parser.py,sha256=VdgCSCLrB3xtBKPNjw0Lcli4A3gEMOT4VczyFDq5_aY,1258
+ptcgp/scraper.py,sha256=HnRJTlQvcvl1mQMas-s9G_zLEuQfPgPQgHUMXNeXvBI,3158
+ptcgp/utils.py,sha256=tsdAeM6pNahGOCK35HPF2tn3pjO58qEYr4seAD4umas,883
+ptcgp/app/__init__.py,sha256=QoK6TPrEDPBSbqQ4V_qnThwUc2YthhMvR1fo2t0xgXw,20
+ptcgp/app/app.py,sha256=ykhjmgLlQ80ujUY690uYvG6w7Jg0acw2LwbFOlNr1Uw,402
+ptcgp/app/components/__init__.py,sha256=fRwUAyx_RsZ8bW7H0qLm_nuqRkmNSRNi7bkMLyfQUbs,23
+ptcgp/app/components/select.py,sha256=1p2TsAJI4Lebh3D4lS75g-W-ggfzPCX5G5bLQhXmVHQ,524
+ptcgp/app/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptcgp/app/pages/details.py,sha256=rxR95xDlVSTKeENKDEbWJs_aoT3XrdcLzhwlcTRSJTI,1025
+ptcgp/app/pages/main.py,sha256=vWLq__wbS5KChKWgRHehtM3BCGHvjEP7KvP2-T8ScXM,4519
+ptcgp-0.2.0.dist-info/METADATA,sha256=WY_RNSxkULwl9xbT4XSJ-ey6bfEVV0v3mGaMWNJWxuc,486
+ptcgp-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ptcgp-0.2.0.dist-info/top_level.txt,sha256=adtdEOvSpp5IPhfJ5fTJtMrnuLufggszdPK7v0GRDQo,6
+ptcgp-0.2.0.dist-info/RECORD,,
