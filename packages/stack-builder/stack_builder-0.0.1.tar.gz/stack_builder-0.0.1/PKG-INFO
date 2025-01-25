@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: stack-builder
+Version: 0.0.1
+Summary: stack_builder is a Python tool that automates the creation of project foundations for multi-tech stacks like Django, React, and MongoDB, generating Dockerfiles, Docker Compose configurations, and more.
+License: MIT
+Author: Ankoay-Feno
+Author-email: ankoayfeno@gmail.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Jinja2 (>=3.1.5)
+Requires-Dist: PyYAML (>=6.0.2)
+Requires-Dist: click (>=8.1.8)
+Description-Content-Type: text/markdown
+
+
