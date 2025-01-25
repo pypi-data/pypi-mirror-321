@@ -1,0 +1,7 @@
+tqdm
+apd
+data_manipulation_utilities>0.1.2
+rx_data
+
+[dev]
+pytest
