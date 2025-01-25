@@ -1,0 +1,28 @@
+{% load i18n %}
+
+<table>
+  {% if apps %}
+    {% for app in apps %}
+      <tr>
+        <td>
+          <details>
+            <summary>
+              {{ app.name }}
+            </summary>
+            <ul>
+              <li>{% trans "ID" %}: {{ app.id }}</li>
+              <li>{% trans "Type" %}: {{ app.type }}</li>
+              <li>{% trans "Port" %}: {{ app.port }}</li>
+              <li>{% trans "Installer URL" %}: {{ app.installer_url }}</li>
+              <li>{% trans "JSON" %}: {{ app.json }}</li>
+              <li>{% trans "State" %}: {{ app.state }}</li>
+              <li>{% trans "Ready" %}: {{ app.ready }}</li>
+            </ul>
+          </details>
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+    <tr><td>{% trans "No applications yet" %}</td></tr>
+  {% endif %}
+</table>

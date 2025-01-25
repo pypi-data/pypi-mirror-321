@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<h1>{% trans "(((Opalstack Tokens" %}</h1>
+{% if object_list %}
+  <ul hx-indicator="#opal-indicator">
+    {% for token in object_list %}
+      <li>
+        <a href="#"
+           hx-get="{% url 'django_opalstack:token_detail' pk=token.id %}"
+           hx-target="#opal-content"
+           hx-push-url="true">
+          {{ token.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>{% trans "No tokens yet" %}</p>
+{% endif %}
+<a href="/admin/django_opalstack/token/add/">
+  {% trans "Add Token" %}
+</a>
+<p id="opal-indicator" class="htmx-indicator" style="color: red">{% trans "Loading..." %}</p>
