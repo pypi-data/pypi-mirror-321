@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+voxel_object_detection/__init__.py
+voxel_object_detection/detection.py
+voxel_object_detection/utils.py
+voxel_obstacle_detection.egg-info/PKG-INFO
+voxel_obstacle_detection.egg-info/SOURCES.txt
+voxel_obstacle_detection.egg-info/dependency_links.txt
+voxel_obstacle_detection.egg-info/requires.txt
+voxel_obstacle_detection.egg-info/top_level.txt

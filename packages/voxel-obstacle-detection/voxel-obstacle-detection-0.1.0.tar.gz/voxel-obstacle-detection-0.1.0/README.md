@@ -1,0 +1,122 @@
+# Obstacle Detection
+
+[![PyPI version](https://badge.fury.io/py/obstacle-detection.svg)](https://badge.fury.io/py/obstacle-detection)
+[![Python versions](https://img.shields.io/pypi/pyversions/obstacle-detection.svg)](https://pypi.org/project/obstacle-detection/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Obstacle Detection** is a Python package designed to facilitate obstacle detection in voxelized environments using raycasting techniques. It leverages Open3D for 3D geometry processing and is optimized for robotics and visualization tasks.
+
+---
+
+## Features
+
+- **Voxelized Mesh Handling**: Import and process 3D voxel maps for obstacle detection.
+- **Raycasting**: Cast rays in customizable directions to detect obstacles.
+- **Visualization**: Render voxel maps, raycasting results, and directional vectors using Open3D.
+- **Dominant Direction Analysis**: Analyze the dominant direction in a voxel map for robot orientation.
+- **Flexible APIs**: Integrate with other robotics or visualization frameworks.
+
+---
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install obstacle-detection
+
+## Dependencies
+
+The package relies on the following dependencies:
+
+- `numpy`
+- `open3d`
+- `scikit-learn`
+- `urdfpy`
+```
+
+All required dependencies will be installed automatically when using `pip install`.
+
+---
+
+## Usage
+
+### Example 1: Visualizing a Voxel Map
+
+```python
+from voxel_object_detection.Obstacle_Detection import Obstacle_Detection
+
+od = Obstacle_Detection()
+
+od.show_voxel_map(file_path="./examples/data/voxel_map_example.json")
+```
+
+### Example 2: Detect Obstacles in a Given Direction
+
+```python
+from voxel_object_detection.Obstacle_Detection import Obstacle_Detection
+
+max_distance = 30
+num_rays = 100
+angle_range = 30
+threshold = 0.1
+file_path = "./examples/data/voxel_map_example.json"
+move_direction = [1, 0, 0]
+
+od = Obstacle_Detection(
+    max_distance=max_distance,
+    num_rays=num_rays,
+    angle_range=angle_range
+)
+
+voxel_map = od.load_voxel_map_from_json(file_path)
+
+scene, dominant_direction = od.preprocess_voxel_map(voxel_map, render=False)
+
+path_is_clear = od.is_path_clear(
+    dominant_direction=dominant_direction,
+    relative_walking_vector=move_direction,
+    scene=scene,
+    threshold=threshold,
+)
+
+if path_is_clear:
+    print("Path is clear!")
+else:
+    print("Obstacle detected!")
+```
+
+## API Reference
+
+### `ObstacleDetection`
+
+#### Methods
+
+- `__init__(voxel_map_path: str)`
+  - Initialize the class with a JSON voxel map file.
+
+- `visualize_voxel_map()`
+  - Render the voxel map and raycasting results using Open3D.
+
+- `check_clear_path(center: list, dominant_direction: list, relative_direction: list, max_distance: float) -> bool`
+  - Check if there is a clear path in a given direction, relative to the dominant direction.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any features, fixes, or improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+- **Open3D**: For powerful 3D visualization and raycasting tools.
+- **NumPy**: For numerical computations.
+- **Scikit-learn**: For PCA and other analysis utilities.
