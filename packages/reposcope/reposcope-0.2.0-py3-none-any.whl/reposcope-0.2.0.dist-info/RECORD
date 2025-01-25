@@ -1,0 +1,10 @@
+reposcope/__init__.py,sha256=GT7KwfHf513K7xj0ClIepY0nTw5NN5O9CdYCD9YSi2k,149
+reposcope/__main__.py,sha256=sJ84S8NjZi2iue9nywrB-NaO776GtJd80WEq0XwCgAU,180
+reposcope/cli.py,sha256=rAFmN7nHflUpMpS7xDdBWoyum3ECaWykbPmdwxfuMt8,8621
+reposcope/core.py,sha256=6RUH6JhgkaQPq8KwkdYFd8WVtp4_-OjdPxRKbv97Xas,8725
+reposcope/profiles.py,sha256=Q3N5ZJ-FNC93cNKIJWoshEW6f_7XieZpBfd62USTwmE,6058
+reposcope-0.2.0.dist-info/METADATA,sha256=gBKSVGYB82NcUMm5t6LcVJYspISCHoB03T4ISU6c6Xg,6422
+reposcope-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+reposcope-0.2.0.dist-info/entry_points.txt,sha256=rVurgtz7Yt7hCwz6dQ0Y-EpGbOn1B6Jj5K9F41p9aXQ,58
+reposcope-0.2.0.dist-info/licenses/LICENSE,sha256=JY3eLfMSZx9llJR56dwwsFzE1kMYq_4ZAjGJfZA8rm8,1071
+reposcope-0.2.0.dist-info/RECORD,,
