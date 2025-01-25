@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "topsis-sameer-102203785"
+version = "0.1.0"
+authors = [
+    { name = "Sameer Jain", email = "jainsameer2003@gmail.com" },
+]
+description = "A package to calculate TOPSIS scores from CSV input files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=1.0.0",
+    "numpy>=1.20.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/topsis_calculator"
+"Bug Tracker" = "https://github.com/yourusername/topsis_calculator/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/topsis_calculator"]
