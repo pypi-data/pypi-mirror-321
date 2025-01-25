@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+topsis_shubhaan_102203456/__init__.py
+topsis_shubhaan_102203456/topsis.py
+topsis_shubhaan_102203456.egg-info/PKG-INFO
+topsis_shubhaan_102203456.egg-info/SOURCES.txt
+topsis_shubhaan_102203456.egg-info/dependency_links.txt
+topsis_shubhaan_102203456.egg-info/entry_points.txt
+topsis_shubhaan_102203456.egg-info/requires.txt
+topsis_shubhaan_102203456.egg-info/top_level.txt
