@@ -1,0 +1,11 @@
+prefix=/var/folders/84/5079cppj57s0lzywhyzcxkjc0000gn/T/tmp7j39hz1r/wheel/platlib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+pkgincludedir=${includedir}/openbabel3
+
+Name: Open Babel library
+Description: libopenbabel
+Version: 3.1.0
+Libs: -L${libdir} -lopenbabel
+Cflags: -I${pkgincludedir}
