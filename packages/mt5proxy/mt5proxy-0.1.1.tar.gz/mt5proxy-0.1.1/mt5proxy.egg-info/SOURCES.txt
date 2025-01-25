@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mt5proxy.egg-info/PKG-INFO
+mt5proxy.egg-info/SOURCES.txt
+mt5proxy.egg-info/dependency_links.txt
+mt5proxy.egg-info/requires.txt
+mt5proxy.egg-info/top_level.txt
