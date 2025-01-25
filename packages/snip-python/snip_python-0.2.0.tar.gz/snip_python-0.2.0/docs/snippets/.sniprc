@@ -1,0 +1,9 @@
+[test]
+book_id = -1
+token = test
+deployment = https://snip:4000
+
+[reasdasd]
+token=c5e61831994af431266c794c6440b9345bf695b1905f826d739e96b2348a7c5cc101456aae43c1818fae58ff3bb06770d3330230aba811cfbd169f8d25f5528e01edcb3b68f53334f51bca9ab0626429c6714c5f00934caf6e940f77ebf275b6
+book_id=1
+deployment = https://snip:4000
