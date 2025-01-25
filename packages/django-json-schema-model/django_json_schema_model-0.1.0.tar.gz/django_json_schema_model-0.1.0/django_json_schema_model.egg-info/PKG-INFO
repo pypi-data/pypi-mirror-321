@@ -1,0 +1,156 @@
+Metadata-Version: 2.2
+Name: django-json-schema-model
+Version: 0.1.0
+Summary: JSON schema model for django.
+Author-email: Maykin Media <support@maykinmedia.nl>
+License: Copyright 2025 Maykin Media
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/maykinmedia/django-json-schema-model
+Project-URL: Bug Tracker, https://github.com/maykinmedia/django-json-schema-model/issues
+Project-URL: Source Code, https://github.com/maykinmedia/django-json-schema-model
+Keywords: django,json schema
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: django>=4.2
+Requires-Dist: jsonschema>=4.23
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-django; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: tox; extra == "tests"
+Requires-Dist: isort; extra == "tests"
+Requires-Dist: black; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Provides-Extra: release
+Requires-Dist: bump-my-version; extra == "release"
+
+
+
+Welcome to django-json-schema-model's documentation!
+====================================================
+
+:Version: 0.1.0
+:Source: https://github.com/maykinmedia/django-json-schema-model
+:Keywords: ``<keywords>``
+:PythonVersion: 3.10
+
+|build-status| |code-quality| |black| |coverage| |docs|
+
+|python-versions| |django-versions| |pypi-version|
+
+A reusable Django app to store JSON schemas.
+
+.. contents::
+
+.. section-numbering::
+
+Features
+========
+
+* JsonSchemaModel consisting of
+    - name CharField
+    - schema JsonField
+    - validate(json) method to validate JSON against the schema.
+
+Installation
+============
+
+Requirements
+------------
+
+* Python 3.10 or above
+* Django 4.2 or newer
+* A database supporting django.db.models.JSONField
+
+
+Install
+-------
+
+.. code-block:: bash
+
+    pip install django-json-schema-model
+
+
+Usage
+=====
+
+.. code-block:: python
+
+    from django_json_schema_model.models import JsonSchema
+
+    class ProductType(models.Model):
+        schema = models.ForeignKey(JsonSchema, on_delete=models.PROTECT)
+
+    class Product(models.Model):
+        json = models.JsonField()
+        type = models.ForeignKey(ProductType, on_delete=models.CASCADE)
+
+        def clean(self):
+            self.type.schema.validate(self.json)
+
+Local development
+=================
+
+To install and develop the library locally, use::
+
+.. code-block:: bash
+
+    pip install -e .[tests,coverage,docs,release]
+
+When running management commands via ``django-admin``, make sure to add the root
+directory to the python path (or use ``python -m django <command>``):
+
+.. code-block:: bash
+
+    export PYTHONPATH=. DJANGO_SETTINGS_MODULE=testapp.settings
+    django-admin check
+    # or other commands like:
+    # django-admin makemessages -l nl
+
+
+.. |build-status| image:: https://github.com/maykinmedia/django-json-schema-model/workflows/Run%20CI/badge.svg
+    :alt: Build status
+    :target: https://github.com/maykinmedia/django-json-schema-model/actions?query=workflow%3A%22Run+CI%22
+
+.. |code-quality| image:: https://github.com/maykinmedia/django-json-schema-model/workflows/Code%20quality%20checks/badge.svg
+     :alt: Code quality checks
+     :target: https://github.com/maykinmedia/django-json-schema-model/actions?query=workflow%3A%22Code+quality+checks%22
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+.. |coverage| image:: https://codecov.io/gh/maykinmedia/django-json-schema-model/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/maykinmedia/django-json-schema-model
+    :alt: Coverage status
+
+.. |docs| image:: https://readthedocs.org/projects/django-json-schema-model/badge/?version=latest
+    :target: https://django-json-schema-model.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. |python-versions| image:: https://img.shields.io/pypi/pyversions/django-json-schema-model.svg
+
+.. |django-versions| image:: https://img.shields.io/pypi/djversions/django-json-schema-model.svg
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-json-schema-model.svg
+    :target: https://pypi.org/project/django-json-schema-model/
