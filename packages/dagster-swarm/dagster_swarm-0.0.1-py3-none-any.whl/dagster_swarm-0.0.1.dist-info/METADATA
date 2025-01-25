@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: dagster-swarm
+Version: 0.0.1
+Summary: A Dagster integration for running in a Docker Swarm configuration
+Project-URL: Homepage, https://github.com/cooperellidge/dagster-swarm
+Project-URL: Repository, https://github.com/cooperellidge/dagster-swarm
+Project-URL: Documentation, https://cooperellidge.github.io/dagster-swarm
+Author-email: Cooper Ellidge <cooper.ellidge@gmail.com>
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Monitoring
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: dagster>=1.9.8
+Requires-Dist: docker-py>=1.10.6
+Description-Content-Type: text/markdown
+
+# dagster-swarm
+
+A Dagster integration for running in a Docker Swarm configuration.
+
+The project is a WIP and is not feature complete.
