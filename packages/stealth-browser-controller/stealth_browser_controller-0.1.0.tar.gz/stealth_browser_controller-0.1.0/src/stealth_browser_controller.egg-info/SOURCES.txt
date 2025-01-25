@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/stealth_browser_controller.egg-info/PKG-INFO
+src/stealth_browser_controller.egg-info/SOURCES.txt
+src/stealth_browser_controller.egg-info/dependency_links.txt
+src/stealth_browser_controller.egg-info/requires.txt
+src/stealth_browser_controller.egg-info/top_level.txt
