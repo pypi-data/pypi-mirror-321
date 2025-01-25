@@ -1,0 +1,98 @@
+fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$Ws/iB/wExmsCLBGXG.h0Z.r1wPezjGDkksT/2fAL817B0nd2CBTgy', 'email': 'admin@admin.ru'}]:admin
+2024-12-28 16:18:11,167 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$Ws/iB/wExmsCLBGXG.h0Z.r1wPezjGDkksT/2fAL817B0nd2CBTgy', 'email': 'admin@admin.ru'}]:admin
+{'username': 'admin', 'hashed_password': '$2b$12$Ws/iB/wExmsCLBGXG.h0Z.r1wPezjGDkksT/2fAL817B0nd2CBTgy', 'email': 'admin@admin.ru'}
+2024-12-28 16:18:11,167 | DEBUG | 140524931319360 | {'username': 'admin', 'hashed_password': '$2b$12$Ws/iB/wExmsCLBGXG.h0Z.r1wPezjGDkksT/2fAL817B0nd2CBTgy', 'email': 'admin@admin.ru'}
+fwdi.Utilites.jwt_tools:admin
+2024-12-28 16:18:11,167 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:admin
+fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin', 'upload']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+2024-12-28 16:18:11,347 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin', 'upload']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM
+2024-12-28 16:18:11,348 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+2024-12-28 16:18:55,714 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:18:55,715 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+2024-12-28 16:19:25,346 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fce81fe43d0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:19:25,346 | DEBUG | 140524931319360 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f7e22a94b20>
+2024-12-28 16:26:52,899 | DEBUG | 140179734111808 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f7e22a94b20>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:26:52,900 | DEBUG | 140179734111808 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f21863e8ca0>
+2024-12-28 16:28:06,988 | DEBUG | 139781973165632 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f21863e8ca0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:28:06,989 | DEBUG | 139781973165632 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f39ba011000>
+2024-12-28 16:30:47,064 | DEBUG | 139885919155776 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f39ba011000>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:30:47,066 | DEBUG | 139885919155776 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f7bc0b9b820>
+2024-12-28 16:33:15,659 | DEBUG | 140169499706944 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f7bc0b9b820>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:33:15,660 | DEBUG | 140169499706944 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f879eb6cd30>
+2024-12-28 16:35:03,445 | DEBUG | 140220468622912 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f879eb6cd30>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:35:03,446 | DEBUG | 140220468622912 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fc9470b8fd0>
+2024-12-28 16:37:29,860 | DEBUG | 140502467094080 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fc9470b8fd0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:37:29,861 | DEBUG | 140502467094080 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fc9470b8fd0>
+2024-12-28 16:38:48,517 | DEBUG | 140502467094080 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fc9470b8fd0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:38:48,518 | DEBUG | 140502467094080 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f51cd584c70>
+2024-12-28 16:43:45,178 | DEBUG | 139989324244544 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f51cd584c70>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:43:45,179 | DEBUG | 139989324244544 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f788a9fcf10>
+2024-12-28 16:52:39,061 | DEBUG | 140155708835392 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f788a9fcf10>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:52:39,063 | DEBUG | 140155708835392 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fcd54aa4ee0>
+2024-12-28 16:54:09,498 | DEBUG | 140519873893952 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fcd54aa4ee0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:54:09,499 | DEBUG | 140519873893952 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f22934a4f40>
+2024-12-28 16:57:37,769 | DEBUG | 139786485159488 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f22934a4f40>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:57:37,770 | DEBUG | 139786485159488 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fbc546ccc40>
+2024-12-28 16:58:55,653 | DEBUG | 140446856914496 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fbc546ccc40>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 16:58:55,654 | DEBUG | 140446856914496 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fced6e91060>
+2024-12-28 23:37:05,338 | DEBUG | 140526354093632 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fced6e91060>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 23:37:05,343 | DEBUG | 140526354093632 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f6456c90cd0>
+2024-12-28 23:52:44,368 | DEBUG | 140068939474496 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM1OTY2NjkxfQ.IFjh3ERBZvVrC2iKskz48Hau3xKVPPtygnVmcHxrUTM:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f6456c90cd0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-28 23:52:44,378 | DEBUG | 140068939474496 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+2025-01-12 00:26:32,969 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-12 00:26:32,971 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+2025-01-12 00:30:41,910 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-12 00:30:41,911 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+2025-01-12 00:34:44,529 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fa040ab0f10>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-12 00:34:44,530 | DEBUG | 140326266918464 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+2025-01-14 00:44:47,843 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-14 00:44:47,845 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+2025-01-14 00:47:04,710 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-14 00:47:04,714 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+2025-01-14 00:47:33,314 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJ1cGxvYWQiXSwiZXhwIjoxNzM3MjA1MDExfQ.oGjK0rPnpWJdDrm8d-nyS09u7DWiuiQUdt0-8Gf6T00:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fd8da098ee0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2025-01-14 00:47:33,314 | DEBUG | 140569356449344 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
