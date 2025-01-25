@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis_Anchit_102203810.topsis:main
