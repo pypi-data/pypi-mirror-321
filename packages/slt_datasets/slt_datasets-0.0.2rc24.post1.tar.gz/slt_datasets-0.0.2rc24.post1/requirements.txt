@@ -1,0 +1,5 @@
+matplotlib==3.8.3
+numpy==1.26.4
+posecraft
+torch==2.3.1
+torchvision==0.18.1
