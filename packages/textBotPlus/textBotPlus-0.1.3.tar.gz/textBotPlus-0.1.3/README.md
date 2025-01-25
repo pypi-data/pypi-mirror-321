@@ -1,0 +1,185 @@
+# textBotPlus
+
+A utility package for processing JSON data and extracting text from HTML.
+
+## Installation
+
+You can install this package via pip:
+
+```bash
+pip install textBotPlus
+
+# ================================================================
+
+from textBotPlus import create_directory
+# Creates a directory if it doesn't already exist.
+
+
+# Example 1: Creating a new directory
+create_directory("new_folder")
+
+# Example 2: Creating nested directories
+create_directory("parent_folder/sub_folder")
+
+# ================================================================
+
+from textBotPlus import standardized_string
+# This function standardizes the input string by removing escape sequences like \n, \t, and \r, removing HTML tags, collapsing multiple spaces, and trimming leading/trailing spaces.
+
+
+# Example 1: Standardize a string with newlines, tabs, and HTML tags
+input_string_1 = "<html><body>  Hello \nWorld!  \tThis is a test.  </body></html>"
+print("Standardized String 1:", standardized_string(input_string_1))
+
+# Example 2: Input string with multiple spaces and line breaks
+input_string_2 = "  This   is   a  \n\n   string   with  spaces and \t tabs.  "
+print("Standardized String 2:", standardized_string(input_string_2))
+
+# Example 3: Pass an empty string
+input_string_3 = ""
+print("Standardized String 3:", standardized_string(input_string_3))
+
+# Example 4: Pass None (invalid input)
+input_string_4 = None
+print("Standardized String 4:", standardized_string(input_string_4))
+
+================================================================
+
+from textBotPlus import remove_common_elements
+# The function removes elements from the remove_in collection that are present in the remove_by collection.
+
+
+# Example 1: Removing common elements between two lists
+remove_in = [1, 2, 3, 4, 5]
+remove_by = [3, 4, 6]
+result = remove_common_elements(remove_in, remove_by)
+print(result)  # Output: [1, 2, 5]
+
+# Example 2: Removing common elements between a set and a tuple
+remove_in = {1, 2, 3, 4, 5}
+remove_by = (3, 4, 6)
+result = remove_common_elements(remove_in, remove_by)
+print(result)  # Output: {1, 2, 5}
+
+# Example 3: Missing one argument (should print an error message)
+result = remove_common_elements(remove_in, None)  # Output: "Value not passed for: remove_by"
+
+# Example 4: Missing both arguments (should print an error message)
+result = remove_common_elements(None, None)  # Output: "Value not passed for: remove_in, remove_by"
+
+================================================================
+
+from textBotPlus import save_to_csv
+# The save_to_csv function saves data to a CSV file, appending to an existing file or creating a new one, and includes optional column headers and a customizable delimiter.
+
+# Example data to be saved
+list_data = [[1, 'Alice', 23], [2, 'Bob', 30], [3, 'Charlie', 25]]
+column_header_list = ['ID', 'Name', 'Age']
+output_file_path = 'output_data.csv'
+
+# Save with the default separator (comma)
+save_to_csv(list_data, column_header_list, output_file_path)
+
+# Save with a tab separator
+save_to_csv(list_data, column_header_list, output_file_path, sep="\t")
+
+# Save with a semicolon separator
+save_to_csv(list_data, column_header_list, output_file_path, sep=";")
+
+Sample Output:
+
+If sep="," (default), the CSV file will look like this:
+
+ID,Name,Age
+1,Alice,23
+2,Bob,30
+3,Charlie,25
+
+If sep="\t" (tab), the CSV file will look like this: 
+
+ID	Name	Age
+1	Alice	23
+2	Bob	30
+3	Charlie	25
+
+================================================================
+
+from textBotPlus import read_csv
+# The read_csv function reads a CSV file into a Pandas DataFrame, with optional filtering and column value extraction based on specified criteria.
+
+Example 1:  Default Separator (Comma):
+
+# Read from a CSV file with the default separator (comma)
+csv_file_path = 'data.csv'
+get_value_by_col_name = 'URL'
+filter_col_name = 'Category'
+inculde_filter_col_values = ['Tech']
+
+result = read_csv(csv_file_path, get_value_by_col_name, filter_col_name, inculde_filter_col_values)
+print(result)
+
+Sample Output:
+
+Category,URL
+Tech,https://tech1.com
+Tech,https://tech2.com
+Science,https://science1.com
+
+
+Example 2: Default Separator (tab):
+
+# Read from a CSV file with a custom separator (tab)
+result = read_csv(csv_file_path, get_value_by_col_name, filter_col_name, inculde_filter_col_values, sep="\t")
+print(result)
+
+Sample Output:
+
+Category	URL
+Tech	https://tech1.com
+Tech	https://tech2.com
+Science	https://science1.com
+
+================================================================
+
+from textBotPlus import get_json_text
+# The function returns the standardized value (using standardized_string()) if it’s a basic data type like str, int, or float. Otherwise, it returns the raw JSON object or an empty string if nothing is found.
+
+json_data = {"user": {"name": "John", "age": 30}}
+keys = ["user", "name"]
+result = get_json_text(json_data, keys)
+print(result)  # Output: "John"
+
+================================================================
+
+from bs4 import BeautifulSoup
+from textBotPlus import get_selector_text
+# The get_selector_text function extracts text or attribute values from a BeautifulSoup-parsed HTML document using CSS selectors, with options for specific element matching, attribute retrieval, or full text extraction.
+
+html = '<html><body><p id="paragraph">Hello, world!</p></body></html>'
+soup = BeautifulSoup(html, 'html.parser')
+
+result = get_selector_text(soup, css_selector="#paragraph")
+print(result)  # Output: "Hello, world!"
+
+
+Example 2: Extract Attribute Value from an Element:
+
+html = '''<html><body><a href="https://example.com" class="link">Example</a></body></html>'''
+soup = BeautifulSoup(html, 'html.parser')
+
+href = get_selector_text(soup, css_selector_text='.link', attr='href')
+print(href)  # Output: "https://example.com"
+
+
+
+Example 3: Get All Matching Elements:
+
+html = '''<html><body><p>Paragraph 1</p><p>Paragraph 2</p></body></html>'''
+soup = BeautifulSoup(html, 'html.parser')
+
+paragraphs = get_selector_text(soup, css_selectors='p')
+for p in paragraphs:
+    print(p.text)
+# Output:
+# Paragraph 1
+# Paragraph 2
