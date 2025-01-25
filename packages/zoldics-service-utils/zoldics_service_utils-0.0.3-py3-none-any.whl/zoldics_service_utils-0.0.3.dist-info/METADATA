@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: zoldics_service_utils
+Version: 0.0.3
+Summary: A most utile package for the governance of pythonic micro-services
+Home-page: https://github.com/BRIZINGR007/PyhtonServiceUtil
+Author: Nabarka_Deb
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio-redis==0.16.0
+Requires-Dist: redis==5.2.1
+Requires-Dist: aiobotocore
+Requires-Dist: boto3
+Requires-Dist: PyJWT==2.8.0
+Requires-Dist: jwcrypto==1.5.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: pytz==2024.2
+Requires-Dist: pydantic==2.10.5
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: python-decouple==3.8
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: mongoengine==0.29.1
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PyhtonServiceUtil
+A service Util for Python Based Micro Services  with support for REST Interservice calls , AWS SQS , Redis and MongoDB.
+ 1007  pip install -r  requirements.dev.txt
+ 1008  ls
+ 1009  python setup.py bdist_wheel sdist
+ 1010  twine check dist/*
+ 1011  twine upload dist/*
