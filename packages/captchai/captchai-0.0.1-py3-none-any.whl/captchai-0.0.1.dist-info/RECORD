@@ -1,0 +1,16 @@
+captchai/__init__.py,sha256=eeHsWgfpiNjCRDFKRqrltDxOl_kpPqVOkqhCrXo_VBE,77
+captchai/captcha.py,sha256=jdFb-5QJy1qySoW60vfNzWCpdGhQLm6K0y_83XFlJk4,1526
+captchai/core/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+captchai/core/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+captchai/core/models/config.py,sha256=F8tszhV1p5JJlrM_FVTEIt4FYzaGXo2z-nDuJNcYmBQ,1544
+captchai/core/models/grid.py,sha256=YgMUsr5WCcKSnVCngyODi7vkzOg9NGOvU7YFeosQEnY,2652
+captchai/core/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+captchai/core/provider/aws/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+captchai/core/provider/aws/providers.py,sha256=TnUaKKk48AmuaUSIChTlBIJ2pqjLXg8RTRHz9U7PKx8,1582
+captchai/core/provider/aws/resolvers.py,sha256=XsWIyp1MxJH11xRufsd3VG0jCnps7Upm3T5aTWsabXM,14052
+captchai/core/provider/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+captchai/core/provider/base/base.py,sha256=cSQ369zCZ5FO4JWrav_uhBlEcWm44ODto2qSBNKbmgU,278
+captchai-0.0.1.dist-info/METADATA,sha256=nU5b_YCulb3rKTI_5rP1DFJKRTaKzy5yzfyWJMxGmF4,9847
+captchai-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+captchai-0.0.1.dist-info/licenses/LICENSE,sha256=Wec46h5vwL0Ex-qpch1CJ1STU6TDLeVFjnBRlo95CJM,1085
+captchai-0.0.1.dist-info/RECORD,,
