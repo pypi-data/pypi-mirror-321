@@ -1,0 +1,2 @@
+[console_scripts]
+foo2bar = foo2bar.cli:main
