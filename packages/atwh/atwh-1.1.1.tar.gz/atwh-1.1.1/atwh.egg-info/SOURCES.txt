@@ -1,0 +1,6 @@
+setup.py
+atwh.egg-info/PKG-INFO
+atwh.egg-info/SOURCES.txt
+atwh.egg-info/dependency_links.txt
+atwh.egg-info/requires.txt
+atwh.egg-info/top_level.txt
