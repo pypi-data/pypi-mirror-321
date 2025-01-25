@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: thematch_cpu
+Version: 3.0
+Summary: thematch_cpu
+Home-page: https://github.com/ExpertOfAI/thematch
+Author: ExpertOfAI1
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: rapidfuzz
