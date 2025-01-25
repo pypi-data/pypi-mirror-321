@@ -1,0 +1,16 @@
+artifact_uri: file:///c:/Users/julio/Desktop/Julio/Estudios/Codigo/Projects/api-python-bet-project/app/model_testing/mlruns/494287600810388624/1c6849af42a74938823ae8e3e9f83279/artifacts
+deleted_time: 1737132370889
+end_time: 1737132280802
+entry_point_name: ''
+experiment_id: '494287600810388624'
+lifecycle_stage: deleted
+run_id: 1c6849af42a74938823ae8e3e9f83279
+run_name: GridSearchCV_Test_
+run_uuid: 1c6849af42a74938823ae8e3e9f83279
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737132253521
+status: 3
+tags: []
+user_id: PC

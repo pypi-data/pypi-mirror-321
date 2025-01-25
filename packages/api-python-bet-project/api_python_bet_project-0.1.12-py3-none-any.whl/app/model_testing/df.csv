@@ -1,0 +1,761 @@
+home_team_name,away_team_name,gameweek,home_trainer,away_trainer,stadium,home_PlayersGoals,away_PlayersGoals,match_result
+Osasuna,Sevilla,1,Jagoba Arrasate,Lopetegui,"Estadio El Sadar, Pamplona",,,0
+Celta Vigo,Espanyol,1,Eduardo Coudet,Diego Martínez,"Estadio de Balaídos, Vigo",,,0
+Valladolid,Villarreal,1,Pacheta,Unai Emery,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Barcelona,Rayo Vallecano,1,Xavi,Andoni Iraola,"Camp Nou, Barcelona",,,0
+Cádiz,Real Sociedad,1,Sergio,Imanol Alguacil,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Valencia,Girona,1,Gennaro Gattuso,Michel,"Estadio de Mestalla, Valencia",,,0
+Almería,Real Madrid,1,Rubí,Carlo Ancelotti,"Power Horse Stadium, Almería",,,0
+Athletic Club,Mallorca,1,Ernesto Valverde,Javier Aguirre,"San Mamés, Bilbao",,,0
+Getafe,Atlético Madrid,1,Quique Flores,Diego Simeone,"Coliseum Alfonso Pérez, Getafe",,,0
+Real Betis,Elche,1,Manuel Pellegrini,Francisco,"Estadio Benito Villamarín, Sevilla",,,0
+Espanyol,Rayo Vallecano,2,Diego Martínez,Andoni Iraola,"RCDE Stadium, Cornellà de Llobregat",,,0
+Sevilla,Valladolid,2,Lopetegui,Pacheta,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Osasuna,Cádiz,2,Jagoba Arrasate,Sergio,"Estadio El Sadar, Pamplona",,,0
+Mallorca,Real Betis,2,Javier Aguirre,Manuel Pellegrini,"Iberostar Estadi, Palma de Mallorca",,,0
+Celta Vigo,Real Madrid,2,Eduardo Coudet,Carlo Ancelotti,"Estadio de Balaídos, Vigo",,,0
+Athletic Club,Valencia,2,Ernesto Valverde,Gennaro Gattuso,"San Mamés, Bilbao",,,0
+Atlético Madrid,Villarreal,2,Diego Simeone,Unai Emery,"Estadio Cívitas Metropolitano, Madrid",,,0
+Real Sociedad,Barcelona,2,Imanol Alguacil,Xavi,"Reale Arena, San Sebastián",,,0
+Elche,Almería,2,Francisco,Rubí,"Estadio Manuel Martínez Valero, Elche",,,0
+Girona,Getafe,2,Michel,Quique Flores,"Estadi Municipal de Montilivi, Girona",,,0
+Girona,Celta Vigo,3,Michel,Eduardo Coudet,"Estadi Municipal de Montilivi, Girona",,,0
+Real Betis,Osasuna,3,Manuel Pellegrini,Jagoba Arrasate,"Estadio Benito Villamarín, Sevilla",,,0
+Elche,Real Sociedad,3,Francisco,Imanol Alguacil,"Estadio Manuel Martínez Valero, Elche",,,0
+Rayo Vallecano,Mallorca,3,Andoni Iraola,Javier Aguirre,"Estadio del Rayo Vallecano, Madrid",,,0
+Almería,Sevilla,3,Rubí,Lopetegui,"Power Horse Stadium, Almería",,,0
+Getafe,Villarreal,3,Quique Flores,Unai Emery,"Coliseum Alfonso Pérez, Getafe",,,0
+Barcelona,Valladolid,3,Xavi,Pacheta,"Camp Nou, Barcelona",,,0
+Espanyol,Real Madrid,3,Diego Martínez,Carlo Ancelotti,"RCDE Stadium, Cornellà de Llobregat",,,0
+Cádiz,Athletic Club,3,Sergio,Ernesto Valverde,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Valencia,Atlético Madrid,3,Gennaro Gattuso,Diego Simeone,"Estadio de Mestalla, Valencia",,,0
+Celta Vigo,Cádiz,4,Eduardo Coudet,Sergio,"Estadio de Balaídos, Vigo",,,0
+Mallorca,Girona,4,Javier Aguirre,Michel,"Iberostar Estadi, Palma de Mallorca",,,0
+Real Madrid,Real Betis,4,Carlo Ancelotti,Manuel Pellegrini,"Estadio Santiago Bernabéu, Madrid",,,0
+Real Sociedad,Atlético Madrid,4,Imanol Alguacil,Diego Simeone,"Reale Arena, San Sebastián",,,0
+Sevilla,Barcelona,4,Lopetegui,Xavi,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Osasuna,Rayo Vallecano,4,Jagoba Arrasate,Andoni Iraola,"Estadio El Sadar, Pamplona",,,0
+Athletic Club,Espanyol,4,Ernesto Valverde,Diego Martínez,"San Mamés, Bilbao",,,0
+Villarreal,Elche,4,Unai Emery,Francisco,"Estadio Ciudad de Valencia, Valencia",,,0
+Valencia,Getafe,4,Gennaro Gattuso,Quique Flores,"Estadio de Mestalla, Valencia",,,0
+Valladolid,Almería,4,Pacheta,Rubí,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Girona,Valladolid,5,Michel,Pacheta,"Estadi Municipal de Montilivi, Girona",,,0
+Rayo Vallecano,Valencia,5,Andoni Iraola,Gennaro Gattuso,"Estadio del Rayo Vallecano, Madrid",,,0
+Espanyol,Sevilla,5,Diego Martínez,Lopetegui,"RCDE Stadium, Cornellà de Llobregat",,,0
+Cádiz,Barcelona,5,Sergio,Xavi,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Atlético Madrid,Celta Vigo,5,Diego Simeone,Eduardo Coudet,"Estadio Cívitas Metropolitano, Madrid",,,0
+Real Madrid,Mallorca,5,Carlo Ancelotti,Javier Aguirre,"Estadio Santiago Bernabéu, Madrid",,,0
+Elche,Athletic Club,5,Francisco,Ernesto Valverde,"Estadio Manuel Martínez Valero, Elche",,,0
+Getafe,Real Sociedad,5,Quique Flores,Imanol Alguacil,"Coliseum Alfonso Pérez, Getafe",,,0
+Real Betis,Villarreal,5,Manuel Pellegrini,Unai Emery,"Estadio Benito Villamarín, Sevilla",,,0
+Almería,Osasuna,5,Rubí,Jagoba Arrasate,"Power Horse Stadium, Almería",,,0
+Valladolid,Cádiz,6,Pacheta,Sergio,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Mallorca,Almería,6,Javier Aguirre,Rubí,"Iberostar Estadi, Palma de Mallorca",,,0
+Barcelona,Elche,6,Xavi,Francisco,"Camp Nou, Barcelona",,,0
+Valencia,Celta Vigo,6,Gennaro Gattuso,Eduardo Coudet,"Estadio de Mestalla, Valencia",,,0
+Athletic Club,Rayo Vallecano,6,Ernesto Valverde,Andoni Iraola,"San Mamés, Bilbao",,,0
+Osasuna,Getafe,6,Jagoba Arrasate,Quique Flores,"Estadio El Sadar, Pamplona",,,0
+Villarreal,Sevilla,6,Unai Emery,Lopetegui,"Estadio Ciudad de Valencia, Valencia",,,0
+Real Betis,Girona,6,Manuel Pellegrini,Michel,"Estadio Benito Villamarín, Sevilla",,,0
+Real Sociedad,Espanyol,6,Imanol Alguacil,Diego Martínez,"Reale Arena, San Sebastián",,,0
+Atlético Madrid,Real Madrid,6,Diego Simeone,Carlo Ancelotti,"Estadio Cívitas Metropolitano, Madrid",,,0
+Athletic Club,Almería,7,Ernesto Valverde,Rubí,"San Mamés, Bilbao",,,0
+Cádiz,Villarreal,7,Sergio,Unai Emery,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Getafe,Valladolid,7,Quique Flores,Pacheta,"Coliseum Alfonso Pérez, Getafe",,,0
+Sevilla,Atlético Madrid,7,Lopetegui,Diego Simeone,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Mallorca,Barcelona,7,Javier Aguirre,Xavi,"Iberostar Estadi, Palma de Mallorca",,,0
+Espanyol,Valencia,7,Diego Martínez,Gennaro Gattuso,"RCDE Stadium, Cornellà de Llobregat",,,0
+Celta Vigo,Real Betis,7,Eduardo Coudet,Manuel Pellegrini,"Estadio de Balaídos, Vigo",,,0
+Girona,Real Sociedad,7,Michel,Imanol Alguacil,"Estadi Municipal de Montilivi, Girona",,,0
+Real Madrid,Osasuna,7,Carlo Ancelotti,Jagoba Arrasate,"Estadio Santiago Bernabéu, Madrid",,,0
+Rayo Vallecano,Elche,7,Andoni Iraola,Francisco,"Estadio del Rayo Vallecano, Madrid",,,0
+Osasuna,Valencia,8,Jagoba Arrasate,Gennaro Gattuso,"Estadio El Sadar, Pamplona",,,0
+Almería,Rayo Vallecano,8,Rubí,Andoni Iraola,"Power Horse Stadium, Almería",,,0
+Atlético Madrid,Girona,8,Diego Simeone,Michel,"Estadio Cívitas Metropolitano, Madrid",,,0
+Sevilla,Athletic Club,8,Jorge Sampaoli,Ernesto Valverde,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Getafe,Real Madrid,8,Quique Flores,Carlo Ancelotti,"Coliseum Alfonso Pérez, Getafe",,,0
+Valladolid,Real Betis,8,Pacheta,Manuel Pellegrini,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Cádiz,Espanyol,8,Sergio,Diego Martínez,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Real Sociedad,Villarreal,8,Imanol Alguacil,Unai Emery,"Reale Arena, San Sebastián",,,0
+Barcelona,Celta Vigo,8,Xavi,Eduardo Coudet,"Camp Nou, Barcelona",,,0
+Elche,Mallorca,8,Alberto Gallego,Javier Aguirre,"Estadio Manuel Martínez Valero, Elche",,,0
+Rayo Vallecano,Getafe,9,Andoni Iraola,Quique Flores,"Estadio del Rayo Vallecano, Madrid",,,0
+Girona,Cádiz,9,Michel,Sergio,"Estadi Municipal de Montilivi, Girona",,,0
+Valencia,Elche,9,Gennaro Gattuso,Jorge Almirón,"Estadio de Mestalla, Valencia",,,0
+Mallorca,Sevilla,9,Javier Aguirre,Jorge Sampaoli,"Iberostar Estadi, Palma de Mallorca",,,0
+Athletic Club,Atlético Madrid,9,Ernesto Valverde,Diego Simeone,"San Mamés, Bilbao",,,0
+Celta Vigo,Real Sociedad,9,Eduardo Coudet,Imanol Alguacil,"Estadio de Balaídos, Vigo",,,0
+Real Madrid,Barcelona,9,Carlo Ancelotti,Xavi,"Estadio Santiago Bernabéu, Madrid",,,0
+Espanyol,Valladolid,9,Diego Martínez,Pacheta,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Betis,Almería,9,Manuel Pellegrini,Rubí,"Estadio Benito Villamarín, Sevilla",,,0
+Villarreal,Osasuna,9,Unai Emery,Jagoba Arrasate,"Estadio Ciudad de Valencia, Valencia",,,0
+Sevilla,Valencia,10,Jorge Sampaoli,Gennaro Gattuso,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Getafe,Athletic Club,10,Quique Flores,Ernesto Valverde,"Coliseum Alfonso Pérez, Getafe",,,0
+Atlético Madrid,Rayo Vallecano,10,Diego Simeone,Andoni Iraola,"Estadio Cívitas Metropolitano, Madrid",,,0
+Cádiz,Real Betis,10,Sergio,Manuel Pellegrini,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Valladolid,Celta Vigo,10,Pacheta,Eduardo Coudet,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Real Sociedad,Mallorca,10,Imanol Alguacil,Javier Aguirre,"Reale Arena, San Sebastián",,,0
+Elche,Real Madrid,10,Jorge Almirón,Carlo Ancelotti,"Estadio Manuel Martínez Valero, Elche",,,0
+Almería,Girona,10,Rubí,Michel,"Power Horse Stadium, Almería",,,0
+Osasuna,Espanyol,10,Jagoba Arrasate,Diego Martínez,"Estadio El Sadar, Pamplona",,,0
+Barcelona,Villarreal,10,Xavi,Unai Emery,"Camp Nou, Barcelona",,,0
+Rayo Vallecano,Cádiz,11,Andoni Iraola,Sergio,"Estadio del Rayo Vallecano, Madrid",,,0
+Valladolid,Real Sociedad,11,Pacheta,Imanol Alguacil,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Valencia,Mallorca,11,Gennaro Gattuso,Javier Aguirre,"Estadio de Mestalla, Valencia",,,0
+Real Madrid,Sevilla,11,Carlo Ancelotti,Jorge Sampaoli,"Estadio Santiago Bernabéu, Madrid",,,0
+Espanyol,Elche,11,Diego Martínez,Jorge Almirón,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Betis,Atlético Madrid,11,Manuel Pellegrini,Diego Simeone,"Estadio Benito Villamarín, Sevilla",,,0
+Girona,Osasuna,11,Michel,Jagoba Arrasate,"Estadi Municipal de Montilivi, Girona",,,0
+Villarreal,Almería,11,Unai Emery,Rubí,"Estadio Ciudad de Valencia, Valencia",,,0
+Barcelona,Athletic Club,11,Xavi,Ernesto Valverde,"Camp Nou, Barcelona",,,0
+Celta Vigo,Getafe,11,Eduardo Coudet,Quique Flores,"Estadio de Balaídos, Vigo",,,0
+Mallorca,Espanyol,12,Javier Aguirre,Diego Martínez,"Iberostar Estadi, Palma de Mallorca",,,0
+Almería,Celta Vigo,12,Rubí,Eduardo Coudet,"Power Horse Stadium, Almería",,,0
+Cádiz,Atlético Madrid,12,Sergio,Diego Simeone,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Sevilla,Rayo Vallecano,12,Jorge Sampaoli,Andoni Iraola,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Valencia,Barcelona,12,Gennaro Gattuso,Xavi,"Estadio de Mestalla, Valencia",,,0
+Osasuna,Valladolid,12,Jagoba Arrasate,Pacheta,"Estadio El Sadar, Pamplona",,,0
+Real Madrid,Girona,12,Carlo Ancelotti,Michel,"Estadio Santiago Bernabéu, Madrid",,,0
+Athletic Club,Villarreal,12,Ernesto Valverde,Quique Setién,"San Mamés, Bilbao",,,0
+Real Sociedad,Real Betis,12,Imanol Alguacil,Manuel Pellegrini,"Reale Arena, San Sebastián",,,0
+Elche,Getafe,12,Jorge Almirón,Quique Flores,"Estadio Manuel Martínez Valero, Elche",,,0
+Girona,Athletic Club,13,Michel,Ernesto Valverde,"Estadi Municipal de Montilivi, Girona",,,0
+Getafe,Cádiz,13,Quique Flores,Sergio,"Coliseum Alfonso Pérez, Getafe",,,0
+Valladolid,Elche,13,Pacheta,Jorge Almirón,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Celta Vigo,Osasuna,13,Carlos Carvalhal,Jagoba Arrasate,"Estadio de Balaídos, Vigo",,,0
+Barcelona,Almería,13,Xavi,Rubí,"Camp Nou, Barcelona",,,0
+Atlético Madrid,Espanyol,13,Diego Simeone,Diego Martínez,"Estadio Cívitas Metropolitano, Madrid",,,0
+Real Sociedad,Valencia,13,Imanol Alguacil,Gennaro Gattuso,"Reale Arena, San Sebastián",,,0
+Villarreal,Mallorca,13,Quique Setién,Javier Aguirre,"Estadio Ciudad de Valencia, Valencia",,,0
+Real Betis,Sevilla,13,Manuel Pellegrini,Jorge Sampaoli,"Estadio Benito Villamarín, Sevilla",,,0
+Rayo Vallecano,Real Madrid,13,Andoni Iraola,Carlo Ancelotti,"Estadio del Rayo Vallecano, Madrid",,,0
+Elche,Girona,14,Sergio Mantecón,Michel,"Estadio Manuel Martínez Valero, Elche",,,0
+Athletic Club,Valladolid,14,Ernesto Valverde,Pacheta,"San Mamés, Bilbao",,,0
+Osasuna,Barcelona,14,Jagoba Arrasate,Xavi,"Estadio El Sadar, Pamplona",,,0
+Almería,Getafe,14,Rubí,Quique Flores,"Power Horse Stadium, Almería",,,0
+Sevilla,Real Sociedad,14,Jorge Sampaoli,Imanol Alguacil,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Espanyol,Villarreal,14,Diego Martínez,Quique Setién,"RCDE Stadium, Cornellà de Llobregat",,,0
+Mallorca,Atlético Madrid,14,Javier Aguirre,Diego Simeone,"Iberostar Estadi, Palma de Mallorca",,,0
+Rayo Vallecano,Celta Vigo,14,Andoni Iraola,Carlos Carvalhal,"Estadio del Rayo Vallecano, Madrid",,,0
+Valencia,Real Betis,14,Gennaro Gattuso,Manuel Pellegrini,"Estadio de Mestalla, Valencia",,,0
+Real Madrid,Cádiz,14,Carlo Ancelotti,Sergio,"Estadio Santiago Bernabéu, Madrid",,,0
+Girona,Rayo Vallecano,15,Michel,Andoni Iraola,"Estadi Municipal de Montilivi, Girona",,,0
+Real Betis,Athletic Club,15,Manuel Pellegrini,Ernesto Valverde,"Estadio Benito Villamarín, Sevilla",,,0
+Atlético Madrid,Elche,15,Diego Simeone,Pablo Machín,"Estadio Cívitas Metropolitano, Madrid",,,0
+Getafe,Mallorca,15,Quique Flores,Javier Aguirre,"Coliseum Alfonso Pérez, Getafe",,,0
+Cádiz,Almería,15,Sergio,Rubí,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Celta Vigo,Sevilla,15,Carlos Carvalhal,Jorge Sampaoli,"Estadio de Balaídos, Vigo",,,0
+Valladolid,Real Madrid,15,Pacheta,Carlo Ancelotti,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Barcelona,Espanyol,15,Xavi,Diego Martínez,"Camp Nou, Barcelona",,,0
+Real Sociedad,Osasuna,15,Imanol Alguacil,Jagoba Arrasate,"Reale Arena, San Sebastián",,,0
+Villarreal,Valencia,15,Quique Setién,Gennaro Gattuso,"Estadio Ciudad de Valencia, Valencia",,,0
+Elche,Celta Vigo,16,Pablo Machín,Carlos Carvalhal,"Estadio Manuel Martínez Valero, Elche",,,0
+Valencia,Cádiz,16,Gennaro Gattuso,Sergio,"Estadio de Mestalla, Valencia",,,0
+Villarreal,Real Madrid,16,Quique Setién,Carlo Ancelotti,"Estadio de la Cerámica, Villarreal",,,0
+Mallorca,Valladolid,16,Javier Aguirre,Pacheta,"Iberostar Estadi, Palma de Mallorca",,,0
+Espanyol,Girona,16,Diego Martínez,Michel,"RCDE Stadium, Cornellà de Llobregat",,,0
+Almería,Real Sociedad,16,Rubí,Imanol Alguacil,"Power Horse Stadium, Almería",,,0
+Rayo Vallecano,Real Betis,16,Andoni Iraola,Manuel Pellegrini,"Estadio del Rayo Vallecano, Madrid",,,0
+Sevilla,Getafe,16,Jorge Sampaoli,Quique Flores,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Atlético Madrid,Barcelona,16,Diego Simeone,Xavi,"Estadio Cívitas Metropolitano, Madrid",,,0
+Athletic Club,Osasuna,16,Ernesto Valverde,Jagoba Arrasate,"San Mamés, Bilbao",,,0
+Celta Vigo,Villarreal,17,Carlos Carvalhal,Quique Setién,"Estadio de Balaídos, Vigo",,,0
+Valladolid,Rayo Vallecano,17,Pacheta,Andoni Iraola,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Girona,Sevilla,17,Michel,Jorge Sampaoli,"Estadi Municipal de Montilivi, Girona",,,0
+Osasuna,Mallorca,17,Jagoba Arrasate,Javier Aguirre,"Estadio El Sadar, Pamplona",,,0
+Real Sociedad,Athletic Club,17,Imanol Alguacil,Ernesto Valverde,"Reale Arena, San Sebastián",,,0
+Getafe,Espanyol,17,Quique Flores,Diego Martínez,"Coliseum Alfonso Pérez, Getafe",,,0
+Almería,Atlético Madrid,17,Rubí,Diego Simeone,"Power Horse Stadium, Almería",,,0
+Cádiz,Elche,17,Sergio,Pablo Machín,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Mallorca,Celta Vigo,18,Javier Aguirre,Carlos Carvalhal,"Iberostar Estadi, Palma de Mallorca",,,0
+Rayo Vallecano,Real Sociedad,18,Andoni Iraola,Imanol Alguacil,"Estadio del Rayo Vallecano, Madrid",,,0
+Espanyol,Real Betis,18,Diego Martínez,Manuel Pellegrini,"RCDE Stadium, Cornellà de Llobregat",,,0
+Atlético Madrid,Valladolid,18,Diego Simeone,Pacheta,"Estadio Cívitas Metropolitano, Madrid",,,0
+Sevilla,Cádiz,18,Jorge Sampaoli,Sergio,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Villarreal,Girona,18,Quique Setién,Michel,"Estadio de la Cerámica, Villarreal",,,0
+Elche,Osasuna,18,Pablo Machín,Jagoba Arrasate,"Estadio Manuel Martínez Valero, Elche",,,0
+Barcelona,Getafe,18,Xavi,Quique Flores,"Camp Nou, Barcelona",,,0
+Athletic Club,Real Madrid,18,Ernesto Valverde,Carlo Ancelotti,"San Mamés, Bilbao",,,0
+Valencia,Almería,18,Gennaro Gattuso,Rubí,"Estadio de Mestalla, Valencia",,,0
+Almería,Espanyol,19,Rubí,Diego Martínez,"Power Horse Stadium, Almería",,,0
+Cádiz,Mallorca,19,Sergio,Javier Aguirre,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Girona,Barcelona,19,Michel,Xavi,"Estadi Municipal de Montilivi, Girona",,,0
+Sevilla,Elche,19,Jorge Sampaoli,Pablo Machín,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Getafe,Real Betis,19,Quique Flores,Manuel Pellegrini,"Coliseum Alfonso Pérez, Getafe",,,0
+Valladolid,Valencia,19,Pacheta,Gennaro Gattuso,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Osasuna,Atlético Madrid,19,Jagoba Arrasate,Diego Simeone,"Estadio El Sadar, Pamplona",,,0
+Celta Vigo,Athletic Club,19,Carlos Carvalhal,Ernesto Valverde,"Estadio de Balaídos, Vigo",,,0
+Real Madrid,Real Sociedad,19,Carlo Ancelotti,Imanol Alguacil,"Estadio Santiago Bernabéu, Madrid",,,0
+Villarreal,Rayo Vallecano,19,Quique Setién,Andoni Iraola,"Estadio de la Cerámica, Villarreal",,,0
+Real Betis,Barcelona,17,Manuel Pellegrini,Xavi,"Estadio Benito Villamarín, Sevilla",,,0
+Real Madrid,Valencia,17,Carlo Ancelotti,Voro,"Estadio Santiago Bernabéu, Madrid",,,0
+Athletic Club,Cádiz,20,Ernesto Valverde,Sergio,"San Mamés, Bilbao",,,0
+Espanyol,Osasuna,20,Diego Martínez,Jagoba Arrasate,"RCDE Stadium, Cornellà de Llobregat",,,0
+Elche,Villarreal,20,Pablo Machín,Quique Setién,"Estadio Manuel Martínez Valero, Elche",,,0
+Atlético Madrid,Getafe,20,Diego Simeone,Quique Flores,"Estadio Cívitas Metropolitano, Madrid",,,0
+Real Betis,Celta Vigo,20,Manuel Pellegrini,Carlos Carvalhal,"Estadio Benito Villamarín, Sevilla",,,0
+Mallorca,Real Madrid,20,Javier Aguirre,Carlo Ancelotti,"Iberostar Estadi, Palma de Mallorca",,,0
+Girona,Valencia,20,Michel,Voro,"Estadi Municipal de Montilivi, Girona",,,0
+Real Sociedad,Valladolid,20,Imanol Alguacil,Pacheta,"Reale Arena, San Sebastián",,,0
+Barcelona,Sevilla,20,Xavi,Jorge Sampaoli,"Camp Nou, Barcelona",,,0
+Rayo Vallecano,Almería,20,Andoni Iraola,Rubí,"Estadio del Rayo Vallecano, Madrid",,,0
+Cádiz,Girona,21,Sergio,Michel,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Almería,Real Betis,21,Rubí,Manuel Pellegrini,"Power Horse Stadium, Almería",,,0
+Sevilla,Mallorca,21,Jorge Sampaoli,Javier Aguirre,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Valencia,Athletic Club,21,Voro,Ernesto Valverde,"Estadio de Mestalla, Valencia",,,0
+Getafe,Rayo Vallecano,21,Quique Flores,Andoni Iraola,"Coliseum Alfonso Pérez, Getafe",,,0
+Celta Vigo,Atlético Madrid,21,Carlos Carvalhal,Diego Simeone,"Estadio de Balaídos, Vigo",,,0
+Valladolid,Osasuna,21,Pacheta,Jagoba Arrasate,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Villarreal,Barcelona,21,Quique Setién,Xavi,"Estadio de la Cerámica, Villarreal",,,0
+Espanyol,Real Sociedad,21,Diego Martínez,Imanol Alguacil,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Madrid,Elche,21,Carlo Ancelotti,Pablo Machín,"Estadio Santiago Bernabéu, Madrid",,,0
+Girona,Almería,22,Michel,Rubí,"Estadi Municipal de Montilivi, Girona",,,0
+Real Sociedad,Celta Vigo,22,Imanol Alguacil,Carlos Carvalhal,"Reale Arena, San Sebastián",,,0
+Real Betis,Valladolid,22,Manuel Pellegrini,Pacheta,"Estadio Benito Villamarín, Sevilla",,,0
+Mallorca,Villarreal,22,Javier Aguirre,Quique Setién,"Iberostar Estadi, Palma de Mallorca",,,0
+Osasuna,Real Madrid,22,Jagoba Arrasate,Carlo Ancelotti,"Estadio El Sadar, Pamplona",,,0
+Elche,Espanyol,22,Pablo Machín,Diego Martínez,"Estadio Manuel Martínez Valero, Elche",,,0
+Rayo Vallecano,Sevilla,22,Andoni Iraola,Jorge Sampaoli,"Estadio del Rayo Vallecano, Madrid",,,0
+Atlético Madrid,Athletic Club,22,Diego Simeone,Ernesto Valverde,"Estadio Cívitas Metropolitano, Madrid",,,0
+Barcelona,Cádiz,22,Xavi,Sergio,"Camp Nou, Barcelona",,,0
+Getafe,Valencia,22,Quique Flores,Rubén Baraja,"Coliseum Alfonso Pérez, Getafe",,,0
+Elche,Real Betis,23,Pablo Machín,Manuel Pellegrini,"Estadio Manuel Martínez Valero, Elche",,,0
+Espanyol,Mallorca,23,Diego Martínez,Javier Aguirre,"RCDE Stadium, Cornellà de Llobregat",,,0
+Cádiz,Rayo Vallecano,23,Sergio,Andoni Iraola,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Real Madrid,Atlético Madrid,23,Carlo Ancelotti,Diego Simeone,"Estadio Santiago Bernabéu, Madrid",,,0
+Valencia,Real Sociedad,23,Rubén Baraja,Imanol Alguacil,"Estadio de Mestalla, Valencia",,,0
+Athletic Club,Girona,23,Ernesto Valverde,Michel,"San Mamés, Bilbao",,,0
+Celta Vigo,Valladolid,23,Carlos Carvalhal,Pacheta,"Estadio de Balaídos, Vigo",,,0
+Almería,Barcelona,23,Rubí,Xavi,"Power Horse Stadium, Almería",,,0
+Sevilla,Osasuna,23,Jorge Sampaoli,Jagoba Arrasate,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Villarreal,Getafe,23,Quique Setién,Quique Flores,"Estadio de la Cerámica, Villarreal",,,0
+Real Sociedad,Cádiz,24,Imanol Alguacil,Sergio,"Reale Arena, San Sebastián",,,0
+Getafe,Girona,24,Quique Flores,Michel,"Coliseum Alfonso Pérez, Getafe",,,0
+Almería,Villarreal,24,Rubí,Quique Setién,"Power Horse Stadium, Almería",,,0
+Mallorca,Elche,24,Javier Aguirre,Pablo Machín,"Iberostar Estadi, Palma de Mallorca",,,0
+Atlético Madrid,Sevilla,24,Diego Simeone,Jorge Sampaoli,"Estadio Cívitas Metropolitano, Madrid",,,0
+Valladolid,Espanyol,24,Pacheta,Diego Martínez,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Barcelona,Valencia,24,Xavi,Rubén Baraja,"Camp Nou, Barcelona",,,0
+Rayo Vallecano,Athletic Club,24,Andoni Iraola,Ernesto Valverde,"Estadio del Rayo Vallecano, Madrid",,,0
+Real Betis,Real Madrid,24,Manuel Pellegrini,Carlo Ancelotti,"Estadio Benito Villamarín, Sevilla",,,0
+Osasuna,Celta Vigo,24,Jagoba Arrasate,Carlos Carvalhal,"Estadio El Sadar, Pamplona",,,0
+Cádiz,Getafe,25,Sergio,Quique Flores,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Real Madrid,Espanyol,25,Carlo Ancelotti,Diego Martínez,"Estadio Santiago Bernabéu, Madrid",,,0
+Elche,Valladolid,25,Pablo Machín,Pacheta,"Estadio Manuel Martínez Valero, Elche",,,0
+Celta Vigo,Rayo Vallecano,25,Carlos Carvalhal,Andoni Iraola,"Estadio de Balaídos, Vigo",,,0
+Valencia,Osasuna,25,Rubén Baraja,Jagoba Arrasate,"Estadio de Mestalla, Valencia",,,0
+Mallorca,Real Sociedad,25,Javier Aguirre,Imanol Alguacil,"Iberostar Estadi, Palma de Mallorca",,,0
+Sevilla,Almería,25,Jorge Sampaoli,Rubí,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Villarreal,Real Betis,25,Quique Setién,Manuel Pellegrini,"Estadio de la Cerámica, Villarreal",,,0
+Athletic Club,Barcelona,25,Ernesto Valverde,Xavi,"San Mamés, Bilbao",,,0
+Girona,Atlético Madrid,25,Michel,Diego Simeone,"Estadi Municipal de Montilivi, Girona",,,0
+Valladolid,Athletic Club,26,Pacheta,Ernesto Valverde,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Almería,Cádiz,26,Rubí,Sergio,"Power Horse Stadium, Almería",,,0
+Rayo Vallecano,Girona,26,Andoni Iraola,Michel,"Estadio del Rayo Vallecano, Madrid",,,0
+Espanyol,Celta Vigo,26,Diego Martínez,Carlos Carvalhal,"RCDE Stadium, Cornellà de Llobregat",,,0
+Atlético Madrid,Valencia,26,Diego Simeone,Rubén Baraja,"Estadio Cívitas Metropolitano, Madrid",,,0
+Real Betis,Mallorca,26,Manuel Pellegrini,Javier Aguirre,"Estadio Benito Villamarín, Sevilla",,,0
+Osasuna,Villarreal,26,Jagoba Arrasate,Quique Setién,"Estadio El Sadar, Pamplona",,,0
+Real Sociedad,Elche,26,Imanol Alguacil,Pablo Machín,"Reale Arena, San Sebastián",,,0
+Getafe,Sevilla,26,Quique Flores,Jorge Sampaoli,"Coliseum Alfonso Pérez, Getafe",,,0
+Barcelona,Real Madrid,26,Xavi,Carlo Ancelotti,"Camp Nou, Barcelona",,,0
+Mallorca,Osasuna,27,Javier Aguirre,Jagoba Arrasate,"Iberostar Estadi, Palma de Mallorca",,,0
+Girona,Espanyol,27,Michel,Diego Martínez,"Estadi Municipal de Montilivi, Girona",,,0
+Athletic Club,Getafe,27,Ernesto Valverde,Quique Flores,"San Mamés, Bilbao",,,0
+Cádiz,Sevilla,27,Sergio,Mendilibar,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Elche,Barcelona,27,Sebastián Becaccece,Xavi,"Estadio Manuel Martínez Valero, Elche",,,0
+Celta Vigo,Almería,27,Carlos Carvalhal,Rubí,"Estadio de Balaídos, Vigo",,,0
+Real Madrid,Valladolid,27,Carlo Ancelotti,Pacheta,"Estadio Santiago Bernabéu, Madrid",,,0
+Villarreal,Real Sociedad,27,Quique Setién,Imanol Alguacil,"Estadio de la Cerámica, Villarreal",,,0
+Atlético Madrid,Real Betis,27,Diego Simeone,Manuel Pellegrini,"Estadio Cívitas Metropolitano, Madrid",,,0
+Valencia,Rayo Vallecano,27,Rubén Baraja,Andoni Iraola,"Estadio de Mestalla, Valencia",,,0
+Sevilla,Celta Vigo,28,Mendilibar,Carlos Carvalhal,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Osasuna,Elche,28,Jagoba Arrasate,Sebastián Becaccece,"Estadio El Sadar, Pamplona",,,0
+Espanyol,Athletic Club,28,Luis García,Ernesto Valverde,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Sociedad,Getafe,28,Imanol Alguacil,Quique Flores,"Reale Arena, San Sebastián",,,0
+Real Madrid,Villarreal,28,Carlo Ancelotti,Quique Setién,"Estadio Santiago Bernabéu, Madrid",,,0
+Valladolid,Mallorca,28,Paulo Pezzolano,Javier Aguirre,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Real Betis,Cádiz,28,Manuel Pellegrini,Sergio,"Estadio Benito Villamarín, Sevilla",,,0
+Almería,Valencia,28,Rubí,Rubén Baraja,"Power Horse Stadium, Almería",,,0
+Rayo Vallecano,Atlético Madrid,28,Andoni Iraola,Diego Simeone,"Estadio del Rayo Vallecano, Madrid",,,0
+Barcelona,Girona,28,Xavi,Michel,"Camp Nou, Barcelona",,,0
+Rayo Vallecano,Osasuna,29,Andoni Iraola,Jagoba Arrasate,"Estadio del Rayo Vallecano, Madrid",,,0
+Villarreal,Valladolid,29,Quique Setién,Paulo Pezzolano,"Estadio de la Cerámica, Villarreal",,,0
+Athletic Club,Real Sociedad,29,Ernesto Valverde,Imanol Alguacil,"San Mamés, Bilbao",,,0
+Real Betis,Espanyol,29,Manuel Pellegrini,Luis García,"Estadio Benito Villamarín, Sevilla",,,0
+Cádiz,Real Madrid,29,Sergio,Carlo Ancelotti,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Girona,Elche,29,Michel,Sebastián Becaccece,"Estadi Municipal de Montilivi, Girona",,,0
+Getafe,Barcelona,29,Quique Flores,Xavi,"Coliseum Alfonso Pérez, Getafe",,,0
+Atlético Madrid,Almería,29,Diego Simeone,Rubí,"Estadio Cívitas Metropolitano, Madrid",,,0
+Valencia,Sevilla,29,Rubén Baraja,Mendilibar,"Estadio de Mestalla, Valencia",,,0
+Celta Vigo,Mallorca,29,Carlos Carvalhal,Javier Aguirre,"Estadio de Balaídos, Vigo",,,0
+Espanyol,Cádiz,30,Luis García,Sergio,"RCDE Stadium, Cornellà de Llobregat",,,0
+Osasuna,Real Betis,30,Jagoba Arrasate,Manuel Pellegrini,"Estadio El Sadar, Pamplona",,,0
+Almería,Athletic Club,30,Rubí,Ernesto Valverde,"Power Horse Stadium, Almería",,,0
+Valladolid,Girona,30,Paulo Pezzolano,Michel,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Real Sociedad,Rayo Vallecano,30,Imanol Alguacil,Andoni Iraola,"Reale Arena, San Sebastián",,,0
+Real Madrid,Celta Vigo,30,Carlo Ancelotti,Carlos Carvalhal,"Estadio Santiago Bernabéu, Madrid",,,0
+Elche,Valencia,30,Sebastián Becaccece,Rubén Baraja,"Estadio Manuel Martínez Valero, Elche",,,0
+Barcelona,Atlético Madrid,30,Xavi,Diego Simeone,"Camp Nou, Barcelona",,,0
+Mallorca,Getafe,30,Javier Aguirre,Quique Flores,"Iberostar Estadi, Palma de Mallorca",,,0
+Sevilla,Villarreal,30,Mendilibar,Quique Setién,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Girona,Real Madrid,31,Michel,Carlo Ancelotti,"Estadi Municipal de Montilivi, Girona",,,0
+Cádiz,Osasuna,31,Sergio,Jagoba Arrasate,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Real Betis,Real Sociedad,31,Manuel Pellegrini,Imanol Alguacil,"Estadio Benito Villamarín, Sevilla",,,0
+Getafe,Almería,31,Quique Flores,Rubí,"Coliseum Alfonso Pérez, Getafe",,,0
+Atlético Madrid,Mallorca,31,Diego Simeone,Javier Aguirre,"Estadio Cívitas Metropolitano, Madrid",,,0
+Rayo Vallecano,Barcelona,31,Andoni Iraola,Xavi,"Estadio del Rayo Vallecano, Madrid",,,0
+Celta Vigo,Elche,31,Carlos Carvalhal,Sebastián Becaccece,"Estadio de Balaídos, Vigo",,,0
+Valencia,Valladolid,31,Rubén Baraja,Paulo Pezzolano,"Estadio de Mestalla, Valencia",,,0
+Villarreal,Espanyol,31,Quique Setién,Luis García,"Estadio de la Cerámica, Villarreal",,,0
+Athletic Club,Sevilla,31,Ernesto Valverde,Mendilibar,"San Mamés, Bilbao",,,0
+Osasuna,Real Sociedad,32,Jagoba Arrasate,Imanol Alguacil,"Estadio El Sadar, Pamplona",,,0
+Elche,Rayo Vallecano,32,Sebastián Becaccece,Andoni Iraola,"Estadio Manuel Martínez Valero, Elche",,,0
+Real Madrid,Almería,32,Carlo Ancelotti,Rubí,"Estadio Santiago Bernabéu, Madrid",,,0
+Barcelona,Real Betis,32,Xavi,Manuel Pellegrini,"Camp Nou, Barcelona",,,0
+Cádiz,Valencia,32,Sergio,Rubén Baraja,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Villarreal,Celta Vigo,32,Quique Setién,Carlos Carvalhal,"Estadio de la Cerámica, Villarreal",,,0
+Espanyol,Getafe,32,Luis García,Pepe Bordalás,"RCDE Stadium, Cornellà de Llobregat",,,0
+Valladolid,Atlético Madrid,32,Paulo Pezzolano,Diego Simeone,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Mallorca,Athletic Club,32,Javier Aguirre,Ernesto Valverde,"Iberostar Estadi, Palma de Mallorca",,,0
+Sevilla,Girona,32,Mendilibar,Michel,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Almería,Elche,33,Rubí,Sebastián Becaccece,"Power Horse Stadium, Almería",,,0
+Barcelona,Osasuna,33,Xavi,Jagoba Arrasate,"Camp Nou, Barcelona",,,0
+Real Sociedad,Real Madrid,33,Imanol Alguacil,Carlo Ancelotti,"Reale Arena, San Sebastián",,,0
+Valencia,Villarreal,33,Rubén Baraja,Quique Setién,"Estadio de Mestalla, Valencia",,,0
+Getafe,Celta Vigo,33,Pepe Bordalás,Carlos Carvalhal,"Coliseum Alfonso Pérez, Getafe",,,0
+Atlético Madrid,Cádiz,33,Diego Simeone,Sergio,"Estadio Cívitas Metropolitano, Madrid",,,0
+Girona,Mallorca,33,Michel,Javier Aguirre,"Estadi Municipal de Montilivi, Girona",,,0
+Sevilla,Espanyol,33,Mendilibar,Luis García,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Rayo Vallecano,Valladolid,33,Andoni Iraola,Paulo Pezzolano,"Estadio del Rayo Vallecano, Madrid",,,0
+Athletic Club,Real Betis,33,Ernesto Valverde,Manuel Pellegrini,"San Mamés, Bilbao",,,0
+Mallorca,Cádiz,34,Javier Aguirre,Sergio,"Iberostar Estadi, Palma de Mallorca",,,0
+Real Sociedad,Girona,34,Imanol Alguacil,Michel,"Reale Arena, San Sebastián",,,0
+Osasuna,Almería,34,Jagoba Arrasate,Rubí,"Estadio El Sadar, Pamplona",,,0
+Villarreal,Athletic Club,34,Quique Setién,Ernesto Valverde,"Estadio de la Cerámica, Villarreal",,,0
+Real Madrid,Getafe,34,Carlo Ancelotti,Pepe Bordalás,"Estadio Santiago Bernabéu, Madrid",,,0
+Celta Vigo,Valencia,34,Carlos Carvalhal,Rubén Baraja,"Estadio de Balaídos, Vigo",,,0
+Elche,Atlético Madrid,34,Sebastián Becaccece,Diego Simeone,"Estadio Manuel Martínez Valero, Elche",,,0
+Valladolid,Sevilla,34,Paulo Pezzolano,Mendilibar,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Espanyol,Barcelona,34,Luis García,Xavi,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Betis,Rayo Vallecano,34,Manuel Pellegrini,Andoni Iraola,"Estadio Benito Villamarín, Sevilla",,,0
+Cádiz,Valladolid,35,Sergio,Paulo Pezzolano,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Girona,Villarreal,35,Michel,Quique Setién,"Estadi Municipal de Montilivi, Girona",,,0
+Athletic Club,Celta Vigo,35,Ernesto Valverde,Carlos Carvalhal,"San Mamés, Bilbao",,,0
+Getafe,Elche,35,Pepe Bordalás,Sebastián Becaccece,"Coliseum Alfonso Pérez, Getafe",,,0
+Almería,Mallorca,35,Rubí,Javier Aguirre,"Power Horse Stadium, Almería",,,0
+Barcelona,Real Sociedad,35,Xavi,Imanol Alguacil,"Camp Nou, Barcelona",,,0
+Rayo Vallecano,Espanyol,35,Andoni Iraola,Luis García,"Estadio del Rayo Vallecano, Madrid",,,0
+Atlético Madrid,Osasuna,35,Diego Simeone,Jagoba Arrasate,"Estadio Cívitas Metropolitano, Madrid",,,0
+Valencia,Real Madrid,35,Rubén Baraja,Carlo Ancelotti,"Estadio de Mestalla, Valencia",,,0
+Sevilla,Real Betis,35,Mendilibar,Manuel Pellegrini,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Celta Vigo,Girona,36,Carlos Carvalhal,Michel,"Estadio de Balaídos, Vigo",,,0
+Real Sociedad,Almería,36,Imanol Alguacil,Rubí,"Reale Arena, San Sebastián",,,0
+Valladolid,Barcelona,36,Paulo Pezzolano,Xavi,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Elche,Sevilla,36,Sebastián Becaccece,Mendilibar,"Estadio Manuel Martínez Valero, Elche",,,0
+Real Madrid,Rayo Vallecano,36,Carlo Ancelotti,Andoni Iraola,"Estadio Santiago Bernabéu, Madrid",,,0
+Villarreal,Cádiz,36,Quique Setién,Sergio,"Estadio de la Cerámica, Villarreal",,,0
+Espanyol,Atlético Madrid,36,Luis García,Diego Simeone,"RCDE Stadium, Cornellà de Llobregat",,,0
+Real Betis,Getafe,36,Manuel Pellegrini,Pepe Bordalás,"Estadio Benito Villamarín, Sevilla",,,0
+Mallorca,Valencia,36,Javier Aguirre,Rubén Baraja,"Iberostar Estadi, Palma de Mallorca",,,0
+Osasuna,Athletic Club,36,Jagoba Arrasate,Ernesto Valverde,"Estadio El Sadar, Pamplona",,,0
+Sevilla,Real Madrid,37,Mendilibar,Carlo Ancelotti,"Estadio Ramón Sánchez Pizjuán, Sevilla",,,0
+Valencia,Espanyol,37,Rubén Baraja,Luis García,"Estadio de Mestalla, Valencia",,,0
+Athletic Club,Elche,37,Ernesto Valverde,Sebastián Becaccece,"San Mamés, Bilbao",,,0
+Girona,Real Betis,37,Michel,Manuel Pellegrini,"Estadi Municipal de Montilivi, Girona",,,0
+Rayo Vallecano,Villarreal,37,Andoni Iraola,Quique Setién,"Estadio del Rayo Vallecano, Madrid",,,0
+Almería,Valladolid,37,Rubí,Paulo Pezzolano,"Power Horse Stadium, Almería",,,0
+Atlético Madrid,Real Sociedad,37,Diego Simeone,Imanol Alguacil,"Estadio Cívitas Metropolitano, Madrid",,,0
+Cádiz,Celta Vigo,37,Sergio,Carlos Carvalhal,"Estadio Nuevo Mirandilla, Cádiz",,,0
+Barcelona,Mallorca,37,Xavi,Javier Aguirre,"Camp Nou, Barcelona",,,0
+Getafe,Osasuna,37,Pepe Bordalás,Jagoba Arrasate,"Coliseum Alfonso Pérez, Getafe",,,0
+Villarreal,Atlético Madrid,38,Quique Setién,Diego Simeone,"Estadio de la Cerámica, Villarreal",,,0
+Real Sociedad,Sevilla,38,Imanol Alguacil,Mendilibar,"Reale Arena, San Sebastián",,,0
+Real Madrid,Athletic Club,38,Carlo Ancelotti,Ernesto Valverde,"Estadio Santiago Bernabéu, Madrid",,,0
+Osasuna,Girona,38,Jagoba Arrasate,Michel,"Estadio El Sadar, Pamplona",,,0
+Mallorca,Rayo Vallecano,38,Javier Aguirre,Andoni Iraola,"Iberostar Estadi, Palma de Mallorca",,,0
+Valladolid,Getafe,38,Paulo Pezzolano,Pepe Bordalás,"Estadio Municipal José Zorrilla, Valladolid",,,0
+Real Betis,Valencia,38,Manuel Pellegrini,Rubén Baraja,"Estadio Benito Villamarín, Sevilla",,,0
+Elche,Cádiz,38,Sebastián Becaccece,Sergio,"Estadio Manuel Martínez Valero, Elche",,,0
+Celta Vigo,Barcelona,38,Carlos Carvalhal,Xavi,"Estadio de Balaídos, Vigo",,,0
+Espanyol,Almería,38,Luis García,Rubí,"RCDE Stadium, Cornellà de Llobregat",,,0
+Almería,Rayo Vallecano,1,Vicente Moreno,Francisco,"Power Horse Stadium, Almería",0.0,2.0,-1
+Sevilla,Valencia,1,Mendilibar,Rubén Baraja,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,2.0,-1
+Real Sociedad,Girona,1,Imanol Alguacil,Michel,"Reale Arena, San Sebastián",1.0,1.0,0
+Las Palmas,Mallorca,1,García Pimienta,Javier Aguirre,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,1.0,0
+Athletic Club,Real Madrid,1,Ernesto Valverde,Carlo Ancelotti,"San Mamés, Bilbao",0.0,2.0,-1
+Celta Vigo,Osasuna,1,Rafael Benítez,Jagoba Arrasate,"Estadio Abanca Balaídos, Vigo",0.0,2.0,-1
+Villarreal,Real Betis,1,Quique Setién,Manuel Pellegrini,"Estadio de la Cerámica, Villarreal",1.0,2.0,-1
+Getafe,Barcelona,1,Pepe Bordalás,Xavi,"Coliseum Alfonso Pérez, Getafe",0.0,0.0,0
+Cádiz,Alavés,1,Sergio,Luis García,"Estadio Nuevo Mirandilla, Cádiz",1.0,0.0,1
+Atlético Madrid,Granada,1,Diego Simeone,Paco López,"Estadio Cívitas Metropolitano, Madrid",3.0,1.0,1
+Mallorca,Villarreal,2,Javier Aguirre,Quique Setién,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,1.0,-1
+Valencia,Las Palmas,2,Rubén Baraja,García Pimienta,"Estadio de Mestalla, Valencia",1.0,0.0,1
+Real Sociedad,Celta Vigo,2,Imanol Alguacil,Rafael Benítez,"Reale Arena, San Sebastián",1.0,1.0,0
+Almería,Real Madrid,2,Vicente Moreno,Carlo Ancelotti,"Power Horse Stadium, Almería",1.0,3.0,-1
+Osasuna,Athletic Club,2,Jagoba Arrasate,Ernesto Valverde,"Estadio El Sadar, Pamplona",0.0,2.0,-1
+Girona,Getafe,2,Michel,Pepe Bordalás,"Estadi Municipal de Montilivi, Girona",3.0,0.0,1
+Barcelona,Cádiz,2,Xavi,Sergio,"Estadi Olímpic Lluís Companys, Barcelona",2.0,0.0,1
+Real Betis,Atlético Madrid,2,Manuel Pellegrini,Diego Simeone,"Estadio Benito Villamarín, Sevilla",0.0,0.0,0
+Alavés,Sevilla,2,Luis García,Mendilibar,"Estadio de Mendizorroza, Vitoria-Gasteiz",4.0,2.0,1
+Granada,Rayo Vallecano,2,Paco López,Francisco,"Estadio Nuevo Los Cármenes, Granada",0.0,2.0,-1
+Las Palmas,Real Sociedad,3,García Pimienta,Imanol Alguacil,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,0.0,0
+Celta Vigo,Real Madrid,3,Rafael Benítez,Carlo Ancelotti,"Estadio Abanca Balaídos, Vigo",0.0,1.0,-1
+Cádiz,Almería,3,Sergio,Vicente Moreno,"Estadio Nuevo Mirandilla, Cádiz",1.0,1.0,0
+Granada,Mallorca,3,Paco López,Javier Aguirre,"Estadio Nuevo Los Cármenes, Granada",3.0,2.0,1
+Sevilla,Girona,3,Mendilibar,Michel,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,2.0,-1
+Villarreal,Barcelona,3,Quique Setién,Xavi,"Estadio de la Cerámica, Villarreal",3.0,4.0,-1
+Valencia,Osasuna,3,Rubén Baraja,Jagoba Arrasate,"Estadio de Mestalla, Valencia",1.0,2.0,-1
+Athletic Club,Real Betis,3,Ernesto Valverde,Manuel Pellegrini,"San Mamés, Bilbao",4.0,2.0,1
+Getafe,Alavés,3,Pepe Bordalás,Luis García,"Coliseum Alfonso Pérez, Getafe",1.0,0.0,1
+Rayo Vallecano,Atlético Madrid,3,Francisco,Diego Simeone,"Estadio del Rayo Vallecano, Madrid",0.0,7.0,-1
+Cádiz,Villarreal,4,Sergio,Quique Setién,"Estadio Nuevo Mirandilla, Cádiz",3.0,1.0,1
+Almería,Celta Vigo,4,Vicente Moreno,Rafael Benítez,"Power Horse Stadium, Almería",2.0,3.0,-1
+Real Sociedad,Granada,4,Imanol Alguacil,Paco López,"Reale Arena, San Sebastián",4.0,2.0,1
+Real Madrid,Getafe,4,Carlo Ancelotti,Pepe Bordalás,"Estadio Santiago Bernabéu, Madrid",2.0,1.0,1
+Alavés,Valencia,4,Luis García,Rubén Baraja,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,0.0,0
+Real Betis,Rayo Vallecano,4,Manuel Pellegrini,Francisco,"Estadio Benito Villamarín, Sevilla",1.0,0.0,1
+Girona,Las Palmas,4,Michel,García Pimienta,"Estadi Municipal de Montilivi, Girona",1.0,0.0,1
+Mallorca,Athletic Club,4,Javier Aguirre,Ernesto Valverde,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,0.0,0
+Osasuna,Barcelona,4,Jagoba Arrasate,Xavi,"Estadio El Sadar, Pamplona",1.0,2.0,-1
+Rayo Vallecano,Alavés,5,Francisco,Luis García,"Estadio del Rayo Vallecano, Madrid",2.0,0.0,1
+Athletic Club,Cádiz,5,Ernesto Valverde,Sergio,"San Mamés, Bilbao",3.0,0.0,1
+Valencia,Atlético Madrid,5,Rubén Baraja,Diego Simeone,"Estadio de Mestalla, Valencia",3.0,0.0,1
+Celta Vigo,Mallorca,5,Rafael Benítez,Javier Aguirre,"Estadio Abanca Balaídos, Vigo",0.0,1.0,-1
+Barcelona,Real Betis,5,Xavi,Manuel Pellegrini,"Estadi Olímpic Lluís Companys, Barcelona",5.0,0.0,1
+Getafe,Osasuna,5,Pepe Bordalás,Jagoba Arrasate,"Coliseum Alfonso Pérez, Getafe",3.0,2.0,1
+Villarreal,Almería,5,Pacheta,Vicente Moreno,"Estadio de la Cerámica, Villarreal",2.0,1.0,1
+Sevilla,Las Palmas,5,Mendilibar,García Pimienta,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,0.0,1
+Real Madrid,Real Sociedad,5,Carlo Ancelotti,Imanol Alguacil,"Estadio Santiago Bernabéu, Madrid",2.0,1.0,1
+Granada,Girona,5,Paco López,Michel,"Estadio Nuevo Los Cármenes, Granada",2.0,4.0,-1
+Alavés,Athletic Club,6,Luis García,Ernesto Valverde,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,2.0,-1
+Girona,Mallorca,6,Michel,Javier Aguirre,"Estadi Municipal de Montilivi, Girona",5.0,3.0,1
+Osasuna,Sevilla,6,Jagoba Arrasate,Mendilibar,"Estadio El Sadar, Pamplona",0.0,0.0,0
+Barcelona,Celta Vigo,6,Xavi,Rafael Benítez,"Estadi Olímpic Lluís Companys, Barcelona",3.0,2.0,1
+Almería,Valencia,6,Vicente Moreno,Rubén Baraja,"Power Horse Stadium, Almería",2.0,2.0,0
+Real Sociedad,Getafe,6,Imanol Alguacil,Pepe Bordalás,"Reale Arena, San Sebastián",4.0,3.0,1
+Rayo Vallecano,Villarreal,6,Francisco,Pacheta,"Estadio del Rayo Vallecano, Madrid",1.0,1.0,0
+Las Palmas,Granada,6,García Pimienta,Paco López,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,0.0,1
+Real Betis,Cádiz,6,Manuel Pellegrini,Sergio,"Estadio Benito Villamarín, Sevilla",1.0,1.0,0
+Atlético Madrid,Real Madrid,6,Diego Simeone,Carlo Ancelotti,"Estadio Cívitas Metropolitano, Madrid",3.0,1.0,1
+Sevilla,Almería,7,Mendilibar,Vicente Moreno,"Estadio Ramón Sánchez Pizjuán, Sevilla",5.0,1.0,1
+Mallorca,Barcelona,7,Javier Aguirre,Xavi,"Estadi Mallorca Son Moix, Palma de Mallorca",2.0,2.0,0
+Athletic Club,Getafe,7,Ernesto Valverde,Pepe Bordalás,"San Mamés, Bilbao",2.0,2.0,0
+Real Madrid,Las Palmas,7,Carlo Ancelotti,García Pimienta,"Estadio Santiago Bernabéu, Madrid",2.0,0.0,1
+Villarreal,Girona,7,Pacheta,Michel,"Estadio de la Cerámica, Villarreal",1.0,2.0,-1
+Cádiz,Rayo Vallecano,7,Sergio,Francisco,"Estadio Nuevo Mirandilla, Cádiz",0.0,0.0,0
+Valencia,Real Sociedad,7,Rubén Baraja,Imanol Alguacil,"Estadio de Mestalla, Valencia",0.0,1.0,-1
+Celta Vigo,Alavés,7,Rafael Benítez,Luis García,"Estadio Abanca Balaídos, Vigo",0.0,1.0,-1
+Granada,Real Betis,7,Paco López,Manuel Pellegrini,"Estadio Nuevo Los Cármenes, Granada",1.0,1.0,0
+Osasuna,Atlético Madrid,7,Jagoba Arrasate,Diego Simeone,"Estadio El Sadar, Pamplona",0.0,2.0,-1
+Barcelona,Sevilla,8,Xavi,Mendilibar,"Estadi Olímpic Lluís Companys, Barcelona",0.0,0.0,0
+Getafe,Villarreal,8,Pepe Bordalás,Pacheta,"Coliseum Alfonso Pérez, Getafe",0.0,0.0,0
+Rayo Vallecano,Mallorca,8,Francisco,Javier Aguirre,"Estadio del Rayo Vallecano, Madrid",2.0,2.0,0
+Girona,Real Madrid,8,Michel,Carlo Ancelotti,"Estadi Municipal de Montilivi, Girona",0.0,3.0,-1
+Real Sociedad,Athletic Club,8,Imanol Alguacil,Ernesto Valverde,"Reale Arena, San Sebastián",3.0,0.0,1
+Almería,Granada,8,Alberto Lasarte,Paco López,"Power Horse Stadium, Almería",3.0,3.0,0
+Alavés,Osasuna,8,Luis García,Jagoba Arrasate,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,2.0,-1
+Atlético Madrid,Cádiz,8,Diego Simeone,Sergio,"Estadio Cívitas Metropolitano, Madrid",3.0,2.0,1
+Real Betis,Valencia,8,Manuel Pellegrini,Rubén Baraja,"Estadio Benito Villamarín, Sevilla",3.0,0.0,1
+Las Palmas,Celta Vigo,8,García Pimienta,Rafael Benítez,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",2.0,1.0,1
+Athletic Club,Almería,9,Ernesto Valverde,Alberto Lasarte,"San Mamés, Bilbao",3.0,0.0,1
+Cádiz,Girona,9,Sergio,Michel,"Estadio Nuevo Mirandilla, Cádiz",0.0,1.0,-1
+Real Madrid,Osasuna,9,Carlo Ancelotti,Jagoba Arrasate,"Estadio Santiago Bernabéu, Madrid",4.0,0.0,1
+Mallorca,Valencia,9,Javier Aguirre,Rubén Baraja,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,1.0,0
+Sevilla,Rayo Vallecano,9,Mendilibar,Francisco,"Estadio Ramón Sánchez Pizjuán, Sevilla",2.0,2.0,0
+Villarreal,Las Palmas,9,Pacheta,García Pimienta,"Estadio de la Cerámica, Villarreal",1.0,2.0,-1
+Atlético Madrid,Real Sociedad,9,Diego Simeone,Imanol Alguacil,"Estadio Cívitas Metropolitano, Madrid",2.0,1.0,1
+Alavés,Real Betis,9,Luis García,Manuel Pellegrini,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,1.0,-1
+Celta Vigo,Getafe,9,Rafael Benítez,Pepe Bordalás,"Estadio Abanca Balaídos, Vigo",2.0,2.0,0
+Granada,Barcelona,9,Paco López,Xavi,"Estadio Nuevo Los Cármenes, Granada",2.0,2.0,0
+Osasuna,Granada,10,Jagoba Arrasate,Paco López,"Estadio El Sadar, Pamplona",2.0,0.0,1
+Real Sociedad,Mallorca,10,Imanol Alguacil,Javier Aguirre,"Reale Arena, San Sebastián",1.0,0.0,1
+Getafe,Real Betis,10,Pepe Bordalás,Manuel Pellegrini,"Coliseum Alfonso Pérez, Getafe",1.0,1.0,0
+Sevilla,Real Madrid,10,Diego Alonso,Carlo Ancelotti,"Estadio Ramón Sánchez Pizjuán, Sevilla",0.0,1.0,-1
+Celta Vigo,Atlético Madrid,10,Rafael Benítez,Diego Simeone,"Estadio Abanca Balaídos, Vigo",0.0,3.0,-1
+Las Palmas,Rayo Vallecano,10,García Pimienta,Francisco,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,1.0,-1
+Girona,Almería,10,Michel,Gaizka Garitano,"Estadi Municipal de Montilivi, Girona",5.0,2.0,1
+Villarreal,Alavés,10,Pacheta,Luis García,"Estadio de la Cerámica, Villarreal",1.0,1.0,0
+Barcelona,Athletic Club,10,Xavi,Ernesto Valverde,"Estadi Olímpic Lluís Companys, Barcelona",1.0,0.0,1
+Valencia,Cádiz,10,Rubén Baraja,Sergio,"Estadio de Mestalla, Valencia",2.0,0.0,1
+Girona,Celta Vigo,11,Michel,Rafael Benítez,"Estadi Municipal de Montilivi, Girona",1.0,0.0,1
+Almería,Las Palmas,11,Gaizka Garitano,García Pimienta,"Power Horse Stadium, Almería",1.0,2.0,-1
+Barcelona,Real Madrid,11,Xavi,Carlo Ancelotti,"Estadi Olímpic Lluís Companys, Barcelona",1.0,2.0,-1
+Mallorca,Getafe,11,Javier Aguirre,Pepe Bordalás,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,0.0,0
+Cádiz,Sevilla,11,Sergio,Diego Alonso,"Estadio Nuevo Mirandilla, Cádiz",2.0,2.0,0
+Real Betis,Osasuna,11,Manuel Pellegrini,Jagoba Arrasate,"Estadio Benito Villamarín, Sevilla",2.0,1.0,1
+Rayo Vallecano,Real Sociedad,11,Francisco,Imanol Alguacil,"Estadio del Rayo Vallecano, Madrid",2.0,2.0,0
+Athletic Club,Valencia,11,Ernesto Valverde,Rubén Baraja,"San Mamés, Bilbao",2.0,2.0,0
+Atlético Madrid,Alavés,11,Diego Simeone,Luis García,"Estadio Cívitas Metropolitano, Madrid",2.0,1.0,1
+Granada,Villarreal,11,Paco López,Pacheta,"Estadio Nuevo Los Cármenes, Granada",2.0,3.0,-1
+Las Palmas,Atlético Madrid,12,García Pimienta,Diego Simeone,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",2.0,1.0,1
+Osasuna,Girona,12,Jagoba Arrasate,Michel,"Estadio El Sadar, Pamplona",2.0,4.0,-1
+Real Betis,Mallorca,12,Manuel Pellegrini,Javier Aguirre,"Estadio Benito Villamarín, Sevilla",2.0,0.0,1
+Celta Vigo,Sevilla,12,Rafael Benítez,Diego Alonso,"Estadio Abanca Balaídos, Vigo",1.0,1.0,0
+Real Sociedad,Barcelona,12,Imanol Alguacil,Xavi,"Reale Arena, San Sebastián",0.0,1.0,-1
+Alavés,Almería,12,Luis García,Gaizka Garitano,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,0.0,1
+Valencia,Granada,12,Rubén Baraja,Paco López,"Estadio de Mestalla, Valencia",1.0,0.0,1
+Villarreal,Athletic Club,12,Pacheta,Ernesto Valverde,"Estadio de la Cerámica, Villarreal",2.0,3.0,-1
+Real Madrid,Rayo Vallecano,12,Carlo Ancelotti,Francisco,"Estadio Santiago Bernabéu, Madrid",0.0,0.0,0
+Getafe,Cádiz,12,Pepe Bordalás,Sergio,"Coliseum Alfonso Pérez, Getafe",1.0,0.0,1
+Athletic Club,Celta Vigo,13,Ernesto Valverde,Rafael Benítez,"San Mamés, Bilbao",4.0,3.0,1
+Rayo Vallecano,Girona,13,Francisco,Michel,"Estadio del Rayo Vallecano, Madrid",1.0,2.0,-1
+Almería,Real Sociedad,13,Gaizka Garitano,Imanol Alguacil,"Power Horse Stadium, Almería",1.0,3.0,-1
+Osasuna,Las Palmas,13,Jagoba Arrasate,García Pimienta,"Estadio El Sadar, Pamplona",1.0,1.0,0
+Granada,Getafe,13,Paco López,Pepe Bordalás,"Estadio Nuevo Los Cármenes, Granada",1.0,1.0,0
+Real Madrid,Valencia,13,Carlo Ancelotti,Rubén Baraja,"Estadio Santiago Bernabéu, Madrid",5.0,1.0,1
+Barcelona,Alavés,13,Xavi,Luis García,"Estadi Olímpic Lluís Companys, Barcelona",2.0,1.0,1
+Sevilla,Real Betis,13,Diego Alonso,Manuel Pellegrini,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,1.0,0
+Atlético Madrid,Villarreal,13,Diego Simeone,Miguel Ángel Tena,"Estadio Cívitas Metropolitano, Madrid",3.0,1.0,1
+Alavés,Granada,14,Luis García,Paco López,"Estadio de Mendizorroza, Vitoria-Gasteiz",2.0,1.0,1
+Rayo Vallecano,Barcelona,14,Francisco,Xavi,"Estadio del Rayo Vallecano, Madrid",1.0,0.0,1
+Valencia,Celta Vigo,14,Rubén Baraja,Rafael Benítez,"Estadio de Mestalla, Valencia",0.0,0.0,0
+Getafe,Almería,14,Pepe Bordalás,Gaizka Garitano,"Coliseum Alfonso Pérez, Getafe",2.0,1.0,1
+Atlético Madrid,Mallorca,14,Diego Simeone,Javier Aguirre,"Estadio Cívitas Metropolitano, Madrid",1.0,0.0,1
+Villarreal,Osasuna,14,Marcelino,Jagoba Arrasate,"Estadio de la Cerámica, Villarreal",3.0,1.0,1
+Real Sociedad,Sevilla,14,Imanol Alguacil,Diego Alonso,"Reale Arena, San Sebastián",1.0,1.0,0
+Cádiz,Real Madrid,14,Sergio,Carlo Ancelotti,"Estadio Nuevo Mirandilla, Cádiz",0.0,3.0,-1
+Real Betis,Las Palmas,14,Manuel Pellegrini,García Pimienta,"Estadio Benito Villamarín, Sevilla",1.0,0.0,1
+Girona,Athletic Club,14,Michel,Ernesto Valverde,"Estadi Municipal de Montilivi, Girona",1.0,1.0,0
+Mallorca,Cádiz,13,Javier Aguirre,Sergio,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,1.0,0
+Las Palmas,Getafe,15,García Pimienta,Pepe Bordalás,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",2.0,0.0,1
+Girona,Valencia,15,Michel,Rubén Baraja,"Estadi Municipal de Montilivi, Girona",2.0,1.0,1
+Athletic Club,Rayo Vallecano,15,Ernesto Valverde,Francisco,"San Mamés, Bilbao",3.0,0.0,1
+Real Madrid,Granada,15,Carlo Ancelotti,Alexander Medina,"Estadio Santiago Bernabéu, Madrid",2.0,0.0,1
+Osasuna,Real Sociedad,15,Jagoba Arrasate,Imanol Alguacil,"Estadio El Sadar, Pamplona",1.0,1.0,0
+Mallorca,Alavés,15,Javier Aguirre,Luis García,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,0.0,0
+Almería,Real Betis,15,Gaizka Garitano,Manuel Pellegrini,"Power Horse Stadium, Almería",0.0,0.0,0
+Sevilla,Villarreal,15,Diego Alonso,Marcelino,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,1.0,0
+Barcelona,Atlético Madrid,15,Xavi,Diego Simeone,"Estadi Olímpic Lluís Companys, Barcelona",1.0,0.0,1
+Celta Vigo,Cádiz,15,Rafael Benítez,Sergio,"Estadio Abanca Balaídos, Vigo",1.0,1.0,0
+Getafe,Valencia,16,Pepe Bordalás,Rubén Baraja,"Coliseum Alfonso Pérez, Getafe",1.0,0.0,1
+Alavés,Las Palmas,16,Luis García,García Pimienta,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,1.0,-1
+Real Betis,Real Madrid,16,Manuel Pellegrini,Carlo Ancelotti,"Estadio Benito Villamarín, Sevilla",1.0,1.0,0
+Villarreal,Real Sociedad,16,Marcelino,Imanol Alguacil,"Estadio de la Cerámica, Villarreal",0.0,3.0,-1
+Mallorca,Sevilla,16,Javier Aguirre,Diego Alonso,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,0.0,1
+Atlético Madrid,Almería,16,Diego Simeone,Gaizka Garitano,"Estadio Cívitas Metropolitano, Madrid",2.0,1.0,1
+Cádiz,Osasuna,16,Sergio,Jagoba Arrasate,"Estadio Nuevo Mirandilla, Cádiz",1.0,1.0,0
+Barcelona,Girona,16,Xavi,Michel,"Estadi Olímpic Lluís Companys, Barcelona",2.0,4.0,-1
+Granada,Athletic Club,16,Alexander Medina,Ernesto Valverde,"Estadio Nuevo Los Cármenes, Granada",0.0,1.0,-1
+Rayo Vallecano,Celta Vigo,16,Francisco,Rafael Benítez,"Estadio del Rayo Vallecano, Madrid",0.0,0.0,0
+Osasuna,Rayo Vallecano,17,Jagoba Arrasate,Francisco,"Estadio El Sadar, Pamplona",1.0,0.0,1
+Celta Vigo,Granada,17,Rafael Benítez,Alexander Medina,"Estadio Abanca Balaídos, Vigo",1.0,0.0,1
+Athletic Club,Atlético Madrid,17,Ernesto Valverde,Diego Simeone,"San Mamés, Bilbao",2.0,0.0,1
+Sevilla,Getafe,17,Diego Alonso,Pepe Bordalás,"Estadio Ramón Sánchez Pizjuán, Sevilla",0.0,3.0,-1
+Valencia,Barcelona,17,Rubén Baraja,Xavi,"Estadio de Mestalla, Valencia",1.0,1.0,0
+Almería,Mallorca,17,Gaizka Garitano,Javier Aguirre,"Power Horse Stadium, Almería",0.0,0.0,0
+Real Sociedad,Real Betis,17,Imanol Alguacil,Manuel Pellegrini,"Reale Arena, San Sebastián",0.0,0.0,0
+Las Palmas,Cádiz,17,García Pimienta,Sergio,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,1.0,0
+Real Madrid,Villarreal,17,Carlo Ancelotti,Marcelino,"Estadio Santiago Bernabéu, Madrid",4.0,1.0,1
+Girona,Alavés,17,Michel,Luis García,"Estadi Municipal de Montilivi, Girona",3.0,0.0,1
+Rayo Vallecano,Valencia,18,Francisco,Rubén Baraja,"Estadio del Rayo Vallecano, Madrid",0.0,1.0,-1
+Atlético Madrid,Getafe,18,Diego Simeone,Pepe Bordalás,"Estadio Cívitas Metropolitano, Madrid",3.0,3.0,0
+Granada,Sevilla,18,Alexander Medina,Quique Flores,"Estadio Nuevo Los Cármenes, Granada",0.0,3.0,-1
+Barcelona,Almería,18,Xavi,Gaizka Garitano,"Estadi Olímpic Lluís Companys, Barcelona",3.0,2.0,1
+Athletic Club,Las Palmas,18,Ernesto Valverde,García Pimienta,"San Mamés, Bilbao",1.0,0.0,1
+Villarreal,Celta Vigo,18,Marcelino,Rafael Benítez,"Estadio de la Cerámica, Villarreal",3.0,2.0,1
+Cádiz,Real Sociedad,18,Sergio,Imanol Alguacil,"Estadio Nuevo Mirandilla, Cádiz",0.0,0.0,0
+Real Betis,Girona,18,Manuel Pellegrini,Michel,"Estadio Benito Villamarín, Sevilla",1.0,1.0,0
+Alavés,Real Madrid,18,Luis García,Carlo Ancelotti,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,1.0,-1
+Mallorca,Osasuna,18,Javier Aguirre,Jagoba Arrasate,"Estadi Mallorca Son Moix, Palma de Mallorca",3.0,2.0,1
+Atlético Madrid,Sevilla,4,Diego Simeone,Quique Flores,"Estadio Cívitas Metropolitano, Madrid",1.0,0.0,1
+Getafe,Rayo Vallecano,19,Pepe Bordalás,Francisco,"Estadio Cívitas Metropolitano, Madrid",0.0,2.0,-1
+Real Sociedad,Alavés,19,Imanol Alguacil,Luis García,"Reale Arena, San Sebastián",1.0,1.0,0
+Valencia,Villarreal,19,Rubén Baraja,Marcelino,"Estadio de Mestalla, Valencia",3.0,1.0,1
+Granada,Cádiz,19,Alexander Medina,Sergio,"Estadio Nuevo Los Cármenes, Granada",2.0,0.0,1
+Real Madrid,Mallorca,19,Carlo Ancelotti,Javier Aguirre,"Estadio Santiago Bernabéu, Madrid",1.0,0.0,1
+Celta Vigo,Real Betis,19,Rafael Benítez,Manuel Pellegrini,"Estadio Abanca Balaídos, Vigo",2.0,1.0,1
+Girona,Atlético Madrid,19,Michel,Diego Simeone,"Estadi Municipal de Montilivi, Girona",4.0,3.0,1
+Osasuna,Almería,19,Jagoba Arrasate,Gaizka Garitano,"Estadio El Sadar, Pamplona",1.0,0.0,1
+Sevilla,Athletic Club,19,Quique Flores,Ernesto Valverde,"Estadio Ramón Sánchez Pizjuán, Sevilla",0.0,2.0,-1
+Las Palmas,Barcelona,19,García Pimienta,Xavi,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,2.0,-1
+Sevilla,Alavés,20,Quique Flores,Luis García,"Estadio Ramón Sánchez Pizjuán, Sevilla",2.0,3.0,-1
+Las Palmas,Villarreal,20,García Pimienta,Marcelino,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",3.0,0.0,1
+Mallorca,Celta Vigo,20,Javier Aguirre,Rafael Benítez,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,1.0,0
+Athletic Club,Real Sociedad,20,Ernesto Valverde,Imanol Alguacil,"San Mamés, Bilbao",2.0,1.0,1
+Real Betis,Granada,20,Manuel Pellegrini,Alexander Medina,"Estadio Benito Villamarín, Sevilla",1.0,0.0,1
+Almería,Girona,20,Gaizka Garitano,Michel,"Power Horse Stadium, Almería",0.0,0.0,0
+Cádiz,Valencia,20,Sergio,Rubén Baraja,"Estadio Nuevo Mirandilla, Cádiz",1.0,4.0,-1
+Alavés,Cádiz,21,Luis García,Sergio,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,0.0,1
+Rayo Vallecano,Las Palmas,21,Francisco,García Pimienta,"Estadio del Rayo Vallecano, Madrid",0.0,2.0,-1
+Villarreal,Mallorca,21,Marcelino,Javier Aguirre,"Estadio de la Cerámica, Villarreal",1.0,1.0,0
+Valencia,Athletic Club,21,Rubén Baraja,Ernesto Valverde,"Estadio de Mestalla, Valencia",1.0,0.0,1
+Celta Vigo,Real Sociedad,21,Rafael Benítez,Imanol Alguacil,"Estadio Abanca Balaídos, Vigo",0.0,1.0,-1
+Osasuna,Getafe,21,Jagoba Arrasate,Pepe Bordalás,"Estadio El Sadar, Pamplona",3.0,2.0,1
+Real Madrid,Almería,21,Carlo Ancelotti,Gaizka Garitano,"Estadio Santiago Bernabéu, Madrid",3.0,2.0,1
+Real Betis,Barcelona,21,Manuel Pellegrini,Xavi,"Estadio Benito Villamarín, Sevilla",2.0,4.0,-1
+Girona,Sevilla,21,Michel,Quique Flores,"Estadi Municipal de Montilivi, Girona",5.0,1.0,1
+Granada,Atlético Madrid,21,Alexander Medina,Diego Simeone,"Estadio Nuevo Los Cármenes, Granada",0.0,1.0,-1
+Almería,Alavés,22,Gaizka Garitano,Luis García,"Power Horse Stadium, Almería",0.0,3.0,-1
+Real Sociedad,Rayo Vallecano,22,Imanol Alguacil,Francisco,"Reale Arena, San Sebastián",0.0,0.0,0
+Las Palmas,Real Madrid,22,García Pimienta,Carlo Ancelotti,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,2.0,-1
+Barcelona,Villarreal,22,Xavi,Marcelino,"Estadi Olímpic Lluís Companys, Barcelona",2.0,5.0,-1
+Mallorca,Real Betis,22,Javier Aguirre,Manuel Pellegrini,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,1.0,-1
+Celta Vigo,Girona,22,Rafael Benítez,Michel,"Estadio Abanca Balaídos, Vigo",0.0,1.0,-1
+Cádiz,Athletic Club,22,Mauricio Pellegrino,Ernesto Valverde,"Estadio Nuevo Mirandilla, Cádiz",0.0,0.0,0
+Sevilla,Osasuna,22,Quique Flores,Jagoba Arrasate,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,1.0,0
+Atlético Madrid,Valencia,22,Diego Simeone,Rubén Baraja,"Estadio Cívitas Metropolitano, Madrid",2.0,0.0,1
+Getafe,Granada,22,Pepe Bordalás,Alexander Medina,"Coliseum Alfonso Pérez, Getafe",2.0,0.0,1
+Barcelona,Osasuna,20,Xavi,Jagoba Arrasate,"Estadi Olímpic Lluís Companys, Barcelona",1.0,0.0,1
+Atlético Madrid,Rayo Vallecano,20,Diego Simeone,Francisco,"Estadio Cívitas Metropolitano, Madrid",2.0,1.0,1
+Getafe,Real Madrid,20,Pepe Bordalás,Carlo Ancelotti,"Coliseum Alfonso Pérez, Getafe",0.0,2.0,-1
+Athletic Club,Mallorca,23,Ernesto Valverde,Javier Aguirre,"San Mamés, Bilbao",4.0,0.0,1
+Valencia,Almería,23,Rubén Baraja,Gaizka Garitano,"Estadio de Mestalla, Valencia",2.0,1.0,1
+Granada,Las Palmas,23,Alexander Medina,García Pimienta,"Estadio Nuevo Los Cármenes, Granada",1.0,1.0,0
+Alavés,Barcelona,23,Luis García,Xavi,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,3.0,-1
+Girona,Real Sociedad,23,Michel,Imanol Alguacil,"Estadi Municipal de Montilivi, Girona",0.0,0.0,0
+Villarreal,Cádiz,23,Marcelino,Mauricio Pellegrino,"Estadio de la Cerámica, Villarreal",0.0,0.0,0
+Osasuna,Celta Vigo,23,Jagoba Arrasate,Rafael Benítez,"Estadio El Sadar, Pamplona",0.0,3.0,-1
+Real Betis,Getafe,23,Manuel Pellegrini,Pepe Bordalás,"Estadio Benito Villamarín, Sevilla",1.0,1.0,0
+Real Madrid,Atlético Madrid,23,Carlo Ancelotti,Diego Simeone,"Estadio Santiago Bernabéu, Madrid",1.0,1.0,0
+Rayo Vallecano,Sevilla,23,Francisco,Quique Flores,"Estadio del Rayo Vallecano, Madrid",1.0,2.0,-1
+Cádiz,Real Betis,24,Mauricio Pellegrino,Manuel Pellegrini,"Estadio Nuevo Mirandilla, Cádiz",0.0,2.0,-1
+Alavés,Villarreal,24,Luis García,Marcelino,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,1.0,0
+Real Sociedad,Osasuna,24,Imanol Alguacil,Jagoba Arrasate,"Reale Arena, San Sebastián",0.0,1.0,-1
+Real Madrid,Girona,24,Carlo Ancelotti,Michel,"Estadio Santiago Bernabéu, Madrid",4.0,0.0,1
+Las Palmas,Valencia,24,García Pimienta,Rubén Baraja,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",2.0,0.0,1
+Getafe,Celta Vigo,24,Pepe Bordalás,Rafael Benítez,"Coliseum Alfonso Pérez, Getafe",3.0,2.0,1
+Mallorca,Rayo Vallecano,24,Javier Aguirre,Francisco,"Estadi Mallorca Son Moix, Palma de Mallorca",2.0,1.0,1
+Sevilla,Atlético Madrid,24,Quique Flores,Diego Simeone,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,0.0,1
+Barcelona,Granada,24,Xavi,Alexander Medina,"Estadi Olímpic Lluís Companys, Barcelona",3.0,3.0,0
+Almería,Athletic Club,24,Gaizka Garitano,Ernesto Valverde,"Power Horse Stadium, Almería",0.0,0.0,0
+Villarreal,Getafe,25,Marcelino,Pepe Bordalás,"Estadio de la Cerámica, Villarreal",1.0,1.0,0
+Atlético Madrid,Las Palmas,25,Diego Simeone,García Pimienta,"Estadio Cívitas Metropolitano, Madrid",5.0,0.0,1
+Osasuna,Cádiz,25,Jagoba Arrasate,Mauricio Pellegrino,"Estadio El Sadar, Pamplona",2.0,0.0,1
+Celta Vigo,Barcelona,25,Rafael Benítez,Xavi,"Estadio Abanca Balaídos, Vigo",1.0,2.0,-1
+Valencia,Sevilla,25,Rubén Baraja,Quique Flores,"Estadio de Mestalla, Valencia",0.0,0.0,0
+Rayo Vallecano,Real Madrid,25,Iñigo Pérez,Carlo Ancelotti,"Estadio del Rayo Vallecano, Madrid",1.0,1.0,0
+Granada,Almería,25,Alexander Medina,Gaizka Garitano,"Estadio Nuevo Los Cármenes, Granada",1.0,1.0,0
+Mallorca,Real Sociedad,25,Javier Aguirre,Imanol Alguacil,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,2.0,-1
+Real Betis,Alavés,25,Manuel Pellegrini,Luis García,"Estadio Benito Villamarín, Sevilla",0.0,0.0,0
+Athletic Club,Girona,25,Ernesto Valverde,Michel,"San Mamés, Bilbao",3.0,2.0,1
+Real Sociedad,Villarreal,26,Imanol Alguacil,Marcelino,"Reale Arena, San Sebastián",1.0,3.0,-1
+Barcelona,Getafe,26,Xavi,Pepe Bordalás,"Estadi Olímpic Lluís Companys, Barcelona",4.0,0.0,1
+Alavés,Mallorca,26,Luis García,Javier Aguirre,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,1.0,0
+Almería,Atlético Madrid,26,Gaizka Garitano,Diego Simeone,"Power Horse Stadium, Almería",2.0,2.0,0
+Cádiz,Celta Vigo,26,Mauricio Pellegrino,Rafael Benítez,"Estadio Nuevo Mirandilla, Cádiz",2.0,2.0,0
+Real Betis,Athletic Club,26,Manuel Pellegrini,Ernesto Valverde,"Estadio Benito Villamarín, Sevilla",2.0,1.0,1
+Las Palmas,Osasuna,26,García Pimienta,Jagoba Arrasate,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,1.0,0
+Real Madrid,Sevilla,26,Carlo Ancelotti,Quique Flores,"Estadio Santiago Bernabéu, Madrid",1.0,0.0,1
+Girona,Rayo Vallecano,26,Michel,Iñigo Pérez,"Estadi Municipal de Montilivi, Girona",3.0,0.0,1
+Celta Vigo,Almería,27,Rafael Benítez,Gaizka Garitano,"Estadio Abanca Balaídos, Vigo",1.0,0.0,1
+Sevilla,Real Sociedad,27,Quique Flores,Imanol Alguacil,"Estadio Ramón Sánchez Pizjuán, Sevilla",3.0,2.0,1
+Rayo Vallecano,Cádiz,27,Iñigo Pérez,Mauricio Pellegrino,"Estadio del Rayo Vallecano, Madrid",1.0,1.0,0
+Getafe,Las Palmas,27,Pepe Bordalás,García Pimienta,"Coliseum Alfonso Pérez, Getafe",3.0,3.0,0
+Valencia,Real Madrid,27,Rubén Baraja,Carlo Ancelotti,"Estadio de Mestalla, Valencia",2.0,2.0,0
+Villarreal,Granada,27,Marcelino,Alexander Medina,"Estadio de la Cerámica, Villarreal",5.0,1.0,1
+Atlético Madrid,Real Betis,27,Diego Simeone,Manuel Pellegrini,"Estadio Cívitas Metropolitano, Madrid",1.0,1.0,0
+Mallorca,Girona,27,Javier Aguirre,Michel,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,0.0,1
+Athletic Club,Barcelona,27,Ernesto Valverde,Xavi,"San Mamés, Bilbao",0.0,0.0,0
+Osasuna,Alavés,27,Jagoba Arrasate,Luis García,"Estadio El Sadar, Pamplona",1.0,0.0,1
+Barcelona,Mallorca,28,Xavi,Javier Aguirre,"Estadi Olímpic Lluís Companys, Barcelona",1.0,0.0,1
+Valencia,Getafe,28,Rubén Baraja,Pepe Bordalás,"Estadio de Mestalla, Valencia",1.0,0.0,1
+Cádiz,Atlético Madrid,28,Mauricio Pellegrino,Diego Simeone,"Estadio Nuevo Mirandilla, Cádiz",2.0,0.0,1
+Granada,Real Sociedad,28,Alexander Medina,Imanol Alguacil,"Estadio Nuevo Los Cármenes, Granada",2.0,3.0,-1
+Girona,Osasuna,28,Michel,Jagoba Arrasate,"Estadi Municipal de Montilivi, Girona",2.0,0.0,1
+Alavés,Rayo Vallecano,28,Luis García,Iñigo Pérez,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,0.0,1
+Las Palmas,Athletic Club,28,García Pimienta,Ernesto Valverde,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,1.0,-1
+Real Madrid,Celta Vigo,28,Carlo Ancelotti,Rafael Benítez,"Estadio Santiago Bernabéu, Madrid",2.0,0.0,1
+Real Betis,Villarreal,28,Manuel Pellegrini,Marcelino,"Estadio Benito Villamarín, Sevilla",2.0,2.0,0
+Almería,Sevilla,28,Gaizka Garitano,Quique Flores,"Power Horse Stadium, Almería",2.0,2.0,0
+Real Sociedad,Cádiz,29,Imanol Alguacil,Mauricio Pellegrino,"Reale Arena, San Sebastián",2.0,0.0,1
+Mallorca,Granada,29,Javier Aguirre,Alexander Medina,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,0.0,1
+Osasuna,Real Madrid,29,Jagoba Arrasate,Carlo Ancelotti,"Estadio El Sadar, Pamplona",2.0,4.0,-1
+Getafe,Girona,29,Pepe Bordalás,Michel,"Coliseum Alfonso Pérez, Getafe",1.0,0.0,1
+Athletic Club,Alavés,29,Ernesto Valverde,Luis García,"San Mamés, Bilbao",2.0,0.0,1
+Sevilla,Celta Vigo,29,Quique Flores,Claudio Giráldez,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,2.0,-1
+Las Palmas,Almería,29,García Pimienta,Pepe Mel,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,1.0,-1
+Villarreal,Valencia,29,Marcelino,Rubén Baraja,"Estadio de la Cerámica, Villarreal",1.0,0.0,1
+Rayo Vallecano,Real Betis,29,Iñigo Pérez,Manuel Pellegrini,"Estadio del Rayo Vallecano, Madrid",2.0,0.0,1
+Atlético Madrid,Barcelona,29,Diego Simeone,Xavi,"Estadio Cívitas Metropolitano, Madrid",0.0,3.0,-1
+Cádiz,Granada,30,Mauricio Pellegrino,Sandoval,"Estadio Nuevo Mirandilla, Cádiz",1.0,0.0,1
+Getafe,Sevilla,30,Pepe Bordalás,Quique Flores,"Coliseum Alfonso Pérez, Getafe",0.0,1.0,-1
+Almería,Osasuna,30,Pepe Mel,Jagoba Arrasate,"Power Horse Stadium, Almería",0.0,3.0,-1
+Valencia,Mallorca,30,Rubén Baraja,Javier Aguirre,"Estadio de Mestalla, Valencia",0.0,0.0,0
+Barcelona,Las Palmas,30,Xavi,García Pimienta,"Estadi Olímpic Lluís Companys, Barcelona",1.0,0.0,1
+Celta Vigo,Rayo Vallecano,30,Claudio Giráldez,Iñigo Pérez,"Estadio Abanca Balaídos, Vigo",0.0,0.0,0
+Girona,Real Betis,30,Michel,Manuel Pellegrini,"Estadi Municipal de Montilivi, Girona",3.0,2.0,1
+Alavés,Real Sociedad,30,Luis García,Imanol Alguacil,"Estadio de Mendizorroza, Vitoria-Gasteiz",0.0,1.0,-1
+Real Madrid,Athletic Club,30,Carlo Ancelotti,Ernesto Valverde,"Estadio Santiago Bernabéu, Madrid",2.0,0.0,1
+Villarreal,Atlético Madrid,30,Marcelino,Diego Simeone,"Estadio de la Cerámica, Villarreal",1.0,2.0,-1
+Granada,Valencia,26,Sandoval,Rubén Baraja,"Estadio Nuevo Los Cármenes, Granada",0.0,1.0,-1
+Real Betis,Celta Vigo,31,Manuel Pellegrini,Claudio Giráldez,"Estadio Benito Villamarín, Sevilla",2.0,1.0,1
+Atlético Madrid,Girona,31,Diego Simeone,Michel,"Estadio Cívitas Metropolitano, Madrid",3.0,1.0,1
+Rayo Vallecano,Getafe,31,Iñigo Pérez,Pepe Bordalás,"Estadio del Rayo Vallecano, Madrid",0.0,0.0,0
+Mallorca,Real Madrid,31,Javier Aguirre,Carlo Ancelotti,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,1.0,-1
+Cádiz,Barcelona,31,Mauricio Pellegrino,Xavi,"Estadio Nuevo Mirandilla, Cádiz",0.0,1.0,-1
+Las Palmas,Sevilla,31,García Pimienta,Quique Flores,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,2.0,-1
+Granada,Alavés,31,Sandoval,Luis García,"Estadio Nuevo Los Cármenes, Granada",2.0,0.0,1
+Athletic Club,Villarreal,31,Ernesto Valverde,Marcelino,"San Mamés, Bilbao",1.0,1.0,0
+Real Sociedad,Almería,31,Imanol Alguacil,Pepe Mel,"Reale Arena, San Sebastián",2.0,2.0,0
+Osasuna,Valencia,31,Jagoba Arrasate,Rubén Baraja,"Estadio El Sadar, Pamplona",0.0,1.0,-1
+Athletic Club,Granada,32,Ernesto Valverde,Sandoval,"San Mamés, Bilbao",1.0,0.0,1
+Celta Vigo,Las Palmas,32,Claudio Giráldez,García Pimienta,"Estadio Abanca Balaídos, Vigo",4.0,1.0,1
+Rayo Vallecano,Osasuna,32,Iñigo Pérez,Jagoba Arrasate,"Estadio del Rayo Vallecano, Madrid",2.0,1.0,1
+Valencia,Real Betis,32,Rubén Baraja,Manuel Pellegrini,"Estadio de Mestalla, Valencia",1.0,2.0,-1
+Girona,Cádiz,32,Michel,Mauricio Pellegrino,"Estadi Municipal de Montilivi, Girona",4.0,1.0,1
+Getafe,Real Sociedad,32,Pepe Bordalás,Imanol Alguacil,"Coliseum Alfonso Pérez, Getafe",1.0,1.0,0
+Almería,Villarreal,32,Pepe Mel,Marcelino,"Power Horse Stadium, Almería",1.0,2.0,-1
+Alavés,Atlético Madrid,32,Luis García,Diego Simeone,"Estadio de Mendizorroza, Vitoria-Gasteiz",2.0,0.0,1
+Real Madrid,Barcelona,32,Carlo Ancelotti,Xavi,"Estadio Santiago Bernabéu, Madrid",3.0,2.0,1
+Sevilla,Mallorca,32,Quique Flores,Javier Aguirre,"Estadio Ramón Sánchez Pizjuán, Sevilla",2.0,1.0,1
+Real Sociedad,Real Madrid,33,Imanol Alguacil,Carlo Ancelotti,"Reale Arena, San Sebastián",0.0,1.0,-1
+Las Palmas,Girona,33,García Pimienta,Michel,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",0.0,2.0,-1
+Almería,Getafe,33,Pepe Mel,Pepe Bordalás,"Power Horse Stadium, Almería",1.0,3.0,-1
+Alavés,Celta Vigo,33,Luis García,Claudio Giráldez,"Estadio de Mendizorroza, Vitoria-Gasteiz",3.0,0.0,1
+Atlético Madrid,Athletic Club,33,Diego Simeone,Ernesto Valverde,"Estadio Cívitas Metropolitano, Madrid",2.0,1.0,1
+Cádiz,Mallorca,33,Mauricio Pellegrino,Javier Aguirre,"Estadio Nuevo Mirandilla, Cádiz",0.0,1.0,-1
+Granada,Osasuna,33,Sandoval,Jagoba Arrasate,"Estadio Nuevo Los Cármenes, Granada",3.0,0.0,1
+Villarreal,Rayo Vallecano,33,Marcelino,Iñigo Pérez,"Estadio de la Cerámica, Villarreal",3.0,0.0,1
+Real Betis,Sevilla,33,Manuel Pellegrini,Quique Flores,"Estadio Benito Villamarín, Sevilla",1.0,1.0,0
+Barcelona,Valencia,33,Xavi,Rubén Baraja,"Estadi Olímpic Lluís Companys, Barcelona",4.0,2.0,1
+Getafe,Athletic Club,34,Pepe Bordalás,Ernesto Valverde,"Coliseum Alfonso Pérez, Getafe",0.0,2.0,-1
+Real Sociedad,Las Palmas,34,Imanol Alguacil,García Pimienta,"Reale Arena, San Sebastián",1.0,0.0,1
+Real Madrid,Cádiz,34,Carlo Ancelotti,Mauricio Pellegrino,"Estadio Santiago Bernabéu, Madrid",3.0,0.0,1
+Girona,Barcelona,34,Michel,Xavi,"Estadi Municipal de Montilivi, Girona",4.0,2.0,1
+Mallorca,Atlético Madrid,34,Javier Aguirre,Diego Simeone,"Estadi Mallorca Son Moix, Palma de Mallorca",0.0,1.0,-1
+Osasuna,Real Betis,34,Jagoba Arrasate,Manuel Pellegrini,"Estadio El Sadar, Pamplona",0.0,2.0,-1
+Celta Vigo,Villarreal,34,Claudio Giráldez,Marcelino,"Estadio Abanca Balaídos, Vigo",3.0,2.0,1
+Valencia,Alavés,34,Rubén Baraja,Luis García,"Estadio de Mestalla, Valencia",0.0,1.0,-1
+Rayo Vallecano,Almería,34,Iñigo Pérez,Pepe Mel,"Estadio del Rayo Vallecano, Madrid",0.0,1.0,-1
+Sevilla,Granada,34,Quique Flores,Sandoval,"Estadio Ramón Sánchez Pizjuán, Sevilla",3.0,0.0,1
+Alavés,Girona,35,Luis García,Michel,"Estadio de Mendizorroza, Vitoria-Gasteiz",2.0,2.0,0
+Mallorca,Las Palmas,35,Javier Aguirre,García Pimienta,"Estadi Mallorca Son Moix, Palma de Mallorca",1.0,0.0,1
+Villarreal,Sevilla,35,Marcelino,Quique Flores,"Estadio de la Cerámica, Villarreal",3.0,2.0,1
+Granada,Real Madrid,35,Sandoval,Carlo Ancelotti,"Estadio Nuevo Los Cármenes, Granada",0.0,4.0,-1
+Athletic Club,Osasuna,35,Ernesto Valverde,Jagoba Arrasate,"San Mamés, Bilbao",2.0,2.0,0
+Cádiz,Getafe,35,Mauricio Pellegrino,Pepe Bordalás,"Estadio Nuevo Mirandilla, Cádiz",1.0,0.0,1
+Atlético Madrid,Celta Vigo,35,Diego Simeone,Claudio Giráldez,"Estadio Cívitas Metropolitano, Madrid",1.0,0.0,1
+Valencia,Rayo Vallecano,35,Rubén Baraja,Iñigo Pérez,"Estadio de Mestalla, Valencia",0.0,0.0,0
+Real Betis,Almería,35,Manuel Pellegrini,Pepe Mel,"Estadio Benito Villamarín, Sevilla",3.0,2.0,1
+Barcelona,Real Sociedad,35,Xavi,Imanol Alguacil,"Estadi Olímpic Lluís Companys, Barcelona",2.0,0.0,1
+Osasuna,Mallorca,36,Jagoba Arrasate,Javier Aguirre,"Estadio El Sadar, Pamplona",1.0,1.0,0
+Real Madrid,Alavés,36,Carlo Ancelotti,Luis García,"Estadio Santiago Bernabéu, Madrid",5.0,0.0,1
+Girona,Villarreal,36,Michel,Marcelino,"Estadi Municipal de Montilivi, Girona",1.0,1.0,0
+Rayo Vallecano,Granada,36,Iñigo Pérez,Sandoval,"Estadio del Rayo Vallecano, Madrid",2.0,1.0,1
+Sevilla,Cádiz,36,Quique Flores,Mauricio Pellegrino,"Estadio Ramón Sánchez Pizjuán, Sevilla",0.0,1.0,-1
+Celta Vigo,Athletic Club,36,Claudio Giráldez,Ernesto Valverde,"Estadio Abanca Balaídos, Vigo",2.0,1.0,1
+Getafe,Atlético Madrid,36,Pepe Bordalás,Diego Simeone,"Coliseum Alfonso Pérez, Getafe",0.0,3.0,-1
+Las Palmas,Real Betis,36,García Pimienta,Manuel Pellegrini,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",2.0,1.0,1
+Almería,Barcelona,36,Pepe Mel,Xavi,"Power Horse Stadium, Almería",0.0,2.0,-1
+Real Sociedad,Valencia,36,Imanol Alguacil,Rubén Baraja,"Reale Arena, San Sebastián",1.0,0.0,1
+Alavés,Getafe,37,Luis García,Pepe Bordalás,"Estadio de Mendizorroza, Vitoria-Gasteiz",1.0,0.0,1
+Atlético Madrid,Osasuna,37,Diego Simeone,Jagoba Arrasate,"Estadio Cívitas Metropolitano, Madrid",1.0,4.0,-1
+Athletic Club,Sevilla,37,Ernesto Valverde,Quique Flores,"San Mamés, Bilbao",2.0,0.0,1
+Real Betis,Real Sociedad,37,Manuel Pellegrini,Imanol Alguacil,"Estadio Benito Villamarín, Sevilla",0.0,2.0,-1
+Barcelona,Rayo Vallecano,37,Xavi,Iñigo Pérez,"Estadi Olímpic Lluís Companys, Barcelona",3.0,0.0,1
+Mallorca,Almería,37,Javier Aguirre,Pepe Mel,"Estadi Mallorca Son Moix, Palma de Mallorca",2.0,2.0,0
+Granada,Celta Vigo,37,Sandoval,Claudio Giráldez,"Estadio Nuevo Los Cármenes, Granada",1.0,2.0,-1
+Valencia,Girona,37,Rubén Baraja,Michel,"Estadio de Mestalla, Valencia",1.0,2.0,-1
+Cádiz,Las Palmas,37,Mauricio Pellegrino,García Pimienta,"Estadio Nuevo Mirandilla, Cádiz",0.0,0.0,0
+Villarreal,Real Madrid,37,Marcelino,Carlo Ancelotti,"Estadio de la Cerámica, Villarreal",4.0,4.0,0
+Girona,Granada,38,Michel,Sandoval,"Estadi Municipal de Montilivi, Girona",7.0,0.0,1
+Osasuna,Villarreal,38,Jagoba Arrasate,Marcelino,"Estadio El Sadar, Pamplona",1.0,1.0,0
+Real Sociedad,Atlético Madrid,38,Imanol Alguacil,Diego Simeone,"Reale Arena, San Sebastián",0.0,2.0,-1
+Almería,Cádiz,38,Pepe Mel,Mauricio Pellegrino,"Power Horse Stadium, Almería",5.0,1.0,1
+Rayo Vallecano,Athletic Club,38,Iñigo Pérez,Ernesto Valverde,"Estadio del Rayo Vallecano, Madrid",0.0,1.0,-1
+Real Madrid,Real Betis,38,Carlo Ancelotti,Manuel Pellegrini,"Estadio Santiago Bernabéu, Madrid",0.0,0.0,0
+Getafe,Mallorca,38,Pepe Bordalás,Javier Aguirre,"Coliseum Alfonso Pérez, Getafe",1.0,2.0,-1
+Las Palmas,Alavés,38,García Pimienta,Luis García,"Estadio de Gran Canaria, Las Palmas de Gran Canaria",1.0,1.0,0
+Celta Vigo,Valencia,38,Claudio Giráldez,Rubén Baraja,"Estadio Abanca Balaídos, Vigo",2.0,1.0,1
+Sevilla,Barcelona,38,Quique Flores,Xavi,"Estadio Ramón Sánchez Pizjuán, Sevilla",1.0,2.0,-1
