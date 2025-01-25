@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: 102217186-abhaijeet-topsis
+Version: 0.1
+Summary: A Python implementation of the TOPSIS method for multi-criteria decision making.
+Home-page: https://github.com/yourusername/102217186_abhaijeet_topsis
+Author: Abhaijeet Singh
+Author-email: asingh37_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
