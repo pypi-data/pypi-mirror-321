@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: topsis-Aarushi-102216107
+Version: 1.0.0
+Summary: A Python package to calculate TOPSIS score.
+Author: Aarushi Gupta
+Author-email: agupta24_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TOPSIS Package
+
+This package calculates the TOPSIS score for a given CSV file.
+
+## Installation
+
+Install the package using pip:
+    ```bash
+    pip install topsis-package
+
+## Usage 
+
+Run the package via command line:
+    ```bash 
+    topsis <inputFileName> <weights> <impacts> <resultFileName>
+
+## Input file format 
+
+The input file must:
+Have at least 3 columns.
+Contain numeric values from the 2nd to the last column.
