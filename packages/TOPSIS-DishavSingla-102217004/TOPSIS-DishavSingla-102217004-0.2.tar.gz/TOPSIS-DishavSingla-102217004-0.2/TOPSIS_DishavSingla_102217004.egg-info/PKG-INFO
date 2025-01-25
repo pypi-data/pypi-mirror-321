@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: TOPSIS-DishavSingla-102217004
+Version: 0.2
+Summary: A Python package for implementing the TOPSIS decision-making method.
+Home-page: https://github.com/DISHAVSINGLA/Topsis-Dishav-102217004
+Author: Dishav
+Author-email: dsingla2_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+ï»¿# **TOPSIS - Dishav_Singla-102217004**
+
+A Python implementation of the **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** method, designed for decision-making in multi-criteria decision analysis (MCDA).
+
+---
+
+## **Project Description**
+
+This project implements the **TOPSIS** technique, a popular method used in decision-making that evaluates multiple alternatives based on various criteria. The project is focused on applying **TOPSIS** to a given dataset with multiple alternatives and criteria. The objective is to rank and identify the best alternative by calculating the **relative closeness** of each alternative to the ideal solution.
+
+### **Objective**
+
+- To apply **TOPSIS** on a sample dataset.
+- To rank different alternatives based on defined criteria.
+- To generate a ranking list of the alternatives for decision-making purposes.
+
+---
+
+## **Features**
+
+- **Data Preprocessing**: The dataset is cleaned and normalized.
+- **TOPSIS Algorithm**: Implementation of the **TOPSIS** method, including the calculation of:
+  - Ideal and negative-ideal solutions.
+  - Separation measures.
+  - Relative closeness to the ideal solution.
+- **Ranking**: Rank the alternatives based on the relative closeness.
+- **Visualizations**: Plot results (optional, if applicable).
+  
+---
+
+## **Installation**
+
+### Prerequisites
+
+Ensure you have **Python 3.x** installed. You can download it from the official website:
+
+- [Python Official Website](https://www.python.org/downloads/)
+
+### Install Dependencies
+
+Clone this repository and install the necessary dependencies using **pip**:
+
+```bash
+git clone https://github.com/your-username/TOPSIS-Dishav_Singla-102217004.git
+cd TOPSIS-Dishav_Singla-102217004
+pip install -r requirements.txt
