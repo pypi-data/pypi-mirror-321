@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: almabtrieb
+Version: 0.1.0a2
+Summary: Add your description here
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.10.5
+Provides-Extra: amqp
+Requires-Dist: aio-pika>=9.5.4; extra == 'amqp'
+Provides-Extra: mqtt
+Requires-Dist: aiomqtt>=2.3.0; extra == 'mqtt'
