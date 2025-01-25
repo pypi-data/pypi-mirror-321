@@ -1,0 +1,10 @@
+fastmeteo/__init__.py,sha256=0eScyrUeUao6CWBT4ar-A9qG3iKVVO539HaqjtxtpsM,50
+fastmeteo/aero.py,sha256=El_8uCQy1NivgVWFlwzpz92D_PO2mwmzTS5hwv3zouc,10408
+fastmeteo/client.py,sha256=M4MccaaC_kEf7ctNRDi4Zo_0n5xjsyH4bpGsl2ISxqw,926
+fastmeteo/grid.py,sha256=I6RcPtvpqc-61HA5wutKeg5ssEzn3YST0aucdmaNduw,5262
+fastmeteo/server.py,sha256=5Pd2kr9fUzTDy0qL3MMefdMEJPN5D0hJpPgzmRJacng,1009
+fastmeteo/sync.py,sha256=flrjRYz7rQNimxctum20sRTMfA3Qof1WBSHdlO9o_dk,433
+fastmeteo-0.2.3.dist-info/METADATA,sha256=YkIc__SHaW0kUjFfw6_ax6B0EWJOs4XyMu4O4O1LOlY,5425
+fastmeteo-0.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastmeteo-0.2.3.dist-info/licenses/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+fastmeteo-0.2.3.dist-info/RECORD,,
