@@ -1,0 +1,12 @@
+pattern_detector/__init__.py,sha256=Fuk6OrcI-ryoFxzIqFQEM2F6L3R0vZYSX7y_hHxHufI,1159
+pattern_detector/aoi_finder.py,sha256=TwlXN54UWVdWl2tC-E48enCPiDvnkmFm_rwFhZkkS7c,7069
+pattern_detector/cosine_similarity_function.py,sha256=Vgh6Blm6kji54JfXLVoiesYYwO0qDAyCv6W--YBlU3o,2704
+pattern_detector/sliding_window_cosine_similarity.py,sha256=B-Zs0fHDCXlFcWlzEhKuTquavIWzUlMgc1dd3x2gkBk,1735
+pattern_detector/utils.py,sha256=jqkfeTqWEnrnvzKBxr_UdKj9cj7zPF15UhHPr9sBSa0,2646
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_detector.py,sha256=mSNuqaHEkRiGcFnvvwNWa1UWKjhF6l8xBrFhGHQ1S0A,1021
+pattern_detector-0.2.1.dist-info/LICENSE,sha256=RslT26mCGxF9nQEyEQL8kFMFUgmYvCA0UivIWefxWmU,1098
+pattern_detector-0.2.1.dist-info/METADATA,sha256=5VuZn23JkdZryRW5UKPGpJFJ_lnKs6_fqObUBn-0Dd8,536
+pattern_detector-0.2.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+pattern_detector-0.2.1.dist-info/top_level.txt,sha256=zYjRoeMq6DYEzeVTU-JZKbeooXspQwn8M0uCF-naRww,23
+pattern_detector-0.2.1.dist-info/RECORD,,
