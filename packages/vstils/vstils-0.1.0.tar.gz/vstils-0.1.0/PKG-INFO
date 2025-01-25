@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: vstils
+Version: 0.1.0
+Summary: Python utility library
+Author-email: Viktor Sokolov <viktorsokolov.and@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/victory-sokolov/vstils
+Project-URL: Repository, https://github.com/victory-sokolov/vstils
+Project-URL: Issues, https://github.com/victory-sokolov/vstils/issues
+Keywords: utils
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+## Vstils
+
+Python utility library

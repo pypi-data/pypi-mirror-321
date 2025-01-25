@@ -1,0 +1,14 @@
+.gitignore
+.python-version
+LICENSE
+README.md
+pyproject.toml
+uv.lock
+src/__init__.py
+src/list.py
+src/vstils.egg-info/PKG-INFO
+src/vstils.egg-info/SOURCES.txt
+src/vstils.egg-info/dependency_links.txt
+src/vstils.egg-info/top_level.txt
+tests/__init__.py
+tests/test_list.py
