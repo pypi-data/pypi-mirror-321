@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fmcore"
+version = "0.1.1"
+authors = [
+    { name = "Abhishek Divekar", email = "adivekar@utexas.edu" }
+]
+description = "A specialized toolkit for scaling experimental research with Foundation Models."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license-files = ["LICENSE"]
+dependencies = [
+    "pandas==1.*",
+    "numpy==1.*",
+    "pydantic==1.10.15",
+    "scikit-learn",
+    "urllib3",
+    "xlrd",
+    "XlsxWriter",
+    "openpyxl",
+    "fastparquet",
+    "pyarrow",
+    "s3fs",
+    "tqdm",
+    "boto3",
+    "cloudpickle>=3.0.0",
+]
+
+[project.optional-dependencies]
+all = [
+    "orjson",
+    "ray==2.9.2",
+    "ray[default]",
+    "ray[tune]",
+    "ray[serve]",
+    "dask[complete]",
+    "dask==2024.2.0",
+    "gpustat",
+    "nvitop",
+    "altair",
+    "plotly",
+    "plotly-express",
+    "bokeh",
+    "seaborn",
+    "holoviews",
+    "hvplot>=0.10.0",
+    "matplotlib",
+    "tiktoken",
+    "torch==2.3.0",
+    "transformers==4.42.4",
+    "einops",
+    "accelerate",
+    "deepspeed",
+    "sentence_transformers",
+    "tokenizers",
+    "datasets",
+    "bitsandbytes",
+    "safetensors",
+    "brotli",
+    "nltk",
+    "evaluate",
+    "mauve-text",
+    "sentencepiece",
+    "tensorboard",
+    "aim==3.*",
+    "wandb",
+    "imageio",
+    "faiss-cpu",
+]
