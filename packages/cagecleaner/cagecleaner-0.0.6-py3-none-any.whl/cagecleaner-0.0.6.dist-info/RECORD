@@ -1,0 +1,12 @@
+cagecleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cagecleaner/__main__.py,sha256=YgDdH7LpwjR2oYkZlzs537vso6IQVGcKMi2T01TK7O0,37
+cagecleaner/cagecleaner.py,sha256=9hP3KEWrs2PGZTMa7pT5lsLpLheEiie007Nvc4MalqQ,35394
+cagecleaner-0.0.6.data/scripts/dereplicate_assemblies.sh,sha256=eMMl_CrZz5plt1iA_UzMSq8HRKOgHo--xxNL7PBkEsg,811
+cagecleaner-0.0.6.data/scripts/download_assemblies.sh,sha256=vbiSKnOBjVAcGxoE9gbb_f0fWZyjgzYXFyq5aQCXFYc,1824
+cagecleaner-0.0.6.data/scripts/get_accessions.sh,sha256=GlKv5iSZgd43RnZp0rzY7FCjYxK1n0csXvDWkouxKuk,2375
+cagecleaner-0.0.6.dist-info/LICENSE,sha256=VQC-1gyJrLi5_dEbrhcEjcGdhnVi8G4HTzzdd7xJRCk,1072
+cagecleaner-0.0.6.dist-info/METADATA,sha256=IX_1eyNbau0DewLBxUws7_I0-roJJNSrpj8LIVT9lco,8442
+cagecleaner-0.0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cagecleaner-0.0.6.dist-info/entry_points.txt,sha256=ICL0MhQTcTuKbTCMz9ixG7vm-48GO0TLtAqhZINR-iM,61
+cagecleaner-0.0.6.dist-info/top_level.txt,sha256=Sb5MYGEyvYIEbvd7xCDTR4dceipIFUoZKO-aw75C33E,12
+cagecleaner-0.0.6.dist-info/RECORD,,
