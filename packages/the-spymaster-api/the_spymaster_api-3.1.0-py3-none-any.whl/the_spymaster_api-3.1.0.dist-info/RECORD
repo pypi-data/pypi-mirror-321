@@ -1,0 +1,16 @@
+the_spymaster_api/__init__.py,sha256=J33o4sNJr0_DV_FygVgk2Ha-6XbjBk6-NK42TP9rjfE,47
+the_spymaster_api/client.py,sha256=0MRpqMAL1hacRgspCm1f3uXFak4eOMi7dcnDssbl86U,4301
+the_spymaster_api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+the_spymaster_api/structs/__init__.py,sha256=DvQAxyQSgyBUdUO8Q4cTtarVg5g2CZy79HT1uwjGiAc,95
+the_spymaster_api/structs/classic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+the_spymaster_api/structs/classic/requests.py,sha256=x7xRgm1RauMDWTp7vjsC5Epwe6zGLhN7lBIgL32VzUo,312
+the_spymaster_api/structs/classic/responses.py,sha256=5cO_E1vi79Oc33O44CLoTzLVHT0LSGoIgReUu5hiZiU,891
+the_spymaster_api/structs/duet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+the_spymaster_api/structs/duet/requests.py,sha256=ZWBRNrmVgONFC7uspGQmpiZdjS-S0y0D2G6qzL2ofDg,276
+the_spymaster_api/structs/duet/responses.py,sha256=4vYHXsqnFdkR7CJE3TjItEx6n9T5amNkq4vmzfyMAlo,834
+the_spymaster_api/structs/errors.py,sha256=S8j6gfViNVtBW9UULL3bqpMwUbyIsxCjDgSR2dm0jss,792
+the_spymaster_api/structs/requests.py,sha256=MfVul6h3gsym9TFAznb4bBAwVrSPcj4E28FDRErF--w,872
+the_spymaster_api/structs/responses.py,sha256=rjLv4renZsg-nS-fqGL2gRXH67gvAhZtCutZVt3eeBM,474
+the_spymaster_api-3.1.0.dist-info/METADATA,sha256=GmB3fzwk1p7OFy4m1C-nFBe49ZXsKt_WU-53t2ofwXo,920
+the_spymaster_api-3.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+the_spymaster_api-3.1.0.dist-info/RECORD,,
