@@ -1,0 +1,10 @@
+libdir=/var/folders/84/5079cppj57s0lzywhyzcxkjc0000gn/T/tmpzf2zsfml/wheel/platlib/lib
+includedir=/var/folders/84/5079cppj57s0lzywhyzcxkjc0000gn/T/tmpzf2zsfml/wheel/platlib/include
+
+Name: gtest_main
+Description: GoogleTest (with main() function)
+Version: 1.15.2
+URL: https://github.com/google/googletest
+Requires: gtest = 1.15.2
+Libs: -L${libdir} -lgtest_main 
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1
