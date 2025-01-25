@@ -1,0 +1,9 @@
+mcpx/__init__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+mcpx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcpx/client/transports/docker/__init__.py,sha256=jNkmvdApJXLS12BxUvSaj2V1tPkCk7KxC8z3tJt6kPU,120
+mcpx/client/transports/docker/config.py,sha256=1GavAQLbk66atk9kGGHMSVgNN6vygOFpOI30skyuia0,472
+mcpx/client/transports/docker/docker.py,sha256=80ntlZDTHsOAKMGCeW41Wx-eaH7QxG7LWi0YlzIBeyU,3726
+mcpx-0.1.1.dist-info/METADATA,sha256=JGsiYjx4xtXgNiZm75-GhSCDHXlLwKUMo-D_2tMNRLk,1059
+mcpx-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcpx-0.1.1.dist-info/licenses/LICENSE,sha256=jm2XGZlmkZ2meNGoDJFG9-ymhLgl5pEgf5NYRq081ic,1068
+mcpx-0.1.1.dist-info/RECORD,,
