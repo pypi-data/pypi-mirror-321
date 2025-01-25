@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: Topsis-Vivek-102203871
+Version: 1.0.0
+Summary: A Python package for implementing the Topsis method
+Home-page: https://github.com/VivekAttri01/Topsis-Vivek-102203871
+Author: Vivek
+Author-email: atrivivek001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Usage
+### Input File
+The input file can be either a `.csv` or `.xlsx` file with the following structure:
+| Name     | Criterion1 | Criterion2 | Criterion3 |
+|----------|------------|------------|------------|
+| Option1  | 250        | 16         | 12         |
+| Option2  | 200        | 16         | 8          |
+
+### Example Code
+```python
+from topsis.topsis import Topsis
+
+weights = [0.25, 0.25, 0.25]
+impacts = ['+', '+', '-']
+result = Topsis.calculate('data.xlsx', weights, impacts)
+print(result)
