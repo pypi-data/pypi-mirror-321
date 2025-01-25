@@ -1,0 +1,8 @@
+pytest_dryrun/__init__.py,sha256=rxKq-xxfRzCEGCcv5a1ArXHtCILfneQfbJbG_soBejA,530
+pytest_dryrun/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dryrun/pytest_dryrun.py,sha256=z3s7VYXpQ8Tswz0QqYNjNng3ZqgavLsRXgx2_UfhFM4,1692
+pytest_dryrun-1.0.1.dist-info/LICENSE.md,sha256=aYH7J45q2Xigvn650blNrVdC5jFyr6nHQqhENwKwfqc,1089
+pytest_dryrun-1.0.1.dist-info/METADATA,sha256=c9SlejUCb7J984OnEQAxNLg6cRrnYPZ3_ovzE42TDxM,2063
+pytest_dryrun-1.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pytest_dryrun-1.0.1.dist-info/entry_points.txt,sha256=b1EAbJurLWGlZemD3tHjRxhHY9Yq-NA4ZsuIwx7nCgU,54
+pytest_dryrun-1.0.1.dist-info/RECORD,,
