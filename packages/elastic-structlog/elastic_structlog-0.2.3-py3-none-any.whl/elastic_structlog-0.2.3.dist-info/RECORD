@@ -1,0 +1,9 @@
+elastic_structlog/__init__.py,sha256=R7WDr7arw6kzpgdba82nEtKK4cpfcWSvqlRBkgOvb-M,180
+elastic_structlog/elastic_extension.py,sha256=uiQqr6a62wmoguAjeUGzeNFp0SRWBrs8JHJuOi0-92g,3487
+elastic_structlog/elastic_processor.py,sha256=YafVOGzaZWoD0O4QBj_AA5nduN2q68rwJPL7jiPwL2w,3885
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/main.py,sha256=bciGwpwjWBhGE4FRmQrypA_msm9vajGLsq8b1Zusq5w,2651
+elastic_structlog-0.2.3.dist-info/METADATA,sha256=cyS2Avog9ZfV5iW-dzUq-ZwhQBpk0Y8Ot5wfqVV8PAY,2686
+elastic_structlog-0.2.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+elastic_structlog-0.2.3.dist-info/top_level.txt,sha256=Xr--HOvzYhx0sDoPLAuRU_tQMMPOwUYaIbeMK9jj_1g,26
+elastic_structlog-0.2.3.dist-info/RECORD,,
