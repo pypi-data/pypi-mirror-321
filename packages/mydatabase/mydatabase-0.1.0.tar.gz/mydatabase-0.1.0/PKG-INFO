@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mydatabase
+Version: 0.1.0
+Summary: Библиотека для подключения к PostgreSQL
+Home-page: https://www.python.org
+Author: Андрей
+Author-email: andrey960123@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2
+Requires-Dist: PyQt5
+
+# My Database Library
+
+Р‘РёР±Р»РёРѕС‚РµРєР° РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… PostgreSQL.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+Р”Р»СЏ СѓСЃС‚Р°РЅРѕРІРєРё Р±РёР±Р»РёРѕС‚РµРєРё РёСЃРїРѕР»СЊР·СѓР№С‚Рµ pip:
+
+```bash
+pip install mydatabase

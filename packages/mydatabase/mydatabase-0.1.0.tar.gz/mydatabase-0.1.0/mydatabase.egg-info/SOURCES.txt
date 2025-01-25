@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+database/__init__.py
+database/database.py
+mydatabase.egg-info/PKG-INFO
+mydatabase.egg-info/SOURCES.txt
+mydatabase.egg-info/dependency_links.txt
+mydatabase.egg-info/requires.txt
+mydatabase.egg-info/top_level.txt
+tests/__init__.py
+tests/test_database.py
