@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: subtrace
+Version: 0.205
+Summary: Subtrace for Python apps
+Home-page: https://github.com/subtrace/subtrace-python
+Author: Subtrace, Inc.
+Author-email: support@subtrace.dev
+License: BSD
+Project-URL: Documentation, https://docs.subtrace.dev
+Project-URL: Source, https://github.com/subtrace/subtrace-python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Requires-Dist: truststore
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
