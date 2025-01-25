@@ -1,0 +1,35 @@
+[project]
+name = "llm_evaluation_in_reasoning"
+description = "A project for evaluating reasoning capabilities in large language models (LLMs)."
+readme = "README.md"
+keywords = [ "llm", "evaluation", "reasoning",]
+requires-python = ">=3.11"
+dependencies = [ "fire", "litellm==1.54.1", "python-dotenv", "datasets", "pathlib", "rich", "sympy",]
+version = "1.4.2"
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License",]
+[[project.authors]]
+name = "Sheng Ren"
+email = "rensheng0410@gamil.com"
+
+[[project.authors]]
+name = "Xiya Pang"
+email = "sianing0531@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [ "hatch", "jupyter", "pre-commit",]
+
+[project.license]
+file = "LICENSE"
+
+[project.scripts]
+llm_eval = "llm_evaluation_in_reasoning.app:app"
+
+[tool.uv.workspace]
+members = [ "llm_evaluation_in_reasoning",]
+
+[tool.hatch.build.targets.wheel]
+packages = [ "src/llm_evaluation_in_reasoning",]
