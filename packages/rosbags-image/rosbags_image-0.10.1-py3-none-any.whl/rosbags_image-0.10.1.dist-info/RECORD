@@ -1,0 +1,8 @@
+rosbags/image/__init__.py,sha256=nKRV81WNzHazjIeBeMkdRmXAUInAapf9dwy4_Tx2aIM,490
+rosbags/image/image.py,sha256=DTRF2s5iH3Y7f-oNdD-q5XvqE1ndQBwmjyYtBZE91n4,6510
+rosbags/image/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rosbags_image-0.10.1.dist-info/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+rosbags_image-0.10.1.dist-info/METADATA,sha256=NhX0SlK6mAtQZkh8zes8cahGdIqm_yK4wpTEt7u7m9o,3978
+rosbags_image-0.10.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+rosbags_image-0.10.1.dist-info/top_level.txt,sha256=iSgFJOuAhKFPWVys-liwUeUMnZmiHqqxlIPswJ2tEhg,8
+rosbags_image-0.10.1.dist-info/RECORD,,
