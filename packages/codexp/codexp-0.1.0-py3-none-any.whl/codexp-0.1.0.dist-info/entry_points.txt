@@ -1,0 +1,2 @@
+[console_scripts]
+codexp = codexp.__main__:app
