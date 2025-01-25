@@ -1,0 +1,9 @@
+# MANIFEST.in
+
+# Include essential files
+include README.md
+include LICENSE
+
+# Exclude the CSV files (data files)
+exclude topsis/102203385-data.csv
+exclude topsis/102203385-result.csv
