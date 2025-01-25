@@ -1,0 +1,75 @@
+# 102203236_Topsis
+
+## Overview
+**TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** is a multi-criteria decision-making (MCDM) method used for ranking and selecting alternatives based on multiple criteria. This Python package allows users to easily apply the TOPSIS method to their datasets.
+
+## Features
+- Reads data from an Excel file.
+- Automatically normalizes the data.
+- Applies user-defined weights and impacts to criteria.
+- Computes the TOPSIS score and ranks alternatives.
+- Outputs the final decision-making table with rankings.
+
+## Installation
+Install the package using pip:
+```sh
+pip install 102203236_Topsis
+```
+
+## Usage
+### Import the package
+```python
+from topsis import Topsis
+```
+
+### Example
+```python
+# Importing the package
+from topsis import Topsis
+
+# Define the input parameters
+filename = "data.xlsx"
+impacts = ['+','+','+','-','+']
+weights = [0.25, 0.25, 0.25, 0.25, 0.25]
+
+# Run TOPSIS
+result = Topsis(filename, impacts, weights).get_result()
+
+# Print the ranked result
+print(result)
+```
+
+### Expected Input Format
+The input Excel file should contain numeric data for decision-making criteria. An example format:
+| Fund Name | Criterion 1 | Criterion 2 | Criterion 3 | Criterion 4 | Criterion 5 |
+|-----------|------------|------------|------------|------------|------------|
+| Fund A    | 250        | 3.5        | 1200       | 8          | 85         |
+| Fund B    | 275        | 4.0        | 1150       | 7          | 90         |
+| Fund C    | 260        | 3.8        | 1250       | 6          | 88         |
+
+### Output Format
+The output DataFrame includes the original data with additional columns:
+- **Score**: Computed TOPSIS score.
+- **Rank**: Final ranking based on the score.
+
+## Dependencies
+This package requires:
+- `pandas`
+- `numpy`
+
+These dependencies will be automatically installed when using `pip install 102203236_Topsis`.
+
+## License
+This project is licensed under the MIT License.
+
+## Contributing
+Pull requests are welcome! If you have suggestions or improvements, feel free to submit an issue or PR.
+
+## Author
+- Name: Pranav Khurana
+- GitHub: https://github.com/PranavKhurana117?tab=repositories
+- Email: pranavkhurana117@gmail.com
+
+---
+Enjoy using the TOPSIS package! 🚀
+
