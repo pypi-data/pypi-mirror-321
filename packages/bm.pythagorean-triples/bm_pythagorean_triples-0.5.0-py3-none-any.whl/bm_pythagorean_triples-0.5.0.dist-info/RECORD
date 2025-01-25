@@ -1,0 +1,10 @@
+bm/pythagorean_triples/__init__.py,sha256=KfY4VkQJSgHQUFBrqtDygbVZLbMTuiMG-voEy7-9-L8,925
+bm/pythagorean_triples/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bm/pythagorean_triples/pythag3.py,sha256=Sn7l-nuxwZHrCD0pymEB_euHEHAzJb3tPdaftSMTD9o,3521
+bm/pythagorean_triples/cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bm/pythagorean_triples/cli/pythag3.py,sha256=WdjAt4lpjS5gp2JYg-kYJpzZlcHq1odClNRFoBkP3mA,2308
+bm_pythagorean_triples-0.5.0.dist-info/entry_points.txt,sha256=8fKlXXtNi76QYf67wbo0TtP_M85-qjnTzGCRzlcCz8U,74
+bm_pythagorean_triples-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bm_pythagorean_triples-0.5.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+bm_pythagorean_triples-0.5.0.dist-info/METADATA,sha256=W_1YTMWwfCDD1gwCSTrtbDd8x_zs3aQB12sQb6Zjsm4,3242
+bm_pythagorean_triples-0.5.0.dist-info/RECORD,,
