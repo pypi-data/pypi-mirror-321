@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: klondike
+Version: 0.2.2
+Summary: Klondike is a suite of database connectors, powered by Polars
+License: MIT
+Keywords: polars,bigquery,snowflake,redshift
+Author: Ian Ferguson
+Author-email: IANFERGUSONRVA@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: google-cloud-bigquery (==3.19.0)
+Requires-Dist: polars (==0.20.16)
+Requires-Dist: pyarrow (==15.0.2)
+Requires-Dist: snowflake-connector-python (==3.10.1)
+Project-URL: Repository, https://github.com/IanRFerguson/klondike
