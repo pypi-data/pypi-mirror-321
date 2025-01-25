@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: skillet
+Version: 0.0.1
+Summary: A getting started toolkit for Zeroth V2
+Home-page: https://github.com/kscalelabs
+Author: KScaleLabs
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: darglint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-python
+Dynamic: summary
+
+# skillet
+
+Welcome to the skillet project!
