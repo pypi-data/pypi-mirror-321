@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clore-gigaspot
+Version: 0.1.1
+Summary: GigaSPOT managment library
+Home-page: https://gitlab.com/cloreai-public/gigaspot-python-sdk
+Author: CLORE.AI
+Author-email: marketing@clore.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: aiohttp (==3.11.11)
+
+# CLORE GigaSPOT python SDK
+
+#### Import in python & setup connection
+
+```python
+import clore_gigaspot
+
+gigaspot_connection = clore_gigaspot.gigaspot_connection(
+    gigaspot_api_key="<your clore.ai API key>"
+)
+```
+
+
+TODO...
