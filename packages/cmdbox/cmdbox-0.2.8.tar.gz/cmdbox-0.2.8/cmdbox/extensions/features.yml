@@ -1,0 +1,12 @@
+features:
+  cli:
+    - package: cmdbox.app.features.cli
+      prefix: cmdbox_
+  web:
+    - package: cmdbox.app.features.web
+      prefix: cmdbox_web_
+args:
+  cli:
+    - rule:
+      default:
+      coercion:
