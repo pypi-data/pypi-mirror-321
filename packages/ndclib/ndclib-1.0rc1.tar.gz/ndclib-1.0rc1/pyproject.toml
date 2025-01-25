@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ndclib"
+version = "1.0rc1"
+authors = [
+    { name="Eddie Cosma", email="eddie.cosma@gmail.com"}
+]
+description = "A Python library for manipulating National Drug Codes (NDCs)"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries"
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "requests~=2.32.3"
+]
+
+[project.urls]
+Repository = "https://github.com/eddie-cosma/ndclib"
+Issues = "https://github.com/eddie-cosma/ndclib/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest~=8.3.4",
+    "black~=24.10.0",
+    "twine~=6.0.1",
+    "build~=1.2.2.post1"
+]
