@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: fastbase64
+Version: 0.1.0
+License-File: LICENSE
+Summary: Python Bindings to the base64 package
+Author: Raul Salinas <raul.antonio.salinas.herrada@gmail.com>
+Author-email: Raul Salinas <rasalina@uc.cl>
+License: BSD3
+Requires-Python: >=3.10
