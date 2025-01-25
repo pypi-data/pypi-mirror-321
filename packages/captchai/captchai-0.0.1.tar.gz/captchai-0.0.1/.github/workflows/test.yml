@@ -1,0 +1,60 @@
+name: Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      MOONDREAM_API_KEY: ${{ secrets.MOONDREAM_API_KEY }}
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg
+
+    - name: Install UV
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+
+    - name: Cache UV packages
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cache/uv
+          .venv
+        key: ${{ runner.os }}-uv-${{ hashFiles('**/pyproject.toml', '**/uv.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-uv-
+        
+    - name: Install dependencies
+      run: |
+        # Install all dependencies including dev extras
+        uv sync --all-extras --dev
+
+    - name: Check code quality
+      run: |
+        # Check code formatting and run all ruff rules
+        # Both commands will fail if any issues are found
+        uv run ruff format . --check
+        uv run ruff check .
+        
+    - name: Run tests
+      run: |
+        uv run pytest
