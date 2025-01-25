@@ -1,0 +1,10 @@
+1_0_9_local/__init__.py,sha256=ojwG4PRtgy5gITfEVUYD6DX4Fc5LWluhLIHKcf-bA-A,101
+1_0_9_local/__main__.py,sha256=dl1HWb6U0o7s4_VlcQ7fd_gav_YOrAdS3xxfRUbPVP8,67
+1_0_9_local/core/__init__.py,sha256=-UmfYEmQNUYFs-KOWjKS4fKRMyCWeAD8ePWhEVgX3dM,47
+1_0_9_local/tests/__init__.py,sha256=i0Sn5NZDdLC8lUWOlrUzaV0JdAA9I4_4-xgSUf9oPBo,299
+1_0_9_local/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+1_0_9_local-0.0.0.dev0.dist-info/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+1_0_9_local-0.0.0.dev0.dist-info/METADATA,sha256=3N5DNvMOd6qRTY7oSpbWqeRd8SVXpMV1ZAJNsLfRwpI,2654
+1_0_9_local-0.0.0.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+1_0_9_local-0.0.0.dev0.dist-info/top_level.txt,sha256=Rv55NLOn5_dKGfrkmfWFJvklf4zeS5ui8P0_kwI-Tg4,12
+1_0_9_local-0.0.0.dev0.dist-info/RECORD,,
