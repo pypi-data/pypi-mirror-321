@@ -1,0 +1,10 @@
+README.md
+setup.py
+Topsis-102203009-Manunjay:/__init__.py
+Topsis-102203009-Manunjay:/topsis.py
+Topsis_Manunjay_102203009.egg-info/PKG-INFO
+Topsis_Manunjay_102203009.egg-info/SOURCES.txt
+Topsis_Manunjay_102203009.egg-info/dependency_links.txt
+Topsis_Manunjay_102203009.egg-info/entry_points.txt
+Topsis_Manunjay_102203009.egg-info/requires.txt
+Topsis_Manunjay_102203009.egg-info/top_level.txt
