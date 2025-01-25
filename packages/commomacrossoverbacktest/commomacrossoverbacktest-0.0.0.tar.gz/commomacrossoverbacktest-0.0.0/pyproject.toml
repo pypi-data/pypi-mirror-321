@@ -1,0 +1,30 @@
+[project]
+name = "commomacrossoverbacktest"
+version = "0.0.0"
+description = "Python project designed to develop and implement backtesting for moving average crossover strategies applied to commodities underlyings"
+authors = [{ name = "Alexandre Cohen-Skalli" }]
+
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pybacktestchain = "^0.2.1"
+matplotlib = "^3.10.0"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.16.1"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "pip install poetry && poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
