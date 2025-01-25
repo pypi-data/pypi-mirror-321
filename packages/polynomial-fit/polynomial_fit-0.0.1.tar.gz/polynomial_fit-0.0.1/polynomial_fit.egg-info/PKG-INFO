@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: polynomial-fit
+Version: 0.0.1
+Summary: Fit a polynomial of any order and dimension to a dataset
+Home-page: 
+Author: Seth Reed
+Author-email: seth.reed01@gmail.com
+License: MIT
+Keywords: polynomial
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+Fit a polynomial of any order and dimension to a dataset
+
+2025-01-19 22:21 - Package created
