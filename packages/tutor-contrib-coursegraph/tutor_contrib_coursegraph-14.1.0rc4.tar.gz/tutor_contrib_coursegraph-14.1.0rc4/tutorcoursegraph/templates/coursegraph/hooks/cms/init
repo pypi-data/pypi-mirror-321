@@ -1,0 +1,1 @@
+./manage.py cms dump_to_neo4j --override
