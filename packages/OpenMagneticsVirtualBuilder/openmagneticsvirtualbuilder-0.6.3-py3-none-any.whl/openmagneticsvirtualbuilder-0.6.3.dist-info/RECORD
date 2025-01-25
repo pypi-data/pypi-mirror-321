@@ -1,0 +1,9 @@
+OpenMagneticsVirtualBuilder/builder.py,sha256=4Qp_qUXR8T9mkI1MHATK8oNYjUQC0fxG-QscabcEuQ8,2949
+OpenMagneticsVirtualBuilder/cadquery_builder.py,sha256=IaoGjhV2FOTj0zFgbF-Ea6igv8_Z51eJbuwdY9k9RzQ,80956
+OpenMagneticsVirtualBuilder/freecad_builder.py,sha256=UmkOMxgev8zNAeC9BafY4saFaOJSHWJfIOT1LKg0MEw,255048
+OpenMagneticsVirtualBuilder/utils.py,sha256=9chp2X7c5_zozcyHtBtiY0On-WOIlv4dba5t9I10-e0,905
+OpenMagneticsVirtualBuilder/templates/blank_background.svg,sha256=RG-tljCwhlgql9f5V4SuPrs1KQfrfysYT5n2AEB3vlo,255
+openmagneticsvirtualbuilder-0.6.3.dist-info/METADATA,sha256=JBtWBAOvqYycTrldSNNeWAcb6Imi32F2ks4L4sx6c9s,1410
+openmagneticsvirtualbuilder-0.6.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+openmagneticsvirtualbuilder-0.6.3.dist-info/licenses/LICENSE,sha256=14pjMKc33b3Lf1KpFjN2jvTmybYzo0YtexHxJuz8WXg,1070
+openmagneticsvirtualbuilder-0.6.3.dist-info/RECORD,,
