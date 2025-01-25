@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bump-cli
+Version: 0.3.0
+Summary: Add your description here
+Author-email: luiarthur <luiarthur@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython>=3.1.44
+Requires-Dist: semver>=3.0.2
+
+# Bump
+
+A command line tool for bumping git tag versions.
+
+## Install
+
+**pip**
+```
+pip install bump-cli
+```
+
+**uv**
+```
+uv tool install bump-cli
+```
+
+
+## Usage
+
+
+```
+usage: bump [-h] [-r REPO] [-p] {major,minor,patch,prerelease,build}
+
+positional arguments:
+  {major,minor,patch,prerelease,build}
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REPO, --repo REPO  Path to git repo.
+  -p, --push            If present, perform `git push --tags` after updating tag.
+```
+

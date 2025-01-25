@@ -1,0 +1,28 @@
+[project]
+name = "bump-cli"
+version = "0.3.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "luiarthur", email = "luiarthur@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "gitpython>=3.1.44",
+    "semver>=3.0.2",
+]
+
+[project.scripts]
+bump = "bump:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 80
+
+# This is a workaround due to https://github.com/astral-sh/uv/issues/9513.
+# When setuptools is fixed, this can be removed. (1/16/2025)
+[tool.setuptools]
+license-files = []
