@@ -1,0 +1,10 @@
+newpro_autoloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newpro_autoloader/axis_status.py,sha256=acFKlbVHNOn2Ev3V-IIuLLo8ByWnz71MhJELxBtwoks,5321
+newpro_autoloader/connection.py,sha256=0K0MOA2_MUj2tqZ97CwP0Virmy1WZ6GcQWDnFWAL_lE,3731
+newpro_autoloader/device_error.py,sha256=6j4vivgcv_7ZlQ7kA6pqNPQFD-9AUfZ3ipk9b8bTK1Q,7500
+newpro_autoloader/loader.py,sha256=0aFJJ1H15ovWRGL6c-afy275b7sSF383MHuMB9KROm0,9306
+newpro_autoloader/loader_connection.py,sha256=UsVgCIiIxbs9XivhPSwrKa5d7R6LhZkkHNPIB1Fzsnk,7699
+newpro_autoloader-0.0.1.dist-info/METADATA,sha256=ndsFX7-gGRx4ImtCKb9u0fRw2bI4Fr0N7KCwEajuEKQ,1239
+newpro_autoloader-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+newpro_autoloader-0.0.1.dist-info/licenses/LICENSE,sha256=KV-ukmi7fObPrBI2r0hntxw7Q_-3t4FZ3TiXDfmBCy8,1086
+newpro_autoloader-0.0.1.dist-info/RECORD,,
