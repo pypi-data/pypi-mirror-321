@@ -1,0 +1,10 @@
+altair_upset/__init__.py,sha256=rMvKAgKJBxNih9W0-7PhfsnKG2TpNAtDwBVIRfwTEro,208
+altair_upset/components.py,sha256=AE4tQHjchfL4rjVa9loUwLmJSDScerg2WVuWp980G0I,3493
+altair_upset/config.py,sha256=ZV8jN-CCFmane3lE4OLqNZMiKVEisWfzb2Qiw_LogeY,821
+altair_upset/preprocessing.py,sha256=CwHponjYw3MXfsaBKei5z9q0NMdl8oWApCEx_4UdkPU,960
+altair_upset/transforms.py,sha256=SV5ugofw5Lg7-4jwjlHDr77tf6wMB3bDEtwLHAcCD-Y,1403
+altair_upset/upset.py,sha256=NoSNTX47hxoPcdZWdRKUZY-R-aXgrxlolMXZ7rDunko,10717
+altair_upset-0.2.0.dist-info/METADATA,sha256=kt1hEo9fWvzMZ-oTmV6F7__lIAB5k1BSLpT2rfkPjGo,6142
+altair_upset-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+altair_upset-0.2.0.dist-info/licenses/LICENSE,sha256=UiPIkIMCBtxT7csKwU-8XP-UUMhvPzpFqDnNFF_z5mM,1080
+altair_upset-0.2.0.dist-info/RECORD,,
