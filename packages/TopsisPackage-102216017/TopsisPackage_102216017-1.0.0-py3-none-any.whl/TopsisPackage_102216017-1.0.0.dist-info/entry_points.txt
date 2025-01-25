@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = topsis.TopsisPackage_102216017:run_topsis
