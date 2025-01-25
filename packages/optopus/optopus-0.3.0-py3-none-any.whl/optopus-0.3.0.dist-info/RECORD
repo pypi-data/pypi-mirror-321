@@ -1,0 +1,15 @@
+optopus/__init__.py,sha256=fJ6ddo4atK7Szxa_eGLDvl75rpLfDeeudGKWAm8AEHA,94
+optopus/_draft.py,sha256=57hRNxd8sRuSNsnsoOSBTi9Ngtnes8KwrvyhW7qxbNo,17365
+optopus/_draft_new.py,sha256=OW5D8UBXy8imubp8AivD8bBR14agchyfg4UdLU1zCaE,17064
+optopus/_old.py,sha256=bLI2WrEJP8aYzveWMUs7uusDyhKsBLIE6iDL9Eak1Gs,38850
+optopus/bargparse.py,sha256=mxdvjRgm2Nrm_ANgefntujnj1zAPDjlD6B2-rE5nfJ4,3583
+optopus/constants.py,sha256=OTwAzPU3QqL0PH5VMbWULYehNVQTKa_KjVPL-vc1M0U,1268
+optopus/errors.py,sha256=SVJ6jUldzTCddFIRgdFAx_VCqHCAUXeZHtjiKL5g6jo,725
+optopus/grammar.py,sha256=3FXyjLPndwUccztE81Vcn0dvdRt5lJLU35DWT13ygc4,30042
+optopus/parser.py,sha256=WzXqZGrFCReq8nrItOosC-R94_1WdJhgOep6ZeAGa2o,2659
+optopus/version.py,sha256=Jb2gbX_4ArPxk1AFrlU3VLvYqXmpGQ7X31KsPJXGTE0,23
+optopus-0.3.0.dist-info/LICENSE,sha256=HfSecr9VDnwUOkr3oVtJBCG1zeoBdY49O9BQn4PL6ms,1071
+optopus-0.3.0.dist-info/METADATA,sha256=5AhFc7WoaxoFHPIfeyuU3hC_3YxGk74zXAAqDPa5DHA,53356
+optopus-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+optopus-0.3.0.dist-info/top_level.txt,sha256=E7lSRuKyuzW49YDeW4H1smcUe7xOo3vE61PGTKLnoZA,8
+optopus-0.3.0.dist-info/RECORD,,
