@@ -1,0 +1,11 @@
+cmocean<4.0,>=3.0
+ipympl<1.0,>=0.9
+ipytree<1.0,>=0.2
+matplotlib<4.0,>=3.6
+numpy<2.0,>=1.23
+psutil<6.0,>=5.9
+tqdm<5.0,>=4.64
+zarr<3.0,>=2.13
+pyfftw<1.0,>=0.13
+nptyping<3.0,>=2.4
+matplotx<1.0,>=0.3
