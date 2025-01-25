@@ -1,0 +1,8 @@
+SchemaExtractor/__init__.py,sha256=W8OAq_8Pwg9EpqVML1i07DrttQ9fkE2rLUe8_h5Wlno,48
+SchemaExtractor/app.py,sha256=09o2vQ9Ppqrk10XIXmBe0AdRw753w_dMPfLrPXuSD9Q,288
+SchemaExtractor/cli.py,sha256=QY4DoVgswH0OTIyPSTGl4Xw7EkyXe-VmDdHpaMDijmU,365
+schemaextractor-0.0.1.dist-info/LICENSE.txt,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+schemaextractor-0.0.1.dist-info/METADATA,sha256=w9vbSFV6_SEPI25FFjTSOoTEXH3imYBxJbKB_oVllvQ,8847
+schemaextractor-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+schemaextractor-0.0.1.dist-info/entry_points.txt,sha256=JBnONB1skoksSlhMotNbdGr415wTtbKRq0EpFffTdw8,64
+schemaextractor-0.0.1.dist-info/RECORD,,

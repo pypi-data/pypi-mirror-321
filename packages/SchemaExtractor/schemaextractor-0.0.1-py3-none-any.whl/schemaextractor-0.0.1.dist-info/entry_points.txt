@@ -1,0 +1,3 @@
+[console_scripts]
+SchemaExtractor-cli=SchemaExtractor.cli:main
+
