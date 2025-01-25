@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+pyPanDEG/__init__.py
+pyPanDEG/cds_downloader.py
+pyPanDEG/dataset_downloader.py
+pyPanDEG/deg_analyzer.py
+pyPanDEG/gene_clusterer.py
+pyPanDEG/genecount_modifier.py
+pyPanDEG/rna_seq_processor.py
+pyPanDEG.egg-info/PKG-INFO
+pyPanDEG.egg-info/SOURCES.txt
+pyPanDEG.egg-info/dependency_links.txt
+pyPanDEG.egg-info/entry_points.txt
+pyPanDEG.egg-info/requires.txt
+pyPanDEG.egg-info/top_level.txt

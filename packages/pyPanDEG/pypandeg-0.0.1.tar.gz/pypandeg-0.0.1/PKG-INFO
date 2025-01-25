@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyPanDEG
+Version: 0.0.1
+Summary: DEG Analysis Using Pan-transcriptome Data Construction
+Home-page: https://github.com/Kyutark/pyPanDEG
+Author: Kyutark
+Author-email: kyutkim01@korea.ac.kr
+Project-URL: Documentation, https://github.com/Kyutark/pyPanDEG
+Project-URL: Source, https://github.com/Kyutark/SpaceBio
+Keywords: bioinformatics,transcriptome,DEG
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: biopython>=1.79
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: numpy>=1.21.0
+
+HELLO PYPI
+This is pyPanDEG
