@@ -1,0 +1,6 @@
+unet3d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unet3d/linknet3d.py,sha256=eh2osJyA3s6OJ9ZSH2nqUivRMD0SzdhLXsyjklH_wxA,4102
+unet3d/unet3d.py,sha256=SLHlIzMoanI8mEJslPbKtyPbvSWAuYnWT5uXO6QNYTo,2647
+unet3d-0.1.0.dist-info/METADATA,sha256=x5ZY2V_vLgP5h-tIBFuJlXz4qvC_0wUeW2k8FiQWwyM,1390
+unet3d-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+unet3d-0.1.0.dist-info/RECORD,,
