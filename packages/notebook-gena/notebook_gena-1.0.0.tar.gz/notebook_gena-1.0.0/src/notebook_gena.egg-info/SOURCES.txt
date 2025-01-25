@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/notebook_gena/__init__.py
+src/notebook_gena/foo.py
+src/notebook_gena.egg-info/PKG-INFO
+src/notebook_gena.egg-info/SOURCES.txt
+src/notebook_gena.egg-info/dependency_links.txt
+src/notebook_gena.egg-info/top_level.txt
+tests/test_foo.py
