@@ -1,0 +1,410 @@
+Metadata-Version: 2.2
+Name: ragpdf
+Version: 0.1.1
+Summary: Retrive PDF files context for your LLM
+Home-page: https://github.com/alfredwallace7/ragpdf
+Author: Alfred Wallace
+Author-email: alfred.wallace@netcraft.fr
+Project-URL: Bug Reports, https://github.com/alfredwallace7/ragpdf/issues
+Project-URL: Source, https://github.com/alfredwallace7/ragpdf
+Keywords: rag pdf llm embeddings vector-search faiss context retrieval augmented generation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: litellm>=1.30.3
+Requires-Dist: faiss-cpu>=1.7.4
+Requires-Dist: PyPDF2>=3.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: python-dotenv>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# RAGPDF
+
+A Python package for Retrieval-Augmented Generation (RAG) using PDFs. RAGPDF makes it easy to extract, embed, and query content from PDF documents using modern language models.
+
+## Features
+
+- **Easy to Use**: Simple API for adding PDFs and querying their content
+- **PDF Processing**: Automatic text extraction and chunking from PDF documents
+- **Vector Search**: Fast similarity search using FAISS
+- **Async Support**: Built with asyncio for high performance
+- **LLM Integration**: Seamless integration with various LLM providers through litellm
+- **Configurable**: Flexible configuration for embedding and LLM models
+- **Persistent Storage**: Optional FAISS index persistence
+- **Context Inspection**: Access and analyze intermediate context for better control
+
+## Installation
+
+```bash
+pip install ragpdf
+```
+
+## Quick Start
+
+```python
+import asyncio
+from ragpdf import RAGPDF, EmbeddingConfig, LLMConfig
+
+# Configure your models
+embedding_config = EmbeddingConfig(
+    model="text-embedding-ada-002",  # OpenAI embedding model
+    api_key="your-api-key",
+    api_base="https://api.openai.com/v1"  # Optional: default OpenAI base URL
+)
+
+llm_config = LLMConfig(
+    model="gpt-3.5-turbo",  # OpenAI chat model
+    api_key="your-api-key",
+    api_base="https://api.openai.com/v1",  # Optional: default OpenAI base URL
+    temperature=0.7
+)
+
+# Create RAGPDF instance
+rag = RAGPDF(embedding_config, llm_config)
+
+async def main():
+    # Add a PDF
+    await rag.add("document.pdf")
+    
+    # Get and inspect context
+    context = await rag.context("What is this document about?")
+    
+    # View context in different formats
+    print("\nFormatted context:")
+    print(context.to_string())  # Human-readable format
+    
+    print("\nJSON format for detailed inspection:")
+    print(context.to_json())    # Structured format for analysis
+    
+    # Use the context for chat
+    response = await rag.chat("Summarize the key points")
+    print("\nAI Response:")
+    print(response)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+## Context Inspection
+
+RAGPDF provides powerful context inspection capabilities, allowing you to examine and validate the intermediate context used for RAG. This is particularly useful during development and debugging.
+
+### RAGContext Class
+
+```python
+class RAGContext:
+    """Context information for RAG operations."""
+    query: str           # Original query
+    chunks: List[DocumentChunk]  # Retrieved text chunks
+    files: List[str]     # Source PDF files
+    total_chunks: int    # Total chunks found
+    
+    def to_string(self) -> str:
+        """Convert context to human-readable format."""
+        # Example output:
+        # Query: What is the main topic?
+        # Found 3 relevant chunks from 2 files:
+        # document1.pdf, document2.pdf
+        #
+        # From document1.pdf (page 1):
+        # [chunk content...]
+    
+    def to_json(self) -> str:
+        """Convert context to JSON for detailed analysis."""
+        # Returns structured JSON with all context details
+```
+
+### Development Workflow
+
+```python
+async def development_workflow():
+    rag = RAGPDF(embedding_config, llm_config)
+    await rag.add("document.pdf")
+    
+    # 1. Inspect retrieved context
+    context = await rag.context("What is the main topic?")
+    
+    # Check which files were used
+    print(f"Retrieved chunks from: {context.files}")
+    
+    # Examine individual chunks
+    for chunk in context.chunks:
+        print(f"\nFrom {chunk.file}" + 
+              (f" (page {chunk.page})" if chunk.page else ""))
+        print(chunk.content)
+    
+    # 2. Validate context quality
+    if not any("relevant keyword" in chunk.content 
+               for chunk in context.chunks):
+        print("Warning: Expected content not found in context")
+    
+    # 3. Generate response with validated context
+    response = await rag.chat("What is the main topic?")
+    print("\nAI Response:", response)
+```
+
+### Context Analysis Examples
+
+```python
+async def analyze_context():
+    rag = RAGPDF(embedding_config, llm_config)
+    
+    # Add multiple PDFs
+    for pdf in ["doc1.pdf", "doc2.pdf"]:
+        await rag.add(pdf)
+    
+    # Get context for analysis
+    context = await rag.context("What are the key findings?")
+    
+    # 1. Source distribution analysis
+    file_distribution = {}
+    for chunk in context.chunks:
+        file_distribution[chunk.file] = file_distribution.get(chunk.file, 0) + 1
+    
+    print("\nChunk distribution across files:")
+    for file, count in file_distribution.items():
+        print(f"{file}: {count} chunks")
+    
+    # 2. Content relevance check
+    query_terms = set(context.query.lower().split())
+    relevant_chunks = []
+    
+    for chunk in context.chunks:
+        chunk_terms = set(chunk.content.lower().split())
+        overlap = len(query_terms & chunk_terms)
+        relevant_chunks.append({
+            'file': chunk.file,
+            'page': chunk.page,
+            'term_overlap': overlap
+        })
+    
+    print("\nChunk relevance analysis:")
+    for chunk in sorted(relevant_chunks, 
+                       key=lambda x: x['term_overlap'], 
+                       reverse=True):
+        print(f"File: {chunk['file']}, "
+              f"Page: {chunk['page']}, "
+              f"Term overlap: {chunk['term_overlap']}")
+```
+
+## Model Configuration
+
+RAGPDF uses litellm under the hood, making it compatible with any LLM provider supported by litellm. The model name and configuration must follow litellm's format.
+
+### OpenAI
+
+```python
+# OpenAI API
+config = LLMConfig(
+    model="gpt-3.5-turbo",
+    api_key="your-openai-key",
+    api_base="https://api.openai.com/v1"  # Default OpenAI base URL
+)
+
+# Azure OpenAI
+config = LLMConfig(
+    model="azure/gpt-35-turbo",  # Prefix with 'azure/'
+    api_key="your-azure-key",
+    api_base="https://your-endpoint.openai.azure.com"
+)
+```
+
+### Anthropic
+
+```python
+config = LLMConfig(
+    model="claude-2",
+    api_key="your-anthropic-key",
+    api_base="https://api.anthropic.com"  # Default Anthropic base URL
+)
+```
+
+### Google
+
+```python
+config = LLMConfig(
+    model="gemini/gemini-pro",  # Prefix with 'gemini/'
+    api_key="your-google-key",
+    api_base="https://generativelanguage.googleapis.com"
+)
+```
+
+### Ollama
+
+```python
+config = LLMConfig(
+    model="ollama/llama2",  # Prefix with 'ollama/'
+    api_base="http://localhost:11434"  # Local Ollama server
+)
+```
+
+### Custom Endpoints
+
+```python
+# Self-hosted LLM API
+config = LLMConfig(
+    model="your-model-name",
+    api_base="http://your-custom-endpoint:8000/v1",
+    api_key="optional-key"  # Optional for self-hosted
+)
+```
+
+## Environment Variables
+
+RAGPDF supports configuration through environment variables. The api_base is optional and defaults to the provider's standard endpoint:
+
+```env
+# OpenAI
+EMBEDDING_MODEL=text-embedding-ada-002
+EMBEDDING_API_KEY=your-openai-key
+EMBEDDING_BASE_URL=https://api.openai.com/v1
+
+LLM_MODEL=gpt-3.5-turbo
+LLM_API_KEY=your-openai-key
+LLM_BASE_URL=https://api.openai.com/v1
+
+# Azure OpenAI
+LLM_MODEL=azure/gpt-35-turbo
+LLM_API_KEY=your-azure-key
+LLM_BASE_URL=https://your-endpoint.openai.azure.com
+
+# Anthropic
+LLM_MODEL=claude-2
+LLM_API_KEY=your-anthropic-key
+LLM_BASE_URL=https://api.anthropic.com
+
+# Google
+LLM_MODEL=gemini/gemini-pro
+LLM_API_KEY=your-google-key
+LLM_BASE_URL=https://generativelanguage.googleapis.com
+
+# Ollama
+LLM_MODEL=ollama/llama2
+LLM_BASE_URL=http://localhost:11434
+```
+
+## API Reference
+
+### RAGPDF Class
+
+```python
+class RAGPDF:
+    def __init__(self, 
+                 embedding_config: Union[Dict[str, Any], EmbeddingConfig],
+                 llm_config: Optional[Union[Dict[str, Any], LLMConfig]] = None,
+                 index_path: Optional[str] = None):
+        """Initialize RAGPDF with embedding and LLM configurations."""
+
+    async def add(self, pdf_path: str) -> None:
+        """Add a PDF document to the system."""
+
+    async def context(self, query: str, k: int = 5) -> RAGContext:
+        """Get relevant context for a query."""
+
+    async def chat(self, prompt: str, k: int = 5, stream: bool = False) -> Union[str, AsyncIterator[str]]:
+        """Generate a response using the LLM based on context."""
+```
+
+### Configuration Models
+
+```python
+class BaseConfig:
+    """Base configuration for API models."""
+    model: str           # Model name (litellm compatible)
+    api_key: str = ""   # API key (optional)
+    api_base: str = None # API base URL (optional)
+
+class EmbeddingConfig(BaseConfig):
+    """Configuration for embedding model."""
+    pass
+
+class LLMConfig(BaseConfig):
+    """Configuration for language model."""
+    temperature: float = 0.7  # Response temperature (optional)
+    max_tokens: int = None   # Maximum response length (optional)
+```
+
+## Examples
+
+### Using Different LLM Providers
+
+```python
+# OpenAI
+rag = RAGPDF(
+    embedding_config=EmbeddingConfig(
+        model="text-embedding-ada-002",
+        api_key="your-openai-key"
+    ),
+    llm_config=LLMConfig(
+        model="gpt-3.5-turbo",
+        api_key="your-openai-key"
+    )
+)
+
+# Ollama (local)
+rag = RAGPDF(
+    embedding_config=EmbeddingConfig(
+        model="ollama/nomic-embed-text",
+        api_base="http://localhost:11434"
+    ),
+    llm_config=LLMConfig(
+        model="ollama/llama2",
+        api_base="http://localhost:11434"
+    )
+)
+
+# Azure OpenAI
+rag = RAGPDF(
+    embedding_config=EmbeddingConfig(
+        model="azure/text-embedding-ada-002",
+        api_key="your-azure-key",
+        api_base="https://your-endpoint.openai.azure.com"
+    ),
+    llm_config=LLMConfig(
+        model="azure/gpt-35-turbo",
+        api_key="your-azure-key",
+        api_base="https://your-endpoint.openai.azure.com"
+    )
+)
+```
+
+### Persistent Storage
+
+```python
+# Initialize with index storage
+rag = RAGPDF(
+    embedding_config=embedding_config,
+    llm_config=llm_config,
+    index_path="data/faiss_index.bin"
+)
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
