@@ -1,0 +1,11 @@
+ceylon-0.21.0.dist-info/METADATA,sha256=8c0aEHVAvCh9gzMMPYuDpBD_tHdPqNSOZ85t4_SLHHI,7091
+ceylon-0.21.0.dist-info/WHEEL,sha256=0Ei6eJSnFKalVc4j1oeJi3sd1RljjNRCmAVYi5kThzI,93
+ceylon-0.21.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+ceylon/base/agents.py,sha256=H8pX4HrckOn3EEhmCGaWEb23imFCEygj1alNve3WJdA,5319
+ceylon/base/__init__.py,sha256=dZN6DdojK8PXLupV6AuAQzP35gdrXhBLLrqf2ahBp1o,206
+ceylon/static_val.py,sha256=aoC4bJiJtOn0IqMfRUZQNwScvudEzUOj1SSleFCaQOw,394
+ceylon/__init__.py,sha256=VaR2zBtfe1mM8_PSIOdzNJE2h2ZsgdOJAU4jTDW9Mf4,507
+ceylon/ceylon/__init__.py,sha256=TS69avGSX8_qQw_oINokk21xPaZNAVIXlO8aW5Pdg74,30
+ceylon/ceylon/ceylon.py,sha256=t0rsg97tXceDtxCffDFB1VlGmdqh0VOZDU-AQxqB3ic,84054
+ceylon/ceylon/uniffi_ceylon.dll,sha256=FY_DgUkBKK55KuinxhocKTTz_RjOZktqMjLWwbvAvbA,11657728
+ceylon-0.21.0.dist-info/RECORD,,
