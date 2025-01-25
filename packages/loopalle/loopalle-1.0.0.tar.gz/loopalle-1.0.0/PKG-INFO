@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: loopalle
+Version: 1.0.0
+Summary: A package for simplified parallel processing.
+Home-page: https://github.com/coolmanishks/loopalle
+Author: Manish Singh
+Author-email: manishks.bitsindri@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LoopAlle
+
+LoopAlle is a Python package designed to simplify parallel processing for DataFrames, lists, and dictionaries. 
+It supports thread-based and process-based execution, with additional features like batching, concurrency limits, 
+and interval-based debugging.
+
+## Features
+
+- Parallelize processing of DataFrames, lists, or dictionaries.
+- Supports both threading and multiprocessing.
+- Flexible configurations for batching, rate limiting, and concurrency control.
+- Handles exceptions gracefully with full traceback.
+- Designed for both small-scale and enterprise use cases.
+
+## Installation
+
+Install LoopAlle using pip:
+
+```bash
+pip install loopalle
