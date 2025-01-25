@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+topsis_manya/__init__.py
+topsis_manya/topsis.py
+topsis_manya_102203284.egg-info/PKG-INFO
+topsis_manya_102203284.egg-info/SOURCES.txt
+topsis_manya_102203284.egg-info/dependency_links.txt
+topsis_manya_102203284.egg-info/requires.txt
+topsis_manya_102203284.egg-info/top_level.txt
