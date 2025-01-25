@@ -1,0 +1,13 @@
+## Release Notes
+
+### ci: Add workflow dispatch trigger for tag and push to pypi.
+
+## Summary by Sourcery
+
+CI:
+
+- Add workflow dispatch trigger.
+
+---------
+
+Signed-off-by: 5hojib <yesiamshojib@gmail.com>
