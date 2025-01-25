@@ -1,0 +1,3 @@
+[console_scripts]
+vim-fzf = vim_prompt.fzf:main
+vim-rofi = vim_prompt.rofi:main
