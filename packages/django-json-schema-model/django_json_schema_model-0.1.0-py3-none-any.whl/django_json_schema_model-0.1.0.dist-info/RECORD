@@ -1,0 +1,13 @@
+django_json_schema_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_json_schema_model/admin.py,sha256=uBORce5_7YAsVHXDBNvdx5qljNDoEocLuDxo8zTUPRw,568
+django_json_schema_model/apps.py,sha256=IsXvLl5rUcZFmKVrvtE9p4aGkTWEgKHRC-eJ9pawsnc,179
+django_json_schema_model/models.py,sha256=M2zYrxjqPwzXSt0-bIy751N2ZZfcDgM8PxECzEtQ3sY,1097
+django_json_schema_model/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_json_schema_model/locale/nl/LC_MESSAGES/django.po,sha256=evc2FeNLi3nB-N7QHuoz5cZkVdfpn1QvYe4kJKeqyz4,1027
+django_json_schema_model/migrations/0001_initial.py,sha256=35RAipjJ7ThdWTkso_-ezCe8j-wCbCbBaHSzWrAbKzs,1272
+django_json_schema_model/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_json_schema_model-0.1.0.dist-info/LICENSE,sha256=V_m6aDLaOjqUQdoxr8XtEK4Zu0DVJPKKQldQuHXAD34,1052
+django_json_schema_model-0.1.0.dist-info/METADATA,sha256=UqNPARC89hD3j0ad1qghy03SY-Z3XHr6YN6UyjPIRGo,5856
+django_json_schema_model-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_json_schema_model-0.1.0.dist-info/top_level.txt,sha256=9klrxvOkhubw0RP-mhUjC4U9lGjOwMid3gN0t1DUpno,25
+django_json_schema_model-0.1.0.dist-info/RECORD,,
