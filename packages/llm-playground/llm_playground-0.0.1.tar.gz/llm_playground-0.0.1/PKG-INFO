@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: llm-playground
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/ariel/llm-playground#readme
+Project-URL: Issues, https://github.com/ariel/llm-playground/issues
+Project-URL: Source, https://github.com/ariel/llm-playground
+Author-email: ariel <ariel.j.kwiatkowski@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.8
+Requires-Dist: rich>=13.9.4
+Requires-Dist: torch>=2.5.1
+Requires-Dist: transformers>=4.46.3
+Description-Content-Type: text/markdown
+
+# llm-playground
+
+[![PyPI - Version](https://img.shields.io/pypi/v/llm-playground.svg)](https://pypi.org/project/llm-playground)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/llm-playground.svg)](https://pypi.org/project/llm-playground)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install llm-playground
+```
+
+## License
+
+`llm-playground` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
