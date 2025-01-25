@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: Topsis-Yashvi-102203529
+Version: 1.0.0
+Summary: A Python package for implementing the TOPSIS method.
+Home-page: https://github.com/Yashvihooda/Topsis-Yashvi-102203529
+Author: Yashvi
+Author-email: yyashvi_be22@thapar.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Yashvi-102203529
+
+This is a Python package for implementing the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method for multi-criteria decision-making problems.
+
+## Installation
+
+Install the package using pip:
