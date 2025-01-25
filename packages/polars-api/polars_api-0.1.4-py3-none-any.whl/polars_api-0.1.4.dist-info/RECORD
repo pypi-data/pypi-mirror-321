@@ -1,0 +1,9 @@
+examples/test.py,sha256=e-4VmxKdfRJZ01UN_3IAyAdnENTDGSZsrhGzJOtHwh0,927
+polars_api/__init__.py,sha256=JoRS_iy8pZLEz_ADKooXOqOPlUQcd5wvdcSa_PMuGLs,40
+polars_api/api.py,sha256=XjGJu4Hhg_7aN_FmMqeH953sD7V1l1OS2F5JcNKJBaY,3341
+tests/test_api.py,sha256=1OfyzFM1fUecl8TnY9CUkWt_zpUNgoIYnN_Ma9ZN77w,32
+polars_api-0.1.4.dist-info/LICENSE,sha256=Ms_a-6jJtWdrIBCOaYS_hKFCODG2QXHcNgsQJnbujnA,1076
+polars_api-0.1.4.dist-info/METADATA,sha256=8Vra2wJdHNE-h1MgOI8rNTUmT9pFDOD9VyRbyKaFp8U,3703
+polars_api-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+polars_api-0.1.4.dist-info/top_level.txt,sha256=irGgxpseyd3aPqxnvE54AITFumMlSLGg1O9-zg5Gpac,26
+polars_api-0.1.4.dist-info/RECORD,,
