@@ -1,0 +1,12 @@
+[package]
+name = "manimforge"
+version = "0.1.2"
+edition = "2021"
+
+[lib]
+name = "manimforge"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = "0.23.0"
+pyo3 = { version = "0.23", features = ["auto-initialize"] }

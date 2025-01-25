@@ -1,0 +1,51 @@
+[build-system]
+requires = ["maturin>=1.6,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "manimforge"
+description = "Rust parts of the Animation Library Manim"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Graphics",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+]
+dynamic = ["version"]
+dependencies = [
+  "manim > 0.18.0",
+]
+
+[project.urls]
+documentation="https://docs.manim.community/"
+homepage="https://www.manim.community/"
+repository = "https://github.com/ManimCommunity/manim-forge"
+
+[dependency-groups]
+dev = [
+    "maturin>=1.8.0",
+    "pytest>=8.3.4",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.uv]
+# prevent constant rebuilding
+package = false
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning:pydub"]
