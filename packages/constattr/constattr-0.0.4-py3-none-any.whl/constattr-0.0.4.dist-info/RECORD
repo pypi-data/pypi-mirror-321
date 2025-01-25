@@ -1,0 +1,11 @@
+constattr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+constattr/const_enforcer_meta.py,sha256=A6pHST87_f9ckhuslsucFg6RWyB2f9xOU2VboGLyrcU,430
+constattr/decorators.py,sha256=ONKeszhYr9RPApw8dpQnYRA7oH8JVd2DJ099B8SU2qc,600
+constattr/exceptions.py,sha256=Cwnulr_W3FoYCwif3t0ddkvVaoAvjEJhdPbPSFS0e2w,48
+constattr/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+constattr/tests/test_decorators.py,sha256=j_YT-zsaWBCFZ2srsTkWO4wrPFeGhUxR8vjjf4qZy2o,2022
+constattr-0.0.4.dist-info/LICENSE,sha256=Ma_3cexdsR2RAXzrOKfsvp14uA292gF2tx9ZDys7Ye0,1065
+constattr-0.0.4.dist-info/METADATA,sha256=XVtbetUwu7fIJM-wL8vKNN5RJ456qgiQk8wHr8lc_pE,2865
+constattr-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+constattr-0.0.4.dist-info/top_level.txt,sha256=K0XF4pFh9rE01X0EfO4sQCMhjxyQjruugSq6HWXOPt4,10
+constattr-0.0.4.dist-info/RECORD,,

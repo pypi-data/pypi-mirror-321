@@ -1,0 +1,2 @@
+class ConstAssignmentError(Exception):
+    pass
