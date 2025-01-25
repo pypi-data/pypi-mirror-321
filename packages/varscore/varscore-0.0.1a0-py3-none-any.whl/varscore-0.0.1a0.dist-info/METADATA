@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: varscore
+Version: 0.0.1a0
+Summary: A library for common functions in variant effect prediction & prioritization.
+Author: Ivy Evergreen, Salil Deshpande, Riya Sinha
+Project-URL: Repository, https://github.com/kundajelab/varscore.git
+Project-URL: Issues, https://github.com/kundajelab/varscore/issues
+Keywords: variant scoring,variant effect,variant prioritization,variant,scoring,effect,prioritization,genomics,chrombpnet
+Requires-Python: >=3.8
+Requires-Dist: polars ==1.8.2
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+

@@ -1,0 +1,8 @@
+varscore/__init__.py,sha256=nehtkPrXmb7avpiSX4YoesSPn5RvzW0fCg59CNuuF8U,108
+varscore/annotations.py,sha256=Q5ffoCA-MrcFV3QAwF8OSPinWM6DZuXs2UPZTbvwcPE,4636
+varscore/chrombpnet_utils.py,sha256=3mTND40tYmiR5MAWnoG63xmTseLrYfoI-dulz24g5EQ,4367
+varscore/variant_scoring_functions.py,sha256=noVXn3-7Yvt5v4uNUEkd2hJTWGYukoivxAVZYS3kCmw,8918
+varscore-0.0.1a0.dist-info/METADATA,sha256=lte8b1Ej0D2NSwcV4ZJqDCRZ-EibbDCXFRN5EGtT19M,562
+varscore-0.0.1a0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+varscore-0.0.1a0.dist-info/top_level.txt,sha256=XIY56YP82EZTcUgYzokTB6SBPEIBg1cacM_TUi0Ah_k,9
+varscore-0.0.1a0.dist-info/RECORD,,
