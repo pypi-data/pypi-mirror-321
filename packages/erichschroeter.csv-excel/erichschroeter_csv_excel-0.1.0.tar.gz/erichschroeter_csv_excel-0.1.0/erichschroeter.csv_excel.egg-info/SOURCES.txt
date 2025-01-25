@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+csv_excel/__init__.py
+csv_excel/__main__.py
+csv_excel/csv_excel.py
+csv_excel/vbaProject.bin
+csv_excel/test/__init__.py
+csv_excel/test/test_csv_excel.py
+erichschroeter.csv_excel.egg-info/PKG-INFO
+erichschroeter.csv_excel.egg-info/SOURCES.txt
+erichschroeter.csv_excel.egg-info/dependency_links.txt
+erichschroeter.csv_excel.egg-info/requires.txt
+erichschroeter.csv_excel.egg-info/top_level.txt
