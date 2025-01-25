@@ -1,0 +1,10 @@
+pyEDAkit/IntrinsicDimensionality.py,sha256=aq-NguSdoHw_3mByqjtrZSXghrbnYJAgIfMlZgBu6bQ,6140
+pyEDAkit/__init__.py,sha256=4VJ4uL5vXfpUACRknI6emz1kiZlGZM_4E969sin9goQ,124
+pyEDAkit/clustering.py,sha256=Y3NmP9CiSd04pqCUdZvY1euvPuswWlb7-3BRFCZidvw,49203
+pyEDAkit/linear.py,sha256=nVmsbW8LQay2g2eBvgsG3RCu2gaibe96s2lf1MctuXc,4924
+pyEDAkit/standardization.py,sha256=Z2617h7ikliXum4Wz4RD8bZG8bgAMrweHUYpTEILBZs,1665
+pyEDAkit-0.1.1.dist-info/LICENSE,sha256=OskxJCmPf5_vessrb_RzX_8cROUsNqRZn6kvBYmKGdA,1090
+pyEDAkit-0.1.1.dist-info/METADATA,sha256=RXVe_R5cRg1gyED-dkAkWoYfx7j_68zowhKL1taSmRU,50883
+pyEDAkit-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyEDAkit-0.1.1.dist-info/top_level.txt,sha256=0eYQRLBO9eihHfPWb2JrIHeYu449w-BJ5lKAT9r4vDA,9
+pyEDAkit-0.1.1.dist-info/RECORD,,
