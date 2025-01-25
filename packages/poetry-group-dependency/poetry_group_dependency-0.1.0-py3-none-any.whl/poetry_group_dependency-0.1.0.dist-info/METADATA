@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: poetry-group-dependency
+Version: 0.1.0
+Summary: 
+Author: mahfooz.iiitian
+Author-email: mahfooz.iiitian@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Dependency groups
+
+Poetry provides a way to organize your dependencies by groups.
+
+For instance, you might have dependencies that are only needed to test your project or to build the documentation.
+
+Poetry provides a way to **organize** your dependencies by **groups.**
+
+The dependencies declared in `project.dependencies` respectively `tool.poetry.dependencies` are part of an implicit `main` group.
+
+Those dependencies are required by your project during runtime.
+
+Beside the `main` dependencies, you might have dependencies that are only needed to test your project or to build the documentation.
+
+To declare a new dependency group, use a `tool.poetry.group.<group>` section where `<group>` is the name of your dependency group (for instance, `test`).
+
+```
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+pytest-mock = "*"
+```
+
+## Default Groups:
+
+- **Main dependencies** : Declared under `[tool.poetry.dependencies]`.
+- **Dev dependencies** : Declared under `[tool.poetry.group.dev.dependencies]`.
+
+### Custom Groups:
+
+You can define custom groups for specific purposes, like `test`, `docs`, or `ci`.
+
+## Syntax
+
+To declare a new dependency group, use a `tool.poetry.group.<group>` section where `<group>` is the name
+of your dependency group.
+
+```
+[tool.poetry.group.test]
+# This part can be left out
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+pytest-mock = "*"
+```
+
+Dependency groups, other than the implicit `main` group, must only contain dependencies you need in your development process.
+
+Installing them is only possible by using Poetry.
+
+## Dependency resolution
+
+All dependencies **must be compatible with each other** across groups since they will be resolved regardless of whether they are required for installation or not.
+
+Think of dependency groups as **labels** associated with your dependencies: they don’t have any bearings on whether their dependencies will be resolved and installed **by default** , they are simply a way to organize the dependencies logically.
+
+Dependency groups, other than the implicit `main` group, must only contain dependencies you need in your development process.
+
+Installing them is only possible by using Poetry.
+
+To declare a set of dependencies, which add additional functionality to the project during runtime, use [extras](https://python-poetry.org/docs/pyproject/#extras) instead.
+
+Extras can be installed by the end user using `pip`.
+
+## Optional groups
+
+A dependency group can be declared as optional.
+
+This makes sense when you have a group of dependencies that are only required in a `particular environment or for a specific purpose.`
+
+```
+[tool.poetry.group.docs]
+optional = true
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+```
+
+Optional groups can be installed in addition to the default dependencies by using the `--with` option of the install command.
+
+```
+poetry install --with docs
+```
+
+Optional group dependencies will **still** be resolved alongside other dependencies, so special care should be taken to ensure they are compatible with each other.
+
+## Adding a dependency to a group
+
+```bash
+poetry add pytest --group test
+```
+
+## Installing group dependencies
+
+**By default** , dependencies across **all non-optional groups** will be installed when executing `poetry install`.
+
+```bash
+poetry install --without test,docs
+poetry install --only docs
+poetry install --only main
+poetry install --only-root
+```
+
+### `--without` option
+
+```bash
+poetry install --without test,docs
+```
+
+### `--with` option
+
+```bash
+poetry install --with docs
+```
+
+## Removing dependencies from a group
+
+```toml
+poetry remove mkdocs --group docs
+```
+
+## Synchronizing dependencies
+
+Poetry supports what's called dependency synchronization.
+
+Dependency synchronization ensures that the locked dependencies in the `poetry.lock` file are the only
+ones present in the environment, removing anything that's not necessary.
+
+This is done by using the `--sync` option of the `install` command:
+
+```
+poetry install --sync
+poetry install --without dev --sync
+poetry install --with docs --sync
+poetry install --only dev
+```
+
+## Layering optional groups
+
+When you omit the `--sync` option, you can install any subset of optional groups without removing those that are already installed.
+
+This is very useful, for example, in multi-stage Docker builds, where you run poetry install multiple times in different build stages.
+
