@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "coreset"
+version = "0.0.1"
+description = "A flexible framework for experimenting with and evaluating different sample selection strategies"
+authors = ["Yasas Senarath"]
+readme = "README.md"
+packages = [{ include = "coreset", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+datasets = ">=2.15.0"
+transformers = ">=4.36.0"
+sentence-transformers = ">=2.2.2"
+scikit-learn = ">=1.3.0"
+numpy = ">=1.24.0"
+pandas = ">=2.1.0"
+torch = ">=2.1.0"
+matplotlib = ">=3.7.0"
+tqdm = ">=4.66.0"
+nightjar = "^0.0.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.4.0"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
