@@ -1,0 +1,9 @@
+loggoblin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loggoblin/__main__.py,sha256=j7OYlXc7HV2zbLC2e3E3lPLqDasdL9YT2NYFWzhEM6c,60
+loggoblin/cli.py,sha256=moy9N6mbWepyf-4AyY4P9YaHFHdkhJr0tH8rSpIwhU0,7255
+loggoblin-1.0.dist-info/LICENSE,sha256=9ugPofPKgf1ymnbDQPM-smybklkqD3M6aqxvtbUef3Y,1090
+loggoblin-1.0.dist-info/METADATA,sha256=CmVFYlAxbhd-qch7cDL2aocs27WJCOoxZan1ICZ0A4A,427
+loggoblin-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+loggoblin-1.0.dist-info/entry_points.txt,sha256=00TDs42Gt0aV6X2vFD2V8BAOc95zF5-IjffJM2L_GiY,51
+loggoblin-1.0.dist-info/top_level.txt,sha256=ecsH4w2SMKEE9o97LQKOLwstum2C5Ibgc7IEiD55wJQ,10
+loggoblin-1.0.dist-info/RECORD,,
