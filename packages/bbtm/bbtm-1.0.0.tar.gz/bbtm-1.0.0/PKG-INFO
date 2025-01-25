@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bbtm
+Version: 1.0.0
+Summary: A Bug Bounty Tool Manager for managing and automating bug bounty tools.
+Home-page: https://github.com/padsalatushal/bbtm
+Author: Padsala Tushal
+Author-email: padsalatushal@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# bbtm - Bug Bounty Tools Manager - A terminal-based tool manager for bug bounty hunters and penetration testers.
