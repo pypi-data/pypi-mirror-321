@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: linearoptimize
+Version: 0.0.2
+Summary: Un package pour résoudre les problèmes de programmations linéaires (maximisation, minimisation en utilisant la  méthode de Simplexe)
+Home-page: https://github.com/Martial2023/Simplex
+Author: avadra mahougnon martial hilarion
+Author-email: martialhilarionavadra@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4

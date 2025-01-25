@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+linearoptimize.egg-info/PKG-INFO
+linearoptimize.egg-info/README.md
+linearoptimize.egg-info/SOURCES.txt
+linearoptimize.egg-info/dependency_links.txt
+linearoptimize.egg-info/requires.txt
+linearoptimize.egg-info/top_level.txt
