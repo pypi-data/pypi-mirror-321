@@ -1,0 +1,3 @@
+[console_scripts]
+tsdata=ts_data_generator.cli:main
+
