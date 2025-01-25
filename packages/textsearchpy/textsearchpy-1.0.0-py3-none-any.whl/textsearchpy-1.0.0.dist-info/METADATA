@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: textsearchpy
+Version: 1.0.0
+Summary: In memory text search engine written in python
+Project-URL: Homepage, https://github.com/KimiJL/pytextsearch
+Project-URL: Issues, https://github.com/KimiJL/pytextsearch/issues
+Author-email: Kimi Li <kimi.jx.li@gmail.com>
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: pydantic<3,>=2.0.0
+Description-Content-Type: text/markdown
+
+# TextSearchPy
+TextSearchPy is a high performance, easy to use, in-memory text search engine library written in Python.
