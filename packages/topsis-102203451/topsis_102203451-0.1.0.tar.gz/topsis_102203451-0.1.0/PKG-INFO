@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: topsis_102203451
+Version: 0.1.0
+Summary: Testing Topsis 
+Home-page: https://github.com/your_username/my_dummy_package
+Author: Amit Katoch
+Author-email: ajuneja_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
