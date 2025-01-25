@@ -1,0 +1,8 @@
+Project: MCP Code Assist Server
+Location: /Volumes/Passport616/AI/mcp_server_code_assist
+Branch: code-assist
+
+Claude, let's continue working on our MCP Code Assist Server. Please:
+1. Read /Volumes/Passport616/AI/mcp_server_code_assist/plan.md
+2. Show me what's done and what's next
+3. Let's complete phase 1 properly
