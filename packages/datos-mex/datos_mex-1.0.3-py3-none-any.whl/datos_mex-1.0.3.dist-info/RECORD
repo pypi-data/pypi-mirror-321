@@ -1,0 +1,11 @@
+datos_mex/banxico/__init__.py,sha256=u4i9JfNpANPK0JWM5_-S-TFIAg6u3C7eIDIn3qKQ9sE,28
+datos_mex/banxico/indicadores.py,sha256=YQeJ2Jw67BQzFOp979_GROMUjuv4wojPKJEvH43837k,6310
+datos_mex/data_format/__init__.py,sha256=ARpYMvQl4AI8Ze4p38HgJXnUXrgZJ4Z7ft0PP5LT4jk,67
+datos_mex/data_format/auxiliar.py,sha256=7EdzJ9yMRAV8ULCE29ZS7nT-FMwldEZX28Y6CVcDCec,2379
+datos_mex/inegi/__init__.py,sha256=WsmMBJdXvRWmXSsITznCE0Sa0AUumJElDxuD16F8RFw,54
+datos_mex/inegi/banco_de_indicadores.py,sha256=2wFZZb62izH08A586k4fLUKtzZ2FkTl9BRw2pNDYYso,8498
+datos_mex-1.0.3.dist-info/LICENSE.md,sha256=iaSXH5FTn1Iq8httIzVzjZxtWJwXacPlgShoI31hPYQ,1099
+datos_mex-1.0.3.dist-info/METADATA,sha256=XlHTIggPxiSF1TbERMgJk47CEijS9vPe4sVe0ELLALc,11754
+datos_mex-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+datos_mex-1.0.3.dist-info/top_level.txt,sha256=UJp4sOrfNV7H2QDDjdZqb_GhGmqJlel_EsoFCV0SyPQ,10
+datos_mex-1.0.3.dist-info/RECORD,,
