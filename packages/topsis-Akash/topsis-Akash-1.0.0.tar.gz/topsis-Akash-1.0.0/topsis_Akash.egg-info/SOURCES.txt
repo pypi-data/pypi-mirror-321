@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+libname/Akash_102203102.py
+libname/__init__.py
+topsis_Akash.egg-info/PKG-INFO
+topsis_Akash.egg-info/SOURCES.txt
+topsis_Akash.egg-info/dependency_links.txt
+topsis_Akash.egg-info/requires.txt
+topsis_Akash.egg-info/top_level.txt
