@@ -1,0 +1,7 @@
+toml
+poprogress
+pocode
+huaweicloudsdkocr
+huaweicloudsdkcore
+loguru
+potx-cloud
