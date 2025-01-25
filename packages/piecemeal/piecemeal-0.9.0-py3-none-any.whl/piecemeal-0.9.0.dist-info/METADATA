@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: piecemeal
+Version: 0.9.0
+Summary: "A dead simple Plugin Manager"
+Author: Darrick Herwehe
+Author-email: darrick@exitcodeone.com
+License: MIT
+Project-URL: Documentation, https://gitlab.com/darricktheprogrammer/piecemeal
+Project-URL: Source, https://gitlab.com/darricktheprogrammer/piecemeal
+Project-URL: Tracker, https://gitlab.com/darricktheprogrammer/piecemeal/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bump2version; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mkdocs; extra == "dev"
+
+PieceMeal
+=========
+
+A dead simple plugin manager for Python. No sidecar manifests. No entry points. Simply inherit from `piecemeal.PieceMealPlugin`, point the `piecemeal.PluginManager` at a directory, file or module and your plugins are loaded.
+
+Docs to follow...

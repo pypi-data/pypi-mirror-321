@@ -1,0 +1,13 @@
+piecemeal/__init__.py,sha256=1CrHItIsUIjHKh9ICObEqkYxpGy4jFwQwlJbPpHwSgo,444
+piecemeal/base.py,sha256=lQ02Sc76jbKmLIqALRwK1HtD0qAyVsAI1C0sr3PwkVY,1035
+piecemeal/decorators.py,sha256=Du_R_FuodKw_K4OjHEm8fLFrjvbIJ7tklTjtYsFmTdQ,387
+piecemeal/manager.py,sha256=J9S8Sq6dC9LdxdhePLmun23Ntctlm28Z2veLVdr6Fbc,21977
+piecemeal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_plugin.py,sha256=TGv2WmGmweJ8XFBpGpAw76izlwkiNqb9hx6F4zeXfx8,185
+test/test_pluginmanager.py,sha256=HL6k9B-go7ApWwwdewI2NplE4Ve9ffmkJEmcKLYVQcI,17480
+piecemeal-0.9.0.dist-info/LICENSE,sha256=zUfGyCTW4OOn3LVmi7FltSf4_8JiD1I3-ku8yqdl0kc,1074
+piecemeal-0.9.0.dist-info/METADATA,sha256=_m17nN7OiR7BHBXm9zLVLBx7Sr9pwQW6g1qD9SJ-3Js,1376
+piecemeal-0.9.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+piecemeal-0.9.0.dist-info/top_level.txt,sha256=2UBNJBL7yiryzrJsUeq0uB4McZoHo1AIx8cQbVS7hpw,15
+piecemeal-0.9.0.dist-info/RECORD,,
