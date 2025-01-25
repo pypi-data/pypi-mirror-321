@@ -1,0 +1,3 @@
+[console_scripts]
+zarrify=zarrify.to_zarr:cli
+
