@@ -1,0 +1,15 @@
+arabic_animations/__init__.py,sha256=6JqTj3b--BtuTdSxGA42b4ul6bwNlS1I6ifP5Wppsq8,99
+arabic_animations/cli.py,sha256=0oOZoO5pqc6_Lmh__tq5oJNed0J-GMK8YByNYf5Po6U,2383
+arabic_animations/main.py,sha256=YvenPgI7WgkezLHgQHUfqv4EXVG2QQ5JtfBazAts1ac,58
+arabic_animations/core/__init__.py,sha256=sn_1LqG2LcdpYhTXXm8nTzAuDC7-0oWVQtJtPcObBp8,51
+arabic_animations/core/color.py,sha256=1c4PQ3T9UWjnNSwPoiJvvZbEuAJGf6XOWwzUNkLfHHc,4641
+arabic_animations/core/position.py,sha256=gcDwwjokAYhDfynjdllKT71iUMP7DK3lt79B1YjwHys,2931
+arabic_animations/core/scene.py,sha256=ohYNhLUardjQ88iL4THfNTOFb2WQXWrB9L_EJCeRsAc,2667
+arabic_animations/core/text.py,sha256=JGe8mBUKazey9EwXYI_o76k9h6IyPHpRIKr7PKlfRoI,9506
+arabic_animations/utils/__init__.py,sha256=sn_1LqG2LcdpYhTXXm8nTzAuDC7-0oWVQtJtPcObBp8,51
+arabic_animations/utils/preview.py,sha256=h_bUJ3cVN3f026cGRp3x3gXOxQ2tAYGvxURn97R2fxw,3958
+arabic_text_animator-0.3.1.dist-info/METADATA,sha256=IkN82MCW6a6dotdtQbYLzd3BkMP6I2I37gXcmjj09eI,4363
+arabic_text_animator-0.3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+arabic_text_animator-0.3.1.dist-info/entry_points.txt,sha256=f6Dddan1R5dNUN06lU6Qq7eVT4_MVaeKBDRH5-oqLCw,95
+arabic_text_animator-0.3.1.dist-info/top_level.txt,sha256=OLU-KpuxW79HM5qK95zTnbl1dED4p7avXdlttCAC3Iw,18
+arabic_text_animator-0.3.1.dist-info/RECORD,,
