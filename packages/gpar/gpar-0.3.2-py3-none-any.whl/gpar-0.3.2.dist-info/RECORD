@@ -1,0 +1,12 @@
+gpar/__init__.py,sha256=wXa1YsTOYp2XXfLHTxBIcZO7pJ2aAoy8r4k5aX9fDsM,47
+gpar/model.py,sha256=KbFS1R0QeQ2YP3SlpHMJbHDXzE-T9YooP7KN72BcEMI,11944
+gpar/regression.py,sha256=VIl7p6w5IbIsYIoMhR1NSOlVIE-P5i-mKCtA3pdiTxc,22123
+tests/__init__.py,sha256=u8XLUi9APqn1nc-Ei7z_Ulu1Fvo90sVg_a75SRbVs9Q,148
+tests/test_model.py,sha256=9WvjWBCOgnFK4Tao0cAjEqAJ6mLlUR6UkLKK2y3lWJc,8824
+tests/test_regression.py,sha256=9zUeiUiccpbldUmaEiFaUXzBzjVPjmC5b1i5KwlshHE,8451
+tests/util.py,sha256=9iL6XjZVR-l2YNPUZVwcPxT8Ht9WPotwyu4RxK8aiIo,1344
+gpar-0.3.2.dist-info/LICENCE.txt,sha256=fWbT_c5zKHWw_M7sXc82fgBPa-vnypEOvEviIBm2_OE,1071
+gpar-0.3.2.dist-info/METADATA,sha256=UwEMUeAcDZuERWWG2-O_n3uI0bQtjYAnijivMn2I_4A,10545
+gpar-0.3.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gpar-0.3.2.dist-info/top_level.txt,sha256=485nmXHxS4BhbNpJasFM85IkIb4U-uic0NsUwqU9DbI,11
+gpar-0.3.2.dist-info/RECORD,,
