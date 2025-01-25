@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: lambda-slack-notifier
+Version: 0.1.0
+Summary: A package to send Slack notifications via AWS Lambda
+Author: Vikas
+Author-email: vikasingawale16@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3>=1.26.0
+
+# AWS Slack Notifier
+
+A simple Python package to send Slack notifications via AWS Lambda.
+
+## Installation
+
+```bash
+pip install lambda-slack-notifier
+```
+
+## Usage
+
+```python
+from aws_slack_notifier import SlackNotifier
+
+# Initialize the notifier
+notifier = SlackNotifier(region_name='us-east-1')
+
+# Send a notification
+notifier.notify(
+    status="SUCCESS",
+    message="Job completed successfully",
+    client="MyGlueJob"
+)
+
+# Send a notification with error details
+notifier.notify(
+    status="ERROR",
+    message="Job failed",
+    error="ValueError: Invalid input",
+    stackTrace="Full stack trace here",
+    client="MyGlueJob"
+)
+```
+
+## Requirements
+
+- AWS Lambda function named 'trigger-slack-notification' that handles Slack messaging
+- Appropriate AWS IAM permissions to invoke Lambda functions
+- boto3 library
+
+## License
+
+MIT License
