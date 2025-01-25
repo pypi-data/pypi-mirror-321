@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hf_cleaner"
+version = "0.1.1"
+description = "A utility for cleaning Hugging Face models or artifacts."
+authors = ["Harsimarsingh <sainiharsimar@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/HarsimarSingh23/hf_cleaner"
+repository = "https://github.com/HarsimarSingh23/hf_cleaner"
+keywords = ["hugging_face", "cleanup", "utility"]
+packages = [
+    { include = "hf_cleaner" }
+]
+
+
+include = [
+    "app.py",
+    "run_app.py",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.41.0"
+pytest = "^8.3.0"
+
+[tool.poetry.scripts]
+hf_cleaner = "run_app:run_app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
