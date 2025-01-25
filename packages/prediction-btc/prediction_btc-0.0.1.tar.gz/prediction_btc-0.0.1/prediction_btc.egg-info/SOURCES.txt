@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+prediction_btc/Model_F_2,4_Acc97.h5
+prediction_btc/Model_T_2,4_Acc97.pkl
+prediction_btc/__init__.py
+prediction_btc/package.py
+prediction_btc.egg-info/PKG-INFO
+prediction_btc.egg-info/SOURCES.txt
+prediction_btc.egg-info/dependency_links.txt
+prediction_btc.egg-info/requires.txt
+prediction_btc.egg-info/top_level.txt
