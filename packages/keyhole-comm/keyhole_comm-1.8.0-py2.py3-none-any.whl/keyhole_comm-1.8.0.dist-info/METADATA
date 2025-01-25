@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: keyhole-comm
+Version: 1.8.0
+Summary: Python counterpart to the Keyhole library for the Arduino IDE
+Home-page: https://bitbucket.org/jezhill/Keyhole
+Author: Jeremy Hill
+Author-email: jezhill@gmail.com
+License: CC0
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: pyserial
+
+Allows easy line-by-line text communication over a serial port. Particularly
+useful for microcontrollers programmed using the Arduino-IDE Keyhole library.
+
+
