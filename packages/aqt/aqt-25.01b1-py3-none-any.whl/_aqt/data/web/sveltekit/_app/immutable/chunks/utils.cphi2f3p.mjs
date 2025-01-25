@@ -1,0 +1,1 @@
+import{G as b,B as e}from"./runtime.DAfjif0p.mjs";function c(n,r,s){if(n==null)return r(void 0),s&&s(void 0),b;const u=e(()=>n.subscribe(r,s));return u.unsubscribe?()=>u.unsubscribe():u}export{c as s};
