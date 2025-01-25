@@ -1,0 +1,154 @@
+Metadata-Version: 2.4
+Name: pytest-pickle-cache
+Version: 0.1.0
+Summary: A pytest plugin for caching test results using pickle.
+Project-URL: Documentation, https://daizutabi.github.io/pytest-pickle-cache/
+Project-URL: Source, https://github.com/daizutabi/pytest-pickle-cache
+Project-URL: Issues, https://github.com/daizutabi/pytest-pickle-cache/issues
+Author-email: daizutabi <daizutabi@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2020-present daizutabi <daizutabi@gmail.com>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.10
+Requires-Dist: pytest>=7
+Description-Content-Type: text/markdown
+
+# pytest-pickle-cache
+
+[![PyPI Version][pypi-v-image]][pypi-v-link]
+[![Python Version][python-v-image]][python-v-link]
+[![Build Status][GHAction-image]][GHAction-link]
+[![Coverage Status][codecov-image]][codecov-link]
+
+## Overview
+
+`pytest-pickle-cache` is a pytest plugin for caching test results using pickle.
+By utilizing this plugin, you can reduce test execution time and perform tests
+more efficiently.
+
+## Installation
+
+You can install `pytest-pickle-cache` using the following command:
+
+```bash
+pip install pytest-pickle-cache
+```
+
+## Fixture
+
+The `use_cache` fixture is a pytest fixture that provides a caching mechanism
+for pytest, allowing you to store and retrieve objects using a specified key.
+The objects are serialized and deserialized using pickle and base64 encoding.
+
+```python
+def use_cache(key: str, func: Callable[[], Any]) -> Any:
+    """Retrieve a cached result or execute the function if not cached.
+
+    Args:
+        key (str): The key to identify the cached result.
+        func (Callable[[], Any]): The function to execute if the result is
+            not cached. The result of the function is serialized and stored
+            in the cache for future use.
+
+    Returns:
+        Any: The cached result or the result of the executed function.
+    """
+```
+
+## Example
+
+Here is a specific example of how to use `pytest-pickle-cache` to cache test results.
+
+```python
+import datetime
+
+import pytest
+from pandas import DataFrame
+
+
+def create() -> DataFrame:
+    """Create a DataFrame with the current time."""
+    now = datetime.datetime.now()
+    return DataFrame({"now": [now]})
+
+
+def test_create(use_cache):
+    """Create a DataFrame using cache and compare the results."""
+    # Retrieve DataFrame using cache
+    df_cached = use_cache("key", create)
+
+    # Create a new DataFrame
+    df_created = create()
+
+    # Assert that the cached DataFrame and the newly created DataFrame are different.
+    assert not df_created.equals(df_cached)
+
+
+def test_create_with_cache(use_cache):
+    """Use cache to retrieve the same DataFrame and ensure the results are the same."""
+    # Cache the DataFrame on the first call
+    df_cached_first = use_cache("key", create)
+
+    # Call the same function again to retrieve from cache
+    df_cached_second = use_cache("key", create)
+
+    # Assert that the cached DataFrame is the same on the second call.
+    assert df_cached_first.equals(df_cached_second)
+```
+
+
+You can also use `use_cache` fixture as a fixture in your test file.
+
+```python
+@pytest.fixture
+def df(use_cache):
+    return use_cache("key", create)
+```
+
+You can also use `use_cache` fixture with a parametrized fixture.
+
+```python
+def create(param: int) -> DataFrame:
+    """Create a DataFrame with the current time."""
+    now = datetime.datetime.now()
+    return DataFrame({"now": [now], "param": [param]})
+
+
+@pytest.fixture(params=[1, 2, 3])
+def df(use_cache, request):
+    return use_cache(f"key_{request.param}", lambda: create(request.param))
+```
+
+## Benefits of this Example
+
+- **Efficiency in Testing**: By using `pytest-pickle-cache`, you can avoid running
+the same test multiple times, reducing the overall test execution time.
+
+- **Consistency of Results**: Using cache ensures that you get the same result
+for the same input, maintaining consistency in your tests.
+
+<!-- Badges -->
+[pypi-v-image]: https://img.shields.io/pypi/v/pytest-pickle-cache.svg
+[pypi-v-link]: https://pypi.org/project/pytest-pickle-cache/
+[python-v-image]: https://img.shields.io/pypi/pyversions/pytest-pickle-cache.svg
+[python-v-link]: https://pypi.org/project/pytest-pickle-cache
+[GHAction-image]: https://github.com/daizutabi/pytest-pickle-cache/actions/workflows/ci.yml/badge.svg?branch=main&event=push
+[GHAction-link]: https://github.com/daizutabi/pytest-pickle-cache/actions?query=event%3Apush+branch%3Amain
+[codecov-image]: https://codecov.io/github/daizutabi/pytest-pickle-cache/coverage.svg?branch=main
+[codecov-link]: https://codecov.io/github/daizutabi/pytest-pickle-cache?branch=main
