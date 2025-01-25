@@ -1,0 +1,9 @@
+README.md
+setup.py
+kits/__init__.py
+kits/util_log.py
+personalizedutilitykits.egg-info/PKG-INFO
+personalizedutilitykits.egg-info/SOURCES.txt
+personalizedutilitykits.egg-info/dependency_links.txt
+personalizedutilitykits.egg-info/requires.txt
+personalizedutilitykits.egg-info/top_level.txt
