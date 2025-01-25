@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+monochrome_viewer.egg-info/PKG-INFO
+monochrome_viewer.egg-info/SOURCES.txt
+monochrome_viewer.egg-info/dependency_links.txt
+monochrome_viewer.egg-info/requires.txt
+monochrome_viewer.egg-info/top_level.txt
