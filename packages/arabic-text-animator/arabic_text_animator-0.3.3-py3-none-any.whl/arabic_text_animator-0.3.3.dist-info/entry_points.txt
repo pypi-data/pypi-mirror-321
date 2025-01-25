@@ -1,0 +1,3 @@
+[console_scripts]
+arabic-animate = arabic_animations.main:cli
+ata = arabic_animations.main:cli
