@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: csmp
+Version: 0.1.0
+Summary: Library for compressive sensing matching pursuit
+Author: xephosbot
+Author-email: xephosbot <xephosbot@gmail.com>
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author

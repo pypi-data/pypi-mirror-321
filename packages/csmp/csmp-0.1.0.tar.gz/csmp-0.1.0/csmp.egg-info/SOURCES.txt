@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+csmp/__init__.py
+csmp/compress.py
+csmp/utils.py
+csmp.egg-info/PKG-INFO
+csmp.egg-info/SOURCES.txt
+csmp.egg-info/dependency_links.txt
+csmp.egg-info/requires.txt
+csmp.egg-info/top_level.txt
+tests/test_compress.py
+tests/test_utils.py
