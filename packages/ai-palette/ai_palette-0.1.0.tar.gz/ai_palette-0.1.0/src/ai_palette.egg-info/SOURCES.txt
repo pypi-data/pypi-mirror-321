@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ai_palette/__init__.py
+src/ai_palette/ai_palette.py
+src/ai_palette.egg-info/PKG-INFO
+src/ai_palette.egg-info/SOURCES.txt
+src/ai_palette.egg-info/dependency_links.txt
+src/ai_palette.egg-info/requires.txt
+src/ai_palette.egg-info/top_level.txt
