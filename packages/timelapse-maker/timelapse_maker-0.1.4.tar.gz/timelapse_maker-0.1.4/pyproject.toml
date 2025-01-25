@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "timelapse_maker"
+version = "0.1.4"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+description = "A tool for compressing videos into timelapses using parallel processing"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "opencv-python>=4.5.0",
+    "numpy>=1.19.0",
+    "tqdm>=4.65.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/timelapse-compressor"
+"Bug Tracker" = "https://github.com/yourusername/timelapse-compressor/issues"
+
+[project.scripts]
+timelapse_maker = "timelapse_maker.cli:main" 
+
+# Add this section to specify where the package files are located
+[tool.hatch.build.targets.wheel]
+packages = ["src/timelapse_maker"]
