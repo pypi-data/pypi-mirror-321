@@ -1,0 +1,5 @@
+sql_library.egg-info/PKG-INFO
+sql_library.egg-info/SOURCES.txt
+sql_library.egg-info/dependency_links.txt
+sql_library.egg-info/requires.txt
+sql_library.egg-info/top_level.txt
