@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mkhaled/__init__.py
+mkhaled/built_in_examples.py
+mkhaled/code_manager.py
+mkhaled.egg-info/PKG-INFO
+mkhaled.egg-info/SOURCES.txt
+mkhaled.egg-info/dependency_links.txt
+mkhaled.egg-info/requires.txt
+mkhaled.egg-info/top_level.txt
