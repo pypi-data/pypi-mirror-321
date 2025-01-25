@@ -1,0 +1,7 @@
+dump_heap.py
+setup.py
+dump_heap.egg-info/PKG-INFO
+dump_heap.egg-info/SOURCES.txt
+dump_heap.egg-info/dependency_links.txt
+dump_heap.egg-info/entry_points.txt
+dump_heap.egg-info/top_level.txt
