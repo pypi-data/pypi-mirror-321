@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: 102203816-Topsis
+Version: 0.0
+Summary: This package performs topsis on your data
+Author: Ayushi Rathore
+License: MIT
+Project-URL: Source Repository, https://github.com/ayu-shiirathore/Topsis_Package
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sys
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
+
+# TOPSIS Algorithm Implementation
+
+This Python script implements the **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** method for multi-criteria decision analysis. The script evaluates and ranks alternatives based on their performance across several criteria. The TOPSIS method helps identify the best alternative by calculating the Euclidean distance from the best and worst ideal solutions.
+
+## Prerequisites
+
+Before running the script, ensure that you have the following Python packages installed:
+
+- `numpy`
+- `pandas`
+- `openpyxl` (for reading Excel files)
+
+You can install these dependencies using the following command:
+
+```bash
+pip install numpy pandas openpyxl
+
+## Usage
+```bash
+python topsis.py <InputDataFile> <Weights> <Impacts> <ResultFileName>
