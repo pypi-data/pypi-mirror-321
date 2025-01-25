@@ -1,0 +1,5 @@
+@prefix schema1: <http://schema.org/> .
+
+<file:///Users/milton.m/Programming/RdfCrate/#monty> a schema1:Place ;
+    schema1:name "Montague Street Bridge" .
+
