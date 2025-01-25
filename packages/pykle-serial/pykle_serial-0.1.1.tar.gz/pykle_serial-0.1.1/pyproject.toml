@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pykle-serial"
+dynamic = ["version"]
+description = "A Python library for parsing the serialized format used on keyboard-layout-editor.com (KLE)."
+requires-python = ">=3.8"
+authors = [{name = "Hajime Nakazato", email = "hajime@kaoriha.org"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["keyboard-layout-editor", "KLE"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "json5 >= 0.9.5",
+]
+
+[project.urls]
+Repository = "https://github.com/hajimen/pykle_serial.git"
+"Bug Tracker" = "https://github.com/hajimen/pykle_serial/issues"
+Changelog = "https://github.com/hajimen/pykle_serial/blob/master/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "pykle_serial.__version__"}
+
+[tool.setuptools.package-dir]
+"pykle_serial" = "pykle_serial"

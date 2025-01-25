@@ -1,0 +1,94 @@
+Metadata-Version: 2.2
+Name: pykle-serial
+Version: 0.1.1
+Summary: A Python library for parsing the serialized format used on keyboard-layout-editor.com (KLE).
+Author-email: Hajime Nakazato <hajime@kaoriha.org>
+License: MIT License
+        
+        Copyright (c) 2020-2025 NAKAZATO Hajime
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/hajimen/pykle_serial.git
+Project-URL: Bug Tracker, https://github.com/hajimen/pykle_serial/issues
+Project-URL: Changelog, https://github.com/hajimen/pykle_serial/blob/master/CHANGELOG.md
+Keywords: keyboard-layout-editor,KLE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: json5>=0.9.5
+
+# pykle-serial
+
+**pykle-serial** is a Python library for parsing the serialized format used on [keyboard-layout-editor.com (KLE)](http://www.keyboard-layout-editor.com/).
+
+pykle-serial is a Python port of [kle-serial](https://github.com/ijprest/kle-serial), 
+based on [commit #4080386 on Dec 31, 2019](https://github.com/ijprest/kle-serial/commit/4080386fcdcb66a391e1b4857532512f9ca4121e)
+and includes [Fix issue with incorrect x and y for rotated key](https://github.com/ijprest/kle-serial/pull/1/commits/913a6f42f3ee03586d1cb0665f5d24ffe5bf5b68).
+
+## Usage
+
+```python
+import pykle_serial as kle_serial
+
+keyboard = kle_serial.deserialize([
+    {'name': "Sample", 'author': "Your Name"},
+    ["Q", "W", "E", "R", "T", "Y"]
+])
+
+# or
+
+keyboard = kle_serial.parse('''[
+    { name: "Sample", author: "Your Name" },
+    ["Q", "W", "E", "R", "T", "Y"]
+]''')
+```
+
+About the details of `keyboard`, see original [kle-serial](https://github.com/ijprest/kle-serial).
+
+## Noticeable differences from original kle-serial
+
+- `labels` / `textColor` / `textSize` of `Key` class always have 12 elements.
+
+JavaScript's array esoterically supports out-of-index access. Python's list doesn't.
+
+- (implicit) `textSize` is int.
+
+JavaScript doesn't distinguish between float and int. Python does.
+
+## Caveats
+
+- KLE's "Raw data" text requires additional outer `[]` as JSON5.
+
+- `labels` is HTML fragment.
+
+## License
+
+MIT license.
