@@ -1,0 +1,2 @@
+[console_scripts]
+vine_wayback = vine_wayback:main
