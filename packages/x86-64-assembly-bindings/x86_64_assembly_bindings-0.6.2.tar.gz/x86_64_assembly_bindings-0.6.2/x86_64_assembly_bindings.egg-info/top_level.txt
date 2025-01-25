@@ -1,0 +1,2 @@
+aot
+x86_64_assembly_bindings
