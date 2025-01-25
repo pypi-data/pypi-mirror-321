@@ -1,0 +1,10 @@
+equal_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+equal_logger/azure_integration.py,sha256=wXZmWk8N6qIDrGrQRDeSKo27GPviaVIiNk3Y-gqz4wU,2344
+equal_logger/gcp_integration.py,sha256=klg8T6AeK4QAC2zJNp4SnhtStUiIdoCffP8da4Xf9G0,1719
+equal_logger/logger.py,sha256=jAgnS6sZ7G_IJVNdchKsG5nNUxOmTfJQFRNbDL1aOTQ,7868
+equal_logger/sandbox_1.py,sha256=JnAZtiR-K5bdH2E38P5jt8D21kFTdAQZl1JoPSmFqXA,458
+equal_logger-0.0.2.dist-info/LICENSE,sha256=k74rsF9CWNsf4d8uhJJYedpZ3N7OOZU0Dhp5wmgCbp8,1085
+equal_logger-0.0.2.dist-info/METADATA,sha256=l7Pfx6XoyxKAf3GeMyPply1ik1fHnmrRihz6NTvRzFQ,827
+equal_logger-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+equal_logger-0.0.2.dist-info/top_level.txt,sha256=gr_UV5yEv7XKiTZU08bEZIFGyIa1gMDByTtaKLWPFqI,13
+equal_logger-0.0.2.dist-info/RECORD,,
