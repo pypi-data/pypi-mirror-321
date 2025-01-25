@@ -1,0 +1,128 @@
+Metadata-Version: 2.2
+Name: Topsis-102216038-srestha
+Version: 0.0
+Summary: This is the short description
+Author: Srestha Jain
+License: MIT
+Project-URL: Source Repository, https://github.com/SresthaJain/TOPSIS/tree/main
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
+
+Here's a sample `README.md` file for your GitHub repository:
+
+---
+
+# TOPSIS Package
+
+This Python package implements the **TOPSIS** (Technique for Order of Preference by Similarity to Ideal Solution) method for multi-criteria decision-making. It evaluates and ranks options based on given criteria, weights, and impacts, producing a detailed result file.
+
+---
+
+## Features
+
+- Normalizes data using the vector normalization method.
+- Applies weighted criteria and computes TOPSIS scores.
+- Determines ideal best and worst values for each criterion.
+- Ranks options based on their relative closeness to the ideal solution.
+
+---
+
+## Installation
+
+Clone the repository and install the package locally:
+
+```bash
+git clone https://github.com/SresthaJain/TOPSIS/tree/main
+cd Topsis-102216038
+python setup.py install
+```
+
+Ensure you have the required dependencies:
+
+```bash
+pip install numpy pandas
+```
+
+---
+
+## Input/Output
+
+### Input File
+
+- Must be in CSV format (e.g., `101556-data.csv`).
+- Should contain **at least three columns**:
+  - First column: Object/variable names (e.g., M1, M2, M3).
+  - Remaining columns: Numeric values for criteria.
+- Example:
+
+| Model | Criteria1 | Criteria2 | Criteria3 |
+| ----- | --------- | --------- | --------- |
+| M1    | 250       | 16        | 12        |
+| M2    | 200       | 20        | 10        |
+| M3    | 300       | 25        | 8         |
+| M4    | 400       | 30        | 6         |
+
+### Output File
+
+- Adds two columns:
+  - **Topsis Score**: The calculated score for each object.
+  - **Rank**: The rank of each object based on the TOPSIS score.
+- Example:
+
+| Model | Criteria1 | Criteria2 | Criteria3 | Score    | Rank |
+| ----- | --------- | --------- | --------- | -------- | ---- |
+| M4    | 400       | 30        | 6         | 0.909311 | 1    |
+| M3    | 300       | 25        | 8         | 0.847279 | 2    |
+| M1    | 250       | 16        | 12        | 0.285391 | 3    |
+| M2    | 200       | 20        | 10        | 0.268085 | 4    |
+
+---
+
+## Usage
+
+### Example Script
+
+After installing the package, use the following script:
+
+```python
+from topsis.topsis import Topsis
+
+# Define inputs
+input_file = "101556-data.csv"
+output_file = "101556-result.csv"
+weights = [0.5, 0.3, 0.2]  # Criteria weights
+impacts = ["+", "+", "-"]  # '+' for benefit, '-' for cost criteria
+
+# Process TOPSIS
+Topsis.process(input_file, weights, impacts, output_file)
+```
+
+### Steps
+
+1. Ensure the input file is in the correct format.
+2. Replace `weights` and `impacts` with your specific values.
+3. Run the script. The results will be saved in `output_file`.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+- **srestha jain**
+
+---
+
+Let me know if you'd like further modifications!
