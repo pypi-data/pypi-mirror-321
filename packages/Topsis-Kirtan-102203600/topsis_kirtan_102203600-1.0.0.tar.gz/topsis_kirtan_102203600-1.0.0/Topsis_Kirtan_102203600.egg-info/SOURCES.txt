@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Kirtan_102203600.egg-info/PKG-INFO
+Topsis_Kirtan_102203600.egg-info/SOURCES.txt
+Topsis_Kirtan_102203600.egg-info/dependency_links.txt
+Topsis_Kirtan_102203600.egg-info/entry_points.txt
+Topsis_Kirtan_102203600.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
