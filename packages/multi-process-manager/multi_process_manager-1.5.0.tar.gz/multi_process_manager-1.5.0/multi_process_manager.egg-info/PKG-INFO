@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: multi-process-manager
+Version: 1.5.0
+Summary: Gestionnaire de processus pour python
+Home-page: https://github.com/Younity-MC/python-process-manager
+Author: Younity MC
+Author-email: contact@younity-mc.fr
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+1.5.0
