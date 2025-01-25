@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aws_lambda_slack_notifier
+Version: 0.1.0
+Summary: A package to send Slack notifications via AWS Lambda
+Author: Vikas
+Author-email: vikasingawale16@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: boto3>=1.26.0
+
+# Slack Notifier
+
+`slack-notifier` is a Python package for sending Slack notifications using AWS Lambda.
+
+## Installation
+
+```bash
+pip install slack-notifier
