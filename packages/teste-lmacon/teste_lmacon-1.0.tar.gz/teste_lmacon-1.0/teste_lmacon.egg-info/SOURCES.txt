@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+first_py/__init__.py
+first_py/__main__.py
+first_py/csv_functions.py
+first_py/db_functions.py
+first_py/email_functions.py
+first_py/resources/start.png
+teste_lmacon.egg-info/PKG-INFO
+teste_lmacon.egg-info/SOURCES.txt
+teste_lmacon.egg-info/dependency_links.txt
+teste_lmacon.egg-info/requires.txt
+teste_lmacon.egg-info/top_level.txt
