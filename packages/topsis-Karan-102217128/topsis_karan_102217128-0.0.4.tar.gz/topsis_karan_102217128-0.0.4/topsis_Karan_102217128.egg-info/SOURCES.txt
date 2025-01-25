@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+topsis/__init__.py
+topsis/algo.py
+topsis/main.py
+topsis_Karan_102217128.egg-info/PKG-INFO
+topsis_Karan_102217128.egg-info/SOURCES.txt
+topsis_Karan_102217128.egg-info/dependency_links.txt
+topsis_Karan_102217128.egg-info/requires.txt
+topsis_Karan_102217128.egg-info/top_level.txt
