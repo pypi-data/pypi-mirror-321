@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pangeapy
+Version: 0.0
+Summary: initial version
+Home-page: https://github.com/srkim727/pangeapy
+Author: srkim
+Author-email: srkim727@kaist.ac.kr
+License-File: LICENSE
+Requires-Dist: celltypist
+Requires-Dist: scipy
+Requires-Dist: parmap
+
