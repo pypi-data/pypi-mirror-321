@@ -1,0 +1,8 @@
+setup.py
+curslibm/__init__.py
+curslibm/database.py
+curslibm.egg-info/PKG-INFO
+curslibm.egg-info/SOURCES.txt
+curslibm.egg-info/dependency_links.txt
+curslibm.egg-info/requires.txt
+curslibm.egg-info/top_level.txt
