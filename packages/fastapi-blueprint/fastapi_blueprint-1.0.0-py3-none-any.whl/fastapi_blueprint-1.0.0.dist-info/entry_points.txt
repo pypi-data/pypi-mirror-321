@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-blueprint = fastapi_cli:main
+
