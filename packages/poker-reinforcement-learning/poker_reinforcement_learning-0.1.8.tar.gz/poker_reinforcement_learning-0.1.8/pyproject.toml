@@ -1,0 +1,40 @@
+[project]
+name = "poker_reinforcement_learning"
+version = "0.1.8"
+description = "Testbed for Reinforcement Learning in Poker. Implemented with Client/Socket technology."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE.txt" }
+keywords = ["poker", "testbed", "reinforcement learning", "python", "server"]
+authors = [
+    { name = "Sai Coumar", email = "sai.c.coumar1@gmail.com" }
+]
+maintainers = [
+    { name = "Sai Coumar", email = "sai.c.coumar1@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "unittest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/saiccoumar/Poker"
+"Bug Reports" = "https://github.com/saiccoumar/Poker/issues"
+"Source" = "https://github.com/saiccoumar/Poker"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["poker_reinforcement_learning"]
