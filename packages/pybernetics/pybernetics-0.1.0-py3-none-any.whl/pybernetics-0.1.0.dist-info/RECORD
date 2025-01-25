@@ -1,0 +1,17 @@
+pybernetics/DataTypes.py,sha256=8LbOc7O185rRLtHi5i1-MF8Wbd6Il2IGXq259ctrLmA,13729
+pybernetics/Datasets.py,sha256=PM0Qaay3Zt616Z8jfJb8aEo9xS7qSVCg9WmNOmzc1gA,1134
+pybernetics/Layers.py,sha256=oVm6zxRZw8aXOSfREtQ5RaJxNe_JxOhBhpJ0M7bck3w,40038
+pybernetics/Loss.py,sha256=rTSFzYFEqM9-byAlrdS28_Ain00RUvCMJRTJqh5xCB0,3199
+pybernetics/Models.py,sha256=k4QNssD6KHcLi4qOS_wZgZYJe2-8lAAj9gNKpaBZl6M,9090
+pybernetics/NaturalLanguageProcessing.py,sha256=9yV1FjShjiEWt8ua4Gn4-Riokqfr1Yp6OsB53eT3oAM,15632
+pybernetics/Optimizers.py,sha256=bKQQhBpbxXdbGO7aj3z_pl6aYURfrvxpuuGiyipTfSs,1081
+pybernetics/PyArrays.py,sha256=KYNhdrQbDCQNlaZrMIlcKsaCFOtwV02RFImMgV-b4iA,5269
+pybernetics/Training.py,sha256=BuY7tNNLVIyEsJqnDgcCr40rV25jVjkdR1Uo9ctxJgM,5526
+pybernetics/_Typing.py,sha256=WotY_d57ipLVbO2E3G1gxTq9CjzEd_N2IVEWvQ6j_q0,4575
+pybernetics/_Utils.py,sha256=6Ut7h1AxjEdKV89XpJl7hFNg8DL6PT1Bh1X1j0Lg2gE,15200
+pybernetics/__init__.py,sha256=vWf3lSTTtMWFp_SJnWqLN6_JJsWSfNViCiVxXHioSTA,7938
+pybernetics-0.1.0.dist-info/LICENSE.txt,sha256=6b-UMdCaMX6Q1U44XgJfaoy9fv1CJ_4uy16c4bul-PA,1091
+pybernetics-0.1.0.dist-info/METADATA,sha256=M9FM3ko1j-djf229wJlPM71SvGuCuythgrSHeb3IpcU,4837
+pybernetics-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pybernetics-0.1.0.dist-info/top_level.txt,sha256=BxzeN0YdRHYRrn04piU-CtMEgOKgTjO8r_MZB5danuU,12
+pybernetics-0.1.0.dist-info/RECORD,,
