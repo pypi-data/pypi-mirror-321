@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: topsis-archie-102203826
+Version: 1.0.0
+Summary: Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+Home-page: https://github.com/abajaj15/102203826_topsis
+Author: Archie Bajaj
+Author-email: archiebajaj4@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# TOPSIS
+
+ Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+
+## Installation
+
+```sh
+pip install topsis-archie-102203826
+```
+
+## USAGE 
+Enter csv filename followed by .csv extentsion, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma separated signs (+,-) and result csv filename followed by .csv extension.
+
+```sh
+topsis102203826 sample.csv "1,1,1,1" "+,-,+,+" result.csv
+```
+
+
+
