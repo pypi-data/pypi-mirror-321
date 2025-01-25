@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+tests/test_topsis.py
+topsis_BHAVYA_102203806.egg-info/PKG-INFO
+topsis_BHAVYA_102203806.egg-info/SOURCES.txt
+topsis_BHAVYA_102203806.egg-info/dependency_links.txt
+topsis_BHAVYA_102203806.egg-info/requires.txt
+topsis_BHAVYA_102203806.egg-info/top_level.txt
