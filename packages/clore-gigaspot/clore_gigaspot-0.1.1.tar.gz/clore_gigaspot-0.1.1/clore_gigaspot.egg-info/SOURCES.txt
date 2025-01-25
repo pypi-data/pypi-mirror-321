@@ -1,0 +1,12 @@
+README.md
+setup.py
+clore_gigaspot.egg-info/PKG-INFO
+clore_gigaspot.egg-info/SOURCES.txt
+clore_gigaspot.egg-info/dependency_links.txt
+clore_gigaspot.egg-info/requires.txt
+clore_gigaspot.egg-info/top_level.txt
+gigaspot/__init__.py
+gigaspot/constants.py
+gigaspot/logger.py
+gigaspot/main.py
+gigaspot/responses.py
