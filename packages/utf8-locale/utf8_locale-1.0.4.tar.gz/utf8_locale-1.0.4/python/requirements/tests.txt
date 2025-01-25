@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+feature-check >= 1, < 2
+pytest >= 6, < 9
