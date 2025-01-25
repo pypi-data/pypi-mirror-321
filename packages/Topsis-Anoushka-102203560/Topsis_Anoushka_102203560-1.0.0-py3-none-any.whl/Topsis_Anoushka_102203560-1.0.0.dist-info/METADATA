@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: Topsis-Anoushka-102203560
+Version: 1.0.0
+Summary: A Python package to perform TOPSIS analysis.
+Author: Anoushka Duggal
+Author-email: duggal.anoushka@gmail.com
+Keywords: python,topsis,anoushka,102203560
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+
+# TOPSIS
+
+TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) is a Python package for multi-criteria decision analysis. This is an easy-to-use implementation of TOPSIS, allowing users to analyze and rank alternatives based on multiple criteria.
+
+## Installation
+
+```bash
+pip install topsis-anoushka-102203560
