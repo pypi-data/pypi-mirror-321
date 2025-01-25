@@ -1,0 +1,12 @@
+ncsu_courses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ncsu_courses/_api.py,sha256=lhQgRDhMWjE552R3cW86v1senMD-1FgXINKM9jKV_P8,1818
+ncsu_courses/_parsers.py,sha256=8eq_3ld_XpI8ny2L5dGItgAzj_BjzYIY1hYFOd6D2tA,6694
+ncsu_courses/classes.py,sha256=Dw6LrnBT3C5TOvQfbcP2NNeo8ttLIcf70_ff8WOHEu8,1091
+ncsu_courses/datatypes.py,sha256=LE1aP_fTjnEag8cwv9Csxr3Jh7-qSnC804fiTTPm4kY,5019
+ncsu_courses/subjects.py,sha256=uOm0kSaStSaD-nVf1Lug0jmr5odiyjhfWar_XF7YIOU,335
+ncsu_courses/term.py,sha256=80pnI9oJkBD9igy-N0_SQK92Jm0ZYCYb6p_tv1YCh6E,759
+ncsu_courses-0.3.2.dist-info/LICENSE,sha256=lLg3GWEJ4XS5KeTNRpL1ifzKqW9q62HBS1Sap45P044,1060
+ncsu_courses-0.3.2.dist-info/METADATA,sha256=xN6bJMndDbiKzCL9jA6cIdajKBDYswU7jKyOFKsHtbA,1824
+ncsu_courses-0.3.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ncsu_courses-0.3.2.dist-info/top_level.txt,sha256=mlOHwVJSEiQZe3Fk9UEcC0_QU7MgbatFYB9Ol0tYgWo,13
+ncsu_courses-0.3.2.dist-info/RECORD,,
