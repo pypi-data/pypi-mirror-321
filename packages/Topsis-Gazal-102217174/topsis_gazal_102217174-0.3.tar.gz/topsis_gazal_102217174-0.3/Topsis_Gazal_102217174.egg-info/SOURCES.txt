@@ -1,0 +1,9 @@
+setup.py
+Topsis_Gazal_102217174.egg-info/PKG-INFO
+Topsis_Gazal_102217174.egg-info/SOURCES.txt
+Topsis_Gazal_102217174.egg-info/dependency_links.txt
+Topsis_Gazal_102217174.egg-info/entry_points.txt
+Topsis_Gazal_102217174.egg-info/requires.txt
+Topsis_Gazal_102217174.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py
