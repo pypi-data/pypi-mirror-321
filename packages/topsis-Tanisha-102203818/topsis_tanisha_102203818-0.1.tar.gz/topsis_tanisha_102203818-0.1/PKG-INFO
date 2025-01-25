@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: topsis_Tanisha_102203818
+Version: 0.1
+Summary: A Python package for implementing TOPSIS for multi-criteria decision making
+Home-page: https://github.com/tanisha1234-sys/topsis-tanisha-102203818
+Author: Tanisha
+Author-email: tanishajain286@gmail.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
