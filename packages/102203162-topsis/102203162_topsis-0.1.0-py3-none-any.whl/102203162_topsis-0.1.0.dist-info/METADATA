@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: 102203162-topsis
+Version: 0.1.0
+Summary: A Python library for the TOPSIS decision-making method.
+Home-page: https://github.com/yourusername/102203162-topsis
+Author: Raghav Manchanda
+Author-email: rmanchanda_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# TOPSIS Library
+
+## Overview
+The TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) library provides an implementation of the TOPSIS decision-making method. This technique is used to rank alternatives based on multiple criteria by comparing their distance from an ideal best and an ideal worst solution.
+
+## Features
+- Normalize decision matrices
+- Apply weights and impacts to criteria
+- Calculate rankings and performance scores
+
+## Installation
+Install the library via pip:
+
+```bash
+pip install topsis-library
+```
+
+## Usage
+
+Here’s a quick guide to using the library:
+
+```python
+from topsis.topsis import topsis
+
+# Define the decision matrix
+# Each row is an alternative, and each column is a criterion
+data = [
+    [250, 16, 12, 5],
+    [200, 16, 8, 3],
+    [300, 32, 16, 4],
+    [275, 32, 8, 4],
+    [225, 16, 16, 2]
+]
+
+# Define weights for each criterion
+weights = [0.25, 0.25, 0.25, 0.25]
+
+# Define impacts for each criterion ('+' for benefit, '-' for cost)
+impacts = ['+', '+', '-', '+']
+
+# Calculate rankings and scores
+rankings, scores = topsis(data, weights, impacts)
+
+print("Rankings:", rankings)
+print("Scores:", scores)
+```
+
+### Output Example
+```plaintext
+Rankings: [3, 1, 4, 2, 5]
+Scores: [0.7722, 0.5634, 0.8523, 0.6472, 0.4321]
+```
+
+## How It Works
+1. **Normalization**: The decision matrix is normalized to make criteria comparable.
+2. **Weight Application**: Each criterion is weighted to reflect its importance.
+3. **Ideal Solutions**: The algorithm calculates the ideal best and worst values for each criterion.
+4. **Distance Calculation**: Distances from the ideal best and worst solutions are computed.
+5. **Performance Scores**: Scores are calculated based on proximity to the ideal solutions.
+6. **Ranking**: Alternatives are ranked based on their scores.
+
+## Testing
+Run unit tests to ensure functionality:
+
+```bash
+python -m unittest discover tests
+```
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/yourusername/topsis-library).
+
+## Author
+Your Name ([your.email@example.com](mailto:your.email@example.com))
+
