@@ -1,0 +1,12 @@
+pdfProcessor/__init__.py,sha256=LWsSUgjMjItNTanLBk9ZvN7ITETIxdz8XSC1RZj7T1Y,67
+pdfProcessor/__main__.py,sha256=gUD_Az3NSkGKDGcMEOhv0eaCStyv6TVYZrJAW_KFz6I,106
+pdfProcessor/app.py,sha256=o3zxeKQzp-Ek8D8r-y8aIh3_c1wRBL_9kqlKbqnMLHM,3753
+pdfProcessor/custom_patterns.py,sha256=BbPqGruH1cVhsKZ1rLYgEIJYXYn2cjzUzda5njwlr24,731
+pdfProcessor/logger_config.py,sha256=rNT6NtplBWeIwkWQjHZyG2b62FKrg5kZFNXglTFx6Ks,2059
+pdfProcessor/ocr_extraction.py,sha256=_eGjYGGCjFGN3CsUyaEE4-zR5uv17xiXMjmyc24tpjs,10029
+pdfProcessor/pdf_processing.py,sha256=MfWNc5hU1XqPMZ-E34r4hsNeeVzXjWmVNuwO_M0hntE,3840
+pdfProcessor/utils.py,sha256=4P1Th-NwMcU3T56j3u6eXtY0JX6fQLJqotYZhgTQPXM,1351
+pdf_masking_library-0.1.0.dist-info/METADATA,sha256=WyukdXZhK5A6nkpTjgvE80Dsp8YCaK1F_qdezEzqz_I,739
+pdf_masking_library-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pdf_masking_library-0.1.0.dist-info/top_level.txt,sha256=p6qyJCfxeoCzFvu21g-bDFfUgPmQJwOzvxEwQqsmchg,13
+pdf_masking_library-0.1.0.dist-info/RECORD,,

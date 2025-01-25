@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: pdf-masking-library
+Version: 0.1.0
+Summary: A library for processing PDFs with OCR and masking sensitive information
+Author: Demo
+Author-email: demo@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: pytesseract
+Requires-Dist: pdf2image
+Requires-Dist: pdfrw
+Requires-Dist: lxml
+Requires-Dist: reportlab
+Requires-Dist: Pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
