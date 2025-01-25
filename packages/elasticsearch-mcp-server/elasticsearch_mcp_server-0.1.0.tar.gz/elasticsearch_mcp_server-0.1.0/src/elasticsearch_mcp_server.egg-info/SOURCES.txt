@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/server.py
+src/elasticsearch_mcp_server.egg-info/PKG-INFO
+src/elasticsearch_mcp_server.egg-info/SOURCES.txt
+src/elasticsearch_mcp_server.egg-info/dependency_links.txt
+src/elasticsearch_mcp_server.egg-info/requires.txt
+src/elasticsearch_mcp_server.egg-info/top_level.txt
+src/tools/__init__.py
+src/tools/base.py
+src/tools/cluster.py
+src/tools/document.py
+src/tools/index.py
