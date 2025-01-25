@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gm-resource-modifier
+Version: 0.1.0
+Summary: A python package to decode .tgx and .gm1 image files.
+License: MIT
+Author: jollas
+Author-email: 119843859+joschrag@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.2.1,<3.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: pillow (>=11.1.0,<12.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Description-Content-Type: text/markdown
+
+# GM1 resource viewer
+
+## What is this project about?
+
+GM1 resource viewer is a python package to decode .gm1 files into numpy arrays or image files.
+
+## Disclaimer
+
+This project is a port from [Gm1KonverterCrossPlatform](https://github.com/PodeCaradox/Gm1KonverterCrossPlatform) by [PodeCaradox](https://github.com/PodeCaradox). The main code from this repository is a python translationof the original C# code.
+The original MIT license is found [here](LICENSE-original)
+
