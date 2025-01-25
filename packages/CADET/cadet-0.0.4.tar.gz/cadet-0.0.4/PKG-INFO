@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: CADET
+Version: 0.0.4
+Summary: An empty namespace reserved for a future CADET meta package. Refer to our Homepage for more info on our package distributions.
+Author-email: Samuel Leweke <s.leweke@fz-juelich.de>, Johannes Schmölder <j.schmoelder@fz-juelich.de>, Ronald Jäpel <r.jaepel@fz-juelich.de>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://cadet.github.io/
+Keywords: process modeling,process optimization,chromatography
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ⚠️ WARNING ⚠️
+
+The `CADET` namespace is currently an empty placeholder on PyPI. It is reserved for the [CADET organization](https://github.com/cadet/) and may be used for a CADET meta package in the future. 
+
+For more information on how to install CADET, please refer to the [CADET documentation](https://cadet.github.io/).
+
+Please **remove** 
+```bash
+pip install cadet
+```
+from your environment or dependency files. If you encounter any issues, please visit the [CADET-Forum](https://forum.cadet-web.de/).
