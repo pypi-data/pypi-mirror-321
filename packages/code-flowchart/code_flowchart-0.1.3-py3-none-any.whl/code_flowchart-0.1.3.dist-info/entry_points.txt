@@ -1,0 +1,2 @@
+[console_scripts]
+code_flowchart = code_flowchart.cli:main
