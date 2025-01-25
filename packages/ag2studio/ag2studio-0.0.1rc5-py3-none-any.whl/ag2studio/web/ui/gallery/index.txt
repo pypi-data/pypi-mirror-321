@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+2:I[71548,["987","static/chunks/987-ff22c7216f766156.js","173","static/chunks/173-6db7e339adb73486.js","170","static/chunks/170-84eba9d11264fe4c.js","440","static/chunks/440-2a1aa1576c77354d.js","177","static/chunks/app/layout-60ddaa28d22362f3.js"],"AppProvider"]
+3:I[90533,["987","static/chunks/987-ff22c7216f766156.js","173","static/chunks/173-6db7e339adb73486.js","170","static/chunks/170-84eba9d11264fe4c.js","440","static/chunks/440-2a1aa1576c77354d.js","177","static/chunks/app/layout-60ddaa28d22362f3.js"],"default"]
+4:I[15244,[],""]
+5:I[43866,[],""]
+6:I[85408,["173","static/chunks/173-6db7e339adb73486.js","345","static/chunks/app/not-found-0fee00162ab673a8.js"],"default"]
+7:I[57033,[],"ClientPageRoot"]
+8:I[48266,["987","static/chunks/987-ff22c7216f766156.js","704","static/chunks/704-79603ebc4f779523.js","440","static/chunks/440-2a1aa1576c77354d.js","355","static/chunks/355-336fd893ffe0275b.js","235","static/chunks/app/gallery/page-8f6c3ab957b43a24.js"],"default"]
+b:I[86213,[],"OutletBoundary"]
+d:I[86213,[],"MetadataBoundary"]
+f:I[86213,[],"ViewportBoundary"]
+11:I[34835,[],""]
+:HL["/_next/static/css/bcbeb66b813fabe8.css","style"]
+0:{"P":null,"b":"y5EtQ_PPCKQMMa3a6dh-_","p":"","c":["","gallery",""],"i":false,"f":[[["",{"children":["gallery",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bcbeb66b813fabe8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"h-full","children":["$","body",null,{"suppressHydrationWarning":true,"className":"h-full","children":["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],["$","$L6",null,{}]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["gallery",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","gallery","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L7",null,{"Component":"$8","searchParams":{},"params":{},"promises":["$@9","$@a"]}],null,["$","$Lb",null,{"children":"$Lc"}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","dbB2JBvo8gd4blcgOEAQJ",{"children":[["$","$Ld",null,{"children":"$Le"}],["$","$Lf",null,{"children":"$L10"}],null]}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+9:{}
+a:{}
+10:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"AG2 Studio"}],["$","meta","2",{"name":"description","content":"Build LLM Enabled Agents"}]]
+c:null
