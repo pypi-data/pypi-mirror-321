@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: 102383046-topsis
+Version: 0.6
+Summary: TOPSIS implementation for best decision-making  
+Author: Navkaran Singh Randhawa
+Author-email: manveerrandhawa0055@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+Install it using pip install 102383046-topsis /n pass parameters in Topsis() function to find result use topsis.calculate() use can also use it at command line
