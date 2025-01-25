@@ -1,0 +1,12 @@
+licomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+licomp/config.py,sha256=I1ua4m-dDHYqFUIXr-ZxrAmYtAJwVmyRG77kvg95Bbc,312
+licomp/interface.py,sha256=gVuws4dhFz7Sjeg1XFI1wxPYwbH1OFcXplTQkm1SMSI,11921
+licomp/main_base.py,sha256=x5YcY5o37C7MSh0AsNb9tGIXmR59ju4XFSL4_w9uYF0,9225
+licomp/return_codes.py,sha256=y4eHZakKVpkdNxwRe3-fKek120dcdM6t-yv53N-wFqA,1758
+licomp/data/reply_schema.json,sha256=SoBXG-05AyrqSNY2GCRHjFvgLRiBeDfM0PLFNb2xKI4,1788
+licomp-0.5.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+licomp-0.5.1.dist-info/METADATA,sha256=is8Ik1GQEpQhswOeNOGs28JCiio2NUuDl4zl9i5Kip8,1353
+licomp-0.5.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+licomp-0.5.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+licomp-0.5.1.dist-info/top_level.txt,sha256=jz6VE6SGFzq9PXmEptuxpU8WFT662YDJywkbc59Temo,7
+licomp-0.5.1.dist-info/RECORD,,
