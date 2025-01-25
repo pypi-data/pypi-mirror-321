@@ -1,0 +1,35 @@
+[project]
+name = "openai-finetuner"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Daniel Tan", email = "dtch1997@users.noreply.github.com" },
+]
+dependencies = [
+    "numpy>=2.2.1",
+    "tiktoken>=0.8.0",
+    "openai>=1.59.7",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+examples = [
+    "python-dotenv>=1.0.1",
+    "ipykernel>=6.29.5",
+]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
