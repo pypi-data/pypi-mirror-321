@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: byteguard
+Version: 0.1.0
+Summary: Discord Security Bot that prevents priviliged people from destroying the server
+Author: webgtx
+License: BSD 3-Clause License
+Project-URL: Source, https://github.com/webgtx/byteguard
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: discord.py==2.4.0
+
+# ByteGuard
+
+Discord Security Bot that prevents priviliged people from destroying the server
+
+### Prerequisites
+
+1. Discord Server
+2. Discord Bot / Token 
+    - **Scopes**
+        - [x] `guilds` 
+        - [x] `bot`
+    - **Intents** 
+        - [x] Server Members 
+        - [x] Message Content
+3. Python3.9 or higher
+
+
+**.env**
+```init
+DISCORD_TOKEN=[Discord Bot Token]
+CHANNEL_ID=[Admin Channel ID]
+TIMESPAN=[Timespan for the removal reset]
+REMOVALS=[Amount of allowed removals within the timespan]
+```

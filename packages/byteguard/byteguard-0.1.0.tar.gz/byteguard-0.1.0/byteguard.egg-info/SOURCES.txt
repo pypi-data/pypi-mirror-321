@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+byteguard/__init__.py
+byteguard/bot.py
+byteguard.egg-info/PKG-INFO
+byteguard.egg-info/SOURCES.txt
+byteguard.egg-info/dependency_links.txt
+byteguard.egg-info/entry_points.txt
+byteguard.egg-info/requires.txt
+byteguard.egg-info/top_level.txt
