@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: argparse-ng
+Version: 0.0.0
+Summary: A small argparse utility
+Author-email: Antonio Cavallo <a.cavallo@cavallinux.eu>
+License: MIT
+Project-URL: Source, https://github.com/cav71/argparse-ng
+Project-URL: Issues, https://github.com/cav71/argparse-ng/issues
+Project-URL: Documentation, https://github.com/cav71/argparse-ng
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+## argparse-plus
+argparse extensions
