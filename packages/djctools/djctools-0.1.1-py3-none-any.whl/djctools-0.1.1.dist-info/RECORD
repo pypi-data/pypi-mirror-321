@@ -1,0 +1,8 @@
+djctools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djctools/module_extensions.py,sha256=k44zFXaK_U1IqE6PJkOK5Pgucwy_geJu0PFrZxNLwIA,17827
+djctools/training.py,sha256=bxDcfeCm79XxcZ0H7QwYQbgmY-MtX5wHD1vwSrTB68Y,12328
+djctools/wandb_tools.py,sha256=sUvht529LGf8L6Zym0ngmQw1ZtWa1nOA_oaVcPVwHmw,6869
+djctools-0.1.1.dist-info/METADATA,sha256=YG2lhE_UXXwqGxT3gUg3NKGdwfULJv5B8Y87m_oM5jI,7833
+djctools-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+djctools-0.1.1.dist-info/top_level.txt,sha256=ddBT49pxFGfZhIonJKHeLXwcCJLVNWX5e0-DAU5xf7w,9
+djctools-0.1.1.dist-info/RECORD,,
