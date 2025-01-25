@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sourav0407
+Version: 0.2
+Summary: A custom message module
+Home-page: https://git@github.com:Souravroy0407/mymodule.git
+Author: Sourav Roy
+Author-email: sourav.roy0407@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
