@@ -1,0 +1,2 @@
+[console_scripts]
+dir-tree-printer = dir_tree_printer.cli:main

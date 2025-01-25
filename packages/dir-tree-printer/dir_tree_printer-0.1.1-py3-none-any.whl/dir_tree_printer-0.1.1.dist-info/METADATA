@@ -1,0 +1,98 @@
+Metadata-Version: 2.4
+Name: dir-tree-printer
+Version: 0.1.1
+Summary: A simple utility to print directory structures in a tree-like format
+Project-URL: Homepage, https://github.com/NAGARAJ08/tree-printer
+Author-email: Nagaraj K <kbnagaraj18@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 NAGARAJ.K
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: directory,structure,tree,visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Tree Printer
+
+A simple Python library that helps developers generate and share their project directory structures. Perfect for documenting project layouts in GitHub READMEs, technical documentation, or when explaining project organization to other developers.
+
+## Why Tree Printer?
+
+When sharing your project on platforms like GitHub or discussing code organization with other developers, it's important to show your project's folder structure. However, manually typing out directory structures is:
+- Time-consuming
+- Error-prone
+- Hard to maintain as your project grows
+
+Tree Printer solves this by automatically generating a clean, consistent directory structure that you can instantly copy into your documentation.
+
+## Example
+
+Run:
+```bash
+dir-tree-printer /path/to/your/project
+```
+
+Get:
+```
+└── my-project
+    ├── src
+    │   └── components
+    │       ├── Header.js
+    │       └── Footer.js
+    ├── tests
+    ├── README.md
+    └── package.json
+```
+
+Now you can directly paste this into your README, documentation, or anywhere else you need to show your project structure!
+
+## Installation
+
+```bash
+pip install dir-tree-printer
+```
+
+## Usage
+
+### Command Line
+```bash
+# Basic usage
+dir-tree-printer /path/to/directory
+
+# Exclude specific folders
+dir-tree-printer /path/to/directory --exclude node_modules .git
+```
+
+### Python API
+```python
+from tree_printer import TreePrinter
+
+printer = TreePrinter()
+printer.print_structure("./my_directory")
+```
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
