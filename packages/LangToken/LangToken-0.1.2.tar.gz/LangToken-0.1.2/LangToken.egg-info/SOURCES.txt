@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+LangToken/__init__.py
+LangToken/tokenizer.py
+LangToken.egg-info/PKG-INFO
+LangToken.egg-info/SOURCES.txt
+LangToken.egg-info/dependency_links.txt
+LangToken.egg-info/top_level.txt
+image/diagram.png
+tests/__init__.py
+tests/test_tokenizer.py
