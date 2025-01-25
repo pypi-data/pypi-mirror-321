@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: Topsis-Gazal-102217174
+Version: 0.1
+Summary: A Python implementation of the TOPSIS method.
+Author: Gazal
+Author-email: 2580gazal@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
