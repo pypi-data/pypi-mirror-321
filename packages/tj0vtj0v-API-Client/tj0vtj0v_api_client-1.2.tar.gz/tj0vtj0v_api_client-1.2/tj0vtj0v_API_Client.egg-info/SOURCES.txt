@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+API_Client/__init__.py
+API_Client/api_client.py
+tj0vtj0v_API_Client.egg-info/PKG-INFO
+tj0vtj0v_API_Client.egg-info/SOURCES.txt
+tj0vtj0v_API_Client.egg-info/dependency_links.txt
+tj0vtj0v_API_Client.egg-info/requires.txt
+tj0vtj0v_API_Client.egg-info/top_level.txt
