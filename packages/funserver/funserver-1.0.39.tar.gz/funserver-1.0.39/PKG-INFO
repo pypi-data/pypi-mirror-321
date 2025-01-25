@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: funserver
+Version: 1.0.39
+Summary: funserver
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: funbuild>=1.5.11
+
+# funserver
