@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-102217223
+Version: 1.0.0
+Summary: A Python package for TOPSIS implementation
+Home-page: https://github.com/mehakkaur13/Topsis-102217223
+Author: Mehak
+Author-email: mkaur3_be22@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
