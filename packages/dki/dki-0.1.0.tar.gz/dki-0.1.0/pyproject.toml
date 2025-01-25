@@ -1,0 +1,35 @@
+[project]
+name = "dki"
+dynamic = []
+description = "docker image build and pull tools"
+authors = [
+    { name = "svtter", email = "svtter@qq.com" },
+]
+dependencies = [
+    "click>=8.1.8",
+]
+requires-python = ">=3.9"
+readme = "README.rst"
+version = "0.1.0"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+dki = "dki.cli:cli"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/dki/__init__.py"
+
+[tool.ruff]
+indent-width = 2
