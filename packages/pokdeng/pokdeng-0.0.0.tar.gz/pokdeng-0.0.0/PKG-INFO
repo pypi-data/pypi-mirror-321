@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: pokdeng
+Version: 0.0.0
+Summary: pokdeng is a package for simulating rounds of pokdeng games!
+Home-page: https://github.com/papillonbee/pokdeng
+Author: Papan Yongmalwong
+Author-email: papillonbee@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# pokdeng
+
+[pokdeng](https://pypi.org/project/pokdeng/) is a Python package for simulating rounds of pokdeng games!
+
+[Visit repository on Github](https://github.com/papillonbee/pokdeng)
