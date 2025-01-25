@@ -1,0 +1,7 @@
+include cyhdbscan/requirements.txt
+include cyhdbscan/thirdparty.json
+include cyhdbscan/README.MD
+include cyhdbscan/uiev.pyx
+include cyhdbscan/uiev_compile.py
+include cyhdbscan/hdbscanner.hpp
+include cyhdbscan/LICENSE
