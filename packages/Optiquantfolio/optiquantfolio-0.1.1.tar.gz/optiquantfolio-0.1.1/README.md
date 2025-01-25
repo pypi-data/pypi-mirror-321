@@ -1,0 +1,167 @@
+```markdown
+# Optiquantfolio
+
+Optiquantfolio is a comprehensive library for portfolio optimization. It includes various models such as CAPM, Treynor Ratio, Minimum Variance Portfolio, Robust Optimization, Hierarchical Risk Parity, Genetic Algorithm, and Stochastic Control Models.
+
+## Features
+
+- **CAPM**: Calculate expected returns using the Capital Asset Pricing Model.
+- **Treynor Ratio**: Measure the risk-adjusted return of a portfolio.
+- **Minimum Variance Portfolio**: Optimize a portfolio to minimize variance.
+- **Hierarchical Risk Parity**: Allocate assets using hierarchical clustering.
+- **Genetic Algorithm**: Optimize portfolios using genetic algorithms.
+- **Stochastic Control**: Optimize portfolios using stochastic control techniques.
+- **Robust Optimization**: Perform robust portfolio optimization with uncertainty handling.
+
+## Installation
+
+To install Optiquantfolio, you can use pip:
+
+```bash
+pip install optiquantfolio
+```
+
+## Usage
+
+Here are some examples of how to use Optiquantfolio for different optimization methods:
+
+### CAPM
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT']).
+- `risk_free_rate`: Risk-free rate (e.g., 0.01).
+- `market_ticker`: Market index ticker (e.g., '^GSPC').
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Expected return for the portfolio.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='CAPM', tickers=['AAPL', 'MSFT'], risk_free_rate=0.01, market_ticker='^GSPC', start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+### Treynor Ratio
+
+**Input:**
+- `portfolio_return`: Return of the portfolio (e.g., 0.05).
+- `risk_free_rate`: Risk-free rate (e.g., 0.01).
+- `portfolio_beta`: Beta of the portfolio (e.g., 1.2).
+
+**Output:**
+- Treynor ratio for the portfolio.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='Treynor', portfolio_return=0.05, risk_free_rate=0.01, portfolio_beta=1.2)
+print(result)
+```
+
+### Minimum Variance Portfolio
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT', 'GOOG', 'AMZN']).
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Weights for the minimum variance portfolio.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='MVP', tickers=['AAPL', 'MSFT', 'GOOG', 'AMZN'], start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+### Hierarchical Risk Parity
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT', 'GOOG', 'AMZN']).
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Cluster order for hierarchical risk parity.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='HRP', tickers=['AAPL', 'MSFT', 'GOOG', 'AMZN'], start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+### Genetic Algorithm
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT', 'GOOG', 'AMZN']).
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Optimized weights for the portfolio.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='GA', tickers=['AAPL', 'MSFT', 'GOOG', 'AMZN'], start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+### Stochastic Control
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT', 'GOOG', 'AMZN']).
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Optimized portfolio based on stochastic control techniques.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='Stochastic', tickers=['AAPL', 'MSFT', 'GOOG', 'AMZN'], start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+### Robust Optimization
+
+**Input:**
+- `tickers`: List of stock tickers (e.g., ['AAPL', 'MSFT', 'GOOG', 'AMZN']).
+- `start_date`: Start date for data fetching (e.g., '2020-01-01').
+- `end_date`: End date for data fetching (e.g., '2023-01-01').
+
+**Output:**
+- Optimized weights for the robust portfolio.
+
+```python
+from optiquantfolio import optimize_portfolio
+
+# Example usage
+result = optimize_portfolio(method='Robust', tickers=['AAPL', 'MSFT', 'GOOG', 'AMZN'], start_date='2020-01-01', end_date='2023-01-01')
+print(result)
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For more information, please contact [Jotiraditya Banerjee](mailto:joti.ban.2710@gmail.com).
+```
