@@ -1,0 +1,3 @@
+include NChess/core/*.pyd
+include NChess/core/*.so
+recursive-include NChess/core/src *.h 
