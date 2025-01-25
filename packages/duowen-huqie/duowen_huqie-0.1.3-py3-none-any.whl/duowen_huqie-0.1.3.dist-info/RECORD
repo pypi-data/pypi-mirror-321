@@ -1,0 +1,14 @@
+duowen_huqie/__init__.py,sha256=mYYOIN05WAvMnJXPvggby7Mjo_tOT48FUFD1ugrkPMs,2171
+duowen_huqie/nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duowen_huqie/nlp/query.py,sha256=T3DXzW9ox2vLTIOqXYu_ObNUe7lFjcyyJH5Mi5kbCf0,10477
+duowen_huqie/nlp/rag_tokenizer.py,sha256=QJ243ZgJ5caIPmJITYj_bGCfEsJcw0MqfaZv9tk-6fk,12814
+duowen_huqie/nlp/synonym.py,sha256=0X-lrSBxQ_VPZrZBnuDbcUZzGDhTqHHCQlHZPUTEHPc,2203
+duowen_huqie/nlp/term_weight.py,sha256=B4UU08I6xtiZ7CUpVdP1riiS7_wM_fbAW_XYPJvwL68,10927
+duowen_huqie/res/huqie.txt,sha256=wLGXabqG2x_V1qoU23_74sr8w5rAsDAD8K3YvJKbqwo,8306137
+duowen_huqie/res/huqie.txt.trie,sha256=MqshMESvSu5YxGtL-k0rYbp0DOjIlLuW6A-tAPFFvMQ,54775939
+duowen_huqie/res/ner.json,sha256=fSZvbPkk_AauLyaPnO-Zg6vKKKbRRtEypLJG1Z3RChQ,273074
+duowen_huqie/res/synonym.json,sha256=EZ34cFaIMRGsuDJivA433gNDo689UpH8DvK6_mxTzsA,186
+duowen_huqie/utils.py,sha256=OKhOAx4pm3FEtLyhcPvSD-9XlmoY9pGLa4ODdp82toA,2388
+duowen_huqie-0.1.3.dist-info/METADATA,sha256=_cnNCzEPZG3-teYeRwY6tmAMVhuOXt2IAHz8idSwc_Y,602
+duowen_huqie-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+duowen_huqie-0.1.3.dist-info/RECORD,,
