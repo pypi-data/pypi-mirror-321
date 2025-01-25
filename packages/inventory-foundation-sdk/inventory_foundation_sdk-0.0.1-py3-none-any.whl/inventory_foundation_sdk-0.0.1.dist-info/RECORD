@@ -1,0 +1,11 @@
+inventory_foundation_sdk/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+inventory_foundation_sdk/_modidx.py,sha256=jVszq6tI-W7oB0T6cs4VhbDOj3mok0WwCWwwhXNd4l0,1027
+inventory_foundation_sdk/core.py,sha256=f27lPATA1iQQF3zqhvMMeD__Y4deHOhnXKQJSJNkJVU,183
+inventory_foundation_sdk/db_mgmt.py,sha256=BXusvc0yQ-P5vNIjGXHZMhTni5T4Y5u6tejc-Sn5wNc,901
+inventory_foundation_sdk/test.py,sha256=x51Gvw8omiAjT5G9n6QrOscUFmfwUa51R_odcWGF78k,5094
+inventory_foundation_sdk-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+inventory_foundation_sdk-0.0.1.dist-info/METADATA,sha256=Y-bIQ4xeJIVTQzw4tMDFpObMqMsAw4RXMhOf_b8MTsY,2494
+inventory_foundation_sdk-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+inventory_foundation_sdk-0.0.1.dist-info/entry_points.txt,sha256=WpihgHk1N7_T4JBB4XfwS5p_XZiN-IFu0a4xf4r5J8Y,70
+inventory_foundation_sdk-0.0.1.dist-info/top_level.txt,sha256=m2l8bPAH7IsY1GO0Tu1ZBu-J60K_NDpwZX6lSTpEAPs,25
+inventory_foundation_sdk-0.0.1.dist-info/RECORD,,
