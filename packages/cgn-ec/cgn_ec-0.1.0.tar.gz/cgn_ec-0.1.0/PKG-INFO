@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: cgn-ec
+Version: 0.1.0
+Summary: Python Client library to interact with cgn-ec-pro API
+Author: CGN Support
+Author-email: cgn-support@veesix-networks.co.uk
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# cgn-ec-python
+Python client library to interact with cgn-ec and cgn-ec-pro
+
