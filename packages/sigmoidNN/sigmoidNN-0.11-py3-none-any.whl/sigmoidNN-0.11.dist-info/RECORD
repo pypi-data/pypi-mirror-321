@@ -1,0 +1,9 @@
+sigmoidNN/__init__.py,sha256=9fGWvSMc8mxpRdvJEEiuft4C-FZbM1zctDaz56NOKfY,128
+sigmoidNN/loader.py,sha256=0zdpOZnWNbS4nBN4mA0-Si7MDUKW-rDeExOo4UChLMU,2263
+sigmoidNN/network.py,sha256=IKdYlURPoAeXhTF3nCZapilBJyga8LMWgt4c4RbhmbU,9622
+sigmoidNN/data/mnist.pkl.gz,sha256=8Ru55B1sG2wSSqOP1gVJe9z-LuCM98K7WkGrXXWeFBY,17051982
+sigmoidNN-0.11.dist-info/LICENCE,sha256=5c26u-GuYOjqzUDQMGGCYpHi9lRHuEZvG-jajFEklaI,34817
+sigmoidNN-0.11.dist-info/METADATA,sha256=cEqBIzSFmDu7S-qB9qxL6T2C2wRJB63-0ihmTbaH9OQ,6983
+sigmoidNN-0.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sigmoidNN-0.11.dist-info/top_level.txt,sha256=usF-ymSaD4acuXzFYJ3TzANboDnaOAcTe_gnwPwHR44,10
+sigmoidNN-0.11.dist-info/RECORD,,
