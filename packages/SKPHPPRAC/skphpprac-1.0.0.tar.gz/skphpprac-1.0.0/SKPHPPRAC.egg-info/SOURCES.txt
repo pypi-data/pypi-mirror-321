@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+SKPHPPRAC.egg-info/PKG-INFO
+SKPHPPRAC.egg-info/SOURCES.txt
+SKPHPPRAC.egg-info/dependency_links.txt
+SKPHPPRAC.egg-info/top_level.txt
+skphpprac/__init__.py
+skphpprac/prac1.py
+skphpprac/prac2.py
