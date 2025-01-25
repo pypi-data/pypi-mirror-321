@@ -1,0 +1,5 @@
+setup.py
+azoni.egg-info/PKG-INFO
+azoni.egg-info/SOURCES.txt
+azoni.egg-info/dependency_links.txt
+azoni.egg-info/top_level.txt
