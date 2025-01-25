@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.black]
+line-length = 88
+exclude = "test/*"
+preview = true
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: integration test, which can run longer than unit tests and have side effects."
+]

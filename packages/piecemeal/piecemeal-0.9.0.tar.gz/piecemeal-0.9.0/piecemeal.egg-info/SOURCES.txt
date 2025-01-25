@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+piecemeal/__init__.py
+piecemeal/base.py
+piecemeal/decorators.py
+piecemeal/manager.py
+piecemeal/py.typed
+piecemeal.egg-info/PKG-INFO
+piecemeal.egg-info/SOURCES.txt
+piecemeal.egg-info/dependency_links.txt
+piecemeal.egg-info/requires.txt
+piecemeal.egg-info/top_level.txt
+test/__init__.py
+test/test_plugin.py
+test/test_pluginmanager.py
