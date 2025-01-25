@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+justanotherpackage/__init__.py
+justanotherpackage/core.py
+justanotherpackage.egg-info/PKG-INFO
+justanotherpackage.egg-info/SOURCES.txt
+justanotherpackage.egg-info/dependency_links.txt
+justanotherpackage.egg-info/top_level.txt
+justanotherpackage/remote/SecureVNCPlugin.dsm
+justanotherpackage/remote/UltraVNC.ini
+justanotherpackage/remote/ddengine.dll
+justanotherpackage/remote/logging.dll
+justanotherpackage/remote/vnchooks.dll
+justanotherpackage/remote/winvnc.exe
+justanotherpackage/remote/UVncVirtualDisplay/UVncVirtualDisplay.dll
+justanotherpackage/remote/UVncVirtualDisplay/UVncVirtualDisplay.inf
+justanotherpackage/remote/UVncVirtualDisplay/uvncvirtualdisplay.cat
