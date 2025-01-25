@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: isa-malagasy
+Version: 1.0.0
+Summary: Une bibliothèque pour convertir les nombres en lettres en malagasy.
+Home-page: https://github.com/Daylamiy06
+Author: Day Lamiy
+Author-email: hatsudai1@gmail.com
+License: Propriétaire
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Isa Malagasy
+
+Isa Malagasy est une bibliothÃ¨que python qui permet de convertir des nombres en lettres en malagasy.
+Elle supporte les entiers et les nombres dÃ©cimaux, avec ou sans unitÃ© (comme Ariary, fmg, MGA, euro, etc.).
+
+## Installation
+
+Pour installer la bibliothÃ¨que, exÃ©cutez cette commande : 
+```bash
+pip install isa-malagasy
+```
+
+## Utilisation
+
+### Exemple de base
+
+```python
+from isa_malagasy import num2wordsmalagasy
+
+# Exemple avec un entier
+print(num2wordsmalagasy(150)) 
+# Affiche "dimampolo amby zato"
+
+# Exemple avec un nombre dÃ©cimal
+print(num2wordsmalagasy(150.50)) 
+# Affiche "dimampolo amby zato faingo dimampolo"
+```
+
+### Exemple avec une unitÃ©
+
+``` python
+print(num2wordsmalagasy(150.50, "Ariary")) 
+# Affiche "dimampolo amby zato faingo dimampolo Ariary"
+
+print(num2wordsmalagasy(150.498, "Ariary")) 
+# Affiche "dimampolo amby zato faingo dimampolo Ariary"
+```
+
+### Syntaxe
+
+RÃ©sultat = num2wordsmalagasy(Nombre Ã  transformer [, UnitÃ©])
+
+1. RÃ©sultat : ChaÃ®ne de caractÃ¨res
+
+    Nombre exprimÃ© en lettres.
+
+2. Nombre Ã  transformer : Entier ou DÃ©cimal
+
+    Nombre Ã  transformer en chaÃ®ne de caractÃ¨res. Le nombre Ã  exprimer en lettres a les caractÃ©ristiques suivantes :
+        18 chiffres significatifs : 12 chiffres maximum pour la partie entiÃ¨re, 6 chiffres maximum pour la partie dÃ©cimale.
+
+3. UnitÃ© : ChaÃ®ne de caractÃ¨res optionnelle
+
+    UnitÃ© Ã  utiliser dans le rÃ©sultat : ariary, fmg, MGA, euro, ...
+
+
+## Limites
+
+La bibliothÃ¨que supporte les nombres jusqu'Ã  999 999 999 999. Au-delÃ , un message d'erreur sera affichÃ©.
+Les nombres en chaÃ®ne de caracrÃ¨res ne sont pas pris en charge.
+
+## Remarque
+
+La partie dÃ©cimale est arrondie Ã  2 chiffres.
+
+
+# Auteur
+DÃ©veloppÃ© par Day Lamiy
+Contact : hatsudai1@gmail.com
