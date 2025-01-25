@@ -1,0 +1,7 @@
+setup.py
+my_module/__init__.py
+my_module/module.py
+mymo.egg-info/PKG-INFO
+mymo.egg-info/SOURCES.txt
+mymo.egg-info/dependency_links.txt
+mymo.egg-info/top_level.txt
