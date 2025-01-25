@@ -1,0 +1,15 @@
+[project]
+name="Afine"
+version="0.0.1"
+authors=[{name="Psyche Halo", email="Psyche@WinsGod.com"},]
+description="Afine is a gradient based PyTorch optimizer. "
+readme = "README.md"
+requires-python=">=3.8"
+classifiers=["Programming Language :: Python :: 3", "Operating System :: OS Independent",]
+dependencies=["torch >= 1.7.0",]
+keywords = ["affine", "Afine", "PyTorch", "optimizer", "AI", "neural", "NN",]
+[project.urls]
+Homepage="https://github.com/PsycheHalo/Afine"
+Issues="https://github.com/PsycheHalo/Afine/issues"
+[metadata]
+license_expression = "MPL-2.0"
