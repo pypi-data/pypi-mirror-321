@@ -1,0 +1,10 @@
+gwtransport1d/__init__.py,sha256=BYoXGT96glBr8SNfRxtVpzH-dUBF8UOW8DEKTP00nDM,98
+gwtransport1d/advection.py,sha256=YEf6ttdp8AEOZSkKqABlPqYd0E8CH8BukBSCtUOgG5g,4171
+gwtransport1d/deposition.py,sha256=7d5O8bpvV6OfIAsbo9hJWPC78AQCWoFWNRLCIovjq9k,11210
+gwtransport1d/gamma.py,sha256=m6Oxhf0t0Q0ke7qBHAe9ytq5NJAfM5FDTp_0O0tA0j0,6980
+gwtransport1d/residence_time.py,sha256=ZGI5eigoqUJtyZJ49IPGXvf5bSo9zwWJgWpZqX2cUzE,3747
+gwtransport1d/utils.py,sha256=GWTusMNTcQp7X6MnAf-fntKDLFUMdz8n__Pcd05p4FY,2737
+gwtransport1d-0.4.0.dist-info/METADATA,sha256=6iWV-2oeE29-k9Y1SYHMaD53yDHVEd5AbcwY6JaPK9w,42675
+gwtransport1d-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gwtransport1d-0.4.0.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+gwtransport1d-0.4.0.dist-info/RECORD,,
