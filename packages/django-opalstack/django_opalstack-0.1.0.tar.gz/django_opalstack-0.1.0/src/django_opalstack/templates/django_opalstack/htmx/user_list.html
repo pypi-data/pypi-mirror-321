@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse">
+  <tr>
+    <th style="width: 50%">{% trans "OS users" %}</th>
+    <th style="width: 50%">{% trans "Applications" %}</th>
+  </tr>
+  {% if osusers %}
+    {% for osuser in osusers %}
+      <tr>
+        <td>
+          <details>
+            <summary>{{ osuser.name }}</summary>
+            <ul>
+              <li>{% trans "ID" %}: {{ osuser.id }}</li>
+              <li>{% trans "State" %}: {{ osuser.state }}</li>
+              <li>{% trans "Ready" %}: {{ osuser.ready }}</li>
+            </ul>
+          </details>
+        </td>
+        <td>
+          <a
+            href="#"
+            hx-get="{% url 'django_opalstack:app_list' pk=object.id %}?server_id={{ osuser.server }}&osuser_name={{ osuser.name }}"
+            hx-swap="outerHTML"
+            hx-indicator="#opal-indicator">
+            {% trans "Get applications" %}
+          </a>
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+    <tr><td>{% trans "No OS Users yet" %}</td><td></td></tr>
+  {% endif %}
+</table>

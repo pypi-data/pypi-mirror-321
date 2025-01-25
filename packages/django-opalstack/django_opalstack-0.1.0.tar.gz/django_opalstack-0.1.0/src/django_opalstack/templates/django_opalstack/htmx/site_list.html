@@ -1,0 +1,51 @@
+{% load i18n %}
+
+<table style="width: 50%; border: 1px solid black; border-collapse: collapse">
+  <tr><th>{% trans "Sites" %}</th></tr>
+  {% if opal_sites %}
+    {% for opal_site in opal_sites %}
+      <tr>
+        <td>
+          <details>
+            <summary>
+              {{ opal_site.name }}
+            </summary>
+            <ul>
+              <li>{% trans "ID" %}: {{ opal_site.id }}</li>
+              <li>
+                {% trans "Domains" %}:
+                <ul>
+                  {% for domain in opal_site.domains %}
+                    <li>{{ domain.name }}</li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>{% trans "Primary Domain" %}: {{ opal_site.primary_domain.name }}</li>
+              <li>
+                {% trans "App &rarr; URI" %}:
+                <ul>
+                  {% for route in opal_site.routes %}
+                    <li><a
+                      href="#"
+                      hx-get="{% url 'django_opalstack:app_detail' pk=object.id %}?app_id={{ route.app }}"
+                      hx-swap="outerHTML"
+                      hx-indicator="#opal-indicator">
+                      {{ route.app }}
+                    </a> &rarr; {{ route.uri }}</li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>{% trans "Disabled" %}: {{ opal_site.disabled }}</li>
+              <li>{% trans "Generate LE" %}: {{ opal_site.generate_le }}</li>
+              <li>{% trans "Redirect" %}: {{ opal_site.redirect }}</li>
+              <li>{% trans "State" %}: {{ opal_site.state }}</li>
+              <li>{% trans "Ready" %}: {{ opal_site.ready }}</li>
+            </ul>
+          </details>
+        </td>
+      </tr>
+    {% endfor %}
+  {% else %}
+    <tr><td>{% trans "No sites yet" %}</td></tr>
+  {% endif %}
+</table>
