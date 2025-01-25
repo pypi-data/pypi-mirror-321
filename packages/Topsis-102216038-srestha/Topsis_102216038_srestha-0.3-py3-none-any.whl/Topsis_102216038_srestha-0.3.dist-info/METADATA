@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: Topsis-102216038-srestha
+Version: 0.3
+Summary: A package to perform TOPSIS analysis
+Home-page: https://github.com/SresthaJain/TOPSIS-PACKAGE-
+Author: Srestha jain
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
