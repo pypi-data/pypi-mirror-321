@@ -1,0 +1,14 @@
+c2fj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+c2fj/c2fj_main.py,sha256=Rw4uhpDwJ5wbXOb1-M-BrB25dmRlkaurBd8l_DNUdh8,6855
+c2fj/compilation_files/Makefile_single_c_generic,sha256=Zad9LgeVTisyQPZLhxhDLbdHZunv8OR0fNcnkfh0Adk,309
+c2fj/compilation_files/c2fj_init.c,sha256=2CA3HNRDGCdm07k95zhkHefxVYuxjf-V8ikzCz4SCQE,2466
+c2fj/compilation_files/include/c2fj_syscall.h,sha256=Kz-TmvHwFUS6VkqD1Jv2aw_CNt82GszlqRdLQY5SbY4,1285
+c2fj/compilation_files/linker_script.ld,sha256=liPoW-q7RnN08fhXZtceoFwnR4Vs7-UGcygfdLmEfBo,2020
+c2fj/compilation_files/riscvlib.fj,sha256=t2sIA-FeWKxKghNFmLf2HzpYx7ExrwtHukq5-Ks7p8E,44223
+c2fj/riscv_instructions.py,sha256=TvB6Fw3hwZR79JL8ihPKBCcyj3SKCDzn81F4NMofUnA,14816
+c2fj/riscv_to_fj.py,sha256=wL49w5K17eCqNKhTz_t5sKdiZvrzz92r32J2htP_4H4,4578
+c2fj-1.0.0.dist-info/LICENSE,sha256=eDW8fZfoeJtvS6120kv6PiHIj7pnMURR_u4e7pHuD1c,1295
+c2fj-1.0.0.dist-info/METADATA,sha256=XVkkoddm1flYJFIqUDVbivjy06W4ctNI_GhZylCu9Lg,10963
+c2fj-1.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+c2fj-1.0.0.dist-info/entry_points.txt,sha256=MbeBUd5pNEuKIdHy6H29Oe_FVisFnEKsQF6OCM59SM0,44
+c2fj-1.0.0.dist-info/RECORD,,

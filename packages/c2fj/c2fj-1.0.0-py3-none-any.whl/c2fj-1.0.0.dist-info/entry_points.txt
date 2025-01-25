@@ -1,0 +1,3 @@
+[console_scripts]
+c2fj=c2fj.c2fj_main:main
+
