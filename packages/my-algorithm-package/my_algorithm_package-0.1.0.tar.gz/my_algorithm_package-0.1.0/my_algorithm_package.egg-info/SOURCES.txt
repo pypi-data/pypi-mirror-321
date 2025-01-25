@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+my_algorithm/__init__.py
+my_algorithm/swap.py
+my_algorithm_package.egg-info/PKG-INFO
+my_algorithm_package.egg-info/SOURCES.txt
+my_algorithm_package.egg-info/dependency_links.txt
+my_algorithm_package.egg-info/top_level.txt
+tests/test_swap.py
