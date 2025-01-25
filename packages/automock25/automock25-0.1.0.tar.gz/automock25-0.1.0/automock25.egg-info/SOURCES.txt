@@ -1,0 +1,5 @@
+setup.py
+automock25.egg-info/PKG-INFO
+automock25.egg-info/SOURCES.txt
+automock25.egg-info/dependency_links.txt
+automock25.egg-info/top_level.txt
