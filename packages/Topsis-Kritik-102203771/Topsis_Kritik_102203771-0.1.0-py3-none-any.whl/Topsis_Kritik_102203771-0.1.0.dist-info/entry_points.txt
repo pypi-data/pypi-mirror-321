@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-kritik = topsis_pkg.topsis:main

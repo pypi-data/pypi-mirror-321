@@ -1,0 +1,68 @@
+Metadata-Version: 2.2
+Name: Topsis-Kritik-102203771
+Version: 0.1.0
+Summary: TOPSIS implementation for multiple-criteria decision analysis
+Home-page: https://github.com/krbok/topsis
+Author: Kritik
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# TOPSIS Implementation
+
+A Python package that implements the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method.
+
+## Installation
+
+```bash
+pip install Topsis-YourName-YourRollNumber
+```
+
+## Usage
+
+### Command Line Interface
+
+```bash
+topsis-yourname input.csv "1,1,1,2" "+,+,-,+" output.csv
+```
+
+### Parameters
+
+1. Input file (`input.csv`):
+   - Must contain three or more columns
+   - First column is the object/variable name
+   - From 2nd to last columns contain numeric values only
+
+2. Weights (`"1,1,1,2"`):
+   - Comma-separated numeric values
+   - Number of weights must match number of criteria
+
+3. Impacts (`"+,+,-,+"`):
+   - Comma-separated '+' or '-' symbols
+   - Number of impacts must match number of criteria
+   - '+' indicates benefit criteria
+   - '-' indicates cost criteria
+
+4. Result file (`output.csv`):
+   - Contains all columns from input file
+   - Adds two additional columns:
+     - Topsis Score
+     - Rank
+
+### Python Usage
+
+```python
+from topsis_pkg import topsis
+
+topsis("input.csv", "1,1,1,2", "+,+,-,+", "output.csv")
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
