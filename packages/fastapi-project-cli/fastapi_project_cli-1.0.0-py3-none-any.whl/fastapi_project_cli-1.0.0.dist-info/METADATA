@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastapi-project-cli
+Version: 1.0.0
+Summary: A CLI tool to generate file structure for FastAPI projects.
+Home-page: UNKNOWN
+Author: Sadegh Ranjbar
+Author-email: sadegh.r1404@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
