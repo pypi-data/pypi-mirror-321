@@ -1,0 +1,14 @@
+web_novel_scrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_novel_scrapper/__main__.py,sha256=lKuUChJis-4Px9T0KpIHeRetjCIL58j6F4pFc7tSsn8,17232
+web_novel_scrapper/decode.py,sha256=dqGv_8nFSKwO6GBj3jhaO9SQeLHeBjDzoV1C_YcN40k,5085
+web_novel_scrapper/file_manager.py,sha256=e0UB3APaFrwjAEqVkc978lAk8spb5r84_bE60hqapro,11370
+web_novel_scrapper/logger_manager.py,sha256=8bdWbMwarLHNBXSh0fYI_SG0PcxeICzgIlz45Ggk53o,1974
+web_novel_scrapper/novel_scrapper.py,sha256=wwKx4xoUg0aPWnHeQczjaX8C0bURg4kWA8D-0yldnlk,28592
+web_novel_scrapper/request_manager.py,sha256=IK5eufHWS3erZjXLxvq7ywy-mCjRUJs8EjuCAR8l70k,6450
+web_novel_scrapper/utils.py,sha256=vq5ROuPv04k3MhbksTe0ni_yP0i_a7T_33mkBB1DUbQ,2076
+web_novel_scrapper/version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+web_novel_scrapper/decode_guide/decode_guide.json,sha256=Q4v-OZh_1MwdrFxDDVvj8T3evW3zzbSapRaGwFCdnX8,5425
+web_novel_scrapper-1.0.1.dist-info/METADATA,sha256=VJAjuF0Tcm1YD2O7fYxAxA3BB6Mi3p9imr59kvPQysQ,8372
+web_novel_scrapper-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+web_novel_scrapper-1.0.1.dist-info/entry_points.txt,sha256=rKU_Ac6v0uYcMubdHU2aRSGN843EXXs7mA-ARq4_bGI,71
+web_novel_scrapper-1.0.1.dist-info/RECORD,,
