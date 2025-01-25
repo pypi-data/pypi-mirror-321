@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+102203201_simrat.egg-info/PKG-INFO
+102203201_simrat.egg-info/SOURCES.txt
+102203201_simrat.egg-info/dependency_links.txt
+102203201_simrat.egg-info/entry_points.txt
+102203201_simrat.egg-info/requires.txt
+102203201_simrat.egg-info/top_level.txt
+simrat/__init__.py
+simrat/__main__.py
