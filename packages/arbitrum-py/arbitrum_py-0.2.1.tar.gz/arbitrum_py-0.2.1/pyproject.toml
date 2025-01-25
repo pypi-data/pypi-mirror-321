@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arbitrum-py"
+version = "0.2.1"
+description = "Python library for client-side interactions with Arbitrum"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Mert Köklü", email = "mert@yk-labs.com"}
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+dependencies = [
+    "web3>=6.3.0,<=6.15",
+    "rlp==3.0.0",
+    "eth-utils==2.3.1",
+    "python-dotenv==1.0.0",
+    "eth-typing>=3.5.2,<4",
+    "eth-abi>=5.1.0,<6",
+    "pyyaml==6.0.1",
+    "addict==2.4.0",
+    "py-evm<0.11,>=0.10.0b6"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.4,<8",
+    "mock==5.1.0",
+    "mypy==1.8.0",
+    "types-setuptools"
+]
+
+[project.urls]
+homepage = "https://github.com/justmert/arbitrum-python-sdk"
+documentation = "https://arbitrum-python-sdk.readthedocs.io"
+repository = "https://github.com/justmert/arbitrum-python-sdk"
