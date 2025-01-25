@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: Topsis-MedhaSharma-102217238
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: requires-dist
