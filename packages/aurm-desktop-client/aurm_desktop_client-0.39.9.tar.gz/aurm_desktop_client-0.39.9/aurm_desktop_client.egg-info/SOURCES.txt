@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aurm_desktop_client.egg-info/PKG-INFO
+aurm_desktop_client.egg-info/SOURCES.txt
+aurm_desktop_client.egg-info/dependency_links.txt
+aurm_desktop_client.egg-info/top_level.txt
+tests/__init__.py
+tests/module1.py
