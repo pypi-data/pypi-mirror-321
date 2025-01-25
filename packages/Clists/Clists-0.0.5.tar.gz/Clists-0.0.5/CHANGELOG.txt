@@ -1,0 +1,10 @@
+Change Log
+===========
+
+0.0.5 (30/11/2019)
+-------------------
+- Initial plan to release: May 2020.
+- Made OS independent
+- Removed 'os' requirements
+- Changed MANIFEST.in to include all subdirs
+- Made bug fixes to v0.0.4
