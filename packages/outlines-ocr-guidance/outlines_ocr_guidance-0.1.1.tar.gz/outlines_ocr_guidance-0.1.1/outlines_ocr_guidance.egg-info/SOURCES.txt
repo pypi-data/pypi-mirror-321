@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+outlines_ocr_guidance/__init__.py
+outlines_ocr_guidance.egg-info/PKG-INFO
+outlines_ocr_guidance.egg-info/SOURCES.txt
+outlines_ocr_guidance.egg-info/dependency_links.txt
+outlines_ocr_guidance.egg-info/top_level.txt
