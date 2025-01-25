@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+tonch/__init__.py
+tonch.egg-info/PKG-INFO
+tonch.egg-info/SOURCES.txt
+tonch.egg-info/dependency_links.txt
+tonch.egg-info/not-zip-safe
+tonch.egg-info/top_level.txt
