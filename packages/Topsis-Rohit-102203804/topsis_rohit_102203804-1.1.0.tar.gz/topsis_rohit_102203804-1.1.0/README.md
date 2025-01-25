@@ -1,0 +1,102 @@
+# Topsis-Rohit-102203804
+
+A Python package implementing the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) method for multi-criteria decision making. This package helps compute rankings for alternatives based on their proximity to ideal best and worst solutions.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install Topsis-Rohit-102203804
+```
+
+Install required dependencies:
+
+```bash
+pip install pandas numpy pyexcel
+```
+
+## Features
+
+- Compute TOPSIS scores and rankings for alternatives
+- Support for custom weights and impacts for decision criteria
+- Export results to CSV file
+- Comprehensive input validation
+- Both command-line and programmatic usage
+- Support for CSV and Excel input files
+
+## Usage
+
+### Command Line Interface
+
+```bash
+topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+```
+
+Parameters:
+1. `InputDataFile`: Path to input dataset (CSV/XLSX)
+2. `Weights`: Comma-separated criterion weights (e.g., "1,2,3")
+3. `Impacts`: Comma-separated criterion impacts ('+' for maximize, '-' for minimize)
+4. `ResultFileName`: Output file path for results
+
+Example:
+```bash
+topsis data.csv "1,1,1,1,1" "+,+,-,+,-" result.csv
+```
+
+### Python Package Usage
+
+```python
+from topsis_rohit_102203804.topsis import topsis
+
+# Perform TOPSIS analysis
+topsis("input.csv", [1,1,1,1,1], ['+','+','-','+','-'], "output.csv")
+```
+
+## Input Data Format
+
+### File Requirements
+- Must contain at least 3 columns
+- First column: Names of alternatives
+- Columns 2 onwards: Numeric values for criteria
+
+Example Input CSV:
+```
+Alternative,Criterion1,Criterion2,Criterion3
+A1,250,16,12
+A2,200,18,11
+A3,180,20,10
+```
+
+## Output Format
+
+The package generates a CSV file with the original data plus two additional columns:
+- Topsis Score: Calculated similarity to ideal solution
+- Rank: Final ranking of alternatives
+
+## Error Handling
+
+The package validates:
+- Number of command-line arguments
+- File existence and readability
+- Minimum column requirement (3 or more)
+- Numeric values in criteria columns
+- Matching counts of weights, impacts, and criteria
+- Valid impact symbols (+ or -)
+- Proper formatting of weights and impacts (comma-separated)
+
+## Prerequisites
+
+- Python 3.6 or higher
+- Dependencies:
+  - pandas
+  - numpy
+  - pyexcel
+
+## License
+
+MIT License
+
+## Author
+
+Rohit ([GitHub Profile](https://github.com/therohitsingla))
