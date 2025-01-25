@@ -1,0 +1,10 @@
+__tests__/__init__.py,sha256=r3A2yIpxyysqDAj16h-SlsBvrbhdjYAGivMDabz3ajk,42
+__tests__/test_client.py,sha256=1ny3oFFDa_XWdxOsQrfVYSPNpZgrBDe6q7p0vm_FO38,7295
+lulu_api/__init__.py,sha256=y9ixDYTbuknGqjpRAT3Ae2LObgqSMFfaG78MU6RtUpY,519
+lulu_api/client.py,sha256=5oGyHpf9ccofVUQmo82fSL8qDobRbpJiXJ4_MC9iELc,9815
+lulu_api/exceptions.py,sha256=JuMW8RzOtNdScI3nKh8GY8on2iNTA2LxwMyfR9AUDEE,287
+lulu_api/models.py,sha256=hwtDAffO9Zo44r8YlQWP6o7hXdze4gMIswtUu7kf14Q,5654
+lulu_api-0.1.1.dist-info/METADATA,sha256=5M-YFoT0hFnVHocvP0MMGQgQSlvCQxdsaFRfaz6MOKI,353
+lulu_api-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+lulu_api-0.1.1.dist-info/top_level.txt,sha256=xJKaA4taTOvrTFM1_Oraf998HoB8hGP05YHby-CJZOM,19
+lulu_api-0.1.1.dist-info/RECORD,,
