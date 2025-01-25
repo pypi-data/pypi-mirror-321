@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: douroucoulis
+Version: 0.1.3
+Summary: INformation-Theoretic model selection, multimodel inference, Machine Learning algorithms.
+Home-page: https://github.com/douroucoulis-fr/douroucoulisdotpie
+Author: Juan Pablo Perea-Rodriguez, Ph.D.
+Author-email: douroucoulis-fr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: sweetviz
+Requires-Dist: douroucoulisay
+Requires-Dist: xgboost
+
+douroucoulis
+douroucoulis is a fun and practical library designed to help with model selection and building predictive models using the latest machine learning algorithms. It follows an Information-Theoretic framework, mainly focused on AIC-based model selection, and includes functionality for a variety of data science tasks like data exploration, model evaluation, and hyperparameter optimization.
+
+This library is specifically helpful when you need to perform multi-model inference and use an ensemble of best-ranked models for more accurate estimates. It provides a complete pipeline from data cleaning to model selection and evaluation.
+
+Features
+General Workflow
+Data Cleaning – Impute missing values, explore relationships between variables, and clean the dataset.
+Data Exploration – Visualize data and identify important relationships using heatmaps.
+Model Selection – Use AIC-based model selection to compare multiple models and find the best-fitting ones.
+Cross-validation – Assess model performance using cross-validation and tune hyperparameters.
+Model Averaging – Calculate model-averaged estimates for better predictive performance.
+Key Functions
+douroucoulis.instructions()
+Produces step-by-step instructions to guide you through the entire modeling process.
+
+douroucoulis.test_dataset(n_samples, n_features, n_informative, random_state, regression)
+Generates a test dataset for exercises. Set regression=True for regression tasks, otherwise, it creates a classification dataset.
+
+douroucoulis.check_data(data)
+Checks the dataset for missing values and provides feedback.
+
+douroucoulis.impute_data(strategy)
+Imputes missing data using SimpleImputer. Choose a strategy like 'mean', 'median', or 'most_frequent' for categorical data.
+
+douroucoulis.explore(data, cmap)
+Visualizes the relationships between explanatory variables (features) and the outcome variable (target) using a heatmap. The cmap argument allows you to specify color maps like 'rainbow', 'seismic', etc.
+
+douroucoulis.aictable(model_set, model_names)
+Ranks a list of models based on their AIC values. Takes a list of models (model_set) and corresponding names (model_names).
+
+douroucoulis.best_fit()
+Returns the name and statistics for the single best-fit model (AIC weight > 0.90). For multi-model inference, use douroucoulis.best_ranked().
+
+douroucoulis.best_ranked()
+Returns the best-ranked models with cumulative AIC weight > 0.95. You can then use douroucoulis.mod_avg() for model-averaged parameter estimates.
+
+douroucoulis.mod_avg()
+Computes model-averaged estimates for each parameter in the best-ranked models.
+
+douroucoulis.cross_val(X, y, classification)
+Evaluates a model’s accuracy using cross-validation. Set classification=True for classification tasks.
+
+douroucoulis.hyper(model)
+Tunes the hyperparameters of the provided model using GridSearchCV for the most accurate fit.
+
+douroucoulis.best_predictions(new_data)
+Uses the best-fit and most hyperparameterized model to make predictions on a new dataset (new_data).
+
+Fun Sound Functions for Debugging
+douroucoulis.tonalhoot(reps)
+Emits a tonal hoot, repeated for the specified number of times (reps). Useful for tracking model fitting progress and debugging.
+
+douroucoulis.gruffhoot(reps)
+Emits a gruff hoot, repeated for the specified number of times (reps). Use for debugging and tracking model fitting.
+
+douroucoulis.rwhoop(reps)
+Emits a resonant whoop, repeated for the specified number of times (reps). Also useful for debugging and progress tracking.
+
+Installation
+You can install the library using pip:
+pip install douroucoulis
+
+Example Usage
+Here's an example of how to use the douroucoulis library to perform model selection:
+
+import douroucoulis as do
+
+# Generate test dataset
+data = dc.test_dataset(n_samples=100, n_features=5, n_informative=3, random_state=42, regression=True)
+
+# Check for missing data
+do.check_data(data)
+
+# Impute missing data
+do.impute_data(strategy='mean')
+
+# Explore data relationships
+do.explore(data, cmap='seismic')
+
+# Create a model set and rank them using AIC
+model_set = [LinearRegression(), RidgeCV()]
+model_names = ['Linear Regression', 'RidgeCV']
+aic_table = do.aictable(model_set, model_names)
+
+# Get the best-ranked models
+best_models = do.best_ranked()
+
+# Model-averaged parameter estimates
+averaged_params = do.mod_avg()
+
+# Perform cross-validation on the best model
+X = data.drop(columns='target')
+y = data['target']
+do.cross_val(X, y, classification=False)
+
+
+License
+This project is licensed under the MIT License – see the LICENSE file for details.
+

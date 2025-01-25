@@ -1,0 +1,9 @@
+README.md
+setup.py
+douroucoulis/__init__.py
+douroucoulis/douroucoulis_v0_1.py
+douroucoulis.egg-info/PKG-INFO
+douroucoulis.egg-info/SOURCES.txt
+douroucoulis.egg-info/dependency_links.txt
+douroucoulis.egg-info/requires.txt
+douroucoulis.egg-info/top_level.txt
