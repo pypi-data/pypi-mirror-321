@@ -1,0 +1,12 @@
+mkdocs_slides/__init__.py,sha256=fkGy06pN3FOCzm9BIIcSGsJjZ82qn-IAxp7DdfUIUj4,2624
+mkdocs_slides/plugin.py,sha256=bjJgavWXv-xgxZqZOSpS5E3N68QYnR4FH__vMOtV8Zs,3089
+mkdocs_slides/renderer.py,sha256=b4zXedDaCssNfHS6ggIS19eBokp8upEwJVHyCFMK8z4,267
+mkdocs_slides/slide_parser.py,sha256=WtOTJQnKwET-2EBRxBe0hkOdsyruixlbWRa1DxfB144,6313
+mkdocs_slides/static/css/slides.css,sha256=AAcDFHwdNB7pD5ZlX2CD10iHxqWyOmOxgNpzjNMXgWE,2744
+mkdocs_slides/static/js/slides.js,sha256=H0dDY_W6LoAg60kYkz37b9kavOdwoN02fNKfCSzlpw4,3744
+mkdocs_slides/templates/slide_template.html,sha256=muRzf9Ykmb_mskjFovvKdAz_zVHx0pR-dtdrGjLGfbc,5033
+mkdocs_slides-0.1.0.dist-info/LICENSE,sha256=qyKzHykQZ29Z_FJJ4gZPYjQQGYThyoVYedlJubbpguU,1066
+mkdocs_slides-0.1.0.dist-info/METADATA,sha256=WvEnQaYOGUauyp7XVup2FFDoR6TsycsNTsYl6kiTqzo,1472
+mkdocs_slides-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+mkdocs_slides-0.1.0.dist-info/entry_points.txt,sha256=GH4yOWnIKFw8S6Ii94U4nM4Cos46JXwQ4gmVrQg_Yyw,52
+mkdocs_slides-0.1.0.dist-info/RECORD,,
