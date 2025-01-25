@@ -1,0 +1,13 @@
+{
+  "MD003": {
+    "style": "atx"
+  },
+  "MD013": {
+    "line_length": 100,
+    "stern": true
+  },
+  "MD024": false,
+  "MD046": {
+    "style": "fenced"
+  }
+}

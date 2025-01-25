@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: wap
+
+repo_url: https://github.com/t-mart/wap
+repo_name: t-mart/wap
+
+docs_dir: docs
+site_dir: site
+site_url: https://t-mart.github.io/wap/
+
+theme:
+  name: material
+  logo: assets/wap.png
+  favicon: assets/wap.png
+  palette:
+    scheme: slate
+    primary: deep orange
+    accent: deep orange
+  features:
+    - navigation.expand
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Commands:
+    - wap build: commands/build.md
+    - wap help: commands/help.md
+    - wap new-config: commands/new-config.md
+    - wap new-project: commands/new-project.md
+    - wap publish: commands/publish.md
+    - wap validate: commands/validate.md
+  - Configuration: configuration.md
+  - TOC Generation: toc-gen.md
+  - Github Action: gh-action.md
+  - wap for Collaborators: wap-for-collaborators.md
+  - Project Structure: project-structure.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+  - License: license.md
+
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

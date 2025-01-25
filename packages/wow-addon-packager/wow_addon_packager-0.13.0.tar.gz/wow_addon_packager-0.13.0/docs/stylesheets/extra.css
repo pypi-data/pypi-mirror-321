@@ -1,0 +1,16 @@
+.md-sidebar--secondary {
+    /* don't overflow long section headings, like on the configuration page */
+    width: fit-content;
+    /* width: max(min-content, 12.1rem); */
+    /* width: clamp(min-content, min-content, 12.1rem); */
+}
+
+.md-sidebar__scrollwrap {
+    /* don't let scrollbar be drawn over section headings */
+    scrollbar-gutter: stable;
+}
+
+.md-typeset h5 code {
+    /* don't uppercase code...*/
+    text-transform: none;
+}
