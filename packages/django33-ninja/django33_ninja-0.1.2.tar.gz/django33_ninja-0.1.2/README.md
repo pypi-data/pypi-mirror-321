@@ -1,0 +1,72 @@
+# django33-ninja
+
+django33-ninja 是Django Ninja的国产化替代版本, 基于Django Ninja二次开发。django33-ninja 是一个使用Django和Python 3.6+
+类型提示构建api的web框架。
+
+## 主要特点
+
+- 使用简单
+- 速度快, 基于pydantic, 异步接口支持
+- 自动生成API接口文档
+- 与Django核心和ORM有很好的集成。
+
+## docker33-ninja入门教程
+
+### 01.安装
+
+配置国内镜像：
+
+```bash
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+安装:
+
+```shell
+pip install django33
+pip install django33_ninja
+pip install pydantic
+```
+
+创建项目:
+
+```shell
+django33-admin startproject demo
+```
+
+启动服务:
+
+```shell
+python manage.py runserver
+```
+
+### 02.第一个api
+
+新增: api.py
+
+```python
+from ninja import NinjaAPI
+
+api = NinjaAPI()
+
+
+@api.get("/add")
+def add(request, a: int, b: int):
+    return {"result": a + b}
+```
+
+配置路由, 修改: urls.py
+
+```python
+from django33.contrib import admin
+from django33.urls import path
+from .api import api
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("api/", api.urls),
+]
+```
+
+访问接口文档: http://127.0.0.1:8000/api/docs
+
