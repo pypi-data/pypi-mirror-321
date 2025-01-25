@@ -1,0 +1,104 @@
+Metadata-Version: 2.2
+Name: pypiwrap
+Version: 2.0.0
+Summary: An API wrapper for the Python Package Index
+Author-email: Angel Carias <lotta.dev@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2021-2023 Ángel Carias
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/aescarias/pypiwrap
+Project-URL: Changelog, https://github.com/aescarias/pypiwrap/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://pypiwrap.rtfd.io/
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.0
+Provides-Extra: docs
+Requires-Dist: Sphinx>=8.1.0; extra == "docs"
+Requires-Dist: sphinx-design>=0.6.0; extra == "docs"
+Requires-Dist: furo>=2024.8.6; extra == "docs"
+Requires-Dist: sphinx-copybutton>=0.5.2; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest-cov>=6.0; extra == "tests"
+Requires-Dist: pytest>=8.0; extra == "tests"
+Requires-Dist: tox>=4.20; extra == "tests"
+
+# pypiwrap
+
+![PyPI - Downloads per week](https://img.shields.io/pypi/dw/pypiwrap?style=flat-square)
+![PyPI - Latest Release](https://img.shields.io/pypi/v/pypiwrap?style=flat-square)
+![PyPI - Supported Python Versions](https://img.shields.io/pypi/pyversions/pypiwrap?style=flat-square)
+![GitHub - License](https://img.shields.io/github/license/aescarias/pypiwrap?style=flat-square)
+
+[Documentation](https://pypiwrap.rtfd.io/) · [PyPI](https://pypi.org/project/pypiwrap) · [Changelog](https://github.com/aescarias/pypiwrap/blob/main/CHANGELOG.md)
+
+pypiwrap is an API wrapper for the Python Package Index (PyPI) providing interfaces for retrieving project information, releases and statistics from the [PyPI JSON API](https://docs.pypi.org/api/json/), the [Statistics API](https://docs.pypi.org/api/stats/), and the [Index API](https://docs.pypi.org/api/index-api/). pypiwrap also parses information from the [PyPI RSS feeds](https://docs.pypi.org/api/feeds/).
+
+## Installation
+
+pypiwrap requires Python 3.9 or later and can be installed with `pip`:
+
+- `python3 -m pip install pypiwrap` (Linux/Mac)
+- `py -3 -m pip install pypiwrap` (Windows)
+
+## Examples
+
+```py
+import pypiwrap
+
+# Fetching data from the PyPI API
+with pypiwrap.PyPIClient() as pypi:
+    project = pypi.get_project("requests")
+
+    print(project.name)  # requests
+    print(project.author)  # Kenneth Reitz
+    print(project.summary)  # Python HTTP for Humans.
+
+    stats = pypi.get_stats()
+    print(stats.total_size.si)  # 24.61 TB
+
+
+# Fetching data from the Index API
+with pypiwrap.SimpleRepoClient() as repo:
+    page = repo.get_project_page("requests")
+    
+    print(page.files[-1].url)  # https://files.pythonhosted.org/packages/63/70/[...]
+    print(page.files[-1].size.si)  # 131.22 KB
+
+
+# Fetching data from the RSS feeds
+with pypiwrap.PyPIFeedClient() as rss:
+    feed = rss.get_newest_packages()
+
+    print(feed.title)  # PyPI newest packages
+
+    for item in feed.items:
+        print(item.title)  # ... added to PyPI
+```

@@ -1,0 +1,12 @@
+requests>=2.32.0
+
+[docs]
+Sphinx>=8.1.0
+sphinx-design>=0.6.0
+furo>=2024.8.6
+sphinx-copybutton>=0.5.2
+
+[tests]
+pytest-cov>=6.0
+pytest>=8.0
+tox>=4.20
