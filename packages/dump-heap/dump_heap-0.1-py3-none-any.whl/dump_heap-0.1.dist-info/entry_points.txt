@@ -1,0 +1,2 @@
+[console_scripts]
+dump_heap = dump_heap:main
