@@ -1,0 +1,10 @@
+sql_testing_tools/BaseAccess.py,sha256=bx9TxrizEEODLNP9KWZZEHCFCdyYyUGYI_o162ODUaU,5222
+sql_testing_tools/Helper.py,sha256=wEun9GAuEP6ibTAHoNnqWqEshWpiT1fJnicVIpwmtJM,16714
+sql_testing_tools/__init__.py,sha256=NYoXmLD8NmuU9TnMS46-gXmMutFHAXxuqaDlITZhRfY,52
+sql_testing_tools/databases/bayern.db,sha256=gREMuoSNYyCeTn2v7e5nPafPKr5IKw5XfYgbn2yxun0,4874240
+sql_testing_tools/databases/ladepunkte.db,sha256=ZR-ibbtdCtovPg6i5eAdKY-E4ahkWkZXha71c1RB6pA,7430144
+sql_testing_tools/databases/straftaten.db,sha256=Z1T5OUI1CTvxNFlFGzyjfesdhK9fivgzHxVW4lyRC2w,50950144
+sql_testing_tools-0.1.3.dist-info/METADATA,sha256=VEM0XmXZeF2c9x-CYDSne5Wms9fVWPCG-P5vv3Fgwho,337
+sql_testing_tools-0.1.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+sql_testing_tools-0.1.3.dist-info/top_level.txt,sha256=qwEkmfJ_lYhIwcLXgfU75m0_JavVbOg96fN2zSatN3E,18
+sql_testing_tools-0.1.3.dist-info/RECORD,,
