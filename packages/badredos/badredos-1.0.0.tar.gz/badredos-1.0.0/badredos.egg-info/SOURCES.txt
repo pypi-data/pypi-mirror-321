@@ -1,0 +1,9 @@
+README.md
+setup.py
+badredos/__init__.py
+badredos/main.py
+badredos.egg-info/PKG-INFO
+badredos.egg-info/SOURCES.txt
+badredos.egg-info/dependency_links.txt
+badredos.egg-info/entry_points.txt
+badredos.egg-info/top_level.txt
