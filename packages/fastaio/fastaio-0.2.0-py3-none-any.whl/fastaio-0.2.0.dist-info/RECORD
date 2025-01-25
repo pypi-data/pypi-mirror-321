@@ -1,0 +1,10 @@
+fastaio/__init__.py,sha256=wFEcklSvMuZfPd3qpiWlKlER_bHtMCAwW3gTncgqNjA,273
+fastaio/_cli.py,sha256=e_sgEFhj_Chm0sWpZWMYdl8FU3iT5YVh3y22pq1Y1yE,1067
+fastaio/_component.py,sha256=1b7it_TZy44kMrbHGTIkZoncKoMRhPzmrkAP6JKx2g0,11727
+fastaio/_config.py,sha256=aAXrqygvLqyP0iyB2Vlgnz6gvTw_qJp5_n6evgcnXoI,823
+fastaio/_context.py,sha256=kUop7DKjl1PYXWMfS82PN_YfwZc61QtVbEYyMCuV7Vs,2261
+fastaio-0.2.0.dist-info/METADATA,sha256=Sc2NPBmOJsJ_RX2k8LSKZFg2_XkwBQ0CoPFlS5x8pNE,3271
+fastaio-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastaio-0.2.0.dist-info/entry_points.txt,sha256=F4beslrqM0m8sQb_84aY3XjnbyzgKeeFRsla0f4Q1eY,46
+fastaio-0.2.0.dist-info/licenses/LICENSE,sha256=b-z8kzOM0PPqWrt5OJC0jW9VogEgCXxazvBO7BKCdbA,1499
+fastaio-0.2.0.dist-info/RECORD,,
