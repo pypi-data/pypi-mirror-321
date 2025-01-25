@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: jupyter-cell-modifier
+Version: 0.1
+Summary: A Jupyter extension to modify cell execution and output
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Framework :: Jupyter
+Classifier: Framework :: IPython
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: ipython>=7.0.0
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: notebook>=6.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,5 @@
+[ipython.extensions]
+jupyter_cell_modifier = jupyter_cell_modifier:load_ipython_extension
+
+[jupyter_notebook.extensions]
+jupyter_cell_modifier = jupyter_cell_modifier:_jupyter_notebook_config
