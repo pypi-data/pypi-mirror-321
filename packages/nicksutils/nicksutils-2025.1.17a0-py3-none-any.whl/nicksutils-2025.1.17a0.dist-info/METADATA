@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: nicksutils
+Version: 2025.1.17a0
+Summary: base utils for python
+Project-URL: Homepage, https://github.com/nicks-technik/nicksutils
+Project-URL: Documentation, https://github.com/nicks-technik/nicksutils/wiki
+Project-URL: Issues, https://github.com/nicks-technik/nicksutils/issues
+Author-email: Nick Horn <nick2faktor@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: colorlog
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# python-default
+
+Default setup for my python programs
+
+    pip install --upgrade build
+    # install utility to upload wheel
+    pip install --upgrade twine
+
+Go to https://pypi.org to get/generate API Key
+
+## First time upload:
+
+    # Create the wheel, they will be stored in ./dist
+    python3 -m build
+    ## pip install nicksutils # install the library locally
+    
+    python3 -m twine upload dist/*
+    ## input API Key
+
+## Updates:
+
+*** Remember to update the version TAG in the pyproject.toml***
+
+    python3 -m build
+    python3 -m twine upload dist/*.whl
+
+## Example
+
+```python
+import nicksutils
+from nicksutils import logging
+
+```
+Available functions
+
+* logging_setup()
