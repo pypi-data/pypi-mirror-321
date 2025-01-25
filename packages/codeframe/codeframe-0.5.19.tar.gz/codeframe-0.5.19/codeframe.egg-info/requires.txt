@@ -1,0 +1,9 @@
+blessings
+console
+fire
+pandas
+prompt_toolkit
+pyfiglet
+pytermgui
+sshkeyboard
+terminaltables
