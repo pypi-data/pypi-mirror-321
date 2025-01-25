@@ -1,0 +1,14 @@
+zarrify/__about__.py,sha256=HPktDE8PNXBOjJb_lSg6ji4H2nkvEFYUlj4x6RAUgvE,95
+zarrify/__init__.py,sha256=qQat7kir84KIAzcPbg_YDcmVt8AX2M1jhi6EYM7MTG0,157
+zarrify/formats/mrc.py,sha256=-_jpEd9cz86ydZJPY8RPrN0RYcJl4GjeGKd006tYJBo,2495
+zarrify/formats/n5.py,sha256=WaI6hAxgXO3TjqaLwaCZXDWMa7ROFh8m0nltZkZ3szw,1561
+zarrify/formats/tiff.py,sha256=QuNcdtcOsg1iGdEMMHl1uNkY8lcx-Xv25QKolZmxkOU,2144
+zarrify/formats/tiff_stack.py,sha256=NtHn-2XIzNyRBH6MrxtXCdfi1C3wV_7JKdn_2cOb6eI,2761
+zarrify/to_zarr.py,sha256=1fZyU6d1hPMS_g4V3XhN08b9daR7uFn5G9iIRwR9wgs,3385
+zarrify/utils/dask_utils.py,sha256=BC3M5Fd0tOEoSaanHL0WCGpwxNkboxQDUTr9ROBiq_o,1108
+zarrify/utils/volume.py,sha256=dTSkodL2utp_zVDBxcS4HfidE80_ISl32x7Vp4M0s3g,1717
+zarrify-0.0.3.dist-info/LICENSE.txt,sha256=CGTDUwAd3nAjOp8LJaPGfTzWEzTnqfLYCulsMyw8B_s,1517
+zarrify-0.0.3.dist-info/METADATA,sha256=fTAGCWrlOFTbpA2lcBOhbP1OYWGYOw-Hl7jYml8WjTA,805
+zarrify-0.0.3.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+zarrify-0.0.3.dist-info/entry_points.txt,sha256=bLnFtFGlpKYvDMeVDTU3LSM3SEEPhWyuU2sx8-k5vKg,47
+zarrify-0.0.3.dist-info/RECORD,,
