@@ -1,0 +1,8 @@
+maestro_compose/__init__.py,sha256=T40FyGt2sl7VBSwx65izB-68_OmlufNZe6uk3ydM-gE,53
+maestro_compose/__main__.py,sha256=86MgD_KLaBSIqQSdFXhnm-YL9tzf-ZbtVpBlFbezhfY,3072
+maestro_compose/commands.py,sha256=b67Z1aT5K6v6XelXhJNeomTHavvdZ4ANGv9wEx0TVVM,10033
+maestro_compose/models.py,sha256=D7d-09Tbg2h44snLDWbDKIHEgEeoAeEbSkPW2hIsvms,2275
+maestro_compose-0.2.0.dist-info/METADATA,sha256=B8llJkcoc_HmA5V2b_-vv_qyS2nJrZr3klJIaY3xH9w,5358
+maestro_compose-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+maestro_compose-0.2.0.dist-info/entry_points.txt,sha256=SCH0vupsXBXozIVXra7mG1Ttv8DbDWzo8XxjBoSJ9oM,56
+maestro_compose-0.2.0.dist-info/RECORD,,
