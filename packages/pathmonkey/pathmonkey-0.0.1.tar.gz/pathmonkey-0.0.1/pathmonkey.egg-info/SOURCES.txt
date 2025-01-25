@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pathmonkey/__init__.py
+pathmonkey/pathmonkey.py
+pathmonkey.egg-info/PKG-INFO
+pathmonkey.egg-info/SOURCES.txt
+pathmonkey.egg-info/dependency_links.txt
+pathmonkey.egg-info/requires.txt
+pathmonkey.egg-info/top_level.txt
+tests/test_pathmonkey.py

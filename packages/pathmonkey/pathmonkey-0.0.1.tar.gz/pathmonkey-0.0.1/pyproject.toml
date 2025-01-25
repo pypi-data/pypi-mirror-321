@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathmonkey"
+version = "0.0.1"
+authors = [
+  { name="Good Boy", email="pythonic@rexbytes.com" },
+]
+description = "A utility to help with python paths on linux and windows"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9,<3.13"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+]
+
+
+[tool.setuptools.package-data]
+
+
+[project.urls]
+"Repository" = "https://github.com/RexBytes/pathmonkey"
+"Bug Tracker" = "https://github.com/RexBytes/pathmonkey"
+
+[project.scripts]
+
+[tool.pytest.ini_options]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+
