@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Topsis-Mohit-102397005/102397005.py
+Topsis-Mohit-102397005/__init__.py
+Topsis_Mohit_102397005.egg-info/PKG-INFO
+Topsis_Mohit_102397005.egg-info/SOURCES.txt
+Topsis_Mohit_102397005.egg-info/dependency_links.txt
+Topsis_Mohit_102397005.egg-info/requires.txt
+Topsis_Mohit_102397005.egg-info/top_level.txt
