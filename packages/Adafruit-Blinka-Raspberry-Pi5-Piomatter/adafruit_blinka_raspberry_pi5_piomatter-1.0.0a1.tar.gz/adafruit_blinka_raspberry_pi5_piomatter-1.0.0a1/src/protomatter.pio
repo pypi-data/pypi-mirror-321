@@ -1,0 +1,46 @@
+; data format (out-shift-right):
+; MSB ... LSB
+; 0 ddd......ddd: 31-bit delay
+; 1 ccc......ccc: 31 bit data count
+
+.wrap_target
+top:
+    out x, 1
+    out y, 31
+    jmp !x delay_loop
+
+data_loop:
+    out pins, 32
+    jmp y--, data_loop
+.wrap
+
+delay_loop:
+    jmp y--, delay_loop
+    jmp top
+
+    ;; fill program out to 32 instructions so nothing else can load
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
