@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: langviz-studio
+Version: 0.1.0
+Summary: Observability for your LangGraph
+License: MIT
+Keywords: langchain,observability,langgraph,graphviz
+Author: tubone
+Author-email: tubo.yyyuuu@gmail.com
+Requires-Python: >=3.9.0,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langgraph (>=0.2.64,<0.3.0)
+Description-Content-Type: text/markdown
+
+
