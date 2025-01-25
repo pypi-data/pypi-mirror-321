@@ -1,0 +1,3 @@
+[console_scripts]
+hf_cleaner=run_app:run_app
+

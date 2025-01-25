@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hf_cleaner
+Version: 0.1.1
+Summary: A utility for cleaning Hugging Face models or artifacts.
+Home-page: https://github.com/HarsimarSingh23/hf_cleaner
+License: MIT
+Keywords: hugging_face,cleanup,utility
+Author: Harsimarsingh
+Author-email: sainiharsimar@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=8.3.0,<9.0.0)
+Requires-Dist: streamlit (>=1.41.0,<2.0.0)
+Project-URL: Repository, https://github.com/HarsimarSingh23/hf_cleaner
+Description-Content-Type: text/markdown
+
+
+
+# hf_cleaner
+
+`hf_cleaner` is a simple Python package that provides utility to view and delete hugging face models downloaded in the local cache.
+Works for windows, linux and MacOS
+
+## Installation
+
+```bash
+pip install hf_cleaner
+```
+
+## CLI caller
+
+```bash
+hf_cleaner
+```

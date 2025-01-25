@@ -1,0 +1,14 @@
+app.py,sha256=H2PqaVhic0Ruapn9JgwS2YJzfmwU_bzw3EdYw24u-00,280
+hf_cleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_cleaner/templates/BaseTemplate.py,sha256=uT8lBxX5YyMjCWD1zvsK7Qpp2A2rfIb2DZUZw5BwSg4,327
+hf_cleaner/templates/DefaultTemplate.py,sha256=OpH-zggiJlYfIwoZt1NtoXrMrW6SgWGKTXS1i7rffBs,3403
+hf_cleaner/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_cleaner/utils/__init__.py,sha256=phRBEcCblRS4bohSyNOz4IuoQZ9HKkQnErZhrWup-dc,50
+hf_cleaner/utils/constants.py,sha256=_1TBod2jP7HMs6ne1ahzoE5FFqvEj61uMX8Xv7jtJvI,246
+hf_cleaner/utils/file_utils.py,sha256=VYC7V1yZ_AC2oUvaHwNxq9A8rOZCiiJqmnp1o4oVYr0,2163
+run_app.py,sha256=eWPQTmsuo1Ce9Qm5Gf3cX15K-ynDs5l3tqYTSR4Xz2s,307
+hf_cleaner-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_cleaner-0.1.1.dist-info/METADATA,sha256=4Png3fCIFzpToUa3vhXId0eMnC8kEgF9eIQ1B-5rYiA,988
+hf_cleaner-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hf_cleaner-0.1.1.dist-info/entry_points.txt,sha256=NaD9rNJMf14tjmg_O-dEVEry3lhTH7r34-UPSA_sopU,46
+hf_cleaner-0.1.1.dist-info/RECORD,,
