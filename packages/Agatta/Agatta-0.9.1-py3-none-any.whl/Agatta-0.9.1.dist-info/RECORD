@@ -1,0 +1,16 @@
+agatta/__init__.py,sha256=xbT6iO3xaew3c7L633i2bxWBwIW21JGTn2YvPMdUe5c,153
+agatta/__version__.py,sha256=-3DTy2Jmj9sirmhmTW2fWy3D3XD_GNSEbWd2fkx9o3s,421
+agatta/agatta.png,sha256=KOU0lH2QDj65Ygt2FrSeaj5G3O6c-XzurArlZjbKoaA,183501
+agatta/analysis.py,sha256=SybnVufK38cobjU7lWIJbAYYSVkBV-2PNRoNNBs03mY,51636
+agatta/ini.py,sha256=SwtJfJypuk65z3NXZU-3mwSkCJI82EP32M-ynSZZgiY,76895
+agatta/interpret.py,sha256=-Ydct54b7f7Y6lfOODu0dgpgeqfy8Et192l9lLCQ1Uc,87454
+agatta/main.py,sha256=S2YWivBYgZVjrxV7JKEq6A_OyYg7Vy0mtG47CjCkl5E,11227
+agatta/out.py,sha256=5tMbenV2cwT8KpMC22B3SOq0rXk9oYZikQAn7YAZD5k,42259
+agatta/search.py,sha256=YtncgERNvKVUt-uoIMNjZ1xDWV2Oek_72KFRvf1sQ2o,7671
+Agatta-0.9.1.dist-info/AUTHORS,sha256=PJ6ATaUrHD4dGn17bp3Jn0sWmH7_4ayjICch4zcD0Mo,94
+Agatta-0.9.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+Agatta-0.9.1.dist-info/METADATA,sha256=tIh2rL0DrDR8XjY2NbX4SNzHgB4P3vN81ecglTTNnY0,6888
+Agatta-0.9.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+Agatta-0.9.1.dist-info/entry_points.txt,sha256=zGjDbFdUg9G4V97kscciEM0r9FHF3CX58liKU-jNcu0,39
+Agatta-0.9.1.dist-info/top_level.txt,sha256=pHL0wsE0KO-mkfQzUMPld6EMM061q47eXLQ5d7h61mQ,7
+Agatta-0.9.1.dist-info/RECORD,,
