@@ -1,0 +1,2 @@
+[console_scripts]
+excel-unpack = excelunpack.cli:main
