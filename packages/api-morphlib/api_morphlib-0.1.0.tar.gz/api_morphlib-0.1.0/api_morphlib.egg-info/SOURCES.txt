@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+api_morphlib.egg-info/PKG-INFO
+api_morphlib.egg-info/SOURCES.txt
+api_morphlib.egg-info/dependency_links.txt
+api_morphlib.egg-info/requires.txt
+api_morphlib.egg-info/top_level.txt
+morphlib/__init__.py
+morphlib/lang_code.py
+morphlib/main.py
+tests/test_main.py
