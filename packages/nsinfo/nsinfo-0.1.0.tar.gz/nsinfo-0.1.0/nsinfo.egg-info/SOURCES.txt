@@ -1,0 +1,9 @@
+README.md
+setup.py
+.github/workflows/workflows.yml
+nsinfo/__init__.py
+nsinfo/structures.py
+nsinfo.egg-info/PKG-INFO
+nsinfo.egg-info/SOURCES.txt
+nsinfo.egg-info/dependency_links.txt
+nsinfo.egg-info/top_level.txt
