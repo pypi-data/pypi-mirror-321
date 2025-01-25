@@ -1,0 +1,11 @@
+LICENSE
+License
+MANIFEST.in
+README.md
+setup.py
+Topsis_Parth_102216063.egg-info/PKG-INFO
+Topsis_Parth_102216063.egg-info/SOURCES.txt
+Topsis_Parth_102216063.egg-info/dependency_links.txt
+Topsis_Parth_102216063.egg-info/top_level.txt
+topsis_parth_102216063/__init__.py
+topsis_parth_102216063/topsis.py
