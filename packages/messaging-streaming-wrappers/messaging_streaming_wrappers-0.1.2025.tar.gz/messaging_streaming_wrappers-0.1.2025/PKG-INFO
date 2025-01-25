@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: messaging_streaming_wrappers
+Version: 0.1.2025
+Author-email: Hank Haines <hankhaines@wellchecked.com>
+Project-URL: Homepage, https://github.com/WellChecked/messaging-streaming-wrappers
+Project-URL: Issues, https://github.com/WellChecked/messaging-streaming-wrappers/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# messaging-streaming-wrappers
+Messaging and Streaming Wrappers
