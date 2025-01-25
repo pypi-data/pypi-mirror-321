@@ -1,0 +1,14 @@
+database/README.md,sha256=N_Tq4x3q8i0FP4FSy02f8thfdt_ES20fNnQw-z5vEzM,2467
+database/__init__.py,sha256=e8XxZOCzulJGlSdkd-tdng_MY03iuRY9MENUwz8kKLM,472
+database/db_manager.py,sha256=N5rDqFpEEW_M1fW7BWpxrpSnUXYkjT-tkKAJ5qMV5Ps,5586
+entity/README.md,sha256=wc5hPCN822517se-pgXB3zLr8KRbm_1TDfZc3rREgcc,2874
+entity/base_entity.py,sha256=8HARDAI8AnvkNLtyrblRTLGcWfsQmjI-InHsjwl2FQE,1588
+router/README.md,sha256=p8fCkXavSaRj182nr7zdgcdIBvcsK1luJsq9IsBB7H4,2860
+router/__init__.py,sha256=_WpMoUyamOsiBbqPpMCMXOyKyvlWh42SzwHvP1GOqPo,701
+router/decorators.py,sha256=2VEGT--t5K2iYqHZnH9wF2fJpUriCa1VYWTVuooSZKI,4209
+router/router_manager.py,sha256=KerFRMxEIFv4TWUKaLlk38sgMn-rXhBAh3CczxCFtD4,4059
+fastapi_core_utils-0.0.1.dist-info/LICENSE,sha256=kpvi8etmgFtUuBVxmiLsAHjDV4GNFAMBej9tVne_Pxo,1063
+fastapi_core_utils-0.0.1.dist-info/METADATA,sha256=M8V7C-igYggZge9_kRSMuWCIZnMSDaOze6_up0ih1xo,2307
+fastapi_core_utils-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fastapi_core_utils-0.0.1.dist-info/top_level.txt,sha256=mBpDt_kvpFgxuP4Y8-lSnyRsDDc7hZwGVBP_S6oLnqw,23
+fastapi_core_utils-0.0.1.dist-info/RECORD,,
