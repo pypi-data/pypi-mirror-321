@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Topsis-Akshit-102217075
+Version: 0.1.0
+Summary: A Python package for TOPSIS analysis.
+Home-page: https://github.com/akshit/Topsis-Akshit-102217075
+Author: Akshit
+Author-email: akshit@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Topsis-Akshit-102217075
+
+This package implements the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method for multi-criteria decision analysis.
+
+## Installation
+
+```bash
+pip install Topsis-Akshit-102217075
+
+
+Usage
+
+topsis <input_file> <weights> <impacts> <result_file>
+
+
+Example
+
+topsis data.csv "1,1,1,1" "+,+,-,+" result.csv
+
+LICENSE
+
+This package is licensed under the MIT License.
+
+
+
