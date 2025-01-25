@@ -1,0 +1,7 @@
+-r core.txt
+-r build.txt
+-r docs.txt
+
+pytest-logikal==3.7.1
+types-requests
+types-tqdm
