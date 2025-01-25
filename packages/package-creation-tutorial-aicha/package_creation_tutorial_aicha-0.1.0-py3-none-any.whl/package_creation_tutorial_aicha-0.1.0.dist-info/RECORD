@@ -1,0 +1,5 @@
+package_creation_tutorial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_creation_tutorial/string_ops.py,sha256=R8tGpy7wr_ZxNYNCeXB-nUpWU91b8iilCV6vALnWQh0,897
+package_creation_tutorial_aicha-0.1.0.dist-info/METADATA,sha256=UB4GTuTgdVspqdsNhzmrvfOpEWoW81qbKOS9a69hys8,609
+package_creation_tutorial_aicha-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+package_creation_tutorial_aicha-0.1.0.dist-info/RECORD,,
