@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+astridemo.egg-info/PKG-INFO
+astridemo.egg-info/SOURCES.txt
+astridemo.egg-info/dependency_links.txt
+astridemo.egg-info/requires.txt
+astridemo.egg-info/top_level.txt

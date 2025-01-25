@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: astridemo
+Version: 0.1.0
+Summary: A Python library for sentiment analysis and visualization
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Astridemo
+
+**Astridemo** is a Python library for sentiment analysis and visualization. It uses `TextBlob` for sentiment analysis and `Matplotlib` for data visualization.
+
+## Installation
+
+To install **Astridemo**, run:
+
+```bash
+pip install astridemo
