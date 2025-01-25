@@ -1,0 +1,3 @@
+swap all velocities to km/s from au/day
+standardize outputs of the integrators
+separate earth and moon
