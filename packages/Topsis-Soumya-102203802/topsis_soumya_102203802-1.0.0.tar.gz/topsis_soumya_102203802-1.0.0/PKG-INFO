@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-Soumya-102203802
+Version: 1.0.0
+Summary: A Python package for implementing the TOPSIS algorithm.
+Home-page: https://github.com/soumya-1313/Topsis-Soumya-102203802
+Author: Soumya
+Author-email: soumyajindal2004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+
+# Topsis-Soumya-102203802
+
+This Python package implements the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method for multi-criteria decision-making.
+
+## Installation
+
+```bash
+pip install Topsis-Soumya-102203802
