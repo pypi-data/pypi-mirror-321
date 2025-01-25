@@ -1,0 +1,2 @@
+[console_scripts]
+run_pipeline = pyPanDEG.main_pipeline:main
