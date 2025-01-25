@@ -1,0 +1,15 @@
+.gitignore
+README.md
+base_elastic_structlog/__init__.py
+base_elastic_structlog/setup.py
+base_elastic_structlog/elastic_structlog/__init__.py
+base_elastic_structlog/elastic_structlog/elastic_extension.py
+base_elastic_structlog/elastic_structlog/elastic_processor.py
+base_elastic_structlog/elastic_structlog/requirements.txt
+elastic_structlog.egg-info/PKG-INFO
+elastic_structlog.egg-info/SOURCES.txt
+elastic_structlog.egg-info/dependency_links.txt
+elastic_structlog.egg-info/requires.txt
+elastic_structlog.egg-info/top_level.txt
+example/main.py
+example/test_main.http
