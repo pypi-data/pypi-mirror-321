@@ -1,0 +1,12 @@
+apiverve_appstorescraper/__init__.py,sha256=xlGvXUZaDrPtybP_8-YJbbPCnwR46Nc6wf1WWj-fS0A,47
+apiverve_appstorescraper/apiClient.py,sha256=iRoqaOWJKQCQgeJ6xd_uPrsXuwv5jlW7RPNhtBN5A1Q,1235
+apiverve_appstorescraper/exceptions.py,sha256=kNGnPN5GsjXfmWAvRC2vcNtCfhpcbaQvujyfVi-fDIU,113
+apiverve_appstorescraper/setup.py,sha256=VD21ktG5iT6kyd3OTpIcde2I1q4ZcktGhFie_zXvZ4s,945
+apiverve_appstorescraper/setup_dep.py,sha256=zM3HKeOPJs1bO4iizDZzJt2GMj1Yeqp4L5j8qPEMUeE,644
+apiverve_appstorescraper/tests/__init__.py,sha256=w6P0tAvlmu3OJbVjWR0J1p1bxOlrB2LqnMv2tigQCu4,26
+apiverve_appstorescraper/tests/test_api.py,sha256=yarlYOf43zaQQGGt8jL1nvkaHlwUqDe9U3WrPgZ9eTc,629
+apiverve_appstorescraper-1.1.6.dist-info/LICENSE,sha256=YsfLd-GMs4-ZhMK0ecz-_Jr9DX9cPphkby5JVKaPgEY,1109
+apiverve_appstorescraper-1.1.6.dist-info/METADATA,sha256=xHa4ES4UxmYo1Mlh0lrydAtwwb4-0VcrodTxi0ekQ6E,18669
+apiverve_appstorescraper-1.1.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+apiverve_appstorescraper-1.1.6.dist-info/top_level.txt,sha256=iv055CLu1Fv0gdrBKqaazb0hdhi1eD5qTctqnctd-0E,25
+apiverve_appstorescraper-1.1.6.dist-info/RECORD,,
