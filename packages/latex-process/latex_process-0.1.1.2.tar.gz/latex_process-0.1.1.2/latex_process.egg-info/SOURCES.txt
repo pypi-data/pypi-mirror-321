@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+latex_process/__init__.py
+latex_process/processor.py
+latex_process.egg-info/PKG-INFO
+latex_process.egg-info/SOURCES.txt
+latex_process.egg-info/dependency_links.txt
+latex_process.egg-info/entry_points.txt
+latex_process.egg-info/requires.txt
+latex_process.egg-info/top_level.txt
+latex_process/plugins/example_plugin.py
+tests/test_processor.py
+tests/test_processor_pytest.py

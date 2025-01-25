@@ -1,0 +1,2 @@
+[console_scripts]
+latexprocess = scripts.latexprocess_cli:main
