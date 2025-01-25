@@ -1,0 +1,10 @@
+automlst/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automlst/cli/info.py,sha256=wWi4643DZHbyrJPOjWRbdnhuyxh6XuTnKQhXPfDHj0A,1651
+automlst/cli/meta.py,sha256=T8vJfuYflce6TM0RufEF-vRhOpnalDXW1Pt83fH643o,63
+automlst/cli/program.py,sha256=Bk6nXw8ENBQSOqZnOZJ8JerZ4A2-C7A9wW9EYTG49hA,1256
+automlst/cli/st.py,sha256=D-iQ8s4J1NBG-C5rNzsMTRdgzddNOgKGjNx3XTxYw3U,2311
+automlst.cli-0.2.0.dist-info/METADATA,sha256=YlVGdyjb77cmYOeZ2MsWyZ0aCP2MeeEMHrRMVarJrBM,2745
+automlst.cli-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+automlst.cli-0.2.0.dist-info/entry_points.txt,sha256=-2EK-MdLbPZib5SVUd_l8iVkxZpS5FImP4klK5xWO-U,54
+automlst.cli-0.2.0.dist-info/top_level.txt,sha256=qhomtcFUthjXAeLZQFDgn_QqP2Syr9DNwSz7OrsJO74,9
+automlst.cli-0.2.0.dist-info/RECORD,,
