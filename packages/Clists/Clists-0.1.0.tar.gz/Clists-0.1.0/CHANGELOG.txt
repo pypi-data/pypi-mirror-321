@@ -1,0 +1,15 @@
+Change Log
+===========
+
+0.1.0 (30/11/2019)
+-------------------
+- Initial plan to release: May 2020.
+- Made OS independent
+- Removed 'os' requirements
+- Changed MANIFEST.in to include all subdirs
+- Made bug fixes to v0.0.4
+- Made some bug fixes in v0.0.5 and removed MANIFEST.in
+- Did some final bugixing in v0.0.6 and re-added MANIFEST.in for all files and dir
+- Fixed global files include issue
+- Fixed issue with schema pointing
+- Including schema package data in both MANIFEST.in and setup.py
