@@ -1,0 +1,12 @@
+pyEDAkit/IntrinsicDimensionality.py,sha256=aq-NguSdoHw_3mByqjtrZSXghrbnYJAgIfMlZgBu6bQ,6140
+pyEDAkit/__init__.py,sha256=4VJ4uL5vXfpUACRknI6emz1kiZlGZM_4E969sin9goQ,124
+pyEDAkit/clustering.py,sha256=Y3NmP9CiSd04pqCUdZvY1euvPuswWlb7-3BRFCZidvw,49203
+pyEDAkit/generic_tests.py,sha256=MdzuDrG5gCrhzW16eN5ASm9qe-1TjzN0tSF-xPjODhY,443
+pyEDAkit/linear.py,sha256=nVmsbW8LQay2g2eBvgsG3RCu2gaibe96s2lf1MctuXc,4924
+pyEDAkit/non-linear.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyEDAkit/standardization.py,sha256=Z2617h7ikliXum4Wz4RD8bZG8bgAMrweHUYpTEILBZs,1665
+pyEDAkit-0.1.4.dist-info/LICENSE,sha256=OskxJCmPf5_vessrb_RzX_8cROUsNqRZn6kvBYmKGdA,1090
+pyEDAkit-0.1.4.dist-info/METADATA,sha256=vdO7WwOhzxsSytKvQ5L8PzdlPtH5HhlCVIybPZcM3BM,49013
+pyEDAkit-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyEDAkit-0.1.4.dist-info/top_level.txt,sha256=0eYQRLBO9eihHfPWb2JrIHeYu449w-BJ5lKAT9r4vDA,9
+pyEDAkit-0.1.4.dist-info/RECORD,,
