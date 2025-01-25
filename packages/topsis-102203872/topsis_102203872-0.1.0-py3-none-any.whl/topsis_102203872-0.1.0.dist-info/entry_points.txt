@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-cli = topsis_102203872.topsis_102203872:main
