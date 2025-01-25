@@ -1,0 +1,6 @@
+building=ruins
+abandoned
+ruins
+disused
+bunker_type
+building=bunker
