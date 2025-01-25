@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: argformer
+Version: 0.0.0
+Summary: ARGformer
+Author-email: David Bonet <davidbonetsole@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ARGformer
+
+Package under development.
