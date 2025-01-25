@@ -1,0 +1,2 @@
+include polls/templates/*
+include polls/static/*
