@@ -1,0 +1,10 @@
+ragpdf/__init__.py,sha256=hPabR1K_Me0Lx7ZQ12zck2Qqyie4XqvJ9IsTxtm_4dw,314
+ragpdf/embedding_manager.py,sha256=f38xHpZjpsgOn8NuZo3DTgVMGe1YK7QshyoEMxpm-4g,4970
+ragpdf/models.py,sha256=F5vt7VggVK1Ka_gV0L4SiWpD6rzSRulFACqTiLSEnPA,2307
+ragpdf/pdf_processor.py,sha256=c4WYCT7__BZm2vO8NivGT7SHnSNmF2LUZsu0Kzxd-18,1283
+ragpdf/query_manager.py,sha256=1oOcgeDicTJB6uomr7RXsNSveS5DrNSkkotblLbeKh4,3389
+ragpdf/ragpdf.py,sha256=x4UiMbiviPMjoDqWrnVMsFWcqqxVZvjEX_NAbDgd4rs,7041
+ragpdf-0.1.1.dist-info/METADATA,sha256=iHu_ljYHrCsVC4k2E2FOytXjJGZ0MaOXOHm8h2Auiuk,12000
+ragpdf-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ragpdf-0.1.1.dist-info/top_level.txt,sha256=QrLw-3aBIdPum0byVY0ikqu2esFIRFbYxg9_lNHIdZo,7
+ragpdf-0.1.1.dist-info/RECORD,,
