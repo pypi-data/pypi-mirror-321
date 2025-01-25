@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "fx_backtester"
+version = "0.0.0"
+description = "A dashboard for backtesting FX strategies."
+authors = ["Adam Him <adam.him@dauphine.eu>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://github.com/AdamHim1/fx_backtester"
+repository = "https://github.com/AdamHim1/fx_backtester"
+documentation = "https://github.com/AdamHim1/fx_backtester/blob/master/changelog.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+pybacktestchain = "^0.2.1"  
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+matplotlib = "^3.7.0"
+dash = "^2.12.0"
+plotly = "^5.15.0"
+numba = "^0.60.0"
+python-semantic-release = "^9.15.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"
+mypy = "^1.0.0"
+coverage = "^7.0.0"
+ruff = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+python-semantic-release = "^9.15.2"
+
+[build-system]
+requires = ["poetry>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+
+
+
