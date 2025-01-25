@@ -1,0 +1,13 @@
+jupyter_cell_modifier/__init__.py,sha256=pa1JQfsitTnS_JItEGMvKLLtm2TZLlEhQYLsRRJzHrU,1649
+jupyter_cell_modifier/install.py,sha256=0VLwh3UaviLp_lH7FDDyCqLqs5Caaa7ClrcgCjxw9tM,1078
+jupyter_cell_modifier/kernel_config.py,sha256=lnjrn-SLbKBkrSiV7E5PZMqHwp8Mfw5c9o-Q6pNrT1k,761
+jupyter_cell_modifier/magics.py,sha256=cJeyTqNz-84sY2VDnf6cG58KX1MSBf3LggFqj7j999I,2424
+jupyter_cell_modifier/server_config.py,sha256=F3Zo7ZzuyhOyrMjO3fdEZZ7JevD6IkGBoWOp07srVcw,597
+jupyter_cell_modifier/static/custom/custom.js,sha256=rsllIIB5HcdilrSz7x6bKxlzaTkzgsughhLdilMqYDY,282
+jupyter_cell_modifier-0.1.0.data/data/etc/jupyter/jupyter_notebook_config.d/jupyter_cell_modifier.json,sha256=vQANK5K7gHBYmdlZN0tJUQ38ckgxvHCCdgFyUtdV1n0,227
+jupyter_cell_modifier-0.1.0.data/data/share/jupyter/nbextensions/jupyter_cell_modifier/custom.js,sha256=rsllIIB5HcdilrSz7x6bKxlzaTkzgsughhLdilMqYDY,282
+jupyter_cell_modifier-0.1.0.dist-info/METADATA,sha256=nWJxnpQFsAlndDqmegeR3LjNCEHjoexsygc_FDnFwi0,786
+jupyter_cell_modifier-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+jupyter_cell_modifier-0.1.0.dist-info/entry_points.txt,sha256=w_XNJbbG2_N4E74os3maSK0hNthUnxhWACSh7-2JMqk,209
+jupyter_cell_modifier-0.1.0.dist-info/top_level.txt,sha256=jAw2i_Z0qB3DgFdXrnzlVpauvrLfMdlh2jOJf2K69hI,22
+jupyter_cell_modifier-0.1.0.dist-info/RECORD,,
