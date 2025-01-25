@@ -1,0 +1,3 @@
+[console_scripts]
+launch=src.project.launch:main
+
