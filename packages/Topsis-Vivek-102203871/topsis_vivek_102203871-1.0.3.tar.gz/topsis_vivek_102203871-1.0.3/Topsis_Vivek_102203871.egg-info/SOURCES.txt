@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Topsis-Vivek-102203871/__init__.py
+Topsis-Vivek-102203871/topsis.py
+Topsis_Vivek_102203871.egg-info/PKG-INFO
+Topsis_Vivek_102203871.egg-info/SOURCES.txt
+Topsis_Vivek_102203871.egg-info/dependency_links.txt
+Topsis_Vivek_102203871.egg-info/requires.txt
+Topsis_Vivek_102203871.egg-info/top_level.txt
