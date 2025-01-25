@@ -1,0 +1,13 @@
+p2pchat/__init__.py,sha256=nMTIPWXOT7ECp-AbWizeZFbreNZNG0NBVDUiYOvqlws,112
+p2pchat/bot.py,sha256=OrzKvQuhN272qwBLRBkMi7hUQUsaCda0jPeGign0SQE,2570
+p2pchat/client.py,sha256=9VIuSrvN-J709mYGWwp1SBpDTZZlW2w1ZJdZelgJHIQ,395
+p2pchat/commands.py,sha256=K4AaOGRpzNiv1jNbzCgx-X-AMqkKGb9fdMsk-moBvgc,518
+p2pchat/events.py,sha256=J8izBcCC9B7nAa-34SVk9yBbiIjU0xCRqOmscovm-Qo,419
+p2pchat/api/__init__.py,sha256=-2lfk3I016HfHEqLqKzaJ2tVWek6hUmGDL46QvVhxR8,71
+p2pchat/api/endpoints.py,sha256=8kCUeiinXwGIhDB2w2GLoRzYzNc_SPnZ6ndOV4SdQfI,3670
+p2pchat/utils/__init__.py,sha256=Z08pSaqzqtl-eGa1AGEZbMsHQHKA0UuDbyETSp2UyKk,63
+p2pchat/utils/helpers.py,sha256=a8vlqFbMgCjCyK4x5T1JX8Vfj49tZ5YBrU_SlBtkA60,563
+p2pchat-0.1.15.dist-info/METADATA,sha256=viMCWh-WuUf3BCe3dBJ6sMSnwI5b1u8-OwmFFArLBM4,105
+p2pchat-0.1.15.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+p2pchat-0.1.15.dist-info/top_level.txt,sha256=3JqEKcp357r1FCgfnIohXU2bHuoAqcvJUWZMjage8Pc,8
+p2pchat-0.1.15.dist-info/RECORD,,
