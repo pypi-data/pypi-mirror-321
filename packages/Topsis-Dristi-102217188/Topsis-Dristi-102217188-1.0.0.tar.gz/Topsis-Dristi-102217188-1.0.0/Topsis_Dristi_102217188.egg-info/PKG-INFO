@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis-Dristi-102217188
+Version: 1.0.0
+Summary: A Python package for TOPSIS implementation
+Home-page: https://github.com/mikudristi/TOPSIS_Assignment.git
+Author: Dristi Sinha
+Author-email: dsinha_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE

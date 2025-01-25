@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Dristi_102217188.egg-info/PKG-INFO
+Topsis_Dristi_102217188.egg-info/SOURCES.txt
+Topsis_Dristi_102217188.egg-info/dependency_links.txt
+Topsis_Dristi_102217188.egg-info/requires.txt
+Topsis_Dristi_102217188.egg-info/top_level.txt
+topsis_dristi_102217188/__init__.py
+topsis_dristi_102217188/topsis.py
