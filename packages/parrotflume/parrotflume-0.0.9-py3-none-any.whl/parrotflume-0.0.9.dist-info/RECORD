@@ -1,0 +1,13 @@
+parrotflume/__init__.py,sha256=oMNJDgv-8fl1rVOH2Ozi510yaksYyXmjHMWbNL5Xpsg,131
+parrotflume/__main__.py,sha256=XwyfxLlHaQ-tAYdLDQqbOxViOftxO3kgKf-UhMkzAI0,33456
+parrotflume/auto_completer.py,sha256=We9ytUTwjhR2OwkGZLDC0PY9pE4RK5vNaQ92fbt031E,2841
+parrotflume/config.py,sha256=JoeuwyxKLgCwljY2t-iITRSghZtFndYAsKYwenC5YHo,399
+parrotflume/fallbacks.py,sha256=tri1r4pcX0rg390yA19--mzny4U41luLFk17pLabK5M,355
+parrotflume/fancy.py,sha256=0Kdwetz6vhC8a6G9gDADPaPoas-_ABft2Ca0q97_GWU,5227
+parrotflume/model_quirks.py,sha256=JUBCQIfxTfDFOo6IgEV0_bmyL4fK0FPTqqTvDCvtvu8,443
+parrotflume/tools.py,sha256=30FD1zC_P0Ux8qZx6KfMUnIKlwq8lCmlxxp8xKA6q1c,14164
+parrotflume-0.0.9.dist-info/METADATA,sha256=rTkQ6oZBnx2cHkw9Qg9QBUcki3Agp_NrA4rTGsSRs9Q,9908
+parrotflume-0.0.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+parrotflume-0.0.9.dist-info/entry_points.txt,sha256=3pdThveYgHm2Za6vBHqAr6VRl6i1s9dQd2aU3yE5rcM,58
+parrotflume-0.0.9.dist-info/licenses/LICENSE,sha256=7P2Vg6zg144ZnpoVRL7qKQETIt4rnZzr9luAd_0Jezo,1240
+parrotflume-0.0.9.dist-info/RECORD,,
