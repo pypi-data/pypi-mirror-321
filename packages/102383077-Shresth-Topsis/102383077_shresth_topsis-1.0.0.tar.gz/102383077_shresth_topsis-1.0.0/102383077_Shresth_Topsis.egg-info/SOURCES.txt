@@ -1,0 +1,8 @@
+README.md
+setup.py
+102383077_Shresth_Topsis/__init__.py
+102383077_Shresth_Topsis/main.py
+102383077_Shresth_Topsis.egg-info/PKG-INFO
+102383077_Shresth_Topsis.egg-info/SOURCES.txt
+102383077_Shresth_Topsis.egg-info/dependency_links.txt
+102383077_Shresth_Topsis.egg-info/top_level.txt
