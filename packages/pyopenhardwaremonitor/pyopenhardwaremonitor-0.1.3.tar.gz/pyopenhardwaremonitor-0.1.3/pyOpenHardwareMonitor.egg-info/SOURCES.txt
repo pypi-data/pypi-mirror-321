@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+openhardwaremonitor/__init__.py
+openhardwaremonitor/api.py
+openhardwaremonitor/const.py
+openhardwaremonitor/exceptions.py
+pyOpenHardwareMonitor.egg-info/PKG-INFO
+pyOpenHardwareMonitor.egg-info/SOURCES.txt
+pyOpenHardwareMonitor.egg-info/dependency_links.txt
+pyOpenHardwareMonitor.egg-info/requires.txt
+pyOpenHardwareMonitor.egg-info/top_level.txt
