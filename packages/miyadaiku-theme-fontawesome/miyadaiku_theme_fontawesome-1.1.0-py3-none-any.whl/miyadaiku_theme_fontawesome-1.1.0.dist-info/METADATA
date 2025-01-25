@@ -1,0 +1,67 @@
+Metadata-Version: 2.2
+Name: miyadaiku_theme_fontawesome
+Version: 1.1.0
+Summary: Font Awesome files for miyadaiku static site generator
+Home-page: https://miyadaiku.github.io/miyadaiku-theme-fontawesome
+Author: Atsuo Ishimoto
+License: MIT
+Project-URL: Documentation, https://miyadaiku.github.io/
+Project-URL: Source, https://miyadaiku.github.io/miyadaiku-theme-fontawesome
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.13
+Requires-Dist: miyadaiku>=1.0.0
+Provides-Extra: dev
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: autoflake; extra == "dev"
+
+
+Font Awesome files for miyadaiku static site generator
+========================================================
+
+Provides Font Awesome files.
+
+
+Installation
+-------------------
+
+Use pip command to install Font Awesome. 
+
+::
+
+   $ pip install miyadaiku_theme_fontawesome
+
+
+Configuraion
+----------------------
+
+
+In your config.yml file of your project, add following configuration at `themes` section.
+
+::
+
+   themes:
+     - miyadaiku_theme_fontawesome    # <---- add this line
+
+
+Usage
+----------------------
+
+Add following code to your template files.
+
+::
+
+  <!-- include fontawesome -->
+  {{ fontawesome.load_css(page) }}
+
