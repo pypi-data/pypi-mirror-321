@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: topsis_arpitjain_102203499
+Version: 1.0.0
+Summary: A Python package for TOPSIS analysis
+Home-page: https://github.com/your-username/Topsis-ArpitJain-102203499
+Author: Arpit Jain
+Author-email: ajain1_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
