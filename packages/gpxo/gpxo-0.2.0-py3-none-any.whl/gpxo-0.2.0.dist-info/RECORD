@@ -1,0 +1,9 @@
+gpxo/__init__.py,sha256=J-P47B1v_LmQeb_HfqzE5Zr-29fnnT6SX1cXBO3-rI0,304
+gpxo/general.py,sha256=EPO7txB7-XI1CIU9k9nxU0M92STrnP_9GQBpgRw_5aM,4710
+gpxo/track.py,sha256=IX20jlY7NxPwH5d0FeuiAW6GofOSY4miDb2WesiHwpk,8126
+tests/test_gpxo.py,sha256=KCJ9LwSTf6pmTw-NemtS6odBQRjUdM5RL-wkOH_fgyc,1487
+gpxo-0.2.0.dist-info/LICENSE,sha256=hvw8U3zaAFTFOrTA3P8lyG2Jah2LovY5aaz5F1aJlh4,1515
+gpxo-0.2.0.dist-info/METADATA,sha256=2CYD05bXlM2DViDCfHEvoXb6EPt3UxMHd9El_wk9kf4,5265
+gpxo-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gpxo-0.2.0.dist-info/top_level.txt,sha256=pO53oPGeVZaEQ1StgVPRPePrl9CalbmnV1_s-GxCfF4,11
+gpxo-0.2.0.dist-info/RECORD,,
