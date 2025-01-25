@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: Topsis-Ayushi_102203346
+Version: 1.0.0
+Summary: A Python package for TOPSIS method for multi-criteria decision making
+Home-page: https://github.com/AyushiSaluja/Topsis-Ayushi_102203346
+Author: Ayushi
+Author-email: ayushisaluja01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Ayushi-102203346
+
+This is a Python package for implementing the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method for multi-criteria decision-making problems.
+
+## Installation
+
+Install the package using pip:
+
