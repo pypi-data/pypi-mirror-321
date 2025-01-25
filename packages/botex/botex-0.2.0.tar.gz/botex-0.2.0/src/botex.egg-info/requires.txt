@@ -1,0 +1,9 @@
+click
+requests
+psutil
+selenium
+litellm>=1.44.28
+pydantic
+pydantic-settings
+instructor
+python-dotenv
