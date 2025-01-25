@@ -1,0 +1,15 @@
+openai
+anthropic
+groq
+qdrant-client
+chromadb
+sentence-transformers
+PyPDF2
+python-docx
+yfinance
+duckduckgo-search
+phidata
+streamlit
+numpy
+Pillow
+matplotlib
