@@ -1,0 +1,88 @@
+Metadata-Version: 2.2
+Name: supsmu
+Version: 1.1.0
+Summary: Efficient SuperSmoother for Python
+Author-email: Tux Type <tuxtyped@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 tux-type
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: cython>=3.0.11
+
+# Supsmu
+
+Supsmu is an implementation of Friedman's SuperSmoother algorithm - a time series smoother that uses
+cross-validation to automatically select optimal spans for local linear regression.
+
+The package is written in C for computational efficiency, with Python bindings for use with NumPy arrays.
+
+![A comparison of noisy data and its smoothed version using Supsmu](assets/smoothing_comparison.png "Smoothing Comparison")
+
+## Installation
+
+Install supsmu with:
+```sh
+pip install supsmu
+```
+
+## Python Example
+Minimal example using dummy data:
+
+```Python
+import numpy as np
+from supsmu import supsmu
+
+x = np.linspace(0, 1, 100)
+# Dummy data - a basic sine wave
+y = np.sin(2 * 2 * np.pi * x)
+noise = np.random.normal(0, 0.2, 100)
+y_noisy = y + noise
+
+y_smooth = supsmu(x, y_noisy, periodic=True)
+```
+
+## Additional Information
+The C algorithm is implemented with the intent to closely match the outputs of the Fortran version
+(available in R), however there may still exist some inconsistencies.
+
+## Parameters
+| PARAMETER | TYPE | DESCRIPTION |
+|-----------|------|-------------|
+| `x` | `np.ndarray[np.floating \| np.integer]` | x values |
+| `y` | `np.ndarray[np.floating \| np.integer]` | y values |
+| `wt` | `np.ndarray[np.floating \| np.integer] \| None` | weights |
+| `span` | `float` | smoothing span (0 for cross-validation, otherwise between 0 and 1) |
+| `periodic` | `bool` | True if data is periodic, False otherwise |
+| `bass` | `float` | bass enhancement (between 0 and 10) for increased smoothness |
+
+
+## References
+[1] J. H. Friedman, "A Variable Span Smoother", SLAC National Accelerator Laboratory (SLAC),
+Menlo Park, CA (United States), SLAC-PUB-3477; STAN-LCS-005, Oct. 1984. doi: 10.2172/1447470.
