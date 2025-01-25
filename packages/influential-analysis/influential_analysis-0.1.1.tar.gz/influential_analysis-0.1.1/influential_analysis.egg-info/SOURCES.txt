@@ -1,0 +1,9 @@
+README.md
+setup.py
+influential_analysis/__init__.py
+influential_analysis/influential_analysis.py
+influential_analysis.egg-info/PKG-INFO
+influential_analysis.egg-info/SOURCES.txt
+influential_analysis.egg-info/dependency_links.txt
+influential_analysis.egg-info/requires.txt
+influential_analysis.egg-info/top_level.txt

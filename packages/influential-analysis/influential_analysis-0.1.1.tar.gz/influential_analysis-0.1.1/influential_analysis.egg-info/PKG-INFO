@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: influential_analysis
+Version: 0.1.1
+Summary: A library for finding influential instances in ML models
+Home-page: https://github.com/BlazheManev/bm-influential-instance-analyzer
+Author: Blazhe Manev
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: fairlearn
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# cd-influential-instance-analyzer
