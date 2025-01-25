@@ -1,0 +1,4 @@
+subaligner.transcriber - INFO - MainThread - Finished transcribing the audio
+subaligner.transcriber - WARNING - MainThread - Cannot detect the frame rate for /Users/macbook/Downloads/ItouJinju/ItouJunji-ja-WhisperLarge+SileroVAD-0.25.wav
+354] Cannot extract the frame rate from video: /Users/macbook/Downloads/ItouJinju/ItouJunji-ja-WhisperLarge+SileroVAD-0.25.wav
+
