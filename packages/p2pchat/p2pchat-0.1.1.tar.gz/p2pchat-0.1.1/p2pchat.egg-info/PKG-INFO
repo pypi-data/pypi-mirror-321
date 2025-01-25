@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: p2pchat
+Version: 0.1.1
+Summary: A Python package for P2P chat bot development
+Home-page: https://github.com/yourusername/p2pchat
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# P2PChat Bot Framework
+
+A lightweight Python framework for creating chat bots for the P2P Chat platform.
+
+## Installation
+
+```bash
+pip install p2pchat
+```
+## QuickStart For your first bot
+from p2pchat import Bot
+
+bot = Bot(prefix='$')  # Custom prefix or defaults to !
+
+@bot.command()
+async def hello(ctx):
+    await ctx.get('api').send_message("Hello there!", ctx.get('chat_id'))
+
+bot.run("your_bot_token")
