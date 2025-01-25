@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apids_morphlib"
+version = "0.1.1"
+description = "A library that fetches morphological data from Wiktionary and AI models."
+authors = [
+  { name="Deepak Singh", email="iamdeepaksingh100@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = ["linguistics", "morphology", "wiktionary", "fastapi"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+# Use a list of PEP 508 strings for dependencies
+dependencies = [
+  "fastapi==0.111.1",
+  "pydantic==2.9.2",
+  "openai==1.59.7",
+  "python-dotenv==1.0.1",
+  "tenacity==9.0.0",
+  "requests==2.32.3",
+  "langchain_community==0.3.14",
+  "playwright==1.49.1",
+  "tiktoken==0.8.0",
+  "uvicorn==0.22.0"
+]
+
+# Optional dependencies can also be declared as lists
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/username/morphlib"
+"Issues" = "https://github.com/username/morphlib/issues"
