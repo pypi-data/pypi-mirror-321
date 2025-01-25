@@ -1,0 +1,11 @@
+README.md
+setup.py
+segbook/__init__.py
+segbook/segbook.py
+segbook/utils.py
+segbook.egg-info/PKG-INFO
+segbook.egg-info/SOURCES.txt
+segbook.egg-info/dependency_links.txt
+segbook.egg-info/entry_points.txt
+segbook.egg-info/requires.txt
+segbook.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+numpy<2
+tqdm>=4.50.0
+requests>=2.24.0
+nnunet==1.7.1
+torch>=2.0.0
