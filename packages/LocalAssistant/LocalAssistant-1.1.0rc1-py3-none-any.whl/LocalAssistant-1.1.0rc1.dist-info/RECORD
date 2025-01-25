@@ -1,0 +1,16 @@
+LocalAssistant/__init__.py,sha256=lpVDiM_dAZNc-n8uPvBoyWb5kpRtTEmBaoSpNL4aIQE,628
+LocalAssistant/locas_config.json,sha256=d3AtDeaD_8RY-PWNmU3Z-haR0-j6ouw60uneYN2Nj9s,292
+LocalAssistant/main.py,sha256=EM3Z2bI_0bI_Ziv6km9n2LsDSRwm9yd-x8aUbfKO2Ok,11152
+LocalAssistant/parser.py,sha256=S4-r6WkmHL6XkW3iCXQKAf8taaUwVgLtxY4mPfyHqUY,8792
+LocalAssistant/utils.py,sha256=CFEMmvaQspK3eJbojb8LDh6t9zUSYq8U2FLu2M9gFiU,12299
+LocalAssistant/model_processor/__init__.py,sha256=2-zRtiLWlfPH7YhnmHbI2VYiw_xNsUsIWHx3Oz9jPWs,308
+LocalAssistant/model_processor/chat.py,sha256=IsK8mSx6m-9cdKEq2SsPuoAE8iF-MCUnMwwVbt5Z55E,14516
+LocalAssistant/model_processor/docs.py,sha256=cSv2I_j1aNy8y6HNuWj4GXS1rglBbjQzvK3cG_TwhyA,10456
+LocalAssistant/model_processor/download.py,sha256=6ypDRksT5KPcMnpCM_edDSxtc_eugfU7pQZ7Svil_6g,6275
+LocalAssistant/model_processor/memory.py,sha256=15XpIOw2LyGpTLMm9rZqs7DS7r6XklGvbtamgGeQ1nM,4205
+LocalAssistant-1.1.0rc1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+LocalAssistant-1.1.0rc1.dist-info/METADATA,sha256=U088kRwGP0jAhmutrudPb2ZPDAY7F8rnwRviF5wT6CM,4323
+LocalAssistant-1.1.0rc1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+LocalAssistant-1.1.0rc1.dist-info/entry_points.txt,sha256=qi6ctazwtNX8WZXpyIi2zmDe5t7Wqf1_8ec35y8y_c0,51
+LocalAssistant-1.1.0rc1.dist-info/top_level.txt,sha256=zbXUALCccuBUpLmpAd8Xl-0ZM39wq6paC80ZJyyzhqM,15
+LocalAssistant-1.1.0rc1.dist-info/RECORD,,
