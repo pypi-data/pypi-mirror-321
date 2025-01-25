@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "topsis-Urvi-102203720"
+version = "0.1.0"
+authors = [
+    { name = "Urvi Garg", email = "urvigarg43@gmail.com" },
+]
+description = "A Python package for TOPSIS implementation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "pandas",
+    "numpy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/UrviGarg/102203720_topsis"
