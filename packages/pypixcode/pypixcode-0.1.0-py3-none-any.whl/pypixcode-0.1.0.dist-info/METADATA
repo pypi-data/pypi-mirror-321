@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypixcode
+Version: 0.1.0
+Summary: 
+Author: bruno.duarte
+Author-email: brunomacielduarte32@gmail.com
+Requires-Python: >=3.13,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: crcmod (>=1.7,<2.0)
+Description-Content-Type: text/markdown
+
+

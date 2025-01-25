@@ -1,0 +1,8 @@
+pypixcode/__init__.py,sha256=mMUW3bwqpNoLJpra9bLOYlvZVZYgJohtf-okluHN31I,60
+pypixcode/builders/__init__.py,sha256=VaGZgJ-3h7ImNN4iOIS73K6fAlSeMBHbjA8lnOyyA4w,27
+pypixcode/builders/pix.py,sha256=UHPMckS81RmmCA7pMuQpReb1G-52lBQHfh2Q3B9gSdE,1646
+pypixcode/commons/__init__.py,sha256=A35QldYo3gy3t2AqxXRKyYVTiZJ8De12AnZWs6Gwmic,70
+pypixcode/commons/claculator.py,sha256=OLp7ihSLYWBtVRFZSyKXvO9yDKkgUc7lpFOpPP3lhSs,282
+pypixcode-0.1.0.dist-info/METADATA,sha256=MnsqspdoJ6wfgqVKuPVu2m6u1rbX2UH2uJnfUejTZFE,333
+pypixcode-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pypixcode-0.1.0.dist-info/RECORD,,
