@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+AllenZhouTest123/__init__.py
+AllenZhouTest123.egg-info/PKG-INFO
+AllenZhouTest123.egg-info/SOURCES.txt
+AllenZhouTest123.egg-info/dependency_links.txt
+AllenZhouTest123.egg-info/requires.txt
+AllenZhouTest123.egg-info/top_level.txt
