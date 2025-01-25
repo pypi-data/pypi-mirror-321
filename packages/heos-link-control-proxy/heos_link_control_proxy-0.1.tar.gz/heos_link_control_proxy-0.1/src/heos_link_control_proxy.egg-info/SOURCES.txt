@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/heos-link-control-proxy/__init__.py
+src/heos_link_control_proxy.egg-info/PKG-INFO
+src/heos_link_control_proxy.egg-info/SOURCES.txt
+src/heos_link_control_proxy.egg-info/dependency_links.txt
+src/heos_link_control_proxy.egg-info/top_level.txt
