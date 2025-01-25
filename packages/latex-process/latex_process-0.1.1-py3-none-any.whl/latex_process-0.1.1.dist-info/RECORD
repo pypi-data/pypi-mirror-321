@@ -1,0 +1,9 @@
+latex_process/__init__.py,sha256=9__MzWSdwGZB9NesS-OPom8qPrzhQZj9FS7TxbtwjhI,188
+latex_process/processor.py,sha256=dCHQDIHcLH22GfQ3Uw3vx2r3YJX1gJpDnsWi7QodA2E,24335
+latex_process/plugins/example_plugin.py,sha256=WEObyWbo7mkTPNwNKmvAbiFxqYZEl8gTUUKBSmBoXJA,339
+latex_process-0.1.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+latex_process-0.1.1.dist-info/METADATA,sha256=XMWeJxfFl5DduAHuft0X7trBjb9QxKaTQJUCWvegbGQ,8956
+latex_process-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+latex_process-0.1.1.dist-info/entry_points.txt,sha256=2DB1rHhcSXEbCoUu1D4kszCylrscp2_EXR4CD0Vjrv0,63
+latex_process-0.1.1.dist-info/top_level.txt,sha256=D4Z1UizaMsPHxvqb1w-5nuDthRAig1OK-y6_3Gnv2fk,14
+latex_process-0.1.1.dist-info/RECORD,,
