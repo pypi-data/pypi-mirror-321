@@ -1,0 +1,11 @@
+puff_web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puff_web/cli.py,sha256=VAbuop9Rlva7-j2533gt7wO-iITqhoNBU5pSJfIBlCk,800
+puff_web/initializer.py,sha256=7Ul8n-CxSjg18KC_ZIQ9m0NQjuid9W4K2OX9aEbWO9A,3679
+puff_web/jquery.js,sha256=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo,87533
+puff_web/pcli.py,sha256=S1k1qOB8fg-tLxghtFqkm_aBC8xXFW6Zit6PGZtstq8,873
+puff_web-1.0.7.dist-info/LICENSE,sha256=wsc9oJfWFaGTET2HZq0O1x9BK-Clz9h9f1FaU8p4yRU,1066
+puff_web-1.0.7.dist-info/METADATA,sha256=HHG6iuijoAO-MGilzXWm7o-tU6AJ8VxC8TKsF3e7Hog,6492
+puff_web-1.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+puff_web-1.0.7.dist-info/entry_points.txt,sha256=LfyMD4E9R-c-Q7BT6-AktGXqUhZzx0kC4KYvelgjc9k,42
+puff_web-1.0.7.dist-info/top_level.txt,sha256=896afITVN7ipI6xei1okK-KIwCgOCzYfQbCtXp-_E10,9
+puff_web-1.0.7.dist-info/RECORD,,
