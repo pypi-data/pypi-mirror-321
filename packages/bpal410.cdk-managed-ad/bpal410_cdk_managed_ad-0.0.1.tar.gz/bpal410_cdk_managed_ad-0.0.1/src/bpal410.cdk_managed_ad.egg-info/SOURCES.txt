@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/bpal410.cdk_managed_ad.egg-info/PKG-INFO
+src/bpal410.cdk_managed_ad.egg-info/SOURCES.txt
+src/bpal410.cdk_managed_ad.egg-info/dependency_links.txt
+src/bpal410.cdk_managed_ad.egg-info/requires.txt
+src/bpal410.cdk_managed_ad.egg-info/top_level.txt
+src/bpal410/cdk_managed_ad/__init__.py
+src/bpal410/cdk_managed_ad/py.typed
+src/bpal410/cdk_managed_ad/_jsii/__init__.py
+src/bpal410/cdk_managed_ad/_jsii/cdk-managed-ad@0.0.1.jsii.tgz
