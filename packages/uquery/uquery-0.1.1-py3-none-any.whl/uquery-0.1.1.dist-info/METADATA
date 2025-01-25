@@ -1,0 +1,64 @@
+Metadata-Version: 2.2
+Name: uquery
+Version: 0.1.1
+Summary: Abstract away the complexity of multi-data source access with a unified interface
+Author-email: wukong_tech <lianghua@wukongtz.com>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: oracledb
+Requires-Dist: psycopg2-binary
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas<2.2.0
+Requires-Dist: pydash
+Requires-Dist: cx_Oracle
+Requires-Dist: toml
+Requires-Dist: tqdm
+Requires-Dist: sqlparse
+Requires-Dist: ibis-framework[mysql]==7.1.0
+Requires-Dist: sqlalchemy-doris[pymysql]==0.2.2
+Requires-Dist: adbc_driver_manager
+Requires-Dist: adbc_driver_flightsql
+
+# UQuery
+
+uQuery is a tool designed for data analysis that simplifies reading data from multiple sources.
+
+
+## Usage
+
+1. write a config file `.uquery.toml` and place it in your home directory or project working directory
+```toml
+[uquery.endpoint.my_data_src]
+db_type = 'doris'
+host = '<your db host>'
+port = '<your db port>'
+user = '<your db username>'
+password = '<your db password>'
+```
+
+We currently support the following database types:
+* oracle
+* postgres
+* doris
+
+
+2. read data
+
+```python
+import pandas as pd
+import uquery
+
+data: pd.DataFrame = uquery.read_sql('select * from table', endpoint='my_data_src')
+print(data)
+```
+
+
+## Installation
+
+```bash
+pip install uquery
+```
