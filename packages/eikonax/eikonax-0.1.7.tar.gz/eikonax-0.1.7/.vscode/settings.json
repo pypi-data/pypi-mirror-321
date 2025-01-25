@@ -1,0 +1,12 @@
+{
+    "conventionalCommits.scopes": [
+        "changelog",
+        "uv",
+        "release",
+        "ci",
+        "coverage",
+        "readme",
+        "index",
+        "Github"
+    ]
+}
