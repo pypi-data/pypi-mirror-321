@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: dyana
+Version: 0.1.2
+Summary: A sandbox environment based on Docker and eBPF to load and profile a wide range of file types.
+Home-page: https://github.com/dreadnode/dyana
+License: MIT
+Author: Simone Margaritelli
+Author-email: simone@dreadnode.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cysimdjson (==23.8)
+Requires-Dist: docker (>=7.1.0,<8.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydantic-yaml (>=1.4.0,<2.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Project-URL: Repository, https://github.com/dreadnode/dyana
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img
+    src="https://d1lppblt9t2x15.cloudfront.net/logos/5714928f3cdc09503751580cffbe8d02.png"
+    alt="Logo"
+    align="center"
+    width="144px"
+    height="144px"
+    />
+</p>
+
+<h4 align="center">
+    <a href="https://pypi.org/project/dyana/" target="_blank">
+        <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/dyana">
+        <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/dyana">
+    </a>
+    <a href="https://github.com/dreadnode/dyana/blob/main/LICENSE" target="_blank">
+        <img alt="GitHub License" src="https://img.shields.io/github/license/dreadnode/dyana">
+    </a>
+    <a href="https://github.com/dreadnode/dyana/actions/workflows/ci.yml">
+        <img alt="GitHub Actions Workflow Status" src="https://github.com/dreadnode/dyana/actions/workflows/ci.yml/badge.svg">
+    </a>
+</h4>
+
+<p align="center">
+    <strong>
+        <a href="https://docs.dreadnode.io/dyana/" target="_blank">
+            Documentation
+        </a>
+    </strong>
+</p>
+
+</br>
+
+Dyana is a sandbox environment using Docker and [Tracee](https://github.com/aquasecurity/tracee) for loading, running and profiling a wide range of files, including machine learning models, ELF executables, Pickle serialized files, Javascripts and more. It provides detailed insights into GPU memory usage, filesystem interactions, network requests, and security related events.
+
+## Requirements
+
+* Python 3.10+ with PIP.
+* Docker
+* Optional: a GNU/Linux machine with CUDA for GPU memory tracing support.
+
+## Installation
+
+Install with:
+
+```bash
+pip install dyana
+```
+
+To upgrade to the latest version, run:
+
+```bash
+pip install --upgrade dyana
+```
+
+To uninstall, run:
+
+```bash
+pip uninstall dyana
+```
+
+## Usage
+
+Create a trace file for a given loader with:
+
+```bash
+dyana trace --loader automodel ... --output trace.json
+```
+
+It is possible to override the default events that Dyana will trace by passing a [custom policy](https://aquasecurity.github.io/tracee/v0.14/docs/policies/) to the tracer with:
+
+```bash
+dyana trace --loader automodel ... --policy examples/network_only_policy.yml
+```
+
+Show a summary of the trace file with:
+
+```bash
+dyana summary --trace-path trace.json
+```
+
+### Default Safeguards
+
+Dyana does not allow network access by default to the loader container. If you need to allow it, you can pass the `--allow-network` flag:
+
+```bash
+dyana trace ... --allow-network
+```
+
+Dyana uses a shared volume to pass your files to the loader and by default it does not allow writing to it. If you need to allow it, you can pass the `--allow-volume-write` flag:
+
+```bash
+dyana trace ... --allow-volume-write
+```
+
+## Loaders
+
+Dyana provides a set of loaders for different types of files, each loader has a dedicated set of arguments and will be executed in an isolated, offline by default container.
+
+To see the available loaders and their scriptions, run `dyana loaders`.
+
+### automodel
+
+The default loader for machine learning models. It will load any model that is compatible with [AutoModel and AutoTokenizer](https://huggingface.co/transformers/v3.0.2/model_doc/auto.html).
+
+```bash
+dyana trace --loader automodel --model /path/to/model --input "This is an example sentence."
+
+# automodel is the default loader, so this is equivalent to:
+dyana trace --model /path/to/model --input "This is an example sentence."
+
+# in case the model requires extra dependencies, you can pass them as:
+dyana trace --model tohoku-nlp/bert-base-japanese --input "This is an example sentence." --extra-requirements "protobuf fugashi ipadic"
+```
+
+### elf
+
+This loader will load an ELF file and run it.
+
+```bash
+dyana trace --loader elf --elf /path/to/linux_executable
+
+# depending on the ELF file and the host computer, you might need to specify a different platform:
+dyana trace --loader elf --elf /path/to/linux_executable --platform linux/amd64
+
+# networking is disabled by default, if you need to allow it, you can pass the --allow-network flag:
+dyana trace --loader elf --elf /path/to/linux_executable --allow-network
+```
+
+### pickle
+
+This loader will load a Pickle serialized file.
+
+```bash
+dyana trace --loader pickle --pickle /path/to/file.pickle
+
+# networking is disabled by default, if you need to allow it, you can pass the --allow-network flag:
+dyana trace --loader pickle --pickle /path/to/file.pickle --allow-network
+```
+
+### python
+
+This loader will load a Python file and run it.
+
+```bash
+dyana trace --loader python --script /path/to/file.py
+
+# networking is disabled by default, if you need to allow it, you can pass the --allow-network flag:
+dyana trace --loader python --script /path/to/file.py --allow-network
+```
+
+### pip
+
+This loader will install a Python package via PIP.
+
+```bash
+dyana trace --loader pip --package requests
+
+# you can install a specific version of a package:
+dyana trace --loader pip --package requests==2.28.2
+
+# you can also pass extra dependencies to be installed:
+dyana trace --loader pip --package foobar --extra-dependencies "gcc"
+```
+
+### js
+
+This loader will load a Javascript file and run it via NodeJS.
+
+```bash
+dyana trace --loader js --script /path/to/file.js
+
+# networking is disabled by default, if you need to allow it, you can pass the --allow-network flag:
+dyana trace --loader js --script /path/to/file.js --allow-network
+```
+
+## License
+
+Dyana is released under the [MIT license](LICENSE). Tracee is released under the [Apache 2.0 license](third_party_licenses/APACHE2.md).
