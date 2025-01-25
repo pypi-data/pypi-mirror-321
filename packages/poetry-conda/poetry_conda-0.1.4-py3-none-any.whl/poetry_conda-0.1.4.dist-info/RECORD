@@ -1,0 +1,7 @@
+poetry_conda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_conda/plugin.py,sha256=70QFDA4CyxMyjINjxyaC7ZLfVsHHS3AZxIKur9RijuA,1931
+poetry_conda-0.1.4.dist-info/LICENSE,sha256=2EDevfkHSGWcm-_f9TbjFFJY-1JyedEJgF5dUZ8wzuQ,1069
+poetry_conda-0.1.4.dist-info/METADATA,sha256=m7bl_5_DfVumwclZJHjAiD2RI_Nvlt9_-9iRU7zDHrM,2264
+poetry_conda-0.1.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+poetry_conda-0.1.4.dist-info/entry_points.txt,sha256=7vly0cg_jw9y6Px7S425NfKVB_nejjO0IWmel9t0eq4,80
+poetry_conda-0.1.4.dist-info/RECORD,,
