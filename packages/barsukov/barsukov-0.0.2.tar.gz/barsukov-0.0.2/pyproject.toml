@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "barsukov"
+version = "0.0.2"
+dependencies = [
+    "pytz>=2014.10",
+    "numpy>=1.20.0",
+    "scipy>=1.15.1",
+]
+requires-python = ">=3.8"
+authors = [
+    { name = "Igor Barsukov", email = "igorb@ucr.edu" },
+]
+maintainers = [
+    { name = "Steven Castaneda", email = "scast206@ucr.edu" },
+]
+description = "Experiment Automation Package"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://barsukov.ucr.edu"
+#Repository = <githublink>
+
+[tool.setuptools.packages.find]
+where = ["src"]
