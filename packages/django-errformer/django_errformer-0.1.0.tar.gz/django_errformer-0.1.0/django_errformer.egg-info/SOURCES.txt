@@ -1,0 +1,15 @@
+setup.py
+django_errformer.egg-info/PKG-INFO
+django_errformer.egg-info/SOURCES.txt
+django_errformer.egg-info/dependency_links.txt
+django_errformer.egg-info/requires.txt
+django_errformer.egg-info/top_level.txt
+errformer/__init__.py
+errformer/apps.py
+errformer/conf.py
+errformer/middleware.py
+errformer/handlers/__init__.py
+errformer/handlers/tg.py
+errformer/services/__init__.py
+errformer/services/generate_message.py
+errformer/services/tg_sender.py

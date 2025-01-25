@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: django-errformer
+Version: 0.1.0
+Summary: Send errors and logs to Telegram chat.
+Home-page: https://github.com/breduin/django-errformer
+Author: Oleg Tarasov
+Author-email: tolegu@ya.ru
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: Django>=4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Errformer
+
+# Install
+
+# Parameters
+
+- ERRFORMER_ADMIN_CHAT_ID - Telegram chat id
+- ERRFORMER_INCLUDE_TRACEBACK - Include traceback in message
+- ERRFORMER_PROJECT_NAME - Project name
+
+# Usage
+
+- Add `TelegramErrformerHandler` to logging handlers
+
+```python
+LOGGING = {
+    "handlers": {
+        "telegram": {"class": "errformer.handlers.TelegramErrformerHandler"},
+    },
+}
+```
+
+- Add `ErrformerMiddleware` to middleware
+
+```python
+MIDDLEWARE = [
+    ...
+    "errformer.middleware.ErrformerMiddleware",
+]
+```
