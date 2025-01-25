@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-Samarth-102203487
+Version: 0.1
+Summary: A package for TOPSIS method implementation.
+Home-page: https://github.com/SAMARTH-1301/Topsis-Samarth-102203487
+Author: Samarth Singh
+Author-email: ssingh11_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# TOPSIS-Package
+
+This Python package implements the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) method for multi-criteria decision-making.
+
+## Usage
+Install the package using:
+```bash
+pip install Topsis-Samarth-102203487
