@@ -1,0 +1,21 @@
+[project]
+name = "ourtils"
+version = "0.1.0"
+description = "Useful code for working with data."
+authors = [
+    {name = "Anthony",email = "anthony.yoskovich@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
