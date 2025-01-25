@@ -1,0 +1,5 @@
+- name: Setup VM
+  block:
+    - name: Set project_dest_dir variable
+      set_fact:
+        project_dest_dir: "{{ static_playbook_dir }}/project"
