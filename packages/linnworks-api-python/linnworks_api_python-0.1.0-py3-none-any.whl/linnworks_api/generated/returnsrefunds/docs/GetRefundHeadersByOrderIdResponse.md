@@ -1,0 +1,29 @@
+# GetRefundHeadersByOrderIdResponse
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**refund_headers** | [**List[OrderRefundHeader]**](OrderRefundHeader.md) |  | [optional] 
+
+## Example
+
+```python
+from linnworks_api.generated.returnsrefunds.models.get_refund_headers_by_order_id_response import GetRefundHeadersByOrderIdResponse
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of GetRefundHeadersByOrderIdResponse from a JSON string
+get_refund_headers_by_order_id_response_instance = GetRefundHeadersByOrderIdResponse.from_json(json)
+# print the JSON string representation of the object
+print(GetRefundHeadersByOrderIdResponse.to_json())
+
+# convert the object into a dict
+get_refund_headers_by_order_id_response_dict = get_refund_headers_by_order_id_response_instance.to_dict()
+# create an instance of GetRefundHeadersByOrderIdResponse from a dict
+get_refund_headers_by_order_id_response_from_dict = GetRefundHeadersByOrderIdResponse.from_dict(get_refund_headers_by_order_id_response_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

@@ -1,0 +1,33 @@
+# GenericPagedResultScrapItem
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**page_number** | **int** |  | [optional] 
+**entries_per_page** | **int** |  | [optional] 
+**total_entries** | **int** |  | [optional] 
+**total_pages** | **int** |  | [optional] [readonly] 
+**data** | [**List[ScrapItem]**](ScrapItem.md) |  | [optional] 
+
+## Example
+
+```python
+from linnworks_api.generated.inventory.models.generic_paged_result_scrap_item import GenericPagedResultScrapItem
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of GenericPagedResultScrapItem from a JSON string
+generic_paged_result_scrap_item_instance = GenericPagedResultScrapItem.from_json(json)
+# print the JSON string representation of the object
+print(GenericPagedResultScrapItem.to_json())
+
+# convert the object into a dict
+generic_paged_result_scrap_item_dict = generic_paged_result_scrap_item_instance.to_dict()
+# create an instance of GenericPagedResultScrapItem from a dict
+generic_paged_result_scrap_item_from_dict = GenericPagedResultScrapItem.from_dict(generic_paged_result_scrap_item_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
