@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: topsis-prak-3844
+Version: 0.1
+Summary: A Python package to implement the TOPSIS method for multi-criteria decision-making.
+Author: prakriti
+Author-email: pprakriti_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+ 
+# TOPSIS-PRAK-3844
+
+This Python package implements the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** method for multi-criteria decision-making.
+
+## Installation
+
+```bash
+pip install topsis-prak-3844
