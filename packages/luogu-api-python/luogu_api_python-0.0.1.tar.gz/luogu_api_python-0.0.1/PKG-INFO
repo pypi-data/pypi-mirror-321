@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: luogu-api-python
+Version: 0.0.1
+Summary: python implement of luogu API
+Home-page: https://github.com/NekoOS-Group/luogu-api-python
+Author: bzy
+Author-email: bzy.cirno@gmail.com
+License: GLP3.0
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
