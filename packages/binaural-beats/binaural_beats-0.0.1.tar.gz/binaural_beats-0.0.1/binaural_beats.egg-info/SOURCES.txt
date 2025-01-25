@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+binaural_beats/__init__.py
+binaural_beats.egg-info/PKG-INFO
+binaural_beats.egg-info/SOURCES.txt
+binaural_beats.egg-info/dependency_links.txt
+binaural_beats.egg-info/requires.txt
+binaural_beats.egg-info/top_level.txt
