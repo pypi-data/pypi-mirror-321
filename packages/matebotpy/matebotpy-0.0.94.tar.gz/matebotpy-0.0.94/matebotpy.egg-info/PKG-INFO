@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: matebotpy
+Version: 0.0.94
+Summary: Python API Wrapper for Matebot.
+Home-page: https://github.com/meszmate/matebotpy
+Author: Máté Mészáros
+Author-email: meszmatew@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Python library for [Matebot](https://matebot.xyz)
+The Python Library for Matebot is a simple and powerful library designed for retrieving and editing data from Matebot.
+
+## Installation
+```
+pip install matebotpy
+```
