@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: topsis-Akash
+Version: 1.0.0
+Summary: A Python package to implement the TOPSIS method for decision making.
+Home-page: https://github.com/Akashkohli28/topsis-akash
+Author: Akash Kohli
+Author-email: akashkohli1202@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=1.0.0
+Requires-Dist: numpy >=1.19.0
+
+# TOPSIS Method Package
+
+## Overview
+
+The **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** method is a decision-making tool. This package ranks alternatives based on multiple criteria.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install topsis-akash
