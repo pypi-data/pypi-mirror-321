@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>influxdb_client_3.write_client.client.write.point &#8212; masterpiece  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/masterpiece.css?v=7a3aeb84" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../../../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../../index.html">
+          masterpiece</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"></ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../../../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <h1>Source code for influxdb_client_3.write_client.client.write.point</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Point data structure to represent LineProtocol.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span><span class="p">,</span> <span class="n">timezone</span>
+<span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="n">Decimal</span>
+<span class="kn">from</span> <span class="nn">numbers</span> <span class="kn">import</span> <span class="n">Integral</span>
+
+<span class="kn">from</span> <span class="nn">influxdb_client_3.write_client.client.util.date_utils</span> <span class="kn">import</span> <span class="n">get_date_helper</span>
+<span class="kn">from</span> <span class="nn">influxdb_client_3.write_client.domain.write_precision</span> <span class="kn">import</span> <span class="n">WritePrecision</span>
+
+<span class="n">EPOCH</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">tzinfo</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
+
+<span class="n">DEFAULT_WRITE_PRECISION</span> <span class="o">=</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">NS</span>
+
+<span class="n">_ESCAPE_MEASUREMENT</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">({</span>
+    <span class="s1">&#39;,&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\,&#39;</span><span class="p">,</span>
+    <span class="s1">&#39; &#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\ &#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\t&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\r&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="n">_ESCAPE_KEY</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">({</span>
+    <span class="s1">&#39;,&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\,&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;=&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\=&#39;</span><span class="p">,</span>
+    <span class="s1">&#39; &#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\ &#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\t&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\r&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="n">_ESCAPE_STRING</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">({</span>
+    <span class="s1">&#39;&quot;&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;\&quot;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+    <span class="n">_HAS_NUMPY</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">except</span> <span class="ne">ModuleNotFoundError</span><span class="p">:</span>
+    <span class="n">_HAS_NUMPY</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="k">class</span> <span class="nc">Point</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Point defines the values that will be written to the database.</span>
+
+<span class="sd">    Ref: https://docs.influxdata.com/influxdb/latest/reference/key-concepts/data-elements/#point</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">measurement</span><span class="p">(</span><span class="n">measurement</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a new Point with specified measurement name.&quot;&quot;&quot;</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">measurement</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">p</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="n">dictionary</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">write_precision</span><span class="p">:</span> <span class="n">WritePrecision</span> <span class="o">=</span> <span class="n">DEFAULT_WRITE_PRECISION</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize point from &#39;dict&#39; structure.</span>
+
+<span class="sd">        The expected dict structure is:</span>
+<span class="sd">            - measurement</span>
+<span class="sd">            - tags</span>
+<span class="sd">            - fields</span>
+<span class="sd">            - time</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            .. code-block:: python</span>
+
+<span class="sd">                # Use default dictionary structure</span>
+<span class="sd">                dict_structure = {</span>
+<span class="sd">                    &quot;measurement&quot;: &quot;h2o_feet&quot;,</span>
+<span class="sd">                    &quot;tags&quot;: {&quot;location&quot;: &quot;coyote_creek&quot;},</span>
+<span class="sd">                    &quot;fields&quot;: {&quot;water_level&quot;: 1.0},</span>
+<span class="sd">                    &quot;time&quot;: 1</span>
+<span class="sd">                }</span>
+<span class="sd">                point = Point.from_dict(dict_structure, WritePrecision.NS)</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            .. code-block:: python</span>
+
+<span class="sd">                # Use custom dictionary structure</span>
+<span class="sd">                dictionary = {</span>
+<span class="sd">                    &quot;name&quot;: &quot;sensor_pt859&quot;,</span>
+<span class="sd">                    &quot;location&quot;: &quot;warehouse_125&quot;,</span>
+<span class="sd">                    &quot;version&quot;: &quot;2021.06.05.5874&quot;,</span>
+<span class="sd">                    &quot;pressure&quot;: 125,</span>
+<span class="sd">                    &quot;temperature&quot;: 10,</span>
+<span class="sd">                    &quot;created&quot;: 1632208639,</span>
+<span class="sd">                }</span>
+<span class="sd">                point = Point.from_dict(dictionary,</span>
+<span class="sd">                                        write_precision=WritePrecision.S,</span>
+<span class="sd">                                        record_measurement_key=&quot;name&quot;,</span>
+<span class="sd">                                        record_time_key=&quot;created&quot;,</span>
+<span class="sd">                                        record_tag_keys=[&quot;location&quot;, &quot;version&quot;],</span>
+<span class="sd">                                        record_field_keys=[&quot;pressure&quot;, &quot;temperature&quot;])</span>
+
+<span class="sd">        Int Types:</span>
+<span class="sd">            The following example shows how to configure the types of integers fields.</span>
+<span class="sd">            It is useful when you want to serialize integers always as ``float`` to avoid ``field type conflict``</span>
+<span class="sd">            or use ``unsigned 64-bit integer`` as the type for serialization.</span>
+
+<span class="sd">            .. code-block:: python</span>
+
+<span class="sd">                # Use custom dictionary structure</span>
+<span class="sd">                dict_structure = {</span>
+<span class="sd">                    &quot;measurement&quot;: &quot;h2o_feet&quot;,</span>
+<span class="sd">                    &quot;tags&quot;: {&quot;location&quot;: &quot;coyote_creek&quot;},</span>
+<span class="sd">                    &quot;fields&quot;: {</span>
+<span class="sd">                        &quot;water_level&quot;: 1.0,</span>
+<span class="sd">                        &quot;some_counter&quot;: 108913123234</span>
+<span class="sd">                    },</span>
+<span class="sd">                    &quot;time&quot;: 1</span>
+<span class="sd">                }</span>
+
+<span class="sd">                point = Point.from_dict(dict_structure, field_types={&quot;some_counter&quot;: &quot;uint&quot;})</span>
+
+<span class="sd">        :param dictionary: dictionary for serialize into data Point</span>
+<span class="sd">        :param write_precision: sets the precision for the supplied time values</span>
+<span class="sd">        :key record_measurement_key: key of dictionary with specified measurement</span>
+<span class="sd">        :key record_measurement_name: static measurement name for data Point</span>
+<span class="sd">        :key record_time_key: key of dictionary with specified timestamp</span>
+<span class="sd">        :key record_tag_keys: list of dictionary keys to use as a tag</span>
+<span class="sd">        :key record_field_keys: list of dictionary keys to use as a field</span>
+<span class="sd">        :key field_types: optional dictionary to specify types of serialized fields. Currently, is supported customization for integer types.</span>
+<span class="sd">                          Possible integers types:</span>
+<span class="sd">                            - ``int`` - serialize integers as &quot;**Signed 64-bit integers**&quot; - ``9223372036854775807i`` (default behaviour)</span>
+<span class="sd">                            - ``uint`` - serialize integers as &quot;**Unsigned 64-bit integers**&quot; - ``9223372036854775807u``</span>
+<span class="sd">                            - ``float`` - serialize integers as &quot;**IEEE-754 64-bit floating-point numbers**&quot;. Useful for unify number types in your pipeline to avoid field type conflict - ``9223372036854775807``</span>
+<span class="sd">                          The ``field_types`` can be also specified as part of incoming dictionary. For more info see an example above.</span>
+<span class="sd">        :return: new data point</span>
+<span class="sd">        &quot;&quot;&quot;</span>  <span class="c1"># noqa: E501</span>
+        <span class="n">measurement_</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;record_measurement_name&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">measurement_</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">measurement_</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;record_measurement_key&#39;</span><span class="p">,</span> <span class="s1">&#39;measurement&#39;</span><span class="p">)]</span>
+        <span class="n">point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">measurement_</span><span class="p">)</span>
+
+        <span class="n">record_tag_keys</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;record_tag_keys&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">record_tag_keys</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">tag_key</span> <span class="ow">in</span> <span class="n">record_tag_keys</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">tag_key</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+                    <span class="n">point</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">tag_key</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">tag_key</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="s1">&#39;tags&#39;</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">tag_key</span><span class="p">,</span> <span class="n">tag_value</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">point</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">tag_key</span><span class="p">,</span> <span class="n">tag_value</span><span class="p">)</span>
+
+        <span class="n">record_field_keys</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;record_field_keys&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">record_field_keys</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">field_key</span> <span class="ow">in</span> <span class="n">record_field_keys</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">field_key</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+                    <span class="n">point</span><span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="n">field_key</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">[</span><span class="n">field_key</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">field_key</span><span class="p">,</span> <span class="n">field_value</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;fields&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">point</span><span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="n">field_key</span><span class="p">,</span> <span class="n">field_value</span><span class="p">)</span>
+
+        <span class="n">record_time_key</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;record_time_key&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">record_time_key</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+            <span class="n">point</span><span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="n">dictionary</span><span class="p">[</span><span class="n">record_time_key</span><span class="p">],</span> <span class="n">write_precision</span><span class="o">=</span><span class="n">write_precision</span><span class="p">)</span>
+
+        <span class="n">_field_types</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;field_types&#39;</span><span class="p">,</span> <span class="p">{})</span>
+        <span class="k">if</span> <span class="s1">&#39;field_types&#39;</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+            <span class="n">_field_types</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="s1">&#39;field_types&#39;</span><span class="p">]</span>
+        <span class="c1"># Map API fields types to Line Protocol types postfix:</span>
+        <span class="c1"># - int: &#39;i&#39;</span>
+        <span class="c1"># - uint: &#39;u&#39;</span>
+        <span class="c1"># - float: &#39;&#39;</span>
+        <span class="n">point</span><span class="o">.</span><span class="n">_field_types</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;i&#39;</span> <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;int&#39;</span> <span class="k">else</span> <span class="s1">&#39;u&#39;</span> <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;uint&#39;</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+            <span class="n">_field_types</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">point</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">measurement_name</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize defaults.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tags</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">measurement_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_precision</span> <span class="o">=</span> <span class="n">DEFAULT_WRITE_PRECISION</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_field_types</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">write_precision</span><span class="o">=</span><span class="n">DEFAULT_WRITE_PRECISION</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Specify timestamp for DataPoint with declared precision.</span>
+
+<span class="sd">        If time doesn&#39;t have specified timezone we assume that timezone is UTC.</span>
+
+<span class="sd">        Examples::</span>
+<span class="sd">            Point.measurement(&quot;h2o&quot;).field(&quot;val&quot;, 1).time(&quot;2009-11-10T23:00:00.123456Z&quot;)</span>
+<span class="sd">            Point.measurement(&quot;h2o&quot;).field(&quot;val&quot;, 1).time(1257894000123456000)</span>
+<span class="sd">            Point.measurement(&quot;h2o&quot;).field(&quot;val&quot;, 1).time(datetime(2009, 11, 10, 23, 0, 0, 123456))</span>
+<span class="sd">            Point.measurement(&quot;h2o&quot;).field(&quot;val&quot;, 1).time(1257894000123456000, write_precision=WritePrecision.NS)</span>
+
+
+<span class="sd">        :param time: the timestamp for your data</span>
+<span class="sd">        :param write_precision: sets the precision for the supplied time values</span>
+<span class="sd">        :return: this point</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_precision</span> <span class="o">=</span> <span class="n">write_precision</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time</span> <span class="o">=</span> <span class="n">time</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Add tag with key and value.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tags</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">field</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Add field with key and value.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">to_line_protocol</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create LineProtocol.</span>
+
+<span class="sd">         :param precision: required precision of LineProtocol. If it&#39;s not set then use the precision from ``Point``.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_measurement</span> <span class="o">=</span> <span class="n">_escape_key</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">_ESCAPE_MEASUREMENT</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">_measurement</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">):</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;The measurement name &#39;</span><span class="si">{</span><span class="n">_measurement</span><span class="si">}</span><span class="s2">&#39; start with &#39;#&#39;.</span>
+
+<span class="s2">The output Line protocol will be interpret as a comment by InfluxDB. For more info see:</span>
+<span class="s2">    - https://docs.influxdata.com/influxdb/latest/reference/syntax/line-protocol/#comments</span>
+<span class="s2">&quot;&quot;&quot;</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="ne">SyntaxWarning</span><span class="p">)</span>
+        <span class="n">_tags</span> <span class="o">=</span> <span class="n">_append_tags</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tags</span><span class="p">)</span>
+        <span class="n">_fields</span> <span class="o">=</span> <span class="n">_append_fields</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fields</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_field_types</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">_fields</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">_time</span> <span class="o">=</span> <span class="n">_append_time</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_write_precision</span> <span class="k">if</span> <span class="n">precision</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">precision</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">_measurement</span><span class="si">}{</span><span class="n">_tags</span><span class="si">}{</span><span class="n">_fields</span><span class="si">}{</span><span class="n">_time</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">write_precision</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get precision.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_write_precision</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">set_str_rep</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">rep_function</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the string representation for all Points.&quot;&quot;&quot;</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">__str___rep</span> <span class="o">=</span> <span class="n">rep_function</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create string representation of this Point.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_line_protocol</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">_append_tags</span><span class="p">(</span><span class="n">tags</span><span class="p">):</span>
+    <span class="n">_return</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">tag_key</span><span class="p">,</span> <span class="n">tag_value</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">tags</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+
+        <span class="k">if</span> <span class="n">tag_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="n">tag</span> <span class="o">=</span> <span class="n">_escape_key</span><span class="p">(</span><span class="n">tag_key</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">_escape_tag_value</span><span class="p">(</span><span class="n">tag_value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">tag</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+            <span class="n">_return</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">_return</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="si">}{</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_return</span><span class="p">)</span><span class="si">}</span><span class="s2"> &quot;</span>
+
+
+<span class="k">def</span> <span class="nf">_append_fields</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="n">field_types</span><span class="p">):</span>
+    <span class="n">_return</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">fields</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Decimal</span><span class="p">)</span> <span class="ow">or</span> <span class="n">_np_is_subtype</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">math</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="c1"># It&#39;s common to represent whole numbers as floats</span>
+            <span class="c1"># and the trailing &quot;.0&quot; that Python produces is unnecessary</span>
+            <span class="c1"># in line-protocol, inconsistent with other line-protocol encoders,</span>
+            <span class="c1"># and takes more space than needed, so trim it off.</span>
+            <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.0&#39;</span><span class="p">):</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">_return</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">_escape_key</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="n">_np_is_subtype</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+            <span class="n">_type</span> <span class="o">=</span> <span class="n">field_types</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="s2">&quot;i&quot;</span><span class="p">)</span>
+            <span class="n">_return</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">_escape_key</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}{</span><span class="n">_type</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+            <span class="n">_return</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">_escape_key</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">_return</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">_escape_key</span><span class="p">(</span><span class="n">field</span><span class="p">)</span><span class="si">}</span><span class="s1">=&quot;</span><span class="si">{</span><span class="n">_escape_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Type: &quot;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s1">&quot; of field: &quot;</span><span class="si">{</span><span class="n">field</span><span class="si">}</span><span class="s1">&quot; is not supported.&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_return</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">_append_time</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">write_precision</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">time</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">_convert_timestamp</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="n">write_precision</span><span class="p">))</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">_escape_key</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">escape_list</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">escape_list</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">escape_list</span> <span class="o">=</span> <span class="n">_ESCAPE_KEY</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">escape_list</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_escape_tag_value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">_escape_key</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span>
+    <span class="k">return</span> <span class="n">ret</span>
+
+
+<span class="k">def</span> <span class="nf">_escape_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">_ESCAPE_STRING</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_convert_timestamp</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">DEFAULT_WRITE_PRECISION</span><span class="p">):</span>
+    <span class="n">date_helper</span> <span class="o">=</span> <span class="n">get_date_helper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">Integral</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">timestamp</span>  <span class="c1"># assume precision is correct if timestamp is int</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">timestamp</span> <span class="o">=</span> <span class="n">date_helper</span><span class="o">.</span><span class="n">parse_date</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">timedelta</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">datetime</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">datetime</span><span class="p">):</span>
+            <span class="n">timestamp</span> <span class="o">=</span> <span class="n">date_helper</span><span class="o">.</span><span class="n">to_utc</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span> <span class="o">-</span> <span class="n">EPOCH</span>
+
+        <span class="n">ns</span> <span class="o">=</span> <span class="n">date_helper</span><span class="o">.</span><span class="n">to_nanoseconds</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">precision</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">precision</span> <span class="o">==</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">NS</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ns</span>
+        <span class="k">elif</span> <span class="n">precision</span> <span class="o">==</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">US</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ns</span> <span class="o">/</span> <span class="mf">1e3</span>
+        <span class="k">elif</span> <span class="n">precision</span> <span class="o">==</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">MS</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ns</span> <span class="o">/</span> <span class="mf">1e6</span>
+        <span class="k">elif</span> <span class="n">precision</span> <span class="o">==</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">S</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ns</span> <span class="o">/</span> <span class="mf">1e9</span>
+
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_np_is_subtype</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">np_type</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">_HAS_NUMPY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;dtype&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="n">np_type</span> <span class="o">==</span> <span class="s1">&#39;float&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">floating</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">np_type</span> <span class="o">==</span> <span class="s1">&#39;int&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2024, juha meskanen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+InfluxDB V3 Timeseries for MasterPiece
+======================================
+
+.. image:: _static/masterpiece.png
+    :alt: Masterpiece - A Piece of Work
+    :width: 400px
+    :height: 300px
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+.. include:: ../../README.rst
+
+.. include:: ../../LICENSE.rst
+
+.. include:: ../../CHANGELOG.rst
+
+   masterpiece_influx/index
+
+
+
+
+Classes
+-------
+
+.. inheritance-diagram::
+   masterpiece_influx.Influx
+   :parts: 1
+
+
+
+
+Index
+=====
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

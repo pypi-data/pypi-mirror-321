@@ -1,0 +1,1010 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Masterpiece Influx Time Series Plugin &#8212; masterpiece  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../_static/masterpiece.css?v=7a3aeb84" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          masterpiece</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Masterpiece Influx Time Series Plugin</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx"><code class="docutils literal notranslate"><span class="pre">Influx</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.host"><code class="docutils literal notranslate"><span class="pre">Influx.host</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.token"><code class="docutils literal notranslate"><span class="pre">Influx.token</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.org"><code class="docutils literal notranslate"><span class="pre">Influx.org</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.database"><code class="docutils literal notranslate"><span class="pre">Influx.database</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.influx_client"><code class="docutils literal notranslate"><span class="pre">Influx.influx_client</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.acquire_time_spent"><code class="docutils literal notranslate"><span class="pre">Influx.acquire_time_spent()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">Influx.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">Influx.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.copy"><code class="docutils literal notranslate"><span class="pre">Influx.copy()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Influx.database</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.debug"><code class="docutils literal notranslate"><span class="pre">Influx.debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.do"><code class="docutils literal notranslate"><span class="pre">Influx.do()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.error"><code class="docutils literal notranslate"><span class="pre">Influx.error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.factory"><code class="docutils literal notranslate"><span class="pre">Influx.factory()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.find_class"><code class="docutils literal notranslate"><span class="pre">Influx.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.from_dict"><code class="docutils literal notranslate"><span class="pre">Influx.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.get_class_id"><code class="docutils literal notranslate"><span class="pre">Influx.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.has_class_method_directly"><code class="docutils literal notranslate"><span class="pre">Influx.has_class_method_directly()</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">Influx.host</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.info"><code class="docutils literal notranslate"><span class="pre">Influx.info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.init_class"><code class="docutils literal notranslate"><span class="pre">Influx.init_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.instantiate"><code class="docutils literal notranslate"><span class="pre">Influx.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_debug"><code class="docutils literal notranslate"><span class="pre">Influx.log_debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_error"><code class="docutils literal notranslate"><span class="pre">Influx.log_error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_info"><code class="docutils literal notranslate"><span class="pre">Influx.log_info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_warning"><code class="docutils literal notranslate"><span class="pre">Influx.log_warning()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.make_url"><code class="docutils literal notranslate"><span class="pre">Influx.make_url()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.measurement"><code class="docutils literal notranslate"><span class="pre">Influx.measurement()</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">Influx.org</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.parent"><code class="docutils literal notranslate"><span class="pre">Influx.parent</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_dict"><code class="docutils literal notranslate"><span class="pre">Influx.read_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_last_value"><code class="docutils literal notranslate"><span class="pre">Influx.read_last_value()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_point"><code class="docutils literal notranslate"><span class="pre">Influx.read_point()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.register"><code class="docutils literal notranslate"><span class="pre">Influx.register()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.resolve_url"><code class="docutils literal notranslate"><span class="pre">Influx.resolve_url()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.root"><code class="docutils literal notranslate"><span class="pre">Influx.root()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.run"><code class="docutils literal notranslate"><span class="pre">Influx.run()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.run_forever"><code class="docutils literal notranslate"><span class="pre">Influx.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.set_log"><code class="docutils literal notranslate"><span class="pre">Influx.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.shutdown"><code class="docutils literal notranslate"><span class="pre">Influx.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.to_dict"><code class="docutils literal notranslate"><span class="pre">Influx.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">Influx.token</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.update_metrics"><code class="docutils literal notranslate"><span class="pre">Influx.update_metrics()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.warning"><code class="docutils literal notranslate"><span class="pre">Influx.warning()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.write"><code class="docutils literal notranslate"><span class="pre">Influx.write()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.write_dict"><code class="docutils literal notranslate"><span class="pre">Influx.write_dict()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.field"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.field()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.from_dict"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.measurement"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.measurement()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.set_str_rep"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.set_str_rep()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.tag"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.tag()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.time"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.time()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.to_dict"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.to_line_protocol"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.to_line_protocol()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.validate"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.validate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.write_precision"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.write_precision</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/masterpiece_influx/index.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Masterpiece Influx Time Series Plugin</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx"><code class="docutils literal notranslate"><span class="pre">Influx</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.host"><code class="docutils literal notranslate"><span class="pre">Influx.host</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.token"><code class="docutils literal notranslate"><span class="pre">Influx.token</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.org"><code class="docutils literal notranslate"><span class="pre">Influx.org</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.database"><code class="docutils literal notranslate"><span class="pre">Influx.database</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.influx_client"><code class="docutils literal notranslate"><span class="pre">Influx.influx_client</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.acquire_time_spent"><code class="docutils literal notranslate"><span class="pre">Influx.acquire_time_spent()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">Influx.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">Influx.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.copy"><code class="docutils literal notranslate"><span class="pre">Influx.copy()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Influx.database</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.debug"><code class="docutils literal notranslate"><span class="pre">Influx.debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.do"><code class="docutils literal notranslate"><span class="pre">Influx.do()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.error"><code class="docutils literal notranslate"><span class="pre">Influx.error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.factory"><code class="docutils literal notranslate"><span class="pre">Influx.factory()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.find_class"><code class="docutils literal notranslate"><span class="pre">Influx.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.from_dict"><code class="docutils literal notranslate"><span class="pre">Influx.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.get_class_id"><code class="docutils literal notranslate"><span class="pre">Influx.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.has_class_method_directly"><code class="docutils literal notranslate"><span class="pre">Influx.has_class_method_directly()</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">Influx.host</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.info"><code class="docutils literal notranslate"><span class="pre">Influx.info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.init_class"><code class="docutils literal notranslate"><span class="pre">Influx.init_class()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.instantiate"><code class="docutils literal notranslate"><span class="pre">Influx.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_debug"><code class="docutils literal notranslate"><span class="pre">Influx.log_debug()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_error"><code class="docutils literal notranslate"><span class="pre">Influx.log_error()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_info"><code class="docutils literal notranslate"><span class="pre">Influx.log_info()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.log_warning"><code class="docutils literal notranslate"><span class="pre">Influx.log_warning()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.make_url"><code class="docutils literal notranslate"><span class="pre">Influx.make_url()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.measurement"><code class="docutils literal notranslate"><span class="pre">Influx.measurement()</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">Influx.org</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.parent"><code class="docutils literal notranslate"><span class="pre">Influx.parent</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_dict"><code class="docutils literal notranslate"><span class="pre">Influx.read_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_last_value"><code class="docutils literal notranslate"><span class="pre">Influx.read_last_value()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.read_point"><code class="docutils literal notranslate"><span class="pre">Influx.read_point()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.register"><code class="docutils literal notranslate"><span class="pre">Influx.register()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.resolve_url"><code class="docutils literal notranslate"><span class="pre">Influx.resolve_url()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.root"><code class="docutils literal notranslate"><span class="pre">Influx.root()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.run"><code class="docutils literal notranslate"><span class="pre">Influx.run()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.run_forever"><code class="docutils literal notranslate"><span class="pre">Influx.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.set_log"><code class="docutils literal notranslate"><span class="pre">Influx.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.shutdown"><code class="docutils literal notranslate"><span class="pre">Influx.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.to_dict"><code class="docutils literal notranslate"><span class="pre">Influx.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">Influx.token</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.update_metrics"><code class="docutils literal notranslate"><span class="pre">Influx.update_metrics()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.warning"><code class="docutils literal notranslate"><span class="pre">Influx.warning()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.write"><code class="docutils literal notranslate"><span class="pre">Influx.write()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.Influx.write_dict"><code class="docutils literal notranslate"><span class="pre">Influx.write_dict()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a><ul>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.field"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.field()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.from_dict"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.measurement"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.measurement()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.set_str_rep"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.set_str_rep()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.tag"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.tag()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.time"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.time()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.to_dict"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.to_line_protocol"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.to_line_protocol()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.validate"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.validate()</span></code></a></li>
+<li><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement.write_precision"><code class="docutils literal notranslate"><span class="pre">InfluxMeasurement.write_precision</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="sourcelink">
+  <a href="../_sources/masterpiece_influx/index.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="module-masterpiece_influx">
+<span id="masterpiece-influx-time-series-plugin"></span><h1>Masterpiece Influx Time Series Plugin<a class="headerlink" href="#module-masterpiece_influx" title="Link to this heading">¶</a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>InfluxDB V3 time series database.</p>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masterpiece_influx.</span></span><span class="sig-name descname"><span class="pre">Influx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'influx'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">org</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeries</span></code></p>
+<p>InfluxDB V3 implementation of a time series database for MasterPiece.</p>
+<p>This class provides an interface for interacting with an InfluxDB V3 time series
+database. The <cite>host</cite>, <cite>token</cite>, <cite>org</cite>, and <cite>database</cite> attributes are inherited
+from the <cite>TimeSeries</cite> superclass and can be initialized through the configuration
+system or overridden via constructor parameters.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.host">
+<span class="sig-name descname"><span class="pre">host</span></span><a class="headerlink" href="#masterpiece_influx.Influx.host" title="Link to this definition">¶</a></dt>
+<dd><p>Hostname of the InfluxDB server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.token">
+<span class="sig-name descname"><span class="pre">token</span></span><a class="headerlink" href="#masterpiece_influx.Influx.token" title="Link to this definition">¶</a></dt>
+<dd><p>Authentication token for InfluxDB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.org">
+<span class="sig-name descname"><span class="pre">org</span></span><a class="headerlink" href="#masterpiece_influx.Influx.org" title="Link to this definition">¶</a></dt>
+<dd><p>Organization name for InfluxDB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.database">
+<span class="sig-name descname"><span class="pre">database</span></span><a class="headerlink" href="#masterpiece_influx.Influx.database" title="Link to this definition">¶</a></dt>
+<dd><p>Database name for InfluxDB.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.influx_client">
+<span class="sig-name descname"><span class="pre">influx_client</span></span><a class="headerlink" href="#masterpiece_influx.Influx.influx_client" title="Link to this definition">¶</a></dt>
+<dd><p>The client instance used for database operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>InfluxDBClient3</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Example</p>
+<p>Creating a custom instance with specific parameters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">db</span> <span class="o">=</span> <span class="n">Influx</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s2">&quot;example.com&quot;</span><span class="p">,</span>
+    <span class="n">token</span><span class="o">=</span><span class="s2">&quot;my-token&quot;</span><span class="p">,</span>
+    <span class="n">org</span><span class="o">=</span><span class="s2">&quot;my-org&quot;</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="s2">&quot;my-db&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.acquire_time_spent">
+<span class="sig-name descname"><span class="pre">acquire_time_spent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.acquire_time_spent" title="Link to this definition">¶</a></dt>
+<dd><p>Reads off the average time the thread has spent in its <cite>update()</cite> method since
+the last call, and resets the statistics for the next measurement cycle. This method can be used
+for monitoring healtiness of the thread.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>elapsed seconds.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>elapsed (float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.classattrs_from_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.classattrs_from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Set only the class’s own attributes from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.classattrs_to_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.classattrs_to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert the class’s own attributes to a dictionary, excluding inherited and private ones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.copy" title="Link to this definition">¶</a></dt>
+<dd><p>Create and return a copy of the current object.</p>
+<p>This method serializes the current object to a dictionary using the <cite>to_dict</cite> method,
+creates a new instance of the object’s class, and populates it with the serialized data
+using the <cite>from_dict</cite> method.</p>
+<p>This method uses class identifier based instantiation (see factory method pattern) to
+create a new instance of the object, and ‘to_dict’ and ‘from_dict’  methods to initialize
+object’s state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPiece</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new instance of the object’s class with the same state as the original object.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">clone_of_john</span> <span class="o">=</span> <span class="n">john</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">database</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.debug" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given debug message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.do">
+<span class="sig-name descname"><span class="pre">do</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.do" title="Link to this definition">¶</a></dt>
+<dd><p>Execute the given action to the object, by calling the provided <cite>action</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Callable</em><em>[</em><em>[</em><em>&quot;MasterPiece&quot;</em><em>, </em><em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>bool</em><em>]</em>) – A callable that takes</p></li>
+<li><p><strong>(</strong><strong>node</strong></p></li>
+<li><p><strong>boolean.</strong> (<em>context</em><em>) </em><em>and returns a</em>)</p></li>
+<li><p><strong>context</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Any context data that the action may use.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The return value from the executed action.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.error">
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.error" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given error message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.factory">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.factory" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch the dictionary holding class names and associated classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>with class names and associated classes</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>factory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.find_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.find_class" title="Link to this definition">¶</a></dt>
+<dd><p>Create an instance of the class corresponding to the given class identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<em>str</em>) – Identifier of the class to instantiate.</p></li>
+<li><p><strong>*args</strong> – Optional arguments to pass to the class constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the class corresponding to the given class identifier.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MasterPiece</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.from_dict">
+<span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.from_dict" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.get_class_id">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_class_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.get_class_id" title="Link to this definition">¶</a></dt>
+<dd><p>Return the class id of the class. Each class has an unique
+name that can be used for instantiating the class via
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">Object.instantiate()</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<em>class</em>) – class</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>unique class identifier through which the class can be
+instantiated by factory method pattern.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>id (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.has_class_method_directly">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_class_method_directly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.has_class_method_directly" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the method is defined directly in the class (not inherited).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">host</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.info">
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.info" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given information message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.init_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clazz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.init_class" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize class.  Registers the class into the
+class factory .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>clazz</strong> (<em>class</em>) – class to be initialized</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.instantiate">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">instantiate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.instantiate" title="Link to this definition">¶</a></dt>
+<dd><p>Create an instance of the class corresponding to the given class identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<em>str</em>) – Identifier of the class to instantiate.</p></li>
+<li><p><strong>*args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span>) – Optional arguments to pass to the class constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the class corresponding to the given class identifier.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MasterPiece</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.log_debug">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.log_debug" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given debug message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The  message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.log_error">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.log_error" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given  message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The  message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.log_info">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.log_info" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given  message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The  message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.log_warning">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.log_warning" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given debug message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The  message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.make_url">
+<span class="sig-name descname"><span class="pre">make_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.make_url" title="Link to this definition">¶</a></dt>
+<dd><p>Generate the URL for the composite, including all children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">URL</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.measurement">
+<span class="sig-name descname"><span class="pre">measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.measurement" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Measurement</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">org</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.parent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MasterPiece</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#masterpiece_influx.Influx.parent" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.read_dict">
+<span class="sig-name descname"><span class="pre">read_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.read_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.read_dict" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.read_last_value">
+<span class="sig-name descname"><span class="pre">read_last_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.read_last_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.read_last_value" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.read_point">
+<span class="sig-name descname"><span class="pre">read_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.read_point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.read_point" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.register">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.register" title="Link to this definition">¶</a></dt>
+<dd><p>Register the class.</p>
+<p>Called immediately upon class initialization, right before the class attributes
+are loaded from the class specific configuration files.</p>
+<p>Subclasses can extend this with custom register functionality:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyMasterPiece</span><span class="p">(</span><span class="n">MasterPiece</span><span class="p">):</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>  <span class="c1"># Don&#39;t forget</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">_custom_field</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.resolve_url">
+<span class="sig-name descname"><span class="pre">resolve_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.resolve_url" title="Link to this definition">¶</a></dt>
+<dd><p>Find a MasterPiece in the hierarchy matching the URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPiece</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.root">
+<span class="sig-name descname"><span class="pre">root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.root" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch the root object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>root object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>MasterPiece</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.run" title="Link to this definition">¶</a></dt>
+<dd><p>Run the masterpiece.  Dispatches the call to <cite>payload</cite> object and
+returns  the control to the caller.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.run_forever">
+<span class="sig-name descname"><span class="pre">run_forever</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.run_forever" title="Link to this definition">¶</a></dt>
+<dd><p>Run the payload forever. This method will return only when violently
+terminated. If the object does not have playload object, or it is not
+instance of ‘MasterPiece’ class then returns immediately and this method has
+no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.set_log">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.set_log" title="Link to this definition">¶</a></dt>
+<dd><p>Set logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>l</strong> (<em>logger</em>) – logger object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.shutdown" title="Link to this definition">¶</a></dt>
+<dd><p>Shutdown the payload object. If the payload object is None, or is not instance of MasterPiece,
+then the call has no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.to_dict" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.update_metrics">
+<span class="sig-name descname"><span class="pre">update_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elapsed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.update_metrics" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the number of <cite>update()</cite> methods calld, and time spent in the method.
+This method is called internally from the <cite>update()</cite> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>elapsed</strong> (<em>float</em>) – elapsed seconds.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.warning">
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.Influx.warning" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given warning message to the application log.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.write" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.Influx.write_dict">
+<span class="sig-name descname"><span class="pre">write_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ts</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx.html#Influx.write_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.Influx.write_dict" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masterpiece_influx.</span></span><span class="sig-name descname"><span class="pre">InfluxMeasurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Measurement</span></code></p>
+<p>Concrete implementation of the Measurement class for InfluxDB.
+Supports both dictionary-based and fluent interface initialization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.field">
+<span class="sig-name descname"><span class="pre">field</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.field"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.field" title="Link to this definition">¶</a></dt>
+<dd><p>Add a field to the measurement and return self for method chaining.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement" title="masterpiece_influx.influx_measurement.InfluxMeasurement"><code class="xref py py-class docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.from_dict">
+<span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Populate the InfluxMeasurement from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement" title="masterpiece_influx.influx_measurement.InfluxMeasurement"><code class="xref py py-class docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.measurement">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new Point with specified measurement name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.set_str_rep">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_str_rep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rep_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.set_str_rep" title="Link to this definition">¶</a></dt>
+<dd><p>Set the string representation for all Points.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.tag">
+<span class="sig-name descname"><span class="pre">tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.tag" title="Link to this definition">¶</a></dt>
+<dd><p>Add a tag to the measurement and return self for method chaining.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement" title="masterpiece_influx.influx_measurement.InfluxMeasurement"><code class="xref py py-class docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.time">
+<span class="sig-name descname"><span class="pre">time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.time" title="Link to this definition">¶</a></dt>
+<dd><p>Set the timestamp for the measurement and return self for method chaining.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#masterpiece_influx.InfluxMeasurement" title="masterpiece_influx.influx_measurement.InfluxMeasurement"><code class="xref py py-class docutils literal notranslate"><span class="pre">InfluxMeasurement</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert the InfluxMeasurement to a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.to_line_protocol">
+<span class="sig-name descname"><span class="pre">to_line_protocol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.to_line_protocol" title="Link to this definition">¶</a></dt>
+<dd><p>Create LineProtocol.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/masterpiece_influx/influx_measurement.html#InfluxMeasurement.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.validate" title="Link to this definition">¶</a></dt>
+<dd><p>Validate the measurement data.
+- Ensure it has at least one field (InfluxDB requires fields).
+- Validate that tags and fields are dictionaries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masterpiece_influx.InfluxMeasurement.write_precision">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_precision</span></span><a class="headerlink" href="#masterpiece_influx.InfluxMeasurement.write_precision" title="Link to this definition">¶</a></dt>
+<dd><p>Get precision.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2024, juha meskanen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

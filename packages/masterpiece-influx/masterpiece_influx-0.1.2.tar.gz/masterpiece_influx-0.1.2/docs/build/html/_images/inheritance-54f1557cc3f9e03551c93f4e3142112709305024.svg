@@ -1,0 +1,44 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="270pt" height="28pt" viewBox="0.00 0.00 269.50 28.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 24)">
+<ns0:title>inheritance562b143f3c</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>Influx</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="..\masterpiece_influx\index.html#masterpiece_influx.Influx" ns1:title="InfluxDB V3 implementation of a time series database for MasterPiece." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="261.5,-20 207.5,-20 207.5,0 261.5,0 261.5,-20" />
+<ns0:text text-anchor="middle" x="234.5" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Influx</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>TimeSeries</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:title="An abstract base class for time series database interactions.">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="171.5,-20 106.75,-20 106.75,0 171.5,0 171.5,-20" />
+<ns0:text text-anchor="middle" x="139.12" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">TimeSeries</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>TimeSeries-&gt;Influx</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M172,-10C181.27,-10 191.41,-10 200.74,-10" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="201.29,-11.75 206.29,-10 201.29,-8.25 201.29,-11.75" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>MasterPiece</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:title="An object with a name. Base class of everything. Serves as the">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="70.75,-20 0,-20 0,0 70.75,0 70.75,-20" />
+<ns0:text text-anchor="middle" x="35.38" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">MasterPiece</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>MasterPiece-&gt;TimeSeries</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M71.11,-10C80.37,-10 90.43,-10 99.87,-10" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="100.53,-11.75 105.53,-10 100.53,-8.25 100.53,-11.75" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -1,0 +1,9 @@
+Masterpiece Influx Time Series Plugin
+=====================================
+
+.. automodule:: masterpiece_influx
+   :members:
+   :inherited-members:
+   :undoc-members:
+   :show-inheritance:
+

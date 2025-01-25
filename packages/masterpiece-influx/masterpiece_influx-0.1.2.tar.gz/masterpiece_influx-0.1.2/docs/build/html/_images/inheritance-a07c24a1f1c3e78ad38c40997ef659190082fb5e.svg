@@ -1,0 +1,53 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="273pt" height="66pt" viewBox="0.00 0.00 273.25 66.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 62)">
+<ns0:title>inheritanceb7a5629935</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>Influx</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="..\masterpiece_influx\index.html#masterpiece_influx.Influx" ns1:title="InfluxDB V3 implementation of a time series database for MasterPiece." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="265.25,-20 211.25,-20 211.25,0 265.25,0 265.25,-20" />
+<ns0:text text-anchor="middle" x="238.25" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Influx</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>TimeSeries</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:title="An abstract base class for time series database interactions.">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="175.25,-20 110.5,-20 110.5,0 175.25,0 175.25,-20" />
+<ns0:text text-anchor="middle" x="142.88" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">TimeSeries</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>TimeSeries-&gt;Influx</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M175.75,-10C185.02,-10 195.16,-10 204.49,-10" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="205.04,-11.75 210.04,-10 205.04,-8.25 205.04,-11.75" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>MasterPiece</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:title="An object with a name. Base class of everything. Serves as the">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="72.62,-20 1.88,-20 1.88,0 72.62,0 72.62,-20" />
+<ns0:text text-anchor="middle" x="37.25" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">MasterPiece</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>MasterPiece-&gt;TimeSeries</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M73.04,-10C82.88,-10 93.64,-10 103.67,-10" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="104.38,-11.75 109.38,-10 104.38,-8.25 104.38,-11.75" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>classproperty</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:title="A decorator that allows you to define class-level properties.">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="74.5,-58 0,-58 0,-38 74.5,-38 74.5,-58" />
+<ns0:text text-anchor="middle" x="37.25" y="-44.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">classproperty</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>
