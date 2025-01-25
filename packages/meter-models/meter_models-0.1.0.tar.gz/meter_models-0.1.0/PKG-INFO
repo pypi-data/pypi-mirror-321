@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: meter_models
+Version: 0.1.0
+Summary: Default template for PDM package
+Author-Email: svtter <svtter@qq.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.10.5
+Description-Content-Type: text/x-rst
+
+Meter Models
+============
+
+A package for storing and retrieving meter models.
+
+We use this package to build different meter service.
+
+Usage
+-----
+
+``pip install metermodels``
