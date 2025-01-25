@@ -1,0 +1,10 @@
+README.md
+setup.py
+smartg4f/__init__.py
+smartg4f/core.py
+smartg4f.egg-info/PKG-INFO
+smartg4f.egg-info/SOURCES.txt
+smartg4f.egg-info/dependency_links.txt
+smartg4f.egg-info/requires.txt
+smartg4f.egg-info/top_level.txt
+tests/test.py
