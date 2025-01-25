@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: azoni
+Version: 0.1.1
+Summary: azoni test agent
+Home-page: https://github.com/yourusername/my_package
+Author: Azoni
+Author-email: azoninft@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
