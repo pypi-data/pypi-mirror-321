@@ -1,0 +1,8 @@
+setup.py
+kursachrestoran/__init__.py
+kursachrestoran/database.py
+kursachrestoran.egg-info/PKG-INFO
+kursachrestoran.egg-info/SOURCES.txt
+kursachrestoran.egg-info/dependency_links.txt
+kursachrestoran.egg-info/requires.txt
+kursachrestoran.egg-info/top_level.txt
