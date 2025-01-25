@@ -1,0 +1,10 @@
+holidays
+pandas
+numpy
+matplotlib
+pydantic
+ipykernel
+pint
+setuptools
+wheel
+twine
