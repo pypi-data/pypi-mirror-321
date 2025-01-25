@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis102203633Danishsharma.egg-info/PKG-INFO
+topsis102203633Danishsharma.egg-info/SOURCES.txt
+topsis102203633Danishsharma.egg-info/dependency_links.txt
+topsis102203633Danishsharma.egg-info/requires.txt
+topsis102203633Danishsharma.egg-info/top_level.txt
+topsis102203633Danishsharma_core/__init__.py
+topsis102203633Danishsharma_core/topsis.py
