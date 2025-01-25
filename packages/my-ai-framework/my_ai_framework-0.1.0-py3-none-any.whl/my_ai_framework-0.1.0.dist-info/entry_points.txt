@@ -1,0 +1,2 @@
+[console_scripts]
+qna_bot = examples.qna_bot:main
