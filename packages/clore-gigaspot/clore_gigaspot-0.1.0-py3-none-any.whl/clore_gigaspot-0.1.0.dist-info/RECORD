@@ -1,0 +1,9 @@
+gigaspot/__init__.py,sha256=cR5kW44eWXN4LrseCa7V_nCQuO8EIGc1DGB6Gs2rsYs,37
+gigaspot/constants.py,sha256=p0xwwabmwQBCIFjKgxTm8c8ONzdQDMyt-xMeyK8DuXw,94
+gigaspot/logger.py,sha256=wjkqbdppEKskuWplUPoZw84yFUUynBIBzMXGVErCvig,1065
+gigaspot/main.py,sha256=lsuBJPP54En3DbsRWMG3oepITsDdOF4tVKK6Tqei5TI,16407
+gigaspot/responses.py,sha256=Ps6tOhXN9O1XKOH2voyrRxF1b8j4tqZyEyN-OZ1atQM,1020
+clore_gigaspot-0.1.0.dist-info/METADATA,sha256=M7wl5TOyr-cT3HOaonsywh3nj_b4MSEPsFDFcu4iVi4,376
+clore_gigaspot-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+clore_gigaspot-0.1.0.dist-info/top_level.txt,sha256=YHw-VtN-WZIWCGAsS9UBq-C8SOvAfGSqIzTqzjXveJs,9
+clore_gigaspot-0.1.0.dist-info/RECORD,,
