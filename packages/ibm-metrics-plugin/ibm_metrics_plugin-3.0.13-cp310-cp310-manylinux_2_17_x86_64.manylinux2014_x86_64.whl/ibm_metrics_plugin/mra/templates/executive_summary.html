@@ -1,0 +1,41 @@
+<h1>Metrics</h1>
+<article id ="metric details">
+    <h3></h3>
+</article>
+<br>
+<h3 id ="grey">Executive Summary</h3>
+<hr><br>
+
+{% for risk_dim, cards in executive_summary_data.items() %}
+<table>
+    <tr>
+        <td class ="metric_name_exec_summ">{{risk_dim.replace('-', ' ').title()}}</td>
+        <td></td>
+    </tr>
+    </table>
+    {% for card_name, metrics in cards.items() %}
+        <table class ="metric_table">
+            <tr>
+                {% if metric_card_name_translation.get(card_name) is not none %}
+                    <td class="metric_card_exec_summ">{{metric_card_name_translation.get(card_name)}}</td>
+                    <td></td>
+                {% else %}
+                    <td class="metric_card_exec_summ">{{card_name}}</td>
+                    <td></td>
+                {% endif %}
+            </tr>
+            {% for metric_name, metric_value in metrics.items() %}
+                <tr>
+                    <td>{{metric_name.replace('_', ' ').replace('.', ' ')}} </td>
+                    {% if metric_value is string %}
+                        <td class="metric_value">{{metric_value.replace('_', ' ')}} </td>
+                    {% else %}
+                        <td class="metric_value">{{ metric_value }}</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </table>
+    {% endfor %}
+    <br>
+{% endfor %}
+
