@@ -1,0 +1,2 @@
+[console_scripts]
+uvrun = uvrun_simonb97.cli:main
