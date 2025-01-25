@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+Afine.egg-info/PKG-INFO
+Afine.egg-info/SOURCES.txt
+Afine.egg-info/dependency_links.txt
+Afine.egg-info/requires.txt
+Afine.egg-info/top_level.txt
+Afine/src/Afine.py
+Afine/src/__init__.py
+Afine/src/test.py
