@@ -1,0 +1,14 @@
+sociolitics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sociolitics/dar.py,sha256=HciSL7Kctjr_A1uQYg8E5KhbbnfLtMuhC8gPNTVlG2E,4135
+sociolitics/filters.py,sha256=ltFHxHFQaER-JIdUdrvBx8mjHe1yxJ7cPug2erl2Gmc,1675
+sociolitics/lemmatizer.py,sha256=ZBFyliHxEWWxM1BaRdDv5rK3-ueidc20Se5cODBQRSU,2799
+sociolitics/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sociolitics/support.py,sha256=EnrmXqPlnKcVhczzJHsb_Twdfe9QSpG8E-Y21_kqTRw,5707
+sociolitics/visualization.py,sha256=EfSr3A-cGCI69mLlXVtvh5fOi0oh4NFdPVo16-CQEzw,5945
+sociolitics/visualization_plotly.py,sha256=w1h1w3n0ZoyRDyf8ExGyTLw3jtLQiO7uZ3jo9GOFhI0,8142
+sociolitics/wordembedders.py,sha256=5BGyelctMyP-0Vuy1Aicf6C-dlcloMI-ZegxtWeUVxs,8202
+sociolitics-0.1.1.dist-info/LICENSE,sha256=kAgRz20K4aXoSAR35hCAQOkq6fTdiGl4uZ9BYnDwQlM,1049
+sociolitics-0.1.1.dist-info/METADATA,sha256=3RH9-6F-LHj27kVGQ2_1FORmI2UFRPTF5nuyVxPfBvQ,1001
+sociolitics-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sociolitics-0.1.1.dist-info/top_level.txt,sha256=lrrzzMhmRsW1EtFhhW4U-mZW7ZcGmEe1HmZ-87jl4Lk,12
+sociolitics-0.1.1.dist-info/RECORD,,
