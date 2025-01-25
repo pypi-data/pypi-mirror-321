@@ -1,0 +1,5 @@
+@prefix schema1: <http://schema.org/> .
+
+[] a schema1:Place ;
+    schema1:name "Harold Holt Swim Centre" .
+
