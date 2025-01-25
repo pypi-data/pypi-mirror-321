@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ninad-text/__init__.py
+ninad-text/text-wrap.py
+ninad_text.egg-info/PKG-INFO
+ninad_text.egg-info/SOURCES.txt
+ninad_text.egg-info/dependency_links.txt
+ninad_text.egg-info/top_level.txt
