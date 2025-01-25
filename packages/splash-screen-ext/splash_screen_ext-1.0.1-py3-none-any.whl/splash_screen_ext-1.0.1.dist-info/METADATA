@@ -1,0 +1,78 @@
+Metadata-Version: 2.4
+Name: splash_screen_ext
+Version: 1.0.1
+Summary: A JupyterLab extension.
+Project-URL: Homepage, https://github.com/MrCrashLab/splash_screen_ext
+Project-URL: Bug Tracker, https://github.com/MrCrashLab/splash_screen_ext/issues
+Project-URL: Repository, https://github.com/MrCrashLab/splash_screen_ext.git
+Author: buenajen
+License: BSD 3-Clause License
+        
+        Copyright (c) 2025, buenajen
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: jupyter,jupyterlab,jupyterlab-extension
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# splash_screen_ext
+
+An extension for JupyterLab that replaces the default Splash Screen with a custom GIF. The selection of GIFs is predefined and limited.
+
+## Features
+
+To change the GIF on the Splash Screen, follow these steps:
+
+1. Open the **Settings Editor**;
+2. Navigate to the **Custom Splash** section;
+3. Select a new GIF from the dropdown menu.
+
+## Adding Your Own GIF
+
+To add your own custom GIF, follow these steps:
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/MrCrashLab/splash_screen_ext.git
+   ```
+2. Add your GIF to the ```style/images/``` directory.
+3. Update the ```splashScreenConfig``` dictionary in the ```src/index.ts``` file by adding the path to your GIF and its duration.
+4. In the ```schema/custom-splash.json``` file, add the key name from step 3 to the enum section.
