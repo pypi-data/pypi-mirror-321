@@ -1,0 +1,8 @@
+jsonrescue/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonrescue/custom_schema.py,sha256=WBSDnc6YlVnZOrfpkg-oMkv5vuiJBWEWs6TZ1IH0bz4,3467
+jsonrescue/json_rescue.py,sha256=JT5rWB1GIjxd83IVdvRqGbhoP0cx67jXmiMbkg4u88Y,7320
+jsonrescue/parser.py,sha256=xliuSPBXa4R1M9SSbS9XkfUbdlYyLlim-2qj25MGRpU,8544
+jsonrescue-1.0.4.dist-info/METADATA,sha256=jEqhF1DVHMkDOn4HdorzNgEL8NDl9h5pMxk0jzR0TU8,6453
+jsonrescue-1.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+jsonrescue-1.0.4.dist-info/top_level.txt,sha256=3t7aMvG7dHmNTIVKCL2urD3BhgAkCgwWtSAFissNp8k,11
+jsonrescue-1.0.4.dist-info/RECORD,,
