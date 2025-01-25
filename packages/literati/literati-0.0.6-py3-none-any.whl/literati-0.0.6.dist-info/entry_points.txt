@@ -1,0 +1,6 @@
+[console_scripts]
+literati = literati.core:literati
+md_to_py = literati.core:md_to_py
+
+[nbdev]
+literati = literati._modidx:d
