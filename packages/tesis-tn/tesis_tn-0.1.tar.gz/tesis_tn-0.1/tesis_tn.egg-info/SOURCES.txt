@@ -1,0 +1,7 @@
+setup.py
+tesis_tn/__init__.py
+tesis_tn/main.py
+tesis_tn.egg-info/PKG-INFO
+tesis_tn.egg-info/SOURCES.txt
+tesis_tn.egg-info/dependency_links.txt
+tesis_tn.egg-info/top_level.txt
