@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: pfn-ase-extras
+Version: 0.1.0
+Summary: An extension of ASE library.
+Author: Preferred Networks, Inc.
+Maintainer-email: Takuya Shibayama <shibayama@preferred.jp>, Kohei Shinohara <kshinohara@preferred.jp>
+License: LGPLv2.1+
+License-File: COPYING
+License-File: COPYING.LESSER
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: ase>=3.23.0
+Description-Content-Type: text/markdown
+
+# ase-pfn-extras
+An extension of [ASE](https://gitlab.com/ase/ase) library.
+
+## Installation
+
+To install the latest release:
+
+```
+pip install pfn-ase-extras
+```
+
+## For developers
+
+To upload to pypi.org, execute
+```
+python -m build --wheel
+twine upload dist/pfn-ase-extras-X.Y.Z-*.whl
+```
