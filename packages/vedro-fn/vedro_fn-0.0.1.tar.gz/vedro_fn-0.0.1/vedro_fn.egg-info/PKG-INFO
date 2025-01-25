@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: vedro-fn
+Version: 0.0.1
+Summary: Enables a functional-style syntax for defining Vedro scenarios
+Home-page: https://github.com/vedro-universe/vedro-fn
+Author: Nikita Tsvetkov
+Author-email: tsv1@fastmail.com
+License: Apache-2.0
+Project-URL: Docs, https://github.com/vedro-universe/vedro-fn
+Project-URL: GitHub, https://github.com/vedro-universe/vedro-fn
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vedro<2.0,>=1.12
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# vedro-fn
