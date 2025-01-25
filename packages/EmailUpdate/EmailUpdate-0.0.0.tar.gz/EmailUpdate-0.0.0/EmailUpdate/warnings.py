@@ -1,0 +1,3 @@
+
+class EmailWarnings(Warning):
+    pass

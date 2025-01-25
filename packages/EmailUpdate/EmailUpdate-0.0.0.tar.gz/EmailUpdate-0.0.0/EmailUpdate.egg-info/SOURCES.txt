@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+EmailUpdate/__init__.py
+EmailUpdate/colors.py
+EmailUpdate/email_me.py
+EmailUpdate/server.py
+EmailUpdate/warnings.py
+EmailUpdate.egg-info/PKG-INFO
+EmailUpdate.egg-info/SOURCES.txt
+EmailUpdate.egg-info/dependency_links.txt
+EmailUpdate.egg-info/top_level.txt
