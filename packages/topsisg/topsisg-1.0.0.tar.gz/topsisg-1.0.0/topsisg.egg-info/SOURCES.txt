@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/test_topsis.py
+topsis/__init__.py
+topsis/topsis.py
+topsisg.egg-info/PKG-INFO
+topsisg.egg-info/SOURCES.txt
+topsisg.egg-info/dependency_links.txt
+topsisg.egg-info/entry_points.txt
+topsisg.egg-info/requires.txt
+topsisg.egg-info/top_level.txt
