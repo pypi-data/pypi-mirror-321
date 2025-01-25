@@ -1,0 +1,14 @@
+{
+  "enabledFileTypes": {
+    "python": true,
+    "rust": true
+  },
+  "ignorePaths": [
+    ".devcontainer/devcontainer.json",
+    ".devcontainer/Dockerfile",
+    ".devcontainer/post_create.sh",
+    "cspell.json",
+    "pyproject.toml"
+  ],
+  "words": ["gitmoji", "lldb", "levelname", "timespec"]
+}

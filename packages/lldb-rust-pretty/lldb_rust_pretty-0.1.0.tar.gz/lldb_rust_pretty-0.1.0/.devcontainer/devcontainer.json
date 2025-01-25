@@ -1,0 +1,58 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "donjayamanne.githistory",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "ms-python.black-formatter",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "rust-lang.rust-analyzer",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "Thinker.sort-json",
+        "usernamehw.errorlens",
+        "vadimcn.vscode-lldb"
+      ],
+      "settings": {
+        "[dockerfile]": {
+          "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+          "editor.formatOnSave": true
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[markdown]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true
+        },
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.formatOnSave": true
+        },
+        "[rust]": {
+          "editor.defaultFormatter": "rust-lang.rust-analyzer",
+          "editor.formatOnSave": true
+        },
+        "[toml]": {
+          "editor.defaultFormatter": "tamasfe.even-better-toml",
+          "editor.formatOnSave": true
+        },
+        "editor.rulers": [80],
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "dockerComposeFile": "./compose.yaml",
+  "overrideCommand": true,
+  "postCreateCommand": ".devcontainer/post_create.sh",
+  "service": "work",
+  "workspaceFolder": "/work"
+}
