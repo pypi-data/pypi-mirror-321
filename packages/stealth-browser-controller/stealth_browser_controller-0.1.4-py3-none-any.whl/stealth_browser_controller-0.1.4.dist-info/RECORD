@@ -1,0 +1,10 @@
+stealth_browser_controller/__init__.py,sha256=f0h1gTk2BefV4b6B5km39wq-8oIgni4VP_xYWfjYFUQ,86
+stealth_browser_controller/browser.py,sha256=7MJCBcChOZcYNZyhQRA3XZI7xdbIlz9h2XZSdwaJ_yE,3369
+stealth_browser_controller/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stealth_browser_controller/helpers/mouse_controller.py,sha256=LDVTqAuDcm8x2c6v_bQRWuIqlXVmkcilk0toEYHj_no,183
+stealth_browser_controller/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stealth_browser_controller/models/element.py,sha256=RIwclQeCHw71-yam-UlEnI5Bs7Vdm884ZG6bZv4g5wI,1299
+stealth_browser_controller-0.1.4.dist-info/METADATA,sha256=dym4t4B57vDbTcAG99qLW-oP-3xu6wlh4K12BMyVqyY,2245
+stealth_browser_controller-0.1.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+stealth_browser_controller-0.1.4.dist-info/top_level.txt,sha256=Svf8EIdDWgQKjKrIiVVATiUL7F2YBUPdlQZHnYHnnCE,27
+stealth_browser_controller-0.1.4.dist-info/RECORD,,
