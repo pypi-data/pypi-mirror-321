@@ -1,0 +1,11 @@
+README.md
+setup.py
+codepromptforge/__init__.py
+codepromptforge/cli.py
+codepromptforge/main.py
+codepromptforge.egg-info/PKG-INFO
+codepromptforge.egg-info/SOURCES.txt
+codepromptforge.egg-info/dependency_links.txt
+codepromptforge.egg-info/entry_points.txt
+codepromptforge.egg-info/top_level.txt
+tests/test_promptforge.py
