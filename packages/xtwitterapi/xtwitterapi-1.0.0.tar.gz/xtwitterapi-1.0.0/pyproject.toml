@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "xtwitterapi"
+version = "1.0.0"
+description = "Unofficial X API client. Follow, Like, DM, Search and other actions."
+authors = ["TadasG <no@email.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "xapi" },
+]
+
+
+[project]
+name = "xapi"
+description = "Unofficial X API client. Follow, Like, DM, Search and other actions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "TadasG", email = "no@email.com" },
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/tadasgedgaudas/xapi"
+Documentation = "https://github.com/tadasgedgaudas/xapi/blob/master/README.md"
+Repository = "https://github.com/tadasgedgaudas/xapi"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+curl-cffi = "~0.7.4"
+structlog = "^24.4.0"
+pydantic = "^2.9.2"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.3.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "~0.4.6"
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.0"
+pytest-rerunfailures = "^15.0"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E", "W",  # pycodestyle
+    "F",  # Pyflakes
+    "UP",  # pyupgrade
+    "SIM",  # flake8-simplify
+    "I",  # isort
+]
+
+[tool.hatch.version]
+path = "xapi/__init__.py"
+
+[build-system]
+requires = ["hatchling >= 1.7.0"]
+build-backend = "hatchling.build"
