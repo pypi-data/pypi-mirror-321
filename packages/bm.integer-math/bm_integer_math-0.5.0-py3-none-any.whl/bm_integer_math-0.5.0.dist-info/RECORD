@@ -1,0 +1,8 @@
+bm/integer_math/__init__.py,sha256=OO1Ev9iQJmblMWHHrT3nOneVDmRGXdDB0ichRJohUMA,960
+bm/integer_math/combinatorics.py,sha256=sBeny-et5hjdezcUXXLHAi0RNJdFAdM0X2zDsSY33Qs,2616
+bm/integer_math/num_theory.py,sha256=ytAU7OdONkSQBzihnKP_f7Y7Ovl6E2KV1mB9VZ008JY,5027
+bm/integer_math/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bm_integer_math-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bm_integer_math-0.5.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+bm_integer_math-0.5.0.dist-info/METADATA,sha256=we4AuVU-RB6UgkNOGrTR2o5pCPFKl_guRwJm2POHBHE,2965
+bm_integer_math-0.5.0.dist-info/RECORD,,
