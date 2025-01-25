@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: topsis_testing_2025
+Version: 0.3.0
+Summary: TOPSIS Python Package
+Home-page: https://github.com/yourusername/topsis
+Author: Your Name
+Author-email: your_email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TOPSIS Package
+
+This package implements the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method for decision-making.
+
+## Installation
+```bash
+pip install topsis
+
+## To Run file
+pyhton topsis.py <input_file_location> "weights" "impacts" <output_file_location.csv>
