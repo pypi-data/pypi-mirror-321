@@ -1,0 +1,925 @@
+# German translations for lino-noi.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the lino-noi project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lino-noi 0.0.2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-08 08:11+0200\n"
+"PO-Revision-Date: 2025-01-08 10:21+0200\n"
+"Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
+"Language-Team: de <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.16.0\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: lino_prima/lib/cert/__init__.py:13 lino_prima/lib/cert/models.py:98
+#: lino_prima/lib/prima/models.py:192
+msgid "Certificates"
+msgstr "Zeugnisse"
+
+#: lino_prima/lib/cert/mixins.py:12
+msgid "Certificate state"
+msgstr "Zeugnis-Zustand"
+
+#: lino_prima/lib/cert/mixins.py:13
+msgid "Certificate states"
+msgstr "Zeugnis-Zustände"
+
+#: lino_prima/lib/cert/mixins.py:16
+msgid "Draft"
+msgstr "Entwurf"
+
+#: lino_prima/lib/cert/mixins.py:17
+msgid "To discuss"
+msgstr "Zu besprechen"
+
+#: lino_prima/lib/cert/mixins.py:18
+msgid "Ready"
+msgstr ""
+
+#: lino_prima/lib/cert/models.py:31
+msgid "Certificate template"
+msgstr "Zeugnisvorlage"
+
+#: lino_prima/lib/cert/models.py:32
+msgid "Certificate templates"
+msgstr "Zeugnisvorlagen"
+
+#: lino_prima/lib/cert/models.py:38
+msgid "Certificate section template"
+msgstr "Zeugnisabschnittvorlage"
+
+#: lino_prima/lib/cert/models.py:39
+msgid "Certificate section templates"
+msgstr "Zeugnisabschnittvorlagen"
+
+#: lino_prima/lib/cert/models.py:45 lino_prima/lib/cert/models.py:165
+#: lino_prima/lib/projects/models.py:105 lino_prima/lib/ratings/models.py:256
+#: lino_prima/lib/ratings/ui.py:259
+msgid "Remark"
+msgstr "Bemerkung"
+
+#: lino_prima/lib/cert/models.py:66
+msgid " (in {cert_template})"
+msgstr ""
+
+#: lino_prima/lib/cert/models.py:79
+msgid "Certificate element template"
+msgstr "Zeugniselementvorlage"
+
+#: lino_prima/lib/cert/models.py:80
+msgid "Certificate element templates"
+msgstr "Zeugniselementvorlagen"
+
+#: lino_prima/lib/cert/models.py:97
+msgid "Certificate"
+msgstr "Zeugnis"
+
+#: lino_prima/lib/cert/models.py:103 lino_prima/lib/prima/models.py:171
+#: lino_prima/lib/prima/ui.py:89 lino_prima/lib/prima/user_types.py:28
+#: lino_prima/lib/projects/models.py:102 lino_prima/lib/projects/ui.py:172
+#: lino_prima/lib/ratings/models.py:167 lino_prima/lib/ratings/models.py:254
+#: lino_prima/lib/ratings/models.py:353 lino_prima/lib/ratings/models.py:382
+#: lino_prima/lib/ratings/ui.py:252
+msgid "Pupil"
+msgstr "Schüler"
+
+#: lino_prima/lib/cert/models.py:105
+msgid "Social skills comment"
+msgstr "Sozialkompetenz-Kommentar"
+
+#: lino_prima/lib/cert/models.py:106
+msgid "Final verdict"
+msgstr "Versetzungsentscheidung"
+
+#: lino_prima/lib/cert/models.py:154
+msgid "Certificate section"
+msgstr "Zeugnisabschnitt"
+
+#: lino_prima/lib/cert/models.py:155
+msgid "Certificate sections"
+msgstr "Zeugnisabschnitte"
+
+#: lino_prima/lib/cert/models.py:219
+msgid "Certificate element"
+msgstr "Zeugniselement"
+
+#: lino_prima/lib/cert/models.py:220
+msgid "Certificate elements"
+msgstr "Zeugniselemente"
+
+#: lino_prima/lib/cert/models.py:265
+msgid "Computed rating"
+msgstr "Berechnet"
+
+#: lino_prima/lib/cert/models.py:274
+msgid "Ratings detail"
+msgstr "Detail Bewertungen"
+
+#: lino_prima/lib/cert/models.py:314
+msgid "Override score"
+msgstr "Bewertung überschreiben"
+
+#: lino_prima/lib/cert/models.py:320
+msgid "Check for missing or duplicate certificate ratings"
+msgstr ""
+
+#: lino_prima/lib/cert/models.py:322
+msgid "No certificate rating for {} elements."
+msgstr ""
+
+#: lino_prima/lib/cert/models.py:323
+msgid "Duplicate certificate rating(s) for {} elements."
+msgstr ""
+
+#: lino_prima/lib/cert/ui.py:32 lino_prima/lib/prima/ui.py:283
+#: lino_prima/lib/ratings/__init__.py:10 lino_prima/lib/ratings/models.py:277
+#: lino_prima/lib/ratings/ui.py:431
+msgid "Ratings"
+msgstr "Bewertungen"
+
+#: lino_prima/lib/cert/ui.py:37
+msgid "Verdict"
+msgstr "Entscheidung"
+
+#: lino_prima/lib/prima/__init__.py:21
+msgid "School"
+msgstr "Schule"
+
+#: lino_prima/lib/prima/help_texts.py:7
+msgid "The standard migrator for Lino Prima."
+msgstr ""
+
+#: lino_prima/lib/prima/help_texts.py:8
+msgid "The pupil for whom this certificate has been issued."
+msgstr ""
+
+#: lino_prima/lib/prima/models.py:23
+msgid "Grade"
+msgstr "Jahrgang"
+
+#: lino_prima/lib/prima/models.py:24
+msgid "Grades"
+msgstr "Jahrgänge"
+
+#: lino_prima/lib/prima/models.py:32
+msgctxt "in school"
+msgid "Subject"
+msgstr "Fach"
+
+#: lino_prima/lib/prima/models.py:33
+msgid "Subjects"
+msgstr "Fächer"
+
+#: lino_prima/lib/prima/models.py:35
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: lino_prima/lib/prima/models.py:41
+msgid "Skill"
+msgstr "Kompetenz"
+
+#: lino_prima/lib/prima/models.py:42
+msgid "Skills"
+msgstr "Kompetenzen"
+
+#: lino_prima/lib/prima/models.py:45
+msgid "With final exams"
+msgstr "Mit Abschlusstests"
+
+#: lino_prima/lib/prima/models.py:57
+msgid "Group"
+msgstr "Klasse"
+
+#: lino_prima/lib/prima/models.py:58
+msgid "Groups"
+msgstr "Klassen"
+
+#: lino_prima/lib/prima/models.py:84 lino_prima/lib/prima/models.py:90
+msgid " ({year})"
+msgstr ""
+
+#: lino_prima/lib/prima/models.py:96
+msgid "Course"
+msgstr "Kurs"
+
+#: lino_prima/lib/prima/models.py:97
+msgid "Courses"
+msgstr "Kurse"
+
+#: lino_prima/lib/prima/models.py:104
+#, fuzzy
+msgid "{subject} in {group}"
+msgstr "Klasse"
+
+#: lino_prima/lib/prima/models.py:111 lino_prima/lib/prima/models.py:140
+#: lino_prima/lib/prima/models.py:148 lino_prima/lib/prima/models.py:180
+#, fuzzy
+msgid "in {group}"
+msgstr "Klasse"
+
+#: lino_prima/lib/prima/models.py:116
+msgid "Role"
+msgstr "Rolle"
+
+#: lino_prima/lib/prima/models.py:117
+msgid "Roles"
+msgstr "Rollen"
+
+#: lino_prima/lib/prima/models.py:124
+msgid "Cast"
+msgstr "Lehrerrolle"
+
+#: lino_prima/lib/prima/models.py:125
+msgid "Casts"
+msgstr "Lehrerrollen"
+
+#: lino_prima/lib/prima/models.py:137
+#, fuzzy
+msgid "{teacher}"
+msgstr "Lehrer"
+
+#: lino_prima/lib/prima/models.py:139 lino_prima/lib/prima/ui.py:252
+msgid "as {role}"
+msgstr "als {role}"
+
+#: lino_prima/lib/prima/models.py:145
+#, fuzzy
+msgid "{teacher} as"
+msgstr "{teacher}"
+
+#: lino_prima/lib/prima/models.py:146
+#, fuzzy
+msgid "{role}"
+msgstr "Rolle"
+
+#: lino_prima/lib/prima/models.py:162 lino_prima/lib/prima/ui.py:88
+#: lino_prima/lib/prima/user_types.py:27 lino_prima/lib/ratings/mixins.py:192
+#: lino_prima/lib/ratings/models.py:88
+msgid "Teacher"
+msgstr "Lehrer"
+
+#: lino_prima/lib/prima/models.py:167
+msgid "Enrolment"
+msgstr "Einschreibung"
+
+#: lino_prima/lib/prima/models.py:168
+msgid "Enrolments"
+msgstr "Einschreibungen"
+
+#: lino_prima/lib/prima/settings.py:47
+msgid "Academic year"
+msgstr "Schuljahr"
+
+#: lino_prima/lib/prima/settings.py:48
+msgid "Academic years"
+msgstr "Schuljahre"
+
+#: lino_prima/lib/prima/settings.py:49
+msgid "Period"
+msgstr "Periode"
+
+#: lino_prima/lib/prima/settings.py:50
+msgid "Periods"
+msgstr "Perioden"
+
+#: lino_prima/lib/prima/ui.py:33 lino_prima/lib/prima/ui.py:63
+#: lino_prima/lib/prima/ui.py:150 lino_prima/lib/prima/ui.py:280
+#: lino_prima/lib/projects/ui.py:67 lino_prima/lib/ratings/ui.py:121
+#: lino_prima/lib/users/ui.py:16
+msgid "General"
+msgstr ""
+
+#: lino_prima/lib/prima/ui.py:79 lino_prima/lib/projects/ui.py:73
+#: lino_prima/lib/ratings/ui.py:130
+msgid "More"
+msgstr ""
+
+#: lino_prima/lib/prima/ui.py:100
+msgid "My groups"
+msgstr "Meine Klassen"
+
+#: lino_prima/lib/prima/ui.py:246
+msgid "by {teacher}"
+msgstr "{teacher}"
+
+#: lino_prima/lib/prima/user_types.py:21
+msgid "Anonymous"
+msgstr ""
+
+#: lino_prima/lib/prima/user_types.py:26
+msgid "User"
+msgstr ""
+
+#: lino_prima/lib/prima/user_types.py:29
+msgid "Staff"
+msgstr ""
+
+#: lino_prima/lib/prima/user_types.py:30
+msgid "Administrator"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:135
+#: lino_prima/lib/prima/fixtures/demo.py:114
+msgid "First grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:136
+#: lino_prima/lib/prima/fixtures/demo.py:115
+msgid "Second grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:137
+#: lino_prima/lib/prima/fixtures/demo.py:116
+msgid "Third grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:138
+#: lino_prima/lib/prima/fixtures/demo.py:117
+msgid "Fourth grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:139
+#: lino_prima/lib/prima/fixtures/demo.py:118
+msgid "Fifth grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:140
+#: lino_prima/lib/prima/fixtures/demo.py:119
+msgid "Sixth grade"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/csv2db.py:141
+#: lino_prima/lib/prima/fixtures/demo.py:120
+msgid "Alumni"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:127
+#, fuzzy
+msgid "Class teacher"
+msgstr "Lehrer"
+
+#: lino_prima/lib/prima/fixtures/demo.py:128
+msgid "Catholic religion"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:129
+msgid "Protestant religion"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:134
+#: lino_prima/lib/prima/fixtures/demo.py:145
+msgid "Music"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:135
+#: lino_prima/lib/prima/fixtures/demo.py:148
+msgid "Sport"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:136
+#: lino_prima/lib/projects/__init__.py:10 lino_prima/lib/projects/models.py:99
+#: lino_prima/lib/projects/ui.py:122
+msgid "Projects"
+msgstr "Bausteine"
+
+#: lino_prima/lib/prima/fixtures/demo.py:138
+msgid "Science"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:139
+msgid "Geography"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:140
+msgid "History"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:141
+msgid "Natural science"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:142
+msgid "Art"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:143
+msgid "Painting"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:144
+msgid "Textile"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:146
+msgid "Choir"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:147
+msgid "Flute"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:149
+msgid "Jogging"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:150
+msgid "Swimming"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:151
+msgid "French"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:152
+#: lino_prima/lib/prima/fixtures/demo.py:165
+msgid "Reading"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:153
+#: lino_prima/lib/prima/fixtures/demo.py:167
+msgid "Writing"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:154
+#: lino_prima/lib/prima/fixtures/demo.py:168
+msgid "Speaking"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:155
+#: lino_prima/lib/prima/fixtures/demo.py:169
+msgid "Listening"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:156
+#: lino_prima/lib/prima/fixtures/demo.py:170
+msgid "Dealing with texts and media"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:157
+msgid "Religion"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:158
+msgid "Knowledge"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:159
+msgid "Caring"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:160
+msgid "Trusting"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:161
+msgid "Mathematics"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:162
+msgid "Arithmetics"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:163
+msgid "Stochastics"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:164
+msgid "German"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:166
+msgid "Reading comprehension"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:171
+msgid "Linguistical thinking"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:173
+msgid "Telling experiences in an exciting way"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:174
+#: lino_prima/lib/prima/fixtures/demo.py:176
+msgid "Presentation"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:175
+msgid "About animals"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:177
+msgid "Video"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:178
+msgid "Reporting"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:179
+msgid "Describing"
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:180
+msgid "Tell real-life stories "
+msgstr ""
+
+#: lino_prima/lib/prima/fixtures/demo.py:181
+msgid "Read silently: The storm"
+msgstr ""
+
+#: lino_prima/lib/projects/choicelists.py:11
+msgid "Project state"
+msgstr "Baustein-Status"
+
+#: lino_prima/lib/projects/choicelists.py:12
+msgid "Project states"
+msgstr "Baustein-Stati"
+
+#: lino_prima/lib/projects/choicelists.py:15
+msgid "Not started"
+msgstr ""
+
+#: lino_prima/lib/projects/choicelists.py:16
+msgid "Started"
+msgstr ""
+
+#: lino_prima/lib/projects/choicelists.py:17
+msgid "Done"
+msgstr ""
+
+#: lino_prima/lib/projects/choicelists.py:28
+#: lino_prima/lib/ratings/choicelists.py:64
+msgid "{} ({} points)"
+msgstr "{} ({} Punkte)"
+
+#: lino_prima/lib/projects/choicelists.py:35
+#: lino_prima/lib/ratings/choicelists.py:70
+msgid "General rating"
+msgstr "Allgemeinbewertung"
+
+#: lino_prima/lib/projects/choicelists.py:36
+#: lino_prima/lib/projects/config/ratings/Project/default.weasy.html:42
+#: lino_prima/lib/ratings/choicelists.py:71
+msgid "General ratings"
+msgstr "Allgemeinbewertungen"
+
+#: lino_prima/lib/projects/choicelists.py:40
+#: lino_prima/lib/ratings/choicelists.py:75
+msgid "Cleanliness"
+msgstr "Sauberkeit"
+
+#: lino_prima/lib/projects/choicelists.py:41
+#: lino_prima/lib/ratings/choicelists.py:76
+msgid "Correction"
+msgstr "Korrektur"
+
+#: lino_prima/lib/projects/choicelists.py:42
+#: lino_prima/lib/ratings/choicelists.py:77
+msgid "Time managment"
+msgstr "Zeitmanagement"
+
+#: lino_prima/lib/projects/choicelists.py:43
+#: lino_prima/lib/ratings/choicelists.py:78
+msgid "Work behaviour"
+msgstr "Arbeitsverhalten"
+
+#: lino_prima/lib/projects/models.py:30
+msgid "Project template"
+msgstr "Bausteinvorlage"
+
+#: lino_prima/lib/projects/models.py:31
+msgid "Project templates"
+msgstr "Bausteinvorlagen"
+
+#: lino_prima/lib/projects/models.py:33
+msgid "Short header"
+msgstr "Kurzbezeichnung"
+
+#: lino_prima/lib/projects/models.py:34
+msgid "Main skill"
+msgstr "Hauptkompetenz"
+
+#: lino_prima/lib/projects/models.py:53
+msgid "Project section"
+msgstr "Bausteinabschnitt"
+
+#: lino_prima/lib/projects/models.py:54
+msgid "Project sections"
+msgstr "Bausteinabschnitte"
+
+#: lino_prima/lib/projects/models.py:68
+msgid " (in {project_template})"
+msgstr ""
+
+#: lino_prima/lib/projects/models.py:98
+msgid "Project"
+msgstr "Baustein"
+
+#: lino_prima/lib/projects/models.py:104
+msgid "Started on"
+msgstr "Begonnen am"
+
+#: lino_prima/lib/projects/ui.py:135
+msgid "There are no {projects} configured for grade {grade}."
+msgstr "Es seind keine  {projects} konfiguriert für {grade}."
+
+#: lino_prima/lib/ratings/choicelists.py:10
+msgid "Smiley"
+msgstr ""
+
+#: lino_prima/lib/ratings/choicelists.py:11
+#: lino_prima/lib/ratings/choicelists.py:52
+#, fuzzy
+msgid "Smilies"
+msgstr "Kompetenzen"
+
+#: lino_prima/lib/ratings/choicelists.py:14
+msgid "++"
+msgstr ""
+
+#: lino_prima/lib/ratings/choicelists.py:15
+msgid "+"
+msgstr ""
+
+#: lino_prima/lib/ratings/choicelists.py:16
+msgid "-"
+msgstr ""
+
+#: lino_prima/lib/ratings/choicelists.py:17
+msgid "--"
+msgstr ""
+
+#: lino_prima/lib/ratings/choicelists.py:23
+msgid "Predicate"
+msgstr "Prädikat"
+
+#: lino_prima/lib/ratings/choicelists.py:24
+#: lino_prima/lib/ratings/choicelists.py:53
+msgid "Predicates"
+msgstr "Prädikate"
+
+#: lino_prima/lib/ratings/choicelists.py:27
+msgid "very good"
+msgstr "Sehr gut"
+
+#: lino_prima/lib/ratings/choicelists.py:28
+msgid "good"
+msgstr "Gut"
+
+#: lino_prima/lib/ratings/choicelists.py:29
+msgid "sufficient"
+msgstr "Ausreichend"
+
+#: lino_prima/lib/ratings/choicelists.py:30
+msgid "deficient"
+msgstr "Mangelhaft"
+
+#: lino_prima/lib/ratings/choicelists.py:31
+msgid "insufficient"
+msgstr "ungenügend"
+
+#: lino_prima/lib/ratings/choicelists.py:47
+#, fuzzy
+msgid "Rating type"
+msgstr "Punkte"
+
+#: lino_prima/lib/ratings/choicelists.py:48
+#, fuzzy
+msgid "Rating types"
+msgstr "Bewertungen"
+
+#: lino_prima/lib/ratings/mixins.py:31 lino_prima/lib/ratings/models.py:383
+msgid "Score"
+msgstr "Punkte"
+
+#: lino_prima/lib/ratings/mixins.py:38 lino_prima/lib/ratings/mixins.py:177
+msgid "Max. score"
+msgstr "Max. Punkte"
+
+#: lino_prima/lib/ratings/mixins.py:46
+msgid "Set score value"
+msgstr "Punkte setzen"
+
+#: lino_prima/lib/ratings/mixins.py:181
+msgid "Rate it"
+msgstr "Bewerte"
+
+#: lino_prima/lib/ratings/mixins.py:195
+msgid "Done since"
+msgstr "Fertig seit"
+
+#: lino_prima/lib/ratings/mixins.py:229
+msgid "No data"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:340 lino_prima/lib/ratings/mixins.py:393
+msgid "N/A"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:353
+msgid "Ratings done"
+msgstr "Bewertungen gemacht"
+
+#: lino_prima/lib/ratings/mixins.py:354
+msgid "Total score"
+msgstr "Summe Punkte"
+
+#: lino_prima/lib/ratings/mixins.py:355
+msgid "Total max score"
+msgstr "Summe Max.Punkte"
+
+#: lino_prima/lib/ratings/mixins.py:399
+msgid "Examination type"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:400
+msgid "Examination types"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:403
+msgid "ProjectTemplates"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:404
+msgid "Tests"
+msgstr ""
+
+#: lino_prima/lib/ratings/mixins.py:405
+msgid "Final tests"
+msgstr "Abschlusstests"
+
+#: lino_prima/lib/ratings/models.py:31
+msgid "Exam"
+msgstr "Test"
+
+#: lino_prima/lib/ratings/models.py:32
+msgid "Exams"
+msgstr "Tests"
+
+#: lino_prima/lib/ratings/models.py:37
+msgid "Title"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:39
+#, fuzzy
+msgid "Date"
+msgstr "Entwurf"
+
+#: lino_prima/lib/ratings/models.py:70
+msgid "Period {} must be in {}"
+msgstr "Startperiode muss in {} liegen"
+
+#: lino_prima/lib/ratings/models.py:74
+msgid "Completion"
+msgstr "Fortschritt"
+
+#: lino_prima/lib/ratings/models.py:94
+msgid "Challenge"
+msgstr "Leistung"
+
+#: lino_prima/lib/ratings/models.py:95
+msgid "Challenges"
+msgstr "Leistungen"
+
+#: lino_prima/lib/ratings/models.py:111
+msgid "Section"
+msgstr "Abschnitt"
+
+#: lino_prima/lib/ratings/models.py:134
+msgid "{skill} /{max_score} in {exam_or_section}"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:164
+msgid "Challenge rating"
+msgstr "Leistungsbewertung"
+
+#: lino_prima/lib/ratings/models.py:165 lino_prima/lib/ratings/ui.py:71
+#: lino_prima/lib/ratings/ui.py:493
+msgid "Challenge ratings"
+msgstr "Leistungsbewertungen"
+
+#: lino_prima/lib/ratings/models.py:189
+msgid "in {subject}:{skill}"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:193
+msgid "for {pupil}"
+msgstr "für {pupil}"
+
+#: lino_prima/lib/ratings/models.py:234
+msgid "20241212 Oops"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:237
+msgid "{} has multiple challenges with seqno {}"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:249
+msgid "Exam response"
+msgstr "Test-Antwort"
+
+#: lino_prima/lib/ratings/models.py:250
+msgid "Exam responses"
+msgstr "Test-Antworten"
+
+#: lino_prima/lib/ratings/models.py:291
+msgid "No {challenges} in {exam}."
+msgstr "Keine {challenges} in {exam}."
+
+#: lino_prima/lib/ratings/models.py:329 lino_prima/lib/ratings/models.py:334
+msgid "Final exam"
+msgstr "Abschlusstest"
+
+#: lino_prima/lib/ratings/models.py:330
+msgid "Final exams"
+msgstr "Abschlusstests"
+
+#: lino_prima/lib/ratings/models.py:347
+msgid "Final exam rating"
+msgstr "Abschlusstestbewertung"
+
+#: lino_prima/lib/ratings/models.py:348
+msgid "Final exam ratings"
+msgstr "Abschlusstestbewertungen"
+
+#: lino_prima/lib/ratings/models.py:375
+msgid "Rating summary"
+msgstr "Bewertungsübersicht"
+
+#: lino_prima/lib/ratings/models.py:376
+msgid "Rating summaries"
+msgstr "Bewertungsübersichten"
+
+#: lino_prima/lib/ratings/models.py:384
+msgid "Max score"
+msgstr "Max.Punkte"
+
+#: lino_prima/lib/ratings/models.py:390
+msgid "{subject}:{skill} in {group}"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:456
+msgid "Check for missing or duplicate challenge ratings"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:458
+msgid "No challenge rating for {} pupils."
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:459
+msgid "Duplicate challenge rating(s) for {} pupils."
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:491
+msgid "Check for missing or duplicate exam responses"
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:493
+msgid "No response for {} enrolments."
+msgstr ""
+
+#: lino_prima/lib/ratings/models.py:494
+msgid "Duplicate response(s) for {} enrolments."
+msgstr ""
+
+#: lino_prima/lib/ratings/ui.py:54
+msgid "Skills overview"
+msgstr "Übersicht Kompetenzen"
+
+#: lino_prima/lib/ratings/ui.py:96
+msgid "Pupil ratings"
+msgstr "Schülerbewertungen"
+
+#: lino_prima/lib/ratings/ui.py:212
+msgid "Pupils and ratings"
+msgstr "Schüler und Bewertungen"
+
+#: lino_prima/lib/ratings/ui.py:225
+msgid "There are no {challenges} configured for {exam}."
+msgstr "Keine {challenges} konfiguriert für {exam}."
+
+#: lino_prima/lib/ratings/ui.py:405
+msgid "Ratings by response"
+msgstr "Bewertungen pro Antwort"
+
+#: lino_prima/lib/users/ui.py:28
+msgid "Contact"
+msgstr ""
+
+#~ msgid "Pupils"
+#~ msgstr "Schüler"
+
+#~ msgid "Projects by group"
+#~ msgstr "Bausteine pro Klasse"
+
+#~ msgid "{max_score} for {skill}"
+#~ msgstr "{max_score} für {skill}"
