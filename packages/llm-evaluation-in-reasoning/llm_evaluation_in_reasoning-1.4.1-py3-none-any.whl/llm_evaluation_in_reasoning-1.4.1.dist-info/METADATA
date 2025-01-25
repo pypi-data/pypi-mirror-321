@@ -1,0 +1,110 @@
+Metadata-Version: 2.4
+Name: llm_evaluation_in_reasoning
+Version: 1.4.1
+Summary: A project for evaluating reasoning capabilities in large language models (LLMs).
+Author-email: Sheng Ren <rensheng0410@gamil.com>, Xiya Pang <sianing0531@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Sheng Ren and Xiya Pang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: evaluation,llm,reasoning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Requires-Dist: datasets
+Requires-Dist: fire
+Requires-Dist: litellm==1.54.1
+Requires-Dist: pathlib
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# llm_evaluation_in_reasoning
+
+[![example workflow](https://github.com/ashengstd/llm_evaluation_in_reasoning/actions/workflows/publish-pypi-release.yml/badge.svg)](https://github.com/ashengstd/llm_evaluation_in_reasoning) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/llm_evaluation_in_reasoning)](https://pypi.org/project/llm_evaluation_in_reasoning) [![PyPI](https://img.shields.io/pypi/v/llm_evaluation_in_reasoning.svg)](https://pypi.org/project/llm_evaluation_in_reasoning/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/llm_evaluation_in_reasoning.svg)](https://pypi.org/project/llm_evaluation_in_reasoning/) [![GitHub License](https://img.shields.io/github/license/ashengstd/llm_evaluation_in_reasoning)](https://github.com/ashengstd/llm_evaluation_in_reasoning) [![GitHub Release](https://img.shields.io/github/v/release/ashengstd/llm_evaluation_in_reasoning)](https://github.com/ashengstd/llm_evaluation_in_reasoning)
+
+A project for evaluating reasoning capabilities in large language models (LLMs).
+
+**Read this in other languages: [English](https://github.com/ashengstd/llm_evaluation_in_reasoning/blob/main/README.md), [中文](https://github.com/ashengstd/llm_evaluation_in_reasoning/blob/main/README_zh.md).**
+
+## Run the eval
+
+### Install the package
+
+```shell
+pip install llm_evaluation_in_reasoning
+```
+
+### Create the `.env` file
+
+Create a `.env` file with the following:
+
+```
+OPENAI_API_KEY=<your key>
+ANTHROPIC_API_KEY=<your key>
+...
+```
+
+The api key you provided will be used to fetch the valid models supported by `Litellm`.
+
+### Run Instructions
+
+Support `GSM-Symbolic`, `GSM8K`, `MMLU`, `SimpleBench`
+To run a benchmark:
+
+```shell
+llm_eval --model_name=ollama/qwen2.5:0.5b --dataset=SimpleBench # run llm_eval --help to see help information
+```
+
+## Model support
+
+Model support is based on `Litellm`, see the docs here [Litellm Providers](https://docs.litellm.ai/docs/providers)
+
+## Build the project
+
+### Setup Instructions
+
+Clone the github repo and cd into it.
+
+```shell
+git clone https://github.com/ashengstd/llm_evaluation_in_reasoning.git
+cd llm_evaluation_in_reasoning
+```
+
+### Install uv:
+
+The best way to install dependencies is to use `uv`.
+If you don't have it installed in your environment, you can install it with the following:
+
+```shell
+curl -LsSf https://astral.sh/uv/install.sh | sh # macOS and Linux
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" # Windows
+```
+
+### Sync the dependencies
+
+```shell
+uv sync --all-extra
+```
