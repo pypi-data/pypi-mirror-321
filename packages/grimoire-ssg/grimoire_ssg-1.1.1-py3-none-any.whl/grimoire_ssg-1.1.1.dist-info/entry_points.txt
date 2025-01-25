@@ -1,0 +1,3 @@
+[console_scripts]
+grimoiressg=grimoiressg.scripts:main
+
