@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/pytei/__init__.py
+src/pytei/client.py
+src/pytei/model.py
+src/pytei/store.py
+src/pytei_client.egg-info/PKG-INFO
+src/pytei_client.egg-info/SOURCES.txt
+src/pytei_client.egg-info/dependency_links.txt
+src/pytei_client.egg-info/requires.txt
+src/pytei_client.egg-info/top_level.txt
