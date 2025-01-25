@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Simple_Notification_Lambda/__init__.py
+Simple_Notification_Lambda/notifier.py
+Simple_notification_Lambda.egg-info/PKG-INFO
+Simple_notification_Lambda.egg-info/SOURCES.txt
+Simple_notification_Lambda.egg-info/dependency_links.txt
+Simple_notification_Lambda.egg-info/requires.txt
+Simple_notification_Lambda.egg-info/top_level.txt
