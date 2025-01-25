@@ -1,0 +1,7 @@
+matplotlib
+numpy
+openseespy
+pandas
+Pint
+scipy
+shapely
