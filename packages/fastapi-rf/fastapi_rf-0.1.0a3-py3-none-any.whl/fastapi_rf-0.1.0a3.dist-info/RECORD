@@ -1,0 +1,15 @@
+fastapi_rf-0.1.0a3.dist-info/METADATA,sha256=kxy0_zPwhnW1QHvMz5Z53RJOTZ5oZJW5e4ZgvYd_IXw,3723
+fastapi_rf-0.1.0a3.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+fastapi_rf-0.1.0a3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+fastapi_rf-0.1.0a3.dist-info/licenses/LICENSE,sha256=nGbMvu65a0XVkyIIohqTk44ziZyleNGZrZF0peR3nzo,1068
+frf/__init__.py,sha256=fJGwOt53l6sA57WMcFa9t7PKXqQ1WBIthrsfqTAhtTI,80
+frf/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/endpoints/base_endpoint.py,sha256=-hB_AlEMAd_6yF7Ei1gbc9dr068fHPfXc-dEJLzbl4Y,2001
+frf/pagination/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/routers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/routers/base_router.py,sha256=8y-lbXPtCNktHxRwZP4hy4PF2okYqz1l7Vcw8I78daA,385
+frf/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frf/security/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mock_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mock_project/main.py,sha256=H13QlrOGQ1Kwtrq3us5roPsXdLGbVd7yD6qa5qU-CKE,959
+fastapi_rf-0.1.0a3.dist-info/RECORD,,
