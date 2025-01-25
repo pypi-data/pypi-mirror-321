@@ -1,0 +1,2 @@
+[console_scripts]
+puff = puff.cli:cli
