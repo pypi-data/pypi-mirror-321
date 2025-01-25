@@ -1,0 +1,3 @@
+[console_scripts]
+diff-getter = diff_getter:main
+serve = diff_getter:server.main
