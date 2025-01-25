@@ -1,0 +1,2 @@
+[console_scripts]
+pathshortener = pathshortener.__main__:main

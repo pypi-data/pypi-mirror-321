@@ -1,0 +1,12 @@
+README.md
+setup.py
+pathshortener/__init__.py
+pathshortener/__main__.py
+pathshortener/env_vars.py
+pathshortener/registry.py
+pathshortener/string_processing.py
+pathshortener.egg-info/PKG-INFO
+pathshortener.egg-info/SOURCES.txt
+pathshortener.egg-info/dependency_links.txt
+pathshortener.egg-info/entry_points.txt
+pathshortener.egg-info/top_level.txt
