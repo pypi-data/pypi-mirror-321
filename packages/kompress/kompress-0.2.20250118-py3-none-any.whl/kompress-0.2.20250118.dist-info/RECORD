@@ -1,0 +1,15 @@
+kompress/__init__.py,sha256=pI-8Gde044usZN3sO4rUmSoE7Pq0JrW9en3GHLIOBjQ,5904
+kompress/compat.py,sha256=462X7kjqzL-vOCAt5Bw3XlkPL82ZvkAeyEGV74WzKyA,169
+kompress/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kompress/tar.py,sha256=k7hhgt7qtO4jw1i7I9llMuep0KHOGPw7yn83EvaThTM,10153
+kompress/utils.py,sha256=GsMzxnYZ8TwPSntsrkePNfqiywwhNLojQpo2MJjY5NQ,4126
+kompress/zip.py,sha256=ApcESH2cROfffafIl3JXB8jQufh_0UNkM82OZ-6mWoY,6983
+kompress/tests/kompress.py,sha256=fx6uTvP3rIA_jfFfwpSVVhnh99RakSZDT-mCGiw7rvM,7228
+kompress/tests/zippath.py,sha256=7utUGDbz6NfOhWCVDP-dvNwPekXuFc6IN79h1TXyn8E,2449
+kompress/tests/structure_data/gdpr_export.tar.gz,sha256=6jZDCEXY4j0kY5EA4uQqSGz9884_FtCWh8eVVM8xfqs,269
+kompress/tests/structure_data/gdpr_export.zip,sha256=OFgCA4BylTltab0CKB8tvGZgtQRmkvDHmd7vBe_b1xE,1273
+kompress/tests/structure_data/with_leading_dot.tar.gz,sha256=pkEcs7-I1BdhkyQCyHgJzTdWvkuBpawjIsdwPV8fX5o,203
+kompress-0.2.20250118.dist-info/METADATA,sha256=R4rbwdfkMIOEzMUyrdo5dW2NlH0N4rBdNGxbo3VGDYk,1960
+kompress-0.2.20250118.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+kompress-0.2.20250118.dist-info/top_level.txt,sha256=qJ3tmFJW1Y9fFNnKhAutGBBIINzBZ979cnIftWQZ66s,9
+kompress-0.2.20250118.dist-info/RECORD,,
