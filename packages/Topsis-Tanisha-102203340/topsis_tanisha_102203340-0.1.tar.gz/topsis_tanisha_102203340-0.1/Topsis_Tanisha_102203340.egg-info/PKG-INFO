@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Tanisha-102203340
+Version: 0.1
+Summary: A Python package to perform TOPSIS analysis
+Home-page: https://github.com/tanisha0016/Topsis-Tanisha-102203340
+Download-URL: https://github.com/tanisha0016/Topsis-Tanisha-102203340/releases/tag/v_01
+Author: Tanisha Ahuja
+Author-email: tanishaahuja666@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis-Tanisha-102203340
