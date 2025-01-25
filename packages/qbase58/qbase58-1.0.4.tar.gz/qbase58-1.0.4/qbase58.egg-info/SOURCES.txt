@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+qbase58/__init__.py
+qbase58/base58.c
+qbase58/base58.h
+qbase58/py_base58.c
+qbase58/py_base58.pyi
+qbase58.egg-info/PKG-INFO
+qbase58.egg-info/SOURCES.txt
+qbase58.egg-info/dependency_links.txt
+qbase58.egg-info/requires.txt
+qbase58.egg-info/top_level.txt
+tests/test_qbase58.py
+tests/test_readme.py
