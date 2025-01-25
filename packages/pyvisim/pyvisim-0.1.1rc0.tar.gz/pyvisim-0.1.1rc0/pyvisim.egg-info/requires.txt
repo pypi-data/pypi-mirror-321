@@ -1,0 +1,12 @@
+opencv-python
+h5py
+numpy
+opencv-python
+pyaml
+PyYAML
+scikit-learn
+scipy
+seaborn
+torch
+torchvision
+torchaudio
