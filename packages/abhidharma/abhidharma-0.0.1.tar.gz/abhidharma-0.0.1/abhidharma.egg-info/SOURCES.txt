@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+abhidharma/__init__.py
+abhidharma.egg-info/PKG-INFO
+abhidharma.egg-info/SOURCES.txt
+abhidharma.egg-info/dependency_links.txt
+abhidharma.egg-info/requires.txt
+abhidharma.egg-info/top_level.txt
