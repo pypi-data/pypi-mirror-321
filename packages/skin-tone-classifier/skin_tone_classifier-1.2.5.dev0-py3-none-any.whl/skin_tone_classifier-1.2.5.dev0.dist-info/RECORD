@@ -1,0 +1,15 @@
+stone/__init__.py,sha256=7AkQXhi1m-FPxTDG_OPEbewoJ_C3h3rK41Kz0woJ1Gw,295
+stone/__main__.py,sha256=MIZfe5sa15ovISk2l_d4JKir_wTn4SZmKlLxTc70si8,8843
+stone/api.py,sha256=vZUdjgsvtEvHLA0uRec4pdPc1SmHEY7V34pXNoYle6c,4490
+stone/image.py,sha256=bM8YcsnhoYTpj69RdDPEUJCt1v83urIZAE0VRBaWF0I,18690
+stone/package.py,sha256=2OUxy_hu3uPymOiWekYFGxEEsU72Ao8K9i3YEiDETTo,537
+stone/utils.py,sha256=2JyYztYMQKgT5Ku02wsbqEvPQec7BOkNudKbPXPHorc,17593
+stone/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stone/ui/config_icon.png,sha256=rRl7Av3lhl7MJ-aG2UravqiDJwgRemB2xUdMgw1AqsE,48199
+stone/ui/program_icon.png,sha256=rRl7Av3lhl7MJ-aG2UravqiDJwgRemB2xUdMgw1AqsE,48199
+skin_tone_classifier-1.2.5.dev0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+skin_tone_classifier-1.2.5.dev0.dist-info/METADATA,sha256=2-Jc0jr_pbFYz81fY2kGqeB7tvrw4ksecO6bXHO0F78,35548
+skin_tone_classifier-1.2.5.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+skin_tone_classifier-1.2.5.dev0.dist-info/entry_points.txt,sha256=yEzkymAoau0Hf7oHtRD2tO6phOQRdHcaOOEqoVBNXKE,93
+skin_tone_classifier-1.2.5.dev0.dist-info/top_level.txt,sha256=VKTUA1baCOKxhxp4xpZQFjQ9hgNWWTGUP--_kpc1NH8,6
+skin_tone_classifier-1.2.5.dev0.dist-info/RECORD,,
