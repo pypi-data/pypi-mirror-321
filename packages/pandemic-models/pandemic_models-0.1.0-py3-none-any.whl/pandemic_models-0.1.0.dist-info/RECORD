@@ -1,0 +1,13 @@
+pandemic_models/__init__.py,sha256=2W9CWKcDOa1HKeQ--tIr5DcZB1SJChHNXOcJKb5vdsg,130
+pandemic_models/models/__init__.py,sha256=KBxH3u8q-PzOySJ21yMdTCRWWgjfs0c_aDyrx3pmrQU,56
+pandemic_models/models/base.py,sha256=2sO6lyt1Y7nIlkDrshd5olq8w1sZK2LdhmkIgEBu0iw,1388
+pandemic_models/models/sir_model.py,sha256=VFTXqcIq73oxUiEGq-fqk7hoW2PPevB2w5uMR4QP2Lo,1735
+pandemic_models/optimizers/__init__.py,sha256=bLX3Wmxi3RdCXDTPz3s320GD_bt6NZO7LkunSIxGRs4,641
+pandemic_models/optimizers/base.py,sha256=DaguqNETqMfIrmhyKa3TUTVcPDyjt3EdSPzYjKLIXeo,597
+pandemic_models/optimizers/core.py,sha256=xZ6yFRm9b8IXAqfkDio1Qi3_v_Yqp1RBbDc6rqAJYFs,3633
+pandemic_models/optimizers/objective_functions.py,sha256=UZZJhmaNEIHNYKdgQBqXVpmIvjXRH-DE01RXXhWOs-A,3077
+pandemic_models/trainer/__init__.py,sha256=nu9bZXF8TtFfWcij5hyfQzz0R_s2xPFxlPAJzrcYjHs,52
+pandemic_models/trainer/trainer.py,sha256=Pmrwrj9yP6UCHzL0jp6-5VgfSSGn9pAqBOf84tTmPWc,3486
+pandemic_models-0.1.0.dist-info/METADATA,sha256=wBF6wHxESUafPWG_uYP8Mo-31RmfUq25RYRjk63fq8c,594
+pandemic_models-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pandemic_models-0.1.0.dist-info/RECORD,,
