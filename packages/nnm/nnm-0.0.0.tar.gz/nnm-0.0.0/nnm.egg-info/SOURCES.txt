@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+nnm/__init__.py
+nnm/version.py
+nnm.egg-info/PKG-INFO
+nnm.egg-info/SOURCES.txt
+nnm.egg-info/dependency_links.txt
+nnm.egg-info/requires.txt
+nnm.egg-info/top_level.txt
