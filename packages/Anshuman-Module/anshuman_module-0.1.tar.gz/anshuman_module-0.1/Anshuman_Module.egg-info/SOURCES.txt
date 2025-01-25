@@ -1,0 +1,7 @@
+setup.py
+Anshuman_Module/__init__.py
+Anshuman_Module/main.py
+Anshuman_Module.egg-info/PKG-INFO
+Anshuman_Module.egg-info/SOURCES.txt
+Anshuman_Module.egg-info/dependency_links.txt
+Anshuman_Module.egg-info/top_level.txt
