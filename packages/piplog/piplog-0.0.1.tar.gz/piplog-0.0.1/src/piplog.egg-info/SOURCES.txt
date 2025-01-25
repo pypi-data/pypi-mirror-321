@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/piplog/__init__.py
+src/piplog/piplog.py
+src/piplog.egg-info/PKG-INFO
+src/piplog.egg-info/SOURCES.txt
+src/piplog.egg-info/dependency_links.txt
+src/piplog.egg-info/top_level.txt
