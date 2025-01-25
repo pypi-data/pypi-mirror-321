@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mypythproject"
+version = "0.1.1"
+description = "An extension of pybacktestchain that enhances portfolio optimization and backtesting with advanced features."
+authors = ["Amine Lahlou"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pybacktestchain = "^0.2.1"
+numba = "^0.60.0"
+dash = "^2.18.2"
+matplotlib = "^3.10.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^9.15.2"
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+version_toml = [
+  "pyproject.toml:tool.poetry.version",
+]
