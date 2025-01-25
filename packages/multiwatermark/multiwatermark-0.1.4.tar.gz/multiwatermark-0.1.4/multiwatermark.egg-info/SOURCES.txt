@@ -1,0 +1,9 @@
+README.md
+setup.py
+multiwatermark/__init__.py
+multiwatermark/multiwatermark.py
+multiwatermark.egg-info/PKG-INFO
+multiwatermark.egg-info/SOURCES.txt
+multiwatermark.egg-info/dependency_links.txt
+multiwatermark.egg-info/requires.txt
+multiwatermark.egg-info/top_level.txt
