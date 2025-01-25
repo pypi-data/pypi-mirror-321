@@ -1,0 +1,2 @@
+[console_scripts]
+topsisg = topsisg.cli:main
