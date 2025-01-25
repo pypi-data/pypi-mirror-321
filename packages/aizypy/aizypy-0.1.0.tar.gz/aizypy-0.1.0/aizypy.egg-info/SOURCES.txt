@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+aizypy.egg-info/PKG-INFO
+aizypy.egg-info/SOURCES.txt
+aizypy.egg-info/dependency_links.txt
+aizypy.egg-info/requires.txt
+aizypy.egg-info/top_level.txt
+src/AizyBot.py
+src/CandleData.py
+src/OrderManager.py
+src/TestEngine.py
+src/Trade.py
+src/WebSocketHandler.py
+src/__init__.py
