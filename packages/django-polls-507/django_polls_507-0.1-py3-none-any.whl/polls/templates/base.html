@@ -1,0 +1,21 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link
+    rel="stylesheet"
+    href="{% static 'polls/plugins/bootstrap/css/bootstrap.min.css' %}"
+    />
+    <link
+    rel="stylesheet"
+    href="{% static 'polls/plugins/bootstrap-icons/css/bootstrap-icons.css' %}"
+    />
+    {% block css_links %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    
+    {% block scripts %}{% endblock %}
+    <script src="{% static 'polls/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
