@@ -1,0 +1,8 @@
+setuptools~=57.0.0
+statsmodels
+pandas
+numpy
+arch
+matplotlib
+dask[complete]
+pyspark==3.5.4
