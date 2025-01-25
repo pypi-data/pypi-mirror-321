@@ -1,0 +1,10 @@
+nicegui_calculator/__init__.py,sha256=YSqCK2pGXoV9xJ2IoUdFDang6kLmjChixHJgv5xFE_s,308
+nicegui_calculator/__main__.py,sha256=JyrSeUzXgzNAixKMaaJQ_38suLV6OH1raSZoA17Osy0,96
+nicegui_calculator/calculator.py,sha256=mgSAb7TSVwsnGu49e51Z6m3kUjAQ76SywRyCIwic5wY,1684
+nicegui_calculator/main.py,sha256=u7ebZoR1p7V1FfHjgoRTWWGz4EhkEUNh1Mbd9rjRtCM,1100
+nicegui_calculator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nicegui_calculator-0.1.4.dist-info/METADATA,sha256=L7_EBnA0f_EO8Q1LndFmzRkUz9_EQbEMtLbK_eHsoMw,834
+nicegui_calculator-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nicegui_calculator-0.1.4.dist-info/entry_points.txt,sha256=f4vE0IKJB9mds2Wk2jjGUu4OntXczWvRJyd1rzy0Auk,55
+nicegui_calculator-0.1.4.dist-info/licenses/LICENSE,sha256=CqD_F7Ca3lDYoEmYbafLYVlBOsjIY01Ax4yHvL5aO2Q,10758
+nicegui_calculator-0.1.4.dist-info/RECORD,,
