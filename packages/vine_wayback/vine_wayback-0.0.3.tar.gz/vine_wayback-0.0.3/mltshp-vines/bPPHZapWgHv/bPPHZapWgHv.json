@@ -1,0 +1,22 @@
+{
+  "twitter:card": "player",
+  "twitter:title": "Ryan McHenry's post on Vine",
+  "twitter:description": "Ryan Gosling won't eat his cereal: pt 4 #Remake #Howto",
+  "twitter:image": "https://vines.s3.amazonaws.com/v/thumbs/2013/04/25/CBB583C0-FC2D-44A1-B754-2AE500DE3CB8-817-000000C910E0F56A_1.0.7.mp4.jpg?versionId=OGeWyRpRE.VofxttCCkU7lUgi_FFpVE_",
+  "twitter:site": "@vineapp",
+  "twitter:player:width": "435",
+  "twitter:player:height": "435",
+  "twitter:player": "https://vine.co/v/bPPHZapWgHv/card",
+  "twitter:player:stream": "https://vines.s3.amazonaws.com/v/videos/CBB583C0-FC2D-44A1-B754-2AE500DE3CB8-817-000000C910E0F56A_1.0.7.mp4?versionId=P7w6hCmRog9aktphvL9dlJl747g6OWdX",
+  "twitter:player:stream:content_type": "video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"",
+  "twitter:app:name:iphone": "Vine",
+  "twitter:app:url:iphone": "vine://post/939213568690245632",
+  "twitter:app:id:iphone": "592447445",
+  "og:title": "Ryan Gosling won't eat his cereal: pt 4 #Remake #Howto",
+  "og:site_name": "Vine",
+  "og:image": "https://vines.s3.amazonaws.com/v/thumbs/2013/04/25/CBB583C0-FC2D-44A1-B754-2AE500DE3CB8-817-000000C910E0F56A_1.0.7.mp4.jpg?versionId=OGeWyRpRE.VofxttCCkU7lUgi_FFpVE_",
+  "fb:app_id": "1185475921592170",
+  "og:type": "vine-app:video",
+  "archive_url": "https://web.archive.org/web/20130511003223/https://vine.co/v/bPPHZapWgHv",
+  "id": "bPPHZapWgHv"
+}
