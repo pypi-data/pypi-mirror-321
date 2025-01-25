@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test_1_pedro
+Version: 0.0.2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# READ ME
+
+This is an example package.
+
+Sources: 
+
+* https://packaging.python.org/en/latest/tutorials/packaging-projects/
+* https://earthly.dev/blog/create-python-package/
+* https://pypi.org/help/
