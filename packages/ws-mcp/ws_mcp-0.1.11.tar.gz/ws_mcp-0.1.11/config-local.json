@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "wcgw": {
+      "command": "uvx",
+      "args": [
+        "--refresh",
+        "--from",
+        "/home/nick/git/wcgw",
+        "--with",
+        "/home/nick/git/wcgw/src/mcp_wcgw",
+        "--python",
+        "3.12",
+        "wcgw_mcp"
+      ]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ]
+    }
+  }
+}
