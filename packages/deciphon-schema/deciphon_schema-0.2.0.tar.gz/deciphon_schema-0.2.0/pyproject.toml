@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deciphon-schema"
+version = "0.2.0"
+description = "Schema for Deciphon packages."
+authors = [{ name = "Danilo Horta", email = "danilo.horta@pm.me" }]
+requires-python = "~=3.9"
+readme = "README.md"
+license = "MIT"
+dependencies = ["pydantic~=2.9"]

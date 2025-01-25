@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: deciphon-schema
+Version: 0.2.0
+Summary: Schema for Deciphon packages.
+Author-email: Danilo Horta <danilo.horta@pm.me>
+License-Expression: MIT
+Requires-Python: ~=3.9
+Requires-Dist: pydantic~=2.9
+Description-Content-Type: text/markdown
+
+# deciphon-schema
