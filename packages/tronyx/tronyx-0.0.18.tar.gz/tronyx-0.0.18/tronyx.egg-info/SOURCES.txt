@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tronyx/__init__.py
+tronyx/main.py
+tronyx.egg-info/PKG-INFO
+tronyx.egg-info/SOURCES.txt
+tronyx.egg-info/dependency_links.txt
+tronyx.egg-info/requires.txt
+tronyx.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tronyx
+Version: 0.0.18
+Summary: tronyx library for Python
+Author: promobro
+Author-email: promobro@protonmail.com
+License: MIT
+Project-URL: Source Repository, https://github.com/promobro/tronyx
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# tronyx Fork
+This is a fork of the tronyx library. It includes modifications and improvements.
