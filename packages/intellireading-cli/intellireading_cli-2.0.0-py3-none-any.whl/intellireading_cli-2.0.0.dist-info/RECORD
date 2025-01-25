@@ -1,0 +1,12 @@
+intellireading/client/__about__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+intellireading/client/__init__.py,sha256=3LgOM4Sj0XgjOrGbL6vXJv1V5_U9W0JdRE-A758Yx2c,165
+intellireading/client/__main__.py,sha256=4tAw9uXCp-3a0c3z4L4sUKcO80_Lz2wYB5_finUErjw,94
+intellireading/client/app.py,sha256=4oF5w1dqmOdgkKpGazxNTkqGDAuQ1W0pRyrQz2TDris,871
+intellireading/client/commands.py,sha256=gzJTzWJiHTh4BarGFH77_vXcHQJ_SYpKTFhzOJQpoMU,5957
+intellireading/client/metaguiding.py,sha256=miu81LwssgnqDoohusfEBik_lXXzi0pL5K9MLJplL_w,7473
+intellireading/client/regex.py,sha256=AOUZ-0KpNg70xBIUaQGyeJOdDP2OM2WwBrjS4t_TaDM,5081
+intellireading_cli-2.0.0.dist-info/METADATA,sha256=N3cQlNHYGpbPBZ1S7uNtJbfKDhyk3g4H1D1gMN7Do4Q,8966
+intellireading_cli-2.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+intellireading_cli-2.0.0.dist-info/entry_points.txt,sha256=9_-E7Rm8_mriUz1onItxlF6iX79bZBLvH3A_Wpew9mE,68
+intellireading_cli-2.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+intellireading_cli-2.0.0.dist-info/RECORD,,
