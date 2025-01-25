@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: cpn-cli
+Version: 0.5.0
+Summary: cpn cli
+Author-email: KevinNitroG <kevinnitro@duck.com>, NTGNguyen <ntgnguyen@duck.com>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: cpn-core[discord,ocr]==0.5.0
