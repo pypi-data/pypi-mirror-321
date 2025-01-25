@@ -1,0 +1,5 @@
+package_creation_tutorial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_creation_tutorial/string_ops.py,sha256=Fo3Sf7oUB4cODoxHCRWzrPc9rCzlChOFivpXMz04gKY,830
+nadia_by_package_creation_tutorial-0.2.0.dist-info/METADATA,sha256=fG-iJ5VYfrgB2V08fEMp0uhlOy_m-RilrJcs_QiP8PU,552
+nadia_by_package_creation_tutorial-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+nadia_by_package_creation_tutorial-0.2.0.dist-info/RECORD,,
