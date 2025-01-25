@@ -1,0 +1,10 @@
+bdf2lvgl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdf2lvgl/codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdf2lvgl/codegen/c.py,sha256=NdGhG3rZnRe30H_0ZxBjF6Zj6ThtJo9-GBpMy5hFMjY,6728
+bdf2lvgl/main.py,sha256=iEHT7l2i14-vj-lguRJGkCnpoz_H_0nqdNsEWF9l3x0,1078
+bdf2lvgl/parse.py,sha256=an_jhNdiqGhF3a0jeJ0oA8fzC9HW2rlK0jLXku86Dk8,2413
+bdf2lvgl-0.2.1.dist-info/entry_points.txt,sha256=qxvU64zVc_bf2otuQtdH4xdAKJScZ-tmjYLLvNGuNEY,47
+bdf2lvgl-0.2.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+bdf2lvgl-0.2.1.dist-info/METADATA,sha256=es-JDCyNYQ4nJ2QFfGphwup0Y6nnvQ48jclz17lodXo,580
+bdf2lvgl-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bdf2lvgl-0.2.1.dist-info/RECORD,,
