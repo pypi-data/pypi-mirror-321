@@ -1,0 +1,11 @@
+LICENSE
+README.txt
+setup.cfg
+setup.py
+DmHaloGeometry/__init__.py
+DmHaloGeometry/halo_orientation.py
+DmHaloGeometry.egg-info/PKG-INFO
+DmHaloGeometry.egg-info/SOURCES.txt
+DmHaloGeometry.egg-info/dependency_links.txt
+DmHaloGeometry.egg-info/requires.txt
+DmHaloGeometry.egg-info/top_level.txt

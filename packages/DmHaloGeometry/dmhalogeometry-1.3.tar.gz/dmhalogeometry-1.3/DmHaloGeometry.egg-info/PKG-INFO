@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DmHaloGeometry
+Version: 1.3
+Summary: Do geometric computations on dark matter particle data
+Home-page: https://github.com/lmezini/DmHaloGeometry
+Download-URL: https://github.com/lmezini/DmHaloGeometry/archive/refs/tags/v1.3.tar.gz
+Author: Lorena Mezini
+Author-email: lom31@pitt.edu
+License: MIT
+Keywords: simulation,dark matter,geometry
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: numpy
