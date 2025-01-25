@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Clists/__init__.py
+Clists/default_schema.txt
+Clists.egg-info/PKG-INFO
+Clists.egg-info/SOURCES.txt
+Clists.egg-info/dependency_links.txt
+Clists.egg-info/top_level.txt

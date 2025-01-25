@@ -1,0 +1,2 @@
+# This is a file for cached computations of large lists (or dicts) in a speified schema, by default python's original schema is followed.
+# The lists (or dicts) are cached, checked for schema and then returned for quick operational efficiency.
