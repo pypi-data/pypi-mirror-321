@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+parody_mcp/__init__.py
+parody_mcp/tool.py
+parody_mcp.egg-info/PKG-INFO
+parody_mcp.egg-info/SOURCES.txt
+parody_mcp.egg-info/dependency_links.txt
+parody_mcp.egg-info/entry_points.txt
+parody_mcp.egg-info/requires.txt
+parody_mcp.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[mcp.tools]
+parody_mcp = parody_mcp:create_tools
