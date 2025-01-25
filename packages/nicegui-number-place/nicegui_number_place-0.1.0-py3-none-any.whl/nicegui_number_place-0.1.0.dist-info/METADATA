@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: nicegui-number_place
+Version: 0.1.0
+Summary: Number Place puzzle on NiceGUI
+Project-URL: homepage, https://github.com/SaitoTsutomu/nicegui-number_place
+Author-email: Saito Tsutomu <tsutomu7@hotmail.co.jp>
+License: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.12
+Requires-Dist: nicegui>=2.9.1
+Requires-Dist: numpy>=2.2.1
+Description-Content-Type: text/markdown
+
+# NiceGUI Number Place
+
+NiceGUI Number Place is a Number Place that runs on NiceGUI.
+
+## Usage
+
+```
+% number-place
+```
+
+![](https://raw.githubusercontent.com/SaitoTsutomu/nicegui-number_place/master/images/main.png)

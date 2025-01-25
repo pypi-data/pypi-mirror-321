@@ -1,0 +1,2 @@
+[console_scripts]
+number-place = nicegui_number_place:main
