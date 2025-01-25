@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+smp25519/__init__.py
+smp25519/smp25519.py
+smp25519.egg-info/PKG-INFO
+smp25519.egg-info/SOURCES.txt
+smp25519.egg-info/dependency_links.txt
+smp25519.egg-info/requires.txt
+smp25519.egg-info/top_level.txt
