@@ -1,0 +1,12 @@
+natten_version_manager/__init__.py,sha256=Je9F8WA9QmdT4RmpS4836SNVPm13w2dMwnPPyfegOeY,333
+natten_version_manager/natten_installer.py,sha256=L3Ylr20_63JmKUndEjeMJawlbEGqzDiPmH8fJbpQnbA,4989
+natten_version_manager/pypi.py,sha256=39meTuNxYqM17JLpdYWMX2B75YoA8UpLVJPHo7m0Omc,1595
+natten_version_manager/running/__init__.py,sha256=Kg3P8htkcAve4JB8KGXdxcfsa5ukKCWDvuLkTAeLFC4,23
+natten_version_manager/running/core.py,sha256=gaYiyVH5ZMl9m9xsuyKyz8LCoVljDKEAKgY75y7HZas,1113
+natten_version_manager/running/postprocess.py,sha256=dm3NcaJ_3ETSKzu0BsX57d_Cd_UkLUUMM6PI86VIYJc,994
+natten_version_manager/running/process.py,sha256=g7Q7ArmGbjDw0rovwmIlQSEDA5HnGeKkn0HI63_Wv90,239
+natten_version_manager-0.0.1b7.dist-info/LICENSE,sha256=xnrvFoFYFhthj37FxqHydHzaokghgOuUHQwztxU_E7s,1065
+natten_version_manager-0.0.1b7.dist-info/METADATA,sha256=GGJn25vDFuR-E2IfYfCScLRCr0L9wEkpJgzQeRouZMI,576
+natten_version_manager-0.0.1b7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+natten_version_manager-0.0.1b7.dist-info/top_level.txt,sha256=fAxI_ETPjB_0tspKn35KdgxmbBqWk0qgD5CxYuT-paw,23
+natten_version_manager-0.0.1b7.dist-info/RECORD,,
