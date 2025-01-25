@@ -1,0 +1,9 @@
+imgdiet/__init__.py,sha256=6LJOQscdGoUuAy4uTkQYf1JokKftARuObHc7eQG4u78,332
+imgdiet/cli.py,sha256=BENcuGpUfZ3LFpQRPRjjjcvgBlP-bObO0UD0oU6EhyQ,1540
+imgdiet/core.py,sha256=l03qK_Pl2BignVHOeg62B393XbHVt21XO-kS7cbdrF8,15338
+imgdiet-1.0.6.dist-info/LICENSE,sha256=YDqLLUKAtKFTiV3LpuBooijV15R64SiFdEe3M93_66M,1069
+imgdiet-1.0.6.dist-info/METADATA,sha256=9-3nh207rXHKYX9DtwPx_e41YmW-UMbx2r0U_QHRp_M,8109
+imgdiet-1.0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+imgdiet-1.0.6.dist-info/entry_points.txt,sha256=hrwX9QUn_gY6Asd8ZGLM3g6Rq24tVBNfb_7tYQhMnCk,45
+imgdiet-1.0.6.dist-info/top_level.txt,sha256=bQwvtVF2KxftYa5Os55uPkIX5YuhVMtBAtiB8vF-szM,8
+imgdiet-1.0.6.dist-info/RECORD,,
