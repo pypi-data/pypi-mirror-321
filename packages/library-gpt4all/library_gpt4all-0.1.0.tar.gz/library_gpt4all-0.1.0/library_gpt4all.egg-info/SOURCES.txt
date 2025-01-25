@@ -1,0 +1,10 @@
+README.md
+setup.py
+library_gpt4all/__init__.py
+library_gpt4all/main.py
+library_gpt4all.egg-info/PKG-INFO
+library_gpt4all.egg-info/SOURCES.txt
+library_gpt4all.egg-info/dependency_links.txt
+library_gpt4all.egg-info/entry_points.txt
+library_gpt4all.egg-info/requires.txt
+library_gpt4all.egg-info/top_level.txt
