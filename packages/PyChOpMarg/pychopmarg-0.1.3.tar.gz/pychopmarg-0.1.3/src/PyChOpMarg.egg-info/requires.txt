@@ -1,0 +1,5 @@
+chaco>=6.0.0
+click
+pyside6
+scikit-rf>=0.29
+traitsui>=8
