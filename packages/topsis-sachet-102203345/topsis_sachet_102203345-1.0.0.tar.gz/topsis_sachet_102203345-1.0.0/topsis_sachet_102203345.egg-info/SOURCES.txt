@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+topsis_sachet_102203345/__init__.py
+topsis_sachet_102203345/main.py
+topsis_sachet_102203345.egg-info/PKG-INFO
+topsis_sachet_102203345.egg-info/SOURCES.txt
+topsis_sachet_102203345.egg-info/dependency_links.txt
+topsis_sachet_102203345.egg-info/entry_points.txt
+topsis_sachet_102203345.egg-info/requires.txt
+topsis_sachet_102203345.egg-info/top_level.txt
