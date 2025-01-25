@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = TOPSIS_GAURANSH_102203322.topsis:main
