@@ -1,0 +1,9 @@
+dbt_duckdb_udf/__init__.py,sha256=YnJlivmVlnYxmU9V0GaLqImyCDRmhrX5sH1LR6rHCPw,62
+dbt_duckdb_udf/plugin.py,sha256=FDKRJZKVefURTVoMLnGmrry2CQJJCSkM9w7dS4Rj1oI,2290
+dbt_duckdb_udf/udf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_duckdb_udf/udf/sample/string_udf.py,sha256=NKbOSd8_EI-5yWU-yH9dHdcyM8tkWgLwdHse_PUquZA,559
+dbt_duckdb_udf/utils/utils.py,sha256=qg-3P6zic2myeWPsBr2FS2T4IS2udLp6VLOvcLCNets,1092
+dbt_duckdb_udf-0.0.4.dist-info/METADATA,sha256=zcS8tH_wo3HuWqWHYTgv9esaGxpbeR_Wn4gLtoEiCsM,869
+dbt_duckdb_udf-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dbt_duckdb_udf-0.0.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dbt_duckdb_udf-0.0.4.dist-info/RECORD,,
