@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: mcpx
+Version: 0.1.1
+Summary: Add your description here
+Project-URL: Homepage, https://github.com/SecretiveShell/mcpx
+Project-URL: Repository, https://github.com/SecretiveShell/mcpx
+Project-URL: Issues, https://github.com/SecretiveShell/mcpx/issues
+Author-email: TerminalMan <84923604+SecretiveShell@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: mcp>=1.2.0
+Requires-Dist: pydantic>=2.10.5
+Provides-Extra: docker
+Requires-Dist: aiodocker>=0.24.0; extra == 'docker'
+Description-Content-Type: text/markdown
+
+# mcpx
+
+mcpx is an extension for the [mcp python sdk](https://github.com/modelcontextprotocol/python-sdk) that includes extra functionality.
+
+This package is aimed at client developers.
+
+## Features
+
+- Docker client transport
+
+## Installation
+
+Install mcpx as a python package via pypi:
+
+```bash
+uv add mcpx
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+mcpx is licensed under the MIT License.
