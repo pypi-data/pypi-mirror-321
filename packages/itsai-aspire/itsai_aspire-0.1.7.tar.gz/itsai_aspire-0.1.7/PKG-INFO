@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: itsai-aspire
+Version: 0.1.7
+Summary: ASPIRE Database Agent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: azure-core>=1.32.0
+Requires-Dist: azure-search-documents>=11.5.2
+Requires-Dist: databricks-sql-connector>=3.7.1
+Requires-Dist: flasgger>=0.9.7.1
+Requires-Dist: flask>=3.1.0
+Requires-Dist: flask-sock>=0.7.0
+Requires-Dist: langchain-openai>=0.3.0
+Requires-Dist: openai>=1.59.7
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: polars>=1.19.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: sqlalchemy>=2.0.37
+Requires-Dist: sqlparse>=0.5.3
+Requires-Dist: typer>=0.15.1
+
+# Database Agent for ASPIRE
