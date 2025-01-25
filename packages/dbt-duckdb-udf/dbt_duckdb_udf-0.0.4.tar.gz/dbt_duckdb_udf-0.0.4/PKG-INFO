@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: dbt-duckdb-udf
+Version: 0.0.4
+Summary: dbt-duckdb plugin enabling direct integration with DuckDB's Python interface
+Project-URL: Homepage, https://github.com/brucemen711/dbt-duckdb-udf.git
+Author-email: Bruce Nguyen <nguyendinhhuynhbk@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: dbt-duckdb>=1.9.1
+Requires-Dist: pyarrow>=18.1.0
+Description-Content-Type: text/markdown
+
+## A dbt-duckdb plugin enabling direct integration with DuckDB's Python interface
+
+Check out this tutorial on how to use it: [[Part 2] DuckDB, DBT, and Python— The perfect combo for T in ELT](https://brucemen711.medium.com/part-2-duckdb-dbt-and-python-the-perfect-combo-for-t-in-elt-6a41039c3f81)
