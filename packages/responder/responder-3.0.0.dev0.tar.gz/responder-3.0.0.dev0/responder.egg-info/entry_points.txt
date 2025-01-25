@@ -1,0 +1,2 @@
+[console_scripts]
+responder = responder.ext.cli:cli
