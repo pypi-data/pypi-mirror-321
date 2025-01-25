@@ -1,0 +1,13 @@
+examples/numpy_arrays_profiling.py,sha256=8ZfnL6tjRPBUYiZCmiSicm7JadcMRnJM1QKVpB8m9UM,575
+examples/numpy_arrays_profiling_custom.py,sha256=vtbRaTxVStWXXFQRI4AYU-k_OGOytNUM_mgcLWRj5M4,712
+examples/profiler_data/array_handler/memory_plot_array_handler_450155_data.png,sha256=Kl16wma-poMdESDTzOCxdb-rJDoaAnQktWIHFBUl9xA,158877
+memory_profiler/decorators.py,sha256=zF8khw-g2W8fHuOFb5dR58Xs_KbVtbkIlbgaV7-qB-I,1314
+memory_profiler/src/plottrace.py,sha256=8BUsyNXkXr5X6zT8tmRoH-LiKFNgqrzKKP0f-iXFRjk,5651
+memory_profiler/src/profiler.py,sha256=mho_n5kBE-P8YsfFJWCJ7ZTHI1bnlwhlOCPYS0Trem0,6074
+memory_profiler/src/configs/config.yaml,sha256=swxRnOHcBTKe3XWcEMnC6wCqDR3TsvmpwIKbtK12TrU,235
+tests/src_test.py,sha256=NfUHjysg0dbfOMrA3Z2Noc6IUrbERGJN5kH-1E0NzhI,2728
+python_memory_profiler-0.4.3.dist-info/LICENSE,sha256=Ca1jqvvaVy-Z5uVI_gxSPu3HK0QbmarQRjVlV4mjRdE,1072
+python_memory_profiler-0.4.3.dist-info/METADATA,sha256=BDAcQqMyneB_UcVs0XaSNJHEdwecERyiRM6uEK0c-TM,5558
+python_memory_profiler-0.4.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+python_memory_profiler-0.4.3.dist-info/top_level.txt,sha256=Y5J097JBHDxL2Mar62KRMwDxevHGkSyWSv9pxmioazc,31
+python_memory_profiler-0.4.3.dist-info/RECORD,,
