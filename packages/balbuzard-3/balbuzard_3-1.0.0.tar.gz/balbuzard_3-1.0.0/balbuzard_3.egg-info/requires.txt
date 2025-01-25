@@ -1,0 +1,5 @@
+python-magic
+yara-python
+
+[:platform_system == "Windows"]
+python-magic-win64

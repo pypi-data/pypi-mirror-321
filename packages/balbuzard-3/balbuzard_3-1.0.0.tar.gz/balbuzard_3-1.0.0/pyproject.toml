@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["debian*", "binaries*", "build*", "dist*"]
+
+[project]
+name = "balbuzard-3"
+version = "1.0.0"
+dependencies = [
+    "python-magic",
+    "yara-python",
+    "python-magic-win64 ; platform_system == 'Windows'",
+]
+requires-python = ">=3.6"
+authors = [
+  {name = "Philippe Lagadec / Corey Forman (digitalsleuth)", email = "github@digitalsleuth.ca"}
+]
+maintainers = [
+  {name = "Corey Forman (digitalsleuth)", email = "github@digitalsleuth.ca"}
+]
+description = "Package of malware analysis tools to extract patterns of interest from suspicious files, crack malware obfuscation such as XOR, ROL, etc by bruteforcing, and checking for those patterns."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["digital forensics", "dfir", "malware", "reverse", "balbuzard", "bbcrack", "bbharvest", "bbtrans"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/digitalsleuth/balbuzard"
+
+[project.scripts]
+balbuzard = "balbuzard.balbuzard:main"
+bbcrack = "balbuzard.bbcrack:main"
+bbtrans = "balbuzard.bbtrans:main"
+bbharvest = "balbuzard.bbharvest:main"

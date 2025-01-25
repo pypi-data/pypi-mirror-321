@@ -1,0 +1,5 @@
+[console_scripts]
+balbuzard = balbuzard.balbuzard:main
+bbcrack = balbuzard.bbcrack:main
+bbharvest = balbuzard.bbharvest:main
+bbtrans = balbuzard.bbtrans:main
