@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Topsis/__init__.py
+Topsis/__main__.py
+topsis_Prince_3619.egg-info/PKG-INFO
+topsis_Prince_3619.egg-info/SOURCES.txt
+topsis_Prince_3619.egg-info/dependency_links.txt
+topsis_Prince_3619.egg-info/entry_points.txt
+topsis_Prince_3619.egg-info/requires.txt
+topsis_Prince_3619.egg-info/top_level.txt
