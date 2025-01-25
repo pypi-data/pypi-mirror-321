@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: sparkplug-b-packets
+Version: 0.1.2025
+Author-email: Hank Haines <hankhaines@wellchecked.com>
+Project-URL: Homepage, https://github.com/WellChecked/sparkplug-b-packets
+Project-URL: Issues, https://github.com/WellChecked/sparkplug-b-packets/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sparkplug-b-packets
+SparkPlug B Packet Builder
