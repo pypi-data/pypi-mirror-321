@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: sigmoidNN
+Version: 0.1
+Summary: sigmoid neural network library
+Home-page: https://github.com/Anas-github-Acc/NN-Library
+Author: anas
+Author-email: anas.ahamad955@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## SigmoidNN
+
+# Overview
+
+This Library implements a simple yet powerful **neural network** using scary mathematical operations, such as the sigmoid activation function, cross-entropy loss, and matrix operationsðŸ˜–. The network has been tested with the MNIST dataset of handwritten digits and achieved an **97.99% accuracy** with the chosen parameters.
+
+You can customize the layers, activation functions, and data to train and test the network for your specific needs.
+
+---
+
+# Documentation
+
+```bash
+from SigmoidNN import Network, 
+```
