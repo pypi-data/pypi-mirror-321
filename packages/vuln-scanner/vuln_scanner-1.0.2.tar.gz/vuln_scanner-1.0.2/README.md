@@ -1,0 +1,198 @@
+
+# 🔒 vuln_scanner
+
+مكتبة **Python** احترافية لفحص واكتشاف أبرز الثغرات الأمنية في المواقع الإلكترونية.  
+تساعدك الأداة في تأمين مواقع الويب عبر اكتشاف مجموعة من الثغرات الشائعة والخطيرة.
+
+---
+
+## 🚀 **المميزات**
+
+🔵 **XSS (Cross-Site Scripting):** فحص وإيجاد ثغرات إدخال السكريبت.  
+🔵 **SQL Injection (SQLi):** فحص استغلال قواعد البيانات عبر استعلامات SQL.  
+🔵 **Local File Inclusion (LFI):** فحص إدراج الملفات المحلية.  
+🔵 **Remote File Inclusion (RFI):** فحص إدراج الملفات عن بُعد.  
+🔵 **Sensitive Files & Directories Scanner:** اكتشاف الملفات والمجلدات الحساسة.  
+🔵 **Subdomain Scanner:** فحص واكتشاف النطاقات الفرعية للمواقع.  
+🔵 **CORS Misconfiguration Scanner:** اكتشاف التهيئة غير الآمنة لإعدادات CORS.  
+🔵 **HTTP Methods Scanner:** فحص تفعيل طرق HTTP غير الآمنة.  
+🔵 **CSRF Scanner:** اكتشاف غياب رموز CSRF في النماذج.  
+🔵 **SSL/TLS Scanner:** فحص أمان شهادات SSL/TLS.  
+🔵 **Open Redirect Scanner:** اكتشاف ثغرات إعادة التوجيه المفتوح.  
+🔵 **File Upload Vulnerability Scanner:** فحص نقاط رفع الملفات لاكتشاف الثغرات.  
+🔵 **Broken Authentication Scanner:** فحص ضعف آليات تسجيل الدخول والتحقق.  
+🔵 **Directory Traversal Scanner:** فحص ثغرات اجتياز المجلدات للوصول غير المصرح به.  
+🔵 **Clickjacking Scanner:** فحص الحماية من هجمات النقر المخادع.  
+🔵 **Admin Panel Finder:** البحث عن لوحات التحكم الإدارية المكشوفة.  
+🔵 **API Security Scanner:** فحص أمان واجهات برمجة التطبيقات (API).  
+🔵 **GraphQL Security Scanner:** فحص أمان واجهات GraphQL.  
+🔵 **File Inclusion Bypass Scanner:** اكتشاف طرق تجاوز حماية إدراج الملفات.  
+🔵 **Advanced Reporting (PDF):** إنشاء تقارير احترافية بنتائج الفحص.  
+
+---
+
+## 📝 **الاستخدام**
+
+### 🔍 **1. فحص ثغرات XSS**
+```python
+from vuln_scanner import scan_xss
+url = "http://example.com/search?q=test"
+scan_xss(url)
+```
+
+### 🔍 **2. فحص ثغرات SQL Injection**
+```python
+from vuln_scanner import scan_sql_injection
+url = "http://example.com/product?id=1"
+scan_sql_injection(url)
+```
+
+### 🔍 **3. فحص ثغرات LFI**
+```python
+from vuln_scanner import scan_lfi
+url = "http://example.com/page.php?file=home"
+scan_lfi(url)
+```
+
+### 🔍 **4. فحص ثغرات RFI**
+```python
+from vuln_scanner import scan_rfi
+url = "http://example.com/page.php?file="
+external_url = "http://malicious.com/shell.txt"
+scan_rfi(url, external_url)
+```
+
+### 🔍 **5. فحص الملفات والدلائل الحساسة**
+```python
+from vuln_scanner import hidden_link_finder
+url = "http://example.com"
+wordlist = "common.txt"
+hidden_link_finder(url, wordlist)
+```
+
+### 🔍 **6. فحص النطاقات الفرعية (Subdomain Scanner)**
+```python
+from vuln_scanner import subdomain_scanner
+domain = "example.com"
+wordlist = "subdomains.txt"
+subdomain_scanner(domain, wordlist)
+```
+
+### 🔍 **7. فحص إعدادات CORS**
+```python
+from vuln_scanner import scan_cors
+target_url = "https://example.com"
+origin_url = "http://malicious.com"
+scan_cors(target_url, origin_url)
+```
+
+### 🔍 **8. فحص رؤوس الأمان (Security Headers Scanner)**
+```python
+from vuln_scanner import scan_security_headers
+url = "https://example.com"
+scan_security_headers(url)
+```
+
+### 🔍 **9. فحص HTTP Methods**
+```python
+from vuln_scanner import scan_http_methods
+url = "https://example.com"
+scan_http_methods(url)
+```
+
+### 🔍 **10. فحص ثغرات CSRF**
+```python
+from vuln_scanner import scan_csrf
+url = "https://example.com"
+scan_csrf(url)
+```
+
+### 🔍 **11. فحص SSL/TLS**
+```python
+from vuln_scanner import scan_ssl_tls
+domain = "example.com"
+scan_ssl_tls(domain)
+```
+### 🔍 **🔍 12. فحص نقاط رفع الملفات
+```python
+from vuln_scanner import file_upload_vulnerability_scanner
+url = "http://example.com/upload"
+file_upload_vulnerability_scanner(url)
+```
+**
+
+### 🔍 **🔍 13. فحص ضعف تسجيل الدخول
+```python
+from vuln_scanner import broken_authentication_scanner
+url = "http://example.com/login"
+broken_authentication_scanner(url)
+```
+**
+### 🔍 **🔍 14. فحص اجتياز المجلدات
+```python
+from vuln_scanner import directory_traversal_scanner
+url = "http://example.com/page?file="
+directory_traversal_scanner(url)
+```
+**
+### 🔍 **🔍 15. فحص Clickjacking
+```python
+from vuln_scanner import clickjacking_scanner
+url = "http://example.com"
+clickjacking_scanner(url)
+```
+**
+### 🔍 **🔍  16. البحث عن لوحات التحكم الإدارية
+```python
+from vuln_scanner import admin_panel_finder
+url = "http://example.com"
+wordlist = "admin_panels.txt"
+admin_panel_finder(url, wordlist)
+```
+**
+### 🔍 **🔍  17. فحص أمان API
+```python
+from vuln_scanner import api_security_scanner
+url = "http://api.example.com"
+api_security_scanner(url)
+```
+**
+### 🔍 **🔍  18. فحص أمان GraphQL
+```python
+from vuln_scanner import graphql_security_scanner
+url = "http://example.com/graphql"
+graphql_security_scanner(url)
+```
+**
+### 🔍 **🔍 19. فحص تجاوز إدراج الملفات
+```python
+from vuln_scanner import file_inclusion_bypass_scanner
+url = "http://example.com/page.php?file="
+payloads = ["../../etc/passwd", "..\\..\\windows\\win.ini"]
+file_inclusion_bypass_scanner(url, payloads)
+```
+**
+### 🔍 **🔍  20. إنشاء تقرير احترافي (PDF)
+```python
+from vuln_scanner import generate_vulnerability_report
+results = {
+    "عنوان التقرير": "تقرير فحص الثغرات",
+    "النتائج": [
+        {"الثغرة": "XSS", "الوصف": "ثغرة XSS مكتشفة", "الحالة": "غير آمنة"},
+        {"الثغرة": "SQLi", "الوصف": "ثغرة SQL Injection غير مكتشفة", "الحالة": "آمنة"}
+    ]
+}
+generate_vulnerability_report(results)
+```
+**
+---
+## 📜 **التواصل**
+📬 التواصل
+💡 إذا كان لديك أي استفسارات أو اقتراحات، لا تتردد في التواصل عبر البريد الإلكتروني:
+appasqw107@gmail.com
+## **
+## 📜 **الرخصة**
+
+📝 هذه الأداة مرخصة تحت **MIT License**.
+
+✨ **معًا لحماية المواقع وتأمين الإنترنت!** 😊
