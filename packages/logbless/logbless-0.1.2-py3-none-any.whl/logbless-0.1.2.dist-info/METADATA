@@ -1,0 +1,121 @@
+Metadata-Version: 2.2
+Name: logbless
+Version: 0.1.2
+Summary: Simple logs for any app
+Author: kesha1225
+Project-URL: Homepage, https://github.com/kesha1225/Logbless
+Project-URL: Repository, https://github.com/kesha1225/Logbless
+Keywords: logs,logging,log viewer,real-time,monitoring,FastAPI,lightweight
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: uvicorn>=0.34.0
+
+# Logbless
+
+**Logbless** is a simple file-based real-time log viewer.
+
+---
+
+### Installation
+
+#### macos/linux
+```shell
+wget -qO- https://astral.sh/uv/install.sh | sh
+uv venv --python 3.12
+source .venv/bin/activate
+uv pip install logbless
+```
+
+#### windows
+```shell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+uv venv --python 3.12
+.venv\Scripts\activate
+uv pip install logbless
+```
+
+---
+
+### Requirements
+
+Your logs must follow the format:
+
+```python
+_log_format = "%(asctime)s - [%(levelname)s] - %(name)s - (%(filename)s).%(funcName)s(%(lineno)d) - %(message)s"
+```
+
+Example with logging
+
+```python
+import logging
+
+_log_format = "%(asctime)s - [%(levelname)s] - %(name)s - (%(filename)s).%(funcName)s(%(lineno)d) - %(message)s"
+logging.basicConfig(
+  level=logging.INFO, format=_log_format, encoding="utf-8", filename="app.log"
+)
+```
+
+Example log entry:
+
+```text
+2025-01-14 07:25:00,779 - [INFO] - aiogram.event - (dispatcher.py).feed_update(172) - Update id=126061252 by bot id=6101975097
+```
+
+---
+
+### Usage
+
+1. **Initialize the application:**
+
+   Before starting the application, create a configuration file by running:
+
+   ```shell
+   uv run logbless init
+   ```
+
+   After executing the command, a file named `logbless_conf.yaml` will be created. You need to edit this file before running the application.
+
+   Example of `logbless_conf.yaml`:
+
+   ```yaml
+   authentication:
+     login: admin             # Login for accessing the web interface
+     password: admin          # Password for accessing the web interface
+   host: 127.0.0.1            # Host where the server will run
+   log_filename: logs.log     # Path to the log file to be viewed
+   path: /logs                # URL path for accessing logs
+   port: 8070                 # Port to start the server
+   title: Logbless Log viewer # Title of the web page
+   ```
+
+   Adjust the file according to your needs.
+
+2. **Run the application:**
+
+   After editing the configuration file, start the application by running:
+
+   ```shell
+   uv run logbless run
+   ```
+
+   The application will start and be available at `http://127.0.0.1:8070` (or another address if you modified the `host` and `port` settings).
+
+
+---
+![view.png](assets/view_eng.png)
