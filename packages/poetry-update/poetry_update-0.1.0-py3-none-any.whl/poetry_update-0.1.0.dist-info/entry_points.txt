@@ -1,0 +1,3 @@
+[console_scripts]
+poetry-update=poetry_update.cli:main
+
