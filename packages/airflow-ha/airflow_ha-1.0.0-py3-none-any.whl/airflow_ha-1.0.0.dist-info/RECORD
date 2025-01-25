@@ -1,0 +1,8 @@
+airflow_ha/__init__.py,sha256=uu0AYOrK0xu0GgLWNEwKJ9YIA1gycH_T-QZDZ8Tkhjo,47
+airflow_ha/operator.py,sha256=pq11GtEyviN_ywHNhbE-ExbPJEbHxru37eJ9hOFs4Ko,5552
+airflow_ha/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_ha/tests/test_import.py,sha256=-TmuzUPzcsZ6nSHKj9ee00kfHPhKUpTDIJhRW7qFkso,59
+airflow_ha-1.0.0.dist-info/METADATA,sha256=9ZYPz0kIjmpRdMmNjcsAot4G7NWqix3IKDLF4ARioc4,6690
+airflow_ha-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+airflow_ha-1.0.0.dist-info/licenses/LICENSE,sha256=8LVXYzbvBNnrJMdcseKlsxiq_JZt1jPwJQxm0qspqpU,11352
+airflow_ha-1.0.0.dist-info/RECORD,,
