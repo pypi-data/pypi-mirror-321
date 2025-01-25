@@ -1,0 +1,8 @@
+src/project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/project/custom_backtest.py,sha256=d0eO_wRfbUgLt6K3sC6IqJzlM2nhhpK11TvOjghIG3A,1463
+src/project/dashboard.py,sha256=PQvMZvpnax2HQWcxfN3kyDmjaei7U65tODtTTUR4t0Y,4536
+src/project/work.py,sha256=uEy5w960brSQSm0-Es4L96byGym48v5RKRU7qQ8lL8g,7016
+pybacktestchain_extensions-1.0.6.dist-info/LICENSE,sha256=EQTuu7rNoBfNvBGazG1mB-1Z2p7R5rq0i2kUzRgEt-k,1073
+pybacktestchain_extensions-1.0.6.dist-info/METADATA,sha256=6ejOO41CtpQrEkb-Wd0AyAd8s_ygIBxI9zwsZVpG72E,7156
+pybacktestchain_extensions-1.0.6.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+pybacktestchain_extensions-1.0.6.dist-info/RECORD,,
