@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dki
+Version: 0.1.2
+Summary: docker image build and pull tools
+Author-Email: svtter <svtter@qq.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: click>=8.1.8
+Description-Content-Type: text/x-rst
+
+dki
+==========
+
+Docker Image.
+
+快速构建和拉取不同位置的镜像，以及构建缺失的镜像。
+
+Install
+-------
+
+``pipx install dki``
+
+Usage
+-----
+
+dki build --template python_base --name svtter/python_base --tag latest
