@@ -1,0 +1,3 @@
+[console_scripts]
+okadminfinder=okadminfinder.app:run
+
