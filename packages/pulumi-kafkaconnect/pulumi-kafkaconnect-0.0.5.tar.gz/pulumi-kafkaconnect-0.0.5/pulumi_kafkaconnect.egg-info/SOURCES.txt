@@ -1,0 +1,17 @@
+README.md
+setup.py
+pulumi-kafkaconnect/__init__.py
+pulumi-kafkaconnect/_utilities.py
+pulumi-kafkaconnect/provider.py
+pulumi-kafkaconnect/pulumi-plugin.json
+pulumi-kafkaconnect/py.typed
+pulumi-kafkaconnect/config/__init__.py
+pulumi-kafkaconnect/config/vars.py
+pulumi-kafkaconnect/connector/__init__.py
+pulumi-kafkaconnect/connector/connector.py
+pulumi_kafkaconnect.egg-info/PKG-INFO
+pulumi_kafkaconnect.egg-info/SOURCES.txt
+pulumi_kafkaconnect.egg-info/dependency_links.txt
+pulumi_kafkaconnect.egg-info/not-zip-safe
+pulumi_kafkaconnect.egg-info/requires.txt
+pulumi_kafkaconnect.egg-info/top_level.txt
