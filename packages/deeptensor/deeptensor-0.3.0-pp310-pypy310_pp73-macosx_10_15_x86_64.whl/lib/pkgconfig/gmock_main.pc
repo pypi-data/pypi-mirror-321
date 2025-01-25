@@ -1,0 +1,10 @@
+libdir=/var/folders/74/9jx6f7bx5z97c058p_nysj740000gn/T/tmpydwc7vob/wheel/platlib/lib
+includedir=/var/folders/74/9jx6f7bx5z97c058p_nysj740000gn/T/tmpydwc7vob/wheel/platlib/include
+
+Name: gmock_main
+Description: GoogleMock (with main() function)
+Version: 1.15.2
+URL: https://github.com/google/googletest
+Requires: gmock = 1.15.2
+Libs: -L${libdir} -lgmock_main 
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1
