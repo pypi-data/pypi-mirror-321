@@ -1,0 +1,61 @@
+Metadata-Version: 2.2
+Name: oauth2flow
+Version: 0.1.1
+Summary: Client Authenticator for OAuth2
+Author-email: Paulo Alexandre <paulo.alexandre@tjdft.jus.br>
+License:         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+                            Version 2, December 2004 
+        
+         Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+        
+         Everyone is permitted to copy and distribute verbatim or modified 
+         copies of this license document, and changing it is allowed as long 
+         as the name is changed. 
+        
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+           TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+        
+          0. You just DO WHAT THE FUCK YOU WANT TO.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests<3.0.0,>=2.23.0
+Requires-Dist: attrs<25.0.0,>=24.3.0
+
+# OAuth2flow Client
+Authorization protocol that allows applications to access resources from other applications on the user's behalf.   
+Allows applications to gain limited access to user information without sharing credentials.  
+
+## Implements Flow
+- [ ] Authorization Code (future)
+- [x] Resource Owner Password Credentials
+- [ ] Implicit (future)
+- [x] Client Credentials
+
+# Quick Started
+Install usign pip:  
+```bash
+pip install oauth2flow 
+```
+configure variables before using , let's code.  
+
+## Variables
+Environment variables are mandatory for oauth2flow to work in your project, use exports linux or dotenv pypi    
+to make them available in the development environment.
+
+**env.file** 
+```bash
+CLIENT_ID="client" 
+CLIENT_SECRET="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+REDIRECT_URI=""
+AUTHORIZATION_BASE_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/auth
+TOKEN_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/token
+USERINFO_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/userinfo
+INTROSPECTION_URL=https://provider.com/auth/realms/{RELM}/protocol/openid-connect/token/introspect
+OPENID_CONFIGURATION_URL=https://provider.com/auth/realms/{RELM}/.well-known/openid-configuration
+```
+
+## Project in devcontainer
+Project was built on top of python 3.12 dockenized devcontainer vscode microsoft environment  
+```json
+"runArgs": ["--env-file",".env"],
+```
