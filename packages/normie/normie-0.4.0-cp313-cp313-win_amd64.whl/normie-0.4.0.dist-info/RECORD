@@ -1,0 +1,9 @@
+normie/__init__.py,sha256=VIcaKYMz-iguHEDoTZe1jDQO9r2bPjFLh-ts_KoTXGw,42
+normie/compat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+normie/compat/excel.py,sha256=-Qsr_SZjr6x8bggf_ehQ5Ht8GG20we-oCWt55vlhY1g,242
+normie_impl.cp313-win_amd64.pyd,sha256=Ml1mnKYLuvvt9Cdxt-a1c1aRvKNqSNd0lYGc7MSzwGQ,13824
+normie-0.4.0.dist-info/entry_points.txt,sha256=kRmGhIkn48sw6GXFeTDSGiVbYEyMiEBay_2UQHqoGAA,81
+normie-0.4.0.dist-info/LICENSE,sha256=wuYTi0g8J91ZpKqIDoAMltx5qWSLaApOg6Nlln9IHqI,1082
+normie-0.4.0.dist-info/METADATA,sha256=4KjkE5nKD4A347rqKzPR0mpezeH6JGyV4n54EI0hxjQ,2380
+normie-0.4.0.dist-info/WHEEL,sha256=KOZM_LboHyG5LcP1amwhh_Ny7MYoxZ1c2UimPfuc8vc,98
+normie-0.4.0.dist-info/RECORD,,
