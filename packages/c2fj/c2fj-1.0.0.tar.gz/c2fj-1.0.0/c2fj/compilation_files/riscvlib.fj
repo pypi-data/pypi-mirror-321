@@ -1,0 +1,1558 @@
+
+
+// ---------- Init:
+
+
+ns riscv {
+    MEM = 1<<(w-1)                      // start of memory
+    JMP = .MEM - (.MEM / 32)            // start of jump table
+    BLEN = 4                            // register size in byte-variables
+    HLEN = .BLEN * 2                    // register size in hex-variables
+    REGISTER_SIZE = .HLEN*dw            // register-variable size in memory bits
+
+
+    def byte val {
+        ;(val > 0xff ? 0xff : (val < 0 ? 0 : val)) * dw
+    }
+    def byte {
+        .byte 0
+    }
+    ns byte {
+        def vec n, val {
+            rep(n, i) ..byte (val>>(8*i))&0xff
+        }
+    }
+
+    def init {
+        .regs.init
+        .fast_macros
+        .init_sbrk_ptr
+    }
+
+    ns regs {
+        def init > start {
+          start:
+            .init_x0_to_x4
+            .init_x5_to_x7
+            .init_x8_to_x9
+            .init_x10_to_x17
+            .init_x18_to_x27
+            .init_x28_to_x31
+            .init_pc
+        }
+        
+        def register {
+            hex.vec ..HLEN
+        }
+
+        def init_x0_to_x4 > x0, zero, x1, ra, x2, sp, x3, gp, x4, tp {
+          x0:
+          zero:
+            .register
+          x1:
+          ra:
+            .register
+          x2:
+          sp:
+            .register
+          x3:
+          gp:
+            .register
+          x4:
+          tp:
+            .register
+        }
+
+        def init_x5_to_x7 > x5, t0, x6, t1, x7, t2 {
+          x5:
+          t0:
+            .register
+          x6:
+          t1:
+            .register
+          x7:
+          t2:
+            .register
+        }
+
+        def init_x8_to_x9 > x8, s0, fp, x9, s1 {
+          x8:
+          s0:
+          fp:
+            .register
+          x9:
+          s1:
+            .register
+        }
+
+        def init_x10_to_x17 > x10, a0, x11, a1, x12, a2, x13, a3, x14, a4, x15, a5, x16, a6, x17, a7 {
+          x10:
+          a0:
+            .register
+          x11:
+          a1:
+            .register
+          x12:
+          a2:
+            .register
+          x13:
+          a3:
+            .register
+          x14:
+          a4:
+            .register
+          x15:
+          a5:
+            .register
+          x16:
+          a6:
+            .register
+          x17:
+          a7:
+            .register
+        }
+
+        def init_x18_to_x27 > x18, s2, x19, s3, x20, s4, x21, s5, x22, s6, x23, s7, x24, s8, x25, s9, x26, s10, x27, s11 {
+          x18:
+          s2:
+            .register
+          x19:
+          s3:
+            .register
+          x20:
+          s4:
+            .register
+          x21:
+          s5:
+            .register
+          x22:
+          s6:
+            .register
+          x23:
+          s7:
+            .register
+          x24:
+          s8:
+            .register
+          x25:
+          s9:
+            .register
+          x26:
+          s10:
+            .register
+          x27:
+          s11:
+            .register
+        }
+
+        def init_x28_to_x31 > x28, t3, x29, t4, x30, t5, x31, t6 {
+          x28:
+          t3:
+            .register
+          x29:
+          t4:
+            .register
+          x30:
+          t5:
+            .register
+          x31:
+          t6:
+            .register
+        }
+
+        def init_pc > pc {
+          pc:
+            .register
+        }
+    }
+
+    def init_sbrk_ptr > sbrk_ptr {
+      sbrk_ptr:
+        hex.vec .HLEN, 0xfffff000
+    }
+
+
+    ns syscall {
+        //  Time Complexity: 4@+268
+        // Space Complexity: 6@+364
+        //    prints the exit code (stored at src_register), then finishes.
+        def exit src_register {
+            stl.output "Program exited with exit code "
+            hex.print_uint 2, src_register, 1, 1
+            stl.output ".\n"
+            stl.loop
+        }
+
+        //  Time Complexity: 2@
+        // Space Complexity: 2@+52
+        //   output the least-significant byte of src_register.
+        def write_byte src_register {
+            hex.print src_register
+        }
+
+        //  Time Complexity: 10@+14
+        // Space Complexity: 10@+108
+        //   dst_register = input(8bits)
+        def read_byte dst_register < ..regs.zero {
+            hex.zero ..HLEN-2, dst_register + 2*dw
+            hex.input dst_register
+            rep(dst_register == ..regs.zero, _) hex.zero 2, dst_register
+        }
+
+        // Increments riscv.heap_ptr by the value in register.
+        // Returns the old riscv.heap_ptr value in register.
+        def sbrk register @ old_heap_ptr, end < riscv.sbrk_ptr {
+            hex.mov ..HLEN, old_heap_ptr, riscv.sbrk_ptr
+            hex.add ..HLEN, riscv.sbrk_ptr, register
+            hex.mov ..HLEN, register, old_heap_ptr
+            ;end
+
+          old_heap_ptr:
+            riscv.regs.register
+
+          end:
+        }
+
+        // Prints all the register values.
+        def debug_print_regs < ..print_all_regs, ..ret {
+            stl.fcall ..print_all_regs, ..ret
+        }
+
+        // Outputs the hex value of src_register.
+        def debug_print_reg src_register {
+            stl.output "Value of register: "
+            hex.print_uint ..HLEN, src_register, 1, 1
+            stl.output "\n"
+        }
+
+        // Prints the given string.
+        def print_string str {
+            stl.output str
+        }
+    }
+
+
+    def start entry_point {
+        stl.startup_and_init_all            // inits everything flipjump needs
+        ;entry_point                        // start executing riscv opcodes
+        .init                               // inits registers, constants, global code stubs
+    }
+
+
+    def inc_pc current_address {
+        .__xor_pc_value_by_const current_address ^ (current_address + 4)
+    }
+    def __xor_pc_value_by_const constant < .regs.pc {
+        .__xor_by_hex_const .HLEN, .regs.pc, constant
+    }
+    def __xor_by_hex_const n, dst, constant {
+        rep(n, i) .__xor_by_hex_const dst + i*dw, (constant >> (i*4)) & 0xf
+    }
+    def __xor_by_hex_const dst, constant {
+        rep(constant != 0, _) stl.wflip_macro dst + w, constant * dw
+    }
+
+    def jump_to_constant_address current_address, new_address {
+        .__xor_pc_value_by_const current_address ^ new_address
+        ;.JMP + new_address/4*dw
+    }
+
+    def jump_to_pc @ ptr < .regs.pc {
+        hex.zero w/4, ptr
+        hex.xor .HLEN, ptr, .regs.pc
+        rep(#w-2, _) hex.shl_bit w/4, ptr
+        hex.add_constant w/4, ptr, .JMP
+
+        hex.ptr_jump ptr
+
+      ptr:
+        hex.vec w/4
+    }
+
+}
+
+
+
+// Fast calls:
+
+
+ns riscv {
+    // Initialize the opcode implementation stubs, to be jumped into by some of the riscv op macros.
+    def fast_macros > ret, rs1, rs2, rd, mem_ptr {
+      ret:
+        ;0
+
+
+      rs1:  // most ops use the first .HLEN. mul ops use the extra .HLEN.
+        hex.vec 2*.HLEN
+      rs2:  // most ops use the first .HLEN. mul ops use the extra .HLEN.
+        hex.vec 2*.HLEN
+
+
+        hex.vec .HLEN
+      rd:  // most ops use the first .HLEN. mul ops use .HLEN extra before and after.
+        hex.vec 2*.HLEN
+
+
+      mem_ptr:
+        hex.vec w/4
+
+
+        .moves_to_from_middle_regs
+        .fast_calculate_mem_ptr
+        .fast_debug_print_regs
+        .fast_unimplemented_op
+
+        .fast_add_to_pc
+
+        .fast_cmp
+        .fast_jump_to_pc
+
+        .fast_read_memory
+        .fast_write_memory
+
+        .fast_sll
+        .fast_sr
+
+        .fast_alu
+        .fast_slt
+        .fast_sltu
+
+        .fast_mul
+        .fast_div_rem
+    }
+
+    def fast_unimplemented_op < .regs.pc > do_unimplemented_op {
+      do_unimplemented_op:
+        stl.output "Executed unimplemented op in address "
+        hex.print_uint .HLEN, .regs.pc, 1, 1
+        stl.output "\nFinished with error.\n\n"
+        stl.loop
+    }
+    def unimplemented_op < .do_unimplemented_op {
+        ;.do_unimplemented_op
+    }
+
+
+    def fast_jump_to_pc > jump_to_pc {
+      jump_to_pc:
+        .jump_to_pc
+    }
+
+    // Print the registers starting_index+{0,1,2,3}
+    def _print_4_regs starting_index < .regs.start {
+        hex.print_as_digit .HLEN, .regs.start + .HLEN*dw*(starting_index+0), 1
+        stl.output " "
+        hex.print_as_digit .HLEN, .regs.start + .HLEN*dw*(starting_index+1), 1
+        stl.output " "
+        hex.print_as_digit .HLEN, .regs.start + .HLEN*dw*(starting_index+2), 1
+        stl.output " "
+        hex.print_as_digit .HLEN, .regs.start + .HLEN*dw*(starting_index+3), 1
+        stl.output "\n"
+    }
+
+    // Prints all the register values.
+    def fast_debug_print_regs < .regs.pc, .sbrk_ptr, .ret > print_all_regs {
+      print_all_regs:
+        stl.output "\n"
+        stl.output "x00..03    "
+        ._print_4_regs 0x00
+        stl.output "x04..07    "
+        ._print_4_regs 0x04
+        stl.output "x08..11    "
+        ._print_4_regs 0x08
+        stl.output "x12..15    "
+        ._print_4_regs 0x0c
+        stl.output "x16..19    "
+        ._print_4_regs 0x10
+        stl.output "x20..23    "
+        ._print_4_regs 0x14
+        stl.output "x24..27    "
+        ._print_4_regs 0x18
+        stl.output "x28..31    "
+        ._print_4_regs 0x1c
+
+        stl.output "pc,sbrk    "
+        hex.print_as_digit .HLEN, .regs.pc, 1
+        stl.output " "
+        hex.print_as_digit .HLEN, .sbrk_ptr, 1
+        stl.output "\n\n"
+
+        stl.fret .ret
+    }
+
+    def validate_mem_ptr_below_sbrk_ptr @ raise_error, end < .mem_ptr, .sbrk_ptr, .regs.pc {
+        hex.cmp .HLEN, .mem_ptr, .sbrk_ptr, end, raise_error, raise_error
+
+      raise_error:
+        stl.output "Tried to access memory address above current brk:"
+        stl.output "\n  sbrk_ptr = "
+        hex.print_uint .HLEN, .sbrk_ptr, 1, 1
+        stl.output "\n  mem_ptr  = "
+        hex.print_uint .HLEN, .mem_ptr, 1, 1
+        stl.output "\n  Current Address = "
+        hex.print_uint .HLEN, .regs.pc, 1, 1
+        stl.output "\nFinished with error.\n\n"
+        stl.loop
+
+      end:
+    }
+
+    // Sign extend rd from 2*num_of_bytes to .HLEN.
+    def sign_extend_rd num_of_bytes @ negative_extension, end < .rd {
+        hex.sign 2*num_of_bytes, .rd, negative_extension, end
+
+      negative_extension:
+        hex.not .HLEN - 2*num_of_bytes, .rd + 2*num_of_bytes * dw
+
+      end:
+    }
+
+    // Read 1/2/4 bytes from the memory (where .mem_ptr points to) to .rd.
+    // Notes:
+    //  - Assumes the value in mem_ptr is the fj address (i.e 0x8000000000001000 for the 32'th byte, not 32).
+    //  - The do_read{1,2}_sign_extended also sign extend the result in .rd to .HLEN.
+    //  - Expects return address in .ret.
+    def fast_read_memory < .ret, .mem_ptr, .rd \
+            > do_read1, do_read1_sign_extended, do_read2, do_read2_sign_extended, do_read4 {
+      do_read1:
+        hex.read_byte 1, .rd, .mem_ptr
+        hex.zero .HLEN-2, .rd+2*dw
+        stl.fret .ret
+
+      do_read1_sign_extended:
+        hex.read_byte 1, .rd, .mem_ptr
+        hex.zero .HLEN-2, .rd+2*dw
+        .sign_extend_rd 1
+        stl.fret .ret
+
+      do_read2:
+        hex.read_byte 2, .rd, .mem_ptr
+        hex.zero .HLEN-4, .rd+4*dw
+        stl.fret .ret
+
+      do_read2_sign_extended:
+        hex.read_byte 2, .rd, .mem_ptr
+        hex.zero .HLEN-4, .rd+4*dw
+        .sign_extend_rd 2
+        stl.fret .ret
+
+      do_read4:
+        hex.read_byte 4, .rd, .mem_ptr
+        stl.fret .ret
+    }
+
+    // Writes 1/2/4 bytes from .rs2 to the memory (where .mem_ptr points to).
+    // Notes:
+    //  - Assumes the value in mem_ptr is the fj address (i.e 0x8000000000001000 for the 32'th byte, not 32).
+    //  - Expects return address in .ret.
+    def fast_write_memory < .ret, .mem_ptr, .rs2 > do_write1, do_write2, do_write4 {
+      do_write1:
+        hex.write_byte .mem_ptr, .rs2
+        stl.fret .ret
+      do_write2:
+        hex.write_byte 2, .mem_ptr, .rs2
+        stl.fret .ret
+      do_write4:
+        hex.write_byte 4, .mem_ptr, .rs2
+        stl.fret .ret
+    }
+
+    // In-place shift-left .rs1[:8] by .rs2[:2]%32. Return to .ret.
+    def fast_sll @ check16,shift16, check8,shift8, check4,shift4, bit_shifts,bit_shifts_switch, \
+            do_3_shifts,do_2_shifts,do_1_shifts,do_0_shifts < .rs2, .rs1, .ret > do_sll {
+      do_sll:
+
+      check16:
+        hex.if_flags .rs2+dw, 0xaaaa, check8, shift16  // if the lsb in on.
+      shift16:
+        hex.shl_hex .HLEN, 4, .rs1
+        .rs2+dw+dbit+0; check8
+
+      check8:
+        hex.if_flags .rs2, 0xff00, check4, shift8  // if .rs2 >= 8
+      shift8:
+        hex.shl_hex .HLEN, 2, .rs1
+        .rs2+dbit+3; check4
+
+      check4:
+        hex.if_flags .rs2, 0x00f0, bit_shifts, shift4  // if 4 <= .rs2 < 8
+      shift4:
+        hex.shl_hex .HLEN, .rs1
+        .rs2+dbit+2; bit_shifts
+
+      bit_shifts:
+        wflip .rs2+w, bit_shifts_switch, .rs2
+        pad 16
+      bit_shifts_switch:
+        ;do_0_shifts
+        ;do_1_shifts
+        ;do_2_shifts
+        ;do_3_shifts
+
+      do_3_shifts:
+        hex.shl_bit .HLEN, .rs1
+      do_2_shifts:
+        hex.shl_bit .HLEN, .rs1
+      do_1_shifts:
+        hex.shl_bit .HLEN, .rs1
+      do_0_shifts:
+        wflip .rs2+w, bit_shifts_switch
+
+        stl.fret .ret
+    }
+
+    // In-place shift-left .rs1[:8] by .rs2[:2]%32. Return to .ret.
+    // If jump to do_sra does an arithmetical shift, else if jump to do_srl does a logical shift.
+    def fast_sr @ do_sr, check16,shift16, check8,shift8, check4,shift4, bit_shifts,bit_shifts_switch, \
+            do_3_shifts,do_2_shifts,do_1_shifts,do_0_shifts, should_shift_1s,end, negative_data, is_arithmetical_shift \
+            < .rs2, .rs1, .ret > do_srl, do_sra {
+      do_srl:
+        bit.zero is_arithmetical_shift
+        ;do_sr
+
+      do_sra:
+        bit.one is_arithmetical_shift
+        ;do_sr
+
+      do_sr:
+
+        bit.zero should_shift_1s
+        hex.sign .HLEN, .rs1, negative_data, check16
+      negative_data:
+        bit.xor should_shift_1s, is_arithmetical_shift
+
+      check16:
+        hex.if_flags .rs2+dw, 0xaaaa, check8, shift16  // if the lsb in on.
+      shift16:
+        hex.shr_hex .HLEN, 4, .rs1
+        .rs2+dw+dbit+0;
+        bit.if0 .should_shift_1s, check8
+        hex.not 4, .rs1+(.HLEN-4)*dw
+
+      check8:
+        hex.if_flags .rs2, 0xff00, check4, shift8  // if .rs2 >= 8
+      shift8:
+        hex.shr_hex .HLEN, 2, .rs1
+        .rs2+dbit+3;
+        bit.if0 .should_shift_1s, check4
+        hex.not 2, .rs1+(.HLEN-2)*dw
+
+      check4:
+        hex.if_flags .rs2, 0x00f0, bit_shifts, shift4  // if 4 <= .rs2 < 8
+      shift4:
+        hex.shr_hex .HLEN, .rs1
+        .rs2+dbit+2;
+        bit.if0 .should_shift_1s, bit_shifts
+        hex.not .rs1+(.HLEN-1)*dw
+
+      bit_shifts:
+        wflip .rs2+w, bit_shifts_switch, .rs2
+        pad 16
+      bit_shifts_switch:
+        ;do_0_shifts
+        ;do_1_shifts
+        ;do_2_shifts
+        ;do_3_shifts
+
+      do_3_shifts:
+        hex.shr_bit .HLEN, .rs1
+        bit.exact_xor .rs1 + (.HLEN-1)*dw + dbit+3, .should_shift_1s
+      do_2_shifts:
+        hex.shr_bit .HLEN, .rs1
+        bit.exact_xor .rs1 + (.HLEN-1)*dw + dbit+3, .should_shift_1s
+      do_1_shifts:
+        hex.shr_bit .HLEN, .rs1
+        bit.exact_xor .rs1 + (.HLEN-1)*dw + dbit+3, .should_shift_1s
+      do_0_shifts:
+        wflip .rs2+w, bit_shifts_switch, end
+
+      should_shift_1s:
+        bit.bit
+
+      is_arithmetical_shift:
+        bit.bit
+
+      end:
+        stl.fret .ret
+    }
+
+    def fast_alu < .rs1, .rs2, .ret > do_add, do_sub, do_xor, do_or, do_and {
+      do_add:
+        hex.add .HLEN, .rs1, .rs2
+        stl.fret .ret
+      do_sub:
+        hex.sub .HLEN, .rs1, .rs2
+        stl.fret .ret
+      do_xor:
+        hex.xor .HLEN, .rs1, .rs2
+        stl.fret .ret
+      do_or:
+        hex.or .HLEN, .rs1, .rs2
+        stl.fret .ret
+      do_and:
+        hex.and .HLEN, .rs1, .rs2
+        stl.fret .ret
+    }
+
+    // Set mem_ptr according to rs1 + rs2. Validate that mem_ptr is below sbrk_ptr.
+    def fast_calculate_mem_ptr < .rs1, .rs2, .mem_ptr, .ret > calculate_mem_ptr {
+      calculate_mem_ptr:
+        hex.zero w/4, .mem_ptr
+        hex.xor .HLEN, .mem_ptr, .rs1
+        hex.add .HLEN, .mem_ptr, .rs2
+
+        .validate_mem_ptr_below_sbrk_ptr
+
+        rep((#w)/4, _) hex.shl_hex w/4, .mem_ptr
+        rep((#w)%4, _) hex.shl_bit w/4, .mem_ptr
+        .__xor_by_hex_const w/4, .mem_ptr, .MEM
+
+        stl.fret .ret
+    }
+
+    // Sets rd to 1 if [signed] rs1<rs2, else to 0.
+    def fast_slt @ write1, end < .rd, .rs1, .rs2, .ret > do_slt {
+      do_slt:
+        hex.zero .HLEN, .rd
+        hex.sub .HLEN, .rs1, .rs2
+        hex.sign .HLEN, .rs1, write1, end
+
+      write1:
+        .rd+dbit;end
+
+      end:
+        stl.fret .ret
+    }
+    // Sets rd to 1 if [unsigned] rs1<rs2, else to 0.
+    def fast_sltu @ write1, end < .rd, .rs1, .rs2, .ret > do_sltu {
+      do_sltu:
+        hex.zero .HLEN, .rd
+        hex.cmp .HLEN, .rs1, .rs2, write1, end, end
+
+      write1:
+        .rd+dbit; end
+
+      end:
+        stl.fret .ret
+    }
+
+    def fast_cmp @ dont_jump, take_jump < .rs1, .rs2, .ret > do_beq, do_bne, do_bltu, do_bgeu, do_blt, do_bge {
+      do_beq:
+        hex.cmp .HLEN, .rs1, .rs2, dont_jump, take_jump, dont_jump
+
+      do_bne:
+        hex.cmp .HLEN, .rs1, .rs2, take_jump, dont_jump, take_jump
+
+      do_bltu:
+        hex.cmp .HLEN, .rs1, .rs2, take_jump, dont_jump, dont_jump
+
+      do_bgeu:
+        hex.cmp .HLEN, .rs1, .rs2, dont_jump, take_jump, take_jump
+
+      do_blt:
+        hex.sub .HLEN, .rs1, .rs2
+        hex.sign .HLEN, .rs1, take_jump, dont_jump
+
+      do_bge:
+        hex.sub .HLEN, .rs1, .rs2
+        hex.sign .HLEN, .rs1, dont_jump, take_jump
+
+
+      dont_jump:
+        ;.ret
+
+      take_jump:
+        .ret+dbit; .ret
+    }
+
+    // Adds .rs1 to .regs.pc
+    def fast_add_to_pc < .ret, .regs.pc, .rs1 > do_add_to_pc {
+      do_add_to_pc:
+        hex.add .HLEN, .regs.pc, .rs1
+        stl.fret .ret
+    }
+
+    def fast_mul @ sign_extend_rs1, sign_extend_rs2, check_if_rs2_sign_extended, end_upper_mul\
+            < .ret, .rd, .rs1, .rs2 > do_mul, do_mulh, do_mulhu, do_mulhsu {
+      do_mul:
+        hex.mul .HLEN*2, .rd, .rs1, .rs2
+        stl.fret .ret
+
+      do_mulh:
+        hex.sign .HLEN, .rs2, sign_extend_rs2, .do_mulhsu
+      sign_extend_rs2:
+        hex.not .HLEN, .rs2+.HLEN*dw  // sign extend to 64bits is like treating rs2 as signed.
+        ;.do_mulhsu
+
+      do_mulhsu:
+        hex.sign .HLEN, .rs1, sign_extend_rs1, .do_mulhu
+      sign_extend_rs1:
+        hex.not .HLEN, .rs1+.HLEN*dw  // sign extend to 64bits is like treating rs1 as signed.
+        ;.do_mulhu
+
+      do_mulhu:
+        hex.mul .HLEN*2, .rd - .HLEN*dw, .rs1, .rs2
+
+        hex.if0 .rs1+.HLEN*dw, check_if_rs2_sign_extended  // if rs1 wasn't sign extended, skip
+        hex.not .HLEN, .rs1+.HLEN*dw
+
+      check_if_rs2_sign_extended:
+        hex.if0 .rs2+.HLEN*dw, end_upper_mul  // if rs2 wasn't sign extended, skip
+        hex.not .HLEN, .rs2+.HLEN*dw
+
+      end_upper_mul:
+        stl.fret .ret
+    }
+
+    // Divides .rs1 by .rs2, stores the result in .rd and the reminder in .rs1.
+    // If divides by 0 - print error message and exit.
+    def fast_div_rem @ div0_exit_with_error, rem_result, return\
+            < .ret, .rd, .rs1, .rs2, .regs.pc\
+            > do_unsigned_div_rem, do_signed_div_rem {
+      div0_exit_with_error:
+        stl.output "\nMath error: Tried to divide "
+        hex.print_uint .HLEN, .rs1, 1, 1
+        stl.output " by 0.\n"
+        stl.output "  Current Address = "
+        hex.print_uint .HLEN, .regs.pc, 1, 1
+        stl.output ".\n  Finished with error.\n\n"
+        stl.loop
+
+      rem_result:
+        hex.vec .HLEN
+
+      do_unsigned_div_rem:
+        hex.div .HLEN, .HLEN, .rd, rem_result, .rs1, .rs2, div0_exit_with_error
+        ;return
+
+      do_signed_div_rem:
+        hex.idiv .HLEN, .HLEN, .rd, rem_result, .rs1, .rs2, div0_exit_with_error, 1
+        ;return
+
+      return:
+        hex.mov .HLEN, .rs1, rem_result
+        stl.fret .ret
+    }
+}
+
+
+
+// Move to/from register fcalls
+
+ns riscv {
+def moves_to_from_middle_regs\
+        < .ret, .rs1, .rs2, .rd, .regs.pc,\
+        .regs.x1, .regs.x2, .regs.x3, .regs.x4, .regs.x5, .regs.x6, .regs.x7, .regs.x8, .regs.x9, .regs.x10, .regs.x11,\
+        .regs.x12, .regs.x13, .regs.x14, .regs.x15, .regs.x16, .regs.x17, .regs.x18, .regs.x19, .regs.x20, .regs.x21,\
+        .regs.x22, .regs.x23, .regs.x24, .regs.x25, .regs.x26, .regs.x27, .regs.x28, .regs.x29, .regs.x30, .regs.x31\
+        > zero_rs2, zero_pc,\
+        xor_x0_to_rs2, xor_x1_to_rs2, xor_x2_to_rs2, xor_x3_to_rs2, xor_x4_to_rs2, xor_x5_to_rs2, xor_x6_to_rs2,\
+        xor_x7_to_rs2, xor_x8_to_rs2, xor_x9_to_rs2, xor_x10_to_rs2, xor_x11_to_rs2, xor_x12_to_rs2, xor_x13_to_rs2,\
+        xor_x14_to_rs2, xor_x15_to_rs2, xor_x16_to_rs2, xor_x17_to_rs2, xor_x18_to_rs2, xor_x19_to_rs2, xor_x20_to_rs2,\
+        xor_x21_to_rs2, xor_x22_to_rs2, xor_x23_to_rs2, xor_x24_to_rs2, xor_x25_to_rs2, xor_x26_to_rs2, xor_x27_to_rs2,\
+        xor_x28_to_rs2, xor_x29_to_rs2, xor_x30_to_rs2, xor_x31_to_rs2,\
+        mov_x0_to_rs1, mov_x1_to_rs1, mov_x2_to_rs1, mov_x3_to_rs1, mov_x4_to_rs1, mov_x5_to_rs1, mov_x6_to_rs1,\
+        mov_x7_to_rs1, mov_x8_to_rs1, mov_x9_to_rs1, mov_x10_to_rs1, mov_x11_to_rs1, mov_x12_to_rs1, mov_x13_to_rs1,\
+        mov_x14_to_rs1, mov_x15_to_rs1, mov_x16_to_rs1, mov_x17_to_rs1, mov_x18_to_rs1, mov_x19_to_rs1, mov_x20_to_rs1,\
+        mov_x21_to_rs1, mov_x22_to_rs1, mov_x23_to_rs1, mov_x24_to_rs1, mov_x25_to_rs1, mov_x26_to_rs1, mov_x27_to_rs1,\
+        mov_x28_to_rs1, mov_x29_to_rs1, mov_x30_to_rs1, mov_x31_to_rs1,\
+        mov_rd_to_x0, mov_rd_to_x1, mov_rd_to_x2, mov_rd_to_x3, mov_rd_to_x4, mov_rd_to_x5, mov_rd_to_x6, mov_rd_to_x7,\
+        mov_rd_to_x8, mov_rd_to_x9, mov_rd_to_x10, mov_rd_to_x11, mov_rd_to_x12, mov_rd_to_x13, mov_rd_to_x14,\
+        mov_rd_to_x15, mov_rd_to_x16, mov_rd_to_x17, mov_rd_to_x18, mov_rd_to_x19, mov_rd_to_x20, mov_rd_to_x21,\
+        mov_rd_to_x22, mov_rd_to_x23, mov_rd_to_x24, mov_rd_to_x25, mov_rd_to_x26, mov_rd_to_x27, mov_rd_to_x28,\
+        mov_rd_to_x29, mov_rd_to_x30, mov_rd_to_x31,\
+        mov_rs1_to_x0, mov_rs1_to_x1, mov_rs1_to_x2, mov_rs1_to_x3, mov_rs1_to_x4, mov_rs1_to_x5, mov_rs1_to_x6,\
+        mov_rs1_to_x7, mov_rs1_to_x8, mov_rs1_to_x9, mov_rs1_to_x10, mov_rs1_to_x11, mov_rs1_to_x12, mov_rs1_to_x13,\
+        mov_rs1_to_x14, mov_rs1_to_x15, mov_rs1_to_x16, mov_rs1_to_x17, mov_rs1_to_x18, mov_rs1_to_x19, mov_rs1_to_x20,\
+        mov_rs1_to_x21, mov_rs1_to_x22, mov_rs1_to_x23, mov_rs1_to_x24, mov_rs1_to_x25, mov_rs1_to_x26, mov_rs1_to_x27,\
+        mov_rs1_to_x28, mov_rs1_to_x29, mov_rs1_to_x30, mov_rs1_to_x31,\
+        zero_x0, zero_x1, zero_x2, zero_x3, zero_x4, zero_x5, zero_x6, zero_x7, zero_x8, zero_x9, zero_x10, zero_x11,\
+        zero_x12, zero_x13, zero_x14, zero_x15, zero_x16, zero_x17, zero_x18, zero_x19, zero_x20, zero_x21, zero_x22,\
+        zero_x23, zero_x24, zero_x25, zero_x26, zero_x27, zero_x28, zero_x29, zero_x30, zero_x31 {
+  zero_rs2:
+    hex.zero .HLEN, .rs2
+    stl.fret .ret
+
+  zero_pc:
+    hex.zero .HLEN, .regs.pc
+    stl.fret .ret
+
+  xor_x0_to_rs2:
+    stl.fret .ret
+  xor_x1_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x1
+    stl.fret .ret
+  xor_x2_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x2
+    stl.fret .ret
+  xor_x3_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x3
+    stl.fret .ret
+  xor_x4_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x4
+    stl.fret .ret
+  xor_x5_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x5
+    stl.fret .ret
+  xor_x6_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x6
+    stl.fret .ret
+  xor_x7_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x7
+    stl.fret .ret
+  xor_x8_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x8
+    stl.fret .ret
+  xor_x9_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x9
+    stl.fret .ret
+  xor_x10_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x10
+    stl.fret .ret
+  xor_x11_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x11
+    stl.fret .ret
+  xor_x12_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x12
+    stl.fret .ret
+  xor_x13_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x13
+    stl.fret .ret
+  xor_x14_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x14
+    stl.fret .ret
+  xor_x15_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x15
+    stl.fret .ret
+  xor_x16_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x16
+    stl.fret .ret
+  xor_x17_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x17
+    stl.fret .ret
+  xor_x18_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x18
+    stl.fret .ret
+  xor_x19_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x19
+    stl.fret .ret
+  xor_x20_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x20
+    stl.fret .ret
+  xor_x21_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x21
+    stl.fret .ret
+  xor_x22_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x22
+    stl.fret .ret
+  xor_x23_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x23
+    stl.fret .ret
+  xor_x24_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x24
+    stl.fret .ret
+  xor_x25_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x25
+    stl.fret .ret
+  xor_x26_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x26
+    stl.fret .ret
+  xor_x27_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x27
+    stl.fret .ret
+  xor_x28_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x28
+    stl.fret .ret
+  xor_x29_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x29
+    stl.fret .ret
+  xor_x30_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x30
+    stl.fret .ret
+  xor_x31_to_rs2:
+    hex.xor .HLEN, .rs2, .regs.x31
+    stl.fret .ret
+
+  mov_x0_to_rs1:
+    hex.zero .HLEN, .rs1
+    stl.fret .ret
+  mov_x1_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x1
+    stl.fret .ret
+  mov_x2_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x2
+    stl.fret .ret
+  mov_x3_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x3
+    stl.fret .ret
+  mov_x4_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x4
+    stl.fret .ret
+  mov_x5_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x5
+    stl.fret .ret
+  mov_x6_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x6
+    stl.fret .ret
+  mov_x7_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x7
+    stl.fret .ret
+  mov_x8_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x8
+    stl.fret .ret
+  mov_x9_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x9
+    stl.fret .ret
+  mov_x10_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x10
+    stl.fret .ret
+  mov_x11_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x11
+    stl.fret .ret
+  mov_x12_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x12
+    stl.fret .ret
+  mov_x13_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x13
+    stl.fret .ret
+  mov_x14_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x14
+    stl.fret .ret
+  mov_x15_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x15
+    stl.fret .ret
+  mov_x16_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x16
+    stl.fret .ret
+  mov_x17_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x17
+    stl.fret .ret
+  mov_x18_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x18
+    stl.fret .ret
+  mov_x19_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x19
+    stl.fret .ret
+  mov_x20_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x20
+    stl.fret .ret
+  mov_x21_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x21
+    stl.fret .ret
+  mov_x22_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x22
+    stl.fret .ret
+  mov_x23_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x23
+    stl.fret .ret
+  mov_x24_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x24
+    stl.fret .ret
+  mov_x25_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x25
+    stl.fret .ret
+  mov_x26_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x26
+    stl.fret .ret
+  mov_x27_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x27
+    stl.fret .ret
+  mov_x28_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x28
+    stl.fret .ret
+  mov_x29_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x29
+    stl.fret .ret
+  mov_x30_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x30
+    stl.fret .ret
+  mov_x31_to_rs1:
+    hex.mov .HLEN, .rs1, .regs.x31
+    stl.fret .ret
+
+  mov_rd_to_x0:
+    stl.fret .ret
+  mov_rd_to_x1:
+    hex.mov .HLEN, .regs.x1, .rd
+    stl.fret .ret
+  mov_rd_to_x2:
+    hex.mov .HLEN, .regs.x2, .rd
+    stl.fret .ret
+  mov_rd_to_x3:
+    hex.mov .HLEN, .regs.x3, .rd
+    stl.fret .ret
+  mov_rd_to_x4:
+    hex.mov .HLEN, .regs.x4, .rd
+    stl.fret .ret
+  mov_rd_to_x5:
+    hex.mov .HLEN, .regs.x5, .rd
+    stl.fret .ret
+  mov_rd_to_x6:
+    hex.mov .HLEN, .regs.x6, .rd
+    stl.fret .ret
+  mov_rd_to_x7:
+    hex.mov .HLEN, .regs.x7, .rd
+    stl.fret .ret
+  mov_rd_to_x8:
+    hex.mov .HLEN, .regs.x8, .rd
+    stl.fret .ret
+  mov_rd_to_x9:
+    hex.mov .HLEN, .regs.x9, .rd
+    stl.fret .ret
+  mov_rd_to_x10:
+    hex.mov .HLEN, .regs.x10, .rd
+    stl.fret .ret
+  mov_rd_to_x11:
+    hex.mov .HLEN, .regs.x11, .rd
+    stl.fret .ret
+  mov_rd_to_x12:
+    hex.mov .HLEN, .regs.x12, .rd
+    stl.fret .ret
+  mov_rd_to_x13:
+    hex.mov .HLEN, .regs.x13, .rd
+    stl.fret .ret
+  mov_rd_to_x14:
+    hex.mov .HLEN, .regs.x14, .rd
+    stl.fret .ret
+  mov_rd_to_x15:
+    hex.mov .HLEN, .regs.x15, .rd
+    stl.fret .ret
+  mov_rd_to_x16:
+    hex.mov .HLEN, .regs.x16, .rd
+    stl.fret .ret
+  mov_rd_to_x17:
+    hex.mov .HLEN, .regs.x17, .rd
+    stl.fret .ret
+  mov_rd_to_x18:
+    hex.mov .HLEN, .regs.x18, .rd
+    stl.fret .ret
+  mov_rd_to_x19:
+    hex.mov .HLEN, .regs.x19, .rd
+    stl.fret .ret
+  mov_rd_to_x20:
+    hex.mov .HLEN, .regs.x20, .rd
+    stl.fret .ret
+  mov_rd_to_x21:
+    hex.mov .HLEN, .regs.x21, .rd
+    stl.fret .ret
+  mov_rd_to_x22:
+    hex.mov .HLEN, .regs.x22, .rd
+    stl.fret .ret
+  mov_rd_to_x23:
+    hex.mov .HLEN, .regs.x23, .rd
+    stl.fret .ret
+  mov_rd_to_x24:
+    hex.mov .HLEN, .regs.x24, .rd
+    stl.fret .ret
+  mov_rd_to_x25:
+    hex.mov .HLEN, .regs.x25, .rd
+    stl.fret .ret
+  mov_rd_to_x26:
+    hex.mov .HLEN, .regs.x26, .rd
+    stl.fret .ret
+  mov_rd_to_x27:
+    hex.mov .HLEN, .regs.x27, .rd
+    stl.fret .ret
+  mov_rd_to_x28:
+    hex.mov .HLEN, .regs.x28, .rd
+    stl.fret .ret
+  mov_rd_to_x29:
+    hex.mov .HLEN, .regs.x29, .rd
+    stl.fret .ret
+  mov_rd_to_x30:
+    hex.mov .HLEN, .regs.x30, .rd
+    stl.fret .ret
+  mov_rd_to_x31:
+    hex.mov .HLEN, .regs.x31, .rd
+    stl.fret .ret
+
+  mov_rs1_to_x0:
+    stl.fret .ret
+  mov_rs1_to_x1:
+    hex.mov .HLEN, .regs.x1, .rs1
+    stl.fret .ret
+  mov_rs1_to_x2:
+    hex.mov .HLEN, .regs.x2, .rs1
+    stl.fret .ret
+  mov_rs1_to_x3:
+    hex.mov .HLEN, .regs.x3, .rs1
+    stl.fret .ret
+  mov_rs1_to_x4:
+    hex.mov .HLEN, .regs.x4, .rs1
+    stl.fret .ret
+  mov_rs1_to_x5:
+    hex.mov .HLEN, .regs.x5, .rs1
+    stl.fret .ret
+  mov_rs1_to_x6:
+    hex.mov .HLEN, .regs.x6, .rs1
+    stl.fret .ret
+  mov_rs1_to_x7:
+    hex.mov .HLEN, .regs.x7, .rs1
+    stl.fret .ret
+  mov_rs1_to_x8:
+    hex.mov .HLEN, .regs.x8, .rs1
+    stl.fret .ret
+  mov_rs1_to_x9:
+    hex.mov .HLEN, .regs.x9, .rs1
+    stl.fret .ret
+  mov_rs1_to_x10:
+    hex.mov .HLEN, .regs.x10, .rs1
+    stl.fret .ret
+  mov_rs1_to_x11:
+    hex.mov .HLEN, .regs.x11, .rs1
+    stl.fret .ret
+  mov_rs1_to_x12:
+    hex.mov .HLEN, .regs.x12, .rs1
+    stl.fret .ret
+  mov_rs1_to_x13:
+    hex.mov .HLEN, .regs.x13, .rs1
+    stl.fret .ret
+  mov_rs1_to_x14:
+    hex.mov .HLEN, .regs.x14, .rs1
+    stl.fret .ret
+  mov_rs1_to_x15:
+    hex.mov .HLEN, .regs.x15, .rs1
+    stl.fret .ret
+  mov_rs1_to_x16:
+    hex.mov .HLEN, .regs.x16, .rs1
+    stl.fret .ret
+  mov_rs1_to_x17:
+    hex.mov .HLEN, .regs.x17, .rs1
+    stl.fret .ret
+  mov_rs1_to_x18:
+    hex.mov .HLEN, .regs.x18, .rs1
+    stl.fret .ret
+  mov_rs1_to_x19:
+    hex.mov .HLEN, .regs.x19, .rs1
+    stl.fret .ret
+  mov_rs1_to_x20:
+    hex.mov .HLEN, .regs.x20, .rs1
+    stl.fret .ret
+  mov_rs1_to_x21:
+    hex.mov .HLEN, .regs.x21, .rs1
+    stl.fret .ret
+  mov_rs1_to_x22:
+    hex.mov .HLEN, .regs.x22, .rs1
+    stl.fret .ret
+  mov_rs1_to_x23:
+    hex.mov .HLEN, .regs.x23, .rs1
+    stl.fret .ret
+  mov_rs1_to_x24:
+    hex.mov .HLEN, .regs.x24, .rs1
+    stl.fret .ret
+  mov_rs1_to_x25:
+    hex.mov .HLEN, .regs.x25, .rs1
+    stl.fret .ret
+  mov_rs1_to_x26:
+    hex.mov .HLEN, .regs.x26, .rs1
+    stl.fret .ret
+  mov_rs1_to_x27:
+    hex.mov .HLEN, .regs.x27, .rs1
+    stl.fret .ret
+  mov_rs1_to_x28:
+    hex.mov .HLEN, .regs.x28, .rs1
+    stl.fret .ret
+  mov_rs1_to_x29:
+    hex.mov .HLEN, .regs.x29, .rs1
+    stl.fret .ret
+  mov_rs1_to_x30:
+    hex.mov .HLEN, .regs.x30, .rs1
+    stl.fret .ret
+  mov_rs1_to_x31:
+    hex.mov .HLEN, .regs.x31, .rs1
+    stl.fret .ret
+
+  zero_x0:
+    stl.fret .ret
+  zero_x1:
+    hex.zero .HLEN, .regs.x1
+    stl.fret .ret
+  zero_x2:
+    hex.zero .HLEN, .regs.x2
+    stl.fret .ret
+  zero_x3:
+    hex.zero .HLEN, .regs.x3
+    stl.fret .ret
+  zero_x4:
+    hex.zero .HLEN, .regs.x4
+    stl.fret .ret
+  zero_x5:
+    hex.zero .HLEN, .regs.x5
+    stl.fret .ret
+  zero_x6:
+    hex.zero .HLEN, .regs.x6
+    stl.fret .ret
+  zero_x7:
+    hex.zero .HLEN, .regs.x7
+    stl.fret .ret
+  zero_x8:
+    hex.zero .HLEN, .regs.x8
+    stl.fret .ret
+  zero_x9:
+    hex.zero .HLEN, .regs.x9
+    stl.fret .ret
+  zero_x10:
+    hex.zero .HLEN, .regs.x10
+    stl.fret .ret
+  zero_x11:
+    hex.zero .HLEN, .regs.x11
+    stl.fret .ret
+  zero_x12:
+    hex.zero .HLEN, .regs.x12
+    stl.fret .ret
+  zero_x13:
+    hex.zero .HLEN, .regs.x13
+    stl.fret .ret
+  zero_x14:
+    hex.zero .HLEN, .regs.x14
+    stl.fret .ret
+  zero_x15:
+    hex.zero .HLEN, .regs.x15
+    stl.fret .ret
+  zero_x16:
+    hex.zero .HLEN, .regs.x16
+    stl.fret .ret
+  zero_x17:
+    hex.zero .HLEN, .regs.x17
+    stl.fret .ret
+  zero_x18:
+    hex.zero .HLEN, .regs.x18
+    stl.fret .ret
+  zero_x19:
+    hex.zero .HLEN, .regs.x19
+    stl.fret .ret
+  zero_x20:
+    hex.zero .HLEN, .regs.x20
+    stl.fret .ret
+  zero_x21:
+    hex.zero .HLEN, .regs.x21
+    stl.fret .ret
+  zero_x22:
+    hex.zero .HLEN, .regs.x22
+    stl.fret .ret
+  zero_x23:
+    hex.zero .HLEN, .regs.x23
+    stl.fret .ret
+  zero_x24:
+    hex.zero .HLEN, .regs.x24
+    stl.fret .ret
+  zero_x25:
+    hex.zero .HLEN, .regs.x25
+    stl.fret .ret
+  zero_x26:
+    hex.zero .HLEN, .regs.x26
+    stl.fret .ret
+  zero_x27:
+    hex.zero .HLEN, .regs.x27
+    stl.fret .ret
+  zero_x28:
+    hex.zero .HLEN, .regs.x28
+    stl.fret .ret
+  zero_x29:
+    hex.zero .HLEN, .regs.x29
+    stl.fret .ret
+  zero_x30:
+    hex.zero .HLEN, .regs.x30
+    stl.fret .ret
+  zero_x31:
+    hex.zero .HLEN, .regs.x31
+    stl.fret .ret
+}
+
+// Sets rs1,rs2 according to the given "fcall_labels", fcalls "do_op", then moves the result to the appropriate dst reg.
+def reg_reg_fast_op mov_from_dest, mov_to_rs1, xor_to_rs2, do_op @ table, end < .ret, .zero_rs2 {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; do_op          // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_to_rs2     // 3rd
+    .ret+dbit+0; .zero_rs2      // 2nd
+    .ret+dbit+0; mov_from_dest  // 5th
+    wflip .ret+w, table+5*dw, end   // 6th
+
+  end:
+}
+
+// Sets rs1 according to the given "fcall_label", rs2 to the given imm,
+//  fcalls "do_op", then moves the result to the appropriate dst reg.
+def reg_imm_fast_op mov_from_dest, mov_to_rs1, imm, do_op @ table, xor_imm_to_rs2, end < .ret, .zero_rs2, .rs2 {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; do_op          // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_imm_to_rs2 // 3rd
+    .ret+dbit+0; .zero_rs2      // 2nd
+    .ret+dbit+0; mov_from_dest  // 5th
+    wflip .ret+w, table+5*dw, end   // 6th
+
+  xor_imm_to_rs2:
+    .__xor_by_hex_const .HLEN, .rs2, imm
+    stl.fret .ret
+
+  end:
+}
+
+
+// Sets rs1 according to the given "fcall_label", rs2 to the given imm,
+//  fcalls "calculate_mem_ptr", then sets rs2 according to the given "fcall_label", and fcalls "do_write".
+def fast_write_op mov_to_rs1, xor_to_rs2, imm, do_write @ table, xor_imm_to_rs2, end\
+        < .ret, .zero_rs2, .rs2, .calculate_mem_ptr {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; .calculate_mem_ptr // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_imm_to_rs2 // 3rd
+    .ret+dbit+0; .zero_rs2      // 2nd
+    .ret+dbit+1; xor_imm_to_rs2 // 5th
+    wflip .ret+w, table+5*dw, end   // 8th
+    .ret+dbit+0; xor_to_rs2     // 6th
+    .ret+dbit+1; do_write       // 7th
+
+  xor_imm_to_rs2:
+    .__xor_by_hex_const .HLEN, .rs2, imm
+    stl.fret .ret
+
+  end:
+}
+
+// Sets rs1 according to the given "fcall_label", rs2 to the given imm,
+//  fcalls "calculate_mem_ptr", then sets rs2 according to the given "fcall_label", and fcalls "do_write".
+def fast_read_op mov_from_dest, mov_to_rs1, imm, do_read @ table, xor_imm_to_rs2, end\
+        < .ret, .zero_rs2, .rs2, .calculate_mem_ptr {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; .calculate_mem_ptr // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_imm_to_rs2 // 3rd
+    .ret+dbit+0; .zero_rs2      // 2nd
+    .ret+dbit+1; do_read        // 5th
+               ;                // spaced
+    .ret+dbit+0; mov_from_dest  // 6th
+    wflip .ret+w, table+7*dw, end   // 7th
+
+  xor_imm_to_rs2:
+    .__xor_by_hex_const .HLEN, .rs2, imm
+    stl.fret .ret
+
+  end:
+}
+
+
+// Sets rs1,rs2 according to the given "fcall_labels", fcalls "do_cmp", then set{+jump} the new pc.
+//  Jumps to "pc+imm" if the "do_cmp" flipped ".ret+dbit", else jumps to "pc+4".
+def branch_fast_op mov_to_rs1, xor_to_rs2, do_cmp, addr, imm @ table, dont_jump, take_jump < .ret, .zero_rs2 {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; do_cmp         // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_to_rs2     // 3rd
+    .ret+dbit+0; .zero_rs2      // 2nd
+    wflip .ret+w, table+4*dw, dont_jump // 5th if "do_cmp" didn't flip ".ret+dbit"
+    wflip .ret+w, table+5*dw, take_jump // 5th if "do_cmp" did flip ".ret+dbit"
+
+  take_jump:
+    .jump_to_constant_address addr, imm + addr
+
+  dont_jump:
+    .inc_pc addr
+}
+
+// Resets register rd using "fcall zero_rd", then set rd value to imm.
+def set_register zero_rd, rd, imm < .ret, .regs.zero {
+    stl.fcall zero_rd, .ret
+    rep(rd != .regs.zero, _) .__xor_by_hex_const .HLEN, rd, imm
+}
+
+
+// Sets rs1 according to the given "fcall_label", .regs.pc to the given imm, then fcalls ".do_add_to_pc".
+def jalr_fast_op mov_to_rs1, imm @ table, xor_imm_to_pc < .ret, .zero_pc, .regs.pc, .do_add_to_pc, .jump_to_pc {
+    wflip .ret+w, table+dw, .ret
+
+    pad 16
+  table:
+    .ret+dbit+2; .do_add_to_pc  // 4th
+    .ret+dbit+1; mov_to_rs1     // 1st
+    .ret+dbit+1; xor_imm_to_pc  // 3rd
+    .ret+dbit+0; .zero_pc       // 2nd
+    wflip .ret+w, table+4*dw, .jump_to_pc   // 5th
+
+  xor_imm_to_pc:
+    .__xor_by_hex_const .HLEN, .regs.pc, imm
+    stl.fret .ret
+}
+
+}
+
+
+// ---------- opcodes
+
+ns riscv {
+    def jal zero_rd, rd, imm, current_address {
+        .set_register zero_rd, rd, current_address + 4
+        .jump_to_constant_address current_address, current_address + imm
+    }
+
+    def jalr zero_rd, rd, mov_to_rs1, imm, current_address {
+        .set_register zero_rd, rd, current_address + 4
+        .jalr_fast_op mov_to_rs1, imm
+    }
+
+    def lui zero_rd, rd, imm {
+        .set_register zero_rd, rd, imm
+    }
+
+    def auipc zero_rd, rd, imm, addr {
+        .set_register zero_rd, rd, imm + addr
+    }
+
+    def beq mov_to_rs1, xor_to_rs2, imm, addr < .do_beq {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_beq, addr, imm
+    }
+    def bne mov_to_rs1, xor_to_rs2, imm, addr < .do_bne {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_bne, addr, imm
+    }
+    def bltu mov_to_rs1, xor_to_rs2, imm, addr < .do_bltu {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_bltu, addr, imm
+    }
+    def bgeu mov_to_rs1, xor_to_rs2, imm, addr < .do_bgeu {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_bgeu, addr, imm
+    }
+    def blt mov_to_rs1, xor_to_rs2, imm, addr < .do_blt {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_blt, addr, imm
+    }
+    def bge mov_to_rs1, xor_to_rs2, imm, addr < .do_bge {
+        .branch_fast_op mov_to_rs1, xor_to_rs2, .do_bge, addr, imm
+    }
+
+    def lb mov_from_rd, mov_to_rs1, imm < .do_read1_sign_extended {
+        .fast_read_op mov_from_rd, mov_to_rs1, imm, .do_read1_sign_extended
+    }
+    def lbu mov_from_rd, mov_to_rs1, imm < .do_read1 {
+        .fast_read_op mov_from_rd, mov_to_rs1, imm, .do_read1
+    }
+    def lh mov_from_rd, mov_to_rs1, imm < .do_read2_sign_extended {
+        .fast_read_op mov_from_rd, mov_to_rs1, imm, .do_read2_sign_extended
+    }
+    def lhu mov_from_rd, mov_to_rs1, imm < .do_read2 {
+        .fast_read_op mov_from_rd, mov_to_rs1, imm, .do_read2
+    }
+    def lw mov_from_rd, mov_to_rs1, imm < .do_read4 {
+        .fast_read_op mov_from_rd, mov_to_rs1, imm, .do_read4
+    }
+
+    def sb mov_to_rs1, xor_to_rs2, imm < .do_write1 {
+        .fast_write_op mov_to_rs1, xor_to_rs2, imm, .do_write1
+    }
+    def sh mov_to_rs1, xor_to_rs2, imm < .do_write2 {
+        .fast_write_op mov_to_rs1, xor_to_rs2, imm, .do_write2
+    }
+    def sw mov_to_rs1, xor_to_rs2, imm < .do_write4 {
+        .fast_write_op mov_to_rs1, xor_to_rs2, imm, .do_write4
+    }
+
+    def addi mov_from_rs1, mov_to_rs1, imm < .do_add {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_add
+    }
+    def xori mov_from_rs1, mov_to_rs1, imm < .do_xor {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_xor
+    }
+    def ori mov_from_rs1, mov_to_rs1, imm < .do_or {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_or
+    }
+    def andi mov_from_rs1, mov_to_rs1, imm < .do_and {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_and
+    }
+
+    // Sets rd to 1 if [signed] rs1<imm, else to 0.
+    def slti mov_from_rd, mov_to_rs1, imm < .do_slt {
+        .reg_imm_fast_op mov_from_rd, mov_to_rs1, imm, .do_slt
+    }
+    // Sets rd to 1 if [unsigned] rs1<imm, else to 0.
+    def sltiu mov_from_rd, mov_to_rs1, imm < .do_sltu {
+        .reg_imm_fast_op mov_from_rd, mov_to_rs1, imm, .do_sltu
+    }
+
+    def slli mov_from_rs1, mov_to_rs1, imm < .do_sll {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_sll
+    }
+    def srli mov_from_rs1, mov_to_rs1, imm < .do_srl {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_srl
+    }
+    def srai mov_from_rs1, mov_to_rs1, imm < .do_sra {
+        .reg_imm_fast_op mov_from_rs1, mov_to_rs1, imm, .do_sra
+    }
+
+    def add mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_add {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_add
+    }
+    def sub mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_sub {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_sub
+    }
+    def xor mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_xor {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_xor
+    }
+    def or mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_or {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_or
+    }
+    def and mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_and {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_and
+    }
+
+    // Sets rd to 1 if [signed] rs1<rs2, else to 0.
+    def slt mov_from_rd, mov_to_rs1, xor_to_rs2 < .do_slt {
+        .reg_reg_fast_op mov_from_rd, mov_to_rs1, xor_to_rs2, .do_slt
+    }
+    // Sets rd to 1 if [unsigned] rs1<rs2, else to 0.
+    def sltu mov_from_rd, mov_to_rs1, xor_to_rs2 < .do_sltu {
+        .reg_reg_fast_op mov_from_rd, mov_to_rs1, xor_to_rs2, .do_sltu
+    }
+
+    // rd := rs1 << (rs2 % 32)
+    def sll mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_sll {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_sll
+    }
+    // rd := rs1 >> (rs2 % 32) [logical shift]
+    def srl mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_srl {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_srl
+    }
+    // rd := rs1 >> (rs2 % 32) [arithmetical shift]
+    def sra mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_sra {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_sra
+    }
+
+    def mul mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_mul {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_mul
+    }
+    def mulh mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_mulh {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_mulh
+    }
+    def mulhu mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_mulhu {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_mulhu
+    }
+    def mulhsu mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_mulhsu {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_mulhsu
+    }
+    def div mov_from_rd, mov_to_rs1, xor_to_rs2 < .do_signed_div_rem {
+        .reg_reg_fast_op mov_from_rd, mov_to_rs1, xor_to_rs2, .do_signed_div_rem
+    }
+    def divu mov_from_rd, mov_to_rs1, xor_to_rs2 < .do_unsigned_div_rem {
+        .reg_reg_fast_op mov_from_rd, mov_to_rs1, xor_to_rs2, .do_unsigned_div_rem
+    }
+    def rem mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_signed_div_rem {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_signed_div_rem
+    }
+    def remu mov_from_rs1, mov_to_rs1, xor_to_rs2 < .do_unsigned_div_rem {
+        .reg_reg_fast_op mov_from_rs1, mov_to_rs1, xor_to_rs2, .do_unsigned_div_rem
+    }
+}
