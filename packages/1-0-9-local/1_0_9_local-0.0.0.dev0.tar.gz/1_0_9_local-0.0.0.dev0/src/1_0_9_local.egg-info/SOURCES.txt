@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/1_0_9_local/__init__.py
+src/1_0_9_local/__main__.py
+src/1_0_9_local.egg-info/PKG-INFO
+src/1_0_9_local.egg-info/SOURCES.txt
+src/1_0_9_local.egg-info/dependency_links.txt
+src/1_0_9_local.egg-info/top_level.txt
+src/1_0_9_local/core/__init__.py
+src/1_0_9_local/tests/__init__.py
+src/1_0_9_local/tests/test_1984.py
