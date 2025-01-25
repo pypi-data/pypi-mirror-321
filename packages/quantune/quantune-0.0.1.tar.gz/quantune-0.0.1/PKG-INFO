@@ -1,0 +1,984 @@
+Metadata-Version: 2.1
+Name: quantune
+Version: 0.0.1
+Summary: Quantune is the tune for Quantum computing.
+Home-page: https://github.com/Neocosmicx-Quantum/Quantune
+Author: Neocosmicx
+Author-email: sejanbagani14@gmail.com
+Classifier: Programming Language :: Python
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: setuptools>=75.8.0
+Requires-Dist: scipy>=1.15.1
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: black>=24.10.0
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: pyparsing>=3.2.1
+Requires-Dist: python-dateutil>=2.9.0.post0
+Requires-Dist: scipy>=1.15.1
+Requires-Dist: six>=1.17.0
+Requires-Dist: cupy-cuda12x>=13.3.0
+
+<!--
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+-->
+
+# _Quantune - A Python Quantum Computing Framework_
+
+Quantune is an open-source Python library for simulating and visualizing quantum circuits. Designed for both educational and practical purposes, this library allows users to construct, execute, and analyze quantum circuits while providing intuitive visualizations and robust tools for quantum computation.
+
+**_Features_**
+
+- Flexible Simulation: Design and execute complex quantum circuits.
+- Visualization Tools: Visualize quantum states using Q-Spheres, Bloch Spheres, state vector plots, and more.
+- Educational Support: Comprehensive documentation and examples for learning quantum computing.
+
+_Installation_ You can install Quantune using pip:
+
+pip install quantune
+
+_Quantum Elements_
+_Quantum Register_
+Class: QuantumRegister A representation of a quantum system with multiple qubits.
+
+- Attributes:
+  - num_qubits: Number of qubits in the register.
+  - state: The quantum state vector.
+- Methods:
+  - get_state(): Retrieve the current quantum state.
+  - reset(): Reset the register to the initial state |0...0⟩.
+
+_Example:_ \`from quantum_composer import QuantumRegister
+
+qr = QuantumRegister(2) print(qr.get_state())
+
+**\[1. 0. 0. 0.\]**
+
+\`
+
+_Quantum Gates:_ The library provides a range of quantum gates for single and multi-qubit operations.
+
+1. _identity()_
+   - **Description**: Represents the identity gate (I), which leaves the quantum state unchanged.
+   - **Matrix**: I =
+2. _paulix()_
+   - **Description**: Pauli-X gate, equivalent to a NOT operation on the quantum state.
+   - **Matrix**: X =
+3. _pauliy()_
+   - **Description**: Pauli-Y gate rotates the qubit around the Y-axis on the Bloch sphere.
+   - **Matrix**: Y =
+4. _pauliz()_
+   - **Description**: Pauli-Z gate flips the phase of the quantum state.
+   - **Matrix**: Z =
+5. _hadamard()_
+   - **Description**: Creates superposition by applying an equal-weighted transformation.
+   - **Matrix**: H =
+6. _phase(theta)_
+   - **Description**: Phase gate applies a phase shift of to the quantum state.
+   - **Matrix**: P =
+7. _s()_
+   - **Description**: S gate applies a π/2 phase shift.
+   - **Matrix**: S =
+8. _sdg()_
+   - **Description**: SDG gate applies a −π/2 phase shift (inverse of S gate).
+   - **Matrix**: SDG =
+9. _t()_
+   - **Description**: T gate applies a π/4 phase shift.
+   - **Matrix**: T =
+10. _tdg()_
+    - **Description**: TDG gate applies a −π/4 phase shift (inverse of T gate).
+    - **Matrix**:
+
+$$
+T^\dagger = \begin{bmatrix}
+1 & 0 \\
+0 & e^{-i\pi/4}
+\end{bmatrix}
+$$
+
+11. **rz(theta)**
+    - **Description**: Rotates the qubit around the Z-axis by an angle θ.
+    - **Matrix**:
+
+$$
+RZ(\theta) = \begin{bmatrix}
+e^{-i\theta/2} & 0 \\
+0 & e^{i\theta/2}
+\end{bmatrix}
+$$
+
+12. **rx(theta)**
+    - **Description**: Rotates the qubit around the X-axis by an angle θ.
+    - **Matrix**:
+
+$$
+RX(\theta) = \begin{bmatrix}
+\cos(\theta/2) & -i\sin(\theta/2) \\
+-i\sin(\theta/2) & \cos(\theta/2)
+\end{bmatrix}
+$$
+
+13. **ry(theta)**
+    - **Description**: Rotates the qubit around the Y-axis by an angle θ.
+    - **Matrix**:
+
+$$
+RY(\theta) = \begin{bmatrix}
+\cos(\theta/2) & -\sin(\theta/2) \\
+\sin(\theta/2) & \cos(\theta/2)
+\end{bmatrix}
+$$
+
+14. **sx()**
+    - **Description**: Square-root of the Pauli-X gate.
+    - **Matrix**:
+
+$$
+SX = \frac{1}{2}\begin{bmatrix}
+1+i & 1-i \\
+1-i & 1+i
+\end{bmatrix}
+$$
+
+15. **sxdg()**
+    - **Description**: Conjugate transpose of the SX gate.
+    - **Matrix**:
+
+$$
+SX^\dagger = \frac{1}{2}\begin{bmatrix}
+1-i & 1+i \\
+1+i & 1-i
+\end{bmatrix}
+$$
+
+16. **cnot()**
+    - **Description**: Controlled-NOT gate flips the second qubit if the first is ∣1⟩.
+    - **Matrix**:
+
+$$
+CNOT = \begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{bmatrix}
+$$
+
+17. **cz()**
+    - **Description**: Controlled-Z gate applies a phase flip to the second qubit if the first is ∣1⟩.
+    - **Matrix**:
+
+$$
+CZ = \begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & -1
+\end{bmatrix}
+$$
+
+18. **toffoli()**
+    - **Description**: Toffoli gate flips the target qubit if both control qubits are ∣1⟩.
+    - **Matrix**:
+
+$$
+Toffoli = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0
+\end{bmatrix}
+$$
+
+19. **swap()**
+    - **Description**: SWAP gate exchanges the states of two qubits.
+    - **Matrix**:
+
+$$
+SWAP = \begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+20. **U()**
+    - **Description**: The u gate is a general single-qubit gate with three parameters (θ, ϕ, λ).
+    - **Matrix**:
+
+$$
+U(\theta,\phi,\lambda) = \begin{bmatrix}
+\cos(\theta/2) & -e^{i\lambda}\sin(\theta/2) \\
+e^{i\phi}\sin(\theta/2) & e^{i(\phi+\lambda)}\cos(\theta/2)
+\end{bmatrix}
+$$
+
+21. **r1()**
+    - **Description**: The r1 gate applies a phase rotation (θ) to a single qubit.
+    - **Matrix**:
+
+$$
+R_1(\theta) = \begin{bmatrix}
+1 & 0 \\
+0 & e^{i\theta}
+\end{bmatrix}
+$$
+
+22. **rxx()**
+    - **Description**: The rxx gate is a two-qubit rotation gate around the X axis.
+    - **Matrix**:
+
+$$
+RXX(\theta) = \begin{bmatrix}
+\cos(\theta/2) & 0 & 0 & -i\sin(\theta/2) \\
+0 & \cos(\theta/2) & -i\sin(\theta/2) & 0 \\
+0 & -i\sin(\theta/2) & \cos(\theta/2) & 0 \\
+-i\sin(\theta/2) & 0 & 0 & \cos(\theta/2)
+\end{bmatrix}
+$$
+
+23. **rzz()**
+    - **Description**: The rzz gate applies a two-qubit rotation around the Z axis.
+    - **Matrix**:
+
+$$
+RZZ(\theta) = \begin{bmatrix}
+e^{-i\theta/2} & 0 & 0 & 0 \\
+0 & e^{i\theta/2} & 0 & 0 \\
+0 & 0 & e^{i\theta/2} & 0 \\
+0 & 0 & 0 & e^{-i\theta/2}
+\end{bmatrix}
+$$
+
+24. **cr()**
+    - **Description**: The cr gate is a controlled rotation gate.
+    - **Matrix**:
+
+$$
+CR(\theta) = \begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & e^{i\theta}
+\end{bmatrix}
+$$
+
+---
+
+#### visual.py
+
+The _`circuit_Visualizer`_ class is designed to provide both text-based and graphical representations of a quantum circuit. It supports single-qubit and multi-qubit gates, with intuitive visualizations and detailed output.
+
+**Class:** _`Circuit_Visualizer`_
+
+**Attributes**
+
+1. **num_qubits (int):**
+   - Number of qubits in the quantum circuit.
+2. **operations (list of tuples):**
+   - List of quantum operations to be visualized.
+   - Each operation is represented as a tuple:
+     - gate (function): The gate function.
+     - qubits (list of int): Qubits on which the gate operates.
+     - name (str): Name of the gate (used for visualization).
+
+**Method:** _`draw_text()`_
+
+**Description**
+
+Generates a text-based representation of the quantum circuit with connecting lines between qubits. It supports both single-qubit and multi-qubit gates.
+
+**Functionality**
+
+1. Creates a grid of text-based elements for the circuit.
+2. Represents:
+   - Single-qubit gates with the gate name.
+   - Multi-qubit gates with:
+     - ‘●’ for the control qubit.
+     - ‘X’ for the target qubit.
+     - ‘│’ for vertical connections between control and target.
+   - Horizontal connections (─) between gates.
+3. Returns a formatted string showing the circuit for all qubits.
+
+**Method:** _`draw_matplotlib()`_
+
+**Description**
+
+Generates a Matplotlib-based graphical visualization of the quantum circuit.
+
+**Functionality**
+
+1. Creates a plot with:
+   - Horizontal lines representing qubit wires.
+   - Shapes for gates:
+     - **Rectangle** for single-qubit gates.
+     - **Circle** for control points.
+     - Smaller **Circle** for target points in multi-qubit gates.
+   - Vertical lines connecting control and target qubits for multi-qubit gates.
+2. Uses text annotations for gate names and markers.
+3. Configures axis labels:
+   - q0, q1, ... for qubit identifiers.
+   - Hides the x-axis labels for cleaner visualization.
+
+**Graphical Elements**
+
+- **Single-qubit gates:** Represented as rectangles with the gate name inside.
+- **Multi-qubit gates:**
+  - Control qubit: Red circle (+ in the center).
+  - Target qubit: Blue dot.
+  - Connection: Vertical black line between control and target.
+
+The _BaseCore_ class is part of a quantum computing framework, implementing CoreInterface*.* It is designed to initialize and manipulate quantum states using multiple operators.
+
+**Class: _`BaseCore`_**
+
+**Attributes**
+
+1. **qubits (int):**
+   - Number of qubits in the quantum system.
+2. **state (numpy array):**
+   - Represents the quantum state of the system as a complex vector.
+
+**Methods**
+
+\_\__init_\_(self, qubits: int, prep: str)\_
+
+- **Description**: Initializes the quantum state for the given number of qubits and a preparation state.
+- **Parameters**:
+  - qubits (int): Number of qubits in the system.
+  - prep (str): Initial preparation state (e.g., "0" or "1").
+- **Functionality**:
+  - Creates the quantum state for one qubit using the Qubits class and its _`get_state`_ method.
+  - Constructs a multi-qubit state using the Kronecker product (np.kron) to combine individual qubit states.
+
+\_\__multi_operator_matrix_\_(self, multi*gate_queue)*
+
+- **Description**: Applies multiple quantum gate operators to the quantum state.
+- **Parameters**:
+  - _multi_gate_queue_ (list): A list of gate operators to be applied. Each operator corresponds to a specific qubit state (e.g., ∣0⟩ or ∣1⟩).
+    - Format: A nested list with two sublists: 1. _bra_ket_zero_kron_: Operators acting on the ∣0⟩ state. 2. _bra_ket_one_kron_: Operators acting on the ∣1⟩ state.
+- **Functionality**:
+  - Builds composite operators for the ∣0⟩ and ∣1⟩ states using the Kronecker product (_`np.kron`_).
+  - Computes the new quantum state by applying the combined operator to the current state.
+
+\_\__set_state_\_(self, store*state)*
+
+- **Description**: Sets the quantum system to a new state.
+- **Parameters**:
+  - _store_state_ (numpy array): The new quantum state to set.
+- **Functionality**:
+  - Directly updates the state attribute with the provided value.
+
+\_\__get_state_\_(self)\_
+
+- **Description**: Retrieves the current quantum state.
+- **Returns**:
+  - (list): The quantum state represented as a Python list.
+- **Functionality**:
+  - Converts the NumPy array state into a list and returns it.
+
+---
+
+#### base_calculator.py
+
+**BaseCalculator Class Documentation**  
+**Overview**  
+The `BaseCalculator` class implements a quantum state vector simulator for quantum computations. It provides fundamental operations for initializing quantum states, applying quantum gates, and measuring quantum states. This class serves as a base implementation of the `CalculatorInterface`.
+
+**Class Structure**  
+**Constructor**  
+Initializes a new quantum calculator instance.
+
+**Parameters:**
+
+- `num_qubits` (int): Number of qubits in the quantum system
+- `prep` (str, optional): State preparation method. Defaults to "z"
+
+**Attributes**
+
+- `num_qubits`: Number of qubits in the system
+- `register`: QuantumRegister instance managing the qubits
+- `prep`: State preparation method
+- `state`: Current state vector of the quantum system
+
+**Methods**
+
+\_\__init_\_(self, qubits: int, prep: str = "z")\_
+
+- **Description**: Initializes the quantum calculator by setting up the quantum state and inheriting functionalities from _BaseCore, BaseSingleGate,_ and _BaseMultiGate_.
+- **Parameters**:
+  - qubits (int): Number of qubits in the system.
+  - prep (str): Initial preparation state of the qubits (default: "z").
+
+_pass_single_gate(self, target_qubits: list\[int\], gate: np.array)_
+
+- **Description**: Applies a single-qubit gate to one or more qubits.
+- **Parameters**:
+  - target_qubits (list\[int\]): Indices of the qubits to which the gate will be applied.
+  - gate (numpy array): The single-qubit gate matrix.
+- **Functionality**:
+  - Constructs a gate queue for the target qubits using \_\__create_gate_queue_\_.\_
+  - Applies the gate to the quantum state using \_\__operator_matrix_\_.\_
+
+_pass_custom_gate_queue(self, gate_queue: list\[np.array\])_
+
+- **Description**: Applies a custom queue of gates to the quantum state.
+- **Parameters**:
+  - gate_queue (list\[numpy array\]): A list of gates to be applied sequentially.
+- **Functionality**:
+  - Directly applies the provided gate queue to the quantum state using \_\__operator_matrix_\_.\_
+
+_pass_multi_gate(self, control_qubits: int, target_qubits: int, gate: np.array)_
+
+- **Description**: Applies a multi-qubit gate (e.g., controlled gate) to the quantum state.
+- **Parameters**:
+  - control_qubits (int): Index of the control qubit.
+  - target_qubits (int): Index of the target qubit.
+  - gate (numpy array): The gate matrix to be applied to the target qubit conditioned on the control qubit.
+- **Functionality**:
+  - Constructs a bracket queue for the control and target qubits using \__create_bracket_queue_\_.
+  - Applies the multi-qubit gate to the quantum state using \__multi_operator_matrix_\_.
+
+The _BaseMultiGate_ class provides the functionality to construct multi-qubit gate operations, such as controlled gates, by creating bracket queues that represent the operator matrices for the quantum state.
+
+**Class:** `BaseMultiGate`
+
+**Inheritance**
+
+- Implements the _`MultiGateInterface`_, which ensures adherence to a standardized interface for multi-qubit gate operations.
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum system.
+
+**Methods**
+
+\_\__init_\_(self, qubits: int)\_
+
+- **Description**: Initializes the _`BaseMultiGate`_ class with the specified number of qubits.
+- **Parameters**:
+  - qubits (int): Number of qubits in the system.
+- **Functionality**:
+  - Sets the qubits attribute for use in multi-qubit gate operations.
+
+\_\__create_bracket_queue_\_(self, gate: np.array, control*qubit: int, target_qubit: int)*
+
+- **Description**: Constructs the bracket queue for a multi-qubit gate (e.g., controlled gate). This queue defines how the quantum state should be manipulated for control and target qubits.
+- **Parameters**:
+  - gate (numpy array): The 2x2 matrix representing the single-qubit gate applied to the target qubit.
+  - control_qubit (int): The index of the control qubit.
+  - target_qubit (int): The index of the target qubit.
+- **Returns**:
+  - A list of two sublists: 1. _bra_ket_zero_kron_: Operators applied when the control qubit is in the ∣0⟩ state. 2. _bra_ket_one_kron_: Operators applied when the control qubit is in the ∣1⟩ state.
+  - Returns None if: 1. The control_qubit or target_qubit is out of bounds. 2. The gate is not a 2x2 matrix.
+
+**Functionality of \_\_create_bracket_queue\_\_**
+
+1. **Validation**:
+   - Ensures that control_qubit and target_qubit indices are within the valid range \[0, qubits).
+   - Ensures that the gate matrix is 2x2.
+2. **State Operators**:
+   - _bra_ket_zero_: Represents the projection operator for the ∣0⟩state:
+   - _bra_ket_one_: Represents the projection operator for the ∣1⟩state:
+3. **Kronecker Products**:
+   - Constructs bra_ket_zero_kron and bra_ket_one_kron as lists of identity matrices for each qubit.
+   - Modifies these lists:
+     - Sets the control qubit to bra_ket_zero or bra_ket_one.
+     - Sets the target qubit to the provided gate in bra_ket_one_kron.
+4. **Result**:
+   - Returns a nested list containing bra_ket_zero_kron and bra_ket_one_kron to represent the operators for both control states.
+
+The _`BaseSingleGate`_ class provides functionality for constructing gate queues for single-qubit operations in a quantum circuit. It supports applying single-qubit gates to one or multiple target qubits.
+
+**Class:** _`BaseSingleGate`_
+
+**Inheritance**
+
+- Implements the _`SingleGateInterface`_, ensuring adherence to a standardized interface for single-qubit gate operations.
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum system.
+
+**Methods**
+
+\_\__init_\_(self, qubits: int)\_
+
+- **Description**: Initializes the BaseSingleGate class with the specified number of qubits.
+- **Parameters**:
+  - qubits (int): Number of qubits in the system.
+- **Functionality**:
+  - Sets the qubits attribute to define the system size.
+
+\_\__create_gate_queue_\_(self, target*qubits: int or list\[int\], gate: np.array)*
+
+- **Description**: Constructs a gate queue for applying a single-qubit gate to one or more target qubits.
+- **Parameters**:
+  - target_qubits (int or list\[int\]): The indices of the qubits to which the gate will be applied. Can be:
+    - An integer for a single qubit.
+    - A list or iterable for multiple qubits.
+  - gate (numpy array): A 2×2 matrix representing the single-qubit gate to be applied.
+- **Returns**:
+  - gate_queue (numpy array): A 1D array of 2×2 matrices, where each element corresponds to the gate for a specific qubit. Default gates are identity matrices.
+
+**Functionality of \_\_create_gate_queue\_\_**
+
+1. **Initialize Gate Queue**:
+   - Creates a queue of gates with the identity gate (identity()) for all qubits. The identity gate ensures that qubits not targeted remain unchanged.
+2. **Apply Gate to Target Qubits**:
+   - For a single qubit (target_qubits as an integer):
+     - Replace the identity gate at the specified index with the provided gate.
+   - For multiple qubits (target_qubits as a list or iterable):
+     - Iterates through the list and replaces the identity gates at the specified indices with the provided gate.
+3. **Return Gate Queue**:
+   - Returns the final gate_queue containing gates for all qubits in the system.
+
+---
+
+#### calculator_interface.py
+
+The _`CalculatorInterface`_ class defines an abstract interface for performing quantum gate operations on a quantum system. It provides methods for applying single-qubit, multi-qubit, and custom gate sequences, ensuring flexibility and modularity in quantum circuit manipulation.
+
+**Class:** _`CalculatorInterface`_
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum system.
+   - Must be a positive integer.
+2. **prep (str):**
+   - The initial preparation mode for the quantum system.
+   - Supported values:
+     - "z": Initializes qubits in the ∣0⟩ state.
+     - "x": Initializes qubits in the ∣+⟩ state.
+     - "y": Initializes qubits in the ∣i⟩ state.
+   - Default: "z".
+
+**Methods**
+
+\_\__init_\_(self, qubits: int, prep: str = "z")\_
+
+- **Description**: Initializes the quantum system with a specified number of qubits and preparation mode.
+- **Parameters**:
+  - qubits (int): Number of qubits in the quantum system (must be > 0).
+  - prep (str): Preparation mode ("z", "x", or "y").
+- **Behavior**:
+  - Returns None if:
+    - qubits is less than or equal to 0.
+    - prep is not one of the allowed values.
+
+_`apply_single_gate(self, target_qubits, gate)`_
+
+- **Description**: Applies a single-qubit gate to one or more target qubits in the system.
+- **Parameters**:
+  - target_qubits (int or list\[int\]): The index or indices of the qubits to which the gate is applied.
+  - gate (str or Callable): The gate to apply. Examples:
+    - "X" for Pauli-X.
+    - "H" for Hadamard.
+    - A custom callable function representing the gate operation.
+- **Behavior**:
+  - Updates the state of the specified qubits by applying the provided gate.
+  - Supports application of standard gates or custom gates.
+
+_`apply_custom_gate_sequence(self, gate_queue: List[Callable])`_
+
+- **Description**: Applies a sequence of custom gates to the quantum system.
+- **Parameters**:
+  - gate_queue (list\[Callable\]): A list of gate operations to be applied in sequence.
+    - Each gate in the sequence should be a callable function.
+- **Behavior**:
+  - Iterates through the gate_queue and applies each gate to the quantum system in order.
+  - Designed for implementing complex gate sequences or custom circuits.
+
+_`apply_multi_gate(self, control_qubit: int, target: int, gate: Union[str, Callable])`_
+
+- **Description**: Applies a multi-qubit gate (e.g., CNOT) to the quantum system.
+- **Parameters**:
+  - control_qubit (int): The index of the control qubit.
+  - target (int): The index of the target qubit.
+  - gate (str or Callable): The gate to apply.
+- **Behavior**:
+  - Applies the multi-qubit gate based on the state of the control qubit.
+  - Custom gates can be implemented by passing a callable.
+
+---
+
+#### core_interface.py
+
+The _`CoreInterface`_ class provides a foundational structure for quantum circuit operations. It handles the initialization of quantum circuit parameters and defines abstract methods for applying quantum gate operations. This class serves as a base interface for implementing quantum circuit management and operations in more specialized classes.
+
+**Class:** _`CoreInterface`_
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum circuit.
+   - Must be a positive integer.
+2. **prep (str):**
+   - The preparation basis state for the qubits.
+   - Supported values:
+     - "z": Qubits initialized in the ∣0⟩ state.
+     - "x": Qubits initialized in the ∣+⟩ state.
+     - "y": Qubits initialized in the ∣*i*⟩ state.
+   - Default: "z".
+
+**Methods**
+
+\_\__init_\_(self, qubits: int, prep: str = "z")\_
+
+- **Description**: Initializes the quantum circuit with a specified number of qubits and a preparation basis.
+- **Parameters**:
+  - qubits (int): Total number of qubits in the circuit (must be > 0).
+  - prep (str): Preparation basis for the qubits. Must be one of "z", "y", or "x".
+    - Default: "z".
+- **Behavior**:
+  - Validates the qubits and prep parameters.
+  - Sets the qubits and prep attributes.
+  - Returns None if invalid values are provided for qubits or prep.
+
+\_\__operator_matrix_\_(self, gate*queue: List)*
+
+- **Description**: Abstract method for applying a queue of single-qubit gates to the quantum state.
+- **Parameters**:
+  - gate_queue (list): A list of gate operators to be applied to the quantum state.
+- **Behavior**:
+  - This method is intended to be overridden in derived classes to implement the specific logic for applying single-qubit gates.
+- **Returns**:
+  - None (abstract placeholder).
+
+\_\__multi_operator_matrix_\_(self, multi*gate_queue: List)*
+
+- **Description**: Abstract method for applying a queue of multi-qubit gates (e.g., controlled gates) to the quantum state.
+- **Parameters**:
+  - multi_gate_queue (list): A list of multi-qubit gate operators to be applied to the quantum state.
+- **Behavior**:
+  - This method is intended to be overridden in derived classes to implement the specific logic for applying multi-qubit gates.
+- **Returns**:
+  - None (abstract placeholder).
+
+---
+
+#### multi_gate_interface.py
+
+**Class:** _`MultiGateInterface`_
+
+**Description**
+
+The _`MultiGateInterface`_ class provides an abstract interface for constructing and managing multi-qubit gates, such as controlled gates.
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum circuit.
+   - Must be a positive integer.
+
+**Methods**
+
+\_\__init_\_(self, qubits: int)\_
+
+- **Description**: Initializes the multi-gate interface with the specified number of qubits.
+- **Parameters**:
+  - qubits (int): The number of qubits in the quantum system (must be > 0).
+- **Behavior**:
+  - Validates the number of qubits.
+  - Returns None if qubits is not a positive integer.
+
+\_\__create_bracket_queue_\_(self, gate, control*qubit: int, target_qubit: int)*
+
+- **Description**: Abstract method for constructing a queue of operations for multi-qubit gates.
+- **Parameters**:
+  - gate: The gate operation (matrix or callable) to be applied to the target qubit.
+  - control_qubit (int): The index of the control qubit.
+  - target_qubit (int): The index of the target qubit.
+- **Behavior**:
+  - Intended to be overridden in derived classes.
+  - Constructs the operator sequence for applying the gate conditioned on the control qubit's state.
+- **Returns**:
+  - None (abstract placeholder).
+
+---
+
+#### single_gate_interface.py
+
+**Class:** _`SingleGateInterface`_
+
+**Description**
+
+The _`SingleGateInterface`_ class provides an abstract interface for constructing and managing single-qubit gates.
+
+**Attributes**
+
+1. **qubits (int):**
+   - The number of qubits in the quantum circuit.
+   - Must be a positive integer.
+
+**Methods**
+
+\_\__init_\_(self, qubits: int)\_
+
+- **Description**: Initializes the single-gate interface with the specified number of qubits.
+- **Parameters**:
+  - qubits (int): The number of qubits in the quantum system (must be > 0).
+- **Behavior**:
+  - Validates the number of qubits.
+  - Returns None if qubits is not a positive integer.
+
+_`create_gate_queue(self, target_qubits, gate)`_
+
+- **Description**: Abstract method for constructing a queue of operations for single-qubit gates.
+- **Parameters**:
+  - target_qubits (int): The indices of the qubits to which the gate is applied.
+  - gate: The gate operation (matrix or callable) to be applied.
+- **Behavior**:
+  - Intended to be overridden in derived classes.
+  - Constructs the operator sequence for applying the gate to the specified qubits.
+- **Returns**:
+  - None (abstract placeholder).
+
+\_\__custom_gate_queue_\_(self, gate*array)*
+
+- **Description**: Abstract method for creating a custom queue of gates.
+- **Parameters**:
+  - gate_array: An array or list of gates to be applied sequentially.
+- **Behavior**:
+  - Intended to be overridden in derived classes.
+  - Defines how custom gates should be combined and applied to the quantum state.
+- **Returns**:
+  - None (abstract placeholder).
+
+---
+
+#### quantum_circuit.py
+
+The _`QuantumCircuit`_ class provides a framework for defining and executing quantum circuits. It integrates the functionality of quantum registers, gates, and a calculator to model quantum computation, including gate application, circuit execution, and measurement.
+
+**Class:** _`QuantumCircuit`_
+
+**Attributes**
+
+1. **num_qubits (int):**
+   - The number of qubits in the quantum circuit.
+2. **register (QuantumRegister):**
+   - A quantum register representing the quantum state of the system.
+3. **operations (list of tuples):**
+   - Stores the sequence of gates applied in the circuit.
+   - Each tuple contains:
+     - gate (numpy array): The matrix representation of the gate.
+     - qubits (list): The indices of qubits the gate acts on.
+     - name (str): The name of the gate for visualization purposes.
+4. **calculator (Calculator):**
+   - An instance of the Calculator class for applying gates and managing the quantum state.
+
+**Methods**
+
+\_\__init_\_(self, num*qubits: int, prep: str = "z")*
+
+- **Description**: Initializes the quantum circuit with the specified number of qubits and an initial state.
+- **Parameters**:
+  - num_qubits (int): Number of qubits in the circuit.
+  - prep (str): Initial preparation state of the qubits (default: "z").
+
+_`add_gate(self, gate: np.ndarray, qubits, name: str)`_
+
+- **Description**: Adds a gate operation to the circuit.
+- **Parameters**:
+  - gate (numpy array): The matrix representation of the gate.
+  - qubits (list): Indices of the qubits the gate acts on.
+  - name (str): Name of the gate (used for visualization).
+
+_`execute(self)`_
+
+- **Description**: Executes the circuit by applying all gates in sequence to the quantum register.
+- **Functionality**:
+  - Iterates through the list of operations (self.operations).
+  - Applies each gate to the quantum state using the _`apply_gate`_ method of the QuantumRegister.
+
+_`measure(self)`_
+
+- **Description**: Measures the quantum state of the register and returns the probabilities of each basis state.
+- **Returns**:
+  - A dictionary with basis states as keys and their respective probabilities as values.
+- **Functionality**:
+  - Calls get*state on the \_QuantumRegister* to retrieve the final state.
+  - Uses the probability function to calculate the probability distribution.
+
+_`h(self, target_qubits)`_
+
+- **Description**: Applies a Hadamard gate to the specified qubits in the circuit.
+- **Parameters**:
+  - target_qubits: Indices of the qubits to which the Hadamard gate is applied.
+- **Functionality**:
+  - Uses the Calculator instance to pass the Hadamard gate to the specified qubits.
+
+---
+
+#### quantum_register.py
+
+The _`QuantumRegister`_ class provides a framework for managing and simulating a quantum register, which is a collection of qubits. It allows for the initialization, manipulation, and retrieval of the quantum state.
+
+**Class:** _`QuantumRegister`_
+
+**Attributes**
+
+1. **num_qubits (int):**
+   - The number of qubits in the quantum register.
+2. **state (numpy array):**
+   - A complex-valued NumPy array representing the quantum state of the register.
+   - Initialized to the state, where _n_ is the number of qubits.
+3. **qubits (list of Qubits):**
+   - A list of Qubits objects, each representing an individual qubit in the register.
+
+**Methods**
+
+\_\__init_\_(self, num*qubits: int)*
+
+- **Description**: Initializes the quantum register with the specified number of qubits.
+- **Parameters**:
+  - num_qubits (int): The number of qubits in the quantum register.
+- **Behavior**:
+  - Creates a quantum state vector of size $$2^{\text{numqubits}}$$ initialized to \[1, 0, 0, …,0\], representing the $$\vert 0 \rangle ^{\otimes n}$$ state.
+  - Initializes a list of Qubits objects for individual qubit representation.
+
+_`get_state(self) -> numpy array`_
+
+- **Description**: Retrieves the current quantum state of the register.
+- **Returns**:
+  - (numpy array): The quantum state vector.
+
+_`reset(self)`_
+
+- **Description**: Resets the quantum register to the initial $$\vert 0 \rangle ^{\otimes n}$$ state.
+- **Behavior**:
+  - Sets the quantum state vector to \[1, 0, 0, …,0\] representing the $$\vert 0 \rangle ^{\otimes n}$$ state.
+
+---
+
+#### qubit.py
+
+The _`Qubits`_ class represents the fundamental unit of quantum information, analogous to a classical bit. It provides methods for initializing, representing, and retrieving the quantum state of a qubit.
+
+**Class:** _`Qubits`_
+
+**Attributes**
+
+1. **index (int):**
+   - The index of the qubit in a quantum register or system.
+2. **state (numpy array):**
+   - The state vector of the qubit initialized based on the specified orientation.
+
+**Methods**
+
+\_\__init_\_(self, index: int, state: str = "z")\_
+
+- **Description**: Initializes a qubit with the specified index and orientation (state).
+- **Parameters**:
+  - index (int): The index of the qubit in the system.
+  - state (str): The initial orientation of the qubit. Must be one of:
+    - "z": Initializes to the ∣0⟩ state.
+    - "x": Initializes to the $$|+\rangle = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)$$ state.
+    - "y": Initializes to the $$|i\rangle = \frac{1}{\sqrt{2}} (|0\rangle + i|1\rangle)$$ state.
+    - Default: "z".
+
+_`initial_state(self, state: str = "z") -> NDArray`_
+
+- **Description**: Creates and returns the state vector for the specified initial orientation of the qubit.
+- **Parameters**:
+  - state (str): The initial orientation of the qubit. Must be one of "z", "x", or "y".
+- **Returns**:
+  - NDArray: A 2×1 NumPy array representing the qubit's state vector.
+- **Raises**:
+  - ValueError: If the provided state is not one of "z", "x", or "y".
+
+_`get_state(self) -> NDArray`_
+
+- **Description**: Retrieves the current state vector of the qubit.
+- **Returns**:
+  - NDArray: The 2×1 NumPy array representing the qubit's state vector.
+
+---
+
+#### quantum_state.py
+
+The _`QuantumState`_ class provides a representation of a quantum system's state vector. It includes methods for initializing, manipulating, and measuring the quantum state, making it a fundamental component for simulating quantum computations.
+
+**Class:** _`QuantumState`_
+
+**Attributes**
+
+1. **num_qubits (int):**
+   - The number of qubits in the quantum system.
+   - Determines the dimension of the quantum state vector ().
+2. **state (numpy array):**
+   - A complex-valued NumPy array representing the quantum state vector.
+   - Initialized to the state, where _n_ is the number of qubits.
+
+**Methods**
+
+\_\__init_\_(self, num*qubits: int)*
+
+- **Description**: Initializes the quantum state with the specified number of qubits.
+- **Parameters**:
+  - num_qubits (int): The number of qubits in the quantum system.
+- **Behavior**:
+  - Creates a quantum state vector of size $$2^{\text{numqubits}}$$.
+  - Initializes the state to $$\vert 0 \rangle ^{\otimes n}$$.
+
+_`apply_unitary(self, unitary: np.ndarray)`_
+
+- **Description**: Applies a unitary transformation (quantum gate) to the quantum state.
+- **Parameters**:
+  - unitary (numpy array): A $$2^n * 2^n$$ matrix representing the unitary operation.
+- **Behavior**:
+  - Validates that the unitary matrix dimensions match the quantum state vector ($$2^n * 2^n$$).
+  - Updates the state vector by performing the matrix-vector multiplication: **_state = U⋅ state_**_,_ where _U_ is the unitary matrix.
+- **Raises**:
+  - ValueError: If the dimensions of the unitary matrix do not match $$2^n * 2^n$$.
+
+_`get_state(self) -> np.ndarray`_
+
+- **Description**: Retrieves the current quantum state vector.
+- **Returns**:
+  - np.ndarray: The quantum state vector.
+
+_`measure(self) -> str`_
+
+- **Description**: Simulates a measurement of the quantum state, collapsing it to one basis state.
+- **Returns**:
+  - str: The measured basis state as a binary string.
+- **Behavior**:
+  - Uses the measure function from the tools module to determine the measurement outcome based on the probability distribution of the state vector.
+
+---
+
+#### Simulator.py
+
+The _`Simulator`_ class is a foundational structure for simulating quantum computations. It provides a framework to manage and manipulate the state vector of a quantum system, representing the evolution of quantum states during computation.
+
+**Class:** _`Simulator`_
+
+**Attributes**
+
+1. **state_vector (None or numpy array):**
+   - Represents the quantum state vector of the system.
+   - Initially set to None and is updated as the simulator is used to initialize and manipulate quantum states.
+
+**Methods**
+
+\_\__init_\_(self)\_
+
+- **Description**: Initializes the simulator instance with an uninitialized state vector.
+- **Behavior**:
+  - Sets the state_vector attribute to None.
+  - Acts as a placeholder for later initialization and manipulation of the quantum state.
+
+---
