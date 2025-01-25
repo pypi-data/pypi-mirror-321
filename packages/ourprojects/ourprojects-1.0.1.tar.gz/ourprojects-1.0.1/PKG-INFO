@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: ourprojects
+Version: 1.0.1
+Summary: Manage projects & teams.
+Author-email: Lamin Labs <open-source@lamin.ai>
+Description-Content-Type: text/markdown
+Requires-Dist: lamindb>=0.77.0
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/ourprojects
+Provides-Extra: dev
+
+⚠️ Was [integrated](https://github.com/laminlabs/lamindb/pull/2342) into lamindb for lamindb release 1.0. Is now deprecated.
+
+# ourprojects: Manage projects
+
+Read the [docs](https://docs.lamin.ai/ourprojects).
+
