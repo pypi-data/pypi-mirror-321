@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+tensorflow
+keras
+keras-tuner
+joblib
+requests
+nltk
+channels
+asgiref
+chardet
