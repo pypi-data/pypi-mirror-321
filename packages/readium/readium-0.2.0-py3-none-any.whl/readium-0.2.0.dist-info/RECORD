@@ -1,0 +1,10 @@
+readium/__init__.py,sha256=ikSPrPLpo5_hfr4v-5_BG43UWdFpvksPsOK0tBJmkWM,166
+readium/cli.py,sha256=gz1y4piPWO6kS7BHfK-TQ7mI_C8Q3mmv_xjohPCJ9_4,4231
+readium/config.py,sha256=6wt5dTOqsz_C9lSxq6H8g57yhpEA56O4v4K8XPVtEEs,2655
+readium/core.py,sha256=8PcEdTD7GYwi_MhpidpuC8HsJsDO8-hOjaX_JXfEgKU,11309
+readium/utils/error_handling.py,sha256=ThWwjj9NZ0jXunIcf1G7M9b052pZryDwUVMkEcwpjNA,543
+readium-0.2.0.dist-info/LICENSE,sha256=dYRYlQ-Oe3cGbb3FL5nPevRXgFYEQVhzQhRS6NwbSLk,1069
+readium-0.2.0.dist-info/METADATA,sha256=l7JPTmt1ZmtQuhJ-sbqJ4Hl3H7UxT79qxSvGJrUGQrY,5821
+readium-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+readium-0.2.0.dist-info/entry_points.txt,sha256=2gCViC3Kuwj8iFAeb0UJeAJpV7GLFJJL_TGaEMDhad8,44
+readium-0.2.0.dist-info/RECORD,,
