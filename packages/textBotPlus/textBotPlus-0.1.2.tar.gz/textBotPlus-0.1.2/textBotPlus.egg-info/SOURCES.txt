@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+textBotPlus/__init__.py
+textBotPlus/utils.py
+textBotPlus.egg-info/PKG-INFO
+textBotPlus.egg-info/SOURCES.txt
+textBotPlus.egg-info/dependency_links.txt
+textBotPlus.egg-info/requires.txt
+textBotPlus.egg-info/top_level.txt
