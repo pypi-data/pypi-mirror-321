@@ -1,0 +1,10 @@
+requests
+pytubefix>=8.12.0
+yt-dlp>=2025.1.15
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+ruff
+build
