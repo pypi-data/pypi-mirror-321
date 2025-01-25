@@ -1,0 +1,9 @@
+setup.py
+elastic_structlog/__init__.py
+elastic_structlog/elastic_extension.py
+elastic_structlog/elastic_processor.py
+elastic_structlog.egg-info/PKG-INFO
+elastic_structlog.egg-info/SOURCES.txt
+elastic_structlog.egg-info/dependency_links.txt
+elastic_structlog.egg-info/requires.txt
+elastic_structlog.egg-info/top_level.txt
