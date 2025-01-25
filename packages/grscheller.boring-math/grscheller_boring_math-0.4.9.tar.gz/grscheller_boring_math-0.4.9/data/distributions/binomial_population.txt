@@ -1,0 +1,19 @@
+# Binomial Data: population
+#            n = 13
+#            p = 0.6153846...
+#         mean = np = 8.0
+#        stdev = sqrt(n*p*(1-p)) = 1.7541160...
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+0
+

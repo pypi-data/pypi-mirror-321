@@ -1,0 +1,24 @@
+#         mean = 5.0
+#        stdev = 0.6789238... (population)
+#        stdev = 0.7241857... (sample)
+# 1st quartile = 3.0
+#       median = 5.0
+# 3rd quartile = 7.0
+#         mode = 5.0
+#      
+0
+10
+1
+2
+8
+9
+3
+4
+5
+7
+6
+3
+5
+7
+5
+5
