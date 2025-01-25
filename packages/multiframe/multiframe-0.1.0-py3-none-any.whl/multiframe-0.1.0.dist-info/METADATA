@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: multiframe
+Version: 0.1.0
+Summary: A multi-agent framework for various AI tasks
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: groq
+Requires-Dist: google-api-python-client
+Requires-Dist: youtube-transcript-api
+Requires-Dist: wikipedia-api
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: PyPDF2
+Requires-Dist: langchain-community
+Requires-Dist: langchain
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
