@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: manimforge
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Dist: manim >0.18.0
+License-File: LICENSE.md
+Summary: Rust parts of the Animation Library Manim
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: documentation, https://docs.manim.community/
+Project-URL: homepage, https://www.manim.community/
+Project-URL: repository, https://github.com/ManimCommunity/manim-forge
+
+# Manim-Forge
+Some parts of the python library [Manim](https://www.manim.community) need
+to be executed fast. This library contains code
+for these computations, but written in Rust
+to improve speed.
+
+## Usage
+First, [install manim](https://docs.manim.community/en/stable/installation.html).
+After that, it should just be
+```
+pip install manimforge
+```
+In the off-chance your operating system doesn't have prebuilt wheels,
+you'll need to [install Rust](https://www.rust-lang.org/tools/install).
+
+After that, it should be as simple as inserting the following before
+rendering a scene:
+```py
+import manimforge as mf
+mf.setup()
+```
+
+### Supported Versions
+This library is only tested with the following:
+
+- Windows (x86-64)
+- macOS (x86-64)
+- macOS (aarch64)
+- Linux (x86-64 glibc)
+- Linux (x86 glibc)
+
+This library supports the versions of python that Manim
+itself supports. However, there are some exceptions: namely
+that free-threaded builds of python are not supported.
+
+## Testing
+1. Clone the repo
+2. Create a virtual environment using something like [`uv`](https://docs.astral.sh/uv/) (`uv venv`)
+3. Install dev dependencies (`uv sync`)
+4. Build the library (`uv run maturin develop --uv`)
+5. Run the example (`uv run manim -p examples/circle.py --disable_caching`)
+
