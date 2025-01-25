@@ -1,0 +1,18 @@
+{% if COURSEGRAPH_RUN_NEO4J %}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coursegraph
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 7474
+      protocol: TCP
+    - name: bolt
+      port: 7687
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: coursegraph
+{% endif %}
