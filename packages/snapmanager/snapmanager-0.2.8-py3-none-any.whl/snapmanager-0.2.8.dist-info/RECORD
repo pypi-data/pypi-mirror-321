@@ -1,0 +1,14 @@
+snapmanager/__init__.py,sha256=h_Y6u2_ShvXtRwhrlDYi-Zprn0lhORH_-9566u8slyA,84
+snapmanager/cli.py,sha256=cnCzieq0ZUheYsOL6faSD-dyi0J0v8SlDyMZK94VLw8,2766
+snapmanager/core/manager.py,sha256=8g05cz4Y4hhuUnsv_Y7pFnb-7u3yC7cPxR6txuWsvx4,10859
+snapmanager/core/types.py,sha256=tfcF0N3Uf8LnQQjxm5p99xFbzBPHgCdaJUJ0UoDjeak,809
+snapmanager/core/vss.py,sha256=Cv45X_alXQWr5BcpBArY7gJEs6OzQK5x2gbqIxRAS6g,14554
+snapmanager/utils/compute.py,sha256=SB3ex0yw-huBu8r0xPO-Yh54TNHz_VOuWfAVW9r54r4,12347
+snapmanager/utils/ui.py,sha256=v1SxW0Z4Y6sNnFk3qzZCrVhN7lCHIfCHbubdLVRXa-0,12353
+snapmanager/utils/winrm.py,sha256=UU0fF5muA_pP3WMDZOZISmYugEAjAgWQZGfuuMLV3Lo,5912
+snapmanager-0.2.8.dist-info/LICENSE,sha256=bR0wAzFxtz6J-Pj_LlXdq-JfHu2PRvF0x884gxMcKGw,1066
+snapmanager-0.2.8.dist-info/METADATA,sha256=3uuH0P-n8Pbh_YsBTM_A35HQQ6DpByGmkyj8U3sW4-M,3996
+snapmanager-0.2.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+snapmanager-0.2.8.dist-info/entry_points.txt,sha256=vJhVffRKiYJXe3tWDDPVf_e3pD7-b6EtJbWgbabLYvA,49
+snapmanager-0.2.8.dist-info/top_level.txt,sha256=fh6hTBUH5tonQboNo7zSSN7KTSJ4v4xR8Ozecy3hzjY,12
+snapmanager-0.2.8.dist-info/RECORD,,
