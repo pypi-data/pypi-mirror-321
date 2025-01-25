@@ -1,0 +1,10 @@
+morphopretext/Dictionaries_En.py,sha256=4beqscDrLyOhvfXRWndYWKQhZ5rSj_MC5VandMEUMJQ,28123
+morphopretext/Dictionaries_Fa.py,sha256=cfZ5t2gVNkXW-evFrr1V8MoHvFGco2wMK6MV7CJDJX0,29567
+morphopretext/__init__.py,sha256=1KNBvjKVyjDu_G3VavYQuTuWUe2nbgsO6jS0eTxAfl4,329
+morphopretext/english_text_preprocessor.py,sha256=o6I_Kn9TZveqLyCt953ub_kE2aX_zNm7dg7mf2oZlFU,12392
+morphopretext/persian_text_preprocessor.py,sha256=AtOoeYtVSEO-t_gdo4qCcFax0F4k3uJQs0TmjmFIw9E,17649
+MorphoPreText-0.1.1.dist-info/LICENSE,sha256=AloofzRrW4Frp1kImO2UjkLe1QLDrwqIzwgIG5NcGgc,1070
+MorphoPreText-0.1.1.dist-info/METADATA,sha256=6NqMraKDhSd34VKrSrOdeVGteuqRm8ws2pzVEsGBb8c,7938
+MorphoPreText-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+MorphoPreText-0.1.1.dist-info/top_level.txt,sha256=jEiD_hLq_trDJD8eaR6J7lH0M5xcsUPuvj7faEhteYg,14
+MorphoPreText-0.1.1.dist-info/RECORD,,
