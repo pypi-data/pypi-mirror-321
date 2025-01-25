@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='clore_gigaspot',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        "requests==2.32.3",
+        "aiohttp==3.11.11"
+    ],
+    author='CLORE.AI',
+    author_email='marketing@clore.ai',
+    description='GigaSPOT managment',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',  # License type
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.9',
+)
