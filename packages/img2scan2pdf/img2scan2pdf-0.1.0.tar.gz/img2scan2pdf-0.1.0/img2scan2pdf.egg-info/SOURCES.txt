@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+img2scan2pdf/__init__.py
+img2scan2pdf/cli.py
+img2scan2pdf/utils.py
+img2scan2pdf.egg-info/PKG-INFO
+img2scan2pdf.egg-info/SOURCES.txt
+img2scan2pdf.egg-info/dependency_links.txt
+img2scan2pdf.egg-info/entry_points.txt
+img2scan2pdf.egg-info/requires.txt
+img2scan2pdf.egg-info/top_level.txt
