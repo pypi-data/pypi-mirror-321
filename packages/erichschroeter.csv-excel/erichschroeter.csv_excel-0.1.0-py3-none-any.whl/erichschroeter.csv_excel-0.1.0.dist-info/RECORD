@@ -1,0 +1,10 @@
+csv_excel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csv_excel/__main__.py,sha256=MXZo09GgOHomXJlPZXt8LC-q0e93Hs6M85_Avm40C-o,4591
+csv_excel/csv_excel.py,sha256=L5_REFVau9xuGsk3UdpjPe6nYQ5YBr7d3l95htYXsZk,6069
+csv_excel/vbaProject.bin,sha256=dHzA0gWNDUi9xTGwzgKLXbcxRFQjhOBIuaTLYOikpJI,18432
+csv_excel/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csv_excel/test/test_csv_excel.py,sha256=URFvRTc3VwDKqcd_xc1illPG7fm4CX6HfvcRb2lOd7s,276
+erichschroeter.csv_excel-0.1.0.dist-info/METADATA,sha256=xfkd4xjtBadLUo-3uJBkZQKyqnAiSCjRugLkoupkiuA,4976
+erichschroeter.csv_excel-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+erichschroeter.csv_excel-0.1.0.dist-info/top_level.txt,sha256=8TuFPYYYEAavKplPaNOJpgw8pFxO-89SY-N_m3WUCpk,10
+erichschroeter.csv_excel-0.1.0.dist-info/RECORD,,
