@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/barriersampling/__init__.py
+src/barriersampling/barriersampler.py
+src/barriersampling.egg-info/PKG-INFO
+src/barriersampling.egg-info/SOURCES.txt
+src/barriersampling.egg-info/dependency_links.txt
+src/barriersampling.egg-info/requires.txt
+src/barriersampling.egg-info/top_level.txt
