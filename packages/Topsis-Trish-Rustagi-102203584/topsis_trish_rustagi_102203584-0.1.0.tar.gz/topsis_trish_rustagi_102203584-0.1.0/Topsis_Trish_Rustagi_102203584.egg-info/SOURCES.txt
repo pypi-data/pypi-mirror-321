@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis_Trish_Rustagi_102203584.egg-info/PKG-INFO
+Topsis_Trish_Rustagi_102203584.egg-info/SOURCES.txt
+Topsis_Trish_Rustagi_102203584.egg-info/dependency_links.txt
+Topsis_Trish_Rustagi_102203584.egg-info/requires.txt
+Topsis_Trish_Rustagi_102203584.egg-info/top_level.txt
+tests/test_topsis.py
+topsis/102203584.py
+topsis/__init__.py
