@@ -1,0 +1,7 @@
+Change Log
+===========
+
+0.0.2 (30/11/2019)
+-------------------
+- Initial plan to release: May 2020.
+- Made OS independent
