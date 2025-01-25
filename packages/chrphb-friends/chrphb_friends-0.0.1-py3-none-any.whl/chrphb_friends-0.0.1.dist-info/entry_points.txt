@@ -1,0 +1,2 @@
+[nbdev]
+chrphb_friends = chrphb_friends._modidx:d
