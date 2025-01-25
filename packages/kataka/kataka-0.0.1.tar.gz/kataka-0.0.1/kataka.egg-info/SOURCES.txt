@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kataka/__init__.py
+kataka.egg-info/PKG-INFO
+kataka.egg-info/SOURCES.txt
+kataka.egg-info/dependency_links.txt
+kataka.egg-info/requires.txt
+kataka.egg-info/top_level.txt
