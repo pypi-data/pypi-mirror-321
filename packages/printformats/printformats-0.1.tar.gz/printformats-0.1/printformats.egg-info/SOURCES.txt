@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+printformats.egg-info/PKG-INFO
+printformats.egg-info/SOURCES.txt
+printformats.egg-info/dependency_links.txt
+printformats.egg-info/requires.txt
+printformats.egg-info/top_level.txt
