@@ -1,0 +1,25 @@
+[build-system]
+requires = ["pip", "setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#[project]
+#name = "mdplus"
+#version = "0.1.0"
+#authors = [
+#  { name="The University of Nottingham and BSC", email="charles.laughton@nottingham.ac.uk"},
+#]
+#description = "Tools for molecular dynamics simulation setup and analysis."
+#readme = "README.md"
+#requires-python = ">=3.8"
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: BSD License",
+#    "Operating System :: OS Independent",
+#]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "test",
+]
