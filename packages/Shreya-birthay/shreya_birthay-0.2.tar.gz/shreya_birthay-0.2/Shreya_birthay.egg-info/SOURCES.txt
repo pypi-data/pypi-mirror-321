@@ -1,0 +1,5 @@
+setup.py
+Shreya_birthay.egg-info/PKG-INFO
+Shreya_birthay.egg-info/SOURCES.txt
+Shreya_birthay.egg-info/dependency_links.txt
+Shreya_birthay.egg-info/top_level.txt
