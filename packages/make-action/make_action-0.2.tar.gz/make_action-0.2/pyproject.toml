@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "make_action"
+version = "0.2"
+authors = [{name = "Mangozmorgan"}]
+description = "Un package Python CLI"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "click",
+    "pyyaml",
+    "ruamel.yaml"
+]
+
+[project.urls]
+homepage = "https://github.com/votre_nom/my_package"
+
+[project.scripts]
+make_action = "make_action.main:main"
