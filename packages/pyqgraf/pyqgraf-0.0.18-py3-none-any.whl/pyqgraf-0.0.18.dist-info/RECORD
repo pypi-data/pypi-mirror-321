@@ -1,0 +1,8 @@
+pyqgraf/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyqgraf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqgraf/model.py,sha256=Cs_QtCXQWZB-jWpkC7mqV-Q2VYQoYHW7GZJYf7VB2PE,3838
+pyqgraf/qgraf.py,sha256=ennuPa7ZdybGtBcUvf6C7KcITt5uWztnUpbAacuF1YI,5097
+pyqgraf/wrap.py,sha256=K8wO_mnev7hWmNTw1myO_4BnCsyj3-Zf_0u2NRtW9wo,2911
+pyqgraf-0.0.18.dist-info/METADATA,sha256=N4g2Bs8mAQHH656wJp_MEqzs3usF0QDVpJak63MAEtY,4298
+pyqgraf-0.0.18.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyqgraf-0.0.18.dist-info/RECORD,,
