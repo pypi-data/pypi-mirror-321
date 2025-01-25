@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: pypersonalizedutilitykits
+Version: 1.0.5
+Summary: This is my amazing package
+Author: FranklinLiu
+Author-email: 3517005858@qq.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: colorlog>=6.8.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
