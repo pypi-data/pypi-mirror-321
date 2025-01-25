@@ -1,0 +1,7 @@
+einops
+scikit-learn
+umap-learn
+pycolormap-2d
+tqdm
+torch==2.1.0
+dgl==2.2.0
