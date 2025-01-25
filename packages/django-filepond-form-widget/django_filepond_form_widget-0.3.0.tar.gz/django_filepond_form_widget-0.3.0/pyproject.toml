@@ -1,0 +1,28 @@
+[project]
+name = "django-filepond-form-widget"
+description = "A Django form widget using FilePond with image preview support"
+authors = [{ name = "Krystof Beuermann", email = "krystof+django@blackbox.ms" }]
+dependencies = ["django>=4.2"]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = ["django", "widget", "filepond"]
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-django",
+    "black",
+    "flake8",
+    "mypy",
+    "twine",
+    "djlint>=1.35.2",
+]
