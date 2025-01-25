@@ -1,0 +1,2 @@
+[console_scripts]
+bioDP-metabodirect = bloDP.metabodirect.cli:main
