@@ -1,0 +1,3 @@
+[console_scripts]
+charon-cli = charon_vna.cli:main
+charon-gui = charon_vna.gui:main
