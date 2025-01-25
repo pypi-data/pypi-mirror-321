@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: blamegame
+Version: 0.0.1
+Summary: Coming soon...
+Author-email: "Ryan L. Boyd" <ryan@ryanboyd.io>
+Project-URL: Homepage, https://github.com/ryanboyd
+Project-URL: Issues, https://github.com/ryanboyd
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm>=4.66.5
+Requires-Dist: nltk>=3.9.1
+Requires-Dist: sentence-transformers>=3.1.1
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: joblib>=1.4.2
+
+# BlameGame
+
+Coming soon...

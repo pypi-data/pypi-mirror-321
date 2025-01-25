@@ -1,0 +1,9 @@
+README.MD
+pyproject.toml
+src/blamegame/BlameFrame.py
+src/blamegame/__init__.py
+src/blamegame.egg-info/PKG-INFO
+src/blamegame.egg-info/SOURCES.txt
+src/blamegame.egg-info/dependency_links.txt
+src/blamegame.egg-info/requires.txt
+src/blamegame.egg-info/top_level.txt
