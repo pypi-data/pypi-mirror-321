@@ -1,0 +1,60 @@
+Metadata-Version: 2.3
+Name: run-radar-run
+Version: 0.1
+Summary: Run, Radar, Run - Running your own tech radar should be easy
+License: MIT
+Keywords: tech-radar
+Author: Alexei Znamensky
+Author-email: russoz@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Dist: blessed (>=1.20.0)
+Requires-Dist: docker (>=7.1.0)
+Requires-Dist: gitpython (>=3.1.44)
+Requires-Dist: pyyaml (>=5.4)
+Description-Content-Type: text/markdown
+
+Run, Radar, Run
+===============
+
+Using run-radar-run
+-------------------
+
+### Requirements
+
+* Python3.12+
+* Docker (for the TWBYOR radar)
+
+### Running the Radar
+
+Clone this repository and run:
+
+```bash
+$ ./run-radar-run
+```
+
+Or if you intend to see a specific radar directory, run:
+
+```bash
+$ ./run-radar-run -i tests/radar
+```
+
+### Publishers
+
+Publishers are the frameworks you can use to publish your tech radar.
+
+As of early 2025, the publishers available are:
+
+* Thoughtworks' Bring Your Own Radar
+* Zalando Tech Radar
+
