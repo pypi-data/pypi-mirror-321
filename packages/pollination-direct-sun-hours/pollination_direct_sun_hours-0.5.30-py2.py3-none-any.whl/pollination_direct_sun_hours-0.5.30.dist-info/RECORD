@@ -1,0 +1,10 @@
+pollination/direct_sun_hours/__init__.py,sha256=GruqTjsufcH7NEruPFDaDcV8-b-tjlU6guilGfnt8OY,112
+pollination/direct_sun_hours/_direct_sunlight_calc.py,sha256=60d-D0ful8nQIHvEb1j7MQgtK6bmubUoIqr36x9Ymvs,2499
+pollination/direct_sun_hours/_postprocess.py,sha256=3xoL43pDUEhNoXn7bFmRkd0OfBMqkohPRk2AFQY6jXk,2480
+pollination/direct_sun_hours/_prepare_folder.py,sha256=3P8kMGYE-jxobQFPwy274NWN1BrUmGhLePsVzu9lg6M,7122
+pollination/direct_sun_hours/entry.py,sha256=OiNRdT5WEibj0ZkoDPWZsxJ68d65pVJm0Ti0_yQ22hA,6795
+pollination_direct_sun_hours-0.5.30.dist-info/LICENSE,sha256=Z1MPjprfzF0unXK4BFAM67dHL_hMNKZymoCiqb6QHuY,5748
+pollination_direct_sun_hours-0.5.30.dist-info/METADATA,sha256=KvLj1cPnprC1rdpCFeVMLAzp20HWM2vaKyDzlWzx8Zw,1702
+pollination_direct_sun_hours-0.5.30.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+pollination_direct_sun_hours-0.5.30.dist-info/top_level.txt,sha256=XqhRsBTtFfrCqv7O3outMqm3JZeMavDRExrfL0uUs74,12
+pollination_direct_sun_hours-0.5.30.dist-info/RECORD,,
