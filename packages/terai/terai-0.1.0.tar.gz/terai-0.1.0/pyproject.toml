@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "terai"
+version = "0.1.0"
+description = ""
+authors = ["Sahil Gupta"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+groq = "^0.15.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tai = "terminal_ai.main:main"
