@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-translation = jupyter_translation.cli:app
