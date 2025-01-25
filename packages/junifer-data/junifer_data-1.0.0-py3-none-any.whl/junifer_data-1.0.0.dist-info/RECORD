@@ -1,0 +1,13 @@
+junifer_data/__init__.py,sha256=fPveC0NsnbvuQx6VP134-8yswfdoKfS3VbdmBP7WDsk,205
+junifer_data/__init__.pyi,sha256=ub5OHgee_CwjLIn2Ut66EBPqLIKBNLQzN_ys5zV4w2c,127
+junifer_data/_cli.py,sha256=ljpfOu_vawMVCFhYD6JXNnLvH4-ZMWlPbHLXTZ3XvGw,2358
+junifer_data/_functions.py,sha256=eqeKKaAvLb__t3nFDtZGZVa6CrCgrr6OdkraZlL5Q0o,2742
+junifer_data/_utils.py,sha256=HSQtJ8qS7Lqm_hSVvQeVJFWDxxetrXSWD3wTFxT9ZJU,2772
+junifer_data/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+junifer_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+junifer_data-1.0.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+junifer_data-1.0.0.dist-info/METADATA,sha256=xZyGyhZxiKG0c4brqfYroBJE0xXSM_Ucc2-sVbOewVY,1437
+junifer_data-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+junifer_data-1.0.0.dist-info/entry_points.txt,sha256=offUzAeHiH88kVX6WNTGGVUij9Jsm6Beig0joSvaoeI,55
+junifer_data-1.0.0.dist-info/top_level.txt,sha256=kctb_tcsUJ5QXZkdQZzwjxyt4kFtSpYFeWCnuHg9jfU,13
+junifer_data-1.0.0.dist-info/RECORD,,
