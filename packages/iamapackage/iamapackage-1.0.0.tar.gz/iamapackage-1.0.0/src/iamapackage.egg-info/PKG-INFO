@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: iamapackage
+Version: 1.0.0
+Summary: I am a python package
+Author-email: Joseph Cobb <joseph.a.cobb525@gmail.com>
+Project-URL: repository, https://github.com/josephcobb111/iamapackage
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pandas<=3.0.0,>=1.0.0
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: coverage; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: pytest>=6.0; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Provides-Extra: qa
+Requires-Dist: check-manifest; extra == "qa"
+Requires-Dist: pre-commit; extra == "qa"
+Requires-Dist: pre-commit-hooks; extra == "qa"
+Requires-Dist: mypy; extra == "qa"
+Requires-Dist: nox; extra == "qa"
+Requires-Dist: edgetest; extra == "qa"
+Requires-Dist: sqlfluff; extra == "qa"
+Requires-Dist: ruff; extra == "qa"
+Requires-Dist: black; extra == "qa"
+Requires-Dist: flake8; extra == "qa"
+Requires-Dist: isort; extra == "qa"
+Requires-Dist: pylint; extra == "qa"
+Provides-Extra: dev
+Requires-Dist: iamapackage[docs]; extra == "dev"
+Requires-Dist: iamapackage[tests]; extra == "dev"
+Requires-Dist: iamapackage[qa]; extra == "dev"

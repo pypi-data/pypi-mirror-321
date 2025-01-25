@@ -1,0 +1,33 @@
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+1: Line too long (115/100) (line-too-long)
+docs/source/conf.py:62:0: C0301: Line too long (123/100) (line-too-long)
+docs/source/conf.py:78:0: C0301: Line too long (105/100) (line-too-long)
+docs/source/conf.py:79:0: C0301: Line too long (121/100) (line-too-long)
+docs/source/conf.py:110:0: C0301: Line too long (109/100) (line-too-long)
+docs/source/conf.py:150:0: C0301: Line too long (102/100) (line-too-long)
+docs/source/conf.py:21:0: W0622: Redefining built-in 'copyright' (redefined-builtin)
+docs/source/conf.py:12:0: R0402: Use 'from importlib import metadata' instead (consider-using-from-import)
+docs/source/conf.py:20:0: C0103: Constant name "project" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:21:0: C0103: Constant name "copyright" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:22:0: C0103: Constant name "author" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:54:0: C0103: Constant name "master_doc" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:75:0: C0103: Constant name "html_theme" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:76:0: C0103: Constant name "html_title" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:94:0: C0103: Constant name "htmlhelp_basename" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:121:0: C0103: Constant name "latex_logo" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:127:0: C0103: Constant name "latex_show_pagerefs" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:139:0: C0103: Constant name "latex_domain_indices" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:168:0: C0103: Constant name "todo_include_todos" doesn't conform to UPPER_CASE naming style (invalid-name)
+docs/source/conf.py:171:0: C0103: Constant name "myst_heading_anchors" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module tests.test_getting_started
+tests/test_getting_started.py:17:23: W0613: Unused argument 'hello_fixture' (unused-argument)
+************* Module noxfile
+noxfile.py:3:0: C0301: Line too long (103/100) (line-too-long)
+noxfile.py:50:0: W0622: Redefining built-in 'format' (redefined-builtin)
+
+------------------------------------------------------------------
+Your code has been rated at 5.93/10 (previous run: 5.93/10, +0.00)
+
