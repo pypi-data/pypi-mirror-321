@@ -1,0 +1,2 @@
+[console_scripts]
+loggob = loggoblin.__main__:main

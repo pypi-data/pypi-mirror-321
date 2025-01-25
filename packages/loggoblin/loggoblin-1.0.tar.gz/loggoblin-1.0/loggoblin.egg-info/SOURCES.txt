@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+loggoblin/__init__.py
+loggoblin/__main__.py
+loggoblin/cli.py
+loggoblin.egg-info/PKG-INFO
+loggoblin.egg-info/SOURCES.txt
+loggoblin.egg-info/dependency_links.txt
+loggoblin.egg-info/entry_points.txt
+loggoblin.egg-info/top_level.txt
