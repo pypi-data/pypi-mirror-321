@@ -1,0 +1,2 @@
+[console_scripts]
+web-novel-scrapper = web_novel_scrapper.__main__:cli
