@@ -1,0 +1,13 @@
+DataElevate/EDAerror.py,sha256=w2yyvL3TjhJ64YIbMS4QFk9xgDH6IMTLPmsJrEJKfhA,1698
+DataElevate/GoogleDrive_api.py,sha256=2K1xXFv9yxsusq4GbeGnFA5o6l2PWfuCnPgnVXh30HY,3677
+DataElevate/__init__.py,sha256=UmZufCwb95RAc3YkAjBGnPbr6HDSEenGEgXvhepYGeE,326
+DataElevate/download.py,sha256=KWhfHZMQ-DWTUnDnQPBrKcavBVud3KZkoM5LQ6h9t94,7074
+DataElevate/extractor.py,sha256=TzXz8jsjQRM36-IgU8mcCrr-bC8cBRX-yLayTbYYskA,1725
+DataElevate/kaggle_api.py,sha256=zpg564wy4G-wygXWb2cD_NXZgNbl_53jmeKyyeepZLE,2596
+DataElevate/load_data.py,sha256=F0D6u8k_yplspb9t1xyfRAX4CiN1cz8lhAfdt8I7OMQ,4595
+DataElevate/load_data_api.py,sha256=XouE6GxBkgHgCoLyWi205nsJFaa4RAFLAx3L_dSfIw4,699
+DataElevate-1.0.0.dist-info/LICENSE,sha256=1qGcEKKyVxSpqOQlJvQLn6Q3ylnrTNrkmU9pZC4hVNQ,1071
+DataElevate-1.0.0.dist-info/METADATA,sha256=cJh4X1SUMG6EsRCZI13xmvpoKWGyk-8VRNZpg_8KS2o,5337
+DataElevate-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+DataElevate-1.0.0.dist-info/top_level.txt,sha256=PLRxl763YmskMYPuH-AWOo0m_-CMLvL6YBDE_nVw628,12
+DataElevate-1.0.0.dist-info/RECORD,,
