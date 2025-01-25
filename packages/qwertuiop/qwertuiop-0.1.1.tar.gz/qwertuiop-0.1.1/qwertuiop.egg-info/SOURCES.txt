@@ -1,0 +1,7 @@
+setup.py
+qwertuiop/__init__.py
+qwertuiop/main.py
+qwertuiop.egg-info/PKG-INFO
+qwertuiop.egg-info/SOURCES.txt
+qwertuiop.egg-info/dependency_links.txt
+qwertuiop.egg-info/top_level.txt
