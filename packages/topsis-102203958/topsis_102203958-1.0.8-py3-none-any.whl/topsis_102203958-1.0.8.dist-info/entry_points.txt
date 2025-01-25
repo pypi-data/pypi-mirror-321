@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = pratyush_102203958:main
