@@ -1,0 +1,2 @@
+[console_scripts]
+duckql-cli = duckql.cli:cli
