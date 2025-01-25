@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/vcdparser/__init__.py
+src/vcdparser/parser.py
+src/vcdparser.egg-info/PKG-INFO
+src/vcdparser.egg-info/SOURCES.txt
+src/vcdparser.egg-info/dependency_links.txt
+src/vcdparser.egg-info/entry_points.txt
+src/vcdparser.egg-info/top_level.txt
