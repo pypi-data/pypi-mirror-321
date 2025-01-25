@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "screenshot-assistant"
+version = "0.1.0"
+authors = [{ name = "tcsenpai", email = "tcsenpai@discus.sh" }]
+description = "A Wayland screenshot assistant with LLM integration"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "build>=1.2.2.post1",
+    "mss>=10.0.0",
+    "pillow>=11.1.0",
+    "python-dotenv>=1.0.1",
+    "python-xlib>=0.33",
+    "requests>=2.32.3",
+    "tk>=0.1.0",
+    "twine>=6.0.1",
+]
+
+[project.scripts]
+screenshot-assistant = "screenshot_assistant.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/screenshot_assistant"]

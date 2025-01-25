@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: screenshot-assistant
+Version: 0.1.0
+Summary: A Wayland screenshot assistant with LLM integration
+Author-email: tcsenpai <tcsenpai@discus.sh>
+Requires-Python: >=3.11
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: mss>=10.0.0
+Requires-Dist: pillow>=11.1.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: python-xlib>=0.33
+Requires-Dist: requests>=2.32.3
+Requires-Dist: tk>=0.1.0
+Requires-Dist: twine>=6.0.1
+Description-Content-Type: text/markdown
+
+# Screenshot Assistant
+
+A Wayland screenshot assistant with LLM integration. Capture screenshots and analyze them using Ollama's LLaVA model.
+
+## Installation
+
+```bash
+pip install screenshot-assistant
+```
+
+## Requirements
+
+- Wayland compositor (Sway, Hyprland, or other wlroots-based)
+- grim (screenshot utility)
+- slurp (area selection)
+- imv (image viewer)
+- Ollama with LLaVA model installed
+
+## Usage
+
+You can run the assistant in two ways:
+
+1. As a command:
+
+```bash
+screenshot-assistant
+```
+
+2. Using the provided run script:
+
+```bash
+./run
+```
+
+## Configuration
+
+Create a `.env` file with the following options:
+
+```env
+OLLAMA_URL=http://localhost:11434/api/generate
+OLLAMA_MODEL=llava
+WINDOW_TITLE=Screenshot Assistant
+SCREENSHOT_MODE=active  # Options: all, active, select
+```
+
+## Development
+
+To set up for development:
+
+```bash
+git clone https://github.com/tcsenpai/screenshot-assistant.git
+cd screenshot-assistant
+uv venv .venv
+uv pip install -e .
+```
