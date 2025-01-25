@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: topsis-102203958
+Version: 1.0.0
+Summary: A Python package to calculate TOPSIS scores
+Author: Pratyush Sharma
+Author-email: pratyushksk@gmail.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
