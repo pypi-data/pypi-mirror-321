@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/USDOLLAR/__init_.py
+src/USDOLLAR.egg-info/PKG-INFO
+src/USDOLLAR.egg-info/SOURCES.txt
+src/USDOLLAR.egg-info/dependency_links.txt
+src/USDOLLAR.egg-info/top_level.txt
