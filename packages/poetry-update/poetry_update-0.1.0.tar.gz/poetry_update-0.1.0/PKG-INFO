@@ -1,0 +1,76 @@
+Metadata-Version: 2.3
+Name: poetry-update
+Version: 0.1.0
+Summary: A CLI tool to safely update Poetry packages
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: loguru (>=0.7.3,<0.8.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# Poetry Update
+
+A CLI tool to safely update Poetry packages with dependency conflict checking.
+
+## Installation
+bash
+pip install poetry-update
+
+
+
+## Usage
+
+Update a single package:
+
+bash
+poetry-update package-name
+
+Update all packages in your project:
+
+bash
+poetry-update --all
+
+
+Options:
+- `--verbose`, `-v`: Enable verbose logging
+- `--all`, `-a`: Update all packages in pyproject.toml
+
+## Features
+
+- Safely updates Poetry packages to their latest versions
+- Performs dry-run checks before actual updates
+- Can update single package or all packages
+- Verbose logging option for debugging
+- Maintains dependency compatibility
+
+## Development
+
+Clone the repository:
+
+bash
+git clone https://github.com/rawheel/poetry-update.git
+cd poetry-update
+
+Install dependencies:
+
+bash
+poetry install
+
+Run tests:
+
+bash
+poetry run pytest
+
+
+## License
+
+MIT License
