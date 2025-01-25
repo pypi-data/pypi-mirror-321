@@ -1,0 +1,12 @@
+git_hooks_1c-9.10.7.dist-info/METADATA,sha256=FwwWTw296vVdmv36xUl0qWn0q_5oEysHdzOxWscu_HY,2551
+git_hooks_1c-9.10.7.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+git_hooks_1c-9.10.7.dist-info/entry_points.txt,sha256=mgPDknucifsPGwjF5rkgda8so2cgNnT-K4CXrllklkQ,67
+git_hooks_1c/__about__.py,sha256=CQX4ZmILyTP4myr2A0fmWqWtB5Mo47wxuVcUCttP_WI,151
+git_hooks_1c/__init__.py,sha256=IEB5dGeA4iyxb4kVc0u54jug4RWKLisuPANbCG2R3ZE,129
+git_hooks_1c/__main__.py,sha256=bWjsy5zuv5x_e8s9-Kss-lc0gy0XhlGpU_4pU0x6wbo,220
+git_hooks_1c/cli.py,sha256=ad-iGwXPPbXBJx16jumtHnnXOwUF0TzXxCEuPBEqkI0,995
+git_hooks_1c/core.py,sha256=IESBK9S9MRNZ6v_EcAdC3Zj-xluPoW6uia89Zc7xv1I,356
+git_hooks_1c/install.py,sha256=tmEEA7DbUDCkj1OQA0yJWMt2DeDcwJqizdpxWq1AdqU,1856
+git_hooks_1c/pre_commit.py,sha256=t7W5CH6qa3S8zbN7UJnRL8i2FsTsFcjRwQGRMph3yxE,3834
+git_hooks_1c/uninstall.py,sha256=aAi8TX_FKPa1CNeWyYkNg27wgIzGv37D9CrXD1ctRAU,1200
+git_hooks_1c-9.10.7.dist-info/RECORD,,
