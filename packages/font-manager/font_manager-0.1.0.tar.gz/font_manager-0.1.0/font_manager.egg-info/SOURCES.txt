@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+font_manager/TT Interphases Pro Trial Condensed DemiBold.ttf
+font_manager/__init__.py
+font_manager/font_manager.py
+font_manager.egg-info/PKG-INFO
+font_manager.egg-info/SOURCES.txt
+font_manager.egg-info/dependency_links.txt
+font_manager.egg-info/requires.txt
+font_manager.egg-info/top_level.txt
