@@ -1,0 +1,10 @@
+aioitertools
+
+[SQL]
+duckdb_engine>=0.14.0
+inflection>=0.5.1
+pypika>=0.36.5
+sqlmodel@ git+https://github.com/adsharma/sqlmodel.git@sqlmodel_rebuild
+
+[graphql]
+strawberry>=0.37.1
