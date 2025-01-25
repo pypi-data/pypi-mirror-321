@@ -1,0 +1,10 @@
+vertexdata/__init__.py,sha256=kNvvcjlsv0NTjzjP-3gRSaKwZa3x6y78n5UhTalvOUI,96
+vertexdata/__main__.py,sha256=OULri6WgRtDoMWSwIDBG0VBdNum8CPIpiH1DxEsse94,66
+vertexdata/cli.py,sha256=C6pZIbjw0U8J7pRip6GmmYcGFLnv_PGL8El7zZVyDIo,1418
+vertexdata/main.py,sha256=1xTckj7UJASe3zKE9LptnyniFRTXRwFIQJloqZJ2A7s,335
+vertexdata/VertexParser.py,sha256=Iq05RnD0h9BSByhoewtZo93avP70WfvHwTsArNwJeks,5704
+vertexdata-0.0.1.dist-info/entry_points.txt,sha256=50pEAtHaXJXwQ8dt8VPxiILKNfRdSldMNWjrkJpto9o,51
+vertexdata-0.0.1.dist-info/LICENSE,sha256=Zv_IdeZ9rWw2zNGFW6ymAgM-QuYdEWXUJcPZrQ0h5vA,1085
+vertexdata-0.0.1.dist-info/METADATA,sha256=BerBF72hH2pNd0i9Vr6BKtJOfjLOSOVSV7I6OGNaO3I,3306
+vertexdata-0.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+vertexdata-0.0.1.dist-info/RECORD,,

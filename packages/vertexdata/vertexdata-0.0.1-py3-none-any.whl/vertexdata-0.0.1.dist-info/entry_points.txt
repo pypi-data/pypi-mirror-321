@@ -1,0 +1,3 @@
+[console_scripts]
+VertexData=VertexData.main:main
+
