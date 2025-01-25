@@ -1,0 +1,1 @@
+from markdown_latex_prerender.extension import LatexExtension
