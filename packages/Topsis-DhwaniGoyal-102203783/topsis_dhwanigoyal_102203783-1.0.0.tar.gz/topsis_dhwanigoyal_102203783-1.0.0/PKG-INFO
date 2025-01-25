@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Topsis-DhwaniGoyal-102203783
+Version: 1.0.0
+Summary: A Python implementation of the TOPSIS method
+Author: Dhwani Goyal
+Author-email: dgoyal_be22@thapar.edu
+Requires-Dist: pandas
+Requires-Dist: numpy
