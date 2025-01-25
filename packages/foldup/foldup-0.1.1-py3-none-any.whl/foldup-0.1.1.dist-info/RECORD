@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/foldup/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+src/foldup/cli.py,sha256=bupWpA0OsOSbFMqNdlnqiAj20-V15WbzHv1k4t5Jxxs,4408
+src/foldup/core.py,sha256=4FIUB83xTtn4VTmThOsOkT5qZGzkLHD63YU6e9tv1-s,5700
+src/foldup/defaults.py,sha256=lTWnAoffxqeCUqqf36svPycS2kWHZFpPjLVxlUdGdqE,481
+src/foldup/utils.py,sha256=Za6HZS2RrGuUnCS7LiZgzezKzUx_97WXzXUuP_Bsxt4,5430
+foldup-0.1.1.dist-info/METADATA,sha256=AA5SCe7jXtCToXOspfzXAiROLa586C4KdfPpPlll4ao,3999
+foldup-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+foldup-0.1.1.dist-info/entry_points.txt,sha256=283acVoVyg8B5GRzLTY60G834WNCqqVGq--KWWfDOrg,47
+foldup-0.1.1.dist-info/licenses/LICENSE,sha256=3J7Vx-m5e6LFlmvkiw9UOzY-xvnZX_G7cXZei2dGWxQ,1073
+foldup-0.1.1.dist-info/RECORD,,
