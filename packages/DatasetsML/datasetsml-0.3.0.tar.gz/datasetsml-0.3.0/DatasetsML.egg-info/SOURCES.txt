@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+DatasetsML/__init__.py
+DatasetsML/main.py
+DatasetsML.egg-info/PKG-INFO
+DatasetsML.egg-info/SOURCES.txt
+DatasetsML.egg-info/dependency_links.txt
+DatasetsML.egg-info/requires.txt
+DatasetsML.egg-info/top_level.txt
