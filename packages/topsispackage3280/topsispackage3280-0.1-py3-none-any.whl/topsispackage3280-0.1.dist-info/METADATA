@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: topsispackage3280
+Version: 0.1
+Summary: A TOPSIS implementation package
+Home-page: https://github.com/bhumiii2114/topsis_package
+Author: Bhumika Tandon
+Author-email: bhumii2114@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+
