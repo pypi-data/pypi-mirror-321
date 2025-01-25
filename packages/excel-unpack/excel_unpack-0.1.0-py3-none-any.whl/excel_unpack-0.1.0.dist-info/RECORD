@@ -1,0 +1,9 @@
+excelunpack/__init__.py,sha256=A6SO0E2HPy3v7ZclgPRv7kV5bvUO7-21Rl94TWUB64M,115
+excelunpack/extract_attachments.py,sha256=1G0RownVmt_14vf9Es3drM0xtA2S1fhMCCOFodvmUag,4468
+excelunpack/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excel_unpack-0.1.0.dist-info/LICENSE,sha256=aYSNP-3xdfj0SkTygRMoHMBYf9hh7Twl7qRzurBpJto,16
+excel_unpack-0.1.0.dist-info/METADATA,sha256=8drPDkmpZSQd_kxMSt_3xEQUP5ewPpeKlzJz9ItfX5I,1632
+excel_unpack-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+excel_unpack-0.1.0.dist-info/entry_points.txt,sha256=o-4Vbx_2djQzpTdu35QjoNkY9_369KWB-cB6U3aGqFY,107
+excel_unpack-0.1.0.dist-info/top_level.txt,sha256=kjXbt0v30qFWCYPsVnDgxMp-38eU_isRQzmUU-iz8rM,12
+excel_unpack-0.1.0.dist-info/RECORD,,
