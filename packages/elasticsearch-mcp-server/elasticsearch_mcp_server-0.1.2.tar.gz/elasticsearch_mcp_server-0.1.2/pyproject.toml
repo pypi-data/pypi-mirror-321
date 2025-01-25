@@ -1,0 +1,20 @@
+[project]
+name = "elasticsearch-mcp-server"
+version = "0.1.2"
+description = "MCP Server for interacting with Elasticsearch"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "elasticsearch>=8.0.0",
+    "mcp>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "fastmcp>=0.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+elasticsearch-mcp-server = "elasticsearch_mcp_server:main"
