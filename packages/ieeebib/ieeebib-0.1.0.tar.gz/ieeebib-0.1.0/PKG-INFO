@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: ieeebib
+Version: 0.1.0
+Summary: IEEE BibTeX citation generator with DOI/url lookup
+Home-page: https://github.com/elemenceOR/bibtex-generator
+Author: Sadeep Ariyarathna
+Author-email: Sadeep Ariyarathna <sadeepari@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+**#** IEEE BibTeX Generator
+
+A Python library for generating IEEE-format BibTeX citations with DOI lookup support.
+
+**##** Installation
+
+```bash
+pip install ieeebib
+```

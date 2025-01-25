@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ieeebib.egg-info/PKG-INFO
+ieeebib.egg-info/SOURCES.txt
+ieeebib.egg-info/dependency_links.txt
+ieeebib.egg-info/requires.txt
+ieeebib.egg-info/top_level.txt
+tests/test_generator.py
