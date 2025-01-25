@@ -1,0 +1,238 @@
+Metadata-Version: 2.4
+Name: topsis-sameer-102203785
+Version: 0.1.0
+Summary: A package to calculate TOPSIS scores from CSV input files
+Project-URL: Homepage, https://github.com/yourusername/topsis_calculator
+Project-URL: Bug Tracker, https://github.com/yourusername/topsis_calculator/issues
+Author-email: Sameer Jain <jainsameer2003@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.0.0
+Description-Content-Type: text/markdown
+
+
+# TOPSIS Python Package
+
+This Python package implements the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) method to rank alternatives based on multiple criteria. It supports both numeric and adjective-based data for the features, with mappings to numeric scales for the adjectives. The package calculates the TOPSIS scores and ranks for each object based on the provided decision matrix, weights, and impacts for each criterion.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+  - [Initialize the TOPSIS Class](#initialize-the-topsis-class)
+  - [Data Format](#data-format)
+  - [Handling String Data (Optional)](#handling-string-data-optional)
+  - [Calculate the TOPSIS Scores and Ranks](#calculate-the-topsis-scores-and-ranks)
+  - [Result](#result)
+  - [Customization](#customization)
+- [Methods](#methods)
+- [Error Handling](#error-handling)
+- [Example Code](#example-code)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To install and use this package, clone this repository or download the Python file and its dependencies.
+
+### Dependencies
+
+This package requires the following Python libraries:
+
+- `pandas`
+- `numpy`
+
+You can install them using pip:
+
+```bash
+pip install pandas numpy
+```
+
+## Usage
+
+### Initialize the TOPSIS Class
+
+To use the TOPSIS method, first initialize the `Topsis` class with the required parameters:
+
+```python
+from topsis_calculator import Topsis
+
+# Define the path to your CSV file, weights, and impacts
+weights = [1, 1, 2, 0.5, 0.75]  # Example weights for 5 criteria
+impacts = [1, 1, -1, -1, -1]  # +1 for benefit, -1 for cost
+
+# Initialize the TOPSIS calculator
+topsis = Topsis('data.csv', weights, impacts)
+```
+
+### Data Format
+
+The data file should be in CSV format with the following requirements:
+
+- The first column should contain object identifiers (e.g., names or IDs).
+- The subsequent columns should contain numerical values or strings representing the features/criteria for each object.
+- The order of the columns should correspond to the order of impacts and weights.
+
+#### Example CSV File (`data.csv`):
+
+| Object_ID | Criterion_1 | Criterion_2 | Criterion_3 | Criterion_4 |
+|-----------|-------------|-------------|-------------|-------------|
+| Object_1  | 6           | 8           | 7           | excellent   |
+| Object_2  | 5           | 7           | 9           | good        |
+| Object_3  | 7           | 6           | 6           | average     |
+
+### Handling String Data (Optional)
+
+If some criteria contain string values (e.g., adjectives for a feature like "Looks"), you need to map them to a numeric scale before using them in the TOPSIS calculation. For instance, the string values for `Criterion_4` could represent ratings like "excellent" or "good".
+
+To handle string values in your data:
+
+```python
+import pandas as pd
+
+# Load the data
+data = pd.read_csv('data.csv')
+
+# Example mapping for an adjective column (replace with your column and values)
+quality_mapping = {'bad': 1, 'below average': 2, 'average': 3, 'good': 4, 'excellent': 5}
+
+# Convert the string column to lowercase (optional, if your values are case-insensitive)
+data['Looks'] = data['Looks'].str.lower()  # Replace 'Looks' with your column name
+
+# Map the adjective column to numerical values using the mapping
+data['Looks'] = data['Looks'].map(quality_mapping)
+
+# Save the modified data
+data.to_csv('data.csv', index=False)
+```
+
+After applying this step, the adjective-based column will be mapped to a numeric scale, and you can proceed with the TOPSIS calculation.
+
+### Calculate the TOPSIS Scores and Ranks
+
+Once the class is initialized with the file and parameters, call the `calculate()` method to get the results:
+
+```python
+# Calculate TOPSIS scores and ranks
+results = topsis.calculate()
+
+# Print the results
+print("\nTOPSIS Results:")
+print(results)
+```
+
+### Result
+
+The `calculate()` method returns a pandas DataFrame containing the following columns:
+
+- `Object_ID`: The identifiers of the objects (from the first column of the input file).
+- `TOPSIS_Score`: The calculated TOPSIS score for each object.
+- `Rank`: The rank of each object based on the TOPSIS score (1 being the best).
+
+#### Example Output:
+
+| Object_ID | TOPSIS_Score | Rank |
+|-----------|--------------|------|
+| Object_1  | 0.652        | 2    |
+| Object_2  | 0.789        | 1    |
+| Object_3  | 0.468        | 3    |
+
+### Customization
+
+You can customize the behavior by:
+
+- Adjusting the weights list to represent the importance of each criterion.
+- Adjusting the impacts list to indicate whether each criterion is a benefit (+1) or cost (-1).
+- Applying your own mapping for string data (adjectives) to numeric values if necessary.
+
+#### Example Usage:
+
+```python
+filename = 'data.csv'
+weights = [0.6, 0.3, 0.1]  # 60% weight for criterion 1, 30% for criterion 2, 10% for criterion 3
+impacts = [1, -1, 1]  # Criterion 1 and 3 are benefits, Criterion 2 is a cost
+
+topsis = Topsis(filename, weights, impacts)
+results = topsis.calculate()
+print(results)
+```
+
+## Methods
+
+### `__init__(self, filename: str, weights: List[float], impacts: List[Union[int, float]])`
+
+- `filename`: Path to the input CSV file.
+- `weights`: List of weights for each criterion (should sum to 1 if using relative weights).
+- `impacts`: List of impacts (+1 for benefit, -1 for cost) for each criterion.
+
+### `calculate(self) -> pd.DataFrame`
+
+- Returns: A pandas DataFrame with `Object_ID`, `TOPSIS_Score`, and `Rank` for each object.
+
+## Error Handling
+
+The package performs input validation to ensure the following:
+
+- The number of weights matches the number of criteria (columns) in the input data.
+- All impacts must be either +1 (benefit) or -1 (cost).
+- The input CSV file must exist and contain valid data.
+
+### Common Errors:
+
+- `FileNotFoundError`: Raised if the input CSV file cannot be found.
+- `ValueError`: Raised if there are mismatches in the number of weights/impacts or if the data is invalid.
+- `TypeError`: Raised if the data contains non-numeric values that cannot be converted.
+
+## Example Code
+
+```python
+from topsis_calculator import Topsis
+
+# Define file and parameters
+filename = 'data.csv'
+weights = [1, 1, 2, 0.5, 0.75]
+impacts = [1, 1, -1, -1, -1]
+
+# Create the TOPSIS object
+topsis = Topsis(filename, weights, impacts)
+
+# Calculate the scores and ranks
+results = topsis.calculate()
+
+# Print the results
+print(results)
+```
+
+One plus implementation :
+
+```python
+from topsis_calculator import Topsis
+import pandas as pd
+
+
+# if your data contains string values like adfjectives for a feature, following this else put the data directly at Line 19, skip lines 7-14
+
+# Create sample data
+data = pd.read_csv('data.csv')
+quality_mapping = {'bad': 1,'below average':2, 'average' :3, 'good': 4, 'excellent': 5}
+# also pass the adjective column name as it is in your data 
+data['Looks'] = data['Looks'].str.lower() # this can be skipped if the cases of the values of the mapping and csv file are same
+# You need to do this quality mapping based on your need. Adjective => Rating (your scale)
+data['Looks'] = data['Looks'].map(quality_mapping)
+data.to_csv('data.csv', index=False) # Very important step
+
+# Define weights and impacts
+weights = [1,1,2,0.5,0.75]  # Sum should be 1
+impacts = [1, 1, -1, -1,-1]  # -1 for cost, 1 for benefit
+topsis = Topsis('data.csv', weights, impacts)
+
+# Calculate scores
+results = topsis.calculate()
+
+print("\nTOPSIS Results:")
+print(results)
+```
