@@ -1,0 +1,2 @@
+[console_scripts]
+timelapse-maker = timelapse-maker.cli:main
