@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_JagritGoyal_102217007.egg-info/PKG-INFO
+Topsis_JagritGoyal_102217007.egg-info/SOURCES.txt
+Topsis_JagritGoyal_102217007.egg-info/dependency_links.txt
+Topsis_JagritGoyal_102217007.egg-info/entry_points.txt
+Topsis_JagritGoyal_102217007.egg-info/requires.txt
+Topsis_JagritGoyal_102217007.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py
