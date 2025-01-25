@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: sql_library
+Version: 0.3
+Summary: A simple library for working with PostgreSQL
+Author: Alexey Kalinin
+Author-email: kad2005@list.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SQL Library
+
+Это простая библиотека для работы с PostgreSQL на Python.
+
+## Установка
+
+Установите библиотеку через pip:
+
+```bash
+pip install sql-library
+
+Пример использования:
+from sql_library import Database
+
+db = Database(dbname="mydb", user="myuser", password="mypassword")
+db.execute("CREATE TABLE IF NOT EXISTS users (id SERIAL PRIMARY KEY, name TEXT)")
+db.close()
