@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-baneet-102203180 = topsis_baneet_102203180.topsis:main
