@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "graphUtilscd_harshita"
+authors = [{name = "Harshita", email = "harshita19062004@gmail.com"}]
+readme = "README.md"  # This is the correct place to define it.
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
