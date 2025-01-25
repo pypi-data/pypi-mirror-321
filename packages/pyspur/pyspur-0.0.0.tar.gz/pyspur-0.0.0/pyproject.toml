@@ -1,0 +1,7 @@
+[project]
+name = "pyspur"
+authors = [
+    {name = "Srijan Patel", email = "srijan@pyspur.dev"},
+]
+description = "Coming soon"
+version = "0.0.0"

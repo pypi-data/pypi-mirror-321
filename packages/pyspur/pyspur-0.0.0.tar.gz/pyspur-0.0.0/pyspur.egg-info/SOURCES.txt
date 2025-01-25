@@ -1,0 +1,6 @@
+pyproject.toml
+pyspur/__init__.py
+pyspur.egg-info/PKG-INFO
+pyspur.egg-info/SOURCES.txt
+pyspur.egg-info/dependency_links.txt
+pyspur.egg-info/top_level.txt
