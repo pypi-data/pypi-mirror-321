@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: Topsis-Radhika-102203226
+Version: 0.1
+Summary: TOPSIS is a decision-making technique that evaluates and ranks alternatives by measuring their relative distance to the ideal and worst-case solutions
+Home-page: https://github.com/Rad1509/Topsis-Radhika-102203226
+Author: Radhika
+Author-email: radhikaaggarwal1509@gmail.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
