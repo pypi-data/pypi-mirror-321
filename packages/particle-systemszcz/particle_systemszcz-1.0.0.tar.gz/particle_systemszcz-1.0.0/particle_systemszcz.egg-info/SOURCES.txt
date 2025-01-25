@@ -1,0 +1,10 @@
+README.md
+setup.py
+particle_systemszcz.egg-info/PKG-INFO
+particle_systemszcz.egg-info/SOURCES.txt
+particle_systemszcz.egg-info/dependency_links.txt
+particle_systemszcz.egg-info/requires.txt
+particle_systemszcz.egg-info/top_level.txt
+src/__init__.py
+src/particle.py
+src/particle_system.py
