@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/SK8plotlib.egg-info/PKG-INFO
+src/SK8plotlib.egg-info/SOURCES.txt
+src/SK8plotlib.egg-info/dependency_links.txt
+src/SK8plotlib.egg-info/requires.txt
+src/SK8plotlib.egg-info/top_level.txt
+src/sk8plotlib/__init__.py
+src/sk8plotlib/sk8plotlib.py
