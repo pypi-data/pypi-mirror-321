@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="AddSubmoduleDialog" parent="AdwMessageDialog">
+    <property name="heading">Submodule</property>
+    <property name="default-width">480</property>
+    <child>
+      <object class="GtkListBox" id="remotes">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+        <child>
+          <object class="AdwEntryRow" id="entry_repo">
+            <property name="title">Repository URL</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwEntryRow" id="entry_path">
+            <property name="title">Relative Path</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

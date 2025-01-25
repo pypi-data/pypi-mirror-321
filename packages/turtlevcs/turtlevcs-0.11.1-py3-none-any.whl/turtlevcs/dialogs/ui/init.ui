@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="InitWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="init_button">
+                <property name="label">Init</property>
+                <property name="valign">center</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <signal name="clicked" handler="_ok_clicked" />
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox" id="content_box">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox" >
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwEntryRow" id="directory_entry">
+                    <property name="title">Path</property>
+                    <property name="selectable">0</property>
+                    <signal name="changed" handler="_directory_entry_changed_handler" />
+                    <child>
+                      <object class="GtkButton">
+                        <property name="icon-name">folder-open-symbolic</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_directory_entry_button_handler" />
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="init_settings">
+                    <property name="title">Settings</property>
+                    <property name="subtitle">Init Settings</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="bare_checkbutton">
+                        <property name="label">Bare Repository</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

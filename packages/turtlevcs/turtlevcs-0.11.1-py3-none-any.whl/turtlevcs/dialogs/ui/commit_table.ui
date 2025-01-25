@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="CommitTable" parent="GtkColumnView">
+    <property name="vexpand">true</property>
+    <property name="model">
+      <object class="GtkSingleSelection" id="selection_model">
+      </object>
+    </property>
+    <signal name="activate" handler="_listview_activated_handler" />
+    <style>
+      <class name="card"/>
+    </style>
+    <child>
+      <object class="GtkColumnViewColumn" id="column_selected">
+        <property name="title"></property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_selected_setup_handler" />
+            <signal name="teardown" handler="_column_status_teardown_handler" />
+            <signal name="bind" handler="_column_selected_bind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkColumnViewColumn">
+        <property name="title">Path</property>
+        <property name="expand">1</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_path_setup_handler" />
+            <signal name="teardown" handler="_column_status_teardown_handler" />
+            <signal name="bind" handler="_column_path_bind_handler" />
+            <signal name="unbind" handler="_column_path_unbind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+    <!-- <child> TODO do we want an extension column?
+      <object class="GtkColumnViewColumn">
+        <property name="title">Extension</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_extension_setup_handler" />
+            <signal name="setup" handler="_column_status_teardown_handler" />
+            <signal name="bind" handler="_column_extension_bind_handler" />
+          </object>
+        </property>
+      </object>
+    </child> -->
+    <child>
+      <object class="GtkColumnViewColumn">
+        <property name="title">Status</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_status_setup_handler" />
+            <signal name="teardown" handler="_column_status_teardown_handler" />
+            <signal name="bind" handler="_column_status_bind_handler" />
+            <signal name="unbind" handler="_column_status_unbind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+  </template>
+</interface>

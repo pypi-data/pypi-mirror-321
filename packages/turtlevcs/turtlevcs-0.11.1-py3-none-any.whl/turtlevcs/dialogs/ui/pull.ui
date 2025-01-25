@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="PullWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="pull_button">
+                <property name="label">Pull</property>
+                <property name="valign">center</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <signal name="clicked" handler="_ok_clicked" />
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox" id="content_box">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox" >
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwActionRow" id="pull_settings">
+                    <property name="title">Action</property>
+                    <property name="subtitle">Pull Action</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch_only">
+                        <property name="label">Fetch Only</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch_and_merge">
+                        <property name="label">Fetch and Merge</property>
+                        <property name="group">fetch_only</property>
+                        <property name="active">1</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch_and_rebase">
+                        <property name="label">Fetch and Rebase</property>
+                        <property name="group">fetch_and_merge</property>
+                        <property name="sensitive">0</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <!-- <child>
+              <object class="GtkScrolledWindow" id="scrolled_window"></object>
+            </child> -->
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

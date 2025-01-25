@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <template class="LogFilter" parent="GtkBox">
+
+    <child>
+      <object class="GtkListBox" id="hidden_sources">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+      </object>
+    </child>
+
+  </template>
+</interface>

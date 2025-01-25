@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="CommitWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <property name="default-height">540</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar" id="header_bar">
+            <child>
+              <object class="GtkButton" id="commit_button">
+                <property name="label">Commit</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <child>
+                  <object class="GtkShortcutController">
+                    <property name="scope">managed</property>
+                    <child>
+                      <object class="GtkShortcut">
+                        <property name="trigger">&lt;Control&gt;Return</property>
+                        <property name="action">activate</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <signal name="clicked" handler="_ok_clicked" />
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox">
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwEntryRow" id="message">
+                    <property name="title">Message</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkButton">
+                        <property name="icon-name">insert-text-symbolic</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_message_entry_button_handler" />
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Settings</property>
+                    <property name="subtitle">Commit Settings</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="amend">
+                        <property name="label">Amend</property>
+                        <property name="valign">center</property>
+                        <signal name="toggled" handler="_amend_toggle_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="show_unversioned">
+                        <property name="label">Show unversioned</property>
+                        <property name="valign">center</property>
+                        <property name="active">1</property>
+                        <signal name="toggled" handler="_show_unversioned_toggle_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="show_ignored">
+                        <property name="label">Show ignored</property>
+                        <property name="valign">center</property>
+                        <signal name="toggled" handler="_show_ignored_toggle_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="gpg_sign">
+                        <property name="label">Sign</property>
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkScrolledWindow" id="scolled_window">
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

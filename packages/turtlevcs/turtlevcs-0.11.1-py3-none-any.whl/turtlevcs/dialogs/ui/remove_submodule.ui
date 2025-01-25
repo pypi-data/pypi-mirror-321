@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="RemoveSubmoduleDialog" parent="AdwMessageDialog">
+    <property name="heading">Submodule</property>
+    <property name="default-width">480</property>
+    <child>
+      <object class="GtkListBox" id="remotes">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title">Complete removal</property>
+            <property name="subtitle">WARNING: removes the entry in .git/modules</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkSwitch" id="complete_removal">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

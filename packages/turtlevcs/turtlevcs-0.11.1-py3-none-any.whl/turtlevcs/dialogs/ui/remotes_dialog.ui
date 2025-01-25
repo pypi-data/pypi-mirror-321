@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="RemoteDialog" parent="AdwMessageDialog">
+    <property name="heading">Remote</property>
+    <property name="default-width">480</property>
+    <child>
+      <object class="GtkListBox" id="remotes">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+        <child>
+          <object class="AdwEntryRow" id="entry_name">
+            <property name="title">Name</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwEntryRow" id="entry_fetch">
+            <property name="title">Url</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwEntryRow" id="entry_push">
+            <property name="title">Push Url (optional)</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

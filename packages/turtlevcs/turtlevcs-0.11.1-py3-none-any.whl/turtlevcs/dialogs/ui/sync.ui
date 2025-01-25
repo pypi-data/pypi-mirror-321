@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="SyncWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <property name="default-height">540</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="AdwSplitButton" id="pull_button">
+                <property name="label">Pull</property>
+                <property name="width-request">80</property>
+                <property name="valign">center</property>
+                <property name="menu-model">pull_menu</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <signal name="clicked" handler="_pull_clicked" />
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="push_button">
+                <property name="label">Push</property>
+                <property name="width-request">80</property>
+                <property name="valign">center</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <signal name="clicked" handler="_push_clicked" />
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox" id="content_box">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox" >
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwComboRow" id="branch">
+                    <property name="title">Branch</property>
+                    <property name="subtitle">Local branch</property>
+                    <property name="selectable">0</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="branch_model">
+                      </object>
+                    </property>
+                    <signal name="notify::selected-item" handler="_branch_changed_handler" />
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="upstream">
+                    <property name="title">Upstream</property>
+                    <property name="subtitle">Upstream repository</property>
+                    <property name="selectable">0</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="upstream_model">
+                      </object>
+                    </property>
+                    <signal name="notify::selected-item" handler="_upstream_changed_handler" />
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="settings">
+                    <property name="title">Settings</property>
+                    <property name="subtitle">Pull and Push Settings</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="with_tags">
+                        <property name="label">Tags</property>
+                        <property name="sensitive">0</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="force">
+                        <property name="label">Force</property>
+                        <property name="sensitive">0</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="force_with_lease">
+                        <property name="label">Force with Lease</property>
+                        <property name="sensitive">0</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkScrolledWindow" id="scrolled_window"></object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+
+  <!-- menu -->
+  <menu id="pull_menu">
+    <section>
+      <item>
+        <attribute name="label">Pull</attribute>
+        <attribute name="action">win.action-pull</attribute>
+      </item>
+      <item>
+        <attribute name="label">Fetch</attribute>
+        <attribute name="action">win.action-fetch</attribute>
+      </item>
+      <item>
+        <attribute name="label">Fetch and Rebase</attribute>
+        <attribute name="action">win.action-fetch-and-rebase</attribute>
+      </item>
+    </section>
+  </menu>
+
+</interface>

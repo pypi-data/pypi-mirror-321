@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ReferencesWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">480</property>
+    <property name="default-height">480</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="tooltip-text" translatable="yes">Settings</property>
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox" id="content_box">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkScrolledWindow" id="scrolled_window">
+                <child>
+                  <object class="GtkColumnView" id="references_view">
+                    <property name="vexpand">true</property>
+                    <property name="model">
+                      <object class="GtkSingleSelection" id="selection_model">
+                      </object>
+                    </property>
+                    <signal name="activate" handler="_listview_activated_handler" />
+                    <style>
+                      <class name="card"/>
+                    </style>
+                    <child>
+                      <object class="GtkColumnViewColumn">
+                        <property name="title">Reference</property>
+                        <property name="expand">1</property>
+                        <property name="factory">
+                          <object class="GtkSignalListItemFactory">
+                            <signal name="setup" handler="_column_name_setup_handler" />
+                            <signal name="teardown" handler="_column_name_teardown_handler" />
+                            <signal name="bind" handler="_column_name_bind_handler" />
+                            <signal name="unbind" handler="_column_name_unbind_handler" />
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+
+  <!-- menu -->
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Show _Branches</attribute>
+        <attribute name="action">win.show-local-branches</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Show _Remote Branches</attribute>
+        <attribute name="action">win.show-remote-branches</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Show _Tags</attribute>
+        <attribute name="action">win.show-tags</attribute>
+      </item>
+    </section>
+  </menu>
+
+</interface>

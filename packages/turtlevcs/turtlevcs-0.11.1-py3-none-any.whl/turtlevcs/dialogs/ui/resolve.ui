@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ResolveWindow" parent="AdwApplicationWindow">
+    <property name="title">Resolve</property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <property name="default-height">540</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox" id="merge_info">
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwActionRow" id="merge_info_row">
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkButton" id="abort_button">
+                        <property name="label">Abort</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_abort_button_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="merge_button">
+                        <property name="label">Merge</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_merge_button_handler" />
+                        <style>
+                          <class name="suggested-action"/>
+                        </style>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkScrolledWindow">
+                <child>
+                  <object class="GtkColumnView">
+                    <property name="vexpand">true</property>
+                    <property name="model">
+                      <object class="GtkSingleSelection" id="selection_model">
+                      </object>
+                    </property>
+                    <signal name="activate" handler="_listview_activated_handler" />
+                    <style>
+                      <class name="card"/>
+                    </style>
+                    <child>
+                      <object class="GtkColumnViewColumn">
+                        <property name="title">Path</property>
+                        <property name="expand">1</property>
+                        <property name="factory">
+                          <object class="GtkSignalListItemFactory">
+                            <signal name="setup" handler="_column_path_setup_handler" />
+                            <signal name="teardown" handler="_column_path_teardown_handler" />
+                            <signal name="bind" handler="_column_path_bind_handler" />
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

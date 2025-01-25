@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="SettingsWindow" parent="AdwPreferencesWindow">
+    <property name="title">Turtle Settings</property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="resizable">true</property>
+
+    <child>
+      <object class="AdwPreferencesPage">
+        <property name="title">General</property>
+        <property name="icon-name">preferences-system-symbolic</property>
+
+        <child>
+          <object class="AdwPreferencesGroup" id="git_group">
+            <property name="title">Git</property>
+
+            <child>
+              <object class="AdwEntryRow" id="git_name">
+                <property name="title">Name</property>
+                <property name="sensitive">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwEntryRow" id="git_mail">
+                <property name="title">E-Mail</property>
+                <property name="sensitive">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwExpanderRow" id="git_selected_credentials">
+                <property name="title">Credentials</property>
+                <property name="subtitle">Credential Information for SSH and HTTPS</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Credential Type</property>
+                    <property name="subtitle">Choose Credential Type for SSH</property>
+                    <child>
+                      <object class="GtkCheckButton" id="git_credential_ssh_agent">
+                        <property name="label">SSH Agent</property>
+                        <property name="active">1</property>
+                        <signal name="toggled" handler="_credential_type_changed_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="git_credential_ssh_key">
+                        <property name="label">SSH Key</property>
+                        <property name="group">git_credential_ssh_agent</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwEntryRow" id="git_agent">
+                    <property name="title">SSH Agent Name</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwEntryRow" id="git_ssh_key">
+                    <property name="title">SSH private key</property>
+                    <child>
+                      <object class="GtkButton">
+                        <property name="icon-name">folder-open-symbolic</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_search_ssh_key" />
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="git_https_password_row">
+                    <property name="title">Store HTTPS password</property>
+                    <property name="subtitle">Use secretstorage to store HTTPS password</property>
+                    <child>
+                      <object class="GtkSwitch" id="git_https_store_password">
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwExpanderRow" id="git_gpg_signing">
+                <property name="title">Signing</property>
+                <property name="subtitle">Commit GPG Signing</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Auto Sign</property>
+                    <property name="subtitle">Sign commits by default</property>
+                    <child>
+                      <object class="GtkSwitch" id="git_gpg_sign">
+                        <property name="valign">center</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwEntryRow" id="git_gpg_key">
+                    <property name="title">GPG key (use default if empty)</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Files Plugins</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show Emblems</property>
+                <property name="subtitle">Show Emblems in Files</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="valign">center</property>
+                    <signal name="clicked" handler="_show_emblems_help_clicked" />
+                    <child>
+                      <object class="GtkImage">
+                        <property name="icon-name">help-about-symbolic</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="plugins_show_emblems">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show turtle emblem</property>
+                <property name="subtitle">Show turtle emblem on repository base folder</property>
+                <child>
+                  <object class="GtkSwitch" id="plugins_show_turtle_emblem">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow" id="plugins_show_status_emblem_row">
+                <property name="title">Show repo status emblem</property>
+                <property name="subtitle">Show status emblem on repository base folder</property>
+                <child>
+                  <object class="GtkSwitch" id="plugins_show_status_emblem">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Enable in every folder</property>
+                <property name="subtitle">Enable outside of git repository folders</property>
+                <child>
+                  <object class="GtkSwitch" id="plugins_enable_everywhere">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show Compare</property>
+                <property name="subtitle">Show Compare Menu in Files</property>
+                <child>
+                  <object class="GtkSwitch" id="plugins_show_compare">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow" id="plugins_install_row">
+                <property name="title">Install plugin</property>
+                <property name="subtitle">Install the Files plugin directly into $HOME/.local</property>
+                <child>
+                  <object class="GtkButton" id="plugins_install_files">
+                    <property name="valign">center</property>
+                    <property name="label">Install</property>
+                    <signal name="clicked" handler="_install_files_plugin" />
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Debugging</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Exception Trace</property>
+                <property name="subtitle">Show Full Exception Trace</property>
+                <child>
+                  <object class="GtkSwitch" id="debugging_full_trace">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+    <child>
+      <object class="AdwPreferencesPage">
+        <property name="title">Defaults</property>
+        <property name="icon-name">window-restore-symbolic</property>
+
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Commit</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show Unversioned</property>
+                <property name="subtitle">Show Unversioned Files</property>
+                <child>
+                  <object class="GtkSwitch" id="dialogs_commit_unversioned">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show Ignored</property>
+                <property name="subtitle">Show Ignored Files</property>
+                <child>
+                  <object class="GtkSwitch" id="dialogs_commit_ignored">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwComboRow" id="dialogs_commit_selection">
+                <property name="title">Commit Selection</property>
+                <property name="subtitle">Files to Commit by Default</property>
+                <property name="model">
+                  <object class="GtkStringList">
+                    <items>
+                      <item translatable="yes">None</item>
+                      <item translatable="yes">Selected</item>
+                      <item translatable="yes">All</item>
+                    </items>
+                  </object>
+                </property>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+        <child>
+          <object class="AdwPreferencesGroup" id="credentials_group">
+            <property name="title">Credentials</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Store Passwords</property>
+                <property name="subtitle">Store HTTPS passwords in keyring</property>
+                <child>
+                  <object class="GtkSwitch" id="git_store_password">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Stage</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Show Information</property>
+                <property name="subtitle">Show Information Dialog</property>
+                <child>
+                  <object class="GtkSwitch" id="dialogs_stage_information">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+    <child>
+      <object class="AdwPreferencesPage" id="service_page">
+        <property name="title">Service</property>
+        <property name="icon-name">network-server-symbolic</property>
+
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title">Status</property>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Refresh</property>
+                <property name="subtitle">Refresh status</property>
+                <child>
+                  <object class="GtkButton" id="refresh_service_status">
+                    <property name="valign">center</property>
+                    <signal name="clicked" handler="_refresh_service_status" />
+                    <child>
+                      <object class="GtkImage">
+                        <property name="icon-name">view-refresh</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Pid</property>
+                <property name="subtitle">Process id</property>
+                <child>
+                  <object class="GtkLabel" id="service_pid">
+                    <property name="valign">center</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </template>
+</interface>

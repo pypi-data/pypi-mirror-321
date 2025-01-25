@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <template class="MergeWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="merge_button">
+                <property name="label">Merge</property>
+                <style>
+                  <class name="suggested-action" />
+                </style>
+                <signal name="clicked" handler="_ok_clicked" />
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox">
+                <style>
+                  <class name="boxed-list" />
+                </style>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Merge Head</property>
+                    <property name="subtitle">What to merge</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="branch_button">
+                        <property name="label">Branch</property>
+                        <property name="valign">center</property>
+                        <property name="active">1</property>
+                        <signal name="toggled" handler="_based_on_changed_handler" />
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="commit_button">
+                        <property name="label">Commit</property>
+                        <property name="valign">center</property>
+                        <property name="group">branch_button</property>
+                        <signal name="toggled" handler="_based_on_changed_handler" />
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="branch_row">
+                    <property name="title">Name</property>
+                    <property name="subtitle">Branch Name</property>
+                    <property name="selectable">0</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="branch_model">
+                      </object>
+                    </property>
+                    <!-- <signal name="notify::selected-item" handler="_branch_changed_handler" /> -->
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwEntryRow" id="commit_row">
+                    <property name="title">Commit Hash</property>
+                    <property name="selectable">0</property>
+                    <signal name="changed" handler="_commit_entry_changed_handler" />
+                    <child>
+                      <object class="GtkButton">
+                        <property name="icon-name">search-symbolic</property>
+                        <property name="valign">center</property>
+                        <signal name="clicked" handler="_commit_search_button_handler" />
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Settings</property>
+                    <property name="subtitle">Merge Settings</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="ff_only_button">
+                        <property name="label">FF Only</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="no_ff_button">
+                        <property name="label">No FF</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

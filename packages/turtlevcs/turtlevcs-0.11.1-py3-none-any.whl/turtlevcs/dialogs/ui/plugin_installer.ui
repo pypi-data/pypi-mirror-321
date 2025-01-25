@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="PluginInstaller" parent="AdwMessageDialog">
+    <property name="heading">Install Files Plugin</property>
+    <property name="body">This will copy the file turtle_nautilus_flatpak.py to</property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <!-- <property name="default-width">600</property>
+    <property name="default-height">400</property> -->
+    <child type="extra-child">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">12</property>
+
+        <child>
+          <object class="GtkBox">
+            <property name="halign">center</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="label_path">
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="icon-name">edit-copy-symbolic</property>
+                <signal name="clicked" handler="_copy_path_clicked" />
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">The following python modules need to be available on your system: pygit2, nautilus-python, dbus-python</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Only continue if the requirements are met and you know what you are doing!</property>
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </template>
+</interface>

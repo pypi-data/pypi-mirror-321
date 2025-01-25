@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="PushTable" parent="GtkColumnView">
+    <property name="vexpand">true</property>
+    <property name="model">
+      <object class="GtkSingleSelection" id="selection_model">
+      </object>
+    </property>
+    <style>
+      <class name="card"/>
+    </style>
+
+    <child>
+      <object class="GtkColumnViewColumn" id="column_date">
+        <property name="title">Date</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_date_setup_handler" />
+            <signal name="teardown" handler="_column_teardown_handler" />
+            <signal name="bind" handler="_column_date_bind_handler" />
+            <signal name="unbind" handler="_column_unbind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkColumnViewColumn" id="column_hash">
+        <property name="title">Hash</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_hash_setup_handler" />
+            <signal name="teardown" handler="_column_teardown_handler" />
+            <signal name="bind" handler="_column_hash_bind_handler" />
+            <signal name="unbind" handler="_column_unbind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkColumnViewColumn">
+        <property name="title">Message</property>
+        <property name="expand">1</property>
+        <property name="factory">
+          <object class="GtkSignalListItemFactory">
+            <signal name="setup" handler="_column_message_setup_handler" />
+            <signal name="teardown" handler="_column_teardown_handler" />
+            <signal name="bind" handler="_column_message_bind_handler" />
+            <signal name="unbind" handler="_column_unbind_handler" />
+          </object>
+        </property>
+      </object>
+    </child>
+
+  </template>
+</interface>

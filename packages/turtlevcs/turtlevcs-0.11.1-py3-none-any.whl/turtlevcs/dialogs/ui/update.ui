@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="UpdateWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">600</property>
+    <property name="default-height">-1</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="update_button">
+                <property name="label">Update</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
+                <signal name="clicked" handler="_ok_clicked" />
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkBox">
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="spacing">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkListBox">
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+                <child>
+                  <object class="AdwComboRow" id="branch">
+                    <property name="title">Branch</property>
+                    <property name="subtitle">Local branch</property>
+                    <property name="selectable">0</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="branch_model">
+                      </object>
+                    </property>
+                    <signal name="notify::selected-item" handler="_branch_changed_handler" />
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="upstream">
+                    <property name="title">Upstream</property>
+                    <property name="subtitle">Upstream repository</property>
+                    <property name="selectable">0</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="upstream_model">
+                      </object>
+                    </property>
+                    <signal name="notify::selected-item" handler="_upstream_changed_handler" />
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="pull_settings">
+                    <property name="title">Action</property>
+                    <property name="subtitle">Update Action</property>
+                    <property name="selectable">0</property>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch">
+                        <property name="label">Fetch only</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch_and_merge">
+                        <property name="label">Fetch and Merge</property>
+                        <property name="group">fetch</property>
+                        <property name="active">1</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="fetch_and_rebase">
+                        <property name="label">Fetch and Rebase</property>
+                        <property name="group">fetch_and_merge</property>
+                        <property name="sensitive">0</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>

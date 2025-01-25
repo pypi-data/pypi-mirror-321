@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ReferenceDetailsDialog" parent="AdwMessageDialog">
+    <property name="heading">Reference</property>
+    <property name="default-width">480</property>
+    <child>
+      <object class="GtkListBox" id="remotes">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+        <child>
+          <object class="AdwActionRow" id="row_name">
+            <property name="title">Name</property>
+            <property name="subtitle">Reference Short Name</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkLabel" id="label_name" />
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="row_full_name">
+            <property name="title">Full Name</property>
+            <property name="subtitle">Reference Name</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkLabel" id="label_full_name" />
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="row_type">
+            <property name="title">Type</property>
+            <property name="subtitle">Reference Type</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkLabel" id="label_type" />
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="row_short_id">
+            <property name="title">Target</property>
+            <property name="subtitle">Target Hash</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkLabel" id="label_short_id" />
+            </child>
+            <child>
+              <object class="GtkButton" id="button_short_id">
+                <property name="valign">center</property>
+                <signal name="clicked" handler="_short_id_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">edit-copy-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="row_annotation">
+            <property name="title">Annotation</property>
+            <property name="subtitle">Tag Annotation</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkLabel" id="label_annotation" />
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

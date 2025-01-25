@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0" />
+  <template class="LogWindow" parent="AdwApplicationWindow">
+    <property name="title"></property>
+    <property name="icon-name">de.philippun1.turtle</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">680</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- headerbar -->
+        <child>
+          <object class="AdwHeaderBar">
+            <child>
+              <object class="GtkButton" id="select_button">
+                <property name="label">Select</property>
+                <signal name="clicked" handler="_select_clicked" />
+                <style>
+                  <class name="suggested-action" />
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="refresh_button">
+                <signal name="clicked" handler="_refresh_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-refresh</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="tooltip-text" translatable="yes">Settings</property>
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <!-- content -->
+        <child>
+          <object class="GtkPaned" id="content_box">
+            <property name="position">400</property>
+            <property name="margin-top">12</property>
+            <property name="margin-end">12</property>
+            <property name="margin-bottom">12</property>
+            <property name="margin-start">12</property>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <property name="margin-bottom">6</property>
+                <property name="orientation">vertical</property>
+
+                <child>
+                  <object class="GtkScrolledWindow">
+                    <child>
+                      <object class="GtkColumnView" id="listview">
+                        <property name="vexpand">true</property>
+                        <property name="model">
+                          <object class="GtkSingleSelection" id="selection_model">
+                            <signal name="selection-changed"
+                              handler="_log_selection_changed_handler" />
+                          </object>
+                        </property>
+                        <style>
+                          <class name="card" />
+                        </style>
+                        <child>
+                          <object class="GtkColumnViewColumn">
+                            <property name="title">Graph</property>
+                            <property name="resizable">1</property>
+                            <property name="factory">
+                              <object class="GtkSignalListItemFactory">
+                                <signal name="setup" handler="_column_graph_setup_handler" />
+                                <signal name="teardown" handler="_column_teardown_handler" />
+                                <signal name="bind" handler="_column_graph_bind_handler" />
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkColumnViewColumn">
+                            <property name="title">Hash</property>
+                            <property name="factory">
+                              <object class="GtkSignalListItemFactory">
+                                <signal name="setup" handler="_column_hash_setup_handler" />
+                                <signal name="teardown" handler="_column_teardown_handler" />
+                                <signal name="bind" handler="_column_hash_bind_handler" />
+                                <signal name="unbind" handler="_column_unbind_handler" />
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkColumnViewColumn">
+                            <property name="title">Message</property>
+                            <property name="expand">1</property>
+                            <property name="resizable">1</property>
+                            <property name="factory">
+                              <object class="GtkSignalListItemFactory">
+                                <signal name="setup" handler="_column_message_setup_handler" />
+                                <signal name="teardown" handler="_column_teardown_handler" />
+                                <signal name="bind" handler="_column_message_bind_handler" />
+                                <signal name="unbind" handler="_column_message_unbind_handler" />
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkColumnViewColumn">
+                            <property name="title">Author</property>
+                            <property name="factory">
+                              <object class="GtkSignalListItemFactory">
+                                <signal name="setup" handler="_column_author_setup_handler" />
+                                <signal name="teardown" handler="_column_teardown_handler" />
+                                <signal name="bind" handler="_column_author_bind_handler" />
+                                <signal name="unbind" handler="_column_unbind_handler" />
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkColumnViewColumn">
+                            <property name="title">Date</property>
+                            <property name="factory">
+                              <object class="GtkSignalListItemFactory">
+                                <signal name="setup" handler="_column_date_setup_handler" />
+                                <signal name="teardown" handler="_column_teardown_handler" />
+                                <signal name="bind" handler="_column_date_bind_handler" />
+                                <signal name="unbind" handler="_column_unbind_handler" />
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkScrolledWindow" id="scrolled_window_commits">
+                <property name="margin-top">6</property>
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Show All Branches</attribute>
+        <attribute name="action">win.show-all-branches</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Branch Filter</attribute>
+        <attribute name="action">win.branch-filter</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

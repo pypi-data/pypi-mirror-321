@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ResolveMethodDialog" parent="AdwMessageDialog">
+    <property name="heading">Resolve</property>
+    <property name="default-width">480</property>
+    <child>
+      <object class="GtkListBox" id="remotes">
+        <style>
+          <class name="boxed-list"/>
+        </style>
+        <child>
+          <object class="AdwActionRow" id="entry_theirs">
+            <property name="title">Theirs</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkButton" id="button_theirs">
+                <property name="valign">center</property>
+                <property name="tooltip-text">Compare to base</property>
+                <signal name="clicked" handler="_show_file_button_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-dual-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="entry_ours">
+            <property name="title">Ours</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkButton" id="button_ours">
+                <property name="valign">center</property>
+                <property name="tooltip-text">Compare to base</property>
+                <signal name="clicked" handler="_show_file_button_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-dual-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="entry_current">
+            <property name="title">Current</property>
+            <property name="selectable">0</property>
+            <child>
+              <object class="GtkButton" id="button_current">
+                <property name="valign">center</property>
+                <property name="tooltip-text">Show file in text editor</property>
+                <signal name="clicked" handler="_show_file_button_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">document-edit-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="button_triple">
+                <property name="valign">center</property>
+                <property name="tooltip-text">Compare conflicts</property>
+                <signal name="clicked" handler="_show_file_button_clicked" />
+                <child>
+                  <object class="GtkImage">
+                    <property name="icon-name">view-dual-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
