@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-core-utils"
+version = "0.0.6"
+description = "FastAPI utilities for rapid development"
+authors = [{ name = "刘浩", email = "jiumengs@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["fastapi", "utils", "database", "router"]
+
+dependencies = [
+    "fastapi>=0.68.0",
+    "tortoise-orm>=0.17.0",
+    "pyyaml>=5.4.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/fastapi-core-utils"
+Documentation = "https://github.com/yourusername/fastapi-core-utils#readme"
+Repository = "https://github.com/yourusername/fastapi-core-utils.git"
+
+[tool.setuptools]
+packages = ["fastapi_core_utils", "fastapi_core_utils.router", "fastapi_core_utils.database", "fastapi_core_utils.entity"]
