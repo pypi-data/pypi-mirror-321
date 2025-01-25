@@ -1,0 +1,26 @@
+[project]
+name = "vine_wayback"
+version = "0.0.4"
+description = "Fetch Vines from the Wayback Machine"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+dependencies = [
+    "requests>=2.32.3",
+    "beautifulsoup4>=4.12.3",
+    "wayback>=0.4.5",
+]
+packages = ["vine_wayback"]
+
+[project.scripts]
+vine_wayback = "vine_wayback:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.4",
+    "hatch>=0.23.1",
+]
