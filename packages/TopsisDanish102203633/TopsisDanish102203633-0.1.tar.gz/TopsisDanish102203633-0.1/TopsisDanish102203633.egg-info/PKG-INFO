@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TopsisDanish102203633
+Version: 0.1
+Summary: A simple implementation of the TOPSIS decision-making method with additional features.
+Home-page: https://github.com/Danish2op/voice-controlled-topsis-package.git
+Author: Danish
+Author-email: dsharma.workmain@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: streamlit
+Requires-Dist: SpeechRecognition
+
+This package allows easy decision-making using the TOPSIS method. It includes features like file upload and voice control.
