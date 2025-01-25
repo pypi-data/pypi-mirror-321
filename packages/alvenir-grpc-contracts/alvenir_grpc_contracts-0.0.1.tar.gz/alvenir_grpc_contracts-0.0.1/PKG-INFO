@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: alvenir_grpc_contracts
+Version: 0.0.1
+Summary: Generated gRPC python files for interacting with Alvenir Services
+Author-email: Moesen <gustav@alvenir.ai>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: grpcio>=1.59.0
+Requires-Dist: protobuf>=5.29.3
+Provides-Extra: dev
+Requires-Dist: grpcio-tools>=1.59.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Alvenir Api Contracts
+
+This repo contains the .proto files for the Alvenir Api.
+
+Go to [our buf repository](https://buf.build/alvenir/ameya-api-contracts) to get started.
