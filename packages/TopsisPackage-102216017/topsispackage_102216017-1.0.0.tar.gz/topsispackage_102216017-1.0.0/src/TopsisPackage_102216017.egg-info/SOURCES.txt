@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TopsisPackage_102216017.egg-info/PKG-INFO
+src/TopsisPackage_102216017.egg-info/SOURCES.txt
+src/TopsisPackage_102216017.egg-info/dependency_links.txt
+src/TopsisPackage_102216017.egg-info/entry_points.txt
+src/TopsisPackage_102216017.egg-info/top_level.txt
+src/topsis/TopsisPackage_102216017.py
+src/topsis/__init__.py
