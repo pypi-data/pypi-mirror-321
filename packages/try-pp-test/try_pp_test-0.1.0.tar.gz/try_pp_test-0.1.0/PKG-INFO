@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: try-pp-test
+Version: 0.1.0
+Summary: abc
+Author: yhuang
+Author-email: hymath@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: twine (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+abc
+===
+
+abc

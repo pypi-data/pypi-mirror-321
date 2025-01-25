@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "try-pp-test"
+version = "0.1.0"
+description = "abc"
+authors = ["yhuang <hymath@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+twine = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
