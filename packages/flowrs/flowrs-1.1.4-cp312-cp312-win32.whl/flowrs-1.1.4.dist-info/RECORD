@@ -1,0 +1,7 @@
+flowrs-1.1.4.dist-info/METADATA,sha256=bdcwG2gqvqNJMYELycsny_fkJOon52q5dTHCTboTPjw,148
+flowrs-1.1.4.dist-info/WHEEL,sha256=19xj5Waw2omQTyAh5Pnrm7rXeZkfzX1OuBYghlKYN-I,92
+flowrs/__init__.py,sha256=AUXbFu9FoNHDLMQrNM6B7H9QGeFiKHqMn-p3agIejGI,107
+flowrs/__init__.pyi,sha256=MKnWW2HvFBizTWpy6uMfAv3Vl9WhGE7USNZqvog9OAE,369
+flowrs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flowrs/flowrs.cp312-win32.pyd,sha256=dIl4LcXut0ZNN67eg3DMP3dtLz--fFVmYi35E3B6ePo,290816
+flowrs-1.1.4.dist-info/RECORD,,
