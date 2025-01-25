@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+setup.py
+tkcss.py
+tkcss.egg-info/PKG-INFO
+tkcss.egg-info/SOURCES.txt
+tkcss.egg-info/dependency_links.txt
+tkcss.egg-info/top_level.txt
