@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sigmaex/__init__.py
+sigmaex/sigmaex.py
+sigmaex.egg-info/PKG-INFO
+sigmaex.egg-info/SOURCES.txt
+sigmaex.egg-info/dependency_links.txt
+sigmaex.egg-info/entry_points.txt
+sigmaex.egg-info/requires.txt
+sigmaex.egg-info/top_level.txt
