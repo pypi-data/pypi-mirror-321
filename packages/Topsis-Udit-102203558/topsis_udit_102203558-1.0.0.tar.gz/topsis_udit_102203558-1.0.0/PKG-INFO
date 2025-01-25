@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: Topsis-Udit-102203558
+Version: 1.0.0
+Summary: A Python package for implementing the TOPSIS method.
+Author: Udit Arora
+Author-email: uditarora@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Udit-102203558
+A Python package for implementing the TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) method.
+
+## Installation
+```bash
+pip install Topsis-Udit-102203558
+```
+
+## Usage
+```python
+from topsis import topsis
+
+# Example usage
+topsis('input_file.csv', 'weights', 'impacts', 'output_file.csv')
+```
+
+## Author
+Udit Arora
