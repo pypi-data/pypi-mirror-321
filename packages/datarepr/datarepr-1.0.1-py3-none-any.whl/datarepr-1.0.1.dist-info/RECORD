@@ -1,0 +1,9 @@
+datarepr/__init__.py,sha256=WIMxOX01J6IFcG3hOPAoWSerqc1Lv3QBXP-5rocIFWY,57
+datarepr/core.py,sha256=PLZwbqtRqxd73N4t2PMSKK4ega0rjEvCUQO2P30H-SY,383
+datarepr/tests/__init__.py,sha256=wV92JqidsJuGnyXRNE5IPKWCv5DAH_dqBranc62vJFI,229
+datarepr/tests/test_0.py,sha256=Z0TOiTZMRdok2h5GBDgiwQu_6XxEtrYTSiKbxpSiO4c,3329
+datarepr-1.0.1.dist-info/LICENSE.txt,sha256=QwqYepQwTN5xG57cngKt6xxYD9z9hw9d3lcI8zSLiNg,1074
+datarepr-1.0.1.dist-info/METADATA,sha256=B9OzlDjAiA4U3owAv1mDHdT5YAbkgztkFALUhPQm7PY,2364
+datarepr-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+datarepr-1.0.1.dist-info/top_level.txt,sha256=zRtklAsSltoSZjWylM7piVK8YiwIdC41KdRH9GBXoDo,9
+datarepr-1.0.1.dist-info/RECORD,,
