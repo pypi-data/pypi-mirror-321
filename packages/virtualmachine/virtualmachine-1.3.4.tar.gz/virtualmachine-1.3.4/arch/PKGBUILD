@@ -1,0 +1,42 @@
+# Maintainer: Perry Werneck <perry.werneck@gmail.com>
+
+pkgname=vmdetect
+
+pkgver=1.1
+pkgrel=0
+pkgdesc="Detect when running under virtual machine"
+url="https://github.com/PerryWerneck/vmdetect.git"
+arch=(i686 x86_64)
+license=(GPL)
+depends=()
+makedepends=(autoconf automake make libtool gzip)
+checkdepends=()
+
+#groups=(gnome)
+
+source=($pkgname-$pkgver.tar.xz)
+sha256sums=('SKIP')
+
+provides=($pkgname) 
+conflicts=($pkgname)
+
+prepare() {
+  cd $pkgname-$pkgver
+  meson \
+    setup \
+      --reconfigure \
+      --wipe \
+      ".build"
+}
+
+build() {
+  cd $pkgname-$pkgver
+  meson compile -C ".build"
+}
+
+package() {
+  cd $pkgname-$pkgver
+  DESTDIR="${pkgdir}" meson install -C ".build"
+}
+
+
