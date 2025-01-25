@@ -1,0 +1,53 @@
+Metadata-Version: 2.2
+Name: Topsis-Nitin_Goyal-102203614
+Version: 0.1.0
+Summary: A Python package for implementing the TOPSIS method
+Home-page: https://github.com/goyal786/Topsis-Nitin_goyal-102203614
+Author: Nitin Goyal
+Author-email: goyalnitin126@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Topsis-Nitin_Goyal-102203614
+
+This Python library delivers a robust implementation of the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) algorithm, designed for solving multi-criteria decision-making problems.
+
+Key Features
+Standardizes decision matrices for consistency.
+Incorporates weights to reflect the relative importance of criteria.
+Computes TOPSIS scores and ranks alternatives effectively.
+Installation
+You can install this package using pip:
+
+bash
+Copy
+Edit
+pip install Topsis-YourName-102203614
+How to Use
+Execute the TOPSIS method by providing:
+
+A CSV file containing the decision matrix.
+A set of weights for the criteria.
+Positive (+) or negative (-) impacts for each criterion.
+Example Command:
+bash
+Copy
+Edit
+python script.py input_data.csv "1,2,3" "+,-,+,-" output_result.csv
+License
+This library is distributed under the MIT License. For more details, refer to the license.txt file included in the repository.
