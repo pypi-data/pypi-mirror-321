@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: medaid
+Version: 0.1.7
+Summary: Automated Machine Learning for medical use
+Home-page: https://github.com/DeptuchMateusz/medAId
+Author: Zofia Kamińska, Karolina Dunal, Mateusz Deptuch
+License: MIT
+Keywords: automated machine learning,automl,machine learning,medical data
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools>=40.8.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scikit-learn>=1.2.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: fancyimpute>=0.6.0
+Requires-Dist: reportlab>=3.6.0
+Requires-Dist: fpdf>=1.7.0
+Requires-Dist: shap>=0.39.0
+Requires-Dist: seaborn~=0.13.2
+Requires-Dist: dtreeviz~=2.2.2
+Requires-Dist: xgboost~=2.1.3
+Requires-Dist: lightgbm~=4.5.0
+Requires-Dist: tqdm~=4.67.1
+Requires-Dist: setuptools~=75.1.0
+Requires-Dist: ipython>=8.0.0
+Requires-Dist: ipywidgets>=8.0.0
+Requires-Dist: supertree
+Requires-Dist: lime>=0.2.0
+
+# MedAId :stethoscope:
+
+This is a Python package designed for working with tabular data. While it is optimized for medical data use cases, it can be adapted to work with any kind of tabular dataset.
+
+## Installation
+
+Since this package is not available on PyPI (for now), you can install it directly from the source. Clone the repository and install the package using the following commands:
+
+```bash
+pip install medaid
+```
+## More Info
+For more detailed information about the package navigate to `notebook.ipynb` (polish version) or `notebook_eng.ipynb` (english version) file.
