@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: lucidpy
+Version: 0.1.0
+Summary: A simple python client for the Lucidchart Simple API
+Project-URL: Repository, https://github.com/scotho3/lucidpy
+Project-URL: Bug Tracker, https://github.com/scotho3/lucidpy/issues
+Author-email: Thomas Scott <scotho3@scottho.me>
+License: MIT
+License-File: LICENSE
+Keywords: api,cli,lucid,lucidchart,python
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: pre-commit>=4.0.1
+Requires-Dist: pydantic>=2.10.5
+Requires-Dist: pytest-mock>=3.14.0
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: rich>=13.9.4
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# Lucidpy
+The unofficial Lucid Chart Simple API python wrapper library
+
+This project is a Python library for interacting with the Lucidchart API. It utilizes `httpx` for making HTTP requests and `Pydantic` for data validation and serialization. The library is designed to be flexible and easy to use, allowing developers to integrate Lucidchart functionalities into their applications seamlessly.
+
+## Features
+
+- **API Client**: A robust client for interacting with the Lucidchart API, handling authentication and requests.
+- **Data Models**: Pydantic models for validating and serializing API data structures such as documents, pages, and shapes.
+- **Utilities**: Helper functions for common tasks related to API interactions.
+
+## Installation
+
+You can install the library using pip:
+
+```
+pip install lucidpy
+```
+
+## Usage
+
+Here's a basic example of how to use the library:
+
+```python
+from lucidpy import LucidchartClient
+
+client = LucidchartClient(api_key='your_api_key')
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
