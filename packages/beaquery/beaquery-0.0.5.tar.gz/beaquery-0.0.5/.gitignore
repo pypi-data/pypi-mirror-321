@@ -1,0 +1,12 @@
+.gitignore
+*.pyc
+beaquery.txt
+GFS.xlsx
+OECD.xlsx
+TablesRegister.txt
+beaapi.pdf
+scripts/
+tests/*.sh
+tests/
+src/beaquery/*.sh
+src/beaquery/__pycache__/*.pyc
