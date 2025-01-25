@@ -1,0 +1,16 @@
+vectorcode-0.1.1.dist-info/METADATA,sha256=lvwssZwBzmydXrzk9_ErYw3m9hOC4FO_RwNiMs4MzRs,20262
+vectorcode-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+vectorcode-0.1.1.dist-info/entry_points.txt,sha256=POF7Jw2uybC0t8hCeWX0iHE4AOp5xMs1G35ZMKUByMA,68
+vectorcode-0.1.1.dist-info/licenses/LICENSE,sha256=vR4eeMt0B0otCdKk6HZ1mRzftFyQ3UdGco2NrrSA-aw,1062
+vectorcode/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+vectorcode/chunking.py,sha256=tCnqZtwWX1r5eBeGtQ7b8B4nwHeviGvbmcix0adTaLg,2152
+vectorcode/cli_utils.py,sha256=hKX1_NXU6WIYsJOPYBtkMjFeyUOv5al0-1vCCdE3mBk,9469
+vectorcode/common.py,sha256=h9ZG0WpLhXj-Pm3n2EhM1RmJzPjOQbYLCxOzZMe28k8,3244
+vectorcode/main.py,sha256=5_qy2BErtmnX2NG1v0EFKKKNUBG3q-pOeB_iMaG7UTA,1275
+vectorcode/subcommands/__init__.py,sha256=npGM7RFWtNim2ofPij-FWcaMweQNsvbF0O_syp35rOI,289
+vectorcode/subcommands/drop.py,sha256=EGp6lg7_Jc8njcL0iwASnfCnqivWMp34NS1KE5ReN74,694
+vectorcode/subcommands/init.py,sha256=asuyV-AuzAWwu5sAup5DI7GZA8LBFn25GSHLDbIy_Eg,939
+vectorcode/subcommands/ls.py,sha256=cN2eVUcxuRubNirEInbNGhtSRm1iTEiDTGNBKKmlOls,1958
+vectorcode/subcommands/query.py,sha256=JHq-Z8pQauzhdq-wW-N8_V5hwO0eldAlh8XWDwWf9xI,4060
+vectorcode/subcommands/vectorise.py,sha256=uekR7gPZRZAp1I7TufaDTL7VPM8EtIU_B8UjQn52l8g,3434
+vectorcode-0.1.1.dist-info/RECORD,,
