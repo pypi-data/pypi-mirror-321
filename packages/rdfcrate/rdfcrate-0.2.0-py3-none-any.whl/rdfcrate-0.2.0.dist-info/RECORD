@@ -1,0 +1,10 @@
+rdfcrate/__init__.py,sha256=tVx0ClFFsg2n8AWwMu1rBUKaYGkRJQNbgqbt5zM72oI,196
+rdfcrate/bioschemas.py,sha256=Pc3Hfjx9CtAOcb_Jkbap8wPTTE6pwpI6vxQZY3j1fcw,7240
+rdfcrate/codegen.py,sha256=TSN5KHDIr31sg5EkkT78FJGiUIktEwf6bBTJd3YqUuk,2019
+rdfcrate/spec_version.py,sha256=5pMbSuKZwtt9G9jkHFAQ6NTDHD-IkVPISNevMXgc8so,878
+rdfcrate/uris.py,sha256=tmMTumvawMX-6Sv2YWXN1RWhvgWwdkg9y6ms18vwVfI,171868
+rdfcrate/wrapper.py,sha256=AMlvLqG8nuxT6s1hNZWHUz7_4ejtFvyL9omhX43fMLo,8722
+rdfcrate-0.2.0.dist-info/METADATA,sha256=0ZjgMeGe9xqr5_SlGR95DF8fT5LUKksBzElk9scs6nY,1685
+rdfcrate-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rdfcrate-0.2.0.dist-info/entry_points.txt,sha256=QYhN29pbnAF6gd3x0nayl0NPzakVMBrz6_-FJbX8FGc,43
+rdfcrate-0.2.0.dist-info/RECORD,,
