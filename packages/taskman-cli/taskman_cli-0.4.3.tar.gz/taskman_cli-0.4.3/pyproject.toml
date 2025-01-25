@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskman-cli"
+version = "0.4.3"
+authors = [{name = "Taha Yasser Adnan", email = "taha.y.adnan@gmail.com"}]
+description = "A minimalistic and user-friendly task management application built with Python"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "prompt_toolkit",
+    "pygments",
+    "ttask-manager",
+    "platformdirs",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/tahadnan/TaskMan-CLI-PyPI"
+"Bug Tracker" = "https://github.com/tahadnan/TaskMan-CLI-PyPI/issues"
+
+[project.scripts]
+taskman = "taskman.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
