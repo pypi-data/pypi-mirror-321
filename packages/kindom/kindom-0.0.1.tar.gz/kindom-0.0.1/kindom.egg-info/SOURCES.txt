@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kindom/__init__.py
+kindom.egg-info/PKG-INFO
+kindom.egg-info/SOURCES.txt
+kindom.egg-info/dependency_links.txt
+kindom.egg-info/requires.txt
+kindom.egg-info/top_level.txt
