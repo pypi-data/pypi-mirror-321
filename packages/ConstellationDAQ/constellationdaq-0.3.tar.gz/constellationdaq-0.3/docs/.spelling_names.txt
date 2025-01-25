@@ -1,0 +1,13 @@
+Keithley
+Grafana
+Adenium
+Flatpak
+Doxygen
+zeroconf
+avahi
+CMake
+ccache
+plantuml
+libc
+libstdc
+IPython
