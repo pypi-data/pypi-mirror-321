@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: LangToken
+Version: 0.1.0
+Summary: Word Tokenizer to create each word into token and decode back
+Home-page: https://github.com/ictorv/word_token
+Author: S Victor Kumar
+Author-email: victor.myid@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LangToken            
+
+## Overview
+
+**LangToken** is a Python library designed for text preprocessing and tokenization. It converts text into token IDs and provides functionality to encode and decode text, ensuring consistent mapping between words and their token representations.
+
+This project includes a robust implementation, detailed documentation, and unit tests to validate its functionality.
+
+## Features
+
+- **Vocabulary Creation**: Automatically generates a token-to-ID mapping and its inverse from text.
+- **Encoding**: Converts text into a list of token IDs.
+- **Decoding**: Converts a list of token IDs back into readable text.
+- **File Integration**: Reads text files and processes them for tokenization.
+- **Handling Unknown Tokens**: Maps unknown words to a special `<|unk|>` token.
+- **Special Tokens**: Includes `<|unk|>` for unknown words and `<|endoftext|>` for file-ending markers.
+
+## Class Diagram
+<img src="image/diagram.png" width="500" />
+
+## Use
+```python
+from word_token.tokenizer import Tokenizer
+
+# Initialize the tokenizer
+tokenizer = Tokenizer()
+
+# Pass a file to the tokenizer
+tokenizer.pass_file("example.txt", "utf-8")
+
+# Generate the vocabulary
+tokenizer.fit()
+
+# Encode a text string
+encoded = tokenizer.encode("Hello, world!")
+print("Encoded:", encoded)
+
+# Decode the encoded IDs
+decoded = tokenizer.decode(encoded)
+print("Decoded:", decoded)
+```
+
+#### Output
+```example
+Encoded: [0, 1, 2, 3]
+Decoded: Hello, world!
+```
