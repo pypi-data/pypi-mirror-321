@@ -1,0 +1,454 @@
+#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+#
+# colors in d f_table _fg _bg columns:
+# see
+# https://github.com/mixmastamyk/console/blob/master/console/color_tables_x11.py#L112
+#
+# from __future__ import print_function  # must be 1st
+# import builtins
+import sys
+from fire import Fire
+from codeframe.version import __version__
+# from codeframe import unitname
+from codeframe import config
+#from codeframe.config import  DEBUG
+from codeframe.config import move_cursor
+# -------- config at the beginning.....
+
+from codeframe import topbar
+from codeframe import key_enter
+from codeframe import installation
+
+#### -------   TABLE CAPABILIITES ------ from codeframe  import d f_table
+from codeframe.df_table import create_dummy_df, show_table, \
+    inc_dummy_df
+
+from codeframe import mmapwr
+from codeframe import interpreter
+from codeframe import objects # I have no reach from remote-keyboard BUT from mainkb
+
+import time
+import datetime as dt
+from console import fg, bg, fx
+# -------- This was earlier forcolors, now TERMINALX
+#from blessings import Terminal
+import os
+from pyfiglet import Figlet
+import signal
+
+# ====================== for separate terminal keyboard using mmap
+#from prompt_toolkit.styles import Style
+from prompt_toolkit.cursor_shapes import CursorShape, ModalCursorShapeConfig
+
+from prompt_toolkit import PromptSession, prompt
+from prompt_toolkit.history import FileHistory
+
+from prompt_toolkit.completion import WordCompleter
+from prompt_toolkit.completion import NestedCompleter
+
+from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
+
+import json # transfe list to string and back
+# ==================================================================
+# ==================================================================
+# ==================================================================
+# ==================================================================
+SHOW_LOGO_TABLE = False
+SHOW_TIME = False
+SHOW_COMMAND_LINE = True
+RUN_MMAP_INPUT = True  #  INTERACTIVE MMAP-INTERACTIVE
+RUN_SELECT_FROM_TABLE = False
+
+termsize = os.get_terminal_size().columns
+
+# import pandas as pd
+# import numpy as np
+# from terminaltables import SingleTable
+
+# ------- this defended the project from winch error
+# from simple_term_menu import TerminalMenu
+
+
+def handle_sigwinch(signum: signal.Signals, qqq):
+    # pylint: disable=unused-argument
+    #print("WINCH SIGNAL:",type(qqq), qqq)
+    #os.system("reset")
+    return None
+
+
+# ----this DOES IT
+#  for FONTS in `pyfiglet -l`; do echo $FONTS; pyfiglet $FONTS -f $FONTS; done | less
+figlet = Figlet(font="slant")
+# figle2 = Figlet(font="roman")
+# figle2 = Figlet(font="standard")
+figle2 = Figlet(font="ansi_regular")
+
+
+def print_logo():
+    """
+    print fromt page + time
+    """
+    global termsize
+    # global figlet, filg
+
+    word = " codeframe"
+    # os.system('reset')
+    print("")
+    print(figlet.renderText(word))
+    print(figle2.renderText(dt.datetime.now().strftime("%H:%M:%S ")))
+    print(
+        f"DO YOU WANT TO INSTALL ME ?... Run me with your  \
+{fg.green}'projectname'{fg.default} as a parameter"
+    )
+    print(f"do you want to show me ?  run with {fg.green}'show'{fg.default} as a parameter ")
+    print(f"                            {fg.green}'.t'{fg.default} for show table ")
+    print(f"                            {fg.green}'.d'{fg.default} for show date ")
+    print(f"                            {fg.green}'.h'{fg.default} for show help (not working) ")
+    print(f"                            {fg.green}'.r'{fg.default} for reset terminal ")
+    print(f"do you want to quit ?  type {fg.green}'.q'{fg.default}  ")
+    #print(f"    terminal width = {termsize} {os.get_terminal_size().columns}")
+
+def autoreset_terminal():
+    global termsize
+    termsize2 = os.get_terminal_size().columns
+    #print("TS???", termsize, termsize2)
+    if termsize != termsize2:
+        print("i... RESET TERMINAL")
+        os.system("reset")
+        #terminal.clear()
+        termsize = termsize2
+        move_cursor(3, 1)
+        #print("X")
+
+# ***************************************************************************************
+# ***************************************************************************************
+#
+#   MAIN :  default logo = True
+#             server and detached_keyb False
+#
+#
+# ***************************************************************************************
+# ***************************************************************************************
+def main(projectname=None, debug=False, keyboard_remote_start = False, servermode = False, logo=False, table=False):
+    """
+    Tool to create a new project.\n
+    When the parameter 'projectname' is given: new project (in folder named 'projectname') is created
+
+    Parameters:
+    :param projectname THIS WILL GENERATE NEW PROJECT with these modules
+    :param keyboard_remote_start: just start a standalone prompt
+    :param servermode wait for commands via mmap... to be used with -k
+    :param logo it is True for convenient showup
+    :param table enable selection from the df-table
+    """
+    global RUN_SELECT_FROM_TABLE, SHOW_LOGO_TABLE, SHOW_TIME, RUN_MMAP_INPUT
+    if debug:
+        print("D... Debug ON")
+        config.DEBUG = True
+        config.CFG_DEBUG = True
+    if table:
+        RUN_SELECT_FROM_TABLE = True
+
+    # ------------- important to initialize all commands from interpretter
+    interpreter.init_interpretter()
+    #config.CFG_DEBUG = debug
+    SHOW_LOGO_TABLE = logo
+    SHOW_TIME = logo
+
+
+    if projectname is None:
+        print("version: ", __version__)
+        print(f"         USE   -h for help                ")
+        print(f"         USE   show ... for demo              ")
+        print(f"         USE   show -l -t  ... for FULL demo  ")
+        sys.exit(0)
+
+
+    if not servermode: RUN_MMAP_INPUT = False
+    # GLobal clear terminal
+    if debug:
+        print(__version__)
+    #else:
+
+    signal.signal(signal.SIGWINCH, handle_sigwinch)
+
+    # ======== DEFINE THE CONFIG FILE HERE ========
+
+    config.CONFIG["filename"] = "~/.config/codeframe/cfg.json"
+    config.CONFIG["history"] = "~/.config/codeframe/history"
+    # solely LOAD will create ....from_memory files
+    # config.load_config()
+    # solely  SAVE will create cfg.json only
+    # config.save_config()
+
+    # ==================================================== #########################
+    # ==================================================== ######################### remote
+    # ==================================================== #########################
+    #               command prompt - separate thread
+    # ==============================================================================
+    if keyboard_remote_start:
+        #prompt_completer = WordCompleter( interpreter.KNOWN_COMMANDS )
+        prompt_completer = NestedCompleter.from_nested_dict( interpreter.KNOWN_COMMANDS_DICT )
+        #allobjects = interpreter.allobjects #  ['obj1']
+        multilineinput = False
+        config.myPromptSession = PromptSession(
+            history=FileHistory( os.path.expanduser(config.CONFIG["history"]) )
+        ) #, multiline=Trueinp
+        inp = ""
+        myname = os.path.splitext(os.path.basename(__file__))[0]
+
+        # --------!!! this is not visible
+        print(f"i...  input interface to {fg.orange}{myname}{fg.default} application. .q to quit all; .h to help.")
+        #loopn = 0
+        while (inp!=".q"):
+            #loopn+=1
+            inp = config.myPromptSession.prompt("> ",
+                                                cursor=CursorShape.BLINKING_UNDERLINE,
+                                                multiline=multilineinput,
+                                                completer=prompt_completer,
+                                                complete_while_typing=False,
+                                                wrap_lines=True, # no noew lines
+                                                mouse_support=False,  #middlemouse
+                                                auto_suggest=AutoSuggestFromHistory()
+                                                )
+            if inp==".h":
+                # ------------- all this is not visible-!!!
+                print("H...  HELP:")
+                print("H...  .t   table+logo")
+                print("H...  .d   disable logo and time")
+                print("H...  .r   reset terminal")
+                print("H... known commands: ", "  ".join(interpreter.KNOWN_COMMANDS )  )
+            elif inp==".r":
+                pass
+            elif inp==".d":
+                pass
+            elif inp==".t":
+                pass
+            elif inp==".q":
+                mmapwr.mmwrite(inp)
+            else:
+                # SOME REAL COMMUNICATION WITH THE OPERATION THREAD ----
+                # If not finished -->> wait for it;
+                #   and get name of
+                #print(loopn)
+                mmapwr.mmwrite(inp)
+                done = False
+                ii = 1
+                #esc = chr(27)
+                #cc=f'a{esc}[5m_'
+                cc=" "
+                spinner = ["🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘"]
+                while not done:
+                    # res = mmapwr.mmread(  ) # read response
+                    ii+=1
+                    res = mmapwr.mmread_n_clear( mmapwr.MMAPRESP  )
+                    res = res.strip() # strin newline
+                    print("\r",spinner[ii%8], end=cc, flush=True)
+
+                    # if ii%2==0:
+                    #     print(spinner[0], end="\r", flush=True)
+                    # else:
+                    #     print(spinner[3], end="\r", flush=True)
+                    #print(f"... input was /{inp}/==/{res}/..result of read   len(inp):", len(inp), "  ...res:",len(res) )
+                    # if res.strip()==inp.strip(): # BEFORE SENDING OBJ
+                    if res.strip().find( inp.strip() )==0:
+                        parts = res.strip().split("###")
+                        if len(parts)>1:
+                            obj_names = json.loads( parts[-1] )
+                            #print("D... received objnames:", obj_names, type(obj_names))
+                            #print(f" YES::::.../{inp}/==/{res}/.. ?")
+                            # I need to append newly created objects to the autocomplete.....DIFFICULTY 9
+                            interpreter.allobjects = obj_names #.append( f"o{loopn}" ) # TSTING
+                            print(f"  {fg.dimgray}... known:",interpreter.allobjects,fg.default)
+                            #objects.get_objects_list_names()
+                            for i in interpreter.KNOWN_COMMANDS_LOCAL_OBJ:
+                                interpreter.KNOWN_COMMANDS_DICT[i] = {}
+                                for j in interpreter.allobjects:
+                                    interpreter.KNOWN_COMMANDS_DICT[i][j] = None
+                            prompt_completer = NestedCompleter.from_nested_dict( interpreter.KNOWN_COMMANDS_DICT )
+
+                        done = True
+                    #else:
+                    #    print(f" NONO:::.../{inp}/==/{res}/.. ?")
+                    time.sleep(0.25)
+                #print("... konec prikazu")
+
+
+        # print(inp)
+        return
+    # ==================================================== #########################
+    #           command prompt - separate thread
+    # ==================================================== #########################
+    # ==================================================== #########################
+
+
+    if (projectname is None) or (projectname.lower()=="show"):
+        print(f"i... this is DEMO MODE: ", projectname) # I just show DEMO
+        time.sleep(3)
+    elif projectname == "usage":
+        print(
+            """ ... usage:
+            _
+        """
+        )
+        sys.exit(0)
+    # ----------------------- installation with this name ----------
+    else:
+        #installation.main(projectname)
+        print(f"{fg.red} INSTALLATION STARTED ******************************************** : {fg.default}")
+        print(f"{fg.cyan} ... project name : {bg.cyan}{fg.white}{projectname}{fg.default}{bg.default}")
+        print(f"{fg.yellow} ... creating folder {bg.yellow}{fg.black}{projectname}{bg.default}{fg.yellow} with all stuff inside : {bg.default}{fg.default}")
+        print("*" * 40)
+        installation.main(projectname)
+        sys.exit(0)
+
+    # ===================== top bar and commads from kdb ==========
+    # # DEBUG
+    os.system("reset")
+    # when I put reset later, it occludes the 1st red inpput command
+
+    top = topbar.Topbar(bgcolor=bg.blue)
+    top2 = top.add(bgcolor=bg.black)
+
+    # top.print_to(
+    #     10,
+    #     f" {fg.white}{fx.bold}{dt.datetime.now().strftime('%H:%M:%S')}\
+    #     {fx.default}{fg.default} ",
+    # )
+    # top.place()
+    # # start after top
+
+    # ========================= INITIAL cmd key setting....
+    cmd = ""
+    enter = False
+    key = None
+    a, b = (" ", " ")
+
+    # KEYTHREAD THIS MUST BE HERE.....toi catch 1st letter
+    #   only return         key, enter, abc = kthread.get_global_key()
+    #                       key:mayreact on q;     enter==hit ; abc=>(a,b) for display.
+    kthread = None
+    if RUN_MMAP_INPUT:
+        # THis goes when mmap active
+        #print("i...   MMAP ACTIVE ...........................")
+        kthread = key_enter.MmapSimulatedKeyboard(ending=".q")
+    else:
+        #print("D...    MMAP NOT ACTIVE, using SSHKEYB.............")
+        kthread = key_enter.KeyboardThreadSsh(ending=".q")
+    # whatabout to have other terminal feeding mmapfile
+    #
+
+    df = create_dummy_df()
+    #terminalx = Terminal()
+    selection = None
+    #terminalx.clear()
+    move_cursor(3, 1)
+
+
+
+    #################################################################
+    #################################################################
+    #          INFINITE           L O O P
+    #################################################################
+    #################################################################
+    while True:
+        autoreset_terminal()
+        if (SHOW_LOGO_TABLE):
+            # DEBUG terminalx.clear()
+            move_cursor(3, 9)
+            if SHOW_TIME:
+                print_logo()
+
+            # time.sleep(0.05)
+            show_table(df, selection)
+        #
+        # RUN OPERATION ON TABLE
+        #
+        df = inc_dummy_df(df)
+
+        key, enter, abc = kthread.get_global_key()
+        (a, b) = abc  # unpack tuple
+
+        if enter:
+            #print()
+            #print("--------------------------------------ENTER pressed")
+            if len(key.strip()) == 0:
+                pass
+            elif key.strip() == ".q":
+                # print("X...   quit requested ..........................")
+                # no space to wait for the next loop
+                feedback = f"{key}###{json.dumps(objects.get_objects_list_names())}"
+                mmapwr.mmwrite( feedback , mmapwr.MMAPRESP) #
+                break
+            elif key.strip().find(".r") == 0:
+                os.system("reset")
+                move_cursor(3,1)
+            elif key.strip().find(".t") == 0:
+                SHOW_LOGO_TABLE = not SHOW_LOGO_TABLE
+            elif key.strip().find(".d") == 0:
+                SHOW_TIME = not SHOW_TIME
+            else:
+                cmd = key.strip()
+                # ======================================================== INTERPRETER
+                #if cmd==".t":
+                #elif cmd==".d":
+                #elif cmd==".r":
+                #else:
+                if config.DEBUG:
+                    print(f"{fg.gray}D... calling interpreter from bin*main {fg.default}")
+                # ----
+                if RUN_SELECT_FROM_TABLE:
+                    # list of row numbers from column 'n' :  assume whole word is list of rows:
+                    if selection is not None and selection != "":
+                        if config.DEBUG: print(f"{fg.gray}D... selecting from table {fg.default}")
+                        interpreter.main( f"{cmd} {selection}"  )
+                        selection = ""
+                    else:
+                        if config.DEBUG: print(f"{fg.gray}D... selecting from table {fg.default}")
+                        selection = cmd
+                else:
+                    # =========== NOT selection  FLIP/FLOP MODE ===============
+                    interpreter.main( cmd )
+
+                # ======================================================== INTERPRETER
+            #print(f"----------- {cmd}; table_selection:{selection}--------------------- ***")
+            #print("...writeback try:", key)
+            #print(" oL=", objects.get_objects_list_names() )
+
+            feedback = f"{key}###{json.dumps(objects.get_objects_list_names())}"
+            mmapwr.mmwrite( feedback , mmapwr.MMAPRESP) #
+            #print("...writeback done",key)
+        else:
+            cmd = ""
+
+        top.print_to(
+            10,
+            f" {fg.white}{fx.bold}{dt.datetime.now().strftime('%H:%M:%S')}\
+{fx.default}{fg.default}",
+        )
+
+        #
+        #  commandline at TOP#2, cursor  a_b; option not to show
+        #
+        if (not SHOW_COMMAND_LINE) or (  (key is not None) and (len(key) == 0) ):
+            top2.print_to(0, f"{fg.cyan}{bg.black}{' '*termsize}{bg.black}")
+        else:
+            top2.print_to(
+                0,
+                f"{fg.white}{bg.red} > {fx.bold}{a.strip()}{fg.yellow}_{fg.white}{b.strip()}\
+            {fx.default}{fg.default}{bg.default} ",
+            )
+
+        # PLACE THE TOPBAR INPLACE
+        top.place()
+        time.sleep(0.1)
+
+
+# ====================================================================
+
+
+if __name__ == "__main__":
+    Fire(main)
+    #print("*********************************")
