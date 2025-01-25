@@ -1,0 +1,9 @@
+Backtest/diagram.cp312-win_amd64.pyd,sha256=ReMBGhKqwFV7qsJcp1sjk5nc_b2BQYDBm7UFHSs98Q4,143872
+Backtest/entryexitlogic.cp312-win_amd64.pyd,sha256=Iw9TwknJz_23ExZdfVDjL3XM4BS5OtY4YQiYI3iQuis,122880
+Backtest/formula.cp312-win_amd64.pyd,sha256=gxM-wzFO1WXdvWifE5Z9Yajl1KOob1U1ACshOPvRvxA,76800
+Backtest/model.cp312-win_amd64.pyd,sha256=na03fuUcNGvmzoqaSv_Us4JtfXIWA_1qnX6YtVUOyzk,133632
+Backtest/util.cp312-win_amd64.pyd,sha256=Ke5rZRUaTzfbE_666Nl9A-mZuggoTJ_9QcqzJ_rwmwY,71680
+QuantVibe_Backtest-0.0.36.dist-info/METADATA,sha256=uR23jQ8H9hCAZQsHVt72KD4c0sZX7d9_t5P7wyLvucw,266
+QuantVibe_Backtest-0.0.36.dist-info/WHEEL,sha256=3vidnDuZ-QSnHIxLhNbI1gIM-KgyEcMHuZuv1mWPd_Q,101
+QuantVibe_Backtest-0.0.36.dist-info/top_level.txt,sha256=dejad7ZJPIzFjgWoUSksV5M0dbW8h38caGg7TjMWbYI,9
+QuantVibe_Backtest-0.0.36.dist-info/RECORD,,
