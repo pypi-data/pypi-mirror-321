@@ -1,0 +1,9 @@
+matrix_operations_cuni/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matrix_operations_cuni/core.py,sha256=vS91pBrfmUvnLpj-bv83j6PHiogdeEHtrfa_D1gOI2A,2768
+matrix_operations_cuni/operations.py,sha256=RqoULi1x9Rz2CJtGuLuB5rIcnzFa5JrRcMDC4OufeQU,3105
+matrix_operations_cuni/transformations.py,sha256=4BnpoEza8clj2ZTkYVicuC1ukcKWoQwVwh7xe7MW1PQ,6165
+matrix_operations_cuni-0.1.0.dist-info/LICENSE.txt,sha256=Wgn4zmHSKA6XMIByZU0Eml0aNrShDVBmEff66yV0Qro,1071
+matrix_operations_cuni-0.1.0.dist-info/METADATA,sha256=le2X295EqOgioIUoZnjVsnyeZbvyH2VS5zmqYe0KoLY,467
+matrix_operations_cuni-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+matrix_operations_cuni-0.1.0.dist-info/top_level.txt,sha256=iIHdSZkGvLNuaCjC-MiQ7f6TKfDteBLgnU_WPVtpfII,23
+matrix_operations_cuni-0.1.0.dist-info/RECORD,,
