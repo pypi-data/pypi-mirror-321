@@ -1,0 +1,89 @@
+Metadata-Version: 2.2
+Name: ctabustracker-v2
+Version: 1.0.0
+Summary: A Python 3 wrapper for the CTA Bus Tracker API (v2).
+Author-email: "Connor Parnell (github:@cpparnell)" <connorparnell1999@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Connor Parnell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/yourusername/ctabustracker
+Project-URL: Documentation, https://github.com/yourusername/ctabustracker
+Keywords: cta,chicago,bus,tracker,api,wrapper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0
+
+# CTA Bus Tracker API Wrapper
+
+A simple Python 3 client for the [Chicago Transit Authority (CTA) Bus Tracker API](https://www.transitchicago.com/assets/1/6/cta_Bus_Tracker_API_Developer_Guide_and_Documentation_20160929.pdf). This library wraps common endpoints, providing a straightforward way to query real-time bus information such as routes, directions, stops, and predictions.
+
+## Features
+
+- Fetch current system time from CTA Bus Tracker
+- Get vehicles by route or vehicle ID
+- Get predictions by stop ID, vehicle ID, or route
+- List all currently enabled routes
+- Retrieve directions for a route
+- Retrieve stops for a route + direction
+- Retrieve patterns (geospatial paths)
+- Retrieve service bulletins
+
+## Requirements
+
+- Python 3.7+
+
+## Installation
+
+```bash
+pip install ctabustracker-api-v2
+```
+## Usage
+
+```python
+YOUR_CTA_API_KEY = "YOUR_API_KEY_HERE"
+cta_client = CTABusTrackerAPI(YOUR_CTA_API_KEY)
+
+# Get system time
+time_response = cta_client.get_time()
+print("System Time:", time_response)
+
+# Get all routes
+routes_response = cta_client.get_routes()
+print("All Routes:", routes_response)
+
+# Example: get directions for route #22
+directions_response = cta_client.get_directions("22")
+print("Directions for Route 22:", directions_response)
+
+# Example: get stops for route #22, Eastbound
+stops_response = cta_client.get_stops("22", "Eastbound")
+print("Stops for Route 22 Eastbound:", stops_response)
+
+# Example: get predictions for stop(s)
+# (Replace 'STOP_ID' with a valid stop ID from above stops_response)
+predictions_response = cta_client.get_predictions(stpid=["STOP_ID"])
+print("Predictions for STOP_ID:", predictions_response)
+```
