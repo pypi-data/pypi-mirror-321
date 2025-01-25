@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: arate-limit
+Version: 0.1.0
+Summary: Asyncio rate limiter
+Author-email: Jakub Jantosik <jakub.jantosik@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# arate-limit
+Asyncio rate limiter
