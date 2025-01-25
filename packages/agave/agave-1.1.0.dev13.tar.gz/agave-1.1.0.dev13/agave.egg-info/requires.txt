@@ -1,0 +1,15 @@
+cuenca-validations<3.0.0,>=2.0.0
+mongoengine<0.30.0,>=0.29.0
+mongoengine-plus<1.0.0,>=0.2.3
+python-multipart<0.0.30,>=0.0.20
+
+[chalice]
+chalice<1.35.0,>=1.30.0
+
+[fastapi]
+fastapi<0.120.0,>=0.115.0
+starlette-context<0.4.0,>=0.3.2
+
+[tasks]
+aiobotocore<3.0.0,>=2.0.0
+types-aiobotocore-sqs<3.0.0,>=2.1.0
