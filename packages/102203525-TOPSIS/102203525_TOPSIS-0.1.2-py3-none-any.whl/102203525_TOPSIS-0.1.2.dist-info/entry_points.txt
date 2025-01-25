@@ -1,0 +1,2 @@
+[console_scripts]
+run-topsis = 102203525_TOPSIS.102203525:main
