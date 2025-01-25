@@ -1,0 +1,12 @@
+openai<2.0.0,>=1.55.0
+fastapi<0.115.6,>=0.109.2
+uvicorn
+websockets
+python-dotenv
+pydantic
+rich
+langgraph<0.3.0,>=0.2.60
+pydantic-ai<0.1.0,>=0.0.15
+
+[voice]
+pyaudio
