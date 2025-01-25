@@ -1,0 +1,54 @@
+project:
+  name: my_project
+  description: A full-stack Django application.
+  version: 1.0.0
+  author: John Doe
+
+stack:
+  type: django
+  image_version: "3.9"
+  stack_port: 8000
+  dependencies:
+    - redis
+    - celery
+
+database:
+  type: postgres
+  version: "16"
+  user: admin
+  password: admin
+  name: my_database
+  host: localhost
+  port: 5432
+
+services:
+  - name: auth_service
+    description:  authentification service.
+    stack:
+      type: flask
+      image_version: "3.10"
+      stack_port: 5001
+    dependencies:
+      - database
+  - name: web_service
+    description: principal Application.
+    stack:
+      type: django
+      image_version: "4.0"
+      stack_port: 8001
+
+environment:
+  - key: DEBUG
+    value: "True"
+  - key: SECRET_KEY
+    value: my_secret_key
+
+volumes:
+  - name: static_files
+    path: ./static
+  - name: media_files
+    path: ./media
+
+networks:
+  - name: backend_network
+    driver: bridge

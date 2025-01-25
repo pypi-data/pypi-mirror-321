@@ -1,0 +1,41 @@
+[project]
+name = "stack-builder"
+version = "0.0.1"
+description = "stack_builder is a Python tool that automates the creation of project foundations for multi-tech stacks like Django, React, and MongoDB, generating Dockerfiles, Docker Compose configurations, and more."
+long-description = "This tool automates the process of creating project structures, including backend, frontend, and database configurations, tailored for different technology stacks. It also generates necessary configurations for Docker containers and orchestrates deployment using Docker Compose."
+long-description-content-type = "text/markdown"
+authors = [
+    {name = "Ankoay-Feno", email = "ankoayfeno@gmail.com"}
+]
+
+license = { text = "MIT" }
+
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.8",
+    "Jinja2>=3.1.5",
+    "PyYAML>=6.0.2"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+flake8 = "^5.0"
+black = "^22.0"
+
+[tool.poetry.scripts]
+stack-builder = "source_code.stack_builder:generate_project"
+
+
+[tool.poetry]
+packages = [
+    {include =  "source_code/*"},
+    {include =  "tests/*"},
+    {include =  "README.md"},
+    {include =  "requirements.txt"},
+    {include =  "pyproject.toml"}
+    ]
