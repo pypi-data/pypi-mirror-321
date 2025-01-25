@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Topsis-Piyush-102217003/102217003.py
+Topsis-Piyush-102217003/__init__.py
+Topsis_Piyush_102217003.egg-info/PKG-INFO
+Topsis_Piyush_102217003.egg-info/SOURCES.txt
+Topsis_Piyush_102217003.egg-info/dependency_links.txt
+Topsis_Piyush_102217003.egg-info/requires.txt
+Topsis_Piyush_102217003.egg-info/top_level.txt
