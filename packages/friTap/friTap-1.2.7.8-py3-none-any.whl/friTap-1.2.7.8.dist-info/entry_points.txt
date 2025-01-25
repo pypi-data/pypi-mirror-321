@@ -1,0 +1,3 @@
+[console_scripts]
+friTap = friTap.friTap:wrapper_main
+fritap = friTap.friTap:main
