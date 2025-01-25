@@ -1,0 +1,15 @@
+h5py
+joblib
+matplotlib
+numpy
+opencv-python
+pandas
+pyaml
+PyYAML
+scikit-learn
+scipy
+seaborn
+torch
+torchvision
+torchaudio
+tqdm
