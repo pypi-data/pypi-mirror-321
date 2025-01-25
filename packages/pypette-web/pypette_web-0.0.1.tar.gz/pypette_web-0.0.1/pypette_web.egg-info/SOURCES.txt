@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+pypette.py
+pyproject.toml
+test.sh
+example_app/example.py
+example_app/views/base.html
+example_app/views/test.html
+example_app/views/static/testalize-me-TxP9AeN-WA0-unsplash.jpg
+pypette_web.egg-info/PKG-INFO
+pypette_web.egg-info/SOURCES.txt
+pypette_web.egg-info/dependency_links.txt
+pypette_web.egg-info/requires.txt
+pypette_web.egg-info/top_level.txt
+tests/test_cookie_encoding.py
+tests/test_merge.py
