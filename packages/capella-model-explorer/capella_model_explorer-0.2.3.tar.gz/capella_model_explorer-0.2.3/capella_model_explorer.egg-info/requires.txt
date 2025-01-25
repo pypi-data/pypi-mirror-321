@@ -1,0 +1,16 @@
+capellambse<0.7,>=0.6.6
+capellambse-context-diagrams>=0.4.1
+diff-match-patch
+jinja2
+fastapi
+uvicorn
+prometheus-client
+
+[docs]
+furo
+sphinx
+sphinx-copybutton
+
+[test]
+pytest
+pytest-cov
