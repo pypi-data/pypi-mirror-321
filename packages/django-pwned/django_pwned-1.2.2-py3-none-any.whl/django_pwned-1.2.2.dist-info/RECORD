@@ -1,0 +1,12 @@
+django_pwned/__init__.py,sha256=uuf4VNtTNA93fMhoAur9YafzaKJFnczY-H1SSCSuRVQ,22
+django_pwned/api.py,sha256=2KixWG_1rGskwwE-uu2EJixrWGD4QIw3OiFcBT878cU,1750
+django_pwned/apps.py,sha256=BxdILokv2Jes9Sb8G518UXjiP6hWTh3e-mf9NdQPvdk,167
+django_pwned/exceptions.py,sha256=PhX1MvceolPAUCsIvYLGc2QFFQcMMs1gBA8bKgww7oQ,49
+django_pwned/validators.py,sha256=O1taZXgZfmpbfWWQfRy7mNbp8V-zwBrBG9y7kzoPp6s,4294
+django_pwned/locale/fa/LC_MESSAGES/django.mo,sha256=mlvAbmb0F3CpuKzv7npKWLB0Q038DFugR4yxrdVmwek,1603
+django_pwned/locale/fa/LC_MESSAGES/django.po,sha256=8u53s9aNURy4K1kRZomXb3FsoIRF4Z1-unU2USgTHUQ,1742
+django_pwned-1.2.2.dist-info/LICENSE.txt,sha256=D0qHsX3Zed3ZwuuLoh04PmBUsre5SvSImKuVtmKOGdY,1078
+django_pwned-1.2.2.dist-info/METADATA,sha256=efq0IuNIi3tDBEX6DqBrsrkmMu5yvl1rDUQw9mWC2Q4,5728
+django_pwned-1.2.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_pwned-1.2.2.dist-info/top_level.txt,sha256=qoweLxWbKOadAUWeST0rUEsEzo2tmkOwDcimSGR_uGg,13
+django_pwned-1.2.2.dist-info/RECORD,,
