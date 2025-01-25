@@ -1,0 +1,13 @@
+VBMicrolensing/__init__.py,sha256=nh4X1BpVd3g0-3luO6AUadIq8oVASdPCXHe09M05JsY,225
+VBMicrolensing/data/ESPL.tbl,sha256=Pv6QdMo1hJAlDdh2Znci9YHRej9gyrrASuLaegKiMsQ,488032
+VBMicrolensing/data/OB151212coords.txt,sha256=j8i1PA8r1atAO22li0KxM2cVWUDGF9tMaNurX-6Vx0o,18
+VBMicrolensing/data/satellite1.txt,sha256=JzmXrT2aUJxoArVcXyZyGfscwSFIow_0fRh_ZMcxNS0,110290
+VBMicrolensing/data/satellite2.txt,sha256=wEySAu6SiUc7y5Vmx_B5jUnStpEtUyYp4u-HKlvb4Wk,112560
+VBMicrolensing/lib/python_bindings.cpp,sha256=vWmBJE_GRa3zwktymz-Pdg8YksU3-CwBfQcVGvwubfg,49003
+VBMicrolensing/lib/VBMicrolensingLibrary.cpp,sha256=o7tLS3UHxvxxuMxFuQg4Gj-wAdFWDb6JaijEViasCsQ,230361
+VBMicrolensing/lib/VBMicrolensingLibrary.h,sha256=MUdbYaoqUkMIMuKusYXQljvIUUIAT1wS7bXNaa8e_io,16618
+VBMicrolensing/VBMicrolensing.pyd,sha256=N-Er8AGue2OqPbLbrUSqBZvphTKaQoosXJykLMdC7mM,448512
+vbmicrolensing-4.2.dist-info/METADATA,sha256=4odF-dTCSwvIRewK_L9OnVy9Mu25ioW1QFhwW2HiFeI,5004
+vbmicrolensing-4.2.dist-info/WHEEL,sha256=evNPSt97zpv-qgJqQjfLlYyH7qWKOUc0lQF3UHDX2UE,100
+vbmicrolensing-4.2.dist-info/licenses/LICENSE,sha256=euhdP28SkJD12ExgS_Vg5hmmYttruH7GYD2Ut84Qht0,7817
+vbmicrolensing-4.2.dist-info/RECORD,,
