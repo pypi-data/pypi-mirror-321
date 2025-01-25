@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: unitree_go2_api
+Summary: Custom python bindings for the Unitree Go2 robot.
+Requires-Python: >=3.12
+Version: 0.0.2
+
+UNKNOWN
