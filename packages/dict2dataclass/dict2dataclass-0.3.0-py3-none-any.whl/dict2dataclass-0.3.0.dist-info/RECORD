@@ -1,0 +1,8 @@
+dict2dataclass/__init__.py,sha256=wYTu-7jcgU873vMulr43u6FFpaathRk-Jg1E9MyQYpQ,335
+dict2dataclass/dict_field.py,sha256=LpVIWorGwCmfBrkRz63oVhx_nzeCArd6l_rUz3ZyIas,2565
+dict2dataclass/from_dict.py,sha256=ClseOtGAiJEsSxZZQh3lD7ditKUi9UR5xLkVJvP5_1A,4211
+dict2dataclass/to_dict.py,sha256=qx4VPrSWRXGG8QU-wyYA8-8A_LwXGFVhbRlAFweRB50,969
+dict2dataclass-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dict2dataclass-0.3.0.dist-info/METADATA,sha256=WYRe5XZ6NXpblt4d0w72Rd4lg3br23zDYv8pRDyNn7Q,1702
+dict2dataclass-0.3.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dict2dataclass-0.3.0.dist-info/RECORD,,
