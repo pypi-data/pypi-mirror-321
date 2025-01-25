@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Topsis-Pranjal-102203972
+Version: 0.1
+Summary: A Python package for implementing Topsis , TOPSIS is based on the fundamental premise that the best solution has the shortest distance from the positive-ideal solution, and the longest distance from the negative-ideal one. Alternatives are ranked with the use of an overall index calculated based on the distances from the ideal solutions.
+Author: Pranjal_102203972
+Author-email: ppranjal_be22@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
