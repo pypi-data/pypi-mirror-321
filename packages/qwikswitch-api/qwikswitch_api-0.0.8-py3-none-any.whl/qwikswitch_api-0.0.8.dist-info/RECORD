@@ -1,0 +1,17 @@
+qwikswitchapi/__about__.py,sha256=NT6iYbDLxlTdaKQLDQnTBYNZ09X39sh5mybljWOH_aw,131
+qwikswitchapi/__init__.py,sha256=7-rmrTiclXxbQd7WRL8HUVxMFNDnQnX-l3X3xPN3uxs,110
+qwikswitchapi/constants.py,sha256=eNjlYrCoeDlqFoTRlOw4YQlJ4Vh7zj29it-BAr-pgSw,861
+qwikswitchapi/qs_client.py,sha256=hK7tyqgWzErB2JcabaFmu94F2Ih5PL6xOQd5BgRL42E,4790
+qwikswitchapi/qs_exception.py,sha256=KB_Sdt1r8YYWS9Yl1owX1qSnEL-V70qWZiBk_-ji_lA,672
+qwikswitchapi/entities/__init__.py,sha256=7-rmrTiclXxbQd7WRL8HUVxMFNDnQnX-l3X3xPN3uxs,110
+qwikswitchapi/entities/api_keys.py,sha256=HFDS5K8HfCCA-OodphGaLhE2PnLQFD62RJ-J4wRYWgI,1692
+qwikswitchapi/entities/control_result.py,sha256=pCiYGfATPb0zxGyyQcL4wrykLxDAUZz4J_GOVrK-Leg,1619
+qwikswitchapi/entities/device_status.py,sha256=R72kmp1cF-yv4fYVLBmiM5oHmSIJV19JRmH9XzwGR5U,3425
+qwikswitchapi/entities/device_statuses.py,sha256=lRMT4kOCuulgx1QNCLHlYIgLiwttFeSWwGLUJnFAZ38,1264
+qwikswitchapi/utility/__init__.py,sha256=7-rmrTiclXxbQd7WRL8HUVxMFNDnQnX-l3X3xPN3uxs,110
+qwikswitchapi/utility/response_parser.py,sha256=QWAg8NE-iwK_iUAyvKRLUp5wRgppZ20LCpS5HdRKcIo,1741
+qwikswitchapi/utility/url_builder.py,sha256=8G3L5KlRu6M0-jh53SnoTLjMkxCDv0t30uvfEKEKUO0,1816
+qwikswitch_api-0.0.8.dist-info/METADATA,sha256=Ncto1_McdkBUHrbN8ivwZvyP1vhHJ8WbZO5qpFf2DAQ,2200
+qwikswitch_api-0.0.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+qwikswitch_api-0.0.8.dist-info/licenses/LICENSE,sha256=8NV-gOFTkesfIAeBZ740xnFwKjgLRFgYNDIn5uWMy04,1091
+qwikswitch_api-0.0.8.dist-info/RECORD,,
