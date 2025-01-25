@@ -1,0 +1,74 @@
+# PrizePick Wrapper
+A simple Python wrapper for the PrizePicks API to fetch player stats, leagues, and other game data.
+
+## Installation
+Install the package directly from PyPI:
+pip install prizepick-wrapper
+
+## Usage
+
+### Import PrizePick wrapper
+from PrizePick_Wrapper import PrizePick
+
+### Initialize PrizePick wrapper
+prizepick = PrizePick()
+
+### Get PrizePick data
+data = prizepick.get_data()
+
+### Get Leagues
+leagues = prizepick.get_leagues()
+
+### Example: print player and league info
+for game in data:
+    print(f"Player: {game['player_name']}, League: {game['league']}")
+
+
+### Methods
+get_data(): Fetches PrizePick game data.
+
+get_leagues(): Returns a dictionary of leagues with their IDs.
+
+### Example JSON Return
+```json
+[
+    {
+        "player_id": "225032",
+        "player_name": "Danielle Hunter",
+        "is_live": false,
+        "league": "NFL1H",
+        "league_id": "35",
+        "odds_type": "standard",
+        "stat_type": "Sacks",
+        "status": "pre_game",
+        "team": "HOU",
+        "opponent": "KC",
+        "line_score": 0.13,
+        "start_time": "2025-01-18T16:30:00-05:00"
+    },
+    {
+        "player_id": "211159",
+        "player_name": "Ka'imi Fairbairn",
+        "is_live": false,
+        "league": "NFL",
+        "league_id": "9",
+        "odds_type": "demon",
+        "stat_type": "FG Made",
+        "status": "pre_game",
+        "team": "HOU",
+        "opponent": "KC",
+        "line_score": 2.5,
+        "start_time": "2025-01-18T16:30:00-05:00"
+    }
+]
+```
+
+
+
+### Error Handling
+Raises a custom RateLimit exception on status code 429 (rate-limited).
+
+General exceptions for other API errors.
+
+### Dependencies
+requests: For making API calls.
