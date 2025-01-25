@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: streamlithelpers
+Version: 0.1.4
+Summary: Simple utilities to help streamlit app development
+Home-page: https://github.com/andehr/streamlit-helpers
+Download-URL: https://github.com/andehr/streamlit-helpers/archive/refs/tags/v0.1.4.tar.gz
+Author: Andrew Robertson
+Author-email: 
+License: MIT
+Keywords: streamlit,utility
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: streamlit
+Requires-Dist: streamlit-extrasstreamlit-ace
+Dynamic: author
+Dynamic: classifier
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
