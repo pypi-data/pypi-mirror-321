@@ -1,0 +1,13 @@
+typer
+kaitaistruct
+pandas
+numpy
+xlsxwriter
+unyt
+matplotlib
+
+[dev]
+coverage
+mypy
+pytest
+ruff
