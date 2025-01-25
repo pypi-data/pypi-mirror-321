@@ -1,0 +1,3 @@
+[console_scripts]
+run-dashboard=src/project/launch:main
+
