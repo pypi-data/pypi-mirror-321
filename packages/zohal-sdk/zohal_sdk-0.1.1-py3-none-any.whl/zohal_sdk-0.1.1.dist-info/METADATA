@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: zohal-sdk
+Version: 0.1.1
+Summary: zohal-sdk is a Python SDK for interfacing with zohal.io.
+Author: Alireza Rabie
+Author-email: alireza@aazerra.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dataclasses-json (>=0.6.7,<0.7.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# zohal-sdk
+[![PyPi Package Version](https://img.shields.io/pypi/v/zohal-sdk.svg)](https://pypi.python.org/pypi/zohal-sdk)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/zohal-sdk.svg)](https://pypi.python.org/pypi/zohal-sdk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPi status](https://img.shields.io/pypi/status/zohal-sdk.svg?style=flat-square)](https://pypi.python.org/pypi/zohal-sdk)
+
+## Overview
+
+zohal-sdk is a Python SDK for interfacing with [zohal.io](https://zohal.io). It simplifies the process of interacting with the API by providing clean, Pythonic abstractions for all key functionalities.
+
+## Installation
+
+Install the SDK using pip:
+
+```bash
+pip install zohal-sdk
+```
+## Getting Started
+
+Here's a quick example to get you started:
+```python
+from zohal_sdk import Client
+
+# Initialize the client
+client = Client(token="your_api_key")
+
+# Example usage
+response = client.shahkar(mobile="your mobile number", national_code="your national code")
+print(response)
+```
+For detailed usage, check the documentation.
+Documentation
+
+## Documentation
+
+Full documentation is available at [Documentation](https://zohal.io/documents).
+
+## Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
