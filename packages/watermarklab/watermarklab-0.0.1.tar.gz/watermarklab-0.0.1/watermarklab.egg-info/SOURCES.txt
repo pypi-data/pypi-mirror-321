@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+watermarklab/__init__.py
+watermarklab.egg-info/PKG-INFO
+watermarklab.egg-info/SOURCES.txt
+watermarklab.egg-info/dependency_links.txt
+watermarklab.egg-info/requires.txt
+watermarklab.egg-info/top_level.txt
+watermarklab/basemodel/__init__.py
+watermarklab/drawtools/__init__.py
+watermarklab/laboratories/__init__.py
+watermarklab/metrics/__init__.py
+watermarklab/noiselayers/__init__.py
+watermarklab/noiselayers/diffdistortions.py
+watermarklab/noiselayers/noiselayerloader.py
+watermarklab/noiselayers/testdistortions.py
