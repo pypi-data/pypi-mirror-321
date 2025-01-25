@@ -1,0 +1,10 @@
+groq
+google-api-python-client
+youtube-transcript-api
+wikipedia-api
+beautifulsoup4
+requests
+pandas
+PyPDF2
+langchain-community
+langchain
