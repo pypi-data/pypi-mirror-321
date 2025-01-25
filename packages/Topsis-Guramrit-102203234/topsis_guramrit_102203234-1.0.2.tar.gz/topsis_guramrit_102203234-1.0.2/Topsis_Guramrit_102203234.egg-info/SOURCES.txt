@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Guramrit_102203234.egg-info/PKG-INFO
+Topsis_Guramrit_102203234.egg-info/SOURCES.txt
+Topsis_Guramrit_102203234.egg-info/dependency_links.txt
+Topsis_Guramrit_102203234.egg-info/entry_points.txt
+Topsis_Guramrit_102203234.egg-info/requires.txt
+Topsis_Guramrit_102203234.egg-info/top_level.txt
+topsis/102203234.py
+topsis/__init__.py
+topsis/__main__.py
