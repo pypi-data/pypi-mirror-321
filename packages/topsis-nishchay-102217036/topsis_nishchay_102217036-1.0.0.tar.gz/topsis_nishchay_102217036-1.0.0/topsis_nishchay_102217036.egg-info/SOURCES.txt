@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+topsis_nishchay_102217036/__init__.py
+topsis_nishchay_102217036/main.py
+topsis_nishchay_102217036.egg-info/PKG-INFO
+topsis_nishchay_102217036.egg-info/SOURCES.txt
+topsis_nishchay_102217036.egg-info/dependency_links.txt
+topsis_nishchay_102217036.egg-info/entry_points.txt
+topsis_nishchay_102217036.egg-info/requires.txt
+topsis_nishchay_102217036.egg-info/top_level.txt
