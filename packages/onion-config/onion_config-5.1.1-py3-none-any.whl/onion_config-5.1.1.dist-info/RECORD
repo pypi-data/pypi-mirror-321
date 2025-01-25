@@ -1,0 +1,11 @@
+onion_config/__init__.py,sha256=y_gB32TW1ad5dmgcwv5OmM6nE5M8ev4K90ARwffgvOc,1281
+onion_config/__version__.py,sha256=O2stXi7jIRoLCfzh6fPEOGlhpgQPwGWYLDheJ-AbO_4,22
+onion_config/_base.py,sha256=pedzj9zzZAIPCaFZDQnw4F9_MkbREJPr_cuBTS2IAJc,22832
+onion_config/_consts.py,sha256=kGz2wu8jv5TO4EyPmIQTWk_juyYKoyKlPxSkfGhJ0o0,160
+onion_config/_schemas.py,sha256=qiGyVdLdqd4a9Hvf95Bh9ityMjhNiwiRqa_v3BL-TsI,1768
+onion_config/_utils.py,sha256=Jis-LT7DKjng0zDVZJ5STEzg5Kz4qjZJzqBLuCF5vps,998
+onion_config-5.1.1.dist-info/LICENCE.txt,sha256=CUTK-r0BWIg1r0bBiemAcMhakgV0N7HuRhw6rQ-A9A4,1074
+onion_config-5.1.1.dist-info/METADATA,sha256=iSV9qXalsO1TOJYqSfjQ_TPA5JOSpzCgx9r7teSGZ8M,22104
+onion_config-5.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+onion_config-5.1.1.dist-info/top_level.txt,sha256=VyeFGlSyuG9-ulEQy1ZckTZNYa5O9RCmwlkjtapIYUU,13
+onion_config-5.1.1.dist-info/RECORD,,
