@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis-Pranshu-102217179/__init__.py
+Topsis-Pranshu-102217179/topsis.py
+Topsis_Pranshu_102217179.egg-info/PKG-INFO
+Topsis_Pranshu_102217179.egg-info/SOURCES.txt
+Topsis_Pranshu_102217179.egg-info/dependency_links.txt
+Topsis_Pranshu_102217179.egg-info/requires.txt
+Topsis_Pranshu_102217179.egg-info/top_level.txt
