@@ -1,0 +1,11 @@
+pvgispy/__init__.py,sha256=g9zTSDUPUrEyE0pB-fw0SZas40xtdB3VVmd76X61b_I,190
+pvgispy/base.py,sha256=ormvpaJeKeEmfQS0z21YZSvvnIOACOgef3WjY2Kc7T4,2279
+pvgispy/daily.py,sha256=wgok8eJo3UErlTBqRtz2P5seATfrBvxSknu7x5irAXc,5387
+pvgispy/hourly.py,sha256=qwI122fZH8aGPgMapTXYVKdCMhfxz1e4az2Rb5_NCxo,5973
+pvgispy/monthly.py,sha256=oJqkfi2jqegBEf9aHC_xus3EOHG8ycFzSgpSceBO2NQ,2017
+pvgispy/tmy.py,sha256=bFukQzX7jem3ME1zpdHVNRsEL91tz3-ORpk13vJmiTI,4869
+pvgispy-0.1.3.dist-info/LICENSE,sha256=9NqoZYOv6TSHSWjOWWA5Szgax7A3EmX5Z7e_xuB1aHg,1071
+pvgispy-0.1.3.dist-info/METADATA,sha256=Jrmj4kvz3fPgf2-_yc0HgndyOaFMBW9jbFKIspoL8uU,312
+pvgispy-0.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pvgispy-0.1.3.dist-info/top_level.txt,sha256=6E3051gQUaXLMoRLgNTV6tZWilqqPbwI9-Xo__nk518,8
+pvgispy-0.1.3.dist-info/RECORD,,
