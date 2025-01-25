@@ -1,0 +1,65 @@
+Metadata-Version: 2.2
+Name: ldset_env
+Version: 0.1.0
+Summary: A tool to set Launch Darkly environment variables
+Home-page: https://github.com/yourusername/ldset_env
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# ldset_env
+
+A command-line tool to set Launch Darkly environment variables.
+
+## Installation
+
+```console
+pip install ldset_env
+```
+
+## Usage
+
+```console
+ldset_env
+```
+
+## Development
+
+### Dependencies:
+
+- python 3.11.2
+- pyenv (recommended, but I'm sure there's alternatives)
+- pipenv
+
+
+### Create and enter pipenv shell
+
+```console
+pipenv install
+pipenv shell
+```
+
+### Install package
+
+```console
+pip install -e .
+```
+
+### Update and run
+
+```console
+git pull && pip uninstall ldset_env && pip install -e . && ldset_env
+```

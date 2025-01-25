@@ -1,0 +1,2 @@
+[console_scripts]
+ldset_env = launch_darkly_set_env:launch_darkly_set_env
