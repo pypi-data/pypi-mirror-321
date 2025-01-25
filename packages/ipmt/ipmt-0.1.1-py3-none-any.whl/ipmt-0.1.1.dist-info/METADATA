@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ipmt
+Version: 0.1.1
+Summary: A Flask-based IP management dependency that helps manage IP addresses, monitor visitors, and protect websites from DDoS attacks.
+Author: night9a
+Author-email: nightxcros@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Flask
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask-Limiter>=2.0
+Requires-Dist: Flask>=2.0
+
+# IPMT - Flask IP Management Tool
+
+**IPMT** is a Flask-based IP management library that helps manage IP addresses, monitor visitors, and protect websites from DDoS attacks.
+
+## Features
+- Request rate limiting (customizable thresholds).
+- Whitelist/graylist/blacklist IPs or networks.
+- Monitor and log visitor activity.
+- Protect your website from DDoS attacks with customizable policies.
+
+## Installation
+
+Install the library using pip:
+
+```bash
+pip install ipmt
