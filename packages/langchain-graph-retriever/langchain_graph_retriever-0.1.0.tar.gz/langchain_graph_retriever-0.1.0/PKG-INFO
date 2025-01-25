@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: langchain-graph-retriever
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Requires-Dist: langchain-core>=0.3.29
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pydantic>=2.10.4
+Provides-Extra: astra
+Requires-Dist: langchain-astradb>=0.5.2; extra == 'astra'
+Provides-Extra: beautifulsoup4
+Requires-Dist: beautifulsoup4>=4.12.3; extra == 'beautifulsoup4'
+Provides-Extra: cassandra
+Requires-Dist: cassio>=0.1.10; extra == 'cassandra'
+Requires-Dist: langchain-community>=0.3.14; extra == 'cassandra'
+Provides-Extra: chroma
+Requires-Dist: chromadb>=0.5.23; extra == 'chroma'
+Requires-Dist: langchain-chroma>=0.2.0; extra == 'chroma'
+Provides-Extra: gliner
+Requires-Dist: gliner==0.2.13; extra == 'gliner'
+Provides-Extra: keybert
+Requires-Dist: keybert>=0.8.5; extra == 'keybert'
+Provides-Extra: opensearch
+Requires-Dist: langchain-community>=0.3.14; extra == 'opensearch'
+Requires-Dist: opensearch-py>=2.8.0; extra == 'opensearch'
+Provides-Extra: simsimd
+Requires-Dist: simsimd>=6.2.1; extra == 'simsimd'
+Description-Content-Type: text/markdown
+
+# langchain-graph-retriever
