@@ -1,0 +1,3 @@
+[console_scripts]
+gpg-fzf = gpg_prompt.fzf:main
+gpg-rofi = gpg_prompt.rofi:main
