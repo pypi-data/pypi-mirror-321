@@ -1,0 +1,15 @@
+pytest
+gcsfs
+numpy
+jupyter
+jupyterlab
+xarray
+pandas
+tqdm
+zarr
+dask
+hvplot
+ipympl
+sounddevice
+soundfile
+sphinx-autodoc2
