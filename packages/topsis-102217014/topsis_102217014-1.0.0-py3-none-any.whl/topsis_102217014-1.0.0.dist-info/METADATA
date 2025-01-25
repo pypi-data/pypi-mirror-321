@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: topsis-102217014
+Version: 1.0.0
+Summary: Topsis
+Author: Aaditya
+Author-email: thakuraaditya1024@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
