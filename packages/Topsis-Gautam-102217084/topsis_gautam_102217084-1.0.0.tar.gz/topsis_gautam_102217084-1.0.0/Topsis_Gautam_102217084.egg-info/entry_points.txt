@@ -1,0 +1,2 @@
+[console_scripts]
+topsis-gautam = Topsis_Gautam_102217084.topsis:main
