@@ -1,0 +1,4 @@
+fastcore
+watchdog
+
+[dev]

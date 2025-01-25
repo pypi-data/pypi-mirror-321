@@ -1,0 +1,5 @@
+[console_scripts]
+literati = literati.core:literati
+
+[nbdev]
+literati = literati._modidx:d
