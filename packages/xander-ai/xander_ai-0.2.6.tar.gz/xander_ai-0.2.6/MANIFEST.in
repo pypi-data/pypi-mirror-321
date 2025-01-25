@@ -1,0 +1,6 @@
+include xander_ai/**/*.pyc
+
+exclude xander_ai/**/*.py
+
+include README.md
+include LICENSE

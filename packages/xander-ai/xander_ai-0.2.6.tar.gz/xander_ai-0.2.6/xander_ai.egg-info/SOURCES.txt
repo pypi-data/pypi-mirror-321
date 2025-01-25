@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+xander_ai.egg-info/PKG-INFO
+xander_ai.egg-info/SOURCES.txt
+xander_ai.egg-info/dependency_links.txt
+xander_ai.egg-info/requires.txt
+xander_ai.egg-info/top_level.txt
+xander_ai/__pycache__/__init__.cpython-312.pyc
+xander_ai/__pycache__/xander.cpython-312.pyc
