@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+chrphb_friends/__init__.py
+chrphb_friends/_modidx.py
+chrphb_friends/core.py
+chrphb_friends.egg-info/PKG-INFO
+chrphb_friends.egg-info/SOURCES.txt
+chrphb_friends.egg-info/dependency_links.txt
+chrphb_friends.egg-info/entry_points.txt
+chrphb_friends.egg-info/not-zip-safe
+chrphb_friends.egg-info/requires.txt
+chrphb_friends.egg-info/top_level.txt
