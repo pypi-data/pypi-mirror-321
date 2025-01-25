@@ -1,0 +1,10 @@
+rundpo/__init__.py,sha256=OgWH2XO3fsaJ_aAlWu_7Fclpc2XHDElA3rgGsHEWp1M,441
+rundpo/client.py,sha256=JyDgrMu7ply4nhKXomeBp32rTJHm5_Dnj-5CGYxxZrs,9904
+rundpo/example.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+rundpo/types.py,sha256=6m577d5uZWCHMotUULgk9mRXKIAbnKQszYpdJSt-4HA,5100
+rundpo/utils.py,sha256=8EORdHrIRj56gwAFSVzpqDgfE0zkNVWeFyq5yo5ZA-U,5441
+rundpo-0.1.33.dist-info/LICENSE,sha256=eazrOS97tp5OL7jotDic5GJcARIZ3kI_VmmOq3VCZZs,24
+rundpo-0.1.33.dist-info/METADATA,sha256=B_QiB0nZoZe-dGD8d7WgDjdhixHit2WtAu7orXrx0aA,9103
+rundpo-0.1.33.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+rundpo-0.1.33.dist-info/top_level.txt,sha256=jowBvHOdysE-6rsBEoTH-Nf48fzDFSekspecRQqMfZ8,7
+rundpo-0.1.33.dist-info/RECORD,,
