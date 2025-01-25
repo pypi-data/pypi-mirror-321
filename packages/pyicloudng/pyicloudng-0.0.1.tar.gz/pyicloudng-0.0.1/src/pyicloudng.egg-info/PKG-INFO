@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: pyicloudng
+Version: 0.0.1
+Summary: pyicloudng library to interact with icloud
+Author-email: JordiRedondo <redcorjo@gmail.com>
+Project-URL: Homepage, https://github.com/redcorjo/pyicloudng
+Project-URL: Bug Tracker, https://github.com/redcorjo/pyicloudng/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.24.0
+Requires-Dist: keyring>=21.4.0
+Requires-Dist: keyrings.alt>=3.5.2
+Requires-Dist: click>=7.1.2
+Requires-Dist: tzlocal>=4.0
+Requires-Dist: certifi>=2020.6.20
+Requires-Dist: srp
+
+
+# PYICLOUDNG
+
+Python libraries to interact with Apple icloud. This is a fork from PYICLOUD library 
+
+## Description 
+
+Python libraries to interact with Apple icloud 
+
+## Author
+
+
+Name: JordiRedondo 
+Email: redcorjo@gmail.com
+
+
+Version: 0.0.1
