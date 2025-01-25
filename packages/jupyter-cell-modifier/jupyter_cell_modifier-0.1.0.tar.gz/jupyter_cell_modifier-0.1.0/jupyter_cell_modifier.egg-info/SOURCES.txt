@@ -1,0 +1,16 @@
+README.md
+jupyter_cell_modifier.json
+pyproject.toml
+setup.py
+jupyter_cell_modifier/__init__.py
+jupyter_cell_modifier/install.py
+jupyter_cell_modifier/kernel_config.py
+jupyter_cell_modifier/magics.py
+jupyter_cell_modifier/server_config.py
+jupyter_cell_modifier.egg-info/PKG-INFO
+jupyter_cell_modifier.egg-info/SOURCES.txt
+jupyter_cell_modifier.egg-info/dependency_links.txt
+jupyter_cell_modifier.egg-info/entry_points.txt
+jupyter_cell_modifier.egg-info/requires.txt
+jupyter_cell_modifier.egg-info/top_level.txt
+jupyter_cell_modifier/static/custom/custom.js

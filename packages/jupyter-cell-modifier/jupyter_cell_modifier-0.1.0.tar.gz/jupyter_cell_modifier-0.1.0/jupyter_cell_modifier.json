@@ -1,0 +1,12 @@
+{
+    "NotebookApp": {
+        "nbserver_extensions": {
+            "jupyter_cell_modifier": true
+        }
+    },
+    "ServerApp": {
+        "jpserver_extensions": {
+            "jupyter_cell_modifier": true
+        }
+    }
+} 
