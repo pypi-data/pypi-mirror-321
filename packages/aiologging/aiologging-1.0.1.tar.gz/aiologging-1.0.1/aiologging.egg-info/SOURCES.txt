@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+aiologging/__init__.py
+aiologging.egg-info/PKG-INFO
+aiologging.egg-info/SOURCES.txt
+aiologging.egg-info/dependency_links.txt
+aiologging.egg-info/top_level.txt
