@@ -1,0 +1,7 @@
+variables:
+  PACKAGE_NAME: "masterpiece"
+
+include:
+  - project: 'juham/masterpieces/masterpiece'
+    ref: 'master'
+    file: '/ci-templates/master-ci.yml'
