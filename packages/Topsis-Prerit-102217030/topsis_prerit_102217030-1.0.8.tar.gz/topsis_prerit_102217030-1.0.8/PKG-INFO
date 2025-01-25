@@ -1,0 +1,76 @@
+Metadata-Version: 2.2
+Name: Topsis_Prerit_102217030
+Version: 1.0.8
+Summary: A Python package for performing TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) analysis.
+Author: Prerit Bhagat
+Author-email: preritbhagat.pb@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/Prerit-Bhagat/PYPI_Package#readme
+Project-URL: Source, https://github.com/Prerit-Bhagat/PYPI_Package
+Keywords: topsis mcdm multi-criteria decision-making ranking analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.19.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TOPSIS Implementation
+
+This package provides a Python implementation of the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method for multi-criteria decision analysis.
+
+---
+
+## Features
+- **Ease of Use**: Simple and clear implementation of the TOPSIS algorithm.
+- **Weighted Decision Making**: Allows users to define weights for each criterion.
+- **Impact Analysis**: Accounts for both positive and negative impacts of criteria.
+- **Command-Line Interface**: Execute TOPSIS directly from the terminal with input and output files.
+
+---
+
+## Installation
+
+To install the package, use:
+
+pip install TOPSIS_Prerit_102217030
+
+
+## Usage
+Run the TOPSIS analysis using the command-line interface:
+
+topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+
+Example
+Suppose you have a CSV file data.csv containing a decision matrix where:
+
+The first column is the identifier for alternatives.
+The subsequent columns contain numeric data for each criterion.
+
+If you want to apply TOPSIS with weights [1, 1, 1, 2] and impacts [+, +, -, +], use:
+python topsis data.csv "1,1,1,2" "+,+,-,+" result.csv
+
+This will generate a result file result.csv with the calculated TOPSIS scores and rankings.
+<!-- ## Functions -->
+<!-- ### Funtion(parameter) -->
+
