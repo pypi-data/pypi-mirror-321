@@ -1,0 +1,5 @@
+package_creation_tutorial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_creation_tutorial/string_ops.py,sha256=EKmdm3ToM32hBLg-Sv8anspPDpT0O3fkOU_rGj86Jok,453
+package_creation_tutorial_wissal-0.1.0.dist-info/METADATA,sha256=ymvImr2z6ejbNT11lHaY3uSOfBolHkPzyrUl6b9kuVk,549
+package_creation_tutorial_wissal-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+package_creation_tutorial_wissal-0.1.0.dist-info/RECORD,,
