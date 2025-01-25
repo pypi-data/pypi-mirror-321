@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+evolverl.egg-info/PKG-INFO
+evolverl.egg-info/SOURCES.txt
+evolverl.egg-info/dependency_links.txt
+evolverl.egg-info/requires.txt
+evolverl.egg-info/top_level.txt
