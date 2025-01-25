@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: aett
+Version: 3.0.0
+Summary: Event store for Python
+License: MIT License
+         
+         Copyright (c) 2024 python_eventstore
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Keywords: events,event store,sqlite,postgresql,mongodb,dynamodb,s3,event sourcing
+Author: Jacob Reimers
+Author-email: pypi@reimers.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: dynamodb
+Provides-Extra: mongodb
+Provides-Extra: postgresql
+Provides-Extra: postgresql-async
+Provides-Extra: s3
+Provides-Extra: sqlite-async
+Requires-Dist: aiosqlite (>=0.20,<1.0) ; extra == "sqlite-async"
+Requires-Dist: asyncpg (>=0.30,<1.0) ; extra == "postgresql-async"
+Requires-Dist: boto3 (>=1.35,<2.0) ; extra == "dynamodb"
+Requires-Dist: boto3 (>=1.35,<2.0) ; extra == "s3"
+Requires-Dist: multipledispatch (>=1.0,<2.0)
+Requires-Dist: psycopg (>=3.2.3,<3.3.0) ; extra == "postgresql"
+Requires-Dist: psycopg-binary (>=3.2.3,<3.3.0) ; extra == "postgresql"
+Requires-Dist: pydantic (>=2.10,<3.0)
+Requires-Dist: pymongo (>=4.10,<5.0) ; extra == "mongodb"
+Project-URL: Homepage, https://github.com/jjrdk/aett
+Description-Content-Type: text/markdown
+
+# ᚨᛖᛏᛏ (Aett) is an Event Store for Python
+
+Provides a framework for managing and storing event streams.
+
+## Usage
+
+The `EventStream` class is used to manage events in a stream.
+The `CommitStore` interface is used to store and retrieve events from the event store.
+The `SnapshotStore` interface is used to store and retrieve snapshots from the event store.
+
+## Domain Modeling
+
+The `Aggregate` class is used to model domain aggregates. The `Saga` class is used to model domain sagas.
+
+The loading and saving of aggregates is managed by the `DefaultAggregateRepository` and the `DefaultSagaRepository`
+classes respectively.
+
+Both repositories use the `CommitStore` and `SnapshotStore` interfaces to store and retrieve events and snapshots from
+the persistence specific event stores.
+
+Currently supported persistence stores are:
+
+- DynamoDB
+- MongoDB
+- Postgres
+- In-Memory
+
+## Downloads
+
+| Package                                                                      | Downloads                                                                                                 |
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [aett-eventstore](https://github.com/jjrdk/aett/tree/master/aett_eventstore) | [![Downloads](https://static.pepy.tech/badge/aett-eventstore)](https://pepy.tech/project/aett-eventstore) |
+| [aett-domain](https://github.com/jjrdk/aett/tree/master/aett_domain)         | [![Downloads](https://static.pepy.tech/badge/aett-domain)](https://pepy.tech/project/aett-domain)         |
+| [aett-dynamodb](https://github.com/jjrdk/aett/tree/master/aett_dynamodb)     | [![Downloads](https://static.pepy.tech/badge/aett-dynamodb)](https://pepy.tech/project/aett-dynamodb)     |
+| [aett-mongodb](https://github.com/jjrdk/aett/tree/master/aett_monog)         | [![Downloads](https://static.pepy.tech/badge/aett-mongodb)](https://pepy.tech/project/aett-mongodb)       |
+| [aett-postgres](https://github.com/jjrdk/aett/tree/master/aett_postgres)     | [![Downloads](https://static.pepy.tech/badge/aett-postgres)](https://pepy.tech/project/aett-postgres)     |
+| [aett-s3](https://github.com/jjrdk/aett/tree/master/aett_s3)                 | [![Downloads](https://static.pepy.tech/badge/aett-s3)](https://pepy.tech/project/aett-s3)                 |
+| [aett-inmemory](https://github.com/jjrdk/aett/tree/master/aett_inmemory)     | [![Downloads](https://static.pepy.tech/badge/aett-inmemory)](https://pepy.tech/project/aett-inmemory)     |
+
