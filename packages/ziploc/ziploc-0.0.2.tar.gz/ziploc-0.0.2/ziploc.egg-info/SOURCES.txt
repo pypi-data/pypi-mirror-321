@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_main.py
+ziploc/__init__.py
+ziploc/cli.py
+ziploc/main.py
+ziploc.egg-info/PKG-INFO
+ziploc.egg-info/SOURCES.txt
+ziploc.egg-info/dependency_links.txt
+ziploc.egg-info/entry_points.txt
+ziploc.egg-info/requires.txt
+ziploc.egg-info/top_level.txt
