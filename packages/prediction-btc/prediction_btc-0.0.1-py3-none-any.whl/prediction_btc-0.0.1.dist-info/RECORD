@@ -1,0 +1,9 @@
+"prediction_btc/Model_F_2,4_Acc97.h5",sha256=5fkjx7_uu7uSOA1ZlMDlRKPipONjy1GiQXDe11fXWds,101386072
+"prediction_btc/Model_T_2,4_Acc97.pkl",sha256=-Nqt8hPntVTrX5THeihpIgsHlmzsKuTPOGgPTIEKjxs,3536873
+prediction_btc/__init__.py,sha256=gcMCX6-1ZLeC0aJkJhU_6ukoWdRP0ejF-_MEBxamvQ8,693
+prediction_btc/package.py,sha256=o8cN4ShU5i_VXWA7D2AxzHCrI5XaSNebinIvlWOa-gQ,3236
+prediction_btc-0.0.1.dist-info/LICENCE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+prediction_btc-0.0.1.dist-info/METADATA,sha256=2rU2h4llZI47Lyl2pniWC2hV3xXI6LtmcuINszwoc6k,1700
+prediction_btc-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+prediction_btc-0.0.1.dist-info/top_level.txt,sha256=izWnGCOwm6zhk6PMOkRDDj1MM-N5uHiVuMNQnu7vhYs,15
+prediction_btc-0.0.1.dist-info/RECORD,,
