@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parody-mcp"
+version = "0.1.1"  # Incremented version
+description = "An MCP tool that suggests funny, phonetically similar words"
+authors = [
+    {name = "Patrick Ruff", email = "patruff@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.8,<3.12"
+license = {text = "MIT"}
+dependencies = [
+    "mcp>=0.1.0",
+    "mcpadapt>=0.1.0",
+    "anyio>=4.0.0",
+    "smolagents>=0.1.0",
+    "pronouncing>=0.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+]
+
+[tool.setuptools]
+packages = ["parody_mcp"]
+
+[project.scripts]
+parody-mcp = "parody_mcp.cli:main"

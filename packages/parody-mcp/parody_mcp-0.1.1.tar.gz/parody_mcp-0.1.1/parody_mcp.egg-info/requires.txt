@@ -1,0 +1,9 @@
+mcp>=0.1.0
+mcpadapt>=0.1.0
+anyio>=4.0.0
+smolagents>=0.1.0
+pronouncing>=0.2.0
+
+[dev]
+pytest>=7.0
+black>=22.0
