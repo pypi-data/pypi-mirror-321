@@ -1,0 +1,10 @@
+MANIFEST.in
+pyproject.toml
+src/integerbook/TimesNewRomanExtended.ttf
+src/integerbook/__init__.py
+src/integerbook/plotter.py
+src/integerbook.egg-info/PKG-INFO
+src/integerbook.egg-info/SOURCES.txt
+src/integerbook.egg-info/dependency_links.txt
+src/integerbook.egg-info/requires.txt
+src/integerbook.egg-info/top_level.txt

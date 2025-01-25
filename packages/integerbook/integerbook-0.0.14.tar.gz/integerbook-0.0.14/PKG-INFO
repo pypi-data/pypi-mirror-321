@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: integerbook
+Version: 0.0.14
+Summary: sheet music converter
+Author-email: Jesse van Oostrum <integerbook@gmail.com>
+Project-URL: Homepage, https://github.com/jessevoostrum/music-visualisation
+Keywords: music
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
