@@ -1,0 +1,39 @@
+[project]
+name = "burstylimiter"
+version = "0.1.1"
+description = "A Bursty Ratelimiter for Python. It allows two Limiters with different rates to be combined. Started as a limiter for my SpaceTradersAPI client."
+license = { file = "LICENSE" }
+authors = [{ name = "Felix Baumkötter (feba66)", email = "feba66@web.de" }]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "ratelimiter",
+    "burstylimiter",
+    "ratelimiting",
+    "burstylimiting",
+    "ratelimit",
+    "rate",
+    "bursty",
+    "limiter",
+    "burstyrate",
+    "burstylimit",
+]
+dependencies = []
+
+[tool.poetry]
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+[project.urls]
+Repository = "https://github.com/feba66/BurstyLimiter"
+Issues = "https://github.com/feba66/BurstyLimiter/issues"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+black = "^24.10.0"
+pytest = "^8.3.4"
