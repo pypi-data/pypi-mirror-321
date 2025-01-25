@@ -1,0 +1,45 @@
+Metadata-Version: 2.2
+Name: gui_generator
+Version: 1.2.1
+Summary: GUIgenerator facilitates the process of creating simple GUI applications.
+Home-page: 
+Author: CPUcademy
+Author-email: cpucademy@gmail.com
+License: MIT
+Keywords: cpucademy CPUcademy GUIgenerator guigenerator tkinter GUI gui
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+==========================
+GUIgenerator
+==========================
+GUIgenerator facilitates the process of creating simple GUI applications.
+
+Usage
+==========================
+Example of running the project:
+   .. code-block:: bash
+   
+	from gui_generator import *
+
+	def Average(n):
+		s = 0
+		for x in range(n):
+			s += int(g.addInput())
+		return s / n
+
+	g = GUIgenerator()
+	g.create(Average, args=["How many numbers:"])
