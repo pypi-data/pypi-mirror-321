@@ -1,0 +1,10 @@
+mcp_serverman/__init__.py,sha256=mrJ3g6Lg88e7rcUELtH3nfJdEEw-62l0FeFVQxg68Ys,216
+mcp_serverman/cli.py,sha256=45JuP_i5j7kKT4AUv8sHcgtJAjyh5x1BtSm-6i0Jk6k,13501
+mcp_serverman/client.py,sha256=eOv0fji7tSOj-jBPYBF_fcpAPBI1EgFnJ1AUjmHumlA,16858
+mcp_serverman/config.py,sha256=W5-VfeSTtrTuNGybNSiSgXNeqK0mg6ivIg6irSdDiJs,21012
+mcp_serverman-0.2.0.dist-info/LICENSE,sha256=17wvxB6OmFTtKKA7P2ZfBmw5Szwuz_8Ow2R3_z1Ok-o,1063
+mcp_serverman-0.2.0.dist-info/METADATA,sha256=PQo7yg2B8EZGWNpNij6jkej8CL47GmxhHPLXNH2G_SQ,3872
+mcp_serverman-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mcp_serverman-0.2.0.dist-info/entry_points.txt,sha256=E6lWakRr5Az_KuurUOv66B6S0UwojOzrV4xSLof7ifo,56
+mcp_serverman-0.2.0.dist-info/top_level.txt,sha256=9CH0cFE5pvssiSP-VfemyKG2zZI9j5zYez9J78fxoho,14
+mcp_serverman-0.2.0.dist-info/RECORD,,
