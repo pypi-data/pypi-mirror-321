@@ -1,0 +1,9 @@
+textract_parser/__init__.py,sha256=y7DaQq8PDc8Z7_VZz5CH-O4G5mFiuHQ_FkeLUl2OE0I,457
+textract_parser/__main__.py,sha256=EvhrKAF-pw5T5F9Xp_jABvNJQpL6SfhCGvOZdS0YjQw,2346
+textract_parser/textract_parser.py,sha256=VBl6jrOwC2nnxI-5sJsVBnij35pJa7fftPpw4IrWghE,1955
+textract_form_parser-0.1.2.dist-info/LICENSE,sha256=Zzl_djVXhkau84HpS_3dXXqDkuN3IaKmwwargAr03rE,1079
+textract_form_parser-0.1.2.dist-info/METADATA,sha256=RiQQ1NI50BzpJgAgvMcCsN5IILM1G_h6NhmIIW7WIK0,8018
+textract_form_parser-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+textract_form_parser-0.1.2.dist-info/entry_points.txt,sha256=WYM_r9PF1YMItPyNsR1BHo8B0GkYLxttpt6aWsgsLXo,66
+textract_form_parser-0.1.2.dist-info/top_level.txt,sha256=LY133aoMBOXxLxxDg2OL3dXReEYQb-XT3Q7plgYKrw0,16
+textract_form_parser-0.1.2.dist-info/RECORD,,
