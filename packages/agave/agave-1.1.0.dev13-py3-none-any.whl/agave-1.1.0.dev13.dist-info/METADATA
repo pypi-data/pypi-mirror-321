@@ -1,0 +1,95 @@
+Metadata-Version: 2.2
+Name: agave
+Version: 1.1.0.dev13
+Summary: Rest_api
+Home-page: https://github.com/cuenca-mx/agave
+Author: Cuenca
+Author-email: dev@cuenca.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cuenca-validations<3.0.0,>=2.0.0
+Requires-Dist: mongoengine<0.30.0,>=0.29.0
+Requires-Dist: mongoengine-plus<1.0.0,>=0.2.3
+Requires-Dist: python-multipart<0.0.30,>=0.0.20
+Provides-Extra: chalice
+Requires-Dist: chalice<1.35.0,>=1.30.0; extra == "chalice"
+Provides-Extra: fastapi
+Requires-Dist: fastapi<0.120.0,>=0.115.0; extra == "fastapi"
+Requires-Dist: starlette-context<0.4.0,>=0.3.2; extra == "fastapi"
+Provides-Extra: tasks
+Requires-Dist: aiobotocore<3.0.0,>=2.0.0; extra == "tasks"
+Requires-Dist: types-aiobotocore-sqs<3.0.0,>=2.1.0; extra == "tasks"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# agave
+[![test](https://github.com/cuenca-mx/agave/workflows/test/badge.svg)](https://github.com/cuenca-mx/agave/actions?query=workflow%3Atest)
+[![codecov](https://codecov.io/gh/cuenca-mx/agave/branch/main/graph/badge.svg)](https://codecov.io/gh/cuenca-mx/agave)
+[![PyPI](https://img.shields.io/pypi/v/agave.svg)](https://pypi.org/project/agave/)
+
+Agave is a library for implementing REST APIs using Blueprints, designed to work with Chalice AWS or FastAPI. It provides a convenient way to send and receive JSON data through endpoints for querying, modifying, and creating content.
+
+## Installation
+
+
+### For Chalice
+
+To use Agave with Chalice, install it using pip:
+
+```bash
+pip install agave[chalice]
+```
+
+You can then create a REST API blueprint as follows:
+```python
+from agave.chalice import RestApiBlueprint
+```
+
+### For FastAPI
+To use Agave with FastAPI, install it with the [fastapi] option:
+
+```bash
+pip install agave[fastapi]
+```
+
+Create a REST API blueprint for FastAPI like this:
+
+```python
+from agave.fastapi import RestApiBlueprint
+```
+
+### Tasks for FastAPI
+
+If you want to use tasks with FastAPI, install Agave with the [fastapi,tasks] option:
+```bash
+pip install agave[fastapi,tasks]
+```
+
+Then, you can define tasks like this:
+```python
+from agave.tasks.sqs_tasks import task
+```
+
+## Running Tests
+
+Run the tests using the following command:
+
+```bash
+make test
+```
