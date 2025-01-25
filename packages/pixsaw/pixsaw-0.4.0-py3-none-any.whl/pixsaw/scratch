@@ -1,0 +1,15 @@
+^  piecemaker -d speedtest-new -n 1000 --minimum-piece-size=35 --maximum-piece-size=100 --scaled-sizes=100 --trust-image ~/clients/puzzle-massive/phylopic/paul-van-cotthem-gQZTOtbD2Js-unsplash-40000x.jpg
+minimum_piece_size 36.339993366743684
+max pieces that will fit 7630
+pieces requested 1000
+pieces adjusted 1000
+pieces actual 1032
+piece size 98.04651162790698 x 99.58333333333333
+INFO:pixsaw.base:left=0 top=0 right=4216 bottom=2390
+INFO:pixsaw.base:width=4216 height=2390
+INFO:pixsaw.base:pixels[(0, 0)]=(9, 9, 9, 255)
+I
+
+        start = time.perf_counter()
+        stop = time.perf_counter()
+        logger.info(f"masks {(stop - start):.5f}")
