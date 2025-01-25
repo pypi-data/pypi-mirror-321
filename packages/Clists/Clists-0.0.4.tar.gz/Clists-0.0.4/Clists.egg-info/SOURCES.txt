@@ -1,0 +1,7 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Clists/__init__.py
+Clists/ops/default/schema.txt
