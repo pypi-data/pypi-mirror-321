@@ -1,0 +1,9 @@
+spacepackets<=0.27,>=0.26.0
+crcmod~=1.7
+deprecation~=2.1
+
+[lint]
+ruff
+
+[test]
+pyfakefs~=5.2
