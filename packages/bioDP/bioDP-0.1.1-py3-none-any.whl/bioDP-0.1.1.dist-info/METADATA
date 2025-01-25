@@ -1,0 +1,55 @@
+Metadata-Version: 2.2
+Name: bioDP
+Version: 0.1.1
+Summary: A package for biological data processing, especially related to metabodirect
+Home-page: https://github.com/bit15k/bioDP
+Author: bit15k
+Author-email: i@logdict.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# bioDP
+
+A package for biological data processing, especially related to metabodirect
+## Installation
+
+You can install this package using pip:
+```bash
+pip install bioDP
+```
+## Usage
+
+### Command
+
+```bash
+bioDP-metabodirect [input_folder] [output_folder and fileName]
+```  
+ eg.`bioDP-metabodirect C:\data C:\dispose\report.csv`  
+
+`bioDP-metabodirect --help`
+
+### Import Package
+
+```python
+
+```
