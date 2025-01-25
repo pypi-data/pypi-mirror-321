@@ -1,0 +1,20 @@
+{
+  "to_do": {
+    "Clean the house": "medium",
+    "Walk the dog": "medium"
+  },
+  "done": {
+    "Buy groceries": "high",
+    "Complete homework": "low"
+  },
+  "daily added tasks": {
+    "Buy groceries": "high",
+    "Clean the house": "medium",
+    "Complete homework": "low",
+    "Walk the dog": "medium"
+  },
+  "daily completed tasks": {
+    "Buy groceries": "high",
+    "Complete homework": "low"
+  }
+}
