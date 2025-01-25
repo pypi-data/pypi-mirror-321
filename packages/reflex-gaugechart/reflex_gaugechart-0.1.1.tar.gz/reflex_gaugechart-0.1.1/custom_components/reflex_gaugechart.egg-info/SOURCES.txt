@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+custom_components/reflex_gaugechart/__init__.py
+custom_components/reflex_gaugechart/gaugechart.py
+custom_components/reflex_gaugechart.egg-info/PKG-INFO
+custom_components/reflex_gaugechart.egg-info/SOURCES.txt
+custom_components/reflex_gaugechart.egg-info/dependency_links.txt
+custom_components/reflex_gaugechart.egg-info/requires.txt
+custom_components/reflex_gaugechart.egg-info/top_level.txt
