@@ -1,0 +1,12 @@
+parallel_reqs/__init__.py,sha256=IKMWaiXO-fKM1CilNKwOvynypGnAnDI4ZBKjQv5qa4w,137
+parallel_reqs/main.py,sha256=vQic56D9SgQtRklDe-g92BnwcC6Dyj-SmxZRLmJycFM,2411
+parallel_reqs/request/__init__.py,sha256=HrmuZ12D5wdgEvtblIqc5UwXyP84lGTVcbbdFbEGEWo,76
+parallel_reqs/request/request_executor.py,sha256=XsDgYIflzFBV2_XtQ2xBzBIM5WlChFsZ_dlPTx4W_d0,3302
+parallel_reqs/request/requests.py,sha256=YTjUU4ukpgc9fES2NnFg8hwNoVCz2ojcyQNWAcLmPec,1306
+parallel_reqs/response/__init__.py,sha256=nefSIGJjSjdT0JjTHP5j6PzrRLcwdv52BqL6-adGcWQ,52
+parallel_reqs/response/response.py,sha256=0NiXnt0sDWUcceMbEyRyEM0IA4iASugs5B1WsEH1W7k,808
+parallel_reqs-0.0.2.dist-info/METADATA,sha256=RHZm1XZD85KnKH5RDbYAl8IG6XMP2gIsvymlfxikcgM,4016
+parallel_reqs-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+parallel_reqs-0.0.2.dist-info/entry_points.txt,sha256=EIh7VLgK9aHKzU6pVtINEioZiNaRg6fLsSjhNBwCpa4,48
+parallel_reqs-0.0.2.dist-info/top_level.txt,sha256=ZVh2BHSu_UAfpl1gDtdVzom2kxM6683a_l-vOnJDUxA,14
+parallel_reqs-0.0.2.dist-info/RECORD,,
