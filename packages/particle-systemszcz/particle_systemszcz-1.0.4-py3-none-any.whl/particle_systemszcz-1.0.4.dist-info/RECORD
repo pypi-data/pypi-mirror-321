@@ -1,0 +1,13 @@
+particle_system/__init__.py,sha256=8oa3KlKett36PHnGrDJYja0-dccq7wtCy6cK71iziJc,75
+particle_system/particle.py,sha256=nb_bC4Qg_EM2bKJdDvQuG0aPG0Io6ki28lJ1Bjfp8WM,3988
+particle_system/particle_system.py,sha256=tqPA_cVtBQ7kUvIFBLYWxMEHeRNMQZu_8Z_AzRjfg9o,1072
+src/__init__.py,sha256=C9zJSyBB-pu3kpEVpE-zjKjq75Y7wtM8cAUHOBWve8k,113
+src/particle.py,sha256=qPCIBZRmVM1CjUBTfEihFovF9uhXctSrY6jvNwJhcz4,3765
+src/particle_system.py,sha256=k4nVeyNEwpbtCU6uGtjixvyb6k1xqAcgZTyO5l4xyvo,921
+src/particle_system/__init__.py,sha256=8oa3KlKett36PHnGrDJYja0-dccq7wtCy6cK71iziJc,75
+src/particle_system/particle.py,sha256=qPCIBZRmVM1CjUBTfEihFovF9uhXctSrY6jvNwJhcz4,3765
+src/particle_system/particle_system.py,sha256=k4nVeyNEwpbtCU6uGtjixvyb6k1xqAcgZTyO5l4xyvo,921
+particle_systemszcz-1.0.4.dist-info/METADATA,sha256=S__HeU9fBZTrnUpO9988Uh0RyUj9BWJNLIcBir_-Ta8,640
+particle_systemszcz-1.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+particle_systemszcz-1.0.4.dist-info/top_level.txt,sha256=SbXOB4g494uyet9K43wp1-9X_Jl1JkBaXQHXYpANAL0,16
+particle_systemszcz-1.0.4.dist-info/RECORD,,
